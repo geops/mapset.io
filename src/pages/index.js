@@ -305,7 +305,6 @@ export const IndexPageTemplate = ({ locale }) => {
                 <div className="priceCard">
                   <div className="priceCardHeader">
                     <div className="padder">
-                      <span className="brandName">Trafimage </span>
                       <span className="is-bolder title">Mapset</span>
                       <h2 className="is-bolder">FREE</h2>
                     </div>
@@ -336,7 +335,6 @@ export const IndexPageTemplate = ({ locale }) => {
                 <div className="priceCard">
                   <div className="priceCardHeader">
                     <div className="padder">
-                      <span className="brandName">Trafimage </span>
                       <span className="is-bolder title">Mapset</span>
                       <h2 className="is-bolder">MINI</h2>
                     </div>
@@ -377,7 +375,6 @@ export const IndexPageTemplate = ({ locale }) => {
                 <div className="priceCard">
                   <div className="priceCardHeader">
                     <div className="padder">
-                      <span className="brandName">Trafimage </span>
                       <span className="is-bolder title">Mapset</span>
                       <h2 className="is-bolder">MIDI</h2>
                     </div>
@@ -418,7 +415,6 @@ export const IndexPageTemplate = ({ locale }) => {
                 <div className="priceCard">
                   <div className="priceCardHeader">
                     <div className="padder">
-                      <span className="brandName">Trafimage </span>
                       <span className="is-bolder title">Mapset</span>
                       <h2 className="is-bolder">MAXI</h2>
                     </div>
@@ -500,7 +496,7 @@ export const IndexPageTemplate = ({ locale }) => {
             </p>
             <p>
               <a
-                href="https://twitter.com/mapsetch"
+                href="https://twitter.com/mapset.io"
                 rel="noopener noreferrer"
                 target="_blank"
               >
