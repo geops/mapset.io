@@ -124,15 +124,8 @@ export const IndexPageTemplate = ({ locale }) => {
             <div className="col-12 col-md-7 order-md-first">
               <div className="row">
                 <div className="headerBadge d-none d-md-block">
+                  {/* Banner Image here */}
                   <img className="main-heading" src={mapset_banner} alt="" />
-                  <div className="subtext">
-                    <span>
-                      <FormattedMessage id="generic.powered by" />{" "}
-                    </span>
-                    <span className="is-bolder">geOps</span>
-                    <span className="is-bolder"> | </span>
-                    <span className="is-bolder">evoq</span>
-                  </div>
                 </div>
               </div>
               <div className="cardViewContainer">
