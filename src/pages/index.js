@@ -489,7 +489,7 @@ export const IndexPageTemplate = ({ locale }) => {
             </p>
             <p>
               <a
-                href="https://twitter.com/mapset.io"
+                href="https://twitter.com/mapsetio"
                 rel="noopener noreferrer"
                 target="_blank"
               >
