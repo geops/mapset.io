@@ -16,7 +16,6 @@ const Footer = class extends React.Component {
           <div className="expander" ><a className="footerlink" href="https://geops.ch/datenschutz">Datenschutz</a> 
           </div>
           <div>
-            <span className="brandName">Trafimage </span>
             <span className="is-bolder title">Mapset </span>
             <span className="d-inline d-md-none">
               <br />
@@ -27,8 +26,6 @@ const Footer = class extends React.Component {
           </div>
           <div>
             <img className="logo" src={geOps} alt="" />
-            <span>|</span>
-            <img className="logofirst" src={evoq} alt="" />
           </div>
         </footer>
       </IntlProvider>

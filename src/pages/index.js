@@ -124,15 +124,8 @@ export const IndexPageTemplate = ({ locale }) => {
             <div className="col-12 col-md-7 order-md-first">
               <div className="row">
                 <div className="headerBadge d-none d-md-block">
+                  {/* Banner Image here */}
                   <img className="main-heading" src={mapset_banner} alt="" />
-                  <div className="subtext">
-                    <span>
-                      <FormattedMessage id="generic.powered by" />{" "}
-                    </span>
-                    <span className="is-bolder">geOps</span>
-                    <span className="is-bolder"> | </span>
-                    <span className="is-bolder">evoq</span>
-                  </div>
                 </div>
               </div>
               <div className="cardViewContainer">
@@ -305,7 +298,6 @@ export const IndexPageTemplate = ({ locale }) => {
                 <div className="priceCard">
                   <div className="priceCardHeader">
                     <div className="padder">
-                      <span className="brandName">Trafimage </span>
                       <span className="is-bolder title">Mapset</span>
                       <h2 className="is-bolder">FREE</h2>
                     </div>
@@ -336,7 +328,6 @@ export const IndexPageTemplate = ({ locale }) => {
                 <div className="priceCard">
                   <div className="priceCardHeader">
                     <div className="padder">
-                      <span className="brandName">Trafimage </span>
                       <span className="is-bolder title">Mapset</span>
                       <h2 className="is-bolder">MINI</h2>
                     </div>
@@ -377,7 +368,6 @@ export const IndexPageTemplate = ({ locale }) => {
                 <div className="priceCard">
                   <div className="priceCardHeader">
                     <div className="padder">
-                      <span className="brandName">Trafimage </span>
                       <span className="is-bolder title">Mapset</span>
                       <h2 className="is-bolder">MIDI</h2>
                     </div>
@@ -418,7 +408,6 @@ export const IndexPageTemplate = ({ locale }) => {
                 <div className="priceCard">
                   <div className="priceCardHeader">
                     <div className="padder">
-                      <span className="brandName">Trafimage </span>
                       <span className="is-bolder title">Mapset</span>
                       <h2 className="is-bolder">MAXI</h2>
                     </div>
@@ -500,7 +489,7 @@ export const IndexPageTemplate = ({ locale }) => {
             </p>
             <p>
               <a
-                href="https://twitter.com/mapsetch"
+                href="https://twitter.com/mapsetio"
                 rel="noopener noreferrer"
                 target="_blank"
               >

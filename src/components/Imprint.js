@@ -13,10 +13,10 @@ function Imprint() {
         <span>
           mail&nbsp;
           <a
-            href={"mailto:info@geops.ch"}
+            href={"mailto:info@geops.io"}
             style={{ color: "rgb(110, 144, 166)" }}
           >
-            info@geops.ch
+            info@geops.io
           </a>
         </span>
       </p>
