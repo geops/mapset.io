@@ -68,6 +68,14 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-plugin-matomo',
+      options: {
+        siteId: '11',
+        matomoUrl: 'https://analytics.geops.de/',
+        siteUrl: 'https://mapset.io/'
+      }
+    },
+    {
       resolve: "gatsby-plugin-purgecss", // purges all unused/unreferenced css rules
       options: {
         develop: true, // Activates purging in npm run develop
