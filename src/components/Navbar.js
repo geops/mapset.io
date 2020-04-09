@@ -74,14 +74,6 @@ class Navbar extends React.Component {
             <div className="navbar-start">
               <div className="headerBadge d-block d-md-none">
                 <img className="main-heading" src={mapset_banner} alt="" />
-                <div className="subtext">
-                  <span>
-                    <FormattedMessage id="generic.powered by" />{" "}
-                  </span>
-                  <span className="is-bolder">geops</span>
-                  <span className="is-bolder"> | </span>
-                  <span className="is-bolder">evoq</span>
-                </div>
               </div>
             </div>
             <div className="navbar-end d-block d-md-none">
