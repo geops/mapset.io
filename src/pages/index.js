@@ -113,7 +113,7 @@ export const IndexPageTemplate = ({ locale }) => {
                 </p>
                 <div className="alignContainer row">
                   <a
-                    href="https://editor.mapset.ch"
+                    href="https://editor.mapset.io"
                     target="editor-mapset"
                     rel="noopener noreferrer"
                   >
