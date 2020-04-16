@@ -5,17 +5,15 @@ import '../css/tracker.css'
 
 export default function TrackingDialog () {
   
+  const [tracking, setTracking] = useState(Cookies.get('tracking'))
   
-  const [tracker, setTracker] = useState(Cookies.get('tracker'))
-    
   function acceptTracking () {
-    Cookies.set('tracker', true)
-    setTracker(Cookies.get('tracker'))
-    console.log(tracker)
+    Cookies.set('tracking', true)
+    setTracking(Cookies.get('tracking'))
   }
 
   return (
-    !tracker || tracker === undefined ?
+    !tracking || tracking === undefined ?
     <div className="tracking-wrapper">
       <div className="tracking-window">
         <section className="text">
