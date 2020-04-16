@@ -1,0 +1,84 @@
+.tracking-wrapper {
+  font-family: 'lato', sans-serif;
+
+  position: fixed;
+  bottom: 3rem;
+  z-index: 100;
+  
+  display: flex;
+  justify-content: center;
+  
+  width: 100%;
+
+  color: #fff;
+}
+.tracking-window {
+  display:     flex;
+  flex-wrap:   wrap;
+  align-items: center;
+  
+  padding: 0.25rem 1rem;
+  
+  font-size:   0.8rem;
+  line-height: 1.25rem;
+  
+  border-radius: 0.25rem;
+  
+  background: linear-gradient(90deg,#1789c9,#63b3f4);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.tracking-window .text {
+  padding: 1rem 0;
+}
+.tracking-window button {
+  cursor: pointer;
+  padding: 0.25rem 0.75rem;
+  
+  font-size: 0.8rem;
+  line-height: 1.5;
+
+  color: inherit;
+  background-color: inherit;
+  
+  border-radius: 2rem;
+  transition: .3s ease;
+}
+.tracking-window button:nth-child(1) {
+  font-weight: 500;
+  margin: 0 0.5rem;
+  border: 1px solid transparent;
+}
+.tracking-window button:nth-child(2) { 
+  font-weight: 700;   
+  border: 2px solid #fff;
+}
+.tracking-window button:hover, .tracking-window button:active, .tracking-window button:focus {
+  color: #63b3f4;;
+  background-color: #fff;
+}
+.tracking-actions {
+  display: flex;
+  align-items: center;
+}
+.tracking-actions p {
+  font-weight: 600;
+  margin-left: 1rem;
+}
+a {
+  color: inherit;
+}
+@media (max-width: 900px) {
+  .tracking-wrapper {
+    bottom: 0;
+  }
+  .tracking-window {
+    display: block;
+    padding-bottom: 0.75rem;
+  }
+  .actions {
+    text-align: center;
+  }
+  .tracking-window button:nth-child(1) {
+    margin-left: 0;
+  }
+}
