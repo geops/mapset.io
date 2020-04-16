@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Cookies from 'js-cookie'
 
-import '../css/tracker.css'
+import '../sass/tracker.sass'
 
 export default function TrackingDialog () {
   
@@ -20,7 +20,7 @@ export default function TrackingDialog () {
           Diese Website nutzt Cookies, um bestmögliche Funktionalität bieten zu können.
         </section>
         <section className="actions">
-          <button>Mehr Infos</button>
+          <button onClick={() => { window.location = 'https://geops.de/datenschutz'}}>Mehr Infos</button>
           <button onClick={acceptTracking}>Akzeptieren</button>
         </section>
       </div>
