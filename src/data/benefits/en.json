@@ -1,0 +1,25 @@
+{
+  "title": "English",
+  "benefits": [
+    {
+      "heading": "**Creation** of situational plans",
+      "text": "Create meaningful station maps quickly and easily. Public transport replacement services or construction sites can be depicted, as can the situation at major events that require the guidance of passengers. In just a few minutes, you can create a plan that provides targeted information and has a high graphic quality."
+    },
+    {
+      "heading": "Easy drawing of local information",
+      "text": "Supplement local information on the basis of existing, detailed maps. You can display routes, add stops with their platforms or highlight points of interest."
+    },
+    {
+      "heading": "**Export functions**",
+      "text": "Download your  customized plans as image files and integrate them into your word processing or DTP software. To optimize the export, you can precisely specify the extent and resolution for printing."
+    },
+    {
+      "heading": "**Dynamic integration** in online channels",
+      "text": "Your plans can not only be exported as static images, but can also be dynamically embedded into websites. Benefit from the dynamic integration of freely navigable maps on which users can select extent and scale themselves. Send links for your individual plans simply by e-mail or share them via social media."
+    },
+    {
+      "heading": "Map of the **Swiss public transport**",
+      "text": "The basemap is optimized to show those details that are relevant for public transport. The map not only guarantees a graphically attractive presentation but is also updated weekly without your intervention."
+    }
+  ]
+}

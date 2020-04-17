@@ -9,11 +9,11 @@ function Imprint() {
         <span>CH-4600 Olten</span>
       </p>
       <p>
-        <span>fon +41 61 588 05 05</span>
+        <span>phone +41 61 588 05 05</span>
         <span>
           mail&nbsp;
           <a
-            href={"mailto:info@geops.io"}
+            href={"mailto:info@geops.ch"}
             style={{ color: "rgb(110, 144, 166)" }}
           >
             info@geops.io
@@ -21,26 +21,23 @@ function Imprint() {
         </span>
       </p>
       <p>
-        <span>Geschäftsführer, VR-Präsident: Ulrich Müller-Ertle</span>
+        <span>Managing Director, Chairman of the Board: Ulrich Müller-Ertle</span>
       </p>
 
       <p>
-        <span>Handelsregister Nr. CHE-455.829.547 Basel-Landschaft</span>
-        <span>UID: CHE-455.829.547 MWST</span>
+        <span>Commercial register no. CHE-455.829.547 Basel-Landschaft</span>
+        <span>UID: CHE-455,829,547 VAT</span>
       </p>
       <br />
       <p>
         <span>
-          Haftungshinweis: Trotz sorgfältiger inhaltlicher Kontrolle übernehmen
-          wir keine Haftung für die Inhalte externer Links. Für den Inhalt der
-          verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
+          Disclaimer: Despite careful control of the contents, we do not assume any liability for the contents of external links. The operators of the linked pages are solely responsible for the content of their pages.
         </span>
       </p>
 
       <p>
         <span>
-          Inhaltlich Verantwortlicher: Ulrich Müller-Ertle (Anschriften wie
-          oben)
+          Responsible for content: Ulrich Müller-Ertle (addresses as above)
         </span>
       </p>
     </div>
