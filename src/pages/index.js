@@ -81,8 +81,8 @@ export const IndexPageTemplate = ({ locale }) => {
       <section className="topSection">
         <div className="container">
           <div className="row is-white">
-            <div className="col-12 col-md-5">
-              <div className="scrollNav row d-none d-md-flex">
+            <div className="col-12 col-md-7">
+              <div className="scrollNav row d-none d-md-flex col-md-11">
                 <a className="navbar-item" href="#benefits">
                   <FormattedMessage id="generic.Benefits" />
                 </a>
@@ -113,7 +113,7 @@ export const IndexPageTemplate = ({ locale }) => {
                 {/*</div>*/}
               </div>
             </div>
-            <div className="col-12 col-md-7 order-md-first">
+            <div className="col-12 col-md-5 order-md-first">
               <div className="row">
                 <div className="headerBadge d-none d-md-block">
                   {/* Banner Image here */}
