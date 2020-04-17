@@ -17,11 +17,11 @@ export default function TrackingDialog () {
     <div className="tracking-wrapper">
       <div className="tracking-window">
         <section className="text">
-          Diese Website nutzt Cookies, um bestmögliche Funktionalität bieten zu können.
+        This website uses cookies to ensure you get the best experience on our website.
         </section>
         <section className="actions">
-          <button onClick={() => { window.location = 'https://geops.de/datenschutz'}}>Mehr Infos</button>
-          <button onClick={acceptTracking}>Akzeptieren</button>
+          <button onClick={() => { window.location = 'https://geops.ch/node/182?language=en'}}>more information</button>
+          <button onClick={acceptTracking}>accept</button>
         </section>
       </div>
     </div>
