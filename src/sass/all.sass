@@ -181,7 +181,10 @@ body
   & .cardViewContainer
     z-index: 1
     padding-top: 5vh
-    padding-bottom: 25vh
+    padding-bottom: 5vh
+    position: relative
+    right: -240px
+    top: 200px
     & .mapsetElementLarge
       position: absolute
       opacity: .25
@@ -227,8 +230,6 @@ body
       top: 7%
       height: 25%
       z-index: -1!important
-      & .row
-        flex-wrap: wrap-reverse
 
 // Benefit section
 .benefitsSection 
@@ -516,6 +517,7 @@ body
 
 .is-white
   color: $white
+  flex-wrap: wrap-reverse
 
 .is-cyan
   color: $cyanDark
