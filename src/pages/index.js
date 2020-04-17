@@ -99,8 +99,29 @@ export const IndexPageTemplate = ({ locale }) => {
                   <FormattedMessage id="generic.Lizenz" />
                 </a>
               </div>
+              <div className="cardViewContainer">
+                <img className="cardViewTriple" src={card_view_triple} alt="" />
+                <img
+                  className="mapsetElementLarge d-none d-md-inline"
+                  src={mapset_element}
+                  alt=""
+                />
+                {/*<div className="cardViewer" >*/}
+                {/*<img className="l1" src={card_1} alt="" />*/}
+                {/*<img className="" src={card_1} alt="" />*/}
+                {/*<img className="l-1 base" src={card_1} alt="" />*/}
+                {/*</div>*/}
+              </div>
+            </div>
+            <div className="col-12 col-md-7 order-md-first">
+              <div className="row">
+                <div className="headerBadge d-none d-md-block">
+                  {/* Banner Image here */}
+                  <img className="main-heading" src={mapset_banner} alt="" />
+                </div>
+              </div>
               <div className="headerDescription pt-5 pt-md-0">
-                <h2>
+              <h2>
                   <FormattedMessage id="content.page header" />
                 </h2>
                 <img
@@ -122,27 +143,6 @@ export const IndexPageTemplate = ({ locale }) => {
                     </button>
                   </a>
                 </div>
-              </div>
-            </div>
-            <div className="col-12 col-md-7 order-md-first">
-              <div className="row">
-                <div className="headerBadge d-none d-md-block">
-                  {/* Banner Image here */}
-                  <img className="main-heading" src={mapset_banner} alt="" />
-                </div>
-              </div>
-              <div className="cardViewContainer">
-                <img className="cardViewTriple" src={card_view_triple} alt="" />
-                <img
-                  className="mapsetElementLarge d-none d-md-inline"
-                  src={mapset_element}
-                  alt=""
-                />
-                {/*<div className="cardViewer" >*/}
-                {/*<img className="l1" src={card_1} alt="" />*/}
-                {/*<img className="" src={card_1} alt="" />*/}
-                {/*<img className="l-1 base" src={card_1} alt="" />*/}
-                {/*</div>*/}
               </div>
             </div>
           </div>
