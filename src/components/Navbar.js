@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 
 import layout_bg_4 from "../img/layoutBG_4.svg";
 import layout_bg_2 from "../img/layoutBG_2.png";
-import mapset_banner from "../img/Mapset_Logo_RGB_weiss.svg";
+import mapset_banner from "../img/Mapset_Logo.svg";
 import userManager from "../utils/userManager";
 
 class Navbar extends React.Component {
@@ -74,14 +74,6 @@ class Navbar extends React.Component {
             <div className="navbar-start">
               <div className="headerBadge d-block d-md-none">
                 <img className="main-heading" src={mapset_banner} alt="" />
-                <div className="subtext">
-                  <span>
-                    <FormattedMessage id="generic.powered by" />{" "}
-                  </span>
-                  <span className="is-bolder">geops</span>
-                  <span className="is-bolder"> | </span>
-                  <span className="is-bolder">evoq</span>
-                </div>
               </div>
             </div>
             <div className="navbar-end d-block d-md-none">
