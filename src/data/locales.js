@@ -1,14 +1,19 @@
 module.exports = {
 	default: {
-		path: '',
-		locale: 'de',
-		language: 'Deutsch',
+		path: 'en',
+		locale: 'en',
+		language: 'English',
 		default: true
 	},
 	de: {
 		path: 'de',
 		locale: 'de',
 		language: 'Deutsch'
+	},
+	en: {
+		path: 'en',
+		locale: 'en',
+		language: 'English'
 	},
 	fr: {
 		path: 'fr',

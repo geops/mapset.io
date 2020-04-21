@@ -23,11 +23,16 @@ import card_view_single from "../../static/img/showcase.png";
 // import benefits and features data, for the language needed
 import fr_benefits from "../data/benefits/fr.json";
 import de_benefits from "../data/benefits/de.json";
+import en_benefits from "../data/benefits/en.json";
+
 import fr_features from "../data/features/fr.json";
 import de_features from "../data/features/de.json";
+import en_features from "../data/features/en.json";
+
+import en_prices from "../data/prices/en.json"
 
 // import license information
-import license from "../data/license/de.json";
+import license from "../data/license/en.json";
 
 // import contact information
 import contact from "../data/contact.json";
@@ -57,15 +62,22 @@ if (
 export const IndexPageTemplate = ({ locale }) => {
   let benefits;
   let features;
+  let prices;
   switch (locale) {
     case "fr": {
       benefits = fr_benefits.benefits;
       features = fr_features.features;
       break;
     }
-    default: {
+    case "de": {
       benefits = de_benefits.benefits;
       features = de_features.features;
+      break;
+    }
+    default: {
+      benefits = en_benefits.benefits;
+      features = en_features.features;
+      prices = en_prices.prices;
       break;
     }
   }
@@ -296,158 +308,52 @@ export const IndexPageTemplate = ({ locale }) => {
             <p>
               <FormattedMessage id="content.price description" />
             </p>
+
             <div className="priceCardArea row">
-              <div className="col-12 col-sm-6  col-lg-3">
-                <div className="priceCard">
-                  <div className="priceCardHeader">
-                    <div className="padder">
-                      <span className="is-bolder title">Mapset</span>
-                      <h2 className="is-bolder">FREE</h2>
+              { prices &&
+                prices.map((price, id) => (
+                  <div 
+                    key={"price_" + id}
+                    name={"price_" + id}
+                    className="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                    <div className="priceCard">
+                      <div className="priceCardHeader">
+                        <div className="padder">
+                          <span className="is-bolder title">Mapset</span>
+                          <h2 className="is-bolder">
+                            {price.tier}
+                          </h2>
+                        </div>
+                        <img className="backgroundImage" src={layout_bg_2} alt="" />
+                      </div>
+                      <div className="priceCardBody">
+                        <div className="desc">
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: md.render(price.text)
+                            }}
+                          />
+                        </div>
+                        <h2 className="is-bolder">
+                         <span>
+                           {price.price}
+                         </span>
+                        </h2>
+                        <span className="subtext">
+                          <br />
+                          <span>
+                            {price.subtext}
+                         </span>
+                          <br />
+                          plus € 490 one-time setup fee
+                        </span>
+                        <EmailButton mode={price.tier} />
+                      </div>
                     </div>
-                    <img className="backgroundImage" src={layout_bg_2} alt="" />
                   </div>
-                  <div className="priceCardBody">
-                    <div className="desc">
-                      <span className="">Für Transport- unternehmen mit</span>
-                      <br />
-                      <span className="is-bolder">
-                        bis zu
-                        <br />
-                        10 Haltestellen*
-                      </span>
-                    </div>
-                    <h2 className="is-bolder">gratis</h2>
-                    <span className="subtext">
-                      <br />
-                      0.– CHF/Jahr
-                      <br />
-                      nur CHF 490.– einmalige Ein&shy;richtungs&shy;gebühr
-                    </span>
-                    <EmailButton mode="FREE" />
-                  </div>
-                </div>
-              </div>
-              <div className="col-12 col-sm-6  col-lg-3">
-                <div className="priceCard">
-                  <div className="priceCardHeader">
-                    <div className="padder">
-                      <span className="is-bolder title">Mapset</span>
-                      <h2 className="is-bolder">MINI</h2>
-                    </div>
-                    <img className="backgroundImage" src={layout_bg_2} alt="" />
-                  </div>
-                  <div className="priceCardBody">
-                    <div className="desc">
-                      <span className="">Für Transport- unternehmen mit</span>
-                      <br />
-                      <span className="is-bolder">
-                        11-200
-                        <br />
-                        Haltestellen
-                      </span>
-                      <br />
-                      <span className="">oder</span>
-                      <br />
-                      <span className="is-bolder">
-                        1-10
-                        <br />
-                        Bahnhöfen*
-                      </span>
-                    </div>
-                    <div className="price">
-                      <h2 className="is-bolder">2'700.–</h2>
-                      <span className="subtext">
-                        <br />
-                        2'700.– CHF/Jahr
-                        <br />
-                        zzgl. CHF 490.– einmalige Ein&shy;richtungs&shy;gebühr
-                      </span>
-                    </div>
-                    <EmailButton mode="MINI" />
-                  </div>
-                </div>
-              </div>
-              <div className="col-12 col-sm-6 col-lg-3">
-                <div className="priceCard">
-                  <div className="priceCardHeader">
-                    <div className="padder">
-                      <span className="is-bolder title">Mapset</span>
-                      <h2 className="is-bolder">MIDI</h2>
-                    </div>
-                    <img className="backgroundImage" src={layout_bg_2} alt="" />
-                  </div>
-                  <div className="priceCardBody">
-                    <div className="desc">
-                      <span className="">Für Transport- unternehmen mit</span>
-                      <br />
-                      <span className="is-bolder">
-                        201-500
-                        <br />
-                        Haltestellen
-                      </span>
-                      <br />
-                      <span className="">oder</span>
-                      <br />
-                      <span className="is-bolder">
-                        11-100
-                        <br />
-                        Bahnhöfen*
-                      </span>
-                    </div>
-                    <div className="price">
-                      <h2 className="is-bolder ">5'900.–</h2>
-                      <span className="subtext">
-                        <br />
-                        5'900.– CHF/Jahr
-                        <br />
-                        zzgl. CHF 490.– einmalige Ein&shy;richtungs&shy;gebühr
-                      </span>
-                    </div>
-                    <EmailButton mode="MIDI" />
-                  </div>
-                </div>
-              </div>
-              <div className="col-12 col-sm-6  col-lg-3">
-                <div className="priceCard">
-                  <div className="priceCardHeader">
-                    <div className="padder">
-                      <span className="is-bolder title">Mapset</span>
-                      <h2 className="is-bolder">MAXI</h2>
-                    </div>
-                    <img className="backgroundImage" src={layout_bg_2} alt="" />
-                  </div>
-                  <div className="priceCardBody">
-                    <div className="desc">
-                      <span className="">Für Transport- unternehmen mit</span>
-                      <br />
-                      <span className="is-bolder">
-                        mehr als 501
-                        <br />
-                        Haltestellen
-                      </span>
-                      <br />
-                      <span className="">oder</span>
-                      <br />
-                      <span className="is-bolder">
-                        101-200
-                        <br />
-                        Bahnhöfen*
-                      </span>
-                    </div>
-                    <div className="price">
-                      <h2 className="is-bolder ">8'400.–</h2>
-                      <span className="subtext">
-                        <br />
-                        8'400.– CHF/Jahr
-                        <br />
-                        zzgl. CHF 490.– einmalige Ein&shy;richtungs&shy;gebühr
-                      </span>
-                    </div>
-                    <EmailButton mode="MAXI" />
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
+
             <div className="conditions">
               <span>
                 <FormattedHTMLMessage id="content.conditions text" />

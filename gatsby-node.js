@@ -32,7 +32,7 @@ exports.onCreatePage = ({ page, actions }) => {
       const localizedPath = locales[key].default
           ? page.path
           : locales[key].path + page.path
-      
+          
       return createPage({
         ...page,
         path: localizedPath,
