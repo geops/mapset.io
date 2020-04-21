@@ -28,19 +28,23 @@
       width: 100%
       font-size: .8rem
   & .cardViewContainer
-    z-index: 1
+    z-index: -19
     padding-top: 5vh
-    padding-bottom: 25vh
+    padding-bottom: 5vh
+    position: relative
+    top: -90px
+    width: 140%
     & .mapsetElementLarge
       position: absolute
       opacity: .25
       left: 0
+      top: 200px
       height: 40%
   & .cardViewer
     pointer-events: none
     & img
       left: 25%
-      height: 100%
+      height: auto
       width: 100%
       box-shadow: -4.5rem 6.5rem 30px -3rem $greyDarker
   & .scrollNav
