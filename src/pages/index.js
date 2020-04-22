@@ -13,7 +13,7 @@ import layout_bg_1 from "../img/layoutBG_1.png";
 import layout_bg_2 from "../img/layoutBG_2.png";
 import layout_bg_3 from "../img/layoutBG_3.png";
 
-import mapset_banner from "../img/Mapset_Logo_RGB_weiss.svg";
+import mapset_banner from "../img/Mapset_Logo.svg";
 import twitter from "../img/social/Twitter_Logo_Blue.svg";
 
 import mapset_element from "../img/Mapset_Element.svg";
@@ -139,7 +139,6 @@ export const IndexPageTemplate = ({ locale }) => {
             <div className="col-12 col-md-7 order-md-first">
               <div className="row">
                 <div className="headerBadge d-none d-md-block">
-                  {/* Banner Image here */}
                   <img className="main-heading" src={mapset_banner} alt="" />
                 </div>
               </div>
