@@ -1,0 +1,25 @@
+{
+  "title": "Deutsch",
+  "features": [
+    {
+      "heading": "Create and use plans",
+      "text": "Our explanatory video shows the most important features of mapset.\n\n<iframe src=\"https://player.vimeo.com/video/368326091\" width=\"640\" height=\"360\"  frameborder=\"0\" allow=\"fullscreen\" allowfullscreen></iframe>"
+    },
+    {
+      "heading": "Best Practice",
+      "text": "\n\n<img src=\"/img/schaffhausen_plan_editor.png\" style=\"width:100%\"/>\n\n<span style=\"font-weight:bold\">Example 1: Rail replacement plan\r</span><br/>\nA train replacement map shows the way to the replacement bus service if it cannot be accessed directly at the station. The route to the bus is usually shown as a red dotted line. The exact departure point at the end of the line is marked with a pictogram. Further information that could be important for the route can be added (e.g. track numbers, POIs, etc.).<br/>\n\n<img src=\"/img/liestal_plan_editor.png\" style=\"width:100%\"/>\n\n<span style=\"font-weight:bold\">Example 2: Construction site plan\r</span><br/>\n\r\nMapset is perfectly suited for the presentation of construction site information. Detours can be represented by red routes. A number of icons are available to locate restrictions. Textual additions can be inserted directly into the map.<br/>\n\n<img src=\"/img/letzigrund_plan_editor.png\" style=\"width:100%\"/>\n\n<span style=\"font-weight:bold\">Example 3: Specific stop plan\r</span><br/>\n\nMapset can be used to illustrate the conditions at a station or stop. Ideally, a stop point indicates the precise stop location. The focus can be placed on specific stops by using pictograms of different sizes. Additionally, custom icons can be created  for different bus lines.<br/>\n\n<img src=\"/img/buchrain_plan_editor.png\" style=\"width:100%\"/>\n\n<span style=\"font-weight:bold\">Example 4: Event plan\r</span><br/>\n\nWith Mapset, events and their connection to public transport can be optimally displayed. Routes are ideally illustrated with red lines, different departure points and means of transport can be shown with the corresponding pictograms.<br/>"
+    },
+    {
+      "heading": "Dynamic integration of the plans",
+      "text": "A **simple** link allows you to define not only the current drawing elements, but also the section and scale of the plan. You can easily share the link by email or via social media. Your addressees will see the exact the plan you created.\n\nThe same link can also be embedded on your website. If you use a so-called IFrame, this can be done with a few clicks. \n\nThe example below shows the HTML  code to embed a plan into a page. \n\n```\n<iframe style=\"width:100%;height:300px;\" src=\"https://geops.sh/154A37952CB6AD95DC\"></iframe>\n\n```\n\nAs a result this plan is displayed:\n\n<iframe style=\"width:100%;height:300px;\" src=\"https://geops.sh/154A37952CB6AD95DC\"></iframe>"
+    },
+    {
+      "heading": "Export of images",
+      "text": "You can download your plan as an image in PNG raster format.  Download settings can be adjusted in a simple popup dialog. In this step you can also  add a north arrow to your plan.\n\nIn the download settings you can choose whether to download the complete screen content as an image or define a cropped section of the map. To define the section, a red selection frame appears, which you can move and resize. At the bottom right of the frame, the size of the exported image is always displayed in pixels, making it easy to determine the exact size of the desired output file. The last section you have defined remains saved in the browser and will be restored the next time you start mapset. This feature allows you to create a series of maps with the same dimensions without having to adjust the frame each time.\n\nBy default the export of the image is done using the resolution of your monitor. This resolution is suitable to embed the image statically in web pages or to use it in a presentation, for example. If you want to print the image, the plan should be exported using high or very high resolution. This allows plans to be printed with high quality even in sizes up to B1."
+    },
+    {
+      "heading": "Registration",
+      "text": "After completion of a subscription we will activate your access to mapset. Employees of your company can be granted access individually. Alternatively, we can grantaccess to mapset based on the suffix of the mail addresses (\"domain\" such as sbb.ch or tmrsa.ch ). A connection to your central user administration (\"SingleSignOn\") is also possible as an additional service. Please contact us when you take out a subscription to find out which option is right for you."
+    }
+  ]
+}
