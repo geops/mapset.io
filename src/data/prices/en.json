@@ -4,7 +4,7 @@
     {
       "tier": "FREE",
       "text": "For transport companies with up till 10 stops*",
-      "price": "free of charge",
+      "price": "free",
       "subtext": "0.- €/year"
     },
     {
@@ -23,7 +23,7 @@
       "tier": "MAXI",
       "text": "For transport companies with more than **501** stops or **101-200** railway stations*",
       "price": "8'400.–",
-      "subtext": "8'400 C€HF/year"
+      "subtext": "8'400 €/year"
     }
   ]
 }
