@@ -2,8 +2,6 @@
 .topSection
   position: relative
   z-index: 1
-  max-width: unset
-  padding-left: 70px
   & .navbar-item
     font-weight: $boldish
     color: $white
@@ -12,6 +10,8 @@
     padding: 0.5rem 0.75rem
     position: relative
     vertical-align: middle
+    & .navbar-item:nth-child(last)
+    padding-right: 0rem
   & .headerBadge
     position: relative
     margin-left: 1rem
@@ -53,6 +53,8 @@
     display: flex
     margin-top: 1rem
     justify-content: space-between
+    max-width: unset
+    padding-left: 70px
     & a
       font-weight: bold
   & .headerDescription
