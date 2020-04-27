@@ -94,29 +94,17 @@ export const IndexPageTemplate = ({ locale }) => {
         <div className="container">
           <div className="row is-white">
             <div className="col-12 col-md-5">
-              <div className="scrollNav row d-none d-md-flex">
-                <a className="navbar-item" href="#benefits">
-                  <FormattedMessage id="generic.Benefits" />
-                </a>
-                <a className="navbar-item" href="#features">
-                  <FormattedMessage id="generic.So funktioniert's" />
-                </a>
-                <a className="navbar-item" href="#price">
-                  <FormattedMessage id="generic.Preise" />
-                </a>
-                <a className="navbar-item" href="#contact">
-                  <FormattedMessage id="generic.Kontakt" />
-                </a>
-                <a className="navbar-item" href="#license">
-                  <FormattedMessage id="generic.Lizenz" />
-                </a>
+              <div className="row">
+                <div className="headerBadge d-none d-md-block">
+                  <img className="main-heading" src={mapset_banner} alt="" />
+                </div>
               </div>
               <div className="headerDescription pt-5 pt-md-0">
                 <h2>
                   <FormattedMessage id="content.page header" />
                 </h2>
                 <img
-                  className="mapsetElementSmall"
+                  className="mapsetElement"
                   src={mapset_element}
                   alt=""
                 />
@@ -136,11 +124,23 @@ export const IndexPageTemplate = ({ locale }) => {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-7 order-md-first">
-              <div className="row">
-                <div className="headerBadge d-none d-md-block">
-                  <img className="main-heading" src={mapset_banner} alt="" />
-                </div>
+            <div className="col-12 col-md-7">
+              <div className="scrollNav row d-none d-md-flex">
+                <a className="navbar-item" href="#benefits">
+                  <FormattedMessage id="generic.Benefits" />
+                </a>
+                <a className="navbar-item" href="#features">
+                  <FormattedMessage id="generic.So funktioniert's" />
+                </a>
+                <a className="navbar-item" href="#price">
+                  <FormattedMessage id="generic.Preise" />
+                </a>
+                <a className="navbar-item" href="#contact">
+                  <FormattedMessage id="generic.Kontakt" />
+                </a>
+                <a className="navbar-item" href="#license">
+                  <FormattedMessage id="generic.Lizenz" />
+                </a>
               </div>
               <div className="cardViewContainer">
                 <img className="cardViewTriple" src={card_view_triple} alt="" />

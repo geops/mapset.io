@@ -178,8 +178,8 @@
 @media screen and (min-width: 2000px)
   .topSection
     & .cardViewContainer
-      padding-top: 35rem
-      padding-bottom: 0rem
+      padding-top: 0rem
+      padding-bottom: 5rem
 
 @media screen and (min-width: 768px) and (max-width: 991px)
   .topSection
@@ -189,12 +189,10 @@
       & h2
         margin-top: 1rem
     & .headerBadge
-      position: absolute
       margin-left: 1rem
       width: 50%
     & .cardViewContainer
       padding-bottom: 0
-      padding-top: 22rem
       top: calc(6rem - 25vw)
       right: 0
   .benefitsSection
@@ -238,7 +236,7 @@
     & .cardViewContainer
       padding-bottom: 0
       right: 0
-    & .headerDescription .mapsetElementSmall
+    & .headerDescription .mapsetElement
       position: absolute
       opacity: .25
       left: unset
@@ -246,6 +244,8 @@
       top: 15%
       height: 25%
       z-index: -1
+    & .cardViewTriple
+        width: 100%!important
   .benefitsSection
      @include benefitLicenseSharingStyle(benefitsSectionContent,benefitsHeader,15rem)
 
