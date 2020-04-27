@@ -94,10 +94,8 @@ export const IndexPageTemplate = ({ locale }) => {
         <div className="container">
           <div className="row is-white">
             <div className="col-12 col-md-5">
-              <div className="row">
-                <div className="headerBadge d-none d-md-block">
-                  <img className="main-heading" src={mapset_banner} alt="" />
-                </div>
+              <div className="headerBadge d-none d-md-block">
+                <img className="main-heading" src={mapset_banner} alt="" />
               </div>
               <div className="headerDescription pt-5 pt-md-0">
                 <h2>
