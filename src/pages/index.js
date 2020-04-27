@@ -102,7 +102,7 @@ export const IndexPageTemplate = ({ locale }) => {
                   <FormattedMessage id="content.page header" />
                 </h2>
                 <img
-                  className="mapsetElement"
+                  className="mapsetElementLeft"
                   src={mapset_element}
                   alt=""
                 />
@@ -143,7 +143,7 @@ export const IndexPageTemplate = ({ locale }) => {
               <div className="cardViewContainer">
                 <img className="cardViewTriple" src={card_view_triple} alt="" />
                 <img
-                  className="mapsetElementLarge d-none d-md-inline"
+                  className="mapsetElementRight d-none d-md-inline"
                   src={mapset_element}
                   alt=""
                 />
