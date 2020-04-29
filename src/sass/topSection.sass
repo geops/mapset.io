@@ -12,7 +12,6 @@
     vertical-align: middle
   & .headerBadge
     position: relative
-    margin-left: 5rem
     & .brandName
       font-variant: all-small-caps
       position: relative
@@ -28,14 +27,17 @@
       width: 100%
       font-size: .8rem
   & .cardViewContainer
+    margin-top: -5rem
     z-index: 1
-    padding-top: 5vh
-    padding-bottom: 25vh
-    & .mapsetElementLarge
+    & .mapsetElementRight
       position: absolute
       opacity: .25
-      left: 0
-      height: 40%
+      top: 5rem
+      left: 20%
+      height: 20%
+    & .cardViewTriple
+      position: relative
+      width: 170%
   & .cardViewer
     pointer-events: none
     & img
@@ -46,7 +48,7 @@
   & .scrollNav
     display: flex
     margin-top: 1rem
-    justify-content: space-between
+    justify-content: flex-end
     & a
       font-weight: bold
   & .headerDescription
@@ -69,10 +71,10 @@
         background-color: $white
         color: $secondary
         transition: 0.3s ease
-    & .mapsetElementSmall
+    & .mapsetElementLeft
       position: absolute
       opacity: .25
       left: -15%
-      top: 7%
-      height: 25%
+      top: 10%
+      height: 30%
       z-index: -1!important
