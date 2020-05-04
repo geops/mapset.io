@@ -16,7 +16,7 @@ const Footer = class extends React.Component {
           <div className="expander" ><a className="footerlink" href="https://geops.ch/datenschutz">Privacy Policy</a> 
           </div>
           <div>
-            <span className="is-bolder title">Mapset </span>
+            <span className="is-bolder title">mapset </span>
             <span className="d-inline d-md-none">
               <br />
             </span>
