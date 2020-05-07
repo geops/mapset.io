@@ -404,7 +404,7 @@ export const IndexPageTemplate = ({ locale }) => {
                 <img className="twitter" src={twitter} alt="twitter" />
               </a>
             </p>
-            <a href="https://geops.sh/mapset" rel="noopener noreferrer">
+            <a href="http://eepurl.com/g0brdD" rel="noopener noreferrer">
               <button className="button">
                 <FormattedMessage id="generic.Newsletter" />
               </button>
