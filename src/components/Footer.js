@@ -1,19 +1,25 @@
-import React from "react";
-import { FormattedMessage, IntlProvider } from "react-intl";
-import evoq from "../../static/img/evoq_logo_weiss_RGB.png";
-import geOps from "../../static/img/geOps_logo_white.png";
+import React from 'react';
+import { FormattedMessage, IntlProvider } from 'react-intl';
+import evoq from '../../static/img/evoq_logo_weiss_RGB.png';
+import geOps from '../../static/img/geOps_logo_white.png';
 
 const Footer = class extends React.Component {
   state = {
     locale: this.props.locale,
-    messages: this.props.messages
+    messages: this.props.messages,
   };
 
   render() {
     return (
       <IntlProvider locale={this.state.locale} messages={this.state.messages}>
         <footer className="footer">
-          <div className="expander" ><a className="footerlink" href="https://geops.ch/datenschutz">Privacy Policy</a> 
+          <div className="expander">
+            <a
+              className="footerlink"
+              href="https://geops.de/node/182?language=en"
+            >
+              Privacy Policy
+            </a>
           </div>
           <div>
             <span className="is-bolder title">mapset </span>
@@ -21,7 +27,7 @@ const Footer = class extends React.Component {
               <br />
             </span>
             <span className="is-smaller">
-              <FormattedMessage id="generic.powered by" />{" "}
+              <FormattedMessage id="generic.powered by" />{' '}
             </span>
           </div>
           <div>
