@@ -377,12 +377,12 @@ export const IndexPageTemplate = ({ locale }) => {
               <FormattedMessage id="content.contact description" />
             </p>
             <p>
-              <span className="is-bolder">
-                <FormattedMessage id="generic.Ihr persönlicher Kontakt" />
+              <span class="is-bolder">
+                <span>
+                  <FormattedMessage id="generic.Ihr persönlicher Kontakt" />
+                </span>
               </span>
-              <br />
-              {contact.name}
-              <br />
+                <br />
               <span>
                 <a href={"mailto:" + contact.email}>{contact.email}</a>
               </span>
@@ -395,7 +395,7 @@ export const IndexPageTemplate = ({ locale }) => {
                 ""
               )}
             </p>
-            <p>
+            <span>
               <a
                 href="https://twitter.com/mapsetio"
                 rel="noopener noreferrer"
@@ -406,7 +406,8 @@ export const IndexPageTemplate = ({ locale }) => {
                 </span>
                 <img className="twitter" src={twitter} alt="twitter" />
               </a>
-            </p>
+            </span>
+            <br />
             <a
                     href="https://geops.sh/mapset"
                     rel="noopener noreferrer"
