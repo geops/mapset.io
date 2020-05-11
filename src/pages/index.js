@@ -318,7 +318,7 @@ export const IndexPageTemplate = ({ locale }) => {
                     <div className="priceCard">
                       <div className="priceCardHeader">
                         <div className="padder">
-                          <span className="is-bolder title">Mapset</span>
+                          <span className="is-bolder title">mapset</span>
                           <h2 className="is-bolder">
                             {price.tier}
                           </h2>
