@@ -145,7 +145,7 @@ export const IndexPageTemplate = ({ locale }) => {
               <div className="cardViewContainer">
                 <img className="cardViewTriple" src={card_view_triple} alt="" />
                 <img
-                  className="mapsetElementLarge d-none d-md-inline"
+                  className="mapsetElementLarge d-md-inline"
                   src={mapset_element}
                   alt=""
                 />
