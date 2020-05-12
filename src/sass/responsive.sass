@@ -18,9 +18,9 @@
 
 @media screen and (min-width: 1440px)
   .aboveBenefitsSection
-  margin-top: -12rem
-  position: relative
-  z-index: 10
+    margin-top: -12rem
+    position: relative
+    z-index: 10
   .topSection .headerDescription
     padding-bottom: 15rem
   .licenseSection
@@ -47,7 +47,7 @@
     margin-top: -2rem
     & .cardViewSingle
       right: -30%
-  
+
   .topSection
     & .cardViewContainer
       padding-bottom: 5rem
@@ -128,10 +128,18 @@
       top: 15%
       height: 25%
       z-index: -1
+    & .headerDescription
+      & .mapsetElementSmall
+        left: 10%
+        top: 50%
     & .cardViewTriple
-        width: 100%!important
+      width: 100%!important
+    & .mapsetElementLarge
+      top: -9.5% !important
+      left: 70%!important
+      height: 30%!important
   .benefitsSection
-     @include benefitLicenseSharingStyle(benefitsSectionContent,benefitsHeader,15rem)
+    @include benefitLicenseSharingStyle(benefitsSectionContent,benefitsHeader,15rem)
 
   .featureSection
     & h1
@@ -179,4 +187,4 @@
 
 @media screen and (max-width: 1024px)
   .is-white
-  padding-top: 60px
+    padding-top: 60px

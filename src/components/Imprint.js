@@ -16,7 +16,7 @@ function Imprint() {
             href={"mailto:info@geops.ch"}
             style={{ color: "rgb(110, 144, 166)" }}
           >
-            info@geops.io
+            info@geops.ch
           </a>
         </span>
       </p>

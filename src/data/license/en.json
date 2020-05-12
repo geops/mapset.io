@@ -19,7 +19,7 @@
     },
     {
       "heading": "§5 Copyright",
-      "text": "Whenever you use maps from mapset, the copyright information must be retained in the plan. The current copyright information can be read at the bottom of the plans in the editor. As of July 2019 the copyright information is e.g. '© OpenStreetMap, OpenMapTiles, SBB/CFF/FFS, mapset.ch '. If you use maps from mapset without any changes, the current copyright information is automatically displayed in the maps. If the licensee revises the plans, the representation of the copyright must always be guaranteed."
+      "text": "Whenever you use maps from mapset, the copyright information must be retained in the plan. The current copyright information can be read at the bottom of the plans in the editor. As of July 2019 the copyright information is e.g. '© OpenStreetMap, OpenMapTiles'. If you use maps from mapset without any changes, the current copyright information is automatically displayed in the maps. If the licensee revises the plans, the representation of the copyright must always be guaranteed."
     },
     {
       "heading": "§6 Termination",
@@ -31,7 +31,7 @@
     },
     {
       "heading": "§8 Ongoing development of the subject of the contract",
-      "text": "The map basis can be adjusted at any time. Updates of the map, especially the representation of changes in the landscape or infrastructure are usually displayed in the base maps within a short time. If an update is missing in the basic data used (currently OpenStreetMap and SBB), there is no obligation for the licensor to enter updates manually. <br>\nThe appearance of dynamically integrated maps ('styling') may change slightly at any time."
+      "text": "The map basis can be adjusted at any time. Updates of the map, especially the representation of changes in the landscape or infrastructure are usually displayed in the base maps within a short time. If an update is missing in the basic data used (currently OpenStreetMap), there is no obligation for the licensor to enter updates manually. <br>\nThe appearance of dynamically integrated maps ('styling') may change slightly at any time."
     },
     {
       "heading": "§9 Final provisions",

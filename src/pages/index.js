@@ -1,48 +1,48 @@
-import React, { useState } from "react";
-import { FormattedMessage, FormattedHTMLMessage } from "react-intl";
-import Layout from "../components/Layout";
-import { Remarkable } from "remarkable";
-import Scroller from "../components/Scroller";
-import EmailButton from "../components/EmailButton";
-import Imprint from "../components/Imprint";
-import userManager from "../utils/userManager";
+import React, { useState } from 'react';
+import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
+import Layout from '../components/Layout';
+import { Remarkable } from 'remarkable';
+import Scroller from '../components/Scroller';
+import EmailButton from '../components/EmailButton';
+import Imprint from '../components/Imprint';
+import userManager from '../utils/userManager';
 
-import TrackingDialog from '../components/TrackingDialog'
+import TrackingDialog from '../components/TrackingDialog';
 
-import layout_bg_1 from "../img/layoutBG_1.png";
-import layout_bg_2 from "../img/layoutBG_2.png";
-import layout_bg_3 from "../img/layoutBG_3.png";
+import layout_bg_1 from '../img/layoutBG_1.png';
+import layout_bg_2 from '../img/layoutBG_2.png';
+import layout_bg_3 from '../img/layoutBG_3.png';
 
-import mapset_banner from "../img/Mapset_Logo.svg";
-import twitter from "../img/social/Twitter_Logo_Blue.svg";
+import mapset_banner from '../img/Mapset_Logo.svg';
+import twitter from '../img/social/Twitter_Logo_Blue.svg';
 
-import mapset_element from "../img/Mapset_Element.svg";
-import card_view_triple from "../../static/img/screens_perspective.png";
-import card_view_single from "../../static/img/showcase.png";
+import mapset_element from '../img/Mapset_Element.svg';
+import card_view_triple from '../../static/img/screens_perspective.png';
+import card_view_single from '../../static/img/showcase.png';
 
 // import benefits and features data, for the language needed
-import fr_benefits from "../data/benefits/fr.json";
-import de_benefits from "../data/benefits/de.json";
-import en_benefits from "../data/benefits/en.json";
+import fr_benefits from '../data/benefits/fr.json';
+import de_benefits from '../data/benefits/de.json';
+import en_benefits from '../data/benefits/en.json';
 
-import fr_features from "../data/features/fr.json";
-import de_features from "../data/features/de.json";
-import en_features from "../data/features/en.json";
+import fr_features from '../data/features/fr.json';
+import de_features from '../data/features/de.json';
+import en_features from '../data/features/en.json';
 
-import en_prices from "../data/prices/en.json"
+import en_prices from '../data/prices/en.json';
 
 // import license information
-import license from "../data/license/en.json";
+import license from '../data/license/en.json';
 
 // import contact information
-import contact from "../data/contact.json";
+import contact from '../data/contact.json';
 
-const accordionHandler = function(id) {
+const accordionHandler = function (id) {
   let item = document.getElementsByName(id)[0];
-  if (item.classList.contains("is-expanded")) {
-    item.classList.remove("is-expanded");
+  if (item.classList.contains('is-expanded')) {
+    item.classList.remove('is-expanded');
   } else {
-    item.classList.add("is-expanded");
+    item.classList.add('is-expanded');
   }
 };
 
@@ -52,10 +52,10 @@ if (
 ) {
   userManager
     .signinSilent()
-    .then(user => {
-      window.localStorage.setItem("userNickname", user.profile.nickname);
+    .then((user) => {
+      window.localStorage.setItem('userNickname', user.profile.nickname);
     })
-    .catch(error => {
+    .catch((error) => {
       console.log(error);
     });
 }
@@ -64,12 +64,12 @@ export const IndexPageTemplate = ({ locale }) => {
   let features;
   let prices;
   switch (locale) {
-    case "fr": {
+    case 'fr': {
       benefits = fr_benefits.benefits;
       features = fr_features.features;
       break;
     }
-    case "de": {
+    case 'de': {
       benefits = de_benefits.benefits;
       features = de_features.features;
       break;
@@ -85,10 +85,10 @@ export const IndexPageTemplate = ({ locale }) => {
   let md = new Remarkable();
   md.set({
     html: true,
-    breaks: true
+    breaks: true,
   });
-   return (
-    <div style={{ position: "relative" }}>
+  return (
+    <div style={{ position: 'relative' }}>
       <TrackingDialog />
       <section className="topSection">
         <div className="container">
@@ -145,7 +145,7 @@ export const IndexPageTemplate = ({ locale }) => {
               <div className="cardViewContainer">
                 <img className="cardViewTriple" src={card_view_triple} alt="" />
                 <img
-                  className="mapsetElementLarge d-none d-md-inline"
+                  className="mapsetElementLarge d-md-inline"
                   src={mapset_element}
                   alt=""
                 />
@@ -158,7 +158,7 @@ export const IndexPageTemplate = ({ locale }) => {
             </div>
           </div>
         </div>
-      </section>{" "}
+      </section>{' '}
       {/* top section */}
       <Scroller />
       <section className="benefitsSection" id="benefits">
@@ -187,14 +187,14 @@ export const IndexPageTemplate = ({ locale }) => {
                   // TODO style benefit list to match design
                   <div
                     className="accordion-item"
-                    key={"benefit_" + id}
-                    name={"benefit_" + id}
+                    key={'benefit_' + id}
+                    name={'benefit_' + id}
                   >
-                    <button onClick={() => accordionHandler("benefit_" + id)}>
+                    <button onClick={() => accordionHandler('benefit_' + id)}>
                       <h5 className="item-head">
                         <span
                           dangerouslySetInnerHTML={{
-                            __html: md.render(benefit.heading)
+                            __html: md.render(benefit.heading),
                           }}
                         />
                         <svg
@@ -228,7 +228,7 @@ export const IndexPageTemplate = ({ locale }) => {
             </div>
           </div>
         </div>
-      </section>{" "}
+      </section>{' '}
       {/* benefits section */}
       <img className="backgroundImage greyBack" src={layout_bg_2} alt="" />
       <section className="featureSection" id="features">
@@ -246,14 +246,14 @@ export const IndexPageTemplate = ({ locale }) => {
                   // TODO style feature list to match design
                   <div
                     className="accordion-item"
-                    key={"feature_" + id}
-                    name={"feature_" + id}
+                    key={'feature_' + id}
+                    name={'feature_' + id}
                   >
-                    <button onClick={() => accordionHandler("feature_" + id)}>
+                    <button onClick={() => accordionHandler('feature_' + id)}>
                       <h5 className="item-head">
                         <span
                           dangerouslySetInnerHTML={{
-                            __html: md.render(feature.heading)
+                            __html: md.render(feature.heading),
                           }}
                         />
                         <svg
@@ -282,7 +282,7 @@ export const IndexPageTemplate = ({ locale }) => {
                     <div className="content">
                       <span
                         dangerouslySetInnerHTML={{
-                          __html: md.render(feature.text)
+                          __html: md.render(feature.text),
                         }}
                       />
                     </div>
@@ -291,7 +291,7 @@ export const IndexPageTemplate = ({ locale }) => {
             </div>
           </div>
         </div>
-      </section>{" "}
+      </section>{' '}
       {/* specification section */}
       <img
         className="backgroundImage abovePriceSection"
@@ -309,40 +309,39 @@ export const IndexPageTemplate = ({ locale }) => {
             </p>
 
             <div className="priceCardArea row">
-              { prices &&
+              {prices &&
                 prices.map((price, id) => (
-                  <div 
-                    key={"price_" + id}
-                    name={"price_" + id}
-                    className="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                  <div
+                    key={'price_' + id}
+                    name={'price_' + id}
+                    className="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3"
+                  >
                     <div className="priceCard">
                       <div className="priceCardHeader">
                         <div className="padder">
                           <span className="is-bolder title">mapset</span>
-                          <h2 className="is-bolder">
-                            {price.tier}
-                          </h2>
+                          <h2 className="is-bolder">{price.tier}</h2>
                         </div>
-                        <img className="backgroundImage" src={layout_bg_2} alt="" />
+                        <img
+                          className="backgroundImage"
+                          src={layout_bg_2}
+                          alt=""
+                        />
                       </div>
                       <div className="priceCardBody">
                         <div className="desc">
                           <span
                             dangerouslySetInnerHTML={{
-                              __html: md.render(price.text)
+                              __html: md.render(price.text),
                             }}
                           />
                         </div>
                         <h2 className="is-bolder">
-                         <span>
-                           {price.price}
-                         </span>
+                          <span>{price.price}</span>
                         </h2>
                         <span className="subtext">
                           <br />
-                          <span>
-                            {price.subtext}
-                         </span>
+                          <span>{price.subtext}</span>
                           <br />
                           plus € 490 one-time setup fee
                         </span>
@@ -350,7 +349,7 @@ export const IndexPageTemplate = ({ locale }) => {
                       </div>
                     </div>
                   </div>
-              ))}
+                ))}
             </div>
 
             <div className="conditions">
@@ -360,7 +359,7 @@ export const IndexPageTemplate = ({ locale }) => {
             </div>
           </div>
         </div>
-      </section>{" "}
+      </section>{' '}
       {/* price section */}
       <img
         className="backgroundImage belowPriceSection"
@@ -382,17 +381,17 @@ export const IndexPageTemplate = ({ locale }) => {
                   <FormattedMessage id="generic.Ihr persönlicher Kontakt" />
                 </span>
               </span>
-                <br />
+              <br />
               <span>
-                <a href={"mailto:" + contact.email}>{contact.email}</a>
+                <a href={'mailto:' + contact.email}>{contact.email}</a>
               </span>
               <br />
               {contact.phone ? (
                 <span>
-                  <a href={"tel:" + contact.phone}>{contact.phone}</a>
+                  <a href={'tel:' + contact.phone}>{contact.phone}</a>
                 </span>
               ) : (
-                ""
+                ''
               )}
             </p>
             <span>
@@ -408,17 +407,14 @@ export const IndexPageTemplate = ({ locale }) => {
               </a>
             </span>
             <br />
-            <a
-                    href="https://geops.sh/mapset"
-                    rel="noopener noreferrer"
-                  >
-                    <button className="button">
-                      <FormattedMessage id="generic.Newsletter" />
-                    </button>
-                  </a>
+            <a href="http://eepurl.com/g0brdD" rel="noopener noreferrer">
+              <button className="button">
+                <FormattedMessage id="generic.Newsletter" />
+              </button>
+            </a>
           </div>
         </div>
-      </section>{" "}
+      </section>{' '}
       {/* contact section */}
       <section className="licenseSection" id="license">
         <div className="licenseSectionContent">
@@ -432,14 +428,14 @@ export const IndexPageTemplate = ({ locale }) => {
                 licenseInformation.map((license, id) => (
                   <div
                     className="accordion-item"
-                    key={"license_" + id}
-                    name={"license_" + id}
+                    key={'license_' + id}
+                    name={'license_' + id}
                   >
-                    <button onClick={() => accordionHandler("license_" + id)}>
+                    <button onClick={() => accordionHandler('license_' + id)}>
                       <h5 className="item-head">
                         <span
                           dangerouslySetInnerHTML={{
-                            __html: md.render(license.heading)
+                            __html: md.render(license.heading),
                           }}
                         />
                         <svg
@@ -478,7 +474,7 @@ export const IndexPageTemplate = ({ locale }) => {
             </div>
           </div>
         </div>
-      </section>{" "}
+      </section>{' '}
       {/* license section */}
       <section className="impressumSection" id="impressum">
         <div className="container">
@@ -489,7 +485,7 @@ export const IndexPageTemplate = ({ locale }) => {
             <Imprint />
           </div>
         </div>
-      </section>{" "}
+      </section>{' '}
       {/* impressum section */}
       <div className="aboveFooter"></div>
     </div>
@@ -499,8 +495,8 @@ export const IndexPageTemplate = ({ locale }) => {
 const Index = ({ pageContext: { locale } }) => {
   const [user, setUser] = useState(null);
 
-  if (typeof window !== "undefined" && userManager) {
-    userManager.events.addUserLoaded(userr => {
+  if (typeof window !== 'undefined' && userManager) {
+    userManager.events.addUserLoaded((userr) => {
       setUser(userr);
     });
   }
