@@ -376,7 +376,7 @@ export const IndexPageTemplate = ({ locale }) => {
               <FormattedMessage id="content.contact description" />
             </p>
             <p>
-              <span class="is-bolder">
+              <span className="is-bolder">
                 <span>
                   <FormattedMessage id="generic.Ihr persönlicher Kontakt" />
                 </span>
