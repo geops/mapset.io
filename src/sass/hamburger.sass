@@ -29,7 +29,7 @@
     left: calc(50% - 1rem)
     position: absolute
     -webkit-transform-origin: center
-      transform-origin: center
+    transform-origin: center
     transition-duration: 86ms
     transition-property: background-color, opacity, -webkit-transform
     transition-property: background-color, opacity, transform
@@ -48,14 +48,14 @@
 
   & .navbar-burger.is-active span:nth-child(1)
     -webkit-transform: translateY(.65rem) rotate(45deg)
-      transform: translateY(.65rem) rotate(45deg)
+    transform: translateY(.65rem) rotate(45deg)
 
   & .navbar-burger.is-active span:nth-child(2)
     opacity: 0
 
   & .navbar-burger.is-active span:nth-child(3)
     -webkit-transform: translateY(-.65rem) rotate(-45deg)
-      transform: translateY(-.65rem) rotate(-45deg)
+    transform: translateY(-.65rem) rotate(-45deg)
 
   & .navbar-menu
     display: none
@@ -78,7 +78,7 @@
     left: 0
     width: 100vw
     height: 100vh
-    transition: top 1.5s
+    transition: top .5s ease
     & .mobile-menu-space
       height: 6rem
       pointer-events: none
@@ -101,6 +101,7 @@
       z-index: 1
       width: 100vw
       display: flex
+      padding-left: 1.2rem
       flex-direction: column
     & .icon
       height: 1rem

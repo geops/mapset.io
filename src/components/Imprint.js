@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function Imprint() {
   return (
@@ -13,25 +13,29 @@ function Imprint() {
         <span>
           mail&nbsp;
           <a
-            href={"mailto:info@geops.ch"}
-            style={{ color: "rgb(110, 144, 166)" }}
+            href={'mailto:info@geops.ch'}
+            style={{ color: 'rgb(110, 144, 166)' }}
           >
             info@geops.ch
           </a>
         </span>
       </p>
       <p>
-        <span>Managing Director, Chairman of the Board: Ulrich Müller-Ertle</span>
+        <span>
+          Managing Director, Chairman of the Board: Ulrich Müller-Ertle
+        </span>
       </p>
 
       <p>
         <span>Commercial register no. CHE-455.829.547 Basel-Landschaft</span>
-        <span>UID: CHE-455,829,547 VAT</span>
+        <span>UID: CHE-455.829.547 VAT</span>
       </p>
       <br />
       <p>
         <span>
-          Disclaimer: Despite careful control of the contents, we do not assume any liability for the contents of external links. The operators of the linked pages are solely responsible for the content of their pages.
+          Disclaimer: Despite careful control of the contents, we do not assume
+          any liability for the contents of external links. The operators of the
+          linked pages are solely responsible for the content of their pages.
         </span>
       </p>
 

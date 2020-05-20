@@ -111,7 +111,7 @@ export const IndexPageTemplate = ({ locale }) => {
                   <FormattedMessage id="generic.Lizenz" />
                 </a>
               </div>
-              <div className="headerDescription pt-5 pt-md-0">
+              <div className="headerDescription">
                 <h2>
                   <FormattedMessage id="content.page header" />
                 </h2>
