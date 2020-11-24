@@ -343,7 +343,7 @@ export const IndexPageTemplate = ({ locale }) => {
                           <br />
                           <span>{price.subtext}</span>
                           <br />
-                          plus € 490 one-time setup fee
+                          € 490 one-time setup fee
                         </span>
                         <EmailButton mode={price.tier} />
                       </div>
