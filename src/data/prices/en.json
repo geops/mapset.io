@@ -3,7 +3,7 @@
   "prices": [
     {
       "tier": "FREE",
-      "text": "For transport companies with\n**up till\n10\nstops***",
+      "text": "For transport companies with\n**up to\n10 stops***",
       "price": "free",
       "subtext": "0.- €/year"
     },
