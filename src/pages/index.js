@@ -407,7 +407,7 @@ export const IndexPageTemplate = ({ locale }) => {
               </a>
             </span>
             <br />
-            <a href="http://eepurl.com/g0brdD" rel="noopener noreferrer">
+            <a href="https://geops.sh/40003911245CB34786" rel="noopener noreferrer">
               <button className="button">
                 <FormattedMessage id="generic.Newsletter" />
               </button>
