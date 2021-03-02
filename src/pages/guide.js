@@ -4,20 +4,10 @@ import Layout from '../components/Layout';
 import { Remarkable } from 'remarkable';
 import userManager from '../utils/userManager';
 
-import layout_bg_1 from '../img/layoutBG_1.png';
 import layout_bg_2 from '../img/layoutBG_2.png';
 
 import fr_guide from '../data/guide/fr.json';
 import de_guide from '../data/guide/de.json';
-
-const accordionHandler = function (id) {
-  let item = document.getElementsByName(id)[0];
-  if (item.classList.contains('is-expanded')) {
-    item.classList.remove('is-expanded');
-  } else {
-    item.classList.add('is-expanded');
-  }
-};
 
 if (
   typeof window !== `undefined` &&
@@ -92,7 +82,6 @@ export const GuidePage = ({ locale }) => {
           </div>
         </div>
       </section>{' '}
-      {/* benefits section */}
       <img className="backgroundImage greyBack" src={layout_bg_2} alt="" />
     </div>
   );
