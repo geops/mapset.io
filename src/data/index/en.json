@@ -33,6 +33,7 @@
     "navbar": {
       "Login": "Login",
       "Logout": "Logged in as"
-    }
+    },
+    "Guide": "Guide"
   }
 }

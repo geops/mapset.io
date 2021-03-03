@@ -6,6 +6,39 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - label: "Guide Locales"
+    name: "guide"
+    folder: "src/data/guide"
+    extension: "json"
+    create: true
+    fields:
+      - {label: "Sprache", name: "title", widget: "string"}
+      - {
+        label: "Features",
+        name: "features",
+        widget: "list",
+        fields:
+          [
+          {
+            label: "Label", name: "label", widget: "string"
+          },
+          {
+            label: "Content",
+            name: "content",
+            widget: "list",
+            allow_add: true,
+            fields:
+              [
+              {
+                label: "Überschrift", name: "heading", widget: "markdown"
+              },
+              {
+                label: "Text", name: "text", widget: "markdown"
+              }
+              ]
+          }
+          ]
+      }
   - label: "Inhalt Locales"
     name: "inhalt"
     folder: "src/data/index"
@@ -37,6 +70,7 @@ collections:
           [
             {label: "powered by", name: "powered by", widget: "string"},
             {label: "Benefits", name: "Benefits", widget: "string"},
+            {label: "Guide", name: "Guide", widget: "string"},
             {label: "So funktioniert's", name: "So funktioniert's", widget: "string"},
             {label: "Preise", name: "Preise", widget: "string"},
             {label: "Kontakt", name: "Kontakt", widget: "string"},
