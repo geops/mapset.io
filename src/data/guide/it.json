@@ -1,84 +1,84 @@
 {
-    "title": "Italiano",
-    "features": [
-      {
-        "label": "**Login**",
-        "content": [
-          {
-            "heading": "**Restricted features**\n\ntest\n\n![](/img/evoq_logo_gelb_RGB.png)",
-            "text": "restricted features"
-          }
-        ]
-      },
-      {
-        "label": "**StationFinder**",
-        "content": []
-      },
-      {
-        "label": "**Layer Toggler**",
-        "content": []
-      },
-      {
-        "label": "**Editor**",
-        "content": [
-          {
-            "heading": "**Points**",
-            "text": "points"
-          },
-          {
-            "heading": "**Lines**",
-            "text": "lines"
-          },
-          {
-            "heading": "**Polygons**",
-            "text": "polygons"
-          },
-          {
-            "heading": "**Delete features**",
-            "text": "Delete features"
-          },
-          {
-            "heading": "**Undo/Redo**",
-            "text": "Undo/Redo"
-          },
-          {
-            "heading": "**Save**",
-            "text": "Save"
-          },
-          {
-            "heading": "**Zoom limits**",
-            "text": "Zoom limits"
-          },
-          {
-            "heading": "**Icon & label scaling**",
-            "text": "Icon & label scaling"
-          }
-        ]
-      },
-      {
-        "label": "**Plan naming**",
-        "content": []
-      },
-      {
-        "label": "**Plan sharing**",
-        "content": []
-      },
-      {
-        "label": "**new plan**",
-        "content": []
-      },
-      {
-        "label": "**Settings**",
-        "content": [
-          {
-            "heading": "**Language**",
-            "text": "language"
-          },
-          {
-            "heading": "**Corporate Design**",
-            "text": "corporate design"
-          }
-        ]
-      }
-    ]
-  }
+  "title": "Italiano",
+  "features": [
+    {
+      "label": "**Login**",
+      "content": [
+        {
+          "heading": "**Restricted features**\n\ntest",
+          "text": "restricted features"
+        }
+      ]
+    },
+    {
+      "label": "**StationFinder**",
+      "content": []
+    },
+    {
+      "label": "**Layer Toggler**",
+      "content": []
+    },
+    {
+      "label": "**Editor**",
+      "content": [
+        {
+          "heading": "**Points**",
+          "text": "points"
+        },
+        {
+          "heading": "**Lines**",
+          "text": "lines"
+        },
+        {
+          "heading": "**Polygons**",
+          "text": "polygons"
+        },
+        {
+          "heading": "**Delete features**",
+          "text": "Delete features"
+        },
+        {
+          "heading": "**Undo/Redo**",
+          "text": "Undo/Redo"
+        },
+        {
+          "heading": "**Save**",
+          "text": "Save"
+        },
+        {
+          "heading": "**Zoom limits**",
+          "text": "Zoom limits"
+        },
+        {
+          "heading": "**Icon & label scaling**",
+          "text": "Icon & label scaling"
+        }
+      ]
+    },
+    {
+      "label": "**Plan naming**",
+      "content": []
+    },
+    {
+      "label": "**Plan sharing**",
+      "content": []
+    },
+    {
+      "label": "**new plan**",
+      "content": []
+    },
+    {
+      "label": "**Settings**",
+      "content": [
+        {
+          "heading": "**Language**",
+          "text": "language"
+        },
+        {
+          "heading": "**Corporate Design**",
+          "text": "corporate design"
+        }
+      ]
+    }
+  ]
+}
