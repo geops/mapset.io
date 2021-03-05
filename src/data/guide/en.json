@@ -5,8 +5,8 @@
       "label": "**Login**",
       "content": [
         {
-          "heading": "**Restricted features**\n\ntest\n\n![](/img/evoq_logo_gelb_RGB.png)",
-          "text": "restricted features"
+          "heading": "**Restricted features**",
+          "text": "The user can login in order to access to some restricted features:\n\nDownload the plan as an image\n\nShare Plan via permalink\n\nSave named plan\n\nAccess to saved plans list"
         }
       ]
     },
