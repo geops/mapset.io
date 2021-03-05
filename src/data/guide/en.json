@@ -32,15 +32,15 @@
       "label": "**Editor**",
       "content": [
         {
-          "heading": "**Points**",
-          "text": "points"
+          "heading": "**Draw point**",
+          "text": "It is possible to draw icons on the map.\n\nA wide variety of icons is available, classified by category.\n\nThe rotation and the size of the icon can be set individually."
         },
         {
-          "heading": "**Lines**",
+          "heading": "**Draw line**",
           "text": "lines"
         },
         {
-          "heading": "**Polygons**",
+          "heading": "**Draw Polygon**",
           "text": "polygons"
         },
         {
