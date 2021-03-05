@@ -8,6 +8,8 @@ import layout_bg_2 from '../img/layoutBG_2.png';
 
 import fr_guide from '../data/guide/fr.json';
 import de_guide from '../data/guide/de.json';
+import en_guide from '../data/guide/en.json';
+import it_guide from '../data/guide/it.json';
 
 if (
   typeof window !== `undefined` &&
@@ -33,8 +35,12 @@ export const GuidePage = ({ locale }) => {
       guide = de_guide.features;
       break;
     }
-    default: {
+    case 'it': {
       guide = de_guide.features;
+      break;
+    }
+    default: {
+      guide = en_guide.features;
       break;
     }
   }
