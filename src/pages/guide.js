@@ -6,10 +6,8 @@ import userManager from '../utils/userManager';
 
 import layout_bg_2 from '../img/layoutBG_2.png';
 
-import fr_guide from '../data/guide/fr.json';
 import de_guide from '../data/guide/de.json';
 import en_guide from '../data/guide/en.json';
-import it_guide from '../data/guide/it.json';
 
 if (
   typeof window !== `undefined` &&
@@ -27,15 +25,7 @@ if (
 export const GuidePage = ({ locale }) => {
   let guide;
   switch (locale) {
-    case 'fr': {
-      guide = fr_guide.features;
-      break;
-    }
     case 'de': {
-      guide = de_guide.features;
-      break;
-    }
-    case 'it': {
       guide = de_guide.features;
       break;
     }
