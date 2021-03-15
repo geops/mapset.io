@@ -59,7 +59,6 @@ export const GuidePage = ({ locale }) => {
             svg: data[idx],
           });
         });
-        console.log('icons', icons);
         setIcons(icons);
       }).catch((error) => {
         console.log(error);
