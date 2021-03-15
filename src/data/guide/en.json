@@ -3,28 +3,31 @@
   "features": [
     {
       "label": "**Login**",
+      "mapsetIcon": "login",
       "content": [
         {
-          "heading": "**Restricted features**",
-          "text": "The user can login in order to access to some restricted features:\n\nDownload the plan as an image\n\nShare Plan via permalink\n\nSave named plan\n\nAccess to saved plans list"
+          "heading": "",
+          "text": "The user can login in order to access to some restricted features:\n\n* Download the plan as an image\n* Share Plan via permalink\n* Save named plan\n* Access to saved plans list\n\nIt is possible to sign in with one of your existing third party accounts (Google, SBB).\n\nAlternatively, a geOps account is required to sign in.\n\nIn case you do not have an account yet, you can directly create one via the Sign up link in the login page."
         }
       ]
     },
     {
       "label": "**StationFinder**",
+      "mapsetIcon": "search",
       "content": [
         {
-          "heading": "![]()",
-          "text": "The user can navigate to a specific station with the station finder:\n\n![stationFinder](/img/stationfinder.gif)"
+          "heading": "",
+          "text": "The station finder allows to navigate to a specific station by searching its name in the search bar.\\\nOn click on an item in the proposition list, the map change to view the newly selected station.\n\nThe country code and the station identifier are displayed under the station name, in the proposition list.\\\nExample for station 'Bern Hbf':\n\n```\nCH: 8507000\n```"
         }
       ]
     },
     {
-      "label": "**Layer Toggler**",
+      "label": "Layer Toggler",
+      "mapsetIcon": "layers",
       "content": [
         {
-          "text": "The layer toggler allows to display/hide specific layers to be able to customize the map.",
-          "heading": "Layer Toggler"
+          "text": "The 'Layers' dialog allows to customize the basemap, by toggling on/off some layers.",
+          "heading": ""
         }
       ]
     },
@@ -33,15 +36,23 @@
       "content": [
         {
           "heading": "**Draw point**",
+          "mapsetIcon": "point",
           "text": "It is possible to draw icons on the map.\n\nA wide variety of icons is available, classified by category.\n\nThe rotation and the size of the icon can be set individually."
         },
         {
           "heading": "**Draw line**",
-          "text": "lines"
+          "mapsetIcon": "line",
+          "text": "It is possible to draw lines on the map."
         },
         {
           "heading": "**Draw Polygon**",
+          "mapsetIcon": "polygon",
           "text": "polygons"
+        },
+        {
+          "heading": "**Draw labels**",
+          "mapsetIcon": "text",
+          "text": "It is possible to text labels on the map."
         },
         {
           "heading": "**Delete features**",
@@ -53,6 +64,7 @@
         },
         {
           "heading": "**Save**",
+          "mapsetIcon": "save",
           "text": "Save"
         },
         {
@@ -70,19 +82,41 @@
       "content": []
     },
     {
-      "label": "**Plan sharing**",
-      "content": []
+      "label": "**Download plan**",
+      "mapsetIcon": "download",
+      "content": [
+        {
+          "text": "You can download your plan as an image in PNG raster format. Download settings can be adjusted in a simple popup dialog. In this step you can also add a north arrow to your plan.\n\nIn the download settings you can choose whether to download the complete screen content as an image or define a cropped section of the map. To define the section, a red selection frame appears, which you can move and resize. At the bottom right of the frame, the size of the exported image is always displayed in pixels, making it easy to determine the exact size of the desired output file. The last section you have defined remains saved in the browser and will be restored the next time you start mapset. This feature allows you to create a series of maps with the same dimensions without having to adjust the frame each time.\n\nBy default the export of the image is done using the resolution of your monitor. This resolution is suitable to embed the image statically in web pages or to use it in a presentation, for example. If you want to print the image, the plan should be exported using high or very high resolution. This allows plans to be printed with high quality even in sizes up to B1.",
+          "heading": ""
+        }
+      ]
     },
     {
-      "label": "**new plan**",
-      "content": []
+      "label": "**Plan sharing**",
+      "mapsetIcon": "share",
+      "content": [
+        {
+          "heading": "Share plan",
+          "text": "share plan via links."
+        }
+      ]
+    },
+    {
+      "label": "**New plan**",
+      "mapsetIcon": "newplan",
+      "content": [
+        {
+          "text": "This action starts will open a new empty plan.\\\nYou must ensure that you saved your current plan or at least save the edit link to be able to work with it later on."
+        }
+      ]
     },
     {
       "label": "**Settings**",
+      "mapsetIcon": "settings",
       "content": [
         {
           "heading": "**Language**",
-          "text": "language"
+          "text": "It is possible to switch the application language.\\\nThere are four possibilities:\n\n* German\n* English\n* French\n* Italian"
         },
         {
           "heading": "**Corporate Design**",

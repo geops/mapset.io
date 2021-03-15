@@ -4,6 +4,7 @@ backend:
 
 media_folder: static/img
 public_folder: /img
+local_backend: true
 
 collections:
   - label: "Guide Locales"
@@ -23,6 +24,12 @@ collections:
             label: "Label", name: "label", widget: "string"
           },
           {
+            label: "Mapset Icon",
+            name: "mapsetIcon",
+            widget: "string",
+            required: false,
+          },
+          {
             label: "Content",
             name: "content",
             widget: "list",
@@ -30,7 +37,16 @@ collections:
             fields:
               [
               {
-                label: "Überschrift", name: "heading", widget: "markdown"
+                label: "Überschrift",
+                name: "heading",
+                widget: "markdown",
+                required: false,
+              },
+              {
+                label: "Mapset Icon",
+                name: "mapsetIcon",
+                widget: "string",
+                required: false,
               },
               {
                 label: "Text", name: "text", widget: "markdown"

@@ -3,35 +3,56 @@
   "features": [
     {
       "label": "**Login**",
+      "mapsetIcon": "login",
       "content": [
         {
-          "heading": "**Restricted features**\n\ntest",
-          "text": "restricted features"
+          "heading": "**Restricted features**",
+          "text": "The user can login in order to access to some restricted features:\n\nDownload the plan as an image\n\nShare Plan via permalink\n\nSave named plan\n\nAccess to saved plans list"
         }
       ]
     },
     {
       "label": "**StationFinder**",
-      "content": []
+      "mapsetIcon": "search",
+      "content": [
+        {
+          "heading": "![]()",
+          "text": "The user can navigate to a specific station with the station finder:\n\n![stationFinder](/img/stationfinder.gif)"
+        }
+      ]
     },
     {
       "label": "**Layer Toggler**",
-      "content": []
+      "mapsetIcon": "layers",
+      "content": [
+        {
+          "text": "The layer toggler allows to display/hide specific layers to be able to customize the map.",
+          "heading": "Layer Toggler"
+        }
+      ]
     },
     {
       "label": "**Editor**",
       "content": [
         {
-          "heading": "**Points**",
-          "text": "points"
+          "heading": "**Draw point**",
+          "mapsetIcon": "point",
+          "text": "It is possible to draw icons on the map.\n\nA wide variety of icons is available, classified by category.\n\nThe rotation and the size of the icon can be set individually."
         },
         {
-          "heading": "**Lines**",
-          "text": "lines"
+          "heading": "**Draw line**",
+          "mapsetIcon": "line",
+          "text": "It is possible to draw lines on the map."
         },
         {
-          "heading": "**Polygons**",
+          "heading": "**Draw Polygon**",
+          "mapsetIcon": "polygon",
           "text": "polygons"
+        },
+        {
+          "heading": "**Draw labels**",
+          "mapsetIcon": "text",
+          "text": "It is possible to text labels on the map."
         },
         {
           "heading": "**Delete features**",
@@ -43,6 +64,7 @@
         },
         {
           "heading": "**Save**",
+          "mapsetIcon": "save",
           "text": "Save"
         },
         {
@@ -61,14 +83,17 @@
     },
     {
       "label": "**Plan sharing**",
+      "mapsetIcon": "share",
       "content": []
     },
     {
-      "label": "**new plan**",
+      "label": "**New plan**",
+      "mapsetIcon": "newplan",
       "content": []
     },
     {
       "label": "**Settings**",
+      "mapsetIcon": "settings",
       "content": [
         {
           "heading": "**Language**",

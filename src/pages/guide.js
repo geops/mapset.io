@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FormattedMessage } from 'react-intl';
 import Layout from '../components/Layout';
 import { Remarkable } from 'remarkable';
 import userManager from '../utils/userManager';
-
-import layout_bg_2 from '../img/layoutBG_2.png';
 
 import de_guide from '../data/guide/de.json';
 import en_guide from '../data/guide/en.json';
@@ -23,6 +21,7 @@ if (
     });
 }
 export const GuidePage = ({ locale }) => {
+  const [icons, setIcons] = useState(null);
   let guide;
   switch (locale) {
     case 'de': {
@@ -34,6 +33,40 @@ export const GuidePage = ({ locale }) => {
       break;
     }
   }
+
+  useEffect(() => {
+    if (guide) {
+      const headingIconFeatures = guide.filter(f => f.mapsetIcon);
+      const contentIconFeatures = guide
+        .filter(f => f.content)
+        .map(f => f.content)
+        .flat()
+        .filter(f => f.mapsetIcon);
+      const iconFeatures = [...headingIconFeatures, ...contentIconFeatures];
+      Promise.all(
+        iconFeatures.map(f => fetch(
+          `https://editor.dev.mapset.io/static/icons/${f.mapsetIcon}.svg`
+          ))).then((responses) => {
+          // Get a JSON object from each of the responses
+          return Promise.all(responses.map((response) => {
+            return response.text()
+          }));
+      }).then((data) => {
+        let icons = [];
+        iconFeatures.forEach((g, idx) => {
+          icons.push({
+            key: g.mapsetIcon,
+            svg: data[idx],
+          });
+        });
+        console.log('icons', icons);
+        setIcons(icons);
+      }).catch((error) => {
+        console.log(error);
+      });
+    }
+  }, []);
+
   let md = new Remarkable();
   md.set({
     html: true,
@@ -48,37 +81,54 @@ export const GuidePage = ({ locale }) => {
               <FormattedMessage id="generic.Guide" />
             </h1>
             <div className="cardViewSpacer" />
-            <div className="accordion rightColumn">
+            <div>
               {guide &&
-                guide.map((topic, id) => (
-                  <p>
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: md.render(topic.label),
-                      }}
-                    />
-                    {topic.content.map((f, id) => (
-                      <div style={{ paddingLeft: '25px' }}>
+                guide.map((topic, id) => {
+                  return (
+                    <p>
+                      <h3 className="guideH3">
+                        {topic.mapsetIcon && icons ? (
+                          <div dangerouslySetInnerHTML={{
+                            __html: icons.find(f => f.key === topic.mapsetIcon)?.svg
+                          }}/>
+                        ) : null}
                         <span
                           dangerouslySetInnerHTML={{
-                            __html: md.render(f.heading),
+                            __html: md.render(topic.label),
                           }}
                         />
-                        <span
-                          dangerouslySetInnerHTML={{
-                            __html: md.render(f.text),
-                          }}
-                        />
-                      </div>
-                    ))
-                    }
-                  </p>
-                ))}
+                      </h3>
+                      {topic.content.map((f, id) => (
+                        <div className="guideContent">
+                          {f.heading ? (
+                            <h5 className="guideH5">
+                              {f.mapsetIcon ? (
+                                <div dangerouslySetInnerHTML={{
+                                  __html: icons.find(subFeature => subFeature.key === f.mapsetIcon)?.svg
+                                }}/>
+                              ) : null}
+                              <span
+                                dangerouslySetInnerHTML={{
+                                  __html: md.render(f.heading),
+                                }}
+                              />
+                            </h5>
+                          ): null}
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: md.render(f.text),
+                            }}
+                          />
+                        </div>
+                      ))
+                      }
+                    </p>
+                  );
+                })}
             </div>
           </div>
         </div>
-      </section>{' '}
-      <img className="backgroundImage greyBack" src={layout_bg_2} alt="" />
+      </section>
     </div>
   );
 };
