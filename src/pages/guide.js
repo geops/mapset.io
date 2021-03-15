@@ -21,7 +21,7 @@ if (
     });
 }
 export const GuidePage = ({ locale }) => {
-  const [icons, setIcons] = useState(null);
+  const [icons, setIcons] = useState([]);
   let guide;
   switch (locale) {
     case 'de': {
@@ -65,6 +65,7 @@ export const GuidePage = ({ locale }) => {
         console.log(error);
       });
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   let md = new Remarkable();
