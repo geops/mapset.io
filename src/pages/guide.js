@@ -20,6 +20,9 @@ if (
       console.log(error);
     });
 }
+
+const svgRegex = new RegExp('^<svg.*?\/>.*?<\/svg>$');
+
 export const GuidePage = ({ locale }) => {
   const [icons, setIcons] = useState([]);
   let guide;
@@ -44,20 +47,27 @@ export const GuidePage = ({ locale }) => {
         .filter(f => f.mapsetIcon);
       const iconFeatures = [...headingIconFeatures, ...contentIconFeatures];
       Promise.all(
-        iconFeatures.map(f => fetch(
+        iconFeatures.map((f) => fetch(
           `https://editor.dev.mapset.io/static/icons/${f.mapsetIcon}.svg`
           ))).then((responses) => {
           // Get a JSON object from each of the responses
           return Promise.all(responses.map((response) => {
             return response.text()
           }));
-      }).then((data) => {
+      }).then((dataArray) => {
         let icons = [];
         iconFeatures.forEach((g, idx) => {
-          icons.push({
-            key: g.mapsetIcon,
-            svg: data[idx],
-          });
+          if (svgRegex.test(dataArray[idx])) {
+            icons.push({
+              key: g.mapsetIcon,
+              svg: dataArray[idx],
+            });
+          } else {
+            icons.push({
+              key: null,
+              svg: null,
+            });
+          }
         });
         setIcons(icons);
       }).catch((error) => {
