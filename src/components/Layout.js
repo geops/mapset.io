@@ -57,7 +57,7 @@ JSON.flatten = function(data) {
   return result;
 };
 
-const Layout = ({ locale, children, user }) => {
+const Layout = ({ locale, children, user, navBarClassName = '' }) => {
   const { title, description } = useSiteMetadata();
   const localeMessages = JSON.flatten(languages[locale]);
   return (
@@ -73,7 +73,12 @@ const Layout = ({ locale, children, user }) => {
 
         <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
       </Helmet>
-      <Navbar locale={locale} messages={localeMessages} user={user} />
+      <Navbar
+        locale={locale}
+        messages={localeMessages}
+        user={user}
+        navBarClassName={navBarClassName}
+      />
       <IntlProvider locale={locale} messages={localeMessages}>
         {children}
       </IntlProvider>

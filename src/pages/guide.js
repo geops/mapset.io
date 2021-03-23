@@ -4,6 +4,10 @@ import Layout from '../components/Layout';
 import { Remarkable } from 'remarkable';
 import userManager from '../utils/userManager';
 
+import layout_bg_1 from '../img/layoutBG_1.png';
+import mapset_banner from "../img/Mapset_Logo.svg";
+import Warning from '../assets/warning.svg';
+
 import de_guide from '../data/guide/de.json';
 import en_guide from '../data/guide/en.json';
 
@@ -83,63 +87,72 @@ export const GuidePage = ({ locale }) => {
     breaks: true,
   });
   return (
-    <div style={{ position: 'relative' }}>
-      <section className="guideSection" id="guide">
-        <div className="guideContent">
-          <div className="container">
-            <h1 className="is-bolder guideHeader rightColumn">
+    <>
+      <img className="mapset-brand-img" src={mapset_banner} alt="" />
+      <div style={{ position: 'relative' }}>
+        <section className="guideSection" id="guide">
+          <div className="guideContent">
+            <div className="container">
+            <h1 className="is-bolder guideHeader">
               <FormattedMessage id="generic.Guide" />
             </h1>
-            <div className="cardViewSpacer" />
-            <div>
-              {guide &&
-                guide.map((topic, id) => {
-                  return (
-                    <p>
-                      <h3 className="guideH3">
-                        {topic.mapsetIcon && icons ? (
-                          <div dangerouslySetInnerHTML={{
-                            __html: icons.find(f => f.key === topic.mapsetIcon)?.svg
-                          }}/>
-                        ) : null}
-                        <span
-                          dangerouslySetInnerHTML={{
-                            __html: md.render(topic.label),
-                          }}
-                        />
-                      </h3>
-                      {topic.content.map((f, id) => (
-                        <div className="guideContent">
-                          {f.heading ? (
-                            <h5 className="guideH5">
-                              {f.mapsetIcon ? (
-                                <div dangerouslySetInnerHTML={{
-                                  __html: icons.find(subFeature => subFeature.key === f.mapsetIcon)?.svg
-                                }}/>
-                              ) : null}
-                              <span
-                                dangerouslySetInnerHTML={{
-                                  __html: md.render(f.heading),
-                                }}
-                              />
-                            </h5>
-                          ): null}
+              <div className="cardViewSpacer" />
+              <div>
+                {guide &&
+                  guide.map((topic, id) => {
+                    return (
+                      <p className="guideFeature">
+                        <h3 className="guideH3">
+                          {topic.mapsetIcon && icons ? (
+                            <div dangerouslySetInnerHTML={{
+                              __html: icons.find(f => f.key === topic.mapsetIcon)?.svg
+                            }}/>
+                          ) : null}
                           <span
                             dangerouslySetInnerHTML={{
-                              __html: md.render(f.text),
+                              __html: md.render(topic.label),
                             }}
                           />
-                        </div>
-                      ))
-                      }
-                    </p>
-                  );
-                })}
+                        </h3>
+                        {topic.content.map((f, id) => (
+                          <div className="guideContent">
+                            {f.heading ? (
+                              <h4 className="guideH4">
+                                {f.mapsetIcon ? (
+                                  <div dangerouslySetInnerHTML={{
+                                    __html: icons.find(subFeature => subFeature.key === f.mapsetIcon)?.svg
+                                  }}/>
+                                ) : null}
+                                <span
+                                  dangerouslySetInnerHTML={{
+                                    __html: md.render(f.heading),
+                                  }}
+                                />
+                              </h4>
+                            ): null}
+                            {f.loginRestricted ? (
+                              <p className="restrictedFeature">
+                                <Warning />
+                                <i>This feature requires the user to be logged in.</i>
+                              </p>
+                            ) : null}
+                            <span
+                              dangerouslySetInnerHTML={{
+                                __html: md.render(f.text),
+                              }}
+                            />
+                          </div>
+                        ))
+                        }
+                      </p>
+                    );
+                  })}
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
+    </>
   );
 };
 
@@ -153,7 +166,7 @@ const Index = ({ pageContext: { locale } }) => {
   }
 
   return (
-    <Layout locale={locale} user={user}>
+    <Layout locale={locale} user={user} navBarClassName="guide-nav-bar">
       <GuidePage locale={locale} />
     </Layout>
   );

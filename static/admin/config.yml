@@ -50,7 +50,13 @@ collections:
               },
               {
                 label: "Text", name: "text", widget: "markdown"
-              }
+              },
+              {
+                label: "Login restricted",
+                name: "loginRestricted",
+                widget: "boolean",
+                required: false,
+              },
               ]
           }
           ]
@@ -182,4 +188,3 @@ collections:
           }
           ]
       }
-          
