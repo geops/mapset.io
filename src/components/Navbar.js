@@ -61,10 +61,10 @@ class Navbar extends React.Component {
   };
 
   render() {
-    const { user } = this.props;
+    const { user, navBarClassName } = this.props;
     return (
       <IntlProvider locale={this.state.locale} messages={this.state.messages}>
-        <nav className="navbar" role="navigation" aria-label="main-navigation">
+        <nav className={`navbar ${navBarClassName}`} role="navigation" aria-label="main-navigation">
           <img
             className="backgroundImage d-none d-md-block"
             src={layout_bg_4}
