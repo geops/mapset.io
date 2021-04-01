@@ -52,7 +52,7 @@ export const GuidePage = ({ locale }) => {
       const iconFeatures = [...headingIconFeatures, ...contentIconFeatures];
       Promise.all(
         iconFeatures.map((f) => fetch(
-          `https://editor.dev.mapset.io/static/icons/${f.mapsetIcon}.svg`
+          `https://editor.mapset.io/static/icons/${f.mapsetIcon}.svg`
           ))).then((responses) => {
           // Get a JSON object from each of the responses
           return Promise.all(responses.map((response) => {
