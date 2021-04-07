@@ -2,7 +2,7 @@
   "title": "English",
   "features": [
     {
-      "label": "**Login**",
+      "label": "Login",
       "mapsetIcon": "login",
       "content": [
         {
@@ -12,7 +12,7 @@
       ]
     },
     {
-      "label": "**StationFinder**",
+      "label": "StationFinder",
       "mapsetIcon": "search",
       "content": [
         {
@@ -22,7 +22,7 @@
       ]
     },
     {
-      "label": "**Layer Toggler**",
+      "label": "Layer Toggler",
       "mapsetIcon": "layers",
       "content": [
         {
@@ -32,44 +32,44 @@
       ]
     },
     {
-      "label": "**Editor**",
+      "label": "Editor",
       "content": [
         {
-          "heading": "**Draw point**",
+          "heading": "Draw point",
           "mapsetIcon": "point",
           "text": "**Individual icons**\n\nA wide variety of icons is available to be drawn on the map, classified by category.\n\nThe rotation and the size of the icon can be set individually.\n\n**Positioning**\n\nA positioning tool exists in order to keep a consistent distance between items. When selecting and moving an icon next to another, some light grey cross will appear to visualize the 4 standard positions around an icon. The user can drop an icon easily on those positions to ensure a standard distance between the items.\n\n![](/img/positioning.png)\n\n**Grouping icons**\n\nBy holding the 'Ctrl' key, when an icon is selected, it is possible to select additional icons by clicking on them.\n\n![](/img/groupicons.png)\n\nA grouping dialog will then open, allowing the user to group various icons into a single one.\\\nIt is always possible to ungroup the icons if required, by selecting them and clicking on the 'Ungroup' button.\n\n![](/img/ungroupicons.png)"
         },
         {
-          "heading": "**Draw line**",
+          "heading": "Draw line",
           "mapsetIcon": "line",
           "text": "With this tool it is possible to draw lines on the map.\n\nEvery click creates a breakpoint, whilst ending the line is done by double-click.\n\nA 'Line settings' Dialog then opened, to allow customization of the line style:\n\n* Arrows can be displayed at line start/end\n\n  ![](/img/linestartend.png)\n* The line width can be either 'thin', 'normal' or 'thick'\n\n  ![](/img/linewidth.png)\n* Several line style can be selected\n\n  ![](/img/linetype.png)\n* Standard application colors are available\n\n  ![](/img/colorpicker.png)\n* Custom color can be set with the widget that opens on arrow click.\n\n  The color can be set by standard pointer selection, or via [Hex code](https://en.wikipedia.org/wiki/Web_colors#Hex_triplet) or [RGBA code](https://en.wikipedia.org/wiki/RGBA_color_model). \n\n  The opacity of the line is defined by the 'A' value, between 0 and 100.\n\n  ![](/img/customcolor.png)"
         },
         {
-          "heading": "**Draw Polygon**",
+          "heading": "Draw Polygon",
           "mapsetIcon": "polygon",
           "text": "With this tool it is possible to draw polygons on the map.\n\nEvery click creates a breakpoint, whilst ending the polygon is done by double-click.\n\nMany customization are available:\n\n* Custom outline color can be set with the widget that opens on arrow click.\n\n  The color can be set by standard pointer selection, or via [Hex code](https://en.wikipedia.org/wiki/Web_colors#Hex_triplet) or [RGBA code](https://en.wikipedia.org/wiki/RGBA_color_model). \n\n  The opacity of the line is defined by the 'A' value, between 0 and 100.\n\n  ![](/img/lineoutline.png)\n* The outline width can be either 'thin', 'normal' or 'thick'\n* Several outline style can be selected\n\n  ![](/img/outlinepoly.png)\n* The area color can be edited with the same color widget as for the outline\n* Some fill patterns are available in order to customize the polygon style\n* The transparency of the whole polygon can be set with this tool\n\n  ![](/img/polytransparency.png)"
         },
         {
-          "heading": "**Draw labels**",
+          "heading": "Draw labels",
           "mapsetIcon": "text",
           "text": "With this tool text labels can be drawn on the map.\n\nThe text label is entered in a text field and can be multi-lined if required.\n\nMany further customization are available:\n\n* By pressing on the 'B' button the font can be set to bold.\n\n  ![](/img/boldbutton.png)\n* the font size can be switched between: 'small', 'medium' & 'large'\n\n  ![](/img/textsize.png)\n* the text can be aligned on the left, the right or by default is centered.\n\n  ![](/img/textalign.png)\n* The text and the background color can be selected with the color widget.\n\n  The color can be set by standard pointer selection, or via [Hex code](https://en.wikipedia.org/wiki/Web_colors#Hex_triplet) or [RGBA code](https://en.wikipedia.org/wiki/RGBA_color_model).\n\n  The opacity of the line is defined by the 'A' value, between 0 and 100.\n* The text can be rotated via this input, either by moving the round indicator or by entering a rotation value in the input, between 0 and 360°\n\n  ![](/img/textrotation.png)"
         },
         {
-          "heading": "**Insert pictures**",
+          "heading": "Insert pictures",
           "text": "*This feature is dependant from user rights and Corporate design settings.*\n\nA various set of images are available.\n\nThey can be placed on the map as default icons.\n\nThe image can be rotated via this input, either by moving the round indicator or by entering a rotation value in the input, between 0 and 360°.\n\nThe same input allows the resizing of the picture between 50 and 4000%.\n\n![](/img/insertpictures.png)",
           "loginRestricted": true,
           "mapsetIcon": "add_image"
         },
         {
-          "heading": "**Delete features**",
+          "heading": "Delete features",
           "text": "There are two ways to remove a feature from the map:\n\n* Select a feature and click on the 'Delete feature' button in the dialog\n\n  ![](/img/deletebtn.png)\n* Click on the feature then press the '*Delete*' key, on the keyboard"
         },
         {
-          "heading": "**Undo/Redo**",
+          "heading": "Undo/Redo",
           "text": "Actions on the map are saved momentarily in an history for user to be able to undo/redo actions.\n\nTo go back in the actions history and undo an something, the user must press the key combination on the keyboard:\n\n'*Ctrl*' + '*z*'\n\nWhilst to go forward in the history:\n\n'*Ctrl*' + '*y*'"
         },
         {
-          "heading": "**Save**",
+          "heading": "Save",
           "mapsetIcon": "save",
           "text": "On every draw interaction or changes, the current state of the plan is automatically saved.\n\nWhenever a saving request is triggered a loading indicator appear in the sidebar\n\n![](/img/load.png)\n\nWhen is is succesful the loading indicator changes to this mark:\n\n![](/img/saved.png)",
           "loginRestricted": true
@@ -77,7 +77,7 @@
       ]
     },
     {
-      "label": "**Plan naming**",
+      "label": "Plan naming",
       "content": [
         {
           "text": "You can name a plan, so it is saved in the plan list.\n\nWhen a plan is not yet named, the text 'Untitled plan' appears in the header.\n\n![](/img/planname.png)\n\nClick on this text, in order to type a new plan name.",
@@ -87,7 +87,7 @@
       ]
     },
     {
-      "label": "**Download plan**",
+      "label": "Download plan",
       "mapsetIcon": "download",
       "content": [
         {
@@ -98,7 +98,7 @@
       ]
     },
     {
-      "label": "**Plan sharing**",
+      "label": "Plan sharing",
       "mapsetIcon": "share",
       "content": [
         {
@@ -109,7 +109,7 @@
       ]
     },
     {
-      "label": "**New plan**",
+      "label": "New plan",
       "mapsetIcon": "newplan",
       "content": [
         {
@@ -118,15 +118,15 @@
       ]
     },
     {
-      "label": "**Settings**",
+      "label": "Settings",
       "mapsetIcon": "settings",
       "content": [
         {
-          "heading": "**Language**",
+          "heading": "Language",
           "text": "There are four available languages:\n\n* German\n* English\n* French\n* Italian"
         },
         {
-          "heading": "**Corporate Design**",
+          "heading": "Corporate Design",
           "text": "Some Corporate design settings can be set via a drop-down menu.\n\n![](/img/corporatedesign.png)\n\nThe available Corporate designs depends on the user rights.\n\nEach corporate design enable some features, such as:\n\n* icon design \n* availability of custom icons\n* allow to insert pictures additionally to icons",
           "loginRestricted": true
         }
