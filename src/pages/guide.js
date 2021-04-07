@@ -98,6 +98,7 @@ export const GuidePage = ({ locale }) => {
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
+    handleScroll();
     if (guideContent) {
       const headingIconFeatures = guideContent.filter(f => f.mapsetIcon);
       const contentIconFeatures = guideContent
