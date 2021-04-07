@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useMemo, useEffect, useState } from 'react';
 import { FormattedMessage } from 'react-intl';
 import Layout from '../components/Layout';
 import { Remarkable } from 'remarkable';
 import userManager from '../utils/userManager';
 
-import layout_bg_1 from '../img/layoutBG_1.png';
 import mapset_banner from "../img/Mapset_Logo.svg";
 import Warning from '../assets/warning.svg';
 
@@ -27,24 +26,81 @@ if (
 
 const svgRegex = new RegExp('^<svg.*?\/>.*?<\/svg>$');
 
+const renderId = (label) => {
+  if (label) {
+    return label.toLowerCase().replace(/\s/g, '');
+  }
+  return null;
+};
+
+const renderScrollerId = (label) => {
+  if (label) {
+    return `scroller-${label.toLowerCase().replace(/\s/g, '')}`;
+  }
+  return null;
+};
+
 export const GuidePage = ({ locale }) => {
   const [icons, setIcons] = useState([]);
-  let guide;
+  let guideContent;
   switch (locale) {
     case 'de': {
-      guide = de_guide.features;
+      guideContent = de_guide.features;
       break;
     }
     default: {
-      guide = en_guide.features;
+      guideContent = en_guide.features;
       break;
     }
   }
 
+  const titles = useMemo(() => {
+    if (!guideContent) {
+      return [];
+    }
+    return guideContent.map((topic) => {
+      let additionalHeadings = [];
+      if (topic.content) {
+        additionalHeadings = topic.content
+          .map((subfeature) => subfeature.heading)
+          .filter((f) => f && f !== '');
+      }
+      return {
+        label: topic.label,
+        subFeatures: additionalHeadings
+      };
+    });
+  }, [guideContent]);
+
+  const handleScroll = () => {
+    const ids = titles.map((item) => [item.label, ...item.subFeatures]).flat();
+    const distances = ids.map((label) => {
+      const distance = document
+        .getElementById(renderId(label))
+        .getBoundingClientRect().top;
+      return distance > 0 ? Number.POSITIVE_INFINITY : distance;
+    });
+    const closestToZero = distances.reduce((a, b) => {
+      return Math.abs(b - 0) < Math.abs(a - 0) ? b : a;
+    });
+    const activeIdx = distances.findIndex((dist) => dist === closestToZero);
+
+    ids.forEach((id) => {
+      if (id === ids[activeIdx]) {
+        const activated = document.getElementById(renderScrollerId(id));
+        activated.classList.add('active');
+      } else {
+        const deactivated = document.getElementById(renderScrollerId(id));
+        deactivated.classList.remove('active');
+      }
+    });
+  };
+
   useEffect(() => {
-    if (guide) {
-      const headingIconFeatures = guide.filter(f => f.mapsetIcon);
-      const contentIconFeatures = guide
+    window.addEventListener('scroll', handleScroll);
+    if (guideContent) {
+      const headingIconFeatures = guideContent.filter(f => f.mapsetIcon);
+      const contentIconFeatures = guideContent
         .filter(f => f.content)
         .map(f => f.content)
         .flat()
@@ -78,6 +134,9 @@ export const GuidePage = ({ locale }) => {
         console.log(error);
       });
     }
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -89,33 +148,77 @@ export const GuidePage = ({ locale }) => {
   return (
     <>
       <img className="mapset-brand-img" src={mapset_banner} alt="" />
+      <div className="guide-scroller">
+        {titles.map((feature) => {
+          return (
+            <>
+              <a
+                href={`#${renderId(feature.label)}`}
+                id={renderScrollerId(feature.label)}
+              >
+                <svg
+                  className="listNavImage"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                >
+                  <path fill="none" d="M24 24H0V0h24v24z" />
+                  <circle fill="currentColor" cx="12" cy="12" r="8" />
+                </svg>
+                {feature.label}
+              </a>
+              {feature.subFeatures ? (
+                <div className="guide-scroller-sub">
+                  {feature.subFeatures.map((feat) => (
+                    <a
+                      href={`#${renderId(feat)}`}
+                      id={renderScrollerId(feat)}
+                    >
+                      <svg
+                        className="listNavImage"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                      >
+                        <path fill="none" d="M24 24H0V0h24v24z" />
+                        <circle fill="currentColor" cx="12" cy="12" r="8" />
+                      </svg>
+                      {feat}
+                    </a>
+                  ))}
+                </div>
+              ) : null}
+            </>
+          );
+        })}
+      </div>
       <div style={{ position: 'relative' }}>
         <section className="guideSection" id="guide">
-          <div className="guideContent">
+          <div className="guideContent rightColumn">
             <div className="container">
             <h1 className="is-bolder guideHeader">
               <FormattedMessage id="generic.Guide" />
             </h1>
               <div className="cardViewSpacer" />
               <div>
-                {guide &&
-                  guide.map((topic, id) => {
+                {guideContent &&
+                  guideContent.map((topic, id) => {
                     return (
-                      <p className="guideFeature">
+                      <div className="guideFeature" id={renderId(topic.label)}>
                         <h3 className="guideH3">
                           {topic.mapsetIcon && icons ? (
                             <div dangerouslySetInnerHTML={{
                               __html: icons.find(f => f.key === topic.mapsetIcon)?.svg
                             }}/>
                           ) : null}
-                          <span
+                          <b
                             dangerouslySetInnerHTML={{
                               __html: md.render(topic.label),
                             }}
                           />
                         </h3>
                         {topic.content.map((f, id) => (
-                          <div className="guideContent">
+                          <div className="guideContent" id={renderId(f.heading)}>
                             {f.heading ? (
                               <h4 className="guideH4">
                                 {f.mapsetIcon ? (
@@ -123,7 +226,7 @@ export const GuidePage = ({ locale }) => {
                                     __html: icons.find(subFeature => subFeature.key === f.mapsetIcon)?.svg
                                   }}/>
                                 ) : null}
-                                <span
+                                <b
                                   dangerouslySetInnerHTML={{
                                     __html: md.render(f.heading),
                                   }}
@@ -136,7 +239,7 @@ export const GuidePage = ({ locale }) => {
                                 <i>This feature requires the user to be logged in.</i>
                               </p>
                             ) : null}
-                            <span
+                            <span className="subContent"
                               dangerouslySetInnerHTML={{
                                 __html: md.render(f.text),
                               }}
@@ -144,7 +247,7 @@ export const GuidePage = ({ locale }) => {
                           </div>
                         ))
                         }
-                      </p>
+                      </div>
                     );
                   })}
               </div>
