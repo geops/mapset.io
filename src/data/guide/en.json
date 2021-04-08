@@ -84,7 +84,8 @@
           "heading": "",
           "loginRestricted": true
         }
-      ]
+      ],
+      "mapsetIcon": "save"
     },
     {
       "label": "Download plan",
