@@ -7,17 +7,17 @@
       "content": [
         {
           "heading": "",
-          "text": "The user can login in order to access to some restricted features:\n\n* Download the plan as an image\n* Share Plan via permalink\n* Save named plan\n* Access to saved plans list\n\nIt is possible to sign in with one of your existing third party accounts (Google, SBB).\n\nAlternatively, a geOps account is required to sign in.\n\nIn case you do not have an account yet, you can directly create one via the Sign up link in the login page."
+          "text": "The following features are restricted to registered users and can only be accessed when logged in:\n\n* Export plans as an image\n* Save and share plans via permalink\n* Save and access plans with custom names\n\nUsers can sign in with an existing third party accounts (Google, SBB) or geOps account.\n\nCreate a new geOps account via the Sign up link in the login page."
         }
       ]
     },
     {
-      "label": "StationFinder",
+      "label": "Stop Finder",
       "mapsetIcon": "search",
       "content": [
         {
           "heading": "",
-          "text": "The station finder allows to navigate to a specific station by searching its name in the search bar.\\\nOn click on an item in the proposition list, the map change to view the newly selected station.\n\nThe country code and the station identifier are displayed under the station name, in the proposition list.\\\nExample for station 'Bern Hbf':\n\n```\nCH: 8507000\n```"
+          "text": "The Stop Finder allows to navigate to a specific station or stop by searching its name in the search bar. Typing into the input field will automatically suggest matching stops. Station/Stop names are displayed in the list along with their unique ID and their country code.\n\nExample for station 'Bern Hbf':\n\n```\nCH: 8507000\n```\n\nWhen selecting an item from the list of suggested stops, the map will pan to the newly selected station."
         }
       ]
     },
@@ -26,7 +26,7 @@
       "mapsetIcon": "layers",
       "content": [
         {
-          "text": "The 'Layers' dialog allows to customize the basemap, by toggling on/off some layers.\n\nNB: Some layers are only visible on specific zoom levels, therefore toggling a checkbox may not have directly a visual incidence, depending on the zoom level you are currently on.",
+          "text": "The 'Layers' dialog allows to customize the basemap by toggling the visibility of specific layers.\n\nNB: Some layers are only visible on specific zoom levels, therefore toggling a layer may not have a direct visual impact. If this is the case, zoom in/out to see the toggle effect.",
           "heading": ""
         }
       ]
@@ -37,41 +37,41 @@
         {
           "heading": "Draw point",
           "mapsetIcon": "point",
-          "text": "**Individual icons**\n\nA wide variety of icons is available to be drawn on the map, classified by category.\n\nThe rotation and the size of the icon can be set individually.\n\n**Positioning**\n\nA positioning tool exists in order to keep a consistent distance between items. When selecting and moving an icon next to another, some light grey cross will appear to visualize the 4 standard positions around an icon. The user can drop an icon easily on those positions to ensure a standard distance between the items.\n\n![](/img/positioning.png)\n\n**Grouping icons**\n\nBy holding the 'Ctrl' key, when an icon is selected, it is possible to select additional icons by clicking on them.\n\n![](/img/groupicons.png)\n\nA grouping dialog will then open, allowing the user to group various icons into a single one.\\\nIt is always possible to ungroup the icons if required, by selecting them and clicking on the 'Ungroup' button.\n\n![](/img/ungroupicons.png)"
+          "text": "**Individual icons**\n\nThis tool is used to place icons on the map. \n\nIcons can be styled using the popup when an icon is selected. Several icon categories make a wide variety of icons available to be drawn on the map. The rotation and the size of the icon can be set individually.\n\n**Positioning**\n\nIcons can be aligned precisely with a snapping feature, ensuring a consistent distance between them. While dragging icons across the map for repositioning, four snapping indicators appear around neighboring icons, to which the dragged icon will snap to when moved closer.\n\n![](/img/positioning.png)\n\n**Grouping icons**\n\nMultiple icons can be selected by holding the \"Ctrl\" key while click selecting an icon.\n\n![](/img/groupicons.png)\n\nOnce multiple icons are selected a popup for grouping icons will open, allowing the user to group various icons into a single one. Icon grouping can subsequently be reversed by selecting the grouped icon and clicking on the 'Ungroup' button in the popup.\n\n![](/img/ungroupicons.png)"
         },
         {
           "heading": "Draw line",
           "mapsetIcon": "line",
-          "text": "With this tool it is possible to draw lines on the map.\n\nEvery click creates a breakpoint, whilst ending the line is done by double-click.\n\nWhen editing an existing line, it is possible to remove breakpoints by simply clicking on it.\n\nA 'Line settings' Dialog then opened, to allow customization of the line style:\n\n* Arrows can be displayed at line start/end\n\n  ![](/img/linestartend.png)\n* The line width can be either 'thin', 'normal' or 'thick'\n\n  ![](/img/linewidth.png)\n* Several line style can be selected\n\n  ![](/img/linetype.png)\n* Standard application colors are available\n\n  ![](/img/colorpicker.png)\n* Custom color can be set with the widget that opens on arrow click.\n\n  The color can be set by standard pointer selection, or via [Hex code](https://en.wikipedia.org/wiki/Web_colors#Hex_triplet) or [RGBA code](https://en.wikipedia.org/wiki/RGBA_color_model). \n\n  The opacity of the line is defined by the 'A' value, between 0 and 100.\n\n  ![](/img/customcolor.png)"
+          "text": "This tool is used to draw lines on the map.\n\nWhen the tool is active, every click creates a further node for the line. Double-clicking the map concludes the line and exits draw mode.\n\nWhen editing an existing line, existing nodes can be removed by simply clicking on them.\n\nThe line style can be customized using the popup when a line is selected:\n\n* Arrows can be added at line start/end\n\n  ![](/img/linestartend.png)\n* The line width and type can be set using predefined options\n\n  ![](/img/linewidth.png)\n\n  ![](/img/linetype.png)\n* Preset colors are available in the color selector\n\n  ![](/img/colorpicker.png)\n* Custom color can be applied using a color picker when clicking the caret button in the color selector.\n\n  The color can be set by standard pointer selection, via [Hex code](https://en.wikipedia.org/wiki/Web_colors#Hex_triplet) or via [RGBA code](https://en.wikipedia.org/wiki/RGBA_color_model). \n\n  The opacity of the line is defined by the 'A' value, between 0 and 100.\n\n  ![](/img/customcolor.png)"
         },
         {
           "heading": "Draw Polygon",
           "mapsetIcon": "polygon",
-          "text": "With this tool it is possible to draw polygons on the map.\n\nEvery click creates a breakpoint, whilst ending the polygon is done by double-click.\n\nWhen editing an existing polygon, it is possible to remove breakpoints by simply clicking on it.\n\nMany customization are available:\n\n* Custom outline color can be set with the widget that opens on arrow click.\n\n  The color can be set by standard pointer selection, or via [Hex code](https://en.wikipedia.org/wiki/Web_colors#Hex_triplet) or [RGBA code](https://en.wikipedia.org/wiki/RGBA_color_model). \n\n  The opacity of the line is defined by the 'A' value, between 0 and 100.\n\n  ![](/img/lineoutline.png)\n* The outline width can be either 'thin', 'normal' or 'thick'\n* Several outline style can be selected\n\n  ![](/img/outlinepoly.png)\n* The area color can be edited with the same color widget as for the outline\n* Some fill patterns are available in order to customize the polygon style\n* The transparency of the whole polygon can be set with this tool\n\n  ![](/img/polytransparency.png)"
+          "text": "This tool is used to draw polygons on the map.\n\nWhen the tool is active, every click creates a further node for the polygon perimeter. Double-clicking the map concludes the polygon and exits draw mode.\n\nWhen editing an existing polygon, existing nodes can be removed by simply clicking on them.\n\nThe polygon style can be customized using the popup when a polygon is selected:\n\n* Color selectors can be used to style the polygon outline and surface are\n* Preset colors are available in the color selectors\n* Custom color can be applied using a color picker when clicking the caret button in the color selector.\n\n  The color can be set by standard pointer selection, via [Hex code](https://en.wikipedia.org/wiki/Web_colors#Hex_triplet) or via [RGBA code](https://en.wikipedia.org/wiki/RGBA_color_model). \n\n  The opacity of the line is defined by the 'A' value, between 0 and 100.\n\n  ![](/img/lineoutline.png)\n* The outline width and type can be set using predefined options\n\n  ![](/img/outlinepoly.png)\n* A selection of fill patterns can be applied to the polygon surface area\n* The transparency of the polygon surface area can be set using a slider\n\n  ![](/img/polytransparency.png)"
         },
         {
-          "heading": "Draw labels",
+          "heading": "Draw label",
           "mapsetIcon": "text",
-          "text": "With this tool text labels can be drawn on the map.\n\nThe text label is entered in a text field and can be multi-lined if required.\n\nMany further customization are available:\n\n* By pressing on the 'B' button the font can be set to bold.\n\n  ![](/img/boldbutton.png)\n* the font size can be switched between: 'small', 'medium' & 'large'\n\n  ![](/img/textsize.png)\n* the text can be aligned on the left, the right or by default is centered.\n\n  ![](/img/textalign.png)\n* The text and the background color can be selected with the color widget.\n\n  The color can be set by standard pointer selection, or via [Hex code](https://en.wikipedia.org/wiki/Web_colors#Hex_triplet) or [RGBA code](https://en.wikipedia.org/wiki/RGBA_color_model).\n\n  The opacity of the line is defined by the 'A' value, between 0 and 100.\n* The text can be rotated via this input, either by moving the round indicator or by entering a rotation value in the input, between 0 and 360°\n\n  ![](/img/textrotation.png)"
+          "text": "This tool is used to place text labels on the map.\n\nThe text label is entered in a text field and can be multi-lined if required.\n\nThe label style can be customized using the popup when a label is selected:\n\n* By pressing on the 'B' button the font can be set to bold\n\n  ![](/img/boldbutton.png)\n* The font size can be set to one of the predefined options\n\n  ![](/img/textsize.png)\n* By default the text alignment is centered, but can be set to align left or right\n\n  ![](/img/textalign.png)\n* The text and background color can be set using the predefined colors in the color selector or using the custom color widget.\n\n  The color can be set by standard pointer selection, or via [Hex code](https://en.wikipedia.org/wiki/Web_colors#Hex_triplet) or [RGBA code](https://en.wikipedia.org/wiki/RGBA_color_model).\n\n  The opacity of the line is defined by the 'A' value, between 0 and 100.\n* The text can be rotated using a degree input, either by moving the slider thumb or by entering a rotation value in the number input field (0° - 360°)\n\n  ![](/img/textrotation.png)"
         },
         {
           "heading": "Insert pictures",
-          "text": "*This feature is dependant from user rights and Corporate design settings.*\n\nA various set of images are available.\n\nThey can be placed on the map as default icons.\n\nThe image can be rotated via this input, either by moving the round indicator or by entering a rotation value in the input, between 0 and 360°.\n\nThe same input allows the resizing of the picture between 50 and 4000%.\n\n![](/img/insertpictures.png)",
+          "text": "*This feature is accessible depending on user rights and Corporate Design settings.*\n\nThis tool is used to place images on the map. In contrast to icons, images scale with the map zoom level.\n\nA selection of images is available for placement on the map. \n\nThe image can be rotated using a degree input, either by moving the slider thumb or by entering a rotation value in the number input field (0° - 360°).\n\nThe same input allows the resizing of the picture between 50 and 4000%. 100% represents the approximated size of the corresponding real-world object.\n\n![](/img/insertpictures.png)",
           "loginRestricted": true,
           "mapsetIcon": "add_image"
         },
         {
           "heading": "Delete features",
-          "text": "There are two ways to remove a feature from the map:\n\n* Select a feature and click on the 'Delete feature' button in the dialog\n\n  ![](/img/deletebtn.png)\n* Click on the feature then press the '*Delete*' key, on the keyboard"
+          "text": "There are two ways to remove a feature from the map:\n\n* Select a feature and click the 'Delete feature' button in the popup\n\n  ![](/img/deletebtn.png)\n* Select a feature and press the '*Delete*' or \"Backspace\" key on the keyboard"
         },
         {
           "heading": "Undo/Redo",
-          "text": "Actions on the map are saved momentarily in an history for user to be able to undo/redo actions.\n\nTo go back in the actions history and undo an something, the user must press the key combination on the keyboard:\n\n'*Ctrl*' + '*z*'\n\nWhilst to go forward in the history:\n\n'*Ctrl*' + '*y*'"
+          "text": "Actions on the map are saved momentarily in the app history. The user can use it to undo/redo actions.\n\nChanges to the plan can be undone by pressing '*Ctrl*' + '*z*'.\n\nReversed changes can be reapplied by pressing '*Ctrl*' + '*y*' or '*Ctrl*' + 'S*hift'* + 'z'"
         },
         {
           "heading": "Save",
           "mapsetIcon": "save",
-          "text": "On every draw interaction or changes, the current state of the plan is automatically saved.\n\nWhenever a saving request is triggered a loading indicator appear in the sidebar\n\n![](/img/load.png)\n\nWhen is is succesful the loading indicator changes to this mark:\n\n![](/img/saved.png)",
+          "text": "In mapset every change to the current plan is automatically saved.\n\nA load spinner followed by a check mark in the sidebar indicates that the current plan has been saved.\n\n![](/img/load.png)\n\n![](/img/saved.png)",
           "loginRestricted": true
         }
       ]
@@ -80,7 +80,7 @@
       "label": "Plan naming",
       "content": [
         {
-          "text": "You can name a plan, so it is saved in the plan list.\n\nWhen a plan is not yet named, the text 'Untitled plan' appears in the header.\n\n![](/img/planname.png)\n\nClick on this text, in order to type a new plan name.",
+          "text": "mapset plans can be given a name for an easier reference and a better overview of all created plans.\n\nWhen a plan is not yet named, the text 'Untitled plan' appears in the header.\n\n![](/img/planname.png)\n\nClick on this text, in order to type a new plan name. A load spinner and confirmation message next to the text input field indicates the plan name has been saved.\n\nOnce a plan has a name it will be available in the plans list.\n\nNamed plans can be loaded into the map from the plans list by selecting a plan and clicking on the \"Open\" button.",
           "heading": "",
           "loginRestricted": true
         }
@@ -91,7 +91,7 @@
       "mapsetIcon": "download",
       "content": [
         {
-          "text": "You can download your plan as an image in PNG raster format. Download settings can be adjusted in a simple popup dialog. In this step you can also add a north arrow to your plan.\n\nIn the download settings you can choose whether to download the complete screen content as an image or define a cropped section of the map. To define the section, a red selection frame appears, which you can move and resize. At the bottom right of the frame, the size of the exported image is always displayed in pixels, making it easy to determine the exact size of the desired output file. The last section you have defined remains saved in the browser and will be restored the next time you start mapset. This feature allows you to create a series of maps with the same dimensions without having to adjust the frame each time.\n\nBy default the export of the image is done using the resolution of your monitor. This resolution is suitable to embed the image statically in web pages or to use it in a presentation, for example. If you want to print the image, the plan should be exported using high or very high resolution. This allows plans to be printed with high quality even in sizes up to B1.",
+          "text": "Plans can be exported as images in PNG raster format. Download settings can be adjusted in the dedicated popup dialog.\n\nExported images can be customized in the export settings:\n\n* A north arrow can be added to the bottom right corner of the exported image\n* By default the complete map view is exported. Alternatively, a cropped section of the map can be defined for the export. To define the section, a red selection frame appears, which can moved and resized. At the bottom right of the frame, the size of the exported image is always displayed in pixels, making it easy to determine the exact size of the desired output file. The last section you have defined remains saved in the browser and will be restored the next time you start mapset. This feature allows you to create a series of maps with the same dimensions without having to adjust the frame each time.\n* By default the export of the image is done using the resolution of your monitor. This resolution is suitable to embed the image statically in web pages or to use it in a presentation, for example. If you want to print the image, the plan should be exported using high or very high resolution. This allows plans to be printed with high quality even in sizes up to B1.",
           "heading": "",
           "loginRestricted": true
         }
@@ -103,7 +103,7 @@
       "content": [
         {
           "heading": "",
-          "text": "There are two type of links to share the plan:\n\n* **Link to share**\n\n  This link is aimed to share your plan with others or to embed the plan in other applications.\n* **Link to edit**\n\n  This link is aimed to be able to reopen the current plan and edit it later.",
+          "text": "There are two types of links to share the plan:\n\n* **Link to share**\n\n  The Share link is used to share your plan with others or to embed the plan in other applications. This link renders the map component with the plan, but doesn't load any mapset tools. \n* **Link to edit**\n\n  This Edit link is used to reopen and continue editing a previously created plan.",
           "loginRestricted": true
         }
       ]
@@ -113,7 +113,7 @@
       "mapsetIcon": "newplan",
       "content": [
         {
-          "text": "This action will open a new empty plan.\\\nYou must ensure that you saved your current plan or at least save the edit link to be able to work with it later on if needed."
+          "text": "This action will open a new, blank plan.\\\nYou must ensure that you saved your current plan by name or store the edit link to be able to load and continue editing it later."
         }
       ]
     },
@@ -127,7 +127,7 @@
         },
         {
           "heading": "Corporate Design",
-          "text": "Some Corporate design settings can be set via a drop-down menu.\n\n![](/img/corporatedesign.png)\n\nThe available Corporate designs depends on the user rights.\n\nEach corporate design enable some features, such as:\n\n* icon design \n* availability of custom icons\n* allow to insert pictures additionally to icons",
+          "text": "Predefined Corporate Designs can be set using a drop-down menu.\n\n![](/img/corporatedesign.png)\n\nAccess to specific Corporate Designs depends on the user's access rights.\n\nCorporate Designs customize certain mapset features, such as:\n\n* icon design\n* default colors in the color selectors\n* availability of custom icons\n* access to the *Draw image* tool",
           "loginRestricted": true
         }
       ]
