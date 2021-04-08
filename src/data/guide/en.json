@@ -26,7 +26,7 @@
       "mapsetIcon": "layers",
       "content": [
         {
-          "text": "The 'Layers' dialog allows to customize the basemap by toggling the visibility of specific layers.\n\nNB: Some layers are only visible on specific zoom levels, therefore toggling a layer may not have a direct visual impact. If this is the case, zoom in/out to see the toggle effect.",
+          "text": "The 'Layers' dialog allows to customize the basemap by toggling the visibility of specific layers.\n\nSome layers are only visible on specific zoom levels, therefore toggling a layer may not have a direct visual impact. If this is the case, zoom in/out to see the toggle effect.",
           "heading": ""
         }
       ]
