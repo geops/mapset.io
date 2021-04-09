@@ -33,7 +33,9 @@
     "navbar": {
       "Login": "Login",
       "Logout": "Logged in as"
-    },
+    }
+  },
+  "guide": {
     "Guide": "Userguide"
   }
 }

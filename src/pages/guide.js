@@ -1,6 +1,7 @@
 import React, { useMemo, useEffect, useState } from 'react';
 import { FormattedMessage } from 'react-intl';
 import Layout from '../components/Layout';
+import Contact from '../components/Contact';
 import { Remarkable } from 'remarkable';
 import userManager from '../utils/userManager';
 
@@ -197,10 +198,9 @@ export const GuidePage = ({ locale }) => {
         <section className="guideSection" id="guide">
           <div className="guideContent rightColumn">
             <div className="container">
-            <h1 className="is-bolder guideHeader">
-              <FormattedMessage id="generic.Guide" />
-            </h1>
-              <div className="cardViewSpacer" />
+              <h1 className="is-bolder guideHeader">
+                <FormattedMessage id="guide.Guide" />
+              </h1>
               <div>
                 {guideContent &&
                   guideContent.map((topic, id) => {
@@ -252,6 +252,12 @@ export const GuidePage = ({ locale }) => {
                     );
                   })}
               </div>
+              <h1 className="is-bolder guideHeader">
+                <FormattedMessage id="generic.Noch Fragen ?" />
+              </h1>
+              <section className="contactSection" id="contact">
+                <Contact />
+              </section>
             </div>
           </div>
         </section>
