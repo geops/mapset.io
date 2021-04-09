@@ -5,6 +5,7 @@ import { Remarkable } from 'remarkable';
 import Scroller from '../components/Scroller';
 import EmailButton from '../components/EmailButton';
 import Imprint from '../components/Imprint';
+import Contact from '../components/Contact';
 import userManager from '../utils/userManager';
 
 import TrackingDialog from '../components/TrackingDialog';
@@ -14,7 +15,6 @@ import layout_bg_2 from '../img/layoutBG_2.png';
 import layout_bg_3 from '../img/layoutBG_3.png';
 
 import mapset_banner from '../img/Mapset_Logo.svg';
-import twitter from '../img/social/Twitter_Logo_Blue.svg';
 
 import mapset_element from '../img/Mapset_Element.svg';
 import card_view_triple from '../../static/img/screens_perspective.png';
@@ -33,9 +33,6 @@ import en_prices from '../data/prices/en.json';
 
 // import license information
 import license from '../data/license/en.json';
-
-// import contact information
-import contact from '../data/contact.json';
 
 const accordionHandler = function (id) {
   let item = document.getElementsByName(id)[0];
@@ -372,46 +369,7 @@ export const IndexPageTemplate = ({ locale }) => {
             <h1 className="is-bolder contactHeader">
               <FormattedMessage id="generic.Noch Fragen ?" />
             </h1>
-            <p>
-              <FormattedMessage id="content.contact description" />
-            </p>
-            <p>
-              <span className="is-bolder">
-                <span>
-                  <FormattedMessage id="generic.Ihr persönlicher Kontakt" />
-                </span>
-              </span>
-              <br />
-              <span>
-                <a href={'mailto:' + contact.email}>{contact.email}</a>
-              </span>
-              <br />
-              {contact.phone ? (
-                <span>
-                  <a href={'tel:' + contact.phone}>{contact.phone}</a>
-                </span>
-              ) : (
-                ''
-              )}
-            </p>
-            <span>
-              <a
-                href="https://twitter.com/mapsetio"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <span className="is-bolder">
-                  <FormattedMessage id="generic.Besuchen Sie uns auf Twitter" />
-                </span>
-                <img className="twitter" src={twitter} alt="twitter" />
-              </a>
-            </span>
-            <br />
-            <a href="https://geops.sh/40003911245CB34786" rel="noopener noreferrer">
-              <button className="button">
-                <FormattedMessage id="generic.Newsletter" />
-              </button>
-            </a>
+            <Contact />
           </div>
         </div>
       </section>{' '}

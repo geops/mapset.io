@@ -33,7 +33,11 @@
     "navbar": {
       "Login": "Login",
       "Logout": "Logged in as"
-    },
-    "Guide": "Userguide"
+    }
+  },
+  "guide": {
+    "Guide": "Userguide",
+    "Links-io": "Other countries can use this link:",
+    "Links-ch": "A specific instance is available for Switzerland users:"
   }
 }
