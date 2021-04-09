@@ -201,6 +201,20 @@ export const GuidePage = ({ locale }) => {
               <h1 className="is-bolder guideHeader">
                 <FormattedMessage id="guide.Guide" />
               </h1>
+              <p>
+                <FormattedMessage id="guide.Links-ch" />
+                <br />
+                <a href="https://editor.mapset.ch/" target="_blank">
+                  mapset.ch
+                </a>
+              </p>
+              <p>
+                <FormattedMessage id="guide.Links-io" />
+                <br />
+                <a href="https://editor.mapset.io/" target="_blank">
+                  mapset.io
+                </a>
+              </p>
               <div>
                 {guideContent &&
                   guideContent.map((topic, id) => {

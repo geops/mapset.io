@@ -36,6 +36,8 @@
     }
   },
   "guide": {
-    "Guide": "Userguide"
+    "Guide": "Userguide",
+    "Links-io": "Other countries can use this link:",
+    "Links-ch": "A specific instance is available for Switzerland users:"
   }
 }

@@ -36,6 +36,8 @@
     }
   },
   "guide": {
-    "Guide": "Benutzerhandbuch"
+    "Guide": "Benutzerhandbuch",
+    "Links-io": "Andere Länder können diesen Link verwenden:",
+    "Links-ch": "Für Benutzer aus der Schweiz steht eine eigene Instanz zur Verfügung:"
   }
 }
