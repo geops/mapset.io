@@ -58,7 +58,8 @@
           "heading": "Insert picture",
           "text": "*This feature is accessible depending on user rights and Corporate Design settings.*\n\nThis tool is used to place images on the map. In contrast to icons, pictures scale with the map zoom level.\n\nA selection of pictures is available for placement on the map. \n\nThe image can be rotated using a degree input, either by moving the slider thumb or by entering a rotation value in the number input field (0° - 360°).\n\nThe same input allows the resizing of the picture between 50 and 4000%. 100% represents the approximated size of the corresponding real-world object.\n\n![](/img/insertpictures.png)",
           "loginRestricted": true,
-          "mapsetIcon": "add_image"
+          "mapsetIcon": "add_image",
+          "cdRestricted": true
         },
         {
           "heading": "Draw route",
