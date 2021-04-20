@@ -55,13 +55,13 @@
           "text": "This tool is used to place text labels on the map.\n\nThe text label is entered in a text field and can be multi-lined if required.\n\nThe label style can be customized using the popup when a label is selected:\n\n* By pressing on the 'B' button the font can be set to bold\n\n  ![](/img/boldbutton.png)\n* The font size can be set to one of the predefined options\n\n  ![](/img/textsize.png)\n* By default the text alignment is centered, but can be set to align left or right\n\n  ![](/img/textalign.png)\n* The text and background color can be set using the predefined colors in the color selector or using the custom color widget.\n\n  The color can be set by standard pointer selection, or via [Hex code](https://en.wikipedia.org/wiki/Web_colors#Hex_triplet) or [RGBA code](https://en.wikipedia.org/wiki/RGBA_color_model).\n\n  The opacity of the line is defined by the 'A' value, between 0 and 100.\n* The text can be rotated using a degree input, either by moving the slider thumb or by entering a rotation value in the number input field (0° - 360°)\n\n  ![](/img/textrotation.png)"
         },
         {
-          "heading": "Insert pictures",
+          "heading": "Insert picture",
           "text": "*This feature is accessible depending on user rights and Corporate Design settings.*\n\nThis tool is used to place images on the map. In contrast to icons, pictures scale with the map zoom level.\n\nA selection of pictures is available for placement on the map. \n\nThe image can be rotated using a degree input, either by moving the slider thumb or by entering a rotation value in the number input field (0° - 360°).\n\nThe same input allows the resizing of the picture between 50 and 4000%. 100% represents the approximated size of the corresponding real-world object.\n\n![](/img/insertpictures.png)",
           "loginRestricted": true,
           "mapsetIcon": "add_image"
         },
         {
-          "heading": "Delete features",
+          "heading": "Delete feature",
           "text": "There are two ways to remove a feature from the map:\n\n* Select a feature and click the 'Delete feature' button in the popup\n\n  ![](/img/deletebtn.png)\n* Select a feature and press the '*Delete*' or \"Backspace\" key on the keyboard"
         },
         {
