@@ -205,14 +205,14 @@ export const GuidePage = ({ locale }) => {
                 <FormattedMessage id="guide.Links-ch" />
                 <br />
                 <a href="https://editor.mapset.ch/" target="_blank">
-                  mapset.ch
+                  https://editor.mapset.ch/
                 </a>
               </p>
               <p>
                 <FormattedMessage id="guide.Links-io" />
                 <br />
                 <a href="https://editor.mapset.io/" target="_blank">
-                  mapset.io
+                  https://editor.mapset.io/
                 </a>
               </p>
               <div>
@@ -249,9 +249,15 @@ export const GuidePage = ({ locale }) => {
                               </h4>
                             ): null}
                             {f.loginRestricted ? (
-                              <p className="restrictedFeature">
+                              <p className="loginRestricted">
                                 <Warning />
                                 <i>This feature requires the user to be logged in.</i>
+                              </p>
+                            ) : null}
+                            {f.cdRestricted ? (
+                              <p className="cdRestricted">
+                                <Warning />
+                                <i>This feature is accessible depending on user rights and Corporate Design settings.</i>
                               </p>
                             ) : null}
                             <span className="subContent"
