@@ -75,7 +75,7 @@
       "content": [
         {
           "heading": "",
-          "text": "In mapset every change to the current plan is automatically saved.\n\nA load spinner followed by a check mark in the sidebar indicates that the current plan has been saved.\n\n![](/img/load.png)\n\n![](/img/saved.png)"
+          "text": "In mapset every change to the current plan is automatically saved.\n\nA load spinner followed by a check mark in the sidebar indicates that the current plan has been saved.\n\n![](/img/savingplan.png)\n\n![](/img/savedplan.png)"
         }
       ],
       "mapsetIcon": "save"
