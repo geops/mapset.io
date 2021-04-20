@@ -61,6 +61,11 @@
           "mapsetIcon": "add_image"
         },
         {
+          "heading": "Draw route",
+          "text": "This tool is used to automatically create routes between given points for a selection of means of transport.",
+          "loginRestricted": true
+        },
+        {
           "heading": "Delete feature",
           "text": "There are two ways to remove a feature from the map:\n\n* Select a feature and click the 'Delete feature' button in the popup\n\n  ![](/img/deletebtn.png)\n* Select a feature and press the '*Delete*' or \"Backspace\" key on the keyboard"
         },
