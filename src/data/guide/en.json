@@ -7,7 +7,7 @@
       "content": [
         {
           "heading": "",
-          "text": "Several features are restricted to registered users and can only be accessed when logged in, e.g.:\n\n* Export plans as an image\n* Save and share plans via permalink\n* Save and access plans with custom names\n* Routing Tool\n\nUsers can sign in with an existing third party accounts (Google, SBB) or geOps account.\n\nCreate a new geOps account via the Sign up link in the login page."
+          "text": "Several features are restricted to registered users and can only be accessed when logged in, e.g.:\n\n* Export plans as an image\n* Save and share plans via permalink\n* Save and access plans with custom names\n* Routing Tool\n\nSign in is possible with an existing third party accounts or an individual account in our system. After your company or your individual address has been registered you may create an account via the Sign up link in the login page.\n\nFor registration please contact us."
         }
       ]
     },
@@ -17,7 +17,7 @@
       "content": [
         {
           "heading": "",
-          "text": "The Stop Finder allows to navigate to a specific station or stop by searching its name in the search bar. Typing into the input field will automatically suggest matching stops. Station/Stop names are displayed in the list along with their unique ID and their country code.\n\nExample for station 'Bern Hbf':\n\n```\nCH: 8507000\n```\n\nWhen selecting an item from the list of suggested stops, the map will pan to the newly selected station."
+          "text": "The Stop Finder allows to navigate to a specific stop. Typing into the input field will automatically suggest matching stops.\n\nWhen selecting an item from the list of suggested stops, the map will pan to the newly selected station.\n\nBesides the name the search also understands the official abbreviations and numbers of stops. E.g. 'Bern' can be found by either typing 'Bern', 'BN' or '8507000'."
         }
       ]
     },
@@ -26,7 +26,7 @@
       "mapsetIcon": "layers",
       "content": [
         {
-          "text": "The 'Layers' dialog allows to customize the basemap by toggling the visibility of specific layers.\n\nSome layers are only visible on specific zoom levels, therefore toggling a layer may not have a direct visual impact. If this is the case, zoom in/out to see the toggle effect.",
+          "text": "The 'Layers' dialog allows to customize the basemap by toggling the visibility of specific layers.\n\nSome layers are only visible on specific zoom levels, therefore toggling a layer may not have immediate visual impact. If this is the case, zoom in/out to see the toggle effect.\n\nFurthermore, it is possible to filter for individual features in some layers. An example are the bus lines in Switzerland. When selecting this layer in the Layers-Popup you are presented with a filter to search for buses by the name of the operator (e.g. 'PAG') and the number of the line (e.g. 'B 111').",
           "heading": ""
         }
       ]
