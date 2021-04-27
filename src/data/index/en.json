@@ -36,8 +36,8 @@
     }
   },
   "guide": {
-    "Guide": "Userguide",
-    "Links-io": "Other users can use mapset on the international domain:",
-    "Links-ch": "Swiss users can access mapset on a Switzerland-specific domain:"
+    "Guide": "User guide",
+    "Links-io": "For other countires please use the international domain:",
+    "Links-ch": "For Switzerland please access mapset using the address:"
   }
 }
