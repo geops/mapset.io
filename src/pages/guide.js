@@ -1,5 +1,6 @@
 import React, { useMemo, useEffect, useState } from 'react';
 import { FormattedMessage } from 'react-intl';
+import isSvg from 'is-svg';
 import Layout from '../components/Layout';
 import Contact from '../components/Contact';
 import { Remarkable } from 'remarkable';
@@ -24,8 +25,6 @@ if (
       console.log(error);
     });
 }
-
-const svgRegex = new RegExp('^<svg.*?\/>.*?<\/svg>$');
 
 const renderId = (label) => {
   if (label) {
@@ -119,7 +118,7 @@ export const GuidePage = ({ locale }) => {
       }).then((dataArray) => {
         let icons = [];
         iconFeatures.forEach((g, idx) => {
-          if (svgRegex.test(dataArray[idx])) {
+          if (isSvg(dataArray[idx])) {
             icons.push({
               key: g.mapsetIcon,
               svg: dataArray[idx],
