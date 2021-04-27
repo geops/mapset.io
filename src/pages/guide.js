@@ -26,8 +26,6 @@ if (
     });
 }
 
-const svgRegex = new RegExp('^<svg.*?\/>.*?<\/svg>$');
-
 const renderId = (label) => {
   if (label) {
     return label.toLowerCase().replace(/\s/g, '');
