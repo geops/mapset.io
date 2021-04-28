@@ -6,7 +6,7 @@
       "mapsetIcon": "login",
       "content": [
         {
-          "heading": "",
+          "heading": "xx",
           "text": "The user can login in order to access to some restricted features:\n\n* Download the plan as an image\n* Share Plan via permalink\n* Save named plan\n* Access to saved plans list\n\nIt is possible to sign in with one of your existing third party accounts (Google, SBB).\n\nAlternatively, a geOps account is required to sign in.\n\nIn case you do not have an account yet, you can directly create one via the Sign up link in the login page."
         }
       ]
