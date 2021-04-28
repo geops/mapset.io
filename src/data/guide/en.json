@@ -17,7 +17,7 @@
       "content": [
         {
           "heading": "",
-          "text": "The Stop Finder allows to navigate to a specific stop. Typing into the input field will automatically suggest matching stops.\n\nWhen selecting an item from the list of suggested stops, the map will pan to the newly selected station.\n\nBesides the name the search also understands the official abbreviations and numbers of stops. E.g. 'Bern' can be found by either typing 'Bern', 'BN' or '8507000'."
+          "text": "The Stop Finder allows to navigate to a specific stop. Typing into the input field will automatically suggest matching stops.\n\nWhen selecting an item from the list of suggested stops, the map will pan to the newly selected station.\n\nIn addition to the name, the search also understands the official abbreviations and numbers of stops. E.g. 'Bern' can be found by either typing 'Bern', 'BN' or '8507000'."
         }
       ]
     },
