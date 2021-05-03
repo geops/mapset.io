@@ -50,10 +50,14 @@
     "build": "yarn run clean && gatsby build",
     "start": "yarn run clean && gatsby develop",
     "serve": "gatsby serve",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\""
+    "format": "prettier --write \"{gatsby-*.js,src/**/*.js}\""
   },
   "devDependencies": {
     "http-proxy-middleware": "^0.21.0",
     "prettier": "^2.0.0"
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "singleQuote": true
   }
 }

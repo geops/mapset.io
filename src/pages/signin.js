@@ -1,14 +1,14 @@
-import userManager from "../utils/userManager";
+import userManager from '../utils/userManager';
 
-const onSuccess = user => {
-  const params = (user && user.state && user.state.urlParams) || "";
-  const pathName = (user && user.state && user.state.urlPathname) || "/";
+const onSuccess = (user) => {
+  const params = (user && user.state && user.state.urlParams) || '';
+  const pathName = (user && user.state && user.state.urlPathname) || '/';
   if (window) window.location.href = `${pathName}${params}`;
 };
 
-const onError = error => {
-  console.error("Signin redirect:", error);
-  if (window) window.location.href = "/";
+const onError = (error) => {
+  console.error('Signin redirect:', error);
+  if (window) window.location.href = '/';
 };
 
 if (
@@ -18,16 +18,16 @@ if (
 ) {
   userManager
     .signinRedirectCallback()
-    .then(user => {
+    .then((user) => {
       onSuccess(user);
     })
-    .catch(error => {
+    .catch((error) => {
       onError(error);
     });
 }
 
 const Signin = ({ pageContext: { locale } }) => {
-  return "Redirecting ...";
+  return 'Redirecting ...';
 };
 
 export default Signin;

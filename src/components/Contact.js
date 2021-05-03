@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import twitter from '../img/social/Twitter_Logo_Blue.svg';
 import contact from '../data/contact.json';

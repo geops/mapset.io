@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-import { Error404SVG } from "@geops/geops-ui";
-import Layout from "../components/Layout";
-import userManager from "../utils/userManager";
+import React, { useState } from 'react';
+import { Error404SVG } from '@geops/geops-ui';
+import Layout from '../components/Layout';
+import userManager from '../utils/userManager';
 
-import "../sass/404.sass";
+import '../sass/404.sass';
 
 const NotFoundPage = ({ pageContext: { locale } }) => {
   const [user, setUser] = useState(null);
 
-  if (typeof window !== "undefined" && userManager) {
+  if (typeof window !== 'undefined' && userManager) {
     userManager.events.addUserLoaded((userr) => {
       setUser(userr);
     });
