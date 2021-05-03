@@ -29,6 +29,8 @@ import fr_features from '../data/features/fr.json';
 import de_features from '../data/features/de.json';
 import en_features from '../data/features/en.json';
 
+import fr_prices from '../data/prices/fr.json';
+import de_prices from '../data/prices/de.json';
 import en_prices from '../data/prices/en.json';
 
 // import license information
@@ -56,7 +58,7 @@ if (
       console.log(error);
     });
 }
-export const IndexPageTemplate = ({ locale }) => {
+export const IndexPageTemplate = ({ locale, region }) => {
   let benefits;
   let features;
   let prices;
@@ -64,11 +66,13 @@ export const IndexPageTemplate = ({ locale }) => {
     case 'fr': {
       benefits = fr_benefits.benefits;
       features = fr_features.features;
+      prices = fr_prices.prices;
       break;
     }
     case 'de': {
       benefits = de_benefits.benefits;
       features = de_features.features;
+      prices = de_prices.prices;
       break;
     }
     default: {
@@ -84,6 +88,9 @@ export const IndexPageTemplate = ({ locale }) => {
     html: true,
     breaks: true,
   });
+
+  console.log(region);
+
   return (
     <div style={{ position: 'relative' }}>
       <TrackingDialog />
@@ -338,9 +345,19 @@ export const IndexPageTemplate = ({ locale }) => {
                         </h2>
                         <span className="subtext">
                           <br />
-                          <span>{price.subtext}</span>
+                          <span>
+                            {region === 'ch'
+                              ? price.subtext.replace('€', 'CHF')
+                              : price.subtext}
+                          </span>
                           <br />
-                          € 490 one-time setup fee
+                          <FormattedHTMLMessage
+                            id={
+                              region === 'ch'
+                                ? 'content.setup fee ch'
+                                : 'content.setup fee eu'
+                            }
+                          />
                         </span>
                         <EmailButton mode={price.tier} />
                       </div>
@@ -450,7 +467,7 @@ export const IndexPageTemplate = ({ locale }) => {
   );
 };
 
-const Index = ({ pageContext: { locale } }) => {
+const Index = ({ pageContext: { locale, region } }) => {
   const [user, setUser] = useState(null);
 
   if (typeof window !== 'undefined' && userManager) {
@@ -461,7 +478,7 @@ const Index = ({ pageContext: { locale } }) => {
 
   return (
     <Layout locale={locale} user={user}>
-      <IndexPageTemplate locale={locale} />
+      <IndexPageTemplate locale={locale} region={region} />
     </Layout>
   );
 };
