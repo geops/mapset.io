@@ -1,5 +1,3 @@
-const _ = require('lodash');
-const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
 const { fmImagesToRelative } = require('gatsby-remark-relative-images');
 
@@ -20,7 +18,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 };
 
 const locales = require('./src/data/locales');
-const regions = ['ch', 'eu'];
+const region = process.env.REGION;
 
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage, deletePage } = actions;
@@ -28,18 +26,16 @@ exports.onCreatePage = ({ page, actions }) => {
   return new Promise((resolve) => {
     deletePage(page);
 
-    regions.forEach((region) => {
-      Object.keys(locales).forEach((key) => {
-        const locale = locales[key].locale;
-        const localizedPath = locales[key].default
-          ? page.path
-          : locales[key].path + page.path;
+    Object.keys(locales).forEach((key) => {
+      const locale = locales[key].locale;
+      const localizedPath = locales[key].default
+        ? page.path
+        : locales[key].path + page.path;
 
-        return createPage({
-          ...page,
-          path: `${region}/${localizedPath}`,
-          context: { locale, region },
-        });
+      return createPage({
+        ...page,
+        path: localizedPath,
+        context: { locale, region },
       });
     });
 

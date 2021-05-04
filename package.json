@@ -47,8 +47,10 @@
   "license": "MIT",
   "scripts": {
     "clean": "gatsby clean",
-    "build": "yarn run clean && gatsby build",
-    "start": "yarn run clean && gatsby develop",
+    "build:ch": "export REGION=ch && yarn run clean && gatsby build",
+    "start:ch": "export REGION=ch && yarn run clean && gatsby develop",
+    "build:eu": "export REGION=eu && yarn run clean && gatsby build",
+    "start:eu": "export REGION=eu && yarn run clean && gatsby develop",
     "serve": "gatsby serve",
     "format": "prettier --write \"{gatsby-*.js,src/**/*.js}\""
   },
