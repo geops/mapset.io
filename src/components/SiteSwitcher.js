@@ -1,12 +1,24 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 
-export default function SiteSwitcher({ locale, region }) {
-  let [isOpen, setIsOpen] = useState(() => {
-    const disabled = localStorage.getItem('mapset-site-switcher-disabled');
-    const r = navigator.languages.some((l) => l.includes('CH')) ? 'ch' : 'eu';
-    return region !== r && disabled !== 'true';
-  });
+function windowSupport(feature) {
+  return typeof window !== 'undefined' && window[feature];
+}
+
+export default function SiteSwitcher({ region }) {
+  let [isOpen, setIsOpen] = useState(false);
+  useEffect(() => {
+    const disabled = windowSupport('localStorage')
+      ? window.localStorage.getItem('mapset-site-switcher-disabled')
+      : 'true';
+    const userRegion =
+      windowSupport('navigator') &&
+      window.navigator.languages.some((lng) => lng.includes('CH'))
+        ? 'ch'
+        : 'eu';
+    setIsOpen(disabled !== 'true' && region !== userRegion);
+  }, []);
+
   const disableSwitcher = useCallback(() => {
     localStorage.setItem('mapset-site-switcher-disabled', 'true');
     setIsOpen(false);
