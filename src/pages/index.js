@@ -153,11 +153,6 @@ export const IndexPageTemplate = ({ locale, region }) => {
                   src={mapset_element}
                   alt=""
                 />
-                {/*<div className="cardViewer" >*/}
-                {/*<img className="l1" src={card_1} alt="" />*/}
-                {/*<img className="" src={card_1} alt="" />*/}
-                {/*<img className="l-1 base" src={card_1} alt="" />*/}
-                {/*</div>*/}
               </div>
             </div>
           </div>
@@ -175,9 +170,6 @@ export const IndexPageTemplate = ({ locale, region }) => {
           <div className="cardViewSection">
             <div className="cardViewContainer">
               <img className="cardViewSingle" src={card_view_single} alt="" />
-              {/*<div className="cardViewer">*/}
-              {/*    <img className="base" src={card_1} alt=""/>*/}
-              {/*</div>*/}
             </div>
           </div>
           <div className="container">
@@ -188,42 +180,18 @@ export const IndexPageTemplate = ({ locale, region }) => {
             <div className="accordion rightColumn">
               {benefits &&
                 benefits.map((benefit, id) => (
-                  // TODO style benefit list to match design
                   <div
-                    className="accordion-item"
+                    className="accordion-item is-expanded"
                     key={'benefit_' + id}
                     name={'benefit_' + id}
                   >
-                    <button onClick={() => accordionHandler('benefit_' + id)}>
-                      <h5 className="item-head">
-                        <span
-                          dangerouslySetInnerHTML={{
-                            __html: md.render(benefit.heading),
-                          }}
-                        />
-                        <svg
-                          className="accordionStateImage plus"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                            fill="currentColor"
-                          />
-                          <path d="M0 0h24v24H0z" fill="none" />
-                        </svg>
-                        <svg
-                          className="accordionStateImage minus"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M19 13H5v-2h14v2z" fill="currentColor" />
-                          <path d="M0 0h24v24H0z" fill="none" />
-                        </svg>
-                      </h5>
-                    </button>
+                    <h5 className="item-head">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: md.render(benefit.heading),
+                        }}
+                      />
+                    </h5>
                     <div className="content">
                       <p>{benefit.text}</p>
                     </div>
@@ -247,7 +215,6 @@ export const IndexPageTemplate = ({ locale, region }) => {
             <div className="accordion">
               {features &&
                 features.map((feature, id) => (
-                  // TODO style feature list to match design
                   <div
                     className="accordion-item"
                     key={'feature_' + id}
