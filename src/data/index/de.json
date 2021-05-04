@@ -34,12 +34,21 @@
     "Imprint": "Impressum",
     "navbar": {
       "Login": "Login",
-      "Logout": "Logged in as"
+      "Logout": "Logged in as",
+      "international": "International",
+      "swiss": "Schweiz"
     }
   },
   "guide": {
     "Guide": "Benutzerhandbuch",
     "Links-io": "Andere Länder können diesen Link verwenden:",
     "Links-ch": "Für Benutzer aus der Schweiz steht eine eigene Instanz zur Verfügung:"
+  },
+  "siteSwitcher": {
+    "title": "Sind Sie auf der richtigen Webseite?",
+    "goCH": "Aktuell sind Sie auf der internationalen Webseite.<br /> Wollen Sie auf die schweizer Webseite wechseln?",
+    "goEU": "Aktuell sind Sie auf der schweizer Webseite.<br /> Wollen Sie auf die internationale Webseite wechseln?",
+    "buttonEU": "Internationale Webseite",
+    "buttonCH": "Schweizer Webseite"
   }
 }

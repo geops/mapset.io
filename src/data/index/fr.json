@@ -32,7 +32,16 @@
     "Imprint": "Mentions légales",
     "navbar": {
       "Login": "Login",
-      "Logout": "Logged in as"
+      "Logout": "Logged in as",
+      "international": "International",
+      "swiss": "Swiss"
     }
+  },
+  "siteSwitcher": {
+    "title": "Are you sure you are on the right page?",
+    "goCH": "You are currently at the international website.<br /> Do you want to go to the swiss website?",
+    "goEU": "You are currently at the swiss website.<br /> Do you want to go to the international website?",
+    "buttonEU": "International Website",
+    "buttonCH": "Swiss Website"
   }
 }
