@@ -1,11 +1,11 @@
-import React from "react";
-import { FormattedMessage, IntlProvider } from "react-intl";
-import { Link } from "gatsby";
+import React from 'react';
+import { FormattedMessage, IntlProvider } from 'react-intl';
+import { Link } from 'gatsby';
 
-import layout_bg_4 from "../img/layoutBG_4.svg";
-import layout_bg_2 from "../img/layoutBG_2.png";
-import mapset_banner from "../img/Mapset_Logo.svg";
-import userManager from "../utils/userManager";
+import layout_bg_4 from '../img/layoutBG_4.svg';
+import layout_bg_2 from '../img/layoutBG_2.png';
+import mapset_banner from '../img/Mapset_Logo.svg';
+import userManager from '../utils/userManager';
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -14,17 +14,17 @@ class Navbar extends React.Component {
       locale: this.props.locale,
       messages: this.props.messages,
       active: false,
-      navBarActiveClass: ""
+      navBarActiveClass: '',
     };
   }
 
-  login = event => {
+  login = (event) => {
     event.preventDefault();
     userManager.signinRedirect();
   };
 
-  logout = event => {
-    localStorage.removeItem("userNickname");
+  logout = (event) => {
+    localStorage.removeItem('userNickname');
     userManager.signoutRedirect();
   };
 
@@ -32,28 +32,28 @@ class Navbar extends React.Component {
     // toggle the active boolean in the state
     this.setState(
       {
-        active: !this.state.active
+        active: !this.state.active,
       },
       // after state has been updated,
       () => {
         // set the class in state for the navbar accordingly
         if (this.state.active) {
           this.setState({
-            navBarActiveClass: "is-active"
+            navBarActiveClass: 'is-active',
           });
-          document.body.style.position = "fixed";
+          document.body.style.position = 'fixed';
         } else {
           this.setState({
-            navBarActiveClass: ""
+            navBarActiveClass: '',
           });
-          document.body.style.position = "static";
+          document.body.style.position = 'static';
         }
         if (callback) callback();
-      }
+      },
     );
   };
 
-  mobileMenuLinkClick = target => {
+  mobileMenuLinkClick = (target) => {
     this.toggleHamburger(() => {
       // toggle the active boolean in the state
       window.scrollTo(0, document.getElementById(target).offsetTop);
@@ -64,7 +64,11 @@ class Navbar extends React.Component {
     const { user, navBarClassName } = this.props;
     return (
       <IntlProvider locale={this.state.locale} messages={this.state.messages}>
-        <nav className={`navbar ${navBarClassName}`} role="navigation" aria-label="main-navigation">
+        <nav
+          className={`navbar ${navBarClassName}`}
+          role="navigation"
+          aria-label="main-navigation"
+        >
           <img
             className="backgroundImage d-none d-md-block"
             src={layout_bg_4}
@@ -102,35 +106,35 @@ class Navbar extends React.Component {
                 <a
                   className="navbar-item is-bolder"
                   href="#benefits"
-                  onClick={() => this.mobileMenuLinkClick("benefits")}
+                  onClick={() => this.mobileMenuLinkClick('benefits')}
                 >
                   <FormattedMessage id="generic.Benefits" />
                 </a>
                 <a
                   className="navbar-item is-bolder"
                   href="#features"
-                  onClick={() => this.mobileMenuLinkClick("features")}
+                  onClick={() => this.mobileMenuLinkClick('features')}
                 >
                   <FormattedMessage id="generic.So funktioniert's" />
                 </a>
                 <a
                   className="navbar-item is-bolder"
                   href="#price"
-                  onClick={() => this.mobileMenuLinkClick("price")}
+                  onClick={() => this.mobileMenuLinkClick('price')}
                 >
                   <FormattedMessage id="generic.Preise" />
                 </a>
                 <a
                   className="navbar-item is-bolder"
                   href="#contact"
-                  onClick={() => this.mobileMenuLinkClick("contact")}
+                  onClick={() => this.mobileMenuLinkClick('contact')}
                 >
                   <FormattedMessage id="generic.Kontakt" />
                 </a>
                 <a
                   className="navbar-item is-bolder"
                   href="#license"
-                  onClick={() => this.mobileMenuLinkClick("license")}
+                  onClick={() => this.mobileMenuLinkClick('license')}
                 >
                   <FormattedMessage id="generic.Lizenz" />
                 </a>
@@ -138,13 +142,13 @@ class Navbar extends React.Component {
                 {user ? (
                   <Link
                     className="navbar-item is-smaller"
-                    onClick={event => {
+                    onClick={(event) => {
                       this.logout(event);
                     }}
                     to="/"
                   >
                     <FormattedMessage id={`generic.navbar.Logout`} />
-                    {"\u00A0"}
+                    {'\u00A0'}
                     {user.profile.nickname}
                     <svg
                       className="icon is-small"
@@ -166,7 +170,7 @@ class Navbar extends React.Component {
                 ) : (
                   <Link
                     className="navbar-item is-smaller"
-                    onClick={event => {
+                    onClick={(event) => {
                       this.login(event);
                     }}
                     to="/"
@@ -203,13 +207,13 @@ class Navbar extends React.Component {
                 {user ? (
                   <Link
                     className="navbar-item is-smaller"
-                    onClick={event => {
+                    onClick={(event) => {
                       this.logout(event);
                     }}
                     to="/"
                   >
                     <FormattedMessage id={`generic.navbar.Logout`} />
-                    {"\u00A0"}
+                    {'\u00A0'}
                     {user.profile.nickname}
                     <svg
                       className="icon is-small"
@@ -231,7 +235,7 @@ class Navbar extends React.Component {
                 ) : (
                   <Link
                     className="navbar-item is-smaller"
-                    onClick={event => {
+                    onClick={(event) => {
                       this.login(event);
                     }}
                     to="/"

@@ -1,0 +1,29 @@
+{
+  "title": "English",
+  "prices": [
+    {
+      "tier": "FREE",
+      "text": "Für Transport- unternehmen mit\n**bis zu\n10 Haltestellen***",
+      "price": "gratis",
+      "subtext": "0.- €/Jahr"
+    },
+    {
+      "tier": "MINI",
+      "text": "Für Transport- unternehmen mit\n**11-200\nHaltestellen**\noder\n**1-10\nBahnhöfen***",
+      "price": "2'700.–",
+      "subtext": "2'700 €/Jahr"
+    },
+    {
+      "tier": "MIDI",
+      "text": "Für Transport- unternehmen mit\n**201-500\nHaltestellen**\noder\n**11-100\nBahnhöfen***",
+      "price": "5'900.–",
+      "subtext": "5'900 €/Jahr"
+    },
+    {
+      "tier": "MAXI",
+      "text": "Für Transport- unternehmen mit\n**mehr als 501\nHaltestellen**\noder\n**101-200\nBahnhöfen***",
+      "price": "8'400.–",
+      "subtext": "8'400 €/Jahr"
+    }
+  ]
+}

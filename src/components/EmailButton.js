@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import contact from "../data/contact.json";
+import React from 'react';
+import PropTypes from 'prop-types';
+import contact from '../data/contact.json';
 
 function EmailButton({ mode }) {
   return (
@@ -11,11 +11,11 @@ function EmailButton({ mode }) {
 }
 
 EmailButton.defaultProps = {
-  mode: ""
+  mode: '',
 };
 
 EmailButton.propTypes = {
-  mode: PropTypes.string
+  mode: PropTypes.string,
 };
 
 export default EmailButton;

@@ -1,4 +1,4 @@
-import userManager from "../utils/userManager";
+import userManager from '../utils/userManager';
 
 if (
   userManager &&
