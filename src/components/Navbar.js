@@ -6,6 +6,47 @@ import layout_bg_2 from '../img/layoutBG_2.png';
 import mapset_banner from '../img/Mapset_Logo.svg';
 import userManager from '../utils/userManager';
 
+function LoginIcon({ color = '#fff' }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="17"
+      height="17"
+      viewBox="0 0 17 17"
+    >
+      <g transform="translate(-1073.416 -336.954)">
+        <g transform="translate(1073.416 336.954)">
+          <rect width="17" height="17" fill="none" />
+        </g>
+        <line
+          x2="7.083"
+          transform="translate(1076.25 345.454)"
+          fill="none"
+          stroke={color}
+          stroke-miterlimit="10"
+          stroke-width="1.5"
+        />
+        <path
+          d="M1084.581,345.285l2.6,2.6-2.6,2.6"
+          transform="translate(-3.257 -2.43)"
+          fill="none"
+          stroke={color}
+          stroke-miterlimit="10"
+          stroke-width="1.5"
+        />
+        <path
+          d="M1081.416,342.789v-2.121a.709.709,0,0,1,.708-.708h7.084a.709.709,0,0,1,.708.708V352a.708.708,0,0,1-.708.708h-7.084a.708.708,0,0,1-.708-.708v-2.125"
+          transform="translate(-2.333 -0.876)"
+          fill="none"
+          stroke={color}
+          stroke-miterlimit="10"
+          stroke-width="1.5"
+        />
+      </g>
+    </svg>
+  );
+}
+
 class Navbar extends React.Component {
   constructor(props) {
     super(props);
@@ -169,23 +210,8 @@ class Navbar extends React.Component {
                     }}
                     to="/"
                   >
+                    <LoginIcon color="#3c89ca" />
                     <FormattedMessage id="generic.navbar.Login" />
-                    <svg
-                      className="icon is-small"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 144 144"
-                      fill="#3c89ca"
-                    >
-                      <polygon
-                        id="XMLID_4_"
-                        points="43.8,127.3 43.8,92.8 2.4,92.8 2.4,51.5 43.8,51.5 43.8,17 106.1,72.2 "
-                      />
-                      <path
-                        id="XMLID_8_"
-                        d="M140.6,38.9v66.6c0,12.1-9.8,21.8-21.8,21.8H85.2v-20.6h30.3c2.3,0,4.2-1.9,4.2-4.2V42c0-2.3-1.9-4.2-4.2-4.2H85.2V17h33.5C130.8,17,140.6,26.8,140.6,38.9z"
-                      />
-                    </svg>
                   </Link>
                 )}
               </div>
@@ -195,6 +221,30 @@ class Navbar extends React.Component {
                 alt=""
               />
               <div className="mobile-menu-bottom-space" />
+              <div className="mobile-menu-site-switcher">
+                {region === 'ch' ? (
+                  <a href="https://mapset.io">
+                    <FormattedMessage id={`generic.navbar.international`} />
+                  </a>
+                ) : (
+                  <FormattedMessage id={`generic.navbar.international`} />
+                )}
+                <div className="mobile-menu-site-switcher-divider" />
+                {region === 'ch' ? (
+                  <FormattedMessage id={`generic.navbar.swiss`} />
+                ) : (
+                  <a href="https://mapset.ch">
+                    <FormattedMessage id={`generic.navbar.swiss`} />
+                  </a>
+                )}
+              </div>
+              <div className="mobile-menu-language-switcher">
+                {locale === 'en' ? 'EN' : <a href="/">EN</a>}
+                <div className="mobile-menu-site-switcher-divider" />
+                {locale === 'fr' ? 'FR' : <a href="/fr">FR</a>}
+                <div className="mobile-menu-site-switcher-divider" />
+                {locale === 'de' ? 'DE' : <a href="/de">DE</a>}
+              </div>
             </div>
             <div id="navMenu" className="navbar-menu d-none d-md-block">
               <div className="navbar-end has-text-centered">
@@ -292,7 +342,7 @@ class Navbar extends React.Component {
                       stroke-width="1.5"
                     />
                   </svg>
-                  <div className="asdf">
+                  <div>
                     {region === 'ch' ? (
                       <a href="https://mapset.io">
                         <FormattedMessage id={`generic.navbar.international`} />
@@ -347,42 +397,7 @@ class Navbar extends React.Component {
                     }}
                     to="/"
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="17"
-                      height="17"
-                      viewBox="0 0 17 17"
-                    >
-                      <g transform="translate(-1073.416 -336.954)">
-                        <g transform="translate(1073.416 336.954)">
-                          <rect width="17" height="17" fill="none" />
-                        </g>
-                        <line
-                          x2="7.083"
-                          transform="translate(1076.25 345.454)"
-                          fill="none"
-                          stroke="#fff"
-                          stroke-miterlimit="10"
-                          stroke-width="1.5"
-                        />
-                        <path
-                          d="M1084.581,345.285l2.6,2.6-2.6,2.6"
-                          transform="translate(-3.257 -2.43)"
-                          fill="none"
-                          stroke="#fff"
-                          stroke-miterlimit="10"
-                          stroke-width="1.5"
-                        />
-                        <path
-                          d="M1081.416,342.789v-2.121a.709.709,0,0,1,.708-.708h7.084a.709.709,0,0,1,.708.708V352a.708.708,0,0,1-.708.708h-7.084a.708.708,0,0,1-.708-.708v-2.125"
-                          transform="translate(-2.333 -0.876)"
-                          fill="none"
-                          stroke="#fff"
-                          stroke-miterlimit="10"
-                          stroke-width="1.5"
-                        />
-                      </g>
-                    </svg>
+                    <LoginIcon />
 
                     <FormattedMessage id="generic.navbar.Login" />
                   </Link>
