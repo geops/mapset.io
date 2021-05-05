@@ -69,11 +69,11 @@
         },
         {
           "heading": "Delete feature",
-          "text": "There are two ways to remove a feature from the map:\n\n* Select a feature and click the 'Delete feature' button in the popup\n\n  ![](/img/deletebtn.png)\n* Select a feature and press the '*Delete*' or \"Backspace\" key on the keyboard"
+          "text": "There are two ways to remove a feature from the map:\n\n* Select a feature and click the *Delete feature* button in the popup\n\n  ![](/img/deletebtn.png)\n* Select a feature and press the *Delete* or *Backspace* key on the keyboard"
         },
         {
           "heading": "Undo/Redo",
-          "text": "Actions on the map are saved momentarily in the app history. The user can use it to undo/redo actions.\n\nChanges to the plan can be undone by pressing '*Ctrl*' + '*z*'.\n\nReversed changes can be reapplied by pressing '*Ctrl*' + '*y*' or '*Ctrl*' + 'S*hift'* + 'z'"
+          "text": "Actions on the map are saved momentarily in the app history. The user can use it to undo/redo actions.\n\nChanges to the plan can be undone by pressing *Ctrl* + *z*.\n\nReversed changes can be reapplied by pressing *Ctrl* + *y* or *Ctrl* + S*hift* + *z.*"
         }
       ],
       "mapsetIcon": ""
