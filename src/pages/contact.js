@@ -145,7 +145,13 @@ export const ContactPageTemplate = () => {
                 <h2>
                   <FormattedMessage id="contact.message" />
                 </h2>
-                <textarea name="message" className="contact-message" rows="5" />
+                <div className="contact-form-field">
+                  <textarea
+                    name="message"
+                    className="contact-message"
+                    rows="5"
+                  />
+                </div>
                 <div className="contact-form-field-checkbox">
                   <input
                     type="checkbox"
