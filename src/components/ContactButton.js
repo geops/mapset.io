@@ -2,20 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import contact from '../data/contact.json';
 
-function EmailButton({ mode }) {
+function ContactButton({ mode }) {
   return (
-    <a href={`mailto:${contact.email}?subject=${contact.emailSubject} ${mode}`}>
+    <a href={`/contact?mode=${mode}`}>
       <button className="btn blue-btn">request</button>
     </a>
   );
 }
 
-EmailButton.defaultProps = {
+ContactButton.defaultProps = {
   mode: '',
 };
 
-EmailButton.propTypes = {
+ContactButton.propTypes = {
   mode: PropTypes.string,
 };
 
-export default EmailButton;
+export default ContactButton;
