@@ -11,6 +11,21 @@
     "setup fee eu": "€ 490 one-time setup fee",
     "setup fee ch": "CHF 490.– one-time setup fee"
   },
+  "contact": {
+    "title": "Contact",
+    "content": "We look forward to hearing from you. ….",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "company": "Company",
+    "telephone": "Telefon",
+    "email": "E-Mail*",
+    "interest": "I am interested in",
+    "message": "Message",
+    "privacyPolicy": "Yes, I have read and accept the <a href='https://geops.de/node/182?language=en'>privacy policy</a>.",
+    "required": "* Required field",
+    "submit": "Send request",
+    "submitted": "Thank you for your interest..."
+  },
   "generic": {
     "Kontakt": "Contact",
     "Besuchen Sie uns auf Twitter": "Nous rendre visite sur Twitter",
