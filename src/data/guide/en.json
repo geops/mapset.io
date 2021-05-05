@@ -139,6 +139,10 @@
           "heading": "Corporate Design",
           "text": "Predefined Corporate Designs can be set using a drop-down menu.\n\n![](/img/corporatedesign.png)\n\nAccess to specific Corporate Designs depends on the user's access rights.\n\nCorporate Designs customize certain mapset features, such as:\n\n* icon design\n* default colors in the color selectors\n* availability of custom icons\n* access to the *[Draw image](#insertpicture)* tool",
           "loginRestricted": true
+        },
+        {
+          "heading": "Show tips at startup",
+          "text": "Defines if short hints for an optimal usage of mapset are displayed at startup.\n\nFrom the dialog for each hint you may deactivate the option to display further hints. In the settings dialog you may re-activate the display again."
         }
       ]
     }
