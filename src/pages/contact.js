@@ -42,7 +42,7 @@ export const ContactPageTemplate = () => {
           <h1 className="is-bolder guideHeader">
             <FormattedMessage id="contact.title" />
           </h1>
-          <form className="contact-form" ref={formRef}>
+          <form className="contact-form" ref={formRef} data-netlify="true">
             <input type="hidden" name="form-name" value="contact" />
             {submitted ? (
               <p>
