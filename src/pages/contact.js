@@ -42,14 +42,27 @@ export const ContactPageTemplate = () => {
           <h1 className="is-bolder guideHeader">
             <FormattedMessage id="contact.title" />
           </h1>
-          <form className="contact-form" ref={formRef} data-netlify="true">
-            <input type="hidden" name="form-name" value="contact" />
+          <form
+            className="contact-form"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            method="post"
+            name="contact"
+            onSubmit={handleSubmit}
+            ref={formRef}
+          >
             {submitted ? (
               <p>
                 <FormattedMessage id="contact.submitted" />
               </p>
             ) : (
               <>
+                <input type="hidden" name="form-name" value="contact" />
+                <div hidden>
+                  <label>
+                    Don’t fill this out: <input name="bot-field" />
+                  </label>
+                </div>
                 <p>
                   <FormattedMessage id="contact.content" />
                 </p>
@@ -147,11 +160,7 @@ export const ContactPageTemplate = () => {
                   <FormattedMessage id="contact.required" />
                 </p>
                 <div className="contactSection">
-                  <button
-                    className="button"
-                    type="submit"
-                    onClick={handleSubmit}
-                  >
+                  <button className="button" type="submit">
                     <FormattedMessage id="contact.submit" />
                   </button>
                 </div>
