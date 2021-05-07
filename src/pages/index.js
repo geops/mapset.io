@@ -6,9 +6,9 @@ import Scroller from '../components/Scroller';
 import EmailButton from '../components/EmailButton';
 import Imprint from '../components/Imprint';
 import Contact from '../components/Contact';
-import userManager from '../utils/userManager';
-
+import SiteSwitcher from '../components/SiteSwitcher';
 import TrackingDialog from '../components/TrackingDialog';
+import userManager from '../utils/userManager';
 
 import layout_bg_1 from '../img/layoutBG_1.png';
 import layout_bg_2 from '../img/layoutBG_2.png';
@@ -89,10 +89,9 @@ export const IndexPageTemplate = ({ locale, region }) => {
     breaks: true,
   });
 
-  console.log(region);
-
   return (
     <div style={{ position: 'relative' }}>
+      <SiteSwitcher region={region} />
       <TrackingDialog />
       <section className="topSection">
         <div className="container">
@@ -444,7 +443,7 @@ const Index = ({ pageContext: { locale, region } }) => {
   }
 
   return (
-    <Layout locale={locale} user={user}>
+    <Layout locale={locale} region={region} user={user}>
       <IndexPageTemplate locale={locale} region={region} />
     </Layout>
   );

@@ -2,11 +2,27 @@
   border: none
   display: flex
   padding: 0
-  min-height: 3.25rem
   position: relative
   z-index: 30
   color: $white
   margin-bottom: -1px
+  background: #1974bf
+  & .mobile-menu-language-switcher
+    right: 2.2rem
+  & .mobile-menu-site-switcher
+    left: 2.2rem
+  & .mobile-menu-language-switcher,
+  & .mobile-menu-site-switcher
+    color: $primary
+    position: absolute
+    bottom: 1rem
+    display: flex
+    a
+      opacity: 0.5
+    & .mobile-menu-site-switcher-divider
+      background-color: $primary
+      width: 2px
+      margin: 4px 6px
   & .backgroundImage
     position: absolute
     width: 85%
@@ -17,11 +33,20 @@
   & .navbar-item
     font-weight: $boldish
     color: $white
-    display: inline
+    display: flex
+    align-items: center
     line-height: 1.5
     padding: 0.5rem 0.75rem
     position: relative
     vertical-align: middle
+    & svg,
+    & div
+      margin-right: 1rem
+    a
+      opacity: 0.5
+    a:hover
+      opacity: 1
+      color: white
   & .navbar-end
     justify-content: flex-end
     margin-left: auto
