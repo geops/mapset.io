@@ -85,7 +85,8 @@ collections:
             {label: "page header description", name: "page header description", widget: "string"},
             {label: "specification description", name: "specification description", widget: "string"},
             {label: "price description", name: "price description", widget: "string"},
-            {label: "conditions text", name: "conditions text", widget: "markdown"},
+            {label: "conditions text eu", name: "conditions text", widget: "markdown"},
+            {label: "conditions text ch", name: "conditions text", widget: "markdown"},
             {label: "included in price", name: "included in price", widget: "markdown"},
             {label: "contact description", name: "contact description", widget: "string"},
           ]

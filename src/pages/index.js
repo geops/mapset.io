@@ -128,7 +128,10 @@ export const IndexPageTemplate = ({ locale, region }) => {
                 </p>
                 <div className="alignContainer row">
                   <a
-                    href="https://editor.mapset.io"
+                    href={region === 'ch'
+                                ? "https://editor.mapset.ch"
+                                : "https://editor.mapset.io"
+                            } 
                     target="editor-mapset"
                     rel="noopener noreferrer"
                   >
@@ -334,7 +337,11 @@ export const IndexPageTemplate = ({ locale, region }) => {
 
             <div className="conditions">
               <span>
-                <FormattedHTMLMessage id="content.conditions text" />
+                <FormattedHTMLMessage id={
+                              region === 'ch'
+                                ? 'content.conditions text ch'
+                                : 'content.conditions text eu'
+                            } />
               </span>
             </div>
           </div>
