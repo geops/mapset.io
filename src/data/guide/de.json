@@ -58,15 +58,16 @@
           "heading": "Bild einfügen",
           "text": "Mit diesem Tool können Sie Bilder auf der Karte platzieren. Im Gegensatz zu Symbolen werden Bilder mit der Zoomstufe der Karte skaliert.\n\nEine Auswahl von Bildern kann auf der Karte platziert werden.\n\nDas Bild kann mithilfe einer Grad-Eingabe gedreht werden, entweder durch Bewegen des Schiebereglers oder durch Eingabe eines Drehwerts in das Zahleneingabefeld (0 ° - 360 °).\n\nEbenso kann die Größe des Bildes zwischen 50 und 4000% angepasst werden. 100% repräsentiert die ungefähre Größe des entsprechenden realen Objekts.\n\n![](/img/insertpictures.png)",
           "loginRestricted": true,
-          "mapsetIcon": "add_image"
+          "mapsetIcon": "add_image",
+          "cdRestricted": true
         },
         {
-          "heading": "Delete features",
-          "text": "There are two ways to remove a feature from the map:\n\n* Select a feature and click on the 'Delete feature' button in the dialog\n\n  ![](/img/deletebtn.png)\n* Click on the feature then press the '*Delete*' key, on the keyboard"
+          "heading": "Element löschen",
+          "text": "Es gibt zwei Möglichkeiten, ein Element aus der Karte zu entfernen:\n\n* Wählen Sie eine Funktion aus und klicken Sie im Popup auf die Schaltfläche *Element löschen*\n\n  ![](/img/deletebtn.png)\n* Wählen Sie eine Funktion aus und drücken Sie die Taste *Entfernen* oder *Löschen* auf der Tastatur"
         },
         {
-          "heading": "Undo/Redo",
-          "text": "Actions on the map are saved momentarily in an history for user to be able to undo/redo actions.\n\nTo go back in the actions history and undo an something, the user must press the key combination on the keyboard:\n\n'*Ctrl*' + '*z*'\n\nWhilst to go forward in the history:\n\n'*Ctrl*' + '*y*'"
+          "heading": "Rückgängig/Wiederholen",
+          "text": "Aktionen auf der Karte werden vorübergehend im App-Verlauf gespeichert. Der Benutzer kann damit Aktionen rückgängig machen / wiederholen.\n\nÄnderungen am Plan können durch Drücken von *Strg* + *z*  rückgängig gemacht werden.\n\nUmgekehrte Änderungen können durch Drücken von *Strg* + *y* oder *Strg* + *Umschaltaste* + *z* erneut angewendet werden."
         },
         {
           "heading": "Save",
@@ -87,23 +88,23 @@
       ]
     },
     {
-      "label": "Download plan",
-      "mapsetIcon": "download",
-      "content": [
-        {
-          "text": "You can download your plan as an image in PNG raster format. Download settings can be adjusted in a simple popup dialog. In this step you can also add a north arrow to your plan.\n\nIn the download settings you can choose whether to download the complete screen content as an image or define a cropped section of the map. To define the section, a red selection frame appears, which you can move and resize. At the bottom right of the frame, the size of the exported image is always displayed in pixels, making it easy to determine the exact size of the desired output file. The last section you have defined remains saved in the browser and will be restored the next time you start mapset. This feature allows you to create a series of maps with the same dimensions without having to adjust the frame each time.\n\nBy default the export of the image is done using the resolution of your monitor. This resolution is suitable to embed the image statically in web pages or to use it in a presentation, for example. If you want to print the image, the plan should be exported using high or very high resolution. This allows plans to be printed with high quality even in sizes up to B1.",
-          "heading": "",
-          "loginRestricted": true
-        }
-      ]
-    },
-    {
       "label": "Plan sharing",
       "mapsetIcon": "share",
       "content": [
         {
           "heading": "",
           "text": "There are two type of links to share the plan:\n\n* **Link to share**\n\n  This link is aimed to share your plan with others or to embed the plan in other applications.\n* **Link to edit**\n\n  This link is aimed to be able to reopen the current plan and edit it later.",
+          "loginRestricted": true
+        }
+      ]
+    },
+    {
+      "label": "Download plan",
+      "mapsetIcon": "download",
+      "content": [
+        {
+          "text": "You can download your plan as an image in PNG raster format. Download settings can be adjusted in a simple popup dialog. In this step you can also add a north arrow to your plan.\n\nIn the download settings you can choose whether to download the complete screen content as an image or define a cropped section of the map. To define the section, a red selection frame appears, which you can move and resize. At the bottom right of the frame, the size of the exported image is always displayed in pixels, making it easy to determine the exact size of the desired output file. The last section you have defined remains saved in the browser and will be restored the next time you start mapset. This feature allows you to create a series of maps with the same dimensions without having to adjust the frame each time.\n\nBy default the export of the image is done using the resolution of your monitor. This resolution is suitable to embed the image statically in web pages or to use it in a presentation, for example. If you want to print the image, the plan should be exported using high or very high resolution. This allows plans to be printed with high quality even in sizes up to B1.",
+          "heading": "",
           "loginRestricted": true
         }
       ]
