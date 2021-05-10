@@ -91,22 +91,22 @@
       ]
     },
     {
-      "label": "Plan sharing",
+      "label": "Zeichnung teilen",
       "mapsetIcon": "share",
       "content": [
         {
           "heading": "",
-          "text": "There are two type of links to share the plan:\n\n* **Link to share**\n\n  This link is aimed to share your plan with others or to embed the plan in other applications.\n* **Link to edit**\n\n  This link is aimed to be able to reopen the current plan and edit it later.",
+          "text": "Es gibt zwei Arten von Links, um den Plan zu teilen:\n\n* **Link zum Teilen**\n\n  Der Link zum Teilen wird verwendet, um Ihren Plan im schreibgeschützten Modus für andere freizugeben oder um den Plan in andere Anwendungen einzubetten. Dieser Link rendert die Karte mit dem Plan, zeigt jedoch keines der Werkzeuge an und erlaubt daher keine Bearbeitung des Plans.\n* **Link zum Bearbeiten**\n\n  Über Link zum Bearbeiten können Sie einen zuvor erstellten Plan erneut öffnen und weiter bearbeiten. Über diesen Link können Sie mit anderen Benutzern an demselben Plan zusammenarbeiten.",
           "loginRestricted": true
         }
       ]
     },
     {
-      "label": "Download plan",
+      "label": "Bild herunterladen",
       "mapsetIcon": "download",
       "content": [
         {
-          "text": "You can download your plan as an image in PNG raster format. Download settings can be adjusted in a simple popup dialog. In this step you can also add a north arrow to your plan.\n\nIn the download settings you can choose whether to download the complete screen content as an image or define a cropped section of the map. To define the section, a red selection frame appears, which you can move and resize. At the bottom right of the frame, the size of the exported image is always displayed in pixels, making it easy to determine the exact size of the desired output file. The last section you have defined remains saved in the browser and will be restored the next time you start mapset. This feature allows you to create a series of maps with the same dimensions without having to adjust the frame each time.\n\nBy default the export of the image is done using the resolution of your monitor. This resolution is suitable to embed the image statically in web pages or to use it in a presentation, for example. If you want to print the image, the plan should be exported using high or very high resolution. This allows plans to be printed with high quality even in sizes up to B1.",
+          "text": "Pläne können als Bilder im PNG-Rasterformat exportiert werden. Die Download-Einstellungen können im speziellen Popup-Dialogfeld angepasst werden. \n\nExportierte Bilder können in den Exporteinstellungen angepasst werden: \n\n* Ein *Nordpfeil* kann in der unteren rechten Ecke des exportierten Bildes hinzugefügt werden.\n* Standardmäßig wird die komplette Kartenansicht exportiert. Alternativ kann ein zugeschnittener Abschnitt der Karte für den Export definiert werden. Um den Abschnitt zu definieren, wird ein roter Rahmen angezeigt, der verschoben und in der Größe geändert werden kann. Unten rechts im Rahmen wird die Größe des exportierten Bildes immer in Pixel angezeigt, sodass Sie die genaue Größe der gewünschten Ausgabedatei leicht bestimmen können. Der zuletzt definierte Abschnitt bleibt im Browser gespeichert und wird beim nächsten Start von Mapset wiederhergestellt. Mit dieser Funktion können Sie eine Reihe von Karten mit denselben Abmessungen erstellen, ohne den Rahmen jedes Mal anpassen zu müssen.\n* Standardmäßig erfolgt der Export des Bildes mit der Auflösung Ihres Monitors. Diese Auflösung eignet sich, um das Bild statisch in Webseiten einzubetten oder beispielsweise in einer Präsentation zu verwenden. Wenn Sie das Bild drucken möchten, sollte der Plan mit hoher oder sehr hoher Auflösung exportiert werden. Dadurch können Pläne auch in Größen bis B1 in hoher Qualität gedruckt werden.",
           "heading": "",
           "loginRestricted": true
         }
