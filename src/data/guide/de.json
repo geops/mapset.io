@@ -113,26 +113,30 @@
       ]
     },
     {
-      "label": "New plan",
+      "label": "Neuer Plan",
       "mapsetIcon": "newplan",
       "content": [
         {
-          "text": "This action will open a new empty plan.\\\nYou must ensure that you saved your current plan or at least save the edit link to be able to work with it later on if needed."
+          "text": "Diese Aktion öffnet einen neuen, leeren Plan. \n\nStellen Sie sicher, dass Sie Ihren aktuellen Plan nach Namen gespeichert haben, oder speichern Sie den Bearbeitungslink, um ihn später laden und weiter bearbeiten zu können."
         }
       ]
     },
     {
-      "label": "Settings",
+      "label": "Einstellungen",
       "mapsetIcon": "settings",
       "content": [
         {
-          "heading": "Language",
-          "text": "There are four available languages:\n\n* German\n* English\n* French\n* Italian"
+          "heading": "Sprache",
+          "text": "Es stehen vier Sprachen zur Verfügung:\n\n* Deutsche\n* Englisch\n* Französisch\n* Italienisch"
         },
         {
           "heading": "Corporate Design",
-          "text": "Some Corporate design settings can be set via a drop-down menu.\n\n![](/img/corporatedesign.png)\n\nThe available Corporate designs depends on the user rights.\n\nEach corporate design enable some features, such as:\n\n* icon design \n* availability of custom icons\n* allow to insert pictures additionally to icons",
+          "text": "Vordefinierte Unternehmensdesigns können über ein Dropdown-Menü festgelegt werden.\n\n![](/img/corporatedesign.png)\n\nDer Zugriff auf bestimmte Unternehmensdesigns hängt von den Zugriffsrechten des Benutzers ab.\n\nCorporate Designs passen bestimmte Mapset-Funktionen an, beispielsweise:\n\n* Icon Design\n* Standardfarben in den Farbwählern\n* Verfügbarkeit von benutzerdefinierten Symbolen\n* Zugriff auf das Werkzeug *Bild einfügen*",
           "loginRestricted": true
+        },
+        {
+          "heading": "Tipps beim Start anzeigen",
+          "text": "Legt fest, ob beim Start kurze Hinweise für eine optimale Nutzung des Mapsets angezeigt werden.\n\nIm Dialogfeld für jeden Hinweis können Sie die Option zum Anzeigen weiterer Hinweise deaktivieren. Im Einstellungsdialog können Sie die Anzeige wieder aktivieren."
         }
       ]
     }
