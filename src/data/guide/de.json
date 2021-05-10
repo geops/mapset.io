@@ -22,11 +22,11 @@
       ]
     },
     {
-      "label": "Layer Toggler",
+      "label": "Ebenen",
       "mapsetIcon": "layers",
       "content": [
         {
-          "text": "The 'Layers' dialog allows to customize the basemap, by toggling on/off some layers.\n\nNB: Some layers are only visible on specific zoom levels, therefore toggling a checkbox may not have directly a visual incidence, depending on the zoom level you are currently on.",
+          "text": "Unter *Ebenen* kann die Grundkarte angepasst werden, indem Sie die Sichtbarkeit bestimmter Ebenen umschalten.\n\nEinige Ebenen sind nur in bestimmten Zoomstufen sichtbar. Daher hat das Umschalten einer Ebene möglicherweise keine unmittelbare visuelle Auswirkung. Wenn dies der Fall ist, zoomen Sie hinein / heraus, um den Umschalteffekt zu sehen.\n\nDarüber hinaus ist es möglich, in einigen Ebenen nach einzelnen Merkmalen zu filtern. Ein Beispiel sind die Buslinien in der Schweiz. Wenn Sie diese Ebene im Ebenen-Popup auswählen, wird ein Filter angezeigt, mit dem Sie nach Bussen anhand des Namens des Betreibers (z. B. 'PAG') und der Nummer der Leitung (z. B. 'B 111') suchen können.",
           "heading": ""
         }
       ]
