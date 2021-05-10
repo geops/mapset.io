@@ -12,12 +12,12 @@
       ]
     },
     {
-      "label": "StationFinder",
+      "label": "Haltestellen Suche",
       "mapsetIcon": "search",
       "content": [
         {
           "heading": "",
-          "text": "The station finder allows to navigate to a specific station by searching its name in the search bar.\\\nOn click on an item in the proposition list, the map change to view the newly selected station.\n\nThe country code and the station identifier are displayed under the station name, in the proposition list.\\\nExample for station 'Bern Hbf':\n\n```\nCH: 8507000\n```"
+          "text": "Mit der *Haltestellen Suche* können Sie zu einem bestimmten Stopp navigieren. Wenn Sie in das Eingabefeld tippen, werden automatisch passende Stopps vorgeschlagen.\n\nWenn Sie ein Element aus der Liste der vorgeschlagenen Haltestellen auswählen, wird die Karte zur neu ausgewählten Station verschoben.\n\nNeben dem Namen werden bei der Suche auch die offiziellen Abkürzungen und die Anzahl der Stopps verstanden. Zum Beispiel kann 'Bern' entweder durch Eingabe von 'Bern', 'BN' oder '8507000' gefunden werden.\n\n```\nCH: 8507000\n```"
         }
       ]
     },
