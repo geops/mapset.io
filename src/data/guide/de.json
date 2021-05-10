@@ -32,12 +32,12 @@
       ]
     },
     {
-      "label": "Editor",
+      "label": "Bearbeitungswerkzeuge",
       "content": [
         {
-          "heading": "Draw point",
+          "heading": "Piktogramm zeichnen",
           "mapsetIcon": "point",
-          "text": "**Individual icons**\n\nA wide variety of icons is available to be drawn on the map, classified by category.\n\nThe rotation and the size of the icon can be set individually.\n\n**Positioning**\n\nA positioning tool exists in order to keep a consistent distance between items. When selecting and moving an icon next to another, some light grey cross will appear to visualize the 4 standard positions around an icon. The user can drop an icon easily on those positions to ensure a standard distance between the items.\n\n![](/img/positioning.png)\n\n**Grouping icons**\n\nBy holding the 'Ctrl' key, when an icon is selected, it is possible to select additional icons by clicking on them.\n\n![](/img/groupicons.png)\n\nA grouping dialog will then open, allowing the user to group various icons into a single one.\\\nIt is always possible to ungroup the icons if required, by selecting them and clicking on the 'Ungroup' button.\n\n![](/img/ungroupicons.png)"
+          "text": "**Einzelne Symbole**\n\nMit diesem Werkzeug werden Symbole auf der Karte platziert.\n\nSymbole können mithilfe des Popups gestaltet werden, wenn ein Symbol ausgewählt wird. Mehrere Symbolkategorien stellen eine Vielzahl von Symbolen zur Verfügung, die auf der Karte gezeichnet werden können. Die Drehung und die Größe des Symbols können individuell eingestellt werden.\n\n**Positionierung**\n\nSymbole können mit einer Fangfunktion präzise ausgerichtet werden, um einen gleichmäßigen Abstand zwischen ihnen zu gewährleisten. Während Sie Symbole zur Neupositionierung über die Karte ziehen, werden vier Fangindikatoren um benachbarte Symbole angezeigt, an denen das gezogene Symbol bei näherer Betrachtung ausgerichtet wird.\n\n![](/img/positioning.png)\n\n**Grouping icons**\n\nBy holding the 'Ctrl' key, when an icon is selected, it is possible to select additional icons by clicking on them.\n\n![](/img/groupicons.png)\n\nA grouping dialog will then open, allowing the user to group various icons into a single one.\\\nIt is always possible to ungroup the icons if required, by selecting them and clicking on the 'Ungroup' button.\n\n![](/img/ungroupicons.png)"
         },
         {
           "heading": "Draw line",
