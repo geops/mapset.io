@@ -68,22 +68,25 @@
         {
           "heading": "Rückgängig/Wiederholen",
           "text": "Aktionen auf der Karte werden vorübergehend im App-Verlauf gespeichert. Der Benutzer kann damit Aktionen rückgängig machen / wiederholen.\n\nÄnderungen am Plan können durch Drücken von *Strg* + *z*  rückgängig gemacht werden.\n\nUmgekehrte Änderungen können durch Drücken von *Strg* + *y* oder *Strg* + *Umschaltaste* + *z* erneut angewendet werden."
-        },
-        {
-          "heading": "Save",
-          "mapsetIcon": "save",
-          "text": "On every draw interaction or changes, the current state of the plan is automatically saved.\n\nWhenever a saving request is triggered a loading indicator appear in the sidebar\n\n![](/img/load.png)\n\nWhen is is succesful the loading indicator changes to this mark:\n\n![](/img/saved.png)",
-          "loginRestricted": true
         }
       ]
     },
     {
-      "label": "Plan naming",
+      "label": "Speichern",
+      "mapsetIcon": "save",
       "content": [
         {
-          "text": "You can name a plan, so it is saved in the plan list.\n\nWhen a plan is not yet named, the text 'Untitled plan' appears in the header.\n\n![](/img/planname.png)\n\nClick on this text, in order to type a new plan name.",
+          "text": "Im Mapset wird jede Änderung am aktuellen Plan automatisch gespeichert.\n\nEin *Spinner* gefolgt von einem *Häkchen* in der Seitenleiste zeigt an, dass der aktuelle Plan gespeichert wurde. Der *Spinner* soll nur über den Fortschritt des Speicherns informieren. Es ist nicht notwendig, auf das Ende des *Spinners* zu warten oder aktiv darauf zu klicken. Mapset stellt immer sicher, dass keine Änderungen verloren gehen.\n\n![](/img/savingplan.png)\n\n![](/img/savedplan.png)"
+        }
+      ]
+    },
+    {
+      "label": "Planliste",
+      "content": [
+        {
+          "text": "Mapset-Pläne können zur leichteren Bezugnahme und zur besseren Übersicht über alle erstellten Pläne mit einem Namen versehen werden.\n\nWenn ein Plan noch nicht benannt ist, wird in der Kopfzeile der Text \"Unbenannter Plan\" angezeigt.\n\n![](/img/planname.png)\n\nKlicken Sie auf diesen Text, um einen neuen Plannamen einzugeben. Ein *Spinner* und *Bestätigungsmeldung* neben dem Texteingabefeld zeigt an, dass der Planname gespeichert wurde.\n\nSobald ein Plan einen Namen hat, ist er in der Planliste verfügbar.\n\nBenannte Pläne können aus der Planliste in die Karte geladen werden, indem Sie einen Plan auswählen und auf die Schaltfläche *Öffnen* klicken.",
           "heading": "",
-          "loginRestricted": true
+          "loginRestricted": false
         }
       ]
     },
