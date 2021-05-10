@@ -7,7 +7,7 @@
       "content": [
         {
           "heading": "",
-          "text": "The user can login in order to access to some restricted features:\n\n* Download the plan as an image\n* Share Plan via permalink\n* Save named plan\n* Access to saved plans list\n\nIt is possible to sign in with one of your existing third party accounts (Google, SBB).\n\nAlternatively, a geOps account is required to sign in.\n\nIn case you do not have an account yet, you can directly create one via the Sign up link in the login page."
+          "text": "Einige Funktionen sind auf registrierte Benutzer beschränkt und können nur aufgerufen werden, wenn sie angemeldet sind, beispielsweise:\n\n* Export der Pläne als Bild\n* Speichern und Teilen den Pläne über Permalinks\n* Speichern der Pläne mit benutzerdefinierten Namen\n* Routing Funktion\n\nDie Anmeldung ist mit einem vorhandenen Drittanbieter-Konto oder einem Einzelkonto in unserem System möglich. Nachdem Ihr Unternehmen oder Ihre individuelle Adresse registriert wurde, können Sie über den Link *Sign up* auf der Anmeldeseite ein Konto erstellen.\n\nFür die Registrierung kontaktieren Sie uns bitte."
         }
       ]
     },
