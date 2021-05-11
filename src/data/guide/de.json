@@ -138,7 +138,7 @@
         },
         {
           "heading": "Corporate Design",
-          "text": "Vordefinierte Unternehmensdesigns können über ein Dropdown-Menü festgelegt werden.\n\n![](/img/corporatedesign.png)\n\nDer Zugriff auf bestimmte Unternehmensdesigns hängt von den Zugriffsrechten des Benutzers ab.\n\nCorporate Designs passen bestimmte Mapset-Funktionen an, beispielsweise:\n\n* Icon Design\n* Standardfarben in den Farbwählern\n* Verfügbarkeit von benutzerdefinierten Symbolen\n* Zugriff auf das Werkzeug *Bild einfügen*",
+          "text": "Vordefinierte Unternehmensdesigns können über ein Dropdown-Menü festgelegt werden.\n\n![](/img/corporatedesign.png)\n\nDer Zugriff auf bestimmte Unternehmensdesigns hängt von den Zugriffsrechten des Benutzers ab.\n\nCorporate Designs passen bestimmte mapset-Funktionen an, beispielsweise:\n\n* Icon Design\n* Standardfarben in den Farbwählern\n* Verfügbarkeit von benutzerdefinierten Symbolen\n* Zugriff auf das Werkzeug *Bild einfügen*",
           "loginRestricted": true
         },
         {
