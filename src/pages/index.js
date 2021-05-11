@@ -7,7 +7,6 @@ import EmailButton from '../components/EmailButton';
 import Imprint from '../components/Imprint';
 import Contact from '../components/Contact';
 import SiteSwitcher from '../components/SiteSwitcher';
-import TrackingDialog from '../components/TrackingDialog';
 import userManager from '../utils/userManager';
 
 import layout_bg_1 from '../img/layoutBG_1.png';
@@ -97,7 +96,6 @@ export const IndexPageTemplate = ({ locale, region }) => {
   return (
     <div style={{ position: 'relative' }}>
       <SiteSwitcher region={region} />
-      <TrackingDialog />
       <section className="topSection">
         <div className="container">
           <div className="row is-white">
