@@ -205,7 +205,7 @@ export const ContactPageTemplate = () => {
   );
 };
 
-const Contact = ({ pageContext: { locale } }) => {
+const Contact = ({ pageContext: { locale, region } }) => {
   const [user, setUser] = useState(null);
 
   if (typeof window !== 'undefined' && userManager) {
@@ -215,7 +215,7 @@ const Contact = ({ pageContext: { locale } }) => {
   }
 
   return (
-    <Layout locale={locale} user={user}>
+    <Layout locale={locale} region={region} user={user}>
       <ContactPageTemplate />
     </Layout>
   );

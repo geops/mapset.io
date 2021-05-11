@@ -306,7 +306,7 @@ export const GuidePage = ({ locale }) => {
   );
 };
 
-const Index = ({ pageContext: { locale } }) => {
+const Index = ({ pageContext: { locale, region } }) => {
   const [user, setUser] = useState(null);
 
   if (typeof window !== 'undefined' && userManager) {
@@ -316,7 +316,12 @@ const Index = ({ pageContext: { locale } }) => {
   }
 
   return (
-    <Layout locale={locale} user={user} navBarClassName="guide-nav-bar">
+    <Layout
+      locale={locale}
+      region={region}
+      user={user}
+      navBarClassName="guide-nav-bar"
+    >
       <GuidePage locale={locale} />
     </Layout>
   );
