@@ -17,7 +17,7 @@
       "content": [
         {
           "heading": "",
-          "text": "Mit *Haltestelle Suche* können Sie zu einem bestimmten Stopp navigieren. Wenn Sie in das Eingabefeld tippen, werden automatisch passende Stopps vorgeschlagen.\n\nWenn Sie ein Element aus der Liste der vorgeschlagenen Haltestellen auswählen, wird die Karte zur neu ausgewählten Station verschoben.\n\nNeben dem Namen werden bei der Suche auch die offiziellen Abkürzungen und die Anzahl der Stopps verstanden. Zum Beispiel kann 'Bern' entweder durch Eingabe von 'Bern', 'BN' oder '8507000' gefunden werden."
+          "text": "Mit *Haltestelle Suche* können Sie zu einem bestimmten Stopp navigieren. Wenn Sie in das Eingabefeld tippen, werden automatisch passende Stopps vorgeschlagen.\n\nWenn Sie ein Element aus der Liste der vorgeschlagenen Haltestellen auswählen, wird die Karte zur neu ausgewählten Station verschoben.\n\nNeben dem Namen werden bei der Suche auch die offiziellen Abkürzungen und die Identifikationsnummern der Stopps verstanden. Zum Beispiel kann 'Bern' entweder durch Eingabe von 'Bern', 'BN' oder '8507000' gefunden werden."
         }
       ]
     },
