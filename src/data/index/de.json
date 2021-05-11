@@ -22,7 +22,7 @@
     "email": "E-Mail",
     "interest": "Ich interessiere mich für",
     "message": "Nachricht",
-    "privacyPolicy": "Ja, ich habe die <a href='https://geops.de/node/182?language=en'>Datenschutzerklärung</a> gelesen und akzeptiere diese.",
+    "privacyPolicy": "Ja, ich habe die <a href='https://geops.de/node/182?language=en'>Datenschutzerklärung</a> gelesen und akzeptiere diese.*",
     "required": "* Pflichtfeld",
     "submit": "Anfrage senden",
     "submitted": "Vielen Dank für Ihr Interesse..."

@@ -21,7 +21,16 @@ if (
 
 export const ContactPageTemplate = () => {
   const formRef = useRef(null);
+  const emailRef = useRef(null);
+  const privacyRef = useRef(null);
   const [submitted, setSubmitted] = useState(false);
+  const [emailValid, setEmailValid] = useState(true);
+  const [privacyValid, setPrivacyValid] = useState(true);
+
+  const checkValidFields = (event) => {
+    setEmailValid(emailRef.current.reportValidity());
+    setPrivacyValid(privacyRef.current.reportValidity());
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -66,21 +75,27 @@ export const ContactPageTemplate = () => {
                 <p>
                   <FormattedMessage id="contact.content" />
                 </p>
-                <div className="contact-form-field">
-                  <label htmlFor="contact-first-name">
-                    <FormattedMessage id="contact.firstName" />
-                  </label>
-                  <input
-                    type="text"
-                    id="contact-first-name"
-                    name="first-name"
-                  />
-                </div>
-                <div className="contact-form-field">
-                  <label htmlFor="contact-last-name">
-                    <FormattedMessage id="contact.lastName" />
-                  </label>
-                  <input type="text" id="contact-last-name" name="last-name" />
+                <div className="row">
+                  <div className="contact-form-field col-12 col-md-6">
+                    <label htmlFor="contact-first-name">
+                      <FormattedMessage id="contact.firstName" />
+                    </label>
+                    <input
+                      type="text"
+                      id="contact-first-name"
+                      name="first-name"
+                    />
+                  </div>
+                  <div className="contact-form-field col-12 col-md-6">
+                    <label htmlFor="contact-last-name">
+                      <FormattedMessage id="contact.lastName" />
+                    </label>
+                    <input
+                      type="text"
+                      id="contact-last-name"
+                      name="last-name"
+                    />
+                  </div>
                 </div>
                 <div className="contact-form-field">
                   <label htmlFor="contact-company">
@@ -88,22 +103,26 @@ export const ContactPageTemplate = () => {
                   </label>
                   <input type="text" id="contact-company" name="company" />
                 </div>
-                <div className="contact-form-field">
-                  <label htmlFor="contact-telephone">
-                    <FormattedMessage id="contact.telephone" />
-                  </label>
-                  <input type="tel" id="contact-telephone" name="telephone" />
-                </div>
-                <div className="contact-form-field">
-                  <label htmlFor="contact-email">
-                    <FormattedMessage id="contact.email" />
-                  </label>
-                  <input
-                    type="email"
-                    id="contact-email"
-                    name="email"
-                    required
-                  />
+                <div className="row">
+                  <div className="contact-form-field col-12 col-md-6">
+                    <label htmlFor="contact-telephone">
+                      <FormattedMessage id="contact.telephone" />
+                    </label>
+                    <input type="tel" id="contact-telephone" name="telephone" />
+                  </div>
+                  <div className="contact-form-field col-12 col-md-6">
+                    <label htmlFor="contact-email">
+                      <FormattedMessage id="contact.email" />
+                    </label>
+                    <input
+                      type="email"
+                      id="contact-email"
+                      name="email"
+                      required
+                      ref={emailRef}
+                      className={emailValid ? '' : 'invalid'}
+                    />
+                  </div>
                 </div>
                 <h2>
                   <FormattedMessage id="contact.interest" />
@@ -157,6 +176,9 @@ export const ContactPageTemplate = () => {
                     type="checkbox"
                     name="privacy-policy"
                     id="contact-privacy-policy"
+                    required
+                    ref={privacyRef}
+                    className={privacyValid ? '' : 'invalid'}
                   />
                   <label htmlFor="contact-privacy-policy">
                     <FormattedHTMLMessage id="contact.privacyPolicy" />
@@ -166,7 +188,11 @@ export const ContactPageTemplate = () => {
                   <FormattedMessage id="contact.required" />
                 </p>
                 <div className="contactSection">
-                  <button className="button" type="submit">
+                  <button
+                    className="button"
+                    type="submit"
+                    onClick={checkValidFields}
+                  >
                     <FormattedMessage id="contact.submit" />
                   </button>
                 </div>

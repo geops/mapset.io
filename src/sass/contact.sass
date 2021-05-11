@@ -1,12 +1,14 @@
 .contactPage
+  .row
+    width: 100%
+    max-width: 630px
   .contact-form-field
     margin-bottom: 1rem
     input,
     textarea
       width: 100%
       max-width: 600px
-      border: none
-      background-color: #ddd
+      border: 2px solid #EDEDED
       padding: 0.5rem
     label
       display: block
@@ -15,6 +17,8 @@
     max-width: 600px
     display: grid
     grid-template-columns: repeat(2, 1fr)
+  .invalid
+    outline: 2px solid red
 
   .contact-form-field-checkbox
     margin-bottom: 1rem
