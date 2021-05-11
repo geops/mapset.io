@@ -3,7 +3,7 @@ import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 import Layout from '../components/Layout';
 import { Remarkable } from 'remarkable';
 import Scroller from '../components/Scroller';
-import EmailButton from '../components/EmailButton';
+import ContactButton from '../components/ContactButton';
 import Imprint from '../components/Imprint';
 import Contact from '../components/Contact';
 import SiteSwitcher from '../components/SiteSwitcher';
@@ -332,11 +332,11 @@ export const IndexPageTemplate = ({ locale, region }) => {
                             }
                           />
                         </span>
-                        <EmailButton mode={price.tier} />
                       </div>
                     </div>
                   </div>
                 ))}
+              <ContactButton />
             </div>
 
             <div className="conditions">

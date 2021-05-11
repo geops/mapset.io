@@ -13,6 +13,21 @@
     "setup fee eu": "zzgl. € 490 einmalige Ein­richtungs­gebühr",
     "setup fee ch": "zzgl. CHF 490.– einmalige Ein­richtungs­gebühr"
   },
+  "contact": {
+    "title": "Kontakt",
+    "content": "Wir freuen uns über Ihre Kontaktaufnahme. ….",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "company": "Unternehmen",
+    "telephone": "Telefon",
+    "email": "E-Mail",
+    "interest": "Ich interessiere mich für",
+    "message": "Nachricht",
+    "privacyPolicy": "Ja, ich habe die <a href='https://geops.de/node/182?language=en'>Datenschutzerklärung</a> gelesen und akzeptiere diese.*",
+    "required": "* Pflichtfeld",
+    "submit": "Anfrage senden",
+    "submitted": "Vielen Dank für Ihr Interesse..."
+  },
   "generic": {
     "Kontakt": "Kontakt",
     "Besuchen Sie uns auf Twitter": "Besuchen Sie uns auf Twitter",
@@ -39,7 +54,7 @@
       "international": "International",
       "swiss": "Schweiz"
     },
-    "request": "anfragen",
+    "request": "Angebot Anfragen",
     "privacyPolicy": "Privacy Policy"
   },
   "guide": {

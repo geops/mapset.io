@@ -12,6 +12,21 @@
     "setup fee eu": "490 € de frais d'installation uniques",
     "setup fee ch": "490.– CHF de frais d'installation uniques"
   },
+  "contact": {
+    "title": "Contactez",
+    "content": "Nous sommes impatients d'avoir de vos nouvelles. ....",
+    "firstName": "Prénom",
+    "lastName": "Nom de famille",
+    "company": "Société",
+    "telephone": "Téléphone",
+    "email": "Courriel*",
+    "interest": "Je suis intéressé par",
+    "message": "Message",
+    "privacyPolicy": "Oui, j'ai lu et j'accepte la <a href='https://geops.de/node/182?language=en'>politique de confidentialité</a>.*",
+    "required": "* Champ obligatoire",
+    "submit": "Envoyer la demande",
+    "submitted": "Merci de votre intérêt..."
+  },
   "generic": {
     "Kontakt": "Contactez",
     "Besuchen Sie uns auf Twitter": "Visitez-nous sur Twitter",
@@ -37,7 +52,7 @@
       "international": "International",
       "swiss": "Swiss"
     },
-    "request": "Demande",
+    "request": "Demande une offre",
     "privacyPolicy": "Politique de confidentialité"
   },
   "imprint": {
