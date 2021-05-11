@@ -23,24 +23,24 @@ function LoginIcon({ color = '#fff' }) {
           transform="translate(1076.25 345.454)"
           fill="none"
           stroke={color}
-          stroke-miterlimit="10"
-          stroke-width="1.5"
+          strokeMiterlimit="10"
+          strokeWidth="1.5"
         />
         <path
           d="M1084.581,345.285l2.6,2.6-2.6,2.6"
           transform="translate(-3.257 -2.43)"
           fill="none"
           stroke={color}
-          stroke-miterlimit="10"
-          stroke-width="1.5"
+          strokeMiterlimit="10"
+          strokeWidth="1.5"
         />
         <path
           d="M1081.416,342.789v-2.121a.709.709,0,0,1,.708-.708h7.084a.709.709,0,0,1,.708.708V352a.708.708,0,0,1-.708.708h-7.084a.708.708,0,0,1-.708-.708v-2.125"
           transform="translate(-2.333 -0.876)"
           fill="none"
           stroke={color}
-          stroke-miterlimit="10"
-          stroke-width="1.5"
+          strokeMiterlimit="10"
+          strokeWidth="1.5"
         />
       </g>
     </svg>
@@ -239,11 +239,19 @@ class Navbar extends React.Component {
                 )}
               </div>
               <div className="mobile-menu-language-switcher">
-                {locale === 'en' ? 'EN' : <a href="/">EN</a>}
+                {locale === 'en' ? (
+                  'EN'
+                ) : (
+                  <a href={region === 'ch' ? '/en' : '/'}>EN</a>
+                )}
                 <div className="mobile-menu-site-switcher-divider" />
                 {locale === 'fr' ? 'FR' : <a href="/fr">FR</a>}
                 <div className="mobile-menu-site-switcher-divider" />
-                {locale === 'de' ? 'DE' : <a href="/de">DE</a>}
+                {locale === 'de' ? (
+                  'DE'
+                ) : (
+                  <a href={region === 'ch' ? '/' : '/de'}>DE</a>
+                )}
               </div>
             </div>
             <div id="navMenu" className="navbar-menu d-none d-md-block">
@@ -261,30 +269,42 @@ class Navbar extends React.Component {
                         transform="translate(1010.919 -313.994)"
                         fill="none"
                         stroke="#fff"
-                        stroke-miterlimit="10"
-                        stroke-width="1.5"
+                        strokeMiterlimit="10"
+                        strokeWidth="1.5"
                       />
                       <path
                         d="M81.58,346.993a21.863,21.863,0,0,1-.149,2.534,13.3,13.3,0,0,1-1.118,4.13,6.908,6.908,0,0,1-2.252.375,6.662,6.662,0,0,1-2.245-.375,13.3,13.3,0,0,1-1.118-4.13,21.681,21.681,0,0,1,0-5.068,13.3,13.3,0,0,1,1.118-4.13,6.662,6.662,0,0,1,2.245-.375,6.908,6.908,0,0,1,2.252.375,13.3,13.3,0,0,1,1.118,4.13A21.864,21.864,0,0,1,81.58,346.993Z"
                         transform="translate(1009.937 -313.994)"
                         fill="none"
                         stroke="#fff"
-                        stroke-miterlimit="10"
-                        stroke-width="1.5"
+                        strokeMiterlimit="10"
+                        strokeWidth="1.5"
                       />
                       <path
                         d="M84.117,348.189a7.086,7.086,0,0,1-.2,1.689,14.869,14.869,0,0,1-3.465.845,26.947,26.947,0,0,1-6.734,0,14.843,14.843,0,0,1-3.473-.845,7.119,7.119,0,0,1,0-3.379,14.846,14.846,0,0,1,3.473-.845,26.951,26.951,0,0,1,6.734,0,14.872,14.872,0,0,1,3.465.845A7.086,7.086,0,0,1,84.117,348.189Z"
                         transform="translate(1010.919 -315.189)"
                         fill="none"
                         stroke="#fff"
-                        stroke-miterlimit="10"
-                        stroke-width="1.5"
+                        strokeMiterlimit="10"
+                        strokeWidth="1.5"
                       />
                     </g>
                   </svg>
-                  <div>{locale === 'en' ? 'EN' : <a href="/">EN</a>}</div>
+                  <div>
+                    {locale === 'en' ? (
+                      'EN'
+                    ) : (
+                      <a href={region === 'ch' ? '/en' : '/'}>EN</a>
+                    )}
+                  </div>
                   <div>{locale === 'fr' ? 'FR' : <a href="/fr">FR</a>}</div>
-                  <div>{locale === 'de' ? 'DE' : <a href="/de">DE</a>}</div>
+                  <div>
+                    {locale === 'de' ? (
+                      'DE'
+                    ) : (
+                      <a href={region === 'ch' ? '/' : '/de'}>DE</a>
+                    )}
+                  </div>
                 </div>
                 <div className="navbar-item">
                   <svg
@@ -330,16 +350,16 @@ class Navbar extends React.Component {
                       transform="translate(6.609 5.863)"
                       fill="none"
                       stroke="#fff"
-                      stroke-miterlimit="10"
-                      stroke-width="1.5"
+                      strokeMiterlimit="10"
+                      strokeWidth="1.5"
                     />
                     <path
                       d="M93.63,244.495c0,4.271-4.5,7.724-5.221,7.724s-5.22-3.468-5.22-7.724a5.22,5.22,0,1,1,10.441,0Z"
                       transform="translate(-79.809 -236.618)"
                       fill="none"
                       stroke="#fff"
-                      stroke-miterlimit="10"
-                      stroke-width="1.5"
+                      strokeMiterlimit="10"
+                      strokeWidth="1.5"
                     />
                   </svg>
                   <div>

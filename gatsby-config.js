@@ -82,6 +82,7 @@ module.exports = {
         siteId: '11',
         matomoUrl: 'https://analytics.geops.de/',
         siteUrl: 'https://mapset.io/',
+        disableCookies: true,
       },
     },
     {
