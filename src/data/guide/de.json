@@ -68,6 +68,11 @@
         {
           "heading": "Rückgängig/Wiederholen",
           "text": "Aktionen auf der Karte werden vorübergehend im App-Verlauf gespeichert. Der Benutzer kann damit Aktionen rückgängig machen / wiederholen.\n\nÄnderungen am Plan können durch Drücken von *Strg* + *z*  rückgängig gemacht werden.\n\nUmgekehrte Änderungen können durch Drücken von *Strg* + *y* oder *Strg* + *Umschaltaste* + *z* erneut angewendet werden."
+        },
+        {
+          "heading": "Route zeichnen",
+          "mapsetIcon": "route",
+          "text": "Mit diesem Tool werden automatisch Routen zwischen bestimmten Punkten für eine Auswahl von Verkehrsträgern (MOT) erstellt.\n\n* Wenn das Route-Finder-Popup geöffnet wird, wählen Sie zuerst einen MOT aus. Die Haupt-MOTs (Fuß, Zug, Bus) verfügen über spezielle Tasten, während mehrere andere MOTs aus einem Dropdown-Menü ausgewählt werden können. Durch das Umschalten zwischen MOTs wird immer die aktuelle Route gelöscht und eine neue gestartet.\n\n  ![](/img/mots.png)"
         }
       ]
     },
