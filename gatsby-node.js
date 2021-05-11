@@ -20,6 +20,12 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 const locales = require('./src/data/locales');
 const region = process.env.REGION;
 
+if (region == 'ch') {
+  locales.de.default = true;
+} else {
+  locales.en.default = true;
+}
+
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage, deletePage } = actions;
 

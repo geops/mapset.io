@@ -3,7 +3,6 @@ module.exports = {
     path: 'en',
     locale: 'en',
     language: 'English',
-    default: true,
   },
   de: {
     path: 'de',
