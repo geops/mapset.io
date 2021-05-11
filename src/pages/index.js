@@ -417,9 +417,10 @@ export const IndexPageTemplate = ({ locale, region }) => {
                     </button>
                     <div className="content">
                       <p>
-                        <FormattedHTMLMessage
-                          id={license.text}
-                          values={{ br: <br /> }}
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: md.render(license.text),
+                          }}
                         />
                       </p>
                     </div>
