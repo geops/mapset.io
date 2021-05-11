@@ -6,129 +6,144 @@
       "mapsetIcon": "login",
       "content": [
         {
-          "heading": "xx",
-          "text": "The user can login in order to access to some restricted features:\n\n* Download the plan as an image\n* Share Plan via permalink\n* Save named plan\n* Access to saved plans list\n\nIt is possible to sign in with one of your existing third party accounts (Google, SBB).\n\nAlternatively, a geOps account is required to sign in.\n\nIn case you do not have an account yet, you can directly create one via the Sign up link in the login page."
+          "heading": "",
+          "text": "Einige Funktionen sind auf registrierte Benutzer beschränkt und können nur aufgerufen werden, wenn sie angemeldet sind, beispielsweise:\n\n* Bild-Export der Pläne\n* Speichern und Teilen den Pläne über Permalinks\n* Speichern der Pläne mit benutzerdefinierten Namen\n* Routing Funktion\n\nDie Anmeldung ist mit einem vorhandenen Drittanbieter-Konto oder einem Einzelkonto in unserem System möglich. Nachdem Ihr Unternehmen oder Ihre individuelle Adresse registriert wurde, können Sie über den Link *Sign up* auf der Anmeldeseite ein Konto erstellen.\n\nFür die Registrierung kontaktieren Sie uns bitte."
         }
       ]
     },
     {
-      "label": "StationFinder",
+      "label": "Haltestelle Suche",
       "mapsetIcon": "search",
       "content": [
         {
           "heading": "",
-          "text": "The station finder allows to navigate to a specific station by searching its name in the search bar.\\\nOn click on an item in the proposition list, the map change to view the newly selected station.\n\nThe country code and the station identifier are displayed under the station name, in the proposition list.\\\nExample for station 'Bern Hbf':\n\n```\nCH: 8507000\n```"
+          "text": "Mit *Haltestelle Suche* können Sie zu einem bestimmten Stopp navigieren. Wenn Sie in das Eingabefeld tippen, werden automatisch passende Stopps vorgeschlagen.\n\nWenn Sie ein Element aus der Liste der vorgeschlagenen Haltestellen auswählen, wird die Karte zur neu ausgewählten Station verschoben.\n\nNeben dem Namen werden bei der Suche auch die offiziellen Abkürzungen und die Identifikationsnummern der Stopps verstanden. Zum Beispiel kann 'Bern' entweder durch Eingabe von 'Bern', 'BN' oder '8507000' gefunden werden."
         }
       ]
     },
     {
-      "label": "Layer Toggler",
+      "label": "Ebenen",
       "mapsetIcon": "layers",
       "content": [
         {
-          "text": "The 'Layers' dialog allows to customize the basemap, by toggling on/off some layers.\n\nNB: Some layers are only visible on specific zoom levels, therefore toggling a checkbox may not have directly a visual incidence, depending on the zoom level you are currently on.",
+          "text": "Unter *Ebenen* kann die Grundkarte angepasst werden, indem Sie die Sichtbarkeit bestimmter Ebenen umschalten.\n\nEinige Ebenen sind nur in bestimmten Zoomstufen sichtbar. Daher hat das Umschalten einer Ebene möglicherweise keine unmittelbare visuelle Auswirkung. Wenn dies der Fall ist, zoomen Sie hinein / heraus, um den Umschalteffekt zu sehen.\n\nDarüber hinaus ist es möglich, bei einigen Ebenen nach einzelnen Merkmalen zu filtern. Ein Beispiel sind die Buslinien in der Schweiz. Wenn Sie diese Ebene im Ebenen-Popup auswählen, wird ein Filter angezeigt, mit dem Sie nach Bussen anhand des Namens des Betreibers (z. B. 'PAG') und der Nummer der Leitung (z. B. 'B 111') suchen können.",
           "heading": ""
         }
       ]
     },
     {
-      "label": "Editor",
+      "label": "Bearbeitungswerkzeuge",
       "content": [
         {
-          "heading": "Draw point",
+          "heading": "Piktogramm zeichnen",
           "mapsetIcon": "point",
-          "text": "**Individual icons**\n\nA wide variety of icons is available to be drawn on the map, classified by category.\n\nThe rotation and the size of the icon can be set individually.\n\n**Positioning**\n\nA positioning tool exists in order to keep a consistent distance between items. When selecting and moving an icon next to another, some light grey cross will appear to visualize the 4 standard positions around an icon. The user can drop an icon easily on those positions to ensure a standard distance between the items.\n\n![](/img/positioning.png)\n\n**Grouping icons**\n\nBy holding the 'Ctrl' key, when an icon is selected, it is possible to select additional icons by clicking on them.\n\n![](/img/groupicons.png)\n\nA grouping dialog will then open, allowing the user to group various icons into a single one.\\\nIt is always possible to ungroup the icons if required, by selecting them and clicking on the 'Ungroup' button.\n\n![](/img/ungroupicons.png)"
+          "text": "**Einzelne Symbole**\n\nMit diesem Werkzeug werden Icons auf der Karte platziert.\n\nIcons können mithilfe des Popups gestaltet werden, wenn ein Icon ausgewählt wird. Mehrere Kategorien stellen eine Vielzahl von Icons zur Verfügung, die auf der Karte gezeichnet werden können. Die Drehung und die Größe des Icons kann individuell eingestellt werden.\n\n**Positionierung**\n\nIcons können mit einer Fangfunktion präzise ausgerichtet werden, um einen gleichmäßigen Abstand zwischen ihnen zu gewährleisten. Während Sie ein Icon zur Neupositionierung über die Karte ziehen, werden vier Fangindikatoren um benachbarte Icons angezeigt, an denen das gezogene Symbol bei geringem Abstand ausgerichtet wird.\n\n![](/img/positioning.png)\n\n**Piktogramme gruppieren**\n\nSie können mehrere Icons auswählen, indem Sie die *Strg* -Taste gedrückt halten, während Sie  die Icons per Klick anwählen.\n\nDiese Funktion ist besonders nützlich, um zu verhindern, dass sich ausgerichtete Icons bei verschiedenen Zoomstufen überlappen.\n\n![](/img/geoupicons.png)\n\nSobald mehrere Icons ausgewählt sind, wird ein Popup zum Gruppieren von Piktogrammen geöffnet, in dem der Benutzer verschiedene Icons zu einem einzigen gruppieren kann. Die Gruppierung kann anschließend wieder gelöscht werden, indem Sie ein gruppiertes Icon auswählen und im Popup auf die Schaltfläche *Gruppierung aufheben* klicken.\n\n![](/img/ungroup.png)"
         },
         {
-          "heading": "Draw line",
+          "heading": "Linie zeichnen",
           "mapsetIcon": "line",
-          "text": "With this tool it is possible to draw lines on the map.\n\nEvery click creates a breakpoint, whilst ending the line is done by double-click.\n\nWhen editing an existing line, it is possible to remove breakpoints by simply clicking on it.\n\nA 'Line settings' Dialog then opened, to allow customization of the line style:\n\n* Arrows can be displayed at line start/end\n\n  ![](/img/linestartend.png)\n* The line width can be either 'thin', 'normal' or 'thick'\n\n  ![](/img/linewidth.png)\n* Several line style can be selected\n\n  ![](/img/linetype.png)\n* Standard application colors are available\n\n  ![](/img/colorpicker.png)\n* Custom color can be set with the widget that opens on arrow click.\n\n  The color can be set by standard pointer selection, or via [Hex code](https://en.wikipedia.org/wiki/Web_colors#Hex_triplet) or [RGBA code](https://en.wikipedia.org/wiki/RGBA_color_model). \n\n  The opacity of the line is defined by the 'A' value, between 0 and 100.\n\n  ![](/img/customcolor.png)"
+          "text": "Mit diesem Werkzeug werden Linien auf der Karte gezeichnet.\n\nWenn das Werkzeug aktiv ist, erstellt jeder Klick einen weiteren Knoten für die Linie. Durch Doppelklicken auf die Karte wird die Linie abgeschlossen und der Zeichenmodus verlassen.\n\nBeim Bearbeiten einer vorhandenen Linie können Knoten durch Ziehen hinzugefügt werden. Bestehende Knoten können durch Ziehen geändert und durch einfaches Klicken entfernt werden.\n\nDer Linienstil kann über das Popup angepasst werden, wenn eine Linie ausgewählt wird:\n\n* Pfeile können am Linienanfang / -ende hinzugefügt werden\n\n  ![](/img/linestartend.png)\n* Die Linienbreite und der Linientyp können mit vordefinierten Optionen eingestellt werden\n\n  ![](/img/linewidth.png)\n\n  ![](/img/linetype.png)\n* Voreingestellte Farben sind in der *Farbauswahl* verfügbar.\n\n  ![](/img/colorchange.png)\n* Benutzerdefinierte Farben können mit einem *Farbwähler* angewendet werden, wenn Sie auf die *Pfeil-Schaltfläche* in der *Farbauswahl* klicken. \n\n  Die Farbe kann standardmäßig über [Hex code](https://en.wikipedia.org/wiki/Web_colors#Hex_triplet) oder über [RGBA code](https://en.wikipedia.org/wiki/RGBA_color_model) definiert werden. \n\n  Die Deckkraft der Linie wird durch den 'A' Wert zwischen 0 und 100 definiert.\n\n  ![](/img/customcolor.png)"
         },
         {
-          "heading": "Draw Polygon",
+          "heading": "Fläche zeichnen",
           "mapsetIcon": "polygon",
-          "text": "With this tool it is possible to draw polygons on the map.\n\nEvery click creates a breakpoint, whilst ending the polygon is done by double-click.\n\nWhen editing an existing polygon, it is possible to remove breakpoints by simply clicking on it.\n\nMany customization are available:\n\n* Custom outline color can be set with the widget that opens on arrow click.\n\n  The color can be set by standard pointer selection, or via [Hex code](https://en.wikipedia.org/wiki/Web_colors#Hex_triplet) or [RGBA code](https://en.wikipedia.org/wiki/RGBA_color_model). \n\n  The opacity of the line is defined by the 'A' value, between 0 and 100.\n\n  ![](/img/lineoutline.png)\n* The outline width can be either 'thin', 'normal' or 'thick'\n* Several outline style can be selected\n\n  ![](/img/outlinepoly.png)\n* The area color can be edited with the same color widget as for the outline\n* Some fill patterns are available in order to customize the polygon style\n* The transparency of the whole polygon can be set with this tool\n\n  ![](/img/polytransparency.png)"
+          "text": "Mit diesem Werkzeug werden Polygone auf der Karte gezeichnet.\n\nWenn das Werkzeug aktiv ist, erstellt jeder Klick einen weiteren Knoten für den Polygonumfang. Durch Doppelklicken auf die Karte wird das Polygon geschlossen und der Zeichenmodus verlassen.\n\nBeim Bearbeiten einer vorhandenen Fläche können Knoten durch Ziehen der Polygonkontur hinzugefügt werden. Bestehende Knoten können durch Ziehen geändert und durch einfaches Klicken entfernt werden.\n\nDer Flächenstil kann mithilfe des Popups angepasst werden, wenn ein Polygon ausgewählt ist:\n\n* *Die Farbauswahl* kann verwendet werden, um die Kontur und die Fläche des Polygons zu gestalten\n* Voreingestellte Farben sind in den *Farb*auswahl verfügbar. \n* Benutzerdefinierte Farben können mit einem *Farbwähler* angewendet werden, wenn Sie auf die *Pfeil-Schaltfläche* in der *Farbauswahl* klicken. \n\nDie Farbe kann standardmäßig über [Hex code](https://en.wikipedia.org/wiki/Web_colors#Hex_triplet) oder über [RGBA code](https://en.wikipedia.org/wiki/RGBA_color_model) definiert werden. \n\nDie Farbe kann durch Standardzeigerauswahl über [Hex code](https://en.wikipedia.org/wiki/Web_colors#Hex_triplet) oder über [RGBA code](https://en.wikipedia.org/wiki/RGBA_color_model). \n\nDie Deckkraft der Linie wird durch den 'A' Wert zwischen 0 und 100 definiert.\n\n![](/img/customcolor.png)\n\n* Die Konturbreite und der Konturtyp können mit vordefinierten Optionen festgelegt werden\n\n  ![](/img/outlinepoly.png)\n* Eine Auswahl von Füllmustern kann auf die Fläche genutzt werden.\n* Die Transparenz kann mit einem *Schieberegler* eingestellt werden\n\n  ![](/img/polytransparency.png)"
         },
         {
-          "heading": "Draw labels",
+          "heading": "Text zeichnen",
           "mapsetIcon": "text",
-          "text": "With this tool text labels can be drawn on the map.\n\nThe text label is entered in a text field and can be multi-lined if required.\n\nMany further customization are available:\n\n* By pressing on the 'B' button the font can be set to bold.\n\n  ![](/img/boldbutton.png)\n* the font size can be switched between: 'small', 'medium' & 'large'\n\n  ![](/img/textsize.png)\n* the text can be aligned on the left, the right or by default is centered.\n\n  ![](/img/textalign.png)\n* The text and the background color can be selected with the color widget.\n\n  The color can be set by standard pointer selection, or via [Hex code](https://en.wikipedia.org/wiki/Web_colors#Hex_triplet) or [RGBA code](https://en.wikipedia.org/wiki/RGBA_color_model).\n\n  The opacity of the line is defined by the 'A' value, between 0 and 100.\n* The text can be rotated via this input, either by moving the round indicator or by entering a rotation value in the input, between 0 and 360°\n\n  ![](/img/textrotation.png)"
+          "text": "Mit diesem Werkzeug werden Textbeschriftungen auf der Karte platziert.\n\nDer Text wird in ein Textfeld eingegeben und kann bei Bedarf mehrzeilig sein.\n\nDer Beschriftungsstil kann über das Popup angepasst werden, wenn eine Beschriftung ausgewählt wird:\n\n* Durch Drücken der Taste *B* kann die Schriftart fett eingestellt werden\n\n  ![](/img/boldbutton.png)\n* Die Schriftgröße kann auf eine der vordefinierten Optionen eingestellt werden\n\n  ![](/img/textsize.png)\n* Standardmäßig ist die Textausrichtung zentriert, kann jedoch so eingestellt werden, dass sie nach links oder rechts ausgerichtet wird\n\n  ![](/img/textalign.png)\n* Die Text- und Hintergrundfarbe kann mithilfe der vordefinierten Farben in der *Farbauswahl* oder mithilfe des *benutzerdefinierten Farbwähler* festgelegt werden. \n\n  Die Farbe kann standardmäßig über [Hex code](https://en.wikipedia.org/wiki/Web_colors#Hex_triplet) oder [RGBA code](https://en.wikipedia.org/wiki/RGBA_color_model) definiert werden. \n\n  Die Deckkraft der Linie wird durch den 'A' Wert zwischen 0 und 100 definiert.\n* Der Text kann mithilfe einer Grad-Eingabe gedreht werden, entweder durch Bewegen des *Schiebereglers* oder durch Eingabe eines Drehwerts in das Zahleneingabefeld (0 ° - 360 °).\n\n  ![](/img/textrotation.png)"
         },
         {
-          "heading": "Insert pictures",
-          "text": "*This feature is dependant from user rights and Corporate design settings.*\n\nA various set of images are available.\n\nThey can be placed on the map as default icons.\n\nThe image can be rotated via this input, either by moving the round indicator or by entering a rotation value in the input, between 0 and 360°.\n\nThe same input allows the resizing of the picture between 50 and 4000%.\n\n![](/img/insertpictures.png)",
+          "heading": "Bild einfügen",
+          "text": "Mit diesem Tool können Sie eine Auswahl von Bilder auf der Karte platzieren. Im Gegensatz zu Icons werden Bilder mit der Zoomstufe der Karte skaliert.\n\nDas Bild kann mithilfe einer Grad-Eingabe gedreht werden, entweder durch Bewegen des *Schiebereglers* oder durch Eingabe eines Drehwerts in das Zahleneingabefeld (0 ° - 360 °).\n\nEbenso kann die Größe des Bildes zwischen 50 und 4000% angepasst werden. 100% repräsentiert die ungefähre Größe des entsprechenden realen Objekts.\n\n![](/img/insertpictures.png)",
           "loginRestricted": true,
-          "mapsetIcon": "add_image"
+          "mapsetIcon": "add_image",
+          "cdRestricted": true
         },
         {
-          "heading": "Delete features",
-          "text": "There are two ways to remove a feature from the map:\n\n* Select a feature and click on the 'Delete feature' button in the dialog\n\n  ![](/img/deletebtn.png)\n* Click on the feature then press the '*Delete*' key, on the keyboard"
-        },
-        {
-          "heading": "Undo/Redo",
-          "text": "Actions on the map are saved momentarily in an history for user to be able to undo/redo actions.\n\nTo go back in the actions history and undo an something, the user must press the key combination on the keyboard:\n\n'*Ctrl*' + '*z*'\n\nWhilst to go forward in the history:\n\n'*Ctrl*' + '*y*'"
-        },
-        {
-          "heading": "Save",
-          "mapsetIcon": "save",
-          "text": "On every draw interaction or changes, the current state of the plan is automatically saved.\n\nWhenever a saving request is triggered a loading indicator appear in the sidebar\n\n![](/img/load.png)\n\nWhen is is succesful the loading indicator changes to this mark:\n\n![](/img/saved.png)",
+          "heading": "Route zeichnen",
+          "mapsetIcon": "route",
+          "text": "Mit diesem Tool werden automatisch Routen zwischen bestimmten Punkten für eine Auswahl von Beförderungsmitteln (MOT) erstellt.\n\n* Wenn das Route-Finder-Popup geöffnet wird, wählen Sie zuerst einen MOT aus. Die Haupt-MOTs (Fuß, Zug, Bus) verfügen über spezielle Tasten, während mehrere andere MOTs aus einem Dropdown-Menü ausgewählt werden können. Durch das Umschalten zwischen MOTs wird immer die aktuelle Route gelöscht und eine neue gestartet.\n\n  ![](/img/mots.png)\n* Es gibt zwei Möglichkeiten, Routenstopps im Kartensatz zu definieren: \n\n  **Texteingabe**: Verwenden Sie die Texteingabefelder, um nach Haltestellen zu suchen. Beim Ändern des Eingabetextes wird unter dem Feld eine Liste mit Vorschlägen angezeigt, aus der eine Zielstation entweder per Klick oder mit den Pfeil- und Auswahltasten über die Tastatur eingebunden werden können. Die Stationssuche erfolgt wie in der \\[Haltestelle Suche|https://mapset.io/de/guide/#haltestellesuche].\n\n  ![](/img/routebytext.png)\n\n  **Kartenklick**: Stopps können auch durch Klicken auf die Karte definiert werden. Während der *Routen-Finder* aktiv ist, wird durch Klicken auf die Karte ein neuer Punkt am Ende der aktuellen Route hinzugefügt und die Koordinate im Texteingabefeld angezeigt. Wenn ein Texteingabefeld fokussiert ist (blau hervorgehoben), wird durch Klicken auf die Karte die Koordinaten des entsprechende Stopps aktualisiert, anstatt einen neuen Stopp hinzuzufügen.\n\n  ![](/img/routebymap.png)\n* Die aktuelle Route kann durch Hinzufügen, Aktualisieren oder Entfernen von Wegpunkten bearbeitet werden: \n\n  **Hinzufügen**: Durch Klicken auf die Karte wird automatisch ein neuer Stopp mit der aktuellen Koordinate am Ende der Route hinzugefügt. \n\n  Alternativ kann ein neues Feld hinzugefügt werden, indem Sie die Schaltfläche *Halt hinzufügen* rechts neben dem Eingabefeld verwenden. Dadurch wird nachfolgend ein leeres Eingabefeld erstellt, in dem ein neuer Stopp wie zuvor beschrieben definiert werden kann.\n\n  ![](/img/addstop.png)\n\n  **Bearbeiten**: Stopps können aktualisiert werden, indem sie mithilfe der zuvor beschriebenen Eingabefelder neu definiert werden. Geben Sie entweder neuen Text ein und wählen Sie eine Haltestelle aus den Vorschlägen aus, oder passen sie die Koordinaten an, indem Sie zuerst auf das Eingabefeld klicken und dann auf die Karte.\n\n  Darüber hinaus kann die Reihenfolge der Stopps per Drag & Drop aktualisiert werden. Links neben den Eingabefeldern wird beim Hover ein kleines Handle (drei Punkte) angezeigt, das angeklickt und gezogen werden kann, wodurch das Feld von den aktuellen Feldern getrennt wird. Es kann dann an einer neuen Feldposition abgelegt werden.\n\n  ![](/img/dndhandle.png)\n\n  Wenn Sie das Stoppelement an einer neuen Position ablegen, werden die Felder im Popup sowie die Route auf der Karte aktualisiert.\n\n  ![](/img/dnd.png)\n\n  **Löschen**: Alle Stopps außer den Start- und Endstopps können durch Klicken auf die Schaltfläche *Halt entfernen* ganz rechts im Eingabefeld entfernt werden.\n\n  ![](/img/removestop.png)\n\n  Alternativ kann jeder Stopp entfernt werden, indem die Texteingabe über die Tastatur vollständig aus dem Eingabefeld gelöscht wird.\n* Klicken Sie auf *Auf Route zentrieren* wird die aktuelle Kartenausdehnung an die Routenabmessungen angepasst.\n\n  ![](/img/zoomtoroute.png)\n* Die Karte kann an jedem Stopp zentriert werden, indem Sie auf das Symbol zur Stoppmarkierung links neben den Eingabefeldern im Popup klicken.\n\n  ![](/img/pantostation.png)\n* Die aktuelle Route kann durch Klicken auf die Schaltfläche *Element löschen* gelöscht werden.\n* Beachten Sie, dass nach dem Schließen des Popups *Routen-Finder* die Route **in eine Linienfunktion umgewandelt wird** und Stopps nicht mehr bearbeitet werden können. Stattdessen kann die Route jetzt wie im Abschnitt *[Draw line](#drawline)* beschrieben geändert und gestaltet werden.",
           "loginRestricted": true
+        },
+        {
+          "heading": "Element löschen",
+          "text": "Es gibt zwei Möglichkeiten, ein Element aus der Karte zu entfernen:\n\n* Wählen Sie ein Element aus und klicken Sie im Popup auf die Schaltfläche *Element löschen*\n\n  ![](/img/deletebtn.png)\n* Wählen Sie ein Element aus und drücken Sie die Taste *Entfernen* oder *Löschen* auf der Tastatur"
+        },
+        {
+          "heading": "Rückgängig/Wiederholen",
+          "text": "Aktionen auf der Karte werden vorübergehend im App-Verlauf gespeichert. Der Benutzer kann damit Aktionen rückgängig machen / wiederholen.\n\nÄnderungen am Plan können durch Drücken von *Strg* + *z*  rückgängig gemacht werden.\n\nUmgekehrte Änderungen können durch Drücken von *Strg* + *y* oder *Strg* + *Umschaltaste* + *z* erneut angewendet werden.",
+          "loginRestricted": false
         }
       ]
     },
     {
-      "label": "Plan naming",
+      "label": "Speichern",
+      "mapsetIcon": "save",
       "content": [
         {
-          "text": "You can name a plan, so it is saved in the plan list.\n\nWhen a plan is not yet named, the text 'Untitled plan' appears in the header.\n\n![](/img/planname.png)\n\nClick on this text, in order to type a new plan name.",
-          "heading": "",
-          "loginRestricted": true
+          "text": "Im Mapset wird jede Änderung am aktuellen Plan automatisch gespeichert.\n\nEin *Spinner* gefolgt von einem *Häkchen* in der Seitenleiste zeigt an, dass der aktuelle Plan gespeichert wurde. Der *Spinner* soll nur über den Fortschritt des Speicherns informieren. Es ist nicht notwendig, auf das Ende des *Spinners* zu warten oder aktiv darauf zu klicken. Mapset stellt immer sicher, dass keine Änderungen verloren gehen.\n\n![](/img/savingplan.png)\n\n![](/img/savedplan.png)"
         }
       ]
     },
     {
-      "label": "Download plan",
-      "mapsetIcon": "download",
+      "label": "Planliste",
       "content": [
         {
-          "text": "You can download your plan as an image in PNG raster format. Download settings can be adjusted in a simple popup dialog. In this step you can also add a north arrow to your plan.\n\nIn the download settings you can choose whether to download the complete screen content as an image or define a cropped section of the map. To define the section, a red selection frame appears, which you can move and resize. At the bottom right of the frame, the size of the exported image is always displayed in pixels, making it easy to determine the exact size of the desired output file. The last section you have defined remains saved in the browser and will be restored the next time you start mapset. This feature allows you to create a series of maps with the same dimensions without having to adjust the frame each time.\n\nBy default the export of the image is done using the resolution of your monitor. This resolution is suitable to embed the image statically in web pages or to use it in a presentation, for example. If you want to print the image, the plan should be exported using high or very high resolution. This allows plans to be printed with high quality even in sizes up to B1.",
+          "text": "Mapset-Pläne können zur leichteren Bezugnahme und zur besseren Übersicht über alle erstellten Pläne mit einem Namen versehen werden.\n\nWenn ein Plan noch nicht benannt ist, wird in der Kopfzeile der Text \"Unbenannter Plan\" angezeigt.\n\n![](/img/planname.png)\n\nKlicken Sie auf diesen Text, um einen neuen Plannamen einzugeben. Ein *Spinner* und *Bestätigungsmeldung* neben dem Texteingabefeld zeigt an, dass der Planname gespeichert wurde.\n\nSobald ein Plan einen Namen hat, ist er in der Planliste verfügbar.\n\nBenannte Pläne können aus der Planliste in die Karte geladen werden, indem Sie einen Plan auswählen und auf die Schaltfläche *Öffnen* klicken.",
           "heading": "",
-          "loginRestricted": true
+          "loginRestricted": false
         }
       ]
     },
     {
-      "label": "Plan sharing",
+      "label": "Zeichnung teilen",
       "mapsetIcon": "share",
       "content": [
         {
           "heading": "",
-          "text": "There are two type of links to share the plan:\n\n* **Link to share**\n\n  This link is aimed to share your plan with others or to embed the plan in other applications.\n* **Link to edit**\n\n  This link is aimed to be able to reopen the current plan and edit it later.",
+          "text": "Es gibt zwei Arten von Links, um den Plan zu teilen:\n\n* **Link zum Teilen**\n\n  Der Link zum Teilen wird verwendet, um Ihren Plan im schreibgeschützten Modus für andere freizugeben oder um den Plan in andere Anwendungen einzubetten. Dieser Link rendert die Karte mit dem Plan, zeigt jedoch keines der Werkzeuge an und erlaubt daher keine Bearbeitung des Plans.\n* **Link zum Bearbeiten**\n\n  Über Link zum Bearbeiten können Sie einen zuvor erstellten Plan erneut öffnen und weiter bearbeiten. Über diesen Link können Sie mit anderen Benutzern an demselben Plan zusammenarbeiten.",
           "loginRestricted": true
         }
       ]
     },
     {
-      "label": "New plan",
+      "label": "Bild herunterladen",
+      "mapsetIcon": "download",
+      "content": [
+        {
+          "text": "Pläne können als Bilder im PNG-Rasterformat exportiert werden. Die Download-Einstellungen können im speziellen Popup-Dialogfeld angepasst werden. \n\nExportierte Bilder können in den Exporteinstellungen angepasst werden: \n\n* Ein *Nordpfeil* kann in der unteren rechten Ecke des exportierten Bildes hinzugefügt werden.\n* Standardmäßig wird die komplette Kartenansicht exportiert. Alternativ kann ein zugeschnittener Abschnitt der Karte für den Export definiert werden. Um den Abschnitt zu definieren, wird ein roter Rahmen angezeigt, der verschoben und in der Größe geändert werden kann. Unten rechts im Rahmen wird die Größe des exportierten Bildes immer in Pixel angezeigt, sodass Sie die genaue Größe der gewünschten Ausgabedatei leicht bestimmen können. Der zuletzt definierte Abschnitt bleibt im Browser gespeichert und wird beim nächsten Start von Mapset wiederhergestellt. Mit dieser Funktion können Sie eine Reihe von Karten mit denselben Abmessungen erstellen, ohne den Rahmen jedes Mal anpassen zu müssen.\n* Standardmäßig erfolgt der Export des Bildes mit der Auflösung Ihres Monitors. Diese Auflösung eignet sich, um das Bild statisch in Webseiten einzubetten oder beispielsweise in einer Präsentation zu verwenden. Wenn Sie das Bild drucken möchten, sollte der Plan mit hoher oder sehr hoher Auflösung exportiert werden. Dadurch können Pläne auch in Größen bis B1 in hoher Qualität gedruckt werden.",
+          "heading": "",
+          "loginRestricted": true
+        }
+      ]
+    },
+    {
+      "label": "Neuer Plan",
       "mapsetIcon": "newplan",
       "content": [
         {
-          "text": "This action will open a new empty plan.\\\nYou must ensure that you saved your current plan or at least save the edit link to be able to work with it later on if needed."
+          "text": "Diese Aktion öffnet einen neuen, leeren Plan. \n\nStellen Sie sicher, dass Sie Ihren aktuellen Plan nach Namen gespeichert haben, oder speichern Sie den Bearbeitungslink, um ihn später laden und weiter bearbeiten zu können."
         }
       ]
     },
     {
-      "label": "Settings",
+      "label": "Einstellungen",
       "mapsetIcon": "settings",
       "content": [
         {
-          "heading": "Language",
-          "text": "There are four available languages:\n\n* German\n* English\n* French\n* Italian"
+          "heading": "Sprache",
+          "text": "Es stehen vier Sprachen zur Verfügung:\n\n* Deutsche\n* Englisch\n* Französisch\n* Italienisch"
         },
         {
           "heading": "Corporate Design",
-          "text": "Some Corporate design settings can be set via a drop-down menu.\n\n![](/img/corporatedesign.png)\n\nThe available Corporate designs depends on the user rights.\n\nEach corporate design enable some features, such as:\n\n* icon design \n* availability of custom icons\n* allow to insert pictures additionally to icons",
+          "text": "Vordefinierte Unternehmensdesigns können über ein Dropdown-Menü festgelegt werden.\n\n![](/img/corporatedesign.png)\n\nDer Zugriff auf bestimmte Unternehmensdesigns hängt von den Zugriffsrechten des Benutzers ab.\n\nCorporate Designs passen bestimmte Mapset-Funktionen an, beispielsweise:\n\n* Icon Design\n* Standardfarben in den Farbwählern\n* Verfügbarkeit von benutzerdefinierten Symbolen\n* Zugriff auf das Werkzeug *Bild einfügen*",
           "loginRestricted": true
+        },
+        {
+          "heading": "Tipps beim Start anzeigen",
+          "text": "Legt fest, ob beim Start kurze Hinweise für eine optimale Nutzung des Mapsets angezeigt werden.\n\nIm Dialogfeld für jeden Hinweis können Sie die Option zum Anzeigen weiterer Hinweise deaktivieren. Im Einstellungsdialog können Sie die Anzeige wieder aktivieren."
         }
       ]
     }

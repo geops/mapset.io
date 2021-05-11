@@ -2,24 +2,24 @@
   "title": "Français",
   "features": [
     {
-      "heading": "Dynamisch franz.",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "heading": "Créer et utiliser des plans",
+      "text": "Notre vidéo explicative montre les fonctionnalités les plus importantes de mapset.\n\n<iframe src=\"https://player.vimeo.com/video/411447856?dnt=1\" width=\"640\" height=\"360\"  frameborder=\"0\" allow=\"fullscreen\" allowfullscreen></iframe>"
     },
     {
-      "heading": "Element zeichnen",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "heading": "Meilleure pratique",
+      "text": "\n\n<img src=\"/img/schaffhausen_plan_editor.png\" style=\"width:100%\"/>\n\n<span style=\"font-weight:bold\">Exemple 1 : Plan du service de remplacement des trains\r</span><br/>\nUn plan de service de remplacement de train indique le chemin vers le bus de remplacement s'il n'est pas possible d'y accéder directement à la gare. L'itinéraire vers le bus est généralement représenté par une ligne pointillée. Le point de départ exact au bout de la ligne est indiqué par un pictogramme. D'autres informations qui pourraient être importantes pour l'itinéraire peuvent être ajoutées (par exemple, les numéros des voies, les points d'intérêt, etc.).<br/>\n\n<img src=\"/img/liestal_plan_editor.png\" style=\"width:100%\"/>\n\n<span style=\"font-weight:bold\">Exemple 2 : Plan d'un chantier de construction\r</span><br/>\n\r\nmapset est parfaitement adapté à la présentation d'informations sur les chantiers de construction. Les détours peuvent être représentés par des routes rouges. Un certain nombre d'icônes sont disponibles pour localiser les restrictions. Des ajouts textuels peuvent être insérés directement dans la carte.<br/>\n\n<img src=\"/img/letzigrund_plan_editor.png\" style=\"width:100%\"/>\n\n<span style=\"font-weight:bold\">Exemple 3 : Plan d'arrêt spécifique\r</span><br/>\n\nMapset peut être utilisé pour illustrer les conditions d'une station ou d'un arrêt. Idéalement, un point d'arrêt indique l'emplacement précis de l'arrêt. L'accent peut être mis sur des arrêts spécifiques en utilisant des pictogrammes de différentes tailles. En outre, des pictogrammes personnalisés peuvent être créés pour différentes lignes de bus.<br/>\n\n<img src=\"/img/buchrain_plan_editor.png\" style=\"width:100%\"/>\n\n<span style=\"font-weight:bold\">Exemple 4 : Plan d'un événement\r</span><br/>\n\nAvec Mapset, les événements et leur lien avec les transports publics peuvent être représentés de manière optimale. Les itinéraires sont idéalement illustrés par des lignes rouges, les différents points de départ et moyens de transport peuvent être représentés avec les pictogrammes correspondants.<br/>"
     },
     {
-      "heading": "Pläne als Bild exportieren",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "heading": "Intégration dynamique des plans",
+      "text": "Un **simple** lien vous permet de définir non seulement les éléments du dessin actuel, mais aussi la section et l'échelle du plan. Vous pouvez facilement partager le lien par e-mail ou via les médias sociaux. Vos destinataires verront exactement le plan que vous avez créé.\n\nLe même lien peut également être intégré à votre site web. Si vous utilisez une \"IFrame\", cela peut se faire en quelques clics.\n\nL'exemple ci-dessous montre le code HTML permettant d'intégrer un plan dans une page.\n\n```\n<iframe style=\"width:100%;height:300px;\" src=\"https://geops.sh/154A37952CB6AD95DC\"></iframe>\n\n```\n\nEn conséquence, ce plan s'affiche:\n\n<iframe style=\"width:100%;height:300px;\" src=\"https://geops.sh/154A37952CB6AD95DC\"></iframe>"
     },
     {
-      "heading": "Dynamisch einbinden",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "heading": "Exportation d'images",
+      "text": "Vous pouvez télécharger votre plan en tant qu'image au format matriciel PNG. Les paramètres de téléchargement peuvent être ajustés dans une simple boîte de dialogue contextuelle. Dans cette étape, vous pouvez également ajouter une flèche du nord à votre plan.\n\nDans les paramètres de téléchargement, vous pouvez choisir de télécharger le contenu complet de l'écran sous forme d'image ou de définir une section recadrée de la carte. Pour définir la section, un cadre de sélection rouge apparaît, que vous pouvez déplacer et redimensionner. En bas à droite du cadre, la taille de l'image exportée est toujours affichée en pixels, ce qui permet de déterminer facilement la taille exacte du fichier de sortie souhaité. La dernière section que vous avez définie reste enregistrée dans le navigateur et sera restaurée la prochaine fois que vous lancerez mapset. Cette fonctionnalité vous permet de créer une série de cartes avec les mêmes dimensions sans avoir à ajuster le cadre à chaque fois.\n\nPar défaut, l'exportation de l'image est faite en utilisant la résolution de votre moniteur. Cette résolution convient pour intégrer l'image de manière statique dans des pages web ou pour l'utiliser dans une présentation, par exemple. Si vous souhaitez imprimer l'image, le plan doit être exporté en haute ou très haute résolution. Cela permet d'imprimer les plans avec une haute qualité, même dans des formats allant jusqu'à B1."
     },
     {
-      "heading": "Nutzungsbedingungen",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "heading": "Inscription",
+      "text": "Après avoir complété un abonnement, nous activerons votre accès à mapset. Les collaborateurs de votre entreprise peuvent obtenir un accès individuel. Alternativement, nous pouvons accorder l'accès sur la base du suffixe des adresses e-mail (\"domaine\" tel que sbb.ch ou tmrsa.ch ). Une connexion à votre administration centrale des utilisateurs (\"SingleSignOn\") est également possible en tant que service supplémentaire. Veuillez nous contacter pour connaître l'option qui vous convient le mieux."
     }
   ]
 }

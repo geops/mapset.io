@@ -17,7 +17,7 @@ const Footer = class extends React.Component {
               className="footerlink"
               href="https://geops.de/node/182?language=en"
             >
-              Privacy Policy
+              <FormattedMessage id="generic.privacyPolicy" />
             </a>
           </div>
           <div>

@@ -6,9 +6,8 @@ import Scroller from '../components/Scroller';
 import ContactButton from '../components/ContactButton';
 import Imprint from '../components/Imprint';
 import Contact from '../components/Contact';
+import SiteSwitcher from '../components/SiteSwitcher';
 import userManager from '../utils/userManager';
-
-import TrackingDialog from '../components/TrackingDialog';
 
 import layout_bg_1 from '../img/layoutBG_1.png';
 import layout_bg_2 from '../img/layoutBG_2.png';
@@ -34,7 +33,9 @@ import de_prices from '../data/prices/de.json';
 import en_prices from '../data/prices/en.json';
 
 // import license information
-import license from '../data/license/en.json';
+import fr_license from '../data/license/fr.json';
+import de_license from '../data/license/de.json';
+import en_license from '../data/license/en.json';
 
 const accordionHandler = function (id) {
   let item = document.getElementsByName(id)[0];
@@ -62,42 +63,43 @@ export const IndexPageTemplate = ({ locale, region }) => {
   let benefits;
   let features;
   let prices;
+  let licenseInformation;
   switch (locale) {
     case 'fr': {
       benefits = fr_benefits.benefits;
       features = fr_features.features;
       prices = fr_prices.prices;
+      licenseInformation = fr_license.license;
       break;
     }
     case 'de': {
       benefits = de_benefits.benefits;
       features = de_features.features;
       prices = de_prices.prices;
+      licenseInformation = de_license.license;
       break;
     }
     default: {
       benefits = en_benefits.benefits;
       features = en_features.features;
       prices = en_prices.prices;
+      licenseInformation = en_license.license;
       break;
     }
   }
-  let licenseInformation = license.license;
   let md = new Remarkable();
   md.set({
     html: true,
     breaks: true,
   });
 
-  console.log(region);
-
   return (
     <div style={{ position: 'relative' }}>
-      <TrackingDialog />
+      <SiteSwitcher region={region} />
       <section className="topSection">
         <div className="container">
           <div className="row is-white">
-            <div className="col-12 col-md-5">
+            <div className="col-12 col-md-6">
               <div className="scrollNav row d-none d-md-flex">
                 <a className="navbar-item" href="#benefits">
                   <FormattedMessage id="generic.Benefits" />
@@ -129,7 +131,11 @@ export const IndexPageTemplate = ({ locale, region }) => {
                 </p>
                 <div className="alignContainer row">
                   <a
-                    href="https://editor.mapset.io"
+                    href={
+                      region === 'ch'
+                        ? 'https://editor.mapset.ch'
+                        : 'https://editor.mapset.io'
+                    }
                     target="editor-mapset"
                     rel="noopener noreferrer"
                   >
@@ -140,7 +146,7 @@ export const IndexPageTemplate = ({ locale, region }) => {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-7 order-md-first">
+            <div className="col-12 col-md-6 order-md-first">
               <div className="row">
                 <div className="headerBadge d-none d-md-block">
                   <img className="main-heading" src={mapset_banner} alt="" />
@@ -335,7 +341,13 @@ export const IndexPageTemplate = ({ locale, region }) => {
 
             <div className="conditions">
               <span>
-                <FormattedHTMLMessage id="content.conditions text" />
+                <FormattedHTMLMessage
+                  id={
+                    region === 'ch'
+                      ? 'content.conditions text ch'
+                      : 'content.conditions text eu'
+                  }
+                />
               </span>
             </div>
           </div>
@@ -405,9 +417,10 @@ export const IndexPageTemplate = ({ locale, region }) => {
                     </button>
                     <div className="content">
                       <p>
-                        <FormattedHTMLMessage
-                          id={license.text}
-                          values={{ br: <br /> }}
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: md.render(license.text),
+                          }}
                         />
                       </p>
                     </div>
@@ -444,7 +457,7 @@ const Index = ({ pageContext: { locale, region } }) => {
   }
 
   return (
-    <Layout locale={locale} user={user}>
+    <Layout locale={locale} region={region} user={user}>
       <IndexPageTemplate locale={locale} region={region} />
     </Layout>
   );

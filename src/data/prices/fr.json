@@ -3,27 +3,27 @@
   "prices": [
     {
       "tier": "FREE",
-      "text": "For transport companies with\n**up to\n10 stops***",
-      "price": "free",
-      "subtext": "0.- €/year"
+      "text": "Pour les entreprises de transport ayant\n**jusqu'à\n10 arrêts***",
+      "price": "gratuit",
+      "subtext": "0.- €/an"
     },
     {
       "tier": "MINI",
-      "text": "For transport companies with\n**11-200 stops**\nor\n**1-10\nrailway stations***",
+      "text": "Pour les entreprises de transport avec\n**11-200 arrêts**\nou\n**1-10\ngares ferroviaires***",
       "price": "2'700.–",
-      "subtext": "2'700 €/year"
+      "subtext": "2'700 €/an"
     },
     {
       "tier": "MIDI",
-      "text": "For transport companies with\n**201-500 stops**\nor\n**11-100\nrailway stations***",
+      "text": "Pour les entreprises de transport avec\n**201-500 arrêts**\nou\n**11-100\ngares ferroviaires***",
       "price": "5'900.–",
-      "subtext": "5'900 €/year"
+      "subtext": "5'900 €/an"
     },
     {
       "tier": "MAXI",
-      "text": "For transport companies with\n**more than 501 stops**\nor\n**101-200\nrailway stations***",
+      "text": "Pour les entreprises de transport avec\n**plus de 501 arrêts**\nou\n**101-200\ngares ferroviaires***",
       "price": "8'400.–",
-      "subtext": "8'400 €/year"
+      "subtext": "8'400 €/an"
     }
   ]
 }

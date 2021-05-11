@@ -2,14 +2,15 @@
   "templateKey": "index-page",
   "title": "Page d'index français",
   "content": {
-    "page header": "Attraktive Situationspläne für den öffentlichen Verkehr",
-    "page header description": "francais: Sie möchten Ihren Kunden aktuelle und attraktive Informationen zum öffentlichen Verkehr zugänglich machen? – Trafimage Mapset erlaubt die einfache Erstellung von übersichtlichen und optisch ansprechenden Plangrafiken für den öffentlichen Verkehr. Mit wenigen Klicks visualisieren Sie Pläne für geänderte Haltestellen, kommunizieren die Situation bei Bauprojekten, gewährleisten die Kundenführung bei Events oder informieren über betriebliche Sonderfälle vor Ort. All dies auf Basis der bekannten, offiziellen Trafimage-Karten, welche von der SBB entwickelt wurden und laufend aktualisiert werden.",
-    "specification description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "price description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "conditions text": "* Gemeint ist der Gesamtumfang an Haltestellen, unabhängig von der Anzahl <br> tatsächlich mit PlanEditor bearbeiteter Haltestellen",
-    "contact description": "Wir freuen uns über Ihre Kontaktaufnahme und helfen bei Fragen gerne weiter.",
-    "setup fee eu": "€ 490 one-time setup fee",
-    "setup fee ch": "CHF 490.– one-time setup fee"
+    "page header": "Plans d'implantation pour les transports publics",
+    "page header description": "Vous souhaitez fournir à vos clients des informations actualisées et attrayantes sur les transports publics ? mapset permet de créer rapidement et facilement des plans de stations et des plans d'orientation des clients clairs et visuellement attrayants.",
+    "specification description": "mapset offre de nombreux avantages pour la création facile de plans et de cartes.",
+    "price description": "Vous trouverez ici un aperçu des coûts annuels et des frais d'installation uniques.",
+    "conditions text eu": "* Les prix se réfèrent au nombre total d'arrêts d'une entreprise, indépendamment du nombre d'arrêts effectivement traités avec mapset.<br/><br/>\n\nEn plus des frais d'abonnement courants, des frais d'installation de 490.– € sont facturés au début de l'abonnement. Après une interruption de l'abonnement, les frais d'installation sont à nouveau dus lors du renouvellement de l'abonnement. Pour les entreprises de transport comptant jusqu'à 10 arrêts, seuls les frais de mise en service sont facturés.<br/><br/>\n\nDans le cadre des abonnements et des frais d'installation, la configuration des utilisateurs de mapset est incluse, à condition que les utilisateurs puissent être identifiés par un domaine de messagerie uniforme (par exemple james.meyer@ktuxy.com et :james.meyer@ktuxy.com). Pour la configuration d'utilisateurs individuels, qui ne sont pas identifiables via un domaine, 90.– € par utilisateur seront facturés.",
+    "conditions text ch": "* Les prix se réfèrent au nombre total d'arrêts d'une entreprise, indépendamment du nombre d'arrêts effectivement traités avec mapset.<br/><br/>\n\nEn plus des frais d'abonnement courants, des frais d'installation de 490.– CHF sont facturés au début de l'abonnement. Après une interruption de l'abonnement, les frais d'installation sont à nouveau dus lors du renouvellement de l'abonnement. Pour les entreprises de transport comptant jusqu'à 10 arrêts, seuls les frais de mise en service sont facturés.<br/><br/>\n\nDans le cadre des abonnements et des frais d'installation, la configuration des utilisateurs de mapset est incluse, à condition que les utilisateurs puissent être identifiés par un domaine de messagerie uniforme (par exemple james.meyer@ktuxy.com et :james.meyer@ktuxy.com). Pour la configuration d'utilisateurs individuels, qui ne sont pas identifiables via un domaine, 90.– CHF par utilisateur seront facturés.",
+    "contact description": "Nous nous réjouissons d'avoir de vos nouvelles et sommes heureux de répondre à toutes vos questions.",
+    "setup fee eu": "490 € de frais d'installation uniques",
+    "setup fee ch": "490.– CHF de frais d'installation uniques"
   },
   "contact": {
     "title": "Contact",
@@ -27,27 +28,46 @@
     "submitted": "Thank you for your interest..."
   },
   "generic": {
-    "Kontakt": "Contact",
-    "Besuchen Sie uns auf Twitter": "Nous rendre visite sur Twitter",
+    "Kontakt": "Contactez",
+    "Besuchen Sie uns auf Twitter": "Visitez-nous sur Twitter",
     "Anfragen": "Anfragen",
-    "Ihr persönlicher Kontakt": "Votre contact personnel",
-    "So funktioniert's": "So funktioniert's",
+    "Ihr persönlicher Kontakt": "Contact",
+    "So funktioniert's": "Comment ça marche",
     "Zufriedene Kunden": "Des clients satisfaits",
-    "Demo": "Demo",
+    "Demo": "Démonstration",
     "powered by": "powered by",
-    "Noch Fragen ?": "Des questions?",
-    "Newsletter": "Newsletter abonnieren",
+    "Noch Fragen ?": "Vous avez des questions ?",
+    "Newsletter": "s'abonner à la newsletter",
     "Preise": "Prix",
     "footer": {
       "Impressum": "empreinte",
       "Disclaimer": "Disclaimer"
     },
     "Benefits": "Avantages",
-    "Lizenz": "License",
+    "Lizenz": "Licence",
     "Imprint": "Mentions légales",
     "navbar": {
       "Login": "Login",
-      "Logout": "Logged in as"
-    }
+      "Logout": "Logged in as",
+      "international": "International",
+      "swiss": "Swiss"
+    },
+    "request": "Demande",
+    "privacyPolicy": "Politique de confidentialité"
+  },
+  "imprint": {
+    "phone": "téléphone",
+    "mail": "mail",
+    "managingDirector": "Directeur général, président du conseil d'administration: Ulrich Müller-Ertle",
+    "commercialNumber": "Registre du commerce n°. CHE-455.829.547 Basel-Landschaft",
+    "disclaimer": "Clause de non-responsabilité : Malgré un contrôle minutieux du contenu, nous n'assumons aucune responsabilité quant au contenu des liens externes. Les exploitants des pages liées sont seuls responsables du contenu de leurs pages.",
+    "responsible": "Responsable du contenu : Ulrich Müller-Ertle (adresses comme ci-dessus)"
+  },
+  "siteSwitcher": {
+    "title": "Are you sure you are on the right page?",
+    "goCH": "You are currently at the international website.<br /> Do you want to go to the swiss website?",
+    "goEU": "You are currently at the swiss website.<br /> Do you want to go to the international website?",
+    "buttonEU": "International Website",
+    "buttonCH": "Swiss Website"
   }
 }
