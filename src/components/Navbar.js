@@ -242,15 +242,15 @@ class Navbar extends React.Component {
                 {locale === 'en' ? (
                   'EN'
                 ) : (
-                  <a href={region === 'ch' ? '/en' : '/'}>EN</a>
+                  <a href={region === 'ch' ? '/en/' : '/'}>EN</a>
                 )}
                 <div className="mobile-menu-site-switcher-divider" />
-                {locale === 'fr' ? 'FR' : <a href="/fr">FR</a>}
+                {locale === 'fr' ? 'FR' : <a href="/fr/">FR</a>}
                 <div className="mobile-menu-site-switcher-divider" />
                 {locale === 'de' ? (
                   'DE'
                 ) : (
-                  <a href={region === 'ch' ? '/' : '/de'}>DE</a>
+                  <a href={region === 'ch' ? '/' : '/de/'}>DE</a>
                 )}
               </div>
             </div>
@@ -294,15 +294,15 @@ class Navbar extends React.Component {
                     {locale === 'en' ? (
                       'EN'
                     ) : (
-                      <a href={region === 'ch' ? '/en' : '/'}>EN</a>
+                      <a href={region === 'ch' ? '/en/' : '/'}>EN</a>
                     )}
                   </div>
-                  <div>{locale === 'fr' ? 'FR' : <a href="/fr">FR</a>}</div>
+                  <div>{locale === 'fr' ? 'FR' : <a href="/fr/">FR</a>}</div>
                   <div>
                     {locale === 'de' ? (
                       'DE'
                     ) : (
-                      <a href={region === 'ch' ? '/' : '/de'}>DE</a>
+                      <a href={region === 'ch' ? '/' : '/de/'}>DE</a>
                     )}
                   </div>
                 </div>

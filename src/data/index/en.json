@@ -19,7 +19,7 @@
     "firstName": "First name",
     "lastName": "Last name",
     "company": "Company",
-    "telephone": "Telefon",
+    "telephone": "Telephone",
     "email": "E-Mail*",
     "interest": "I am interested in",
     "message": "Message",
@@ -54,7 +54,7 @@
       "international": "International",
       "swiss": "Swiss"
     },
-    "request": "request",
+    "request": "Request Offer",
     "privacyPolicy": "Privacy Policy"
   },
   "guide": {
