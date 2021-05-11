@@ -83,7 +83,7 @@
       "mapsetIcon": "save",
       "content": [
         {
-          "text": "Im mapset wird jede Änderung am aktuellen Plan automatisch gespeichert.\n\nEin *Spinner* gefolgt von einem *Häkchen* in der Seitenleiste zeigt an, dass der aktuelle Plan gespeichert wurde. Der *Spinner* soll nur über den Fortschritt des Speicherns informieren. Es ist nicht notwendig, auf das Ende des *Spinners* zu warten oder aktiv darauf zu klicken. Mapset stellt immer sicher, dass keine Änderungen verloren gehen.\n\n![](/img/savingplan.png)\n\n![](/img/savedplan.png)"
+          "text": "Im mapset wird jede Änderung am aktuellen Plan automatisch gespeichert.\n\nEin *Spinner* gefolgt von einem *Häkchen* in der Seitenleiste zeigt an, dass der aktuelle Plan gespeichert wurde. Der *Spinner* soll nur über den Fortschritt des Speicherns informieren. Es ist nicht notwendig, auf das Ende des *Spinners* zu warten oder aktiv darauf zu klicken. mapset stellt immer sicher, dass keine Änderungen verloren gehen.\n\n![](/img/savingplan.png)\n\n![](/img/savedplan.png)"
         }
       ]
     },
