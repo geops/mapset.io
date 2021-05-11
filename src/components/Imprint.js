@@ -1,4 +1,5 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 
 function Imprint() {
   return (
@@ -9,9 +10,12 @@ function Imprint() {
         <span>CH-4600 Olten</span>
       </p>
       <p>
-        <span>phone +41 61 588 05 05</span>
         <span>
-          mail&nbsp;
+          <FormattedMessage id="imprint.phone" /> +41 61 588 05 05
+        </span>
+        <span>
+          <FormattedMessage id="imprint.mail" />
+          &nbsp;
           <a
             href={'mailto:info@geops.ch'}
             style={{ color: 'rgb(110, 144, 166)' }}
@@ -22,26 +26,24 @@ function Imprint() {
       </p>
       <p>
         <span>
-          Managing Director, Chairman of the Board: Ulrich Müller-Ertle
+          <FormattedMessage id="imprint.managingDirector" />
         </span>
       </p>
 
       <p>
-        <span>Commercial register no. CHE-455.829.547 Basel-Landschaft</span>
+        <FormattedMessage id="imprint.commercialNumber" />
         <span>UID: CHE-455.829.547 VAT</span>
       </p>
       <br />
       <p>
         <span>
-          Disclaimer: Despite careful control of the contents, we do not assume
-          any liability for the contents of external links. The operators of the
-          linked pages are solely responsible for the content of their pages.
+          <FormattedMessage id="imprint.disclaimer" />
         </span>
       </p>
 
       <p>
         <span>
-          Responsible for content: Ulrich Müller-Ertle (addresses as above)
+          <FormattedMessage id="imprint.responsible" />
         </span>
       </p>
     </div>

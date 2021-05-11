@@ -38,12 +38,22 @@
       "Logout": "Logged in as",
       "international": "International",
       "swiss": "Swiss"
-    }
+    },
+    "request": "request",
+    "privacyPolicy": "Privacy Policy"
   },
   "guide": {
     "Guide": "User guide",
     "Links-io": "For other countries please use the international domain:",
     "Links-ch": "For Switzerland please access mapset using the address:"
+  },
+  "imprint": {
+    "phone": "phone",
+    "mail": "mail",
+    "managingDirector": "Managing Director, Chairman of the Board: Ulrich Müller-Ertle",
+    "commercialNumber": "Commercial register no. CHE-455.829.547 Basel-Landschaft",
+    "disclaimer": "Disclaimer: Despite careful control of the contents, we do not assume any liability for the contents of external links. The operators of the linked pages are solely responsible for the content of their pages.",
+    "responsible": "Responsible for content: Ulrich Müller-Ertle (addresses as above)"
   },
   "siteSwitcher": {
     "title": "Are you sure you are on the right page?",
