@@ -332,11 +332,11 @@ export const IndexPageTemplate = ({ locale, region }) => {
                             }
                           />
                         </span>
-                        <ContactButton mode={price.tier} />
                       </div>
                     </div>
                   </div>
                 ))}
+              <ContactButton />
             </div>
 
             <div className="conditions">

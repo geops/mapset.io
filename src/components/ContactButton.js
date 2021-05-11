@@ -1,15 +1,16 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import PropTypes from 'prop-types';
-import contact from '../data/contact.json';
 
-function ContactButton({ mode }) {
+function ContactButton() {
   return (
-    <a href={`./contact?mode=${mode}`}>
-      <button className="btn blue-btn">
-        <FormattedMessage id="generic.request" />
-      </button>
-    </a>
+    <div className="contact-button">
+      <a href={`./contact`}>
+        <button className="btn">
+          <FormattedMessage id="generic.request" />
+        </button>
+      </a>
+    </div>
   );
 }
 
