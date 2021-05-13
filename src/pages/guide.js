@@ -265,19 +265,13 @@ export const GuidePage = ({ locale }) => {
                             {f.loginRestricted ? (
                               <p className="loginRestricted">
                                 <Warning />
-                                <i>
-                                  This feature requires the user to be logged
-                                  in.
-                                </i>
+                                <i><FormattedMessage id="guide.login-restricted" /></i>
                               </p>
                             ) : null}
                             {f.cdRestricted ? (
                               <p className="cdRestricted">
                                 <Warning />
-                                <i>
-                                  This feature is accessible depending on user
-                                  rights and Corporate Design settings.
-                                </i>
+                                <i><FormattedMessage id="guide.cd-restricted" /></i>
                               </p>
                             ) : null}
                             <span
