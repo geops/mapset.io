@@ -89,7 +89,7 @@
       "mapsetIcon": "save"
     },
     {
-      "label": "Plan names & list",
+      "label": "Plan names and list",
       "content": [
         {
           "text": "mapset plans can be given a name for an easier reference and a better overview of all created plans.\n\nWhen a plan is not yet named, the text 'Untitled plan' appears in the header.\n\n![](/img/planname.png)\n\nClick on this text to enter a new plan name. A *load spinner* and *confirmation message* next to the text input field indicates the plan name has been saved.\n\nOnce a plan has a name it will be available in the plans list.\n\nNamed plans can be loaded into the map from the plans list by selecting a plan and clicking on the *Open* button."
