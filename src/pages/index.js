@@ -3,7 +3,7 @@ import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 import Layout from '../components/Layout';
 import { Remarkable } from 'remarkable';
 import Scroller from '../components/Scroller';
-import ContactButton from '../components/ContactButton';
+import ContactForm from '../components/ContactForm';
 import Imprint from '../components/Imprint';
 import Contact from '../components/Contact';
 import SiteSwitcher from '../components/SiteSwitcher';
@@ -336,7 +336,6 @@ export const IndexPageTemplate = ({ locale, region }) => {
                     </div>
                   </div>
                 ))}
-              <ContactButton />
             </div>
 
             <div className="conditions">
@@ -363,8 +362,9 @@ export const IndexPageTemplate = ({ locale, region }) => {
         <div className="container">
           <div className="rightColumn">
             <h1 className="is-bolder contactHeader">
-              <FormattedMessage id="generic.Noch Fragen ?" />
+              <FormattedMessage id="generic.Kontakt" />
             </h1>
+            <ContactForm />
             <Contact />
           </div>
         </div>
@@ -415,15 +415,12 @@ export const IndexPageTemplate = ({ locale, region }) => {
                         </svg>
                       </h5>
                     </button>
-                    <div className="content">
-                      <p>
-                        <span
-                          dangerouslySetInnerHTML={{
-                            __html: md.render(license.text),
-                          }}
-                        />
-                      </p>
-                    </div>
+                    <div
+                      className="content"
+                      dangerouslySetInnerHTML={{
+                        __html: md.render(license.text),
+                      }}
+                    ></div>
                   </div>
                 ))}
             </div>

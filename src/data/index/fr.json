@@ -25,7 +25,7 @@
     "privacyPolicy": "Oui, j'ai lu et j'accepte la <a href='https://geops.de/node/182?language=en'>politique de confidentialité</a>.*",
     "required": "* Champ obligatoire",
     "submit": "Envoyer la demande",
-    "submitted": "Merci de votre intérêt..."
+    "submitted": "Merci pour votre demande, nous vous répondrons dans les meilleurs délais."
   },
   "generic": {
     "Kontakt": "Contactez",
@@ -38,7 +38,7 @@
     "powered by": "powered by",
     "Noch Fragen ?": "Vous avez des questions ?",
     "Newsletter": "s'abonner à la newsletter",
-    "Preise": "Prix",
+    "Preise": "Tarifs",
     "footer": {
       "Impressum": "empreinte",
       "Disclaimer": "Disclaimer"
