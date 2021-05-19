@@ -8,6 +8,7 @@
     "price description": "Vous trouverez ici un aperçu des coûts annuels et des frais d'installation uniques.",
     "conditions text eu": "* Les prix se réfèrent au nombre total d'arrêts d'une entreprise, indépendamment du nombre d'arrêts effectivement traités avec mapset.<br/><br/>\n\nEn plus des frais d'abonnement courants, des frais d'installation de 490.– € sont facturés au début de l'abonnement. Après une interruption de l'abonnement, les frais d'installation sont à nouveau dus lors du renouvellement de l'abonnement. Pour les entreprises de transport comptant jusqu'à 10 arrêts, seuls les frais de mise en service sont facturés.<br/><br/>\n\nDans le cadre des abonnements et des frais d'installation, la configuration des utilisateurs de mapset est incluse, à condition que les utilisateurs puissent être identifiés par un domaine de messagerie uniforme (par exemple james.meyer@ktuxy.com et :james.meyer@ktuxy.com). Pour la configuration d'utilisateurs individuels, qui ne sont pas identifiables via un domaine, 90.– € par utilisateur seront facturés.",
     "conditions text ch": "* Les prix se réfèrent au nombre total d'arrêts d'une entreprise, indépendamment du nombre d'arrêts effectivement traités avec mapset.<br/><br/>\n\nEn plus des frais d'abonnement courants, des frais d'installation de 490.– CHF sont facturés au début de l'abonnement. Après une interruption de l'abonnement, les frais d'installation sont à nouveau dus lors du renouvellement de l'abonnement. Pour les entreprises de transport comptant jusqu'à 10 arrêts, seuls les frais de mise en service sont facturés.<br/><br/>\n\nDans le cadre des abonnements et des frais d'installation, la configuration des utilisateurs de mapset est incluse, à condition que les utilisateurs puissent être identifiés par un domaine de messagerie uniforme (par exemple james.meyer@ktuxy.com et :james.meyer@ktuxy.com). Pour la configuration d'utilisateurs individuels, qui ne sont pas identifiables via un domaine, 90.– CHF par utilisateur seront facturés.",
+    "contact header": "Restez à jour !",
     "contact description": "Nous nous réjouissons d'avoir de vos nouvelles et sommes heureux de répondre à toutes vos questions.",
     "setup fee eu": "490 € de frais d'installation uniques",
     "setup fee ch": "490.– CHF de frais d'installation uniques"
@@ -25,7 +26,7 @@
     "privacyPolicy": "Oui, j'ai lu et j'accepte la <a href='https://geops.de/node/182?language=en'>politique de confidentialité</a>.*",
     "required": "* Champ obligatoire",
     "submit": "Envoyer la demande",
-    "submitted": "Merci pour votre demande, nous vous répondrons dans les meilleurs délais."
+    "submitted": "Merci pour votre demande, nous vous répondrons dans les plus brefs délais."
   },
   "generic": {
     "Kontakt": "Contactez",
