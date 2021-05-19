@@ -9,7 +9,8 @@
     "conditions text eu": "* Die Preise beziehen sich auf die Gesamtzahl an Haltestellen eines Unternehmens, unabhängig von der Anzahl der tatsächlich mit mapset bearbeiteten Haltestellen. <br/><br/>\n\nZu den laufenden Abo-Gebühren fallen beim Start des Abonnements Einrichtungsgebühren von € 490.– an. Nach einem Abonnements-Unterbruch wird bei Erneuerung des Abonnements wiederum die Einrichtungsgebühr fällig. Für Transportunternehmen mit bis zu 10 Haltestellen wird nur die Einrichtungsgebühr verrechnet. <br/><br/>\n\nIm Rahmen der Abonnements und der Einrichtungsgebühren ist die Konfiguration von Nutzern von mapset eingeschlossen, insofern die Nutzer über eine einheitliche Mail-Domain identifiziert werden können (z.B. maria.bernasconi@ktuxy.ch und max.muster@ktuxy.ch). Für die Einrichtung von individuellen Nutzern, die nicht über eine Domain identifizierbar sind, werden pro Nutzer CHF 90.– verrechnet.<br/><br/>\n\nSämtliche Preise gelten für Schweizer Unternehmen zuzüglich Mehrwertsteuer von 7,7 %.<br/><br/>",
     "conditions text ch": "* Die Preise beziehen sich auf die Gesamtzahl an Haltestellen eines Unternehmens, unabhängig von der Anzahl der tatsächlich mit mapset bearbeiteten Haltestellen. <br/><br/>\n\nZu den laufenden Abo-Gebühren fallen beim Start des Abonnements Einrichtungsgebühren von CHF 490.– an. Nach einem Abonnements-Unterbruch wird bei Erneuerung des Abonnements wiederum die Einrichtungsgebühr fällig. Für Transportunternehmen mit bis zu 10 Haltestellen wird nur die Einrichtungsgebühr verrechnet. <br/><br/>\n\nIm Rahmen der Abonnements und der Einrichtungsgebühren ist die Konfiguration von Nutzern von mapset eingeschlossen, insofern die Nutzer über eine einheitliche Mail-Domain identifiziert werden können (z.B. maria.bernasconi@ktuxy.ch und max.muster@ktuxy.ch). Für die Einrichtung von individuellen Nutzern, die nicht über eine Domain identifizierbar sind, werden pro Nutzer CHF 90.– verrechnet.<br/><br/>\n\nSämtliche Preise gelten für Schweizer Unternehmen zuzüglich Mehrwertsteuer von 7,7 %.<br/><br/>",
     "included in price": "all",
-    "contact description": "Wir freuen uns über Ihre Kontaktaufnahme und helfen bei Fragen gerne weiter.",
+    "contact header": "Bleiben Sie auf dem Laufenden!",
+    "contact description": "Wir informieren Sie regelmäßig in unserem Newsletter und auf Twitter über die neusten Updates von mapset.",
     "setup fee eu": "zzgl. € 490 einmalige Ein­richtungs­gebühr",
     "setup fee ch": "zzgl. CHF 490.– einmalige Ein­richtungs­gebühr"
   },
@@ -20,13 +21,13 @@
     "lastName": "Nachname",
     "company": "Unternehmen",
     "telephone": "Telefon",
-    "email": "E-Mail",
+    "email": "E-Mail*",
     "interest": "Ich interessiere mich für",
     "message": "Nachricht",
     "privacyPolicy": "Ja, ich habe die <a href='https://geops.de/node/182?language=en'>Datenschutzerklärung</a> gelesen und akzeptiere diese.*",
     "required": "* Pflichtfeld",
     "submit": "Anfrage senden",
-    "submitted": "Vielen Dank für Ihr Interesse..."
+    "submitted": "Vielen Dank für Ihre Anfrage, wir melden uns umgehend zurück."
   },
   "generic": {
     "Kontakt": "Kontakt",
