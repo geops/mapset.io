@@ -1,14 +1,13 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import twitter from '../img/social/Twitter_Logo_Blue.svg';
-import contact from '../data/contact.json';
 
 function Contact() {
   return (
     <div className="contactForm">
-      <h2>
+      <h1 className="is-bolder contactHeader">
         <FormattedMessage id="content.contact header" />
-      </h2>
+      </h1>
       <p>
         <FormattedMessage id="content.contact description" />
       </p>

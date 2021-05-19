@@ -365,10 +365,16 @@ export const IndexPageTemplate = ({ locale, region }) => {
               <FormattedMessage id="generic.Kontakt" />
             </h1>
             <ContactForm />
+          </div>
+        </div>
+      </section>
+      <section className="contactSection">
+        <div className="container">
+          <div className="rightColumn">
             <Contact />
           </div>
         </div>
-      </section>{' '}
+      </section>
       {/* contact section */}
       <section className="licenseSection" id="license">
         <div className="licenseSectionContent">
