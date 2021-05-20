@@ -16,16 +16,15 @@ const ContactForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setSubmitted(true);
     window.scrollTo(0, document.getElementById('contact').offsetTop);
-    // const formData = new FormData(formRef.current);
-    // fetch('/', {
-    //   method: 'POST',
-    //   headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    //   body: new URLSearchParams(formData).toString(),
-    // })
-    //   .then(() => setSubmitted(true))
-    //   .catch((error) => console.error(error));
+    const formData = new FormData(formRef.current);
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => setSubmitted(true))
+      .catch((error) => console.error(error));
   };
 
   return (
