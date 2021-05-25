@@ -3,9 +3,10 @@ import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 import Layout from '../components/Layout';
 import { Remarkable } from 'remarkable';
 import Scroller from '../components/Scroller';
+import Contact from '../components/Contact';
 import ContactForm from '../components/ContactForm';
 import Imprint from '../components/Imprint';
-import Contact from '../components/Contact';
+import LinkedInCollect from '../components/LinkedInCollect';
 import SiteSwitcher from '../components/SiteSwitcher';
 import userManager from '../utils/userManager';
 
@@ -60,6 +61,7 @@ if (
     });
 }
 export const IndexPageTemplate = ({ locale, region }) => {
+  const [trackDemo, setTrackDemo] = useState(false);
   let benefits;
   let features;
   let prices;
@@ -138,11 +140,13 @@ export const IndexPageTemplate = ({ locale, region }) => {
                     }
                     target="editor-mapset"
                     rel="noopener noreferrer"
+                    onClick={() => setTrackDemo(true)}
                   >
                     <button className="btn">
                       <FormattedMessage id="generic.Demo" />
                     </button>
                   </a>
+                  <LinkedInCollect run={trackDemo} conversionId="4840441" />
                 </div>
               </div>
             </div>
@@ -446,6 +450,25 @@ export const IndexPageTemplate = ({ locale, region }) => {
       </section>{' '}
       {/* impressum section */}
       <div className="aboveFooter"></div>
+      <script
+        type="text/javascript"
+        dangerouslySetInnerHTML={{
+          __html: `
+            _linkedin_partner_id = "3582425";
+            window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+            window._linkedin_data_partner_ids.push(_linkedin_partner_id);`,
+        }}
+      />
+      <script
+        type="text/javascript"
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "[https://snap.licdn.com/li.lms-analytics/insight.min.js]"; s.parentNode.insertBefore(b, s);})();`,
+        }}
+      />
+      <noscript>
+        <LinkedInCollect run={true} />
+      </noscript>
     </div>
   );
 };
