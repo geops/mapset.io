@@ -97,6 +97,13 @@ export const GuidePage = ({ locale }) => {
   };
 
   useEffect(() => {
+    window.addEventListener("scroll", HandleSrollEvent);
+    function HandleSrollEvent() {
+      let Guide = document.querySelector('.guide-scroller')
+      if(window.pageYOffset < 100) {
+        Guide.style.top = 80 - window.pageYOffset + "px";
+      }
+    }
     window.addEventListener('scroll', handleScroll);
     handleScroll();
     if (guideContent) {
