@@ -6,7 +6,7 @@ import Contact from '../components/Contact';
 import { Remarkable } from 'remarkable';
 import userManager from '../utils/userManager';
 
-import mapset_banner from "../img/Mapset_Logo.svg";
+import mapset_banner from '../img/Mapset_Logo.svg';
 import Warning from '../assets/warning.svg';
 
 import de_guide from '../data/guide/de.json';
@@ -67,7 +67,7 @@ export const GuidePage = ({ locale }) => {
       }
       return {
         label: topic.label,
-        subFeatures: additionalHeadings
+        subFeatures: additionalHeadings,
       };
     });
   }, [guideContent]);
@@ -100,40 +100,46 @@ export const GuidePage = ({ locale }) => {
     window.addEventListener('scroll', handleScroll);
     handleScroll();
     if (guideContent) {
-      const headingIconFeatures = guideContent.filter(f => f.mapsetIcon);
+      const headingIconFeatures = guideContent.filter((f) => f.mapsetIcon);
       const contentIconFeatures = guideContent
-        .filter(f => f.content)
-        .map(f => f.content)
+        .filter((f) => f.content)
+        .map((f) => f.content)
         .flat()
-        .filter(f => f.mapsetIcon);
+        .filter((f) => f.mapsetIcon);
       const iconFeatures = [...headingIconFeatures, ...contentIconFeatures];
       Promise.all(
-        iconFeatures.map((f) => fetch(
-          `https://editor.mapset.io/static/icons/${f.mapsetIcon}.svg`
-          ))).then((responses) => {
+        iconFeatures.map((f) =>
+          fetch(`https://editor.mapset.io/static/icons/${f.mapsetIcon}.svg`),
+        ),
+      )
+        .then((responses) => {
           // Get a JSON object from each of the responses
-          return Promise.all(responses.map((response) => {
-            return response.text()
-          }));
-      }).then((dataArray) => {
-        let icons = [];
-        iconFeatures.forEach((g, idx) => {
-          if (isSvg(dataArray[idx])) {
-            icons.push({
-              key: g.mapsetIcon,
-              svg: dataArray[idx],
-            });
-          } else {
-            icons.push({
-              key: null,
-              svg: null,
-            });
-          }
+          return Promise.all(
+            responses.map((response) => {
+              return response.text();
+            }),
+          );
+        })
+        .then((dataArray) => {
+          let icons = [];
+          iconFeatures.forEach((g, idx) => {
+            if (isSvg(dataArray[idx])) {
+              icons.push({
+                key: g.mapsetIcon,
+                svg: dataArray[idx],
+              });
+            } else {
+              icons.push({
+                key: null,
+                svg: null,
+              });
+            }
+          });
+          setIcons(icons);
+        })
+        .catch((error) => {
+          console.log(error);
         });
-        setIcons(icons);
-      }).catch((error) => {
-        console.log(error);
-      });
     }
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -171,10 +177,7 @@ export const GuidePage = ({ locale }) => {
               {feature.subFeatures ? (
                 <div className="guide-scroller-sub">
                   {feature.subFeatures.map((feat) => (
-                    <a
-                      href={`#${renderId(feat)}`}
-                      id={renderScrollerId(feat)}
-                    >
+                    <a href={`#${renderId(feat)}`} id={renderScrollerId(feat)}>
                       <svg
                         className="listNavImage"
                         width="12"
@@ -221,9 +224,13 @@ export const GuidePage = ({ locale }) => {
                       <div className="guideFeature" id={renderId(topic.label)}>
                         <h3 className="guideH3">
                           {topic.mapsetIcon && icons ? (
-                            <div dangerouslySetInnerHTML={{
-                              __html: icons.find(f => f.key === topic.mapsetIcon)?.svg
-                            }}/>
+                            <div
+                              dangerouslySetInnerHTML={{
+                                __html: icons.find(
+                                  (f) => f.key === topic.mapsetIcon,
+                                )?.svg,
+                              }}
+                            />
                           ) : null}
                           <b
                             dangerouslySetInnerHTML={{
@@ -232,13 +239,21 @@ export const GuidePage = ({ locale }) => {
                           />
                         </h3>
                         {topic.content.map((f, id) => (
-                          <div className="guideContent" id={renderId(f.heading)}>
+                          <div
+                            className="guideContent"
+                            id={renderId(f.heading)}
+                          >
                             {f.heading ? (
                               <h4 className="guideH4">
                                 {f.mapsetIcon ? (
-                                  <div dangerouslySetInnerHTML={{
-                                    __html: icons.find(subFeature => subFeature.key === f.mapsetIcon)?.svg
-                                  }}/>
+                                  <div
+                                    dangerouslySetInnerHTML={{
+                                      __html: icons.find(
+                                        (subFeature) =>
+                                          subFeature.key === f.mapsetIcon,
+                                      )?.svg,
+                                    }}
+                                  />
                                 ) : null}
                                 <b
                                   dangerouslySetInnerHTML={{
@@ -246,27 +261,27 @@ export const GuidePage = ({ locale }) => {
                                   }}
                                 />
                               </h4>
-                            ): null}
+                            ) : null}
                             {f.loginRestricted ? (
                               <p className="loginRestricted">
                                 <Warning />
-                                <i>This feature requires the user to be logged in.</i>
+                                <i><FormattedMessage id="guide.login-restricted" /></i>
                               </p>
                             ) : null}
                             {f.cdRestricted ? (
                               <p className="cdRestricted">
                                 <Warning />
-                                <i>This feature is accessible depending on user rights and Corporate Design settings.</i>
+                                <i><FormattedMessage id="guide.cd-restricted" /></i>
                               </p>
                             ) : null}
-                            <span className="subContent"
+                            <span
+                              className="subContent"
                               dangerouslySetInnerHTML={{
                                 __html: md.render(f.text),
                               }}
                             />
                           </div>
-                        ))
-                        }
+                        ))}
                       </div>
                     );
                   })}
@@ -285,7 +300,7 @@ export const GuidePage = ({ locale }) => {
   );
 };
 
-const Index = ({ pageContext: { locale } }) => {
+const Index = ({ pageContext: { locale, region } }) => {
   const [user, setUser] = useState(null);
 
   if (typeof window !== 'undefined' && userManager) {
@@ -295,7 +310,12 @@ const Index = ({ pageContext: { locale } }) => {
   }
 
   return (
-    <Layout locale={locale} user={user} navBarClassName="guide-nav-bar">
+    <Layout
+      locale={locale}
+      region={region}
+      user={user}
+      navBarClassName="guide-nav-bar"
+    >
       <GuidePage locale={locale} />
     </Layout>
   );

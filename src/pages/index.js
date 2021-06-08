@@ -3,12 +3,12 @@ import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 import Layout from '../components/Layout';
 import { Remarkable } from 'remarkable';
 import Scroller from '../components/Scroller';
-import EmailButton from '../components/EmailButton';
-import Imprint from '../components/Imprint';
 import Contact from '../components/Contact';
+import ContactForm from '../components/ContactForm';
+import Imprint from '../components/Imprint';
+import LinkedInCollect from '../components/LinkedInCollect';
+import SiteSwitcher from '../components/SiteSwitcher';
 import userManager from '../utils/userManager';
-
-import TrackingDialog from '../components/TrackingDialog';
 
 import layout_bg_1 from '../img/layoutBG_1.png';
 import layout_bg_2 from '../img/layoutBG_2.png';
@@ -29,10 +29,14 @@ import fr_features from '../data/features/fr.json';
 import de_features from '../data/features/de.json';
 import en_features from '../data/features/en.json';
 
+import fr_prices from '../data/prices/fr.json';
+import de_prices from '../data/prices/de.json';
 import en_prices from '../data/prices/en.json';
 
 // import license information
-import license from '../data/license/en.json';
+import fr_license from '../data/license/fr.json';
+import de_license from '../data/license/de.json';
+import en_license from '../data/license/en.json';
 
 const accordionHandler = function (id) {
   let item = document.getElementsByName(id)[0];
@@ -56,41 +60,48 @@ if (
       console.log(error);
     });
 }
-export const IndexPageTemplate = ({ locale }) => {
+export const IndexPageTemplate = ({ locale, region }) => {
+  const [trackDemo, setTrackDemo] = useState(false);
   let benefits;
   let features;
   let prices;
+  let licenseInformation;
   switch (locale) {
     case 'fr': {
       benefits = fr_benefits.benefits;
       features = fr_features.features;
+      prices = fr_prices.prices;
+      licenseInformation = fr_license.license;
       break;
     }
     case 'de': {
       benefits = de_benefits.benefits;
       features = de_features.features;
+      prices = de_prices.prices;
+      licenseInformation = de_license.license;
       break;
     }
     default: {
       benefits = en_benefits.benefits;
       features = en_features.features;
       prices = en_prices.prices;
+      licenseInformation = en_license.license;
       break;
     }
   }
-  let licenseInformation = license.license;
   let md = new Remarkable();
   md.set({
     html: true,
     breaks: true,
   });
+
   return (
     <div style={{ position: 'relative' }}>
-      <TrackingDialog />
+      <SiteSwitcher region={region} />
       <section className="topSection">
         <div className="container">
           <div className="row is-white">
-            <div className="col-12 col-md-5">
+            <div className="col-12 col-md-6">
               <div className="scrollNav row d-none d-md-flex">
                 <a className="navbar-item" href="#benefits">
                   <FormattedMessage id="generic.Benefits" />
@@ -122,18 +133,24 @@ export const IndexPageTemplate = ({ locale }) => {
                 </p>
                 <div className="alignContainer row">
                   <a
-                    href="https://editor.mapset.io"
+                    href={
+                      region === 'ch'
+                        ? 'https://editor.mapset.ch'
+                        : 'https://editor.mapset.io'
+                    }
                     target="editor-mapset"
                     rel="noopener noreferrer"
+                    onClick={() => setTrackDemo(true)}
                   >
                     <button className="btn">
                       <FormattedMessage id="generic.Demo" />
                     </button>
                   </a>
+                  <LinkedInCollect run={trackDemo} conversionId="4840441" />
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-7 order-md-first">
+            <div className="col-12 col-md-6 order-md-first">
               <div className="row">
                 <div className="headerBadge d-none d-md-block">
                   <img className="main-heading" src={mapset_banner} alt="" />
@@ -146,11 +163,6 @@ export const IndexPageTemplate = ({ locale }) => {
                   src={mapset_element}
                   alt=""
                 />
-                {/*<div className="cardViewer" >*/}
-                {/*<img className="l1" src={card_1} alt="" />*/}
-                {/*<img className="" src={card_1} alt="" />*/}
-                {/*<img className="l-1 base" src={card_1} alt="" />*/}
-                {/*</div>*/}
               </div>
             </div>
           </div>
@@ -168,9 +180,6 @@ export const IndexPageTemplate = ({ locale }) => {
           <div className="cardViewSection">
             <div className="cardViewContainer">
               <img className="cardViewSingle" src={card_view_single} alt="" />
-              {/*<div className="cardViewer">*/}
-              {/*    <img className="base" src={card_1} alt=""/>*/}
-              {/*</div>*/}
             </div>
           </div>
           <div className="container">
@@ -181,42 +190,18 @@ export const IndexPageTemplate = ({ locale }) => {
             <div className="accordion rightColumn">
               {benefits &&
                 benefits.map((benefit, id) => (
-                  // TODO style benefit list to match design
                   <div
-                    className="accordion-item"
+                    className="accordion-item is-expanded"
                     key={'benefit_' + id}
                     name={'benefit_' + id}
                   >
-                    <button onClick={() => accordionHandler('benefit_' + id)}>
-                      <h5 className="item-head">
-                        <span
-                          dangerouslySetInnerHTML={{
-                            __html: md.render(benefit.heading),
-                          }}
-                        />
-                        <svg
-                          className="accordionStateImage plus"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                            fill="currentColor"
-                          />
-                          <path d="M0 0h24v24H0z" fill="none" />
-                        </svg>
-                        <svg
-                          className="accordionStateImage minus"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M19 13H5v-2h14v2z" fill="currentColor" />
-                          <path d="M0 0h24v24H0z" fill="none" />
-                        </svg>
-                      </h5>
-                    </button>
+                    <h5 className="item-head">
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: md.render(benefit.heading),
+                        }}
+                      />
+                    </h5>
                     <div className="content">
                       <p>{benefit.text}</p>
                     </div>
@@ -240,7 +225,6 @@ export const IndexPageTemplate = ({ locale }) => {
             <div className="accordion">
               {features &&
                 features.map((feature, id) => (
-                  // TODO style feature list to match design
                   <div
                     className="accordion-item"
                     key={'feature_' + id}
@@ -338,11 +322,20 @@ export const IndexPageTemplate = ({ locale }) => {
                         </h2>
                         <span className="subtext">
                           <br />
-                          <span>{price.subtext}</span>
+                          <span>
+                            {region === 'ch'
+                              ? price.subtext.replace('€', 'CHF')
+                              : price.subtext}
+                          </span>
                           <br />
-                          € 490 one-time setup fee
+                          <FormattedHTMLMessage
+                            id={
+                              region === 'ch'
+                                ? 'content.setup fee ch'
+                                : 'content.setup fee eu'
+                            }
+                          />
                         </span>
-                        <EmailButton mode={price.tier} />
                       </div>
                     </div>
                   </div>
@@ -351,7 +344,13 @@ export const IndexPageTemplate = ({ locale }) => {
 
             <div className="conditions">
               <span>
-                <FormattedHTMLMessage id="content.conditions text" />
+                <FormattedHTMLMessage
+                  id={
+                    region === 'ch'
+                      ? 'content.conditions text ch'
+                      : 'content.conditions text eu'
+                  }
+                />
               </span>
             </div>
           </div>
@@ -367,12 +366,19 @@ export const IndexPageTemplate = ({ locale }) => {
         <div className="container">
           <div className="rightColumn">
             <h1 className="is-bolder contactHeader">
-              <FormattedMessage id="generic.Noch Fragen ?" />
+              <FormattedMessage id="generic.Kontakt" />
             </h1>
+            <ContactForm />
+          </div>
+        </div>
+      </section>
+      <section className="contactSection">
+        <div className="container">
+          <div className="rightColumn">
             <Contact />
           </div>
         </div>
-      </section>{' '}
+      </section>
       {/* contact section */}
       <section className="licenseSection" id="license">
         <div className="licenseSectionContent">
@@ -419,14 +425,12 @@ export const IndexPageTemplate = ({ locale }) => {
                         </svg>
                       </h5>
                     </button>
-                    <div className="content">
-                      <p>
-                        <FormattedHTMLMessage
-                          id={license.text}
-                          values={{ br: <br /> }}
-                        />
-                      </p>
-                    </div>
+                    <div
+                      className="content"
+                      dangerouslySetInnerHTML={{
+                        __html: md.render(license.text),
+                      }}
+                    ></div>
                   </div>
                 ))}
             </div>
@@ -446,11 +450,30 @@ export const IndexPageTemplate = ({ locale }) => {
       </section>{' '}
       {/* impressum section */}
       <div className="aboveFooter"></div>
+      <script
+        type="text/javascript"
+        dangerouslySetInnerHTML={{
+          __html: `
+            _linkedin_partner_id = "3582425";
+            window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+            window._linkedin_data_partner_ids.push(_linkedin_partner_id);`,
+        }}
+      />
+      <script
+        type="text/javascript"
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})();`,
+        }}
+      />
+      <noscript>
+        <LinkedInCollect run={true} />
+      </noscript>
     </div>
   );
 };
 
-const Index = ({ pageContext: { locale } }) => {
+const Index = ({ pageContext: { locale, region } }) => {
   const [user, setUser] = useState(null);
 
   if (typeof window !== 'undefined' && userManager) {
@@ -460,8 +483,8 @@ const Index = ({ pageContext: { locale } }) => {
   }
 
   return (
-    <Layout locale={locale} user={user}>
-      <IndexPageTemplate locale={locale} />
+    <Layout locale={locale} region={region} user={user}>
+      <IndexPageTemplate locale={locale} region={region} />
     </Layout>
   );
 };

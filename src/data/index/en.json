@@ -6,9 +6,28 @@
     "page header description": "You would like to provide your customers with up-to-date and attractive information about public transport? mapset allows the fast and easy creation of clear and visually appealing station maps and plans for customer orientation.",
     "specification description": "mapset.io offers many advantages for the easy creation of plans and maps.",
     "price description": "Here you can find an overview of the annual costs and the one-time setup fee.",
-    "conditions text": "* The prices refer to the total number of stops of a company, independent of the number of stops actually processed with mapset. <br/><br/>\n\nIn addition to the ongoing subscription fees, a setup fee of € 490.00 is charged at the start of the subscription. After a subscription interruption, the setup fee is due again when the subscription is renewed. For transport companies with up to 10 stops only the set-up fee is charged. <br/><br/>\n\nWithin the scope of the subscriptions and the setup fee the configuration of users of mapset is included, provided the users can be identified via a uniform mail domain (e.g. james.meyer@ktuxy.com and :james.meyer@ktuxy.com). For the configuration of individual users, who are not identifiable via a domain, € 90.00 per user will be charged.<br/><br/>",
+    "conditions text eu": "* The prices refer to the total number of stops of a company, independent of the number of stops actually processed with mapset. <br/><br/>\n\nIn addition to the ongoing subscription fees, a setup fee of € 490.00 is charged at the start of the subscription. After a subscription interruption, the setup fee is due again when the subscription is renewed. For transport companies with up to 10 stops only the set-up fee is charged. <br/><br/>\n\nWithin the scope of the subscriptions and the setup fee the configuration of users of mapset is included, provided the users can be identified via a uniform mail domain (e.g. james.meyer@ktuxy.com and :james.meyer@ktuxy.com). For the configuration of individual users, who are not identifiable via a domain, € 90.00 per user will be charged.<br/><br/>",
+    "conditions text ch": "* The prices refer to the total number of stops of a company, independent of the number of stops actually processed with mapset. <br/><br/>\n\nIn addition to the ongoing subscription fees, a setup fee of CFH 490.00 is charged at the start of the subscription. After a subscription interruption, the setup fee is due again when the subscription is renewed. For transport companies with up to 10 stops only the set-up fee is charged. <br/><br/>\n\nWithin the scope of the subscriptions and the setup fee the configuration of users of mapset is included, provided the users can be identified via a uniform mail domain (e.g. james.meyer@ktuxy.com and :james.meyer@ktuxy.com). For the configuration of individual users, who are not identifiable via a domain, CFH 90.00 per user will be charged.<br/><br/>",
     "included in price": "all",
-    "contact description": "We look forward to hearing from you and are happy to help with any questions you may have."
+    "contact header": "Stay up to date!",
+    "contact description": "We look forward to hearing from you and are happy to help with any questions you may have.",
+    "setup fee eu": "€ 490 one-time setup fee",
+    "setup fee ch": "CHF 490.– one-time setup fee"
+  },
+  "contact": {
+    "title": "Contact",
+    "content": "We look forward to hearing from you. ….",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "company": "Company",
+    "telephone": "Telephone",
+    "email": "E-Mail*",
+    "interest": "I am interested in",
+    "message": "Message",
+    "privacyPolicy": "Yes, I have read and accept the <a href='https://geops.de/node/182?language=en'>privacy policy</a>.*",
+    "required": "* Required field",
+    "submit": "Send request",
+    "submitted": "Thank you for your inquiry, we will get back to you as soon as possible."
   },
   "generic": {
     "Kontakt": "Contact",
@@ -32,12 +51,33 @@
     "Imprint": "Imprint",
     "navbar": {
       "Login": "Login",
-      "Logout": "Logged in as"
-    }
+      "Logout": "Logged in as",
+      "international": "International",
+      "swiss": "Swiss"
+    },
+    "request": "Request Offer",
+    "privacyPolicy": "Privacy Policy"
   },
   "guide": {
     "Guide": "User guide",
-    "Links-io": "For other countires please use the international domain:",
-    "Links-ch": "For Switzerland please access mapset using the address:"
+    "Links-io": "For other countries please use the international domain:",
+    "Links-ch": "For Switzerland please access mapset using the address:",
+    "login-restricted": "This feature requires the user to be logged in.",
+    "cd-restricted": "Access to this feature depends on user rights and Corporate Design settings."
+  },
+  "imprint": {
+    "phone": "phone",
+    "mail": "mail",
+    "managingDirector": "Managing Director, Chairman of the Board: Ulrich Müller-Ertle",
+    "commercialNumber": "Commercial register no. CHE-455.829.547 Basel-Landschaft",
+    "disclaimer": "Disclaimer: Despite careful control of the contents, we do not assume any liability for the contents of external links. The operators of the linked pages are solely responsible for the content of their pages.",
+    "responsible": "Responsible for content: Ulrich Müller-Ertle (addresses as above)"
+  },
+  "siteSwitcher": {
+    "title": "Are you sure you are on the right page?",
+    "goCH": "You are currently at the international website.<br /> Do you want to go to the swiss website?",
+    "goEU": "You are currently at the swiss website.<br /> Do you want to go to the international website?",
+    "buttonEU": "International Website",
+    "buttonCH": "Swiss Website"
   }
 }

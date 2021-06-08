@@ -32,12 +32,12 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-react-svg",
+      resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
-          include: /assets/
-        }
-      }
+          include: /assets/,
+        },
+      },
     },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
@@ -82,6 +82,7 @@ module.exports = {
         siteId: '11',
         matomoUrl: 'https://analytics.geops.de/',
         siteUrl: 'https://mapset.io/',
+        disableCookies: true,
       },
     },
     {
