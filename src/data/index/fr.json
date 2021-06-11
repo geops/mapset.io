@@ -2,7 +2,7 @@
   "templateKey": "index-page",
   "title": "Page d'index français",
   "content": {
-    "page header": "Plans d'implantation pour les transports publics",
+    "page header": "L'éditeur en ligne pour créer des cartes de situation dans les transports publics.",
     "page header description": "Vous souhaitez fournir à vos clients des informations actualisées et attrayantes sur les transports publics ? mapset permet de créer rapidement et facilement des plans de stations et des plans d'orientation des clients clairs et visuellement attrayants.",
     "specification description": "mapset offre de nombreux avantages pour la création facile de plans et de cartes.",
     "price description": "Vous trouverez ici un aperçu des coûts annuels et des frais d'installation uniques.",
@@ -35,7 +35,7 @@
     "Ihr persönlicher Kontakt": "Contact",
     "So funktioniert's": "Comment ça marche",
     "Zufriedene Kunden": "Des clients satisfaits",
-    "Demo": "Démonstration",
+    "Demo": "Essayez maintenant",
     "powered by": "powered by",
     "Noch Fragen ?": "Vous avez des questions ?",
     "Newsletter": "s'abonner à la newsletter",
