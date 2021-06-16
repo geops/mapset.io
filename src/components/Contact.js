@@ -7,9 +7,9 @@ function Contact() {
   const [trackNewsletter, setTrackNewsletter] = useState(false);
   return (
     <div className="contactForm">
-      <h1 className="is-bolder contactHeader">
+      <h2 className="is-bolder is-big contactHeader">
         <FormattedMessage id="content.contact header" />
-      </h1>
+      </h2>
       <p>
         <FormattedMessage id="content.contact description" />
       </p>

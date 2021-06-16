@@ -119,19 +119,31 @@ export const IndexPageTemplate = ({ locale, region }) => {
                   <FormattedMessage id="generic.Lizenz" />
                 </a>
               </div>
+              <div className="cardViewContainer">
+                <img className="cardViewTriple" src={card_view_triple} alt="" />
+                <img
+                  className="mapsetElementLarge d-md-inline"
+                  src={mapset_element}
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="col-12 col-md-6 order-md-first">
+              <div className="row">
+                <div className="headerBadge d-none d-md-block">
+                  <img className="main-heading" src={mapset_banner} alt="" />
+                </div>
+              </div>
               <div className="headerDescription">
-                <h2>
+                <h1 class="is-bolder">
                   <FormattedMessage id="content.page header" />
-                </h2>
+                </h1>
                 <img
                   className="mapsetElementSmall"
                   src={mapset_element}
                   alt=""
                 />
-                <p>
-                  <FormattedMessage id="content.page header description" />
-                </p>
-                <div className="alignContainer row">
+                <div className="alignContainer">
                   <a
                     href={
                       region === 'ch'
@@ -142,27 +154,12 @@ export const IndexPageTemplate = ({ locale, region }) => {
                     rel="noopener noreferrer"
                     onClick={() => setTrackDemo(true)}
                   >
-                    <button className="btn">
+                    <button className="btn mt-3">
                       <FormattedMessage id="generic.Demo" />
                     </button>
                   </a>
                   <LinkedInCollect run={trackDemo} conversionId="4840441" />
                 </div>
-              </div>
-            </div>
-            <div className="col-12 col-md-6 order-md-first">
-              <div className="row">
-                <div className="headerBadge d-none d-md-block">
-                  <img className="main-heading" src={mapset_banner} alt="" />
-                </div>
-              </div>
-              <div className="cardViewContainer">
-                <img className="cardViewTriple" src={card_view_triple} alt="" />
-                <img
-                  className="mapsetElementLarge d-md-inline"
-                  src={mapset_element}
-                  alt=""
-                />
               </div>
             </div>
           </div>
@@ -183,9 +180,9 @@ export const IndexPageTemplate = ({ locale, region }) => {
             </div>
           </div>
           <div className="container">
-            <h1 className="is-bolder benefitsHeader rightColumn">
+            <h2 className="is-bolder is-blue is-big is-big is-big benefitsHeader rightColumn">
               <FormattedMessage id="generic.Benefits" />
-            </h1>
+            </h2>
             <div className="cardViewSpacer" />
             <div className="accordion rightColumn">
               {benefits &&
@@ -216,9 +213,9 @@ export const IndexPageTemplate = ({ locale, region }) => {
       <section className="featureSection" id="features">
         <div className="container">
           <div className="rightColumn">
-            <h1 className="is-bolder featuresHeader">
+            <h2 className="is-bolder is-blue is-big is-big featuresHeader">
               <FormattedMessage id="generic.So funktioniert's" />
-            </h1>
+            </h2>
             <p>
               <FormattedMessage id="content.specification description" />
             </p>
@@ -282,9 +279,9 @@ export const IndexPageTemplate = ({ locale, region }) => {
       <section className="priceSection" id="price">
         <div className="container">
           <div className="rightColumn">
-            <h1 className="is-bolder priceHeader">
+            <h2 className="is-bolder text-white is-big priceHeader">
               <FormattedMessage id="generic.Preise" />
-            </h1>
+            </h2>
             <p>
               <FormattedMessage id="content.price description" />
             </p>
@@ -365,9 +362,9 @@ export const IndexPageTemplate = ({ locale, region }) => {
       <section className="contactSection" id="contact">
         <div className="container">
           <div className="rightColumn">
-            <h1 className="is-bolder contactHeader">
+            <h2 className="is-bolder is-blue is-big is-big contactHeader">
               <FormattedMessage id="generic.Kontakt" />
-            </h1>
+            </h2>
             <ContactForm />
           </div>
         </div>
@@ -383,9 +380,9 @@ export const IndexPageTemplate = ({ locale, region }) => {
       <section className="licenseSection" id="license">
         <div className="licenseSectionContent">
           <div className="container">
-            <h1 className="is-bolder licenseHeader rightColumn">
+            <h2 className="is-bolder is-blue is-big is-big licenseHeader rightColumn">
               <FormattedMessage id="generic.Lizenz" />
-            </h1>
+            </h2>
             <div className="cardViewSpacer" />
             <div className="accordion rightColumn">
               {licenseInformation &&
@@ -441,9 +438,9 @@ export const IndexPageTemplate = ({ locale, region }) => {
       <section className="impressumSection" id="impressum">
         <div className="container">
           <div className="rightColumn">
-            <h1 className="is-bolder impressumHeader">
+            <h2 className="is-bolder is-big impressumHeader">
               <FormattedMessage id="generic.Imprint" />
-            </h1>
+            </h2>
             <Imprint />
           </div>
         </div>

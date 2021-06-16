@@ -3,6 +3,7 @@
   position: relative
   z-index: 1
   padding-top: 5vh
+  padding-bottom: 15vh
   & .navbar-item
     font-weight: $boldish
     color: $white
@@ -13,7 +14,7 @@
     vertical-align: middle
   & .headerBadge
     position: relative
-    margin-left: 5rem
+    margin-left: 1rem
     & .brandName
       font-variant: all-small-caps
       position: relative
@@ -32,6 +33,7 @@
       left: 0
       height: 40%
     & .cardViewTriple
+    margin-top: 4rem
       padding-bottom: 15vh
       position: relative
       width: 100%
@@ -49,24 +51,25 @@
     & a
       font-weight: bold
   & .headerDescription
-    & h2
+    & h1
       margin-top: 6rem
     & p
       margin-bottom: 2rem
     & .alignContainer
       display: flex
-      justify-content: space-around
     & .btn
-      margin-bottom: 1rem
-      padding: .5rem 1rem
-      color: $white
+      margin-top: 2rem
+      margin-bottom: 4rem
+      padding: .5rem 1.5rem
+      background-color: $white
+      color: $primary
       font-weight: bold
       border: 2px solid white
-      border-radius: 2rem
       transition: 0.3s ease
+      border-radius: 0px
     & .btn:hover
-      background-color: $white
-      color: $secondary
+      background-color: $primary
+      color: $white
       transition: 0.3s ease
     & .mapsetElementSmall
       position: absolute
