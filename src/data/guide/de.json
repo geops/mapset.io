@@ -92,7 +92,7 @@
       ]
     },
     {
-      "label": "Benennung von Plänen und Planliste",
+      "label": "Planbenennung und Planliste",
       "content": [
         {
           "text": "Pläne in mapset können zum einfachen Wiederfinden und für die Übersicht über alle erstellten Pläne mit einem Namen versehen werden.\n\nWenn ein Plan noch nicht benannt ist, wird in der Kopfzeile der Text 'Unbenannter Plan' angezeigt.\n\n![](/img/planname.png)\n\nKlicken Sie auf diesen Text, um einen neuen Plannamen einzugeben. Ein *Spinner* und *Bestätigungsmeldung* neben dem Texteingabefeld zeigt an, dass der Name gespeichert wurde.\n\nSobald ein Plan einen Namen hat, ist er in der *Planliste* verfügbar.\n\nPläne können aus der Planliste in die Karte geladen werden, indem Sie einen Plan auswählen und auf die Schaltfläche *Öffnen* klicken.",
