@@ -23,7 +23,7 @@
     "email": "Courriel*",
     "interest": "Je suis intéressé par",
     "message": "Message",
-    "privacyPolicy": "Oui, j'ai lu et j'accepte la <a href='https://geops.de/node/182?language=en'>politique de confidentialité</a>.*",
+    "privacyPolicy": "Oui, j'ai lu et j'accepte la <a href='https://geops.ch/node/182?language=en'>politique de confidentialité</a>.*",
     "required": "* Champ obligatoire",
     "submit": "Envoyer la demande",
     "submitted": "Merci pour votre demande, nous vous répondrons dans les plus brefs délais."
@@ -60,7 +60,7 @@
     "phone": "téléphone",
     "mail": "mail",
     "managingDirector": "Directeur général, président du conseil d'administration: Ulrich Müller-Ertle",
-    "commercialNumber": "Registre du commerce n°. CHE-455.829.547 Basel-Landschaft",
+    "commercialNumber": "Registre du commerce n°. CHE-455.829.547 Solothurn",
     "disclaimer": "Clause de non-responsabilité : Malgré un contrôle minutieux du contenu, nous n'assumons aucune responsabilité quant au contenu des liens externes. Les exploitants des pages liées sont seuls responsables du contenu de leurs pages.",
     "responsible": "Responsable du contenu : Ulrich Müller-Ertle (adresses comme ci-dessus)"
   },
