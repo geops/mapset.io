@@ -3,9 +3,9 @@
   "title": "Deutsch Indexseite",
   "content": {
     "page header": "Situationspläne für den öffentlichen Verkehr",
-    "page header description": "Sie möchten Ihren Kunden aktuelle und attraktive Informationen zum öffentlichen Verkehr zugänglich machen? Mapset erlaubt die einfache Erstellung von übersichtlichen und optisch ansprechenden Plangrafiken. Mit wenigen Klicks visualisieren Sie Pläne für geänderte Haltestellen, kommunizieren die Situation bei Bauprojekten, gewährleisten die Kundenführung bei Events oder informieren über betriebliche Sonderfälle vor Ort. All dies auf Basis der bekannten Karten der SBB, die laufend aktualisiert werden.",
-    "specification description": "mapset.ch bietet Ihnen viele Vorteile für die einfache Erstellung übersichtlicher Plangrafiken.",
-    "price description": "mapset.ch wird über das Internet genutzt. Hier finden Sie die Übersicht für die jährlichen Kosten und die einmalige Einrichtungsgebühr.",
+    "page header description": "Sie möchten Ihren Kunden aktuelle und attraktive Informationen zum öffentlichen Verkehr zugänglich machen? mapset ist der Online-Editor zur einfachen Erstellung von übersichtlichen und optisch ansprechenden Plangrafiken. Mit wenigen Klicks visualisieren Sie Pläne für geänderte Haltestellen, kommunizieren die Situation bei Bauprojekten, gewährleisten die Kundenführung bei Events oder informieren über betriebliche Sonderfälle vor Ort. All dies auf Basis von laufend aktualisiertem Kartenmaterial.",
+    "specification description": "mapset bietet Ihnen viele Vorteile für die einfache Erstellung übersichtlicher Plangrafiken.",
+    "price description": "mapset wird über das Internet genutzt. Hier finden Sie die Übersicht für die jährlichen Kosten und die einmalige Einrichtungsgebühr.",
     "conditions text eu": "* Die Preise beziehen sich auf die Gesamtzahl an Haltestellen eines Unternehmens, unabhängig von der Anzahl der tatsächlich mit mapset bearbeiteten Haltestellen. <br/><br/>\n\nZu den laufenden Abo-Gebühren fallen beim Start des Abonnements Einrichtungsgebühren von € 490.– an. Nach einem Abonnements-Unterbruch wird bei Erneuerung des Abonnements wiederum die Einrichtungsgebühr fällig. Für Transportunternehmen mit bis zu 10 Haltestellen wird nur die Einrichtungsgebühr verrechnet. <br/><br/>\n\nIm Rahmen der Abonnements und der Einrichtungsgebühren ist die Konfiguration von Nutzern von mapset eingeschlossen, insofern die Nutzer über eine einheitliche Mail-Domain identifiziert werden können (z.B. maria.bernasconi@ktuxy.ch und max.muster@ktuxy.ch). Für die Einrichtung von individuellen Nutzern, die nicht über eine Domain identifizierbar sind, werden pro Nutzer CHF 90.– verrechnet.<br/><br/>\n\nSämtliche Preise gelten für Schweizer Unternehmen zuzüglich Mehrwertsteuer von 7,7 %.<br/><br/>",
     "conditions text ch": "* Die Preise beziehen sich auf die Gesamtzahl an Haltestellen eines Unternehmens, unabhängig von der Anzahl der tatsächlich mit mapset bearbeiteten Haltestellen. <br/><br/>\n\nZu den laufenden Abo-Gebühren fallen beim Start des Abonnements Einrichtungsgebühren von CHF 490.– an. Nach einem Abonnements-Unterbruch wird bei Erneuerung des Abonnements wiederum die Einrichtungsgebühr fällig. Für Transportunternehmen mit bis zu 10 Haltestellen wird nur die Einrichtungsgebühr verrechnet. <br/><br/>\n\nIm Rahmen der Abonnements und der Einrichtungsgebühren ist die Konfiguration von Nutzern von mapset eingeschlossen, insofern die Nutzer über eine einheitliche Mail-Domain identifiziert werden können (z.B. maria.bernasconi@ktuxy.ch und max.muster@ktuxy.ch). Für die Einrichtung von individuellen Nutzern, die nicht über eine Domain identifizierbar sind, werden pro Nutzer CHF 90.– verrechnet.<br/><br/>\n\nSämtliche Preise gelten für Schweizer Unternehmen zuzüglich Mehrwertsteuer von 7,7 %.<br/><br/>",
     "included in price": "all",
@@ -24,7 +24,7 @@
     "email": "E-Mail*",
     "interest": "Ich interessiere mich für",
     "message": "Nachricht",
-    "privacyPolicy": "Ja, ich habe die <a href='https://geops.de/node/182?language=en'>Datenschutzerklärung</a> gelesen und akzeptiere diese.*",
+    "privacyPolicy": "Ja, ich habe die <a href='https://geops.ch/node/182?language=en'>Datenschutzerklärung</a> gelesen und akzeptiere diese.*",
     "required": "* Pflichtfeld",
     "submit": "Anfrage senden",
     "submitted": "Vielen Dank für Ihre Anfrage, wir melden uns umgehend zurück."
@@ -69,7 +69,7 @@
     "phone": "fon",
     "mail": "mail",
     "managingDirector": "Managing Director, Chairman of the Board: Ulrich Müller-Ertle",
-    "commercialNumber": "Commercial register no. CHE-455.829.547 Basel-Landschaft",
+    "commercialNumber": "Commercial register no. CHE-455.829.547 Solothurn",
     "disclaimer": "Disclaimer: Despite careful control of the contents, we do not assume any liability for the contents of external links. The operators of the linked pages are solely responsible for the content of their pages.",
     "responsible": "Responsible for content: Ulrich Müller-Ertle (addresses as above)"
   },
