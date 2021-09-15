@@ -77,7 +77,13 @@
         },
         {
           "heading": "Undo/Redo",
-          "text": "Actions on the map are saved momentarily in the app history. The user can use it to undo/redo actions.\n\nChanges to the plan can be undone by pressing *Ctrl* + *z*.\n\nReversed changes can be reapplied by pressing *Ctrl* + *y* or *Ctrl* + S*hift* + *z.*"
+          "text": "Actions on the map are saved momentarily in the app history. The user can use it to undo/redo actions.\n\nChanges to the plan can be undone by pressing *Ctrl* + *z*.\n\nReversed changes can be reapplied by pressing *Ctrl* + *y* or *Ctrl* + S*hift* + *z.*",
+          "mapsetIcon": ""
+        },
+        {
+          "heading": "Map Rotation",
+          "text": "In mapset the map can be rotated by dragging it while pressing *Alt + Shift*. The current rotation is displayed in a button at the bottom right:\n\n![](/img/rotate_map.png)\n\n Clicking this button will reset the map rotation.",
+          "mapsetIcon": "rotate_map"
         }
       ],
       "mapsetIcon": ""
