@@ -79,6 +79,11 @@
           "heading": "Rückgängig/Wiederholen",
           "text": "Aktionen auf der Karte werden vorübergehend im App-Verlauf gespeichert. Der Benutzer kann damit Aktionen rückgängig machen / wiederholen.\n\nÄnderungen am Plan können durch Drücken von *Strg* + *z*  rückgängig gemacht werden.\n\nDurch Drücken von *Strg* + *y* oder *Strg* + *Umschaltaste* + *z* können Änderungen erneut angewendet werden.",
           "loginRestricted": false
+        },
+        {
+          "heading": "Karte ausrichten",
+          "mapsetIcon": "rotate_map",
+          "text": "In mapset kann die Karte gedreht werden, indem sie bei gedrückten *Alt + Shift*-Tasten mit der Maus gezogen wird. Die aktuelle Ausrichtung ist auf einem Button unten rechts sichtbar:\n\n![rotate_map](/img/rotate_map.png)\n\n Klick auf diesen Button setzt die Kartenausrichtung wieder zurück."
         }
       ]
     },
