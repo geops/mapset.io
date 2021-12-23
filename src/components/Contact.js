@@ -3,7 +3,7 @@ import { FormattedMessage } from 'react-intl';
 import LinkedInCollect from './LinkedInCollect';
 import twitter from '../img/social/Twitter_Logo_Blue.svg';
 
-function Contact() {
+function Contact({ region }) {
   const [trackNewsletter, setTrackNewsletter] = useState(false);
   return (
     <div className="contactForm">
@@ -26,7 +26,11 @@ function Contact() {
         </a>
         <LinkedInCollect run={trackNewsletter} conversionId="4840433" />
         <a
-          href="https://twitter.com/mapsetio"
+          href={
+            region === 'ch'
+              ? 'https://twitter.com/mapsetch'
+              : 'https://twitter.com/mapsetio'
+          }
           rel="noopener noreferrer"
           target="_blank"
         >
