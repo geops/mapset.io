@@ -375,7 +375,7 @@ export const IndexPageTemplate = ({ locale, region }) => {
       <section className="contactSection">
         <div className="container">
           <div className="rightColumn">
-            <Contact />
+            <Contact region={region} />
           </div>
         </div>
       </section>
