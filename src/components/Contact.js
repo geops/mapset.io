@@ -15,7 +15,11 @@ function Contact({ region }) {
       </p>
       <div className="contactButtons">
         <a
-          href="https://geops.sh/40003911245CB34786"
+          href={
+            region === 'ch'
+              ? 'https://geops.sh/6E83A54F98A4E7532'
+              : 'https://geops.sh/40003911245CB34786'
+          }
           rel="noopener noreferrer"
           target="_blank"
           onClick={() => setTrackNewsletter(true)}
