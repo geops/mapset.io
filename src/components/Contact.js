@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FormattedMessage } from 'react-intl';
-import LinkedInCollect from './LinkedInCollect';
 import twitter from '../img/social/Twitter_Logo_Blue.svg';
 
 function Contact({ region }) {
-  const [trackNewsletter, setTrackNewsletter] = useState(false);
   return (
     <div className="contactForm">
       <h1 className="is-bolder contactHeader">
@@ -22,13 +20,11 @@ function Contact({ region }) {
           }
           rel="noopener noreferrer"
           target="_blank"
-          onClick={() => setTrackNewsletter(true)}
         >
           <button className="button">
             <FormattedMessage id="generic.Newsletter" />
           </button>
         </a>
-        <LinkedInCollect run={trackNewsletter} conversionId="4840433" />
         <a
           href={
             region === 'ch'

@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
 import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
-import LinkedInCollect from './LinkedInCollect';
 
 const ContactForm = () => {
   const formRef = useRef(null);
@@ -42,7 +41,6 @@ const ContactForm = () => {
         {submitted ? (
           <p>
             <FormattedMessage id="contact.submitted" />
-            <LinkedInCollect run={true} conversionId="4840425" />
           </p>
         ) : (
           <>
