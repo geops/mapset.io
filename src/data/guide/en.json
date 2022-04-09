@@ -26,7 +26,7 @@
       "mapsetIcon": "layers",
       "content": [
         {
-          "text": "The *Layers* dialog allows to customize the basemap by toggling the visibility of specific layers.\n\nSome layers are only visible on specific zoom levels, therefore toggling a layer may not have immediate visual impact. If this is the case, zoom in/out to see the toggle effect.\n\nFurthermore, it is possible to filter for individual features in some layers. An example are the bus lines in Switzerland. When selecting this layer in the Layers-Popup you are presented with a filter to search for buses by the name of the operator (e.g. 'PAG') and the number of the line (e.g. 'B 111').",
+          "text": "The *Layers* dialog allows to customize the basemap by toggling the visibility of specific layers. In addition to the default background, also a satellite map can be selected.\n\nSome layers are only visible on specific zoom levels, therefore toggling a layer may not have immediate visual impact. If this is the case, zoom in/out to see the toggle effect.\n\nFurthermore, it is possible to filter for individual features in some layers. An example are the bus lines in Switzerland. When selecting this layer in the Layers-Popup you are presented with a filter to search for buses by the name of the operator (e.g. 'PAG') and the number of the line (e.g. 'B 111').",
           "heading": ""
         }
       ]
