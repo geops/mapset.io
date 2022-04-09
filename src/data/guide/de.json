@@ -26,7 +26,7 @@
       "mapsetIcon": "layers",
       "content": [
         {
-          "text": "Unter *Ebenen* kann die Grundkarte angepasst werden, indem Sie bestimmte Ebenen ein- oder ausgeblendet werden.\n\nEinige Ebenen sind nur in bestimmten Zoomstufen sichtbar. Daher hat das Umschalten einer Ebene möglicherweise keine unmittelbare visuelle Auswirkung. Wenn dies der Fall ist, zoomen Sie hinein / heraus, um den Effekt zu sehen.\n\nDarüber hinaus ist es möglich, bei einigen Ebenen nach einzelnen Merkmalen zu filtern. Ein Beispiel sind die Buslinien in der Schweiz. Wenn Sie diese Ebene im *Ebenen-Popup* auswählen, wird ein Filter angezeigt, mit dem Sie nach Bussen anhand des Namens des Betreibers (z. B. 'PAG') und der Nummer der Linie (z. B. 'B 111') suchen können.",
+          "text": "Unter *Ebenen* kann die Grundkarte angepasst werden, indem Karten-Ebenen ein- oder ausgeblendet werden. Neben dem Standard-Hintergrund kann auch eine Satellitenbildkarte gewählt werden.\n\nEinige Ebenen sind nur in bestimmten Zoomstufen sichtbar. Daher hat das Umschalten einer Ebene möglicherweise keine unmittelbare visuelle Auswirkung. Wenn dies der Fall ist, zoomen Sie hinein / heraus, um den Effekt zu sehen.\n\nDarüber hinaus ist es möglich, bei einigen Ebenen nach einzelnen Merkmalen zu filtern. Ein Beispiel sind die Buslinien in der Schweiz. Wenn Sie diese Ebene im *Ebenen-Popup* auswählen, wird ein Filter angezeigt, mit dem Sie nach Bussen anhand des Namens des Betreibers (z. B. 'PAG') und der Nummer der Linie (z. B. 'B 111') suchen können.",
           "heading": ""
         }
       ]
