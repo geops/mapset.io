@@ -102,7 +102,8 @@
       "label": "Plan names and list",
       "content": [
         {
-          "text": "mapset plans can be given a name for an easier reference and a better overview of all created plans.\n\nWhen a plan is not yet named, the text 'Untitled plan' appears in the header.\n\n![](/img/planname.png)\n\nClick on this text to enter a new plan name. A *load spinner* and *confirmation message* next to the text input field indicates the plan name has been saved.\n\nOnce a plan has a name it will be available in the plans list.\n\nNamed plans can be loaded into the map from the plans list by selecting a plan and clicking on the *Open* button."
+          "text": "mapset plans can be given a name for an easier reference and a better overview of all created plans.\n\nWhen a plan is not yet named, the text 'Untitled plan' appears in the header.\n\n![](/img/planname.png)\n\nClick on this text to enter a new plan name. A *load spinner* and *confirmation message* next to the text input field indicates the plan name has been saved.\n\nOnce a plan has a name it will be available in the *plans list*.\n\nNamed plans can be loaded into the map from the plans list by selecting a plan and clicking on the *Open* button.\n\nPlans can be deleted from the list using the corresponding *Delete* button.\n\n![](/img/deleteplan.png)\n\nClicking the *Duplicate* button will make a copy of the corresponding plan from the list.\n\n![](/img/duplicateplan.png)",
+          "loginRestricted": true
         }
       ]
     },
@@ -133,7 +134,7 @@
       "mapsetIcon": "newplan",
       "content": [
         {
-          "text": "This action will open a new, blank plan.\\\nPlease ensure that you saved your current plan by name or store the edit link to be able to load and continue editing it later."
+          "text": "The *New plan* button will open a new, blank plan.\n\nPlease ensure that you saved your current plan by name or store the edit link to be able to load and continue editing it later.\n\nThe *Duplicate plan* button will make a copy of the currently loaded plan and load it into the map."
         }
       ]
     },
