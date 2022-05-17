@@ -100,9 +100,9 @@
       "label": "Planbenennung und Planliste",
       "content": [
         {
-          "text": "Pläne in mapset können zum einfachen Wiederfinden und für die Übersicht über alle erstellten Pläne mit einem Namen versehen werden.\n\nWenn ein Plan noch nicht benannt ist, wird in der Kopfzeile der Text 'Unbenannter Plan' angezeigt.\n\n![](/img/planname.png)\n\nKlicken Sie auf diesen Text, um einen neuen Plannamen einzugeben. Ein *Spinner* und *Bestätigungsmeldung* neben dem Texteingabefeld zeigt an, dass der Name gespeichert wurde.\n\nSobald ein Plan einen Namen hat, ist er in der *Planliste* verfügbar.\n\nPläne können aus der Planliste in die Karte geladen werden, indem Sie einen Plan auswählen und auf die Schaltfläche *Öffnen* klicken.",
+          "text": "Pläne in mapset können zum einfachen Wiederfinden und für die Übersicht über alle erstellten Pläne mit einem Namen versehen werden.\n\nWenn ein Plan noch nicht benannt ist, wird in der Kopfzeile der Text 'Unbenannter Plan' angezeigt.\n\n![](/img/planname.png)\n\nKlicken Sie auf diesen Text, um einen neuen Plannamen einzugeben. Ein *Spinner* und *Bestätigungsmeldung* neben dem Texteingabefeld zeigt an, dass der Name gespeichert wurde.\n\nSobald ein Plan einen Namen hat, ist er in der *Planliste* verfügbar.\n\nPläne können aus der Planliste in die Karte geladen werden, indem Sie einen Plan auswählen und auf die Schaltfläche *Öffnen* klicken.\n\nÜber den *Löschen-*Button werden Pläne aus der Liste entfernt.\n\n![](/img/deleteplan.png)\n\nMit dem *Duplizieren*-Button können Kopien von bereits vorhandenen Plänen erstellt werden. Kopien können danach weiter bearbeitet werden.\n\n![](/img/duplicateplan.png)",
           "heading": "",
-          "loginRestricted": false
+          "loginRestricted": true
         }
       ]
     },
@@ -133,7 +133,7 @@
       "mapsetIcon": "newplan",
       "content": [
         {
-          "text": "Diese Aktion öffnet einen neuen, leeren Plan. \n\nStellen Sie sicher, dass Sie Ihren aktuellen Plan nach Namen gespeichert haben, oder speichern Sie den Bearbeitungslink, um ihn später laden und weiter bearbeiten zu können."
+          "text": "Der *Neuer Plan-*Button öffnet einen neuen, leeren Plan. \n\nStellen Sie sicher, dass Sie Ihren aktuellen Plan nach Namen gespeichert haben, oder speichern Sie den Bearbeitungslink, um ihn später laden und weiter bearbeiten zu können.\n\nDer *Plan duplizieren-*Button im Dialog-Fenster erstellt eine Kopie des aktuellen Plans und lädt diese direkt in die Karte."
         }
       ]
     },
