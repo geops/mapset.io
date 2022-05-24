@@ -163,6 +163,7 @@ export const GuidePage = ({ locale }) => {
                 <a
                   href={`#${renderId(feature.label)}`}
                   id={renderScrollerId(feature.label)}
+                  title={feature.label}
                 >
                   <svg
                     className="listNavImage"
