@@ -156,45 +156,50 @@ export const GuidePage = ({ locale }) => {
     <>
       <img className="mapset-brand-img" src={mapset_banner} alt="" />
       <div className="guide-scroller">
-        {titles.map((feature) => {
-          return (
-            <>
-              <a
-                href={`#${renderId(feature.label)}`}
-                id={renderScrollerId(feature.label)}
-              >
-                <svg
-                  className="listNavImage"
-                  width="12"
-                  height="12"
-                  viewBox="0 0 24 24"
+        <div className="guide-scroller-scrollable">
+          {titles.map((feature) => {
+            return (
+              <>
+                <a
+                  href={`#${renderId(feature.label)}`}
+                  id={renderScrollerId(feature.label)}
                 >
-                  <path fill="none" d="M24 24H0V0h24v24z" />
-                  <circle fill="currentColor" cx="12" cy="12" r="8" />
-                </svg>
-                {feature.label}
-              </a>
-              {feature.subFeatures ? (
-                <div className="guide-scroller-sub">
-                  {feature.subFeatures.map((feat) => (
-                    <a href={`#${renderId(feat)}`} id={renderScrollerId(feat)}>
-                      <svg
-                        className="listNavImage"
-                        width="12"
-                        height="12"
-                        viewBox="0 0 24 24"
+                  <svg
+                    className="listNavImage"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                  >
+                    <path fill="none" d="M24 24H0V0h24v24z" />
+                    <circle fill="currentColor" cx="12" cy="12" r="8" />
+                  </svg>
+                  {feature.label}
+                </a>
+                {feature.subFeatures ? (
+                  <div className="guide-scroller-sub">
+                    {feature.subFeatures.map((feat) => (
+                      <a
+                        href={`#${renderId(feat)}`}
+                        id={renderScrollerId(feat)}
                       >
-                        <path fill="none" d="M24 24H0V0h24v24z" />
-                        <circle fill="currentColor" cx="12" cy="12" r="8" />
-                      </svg>
-                      {feat}
-                    </a>
-                  ))}
-                </div>
-              ) : null}
-            </>
-          );
-        })}
+                        <svg
+                          className="listNavImage"
+                          width="12"
+                          height="12"
+                          viewBox="0 0 24 24"
+                        >
+                          <path fill="none" d="M24 24H0V0h24v24z" />
+                          <circle fill="currentColor" cx="12" cy="12" r="8" />
+                        </svg>
+                        {feat}
+                      </a>
+                    ))}
+                  </div>
+                ) : null}
+              </>
+            );
+          })}
+        </div>
       </div>
       <div style={{ position: 'relative' }}>
         <section className="guideSection" id="guide">
@@ -265,13 +270,17 @@ export const GuidePage = ({ locale }) => {
                             {f.loginRestricted ? (
                               <p className="loginRestricted">
                                 <Warning />
-                                <i><FormattedMessage id="guide.login-restricted" /></i>
+                                <i>
+                                  <FormattedMessage id="guide.login-restricted" />
+                                </i>
                               </p>
                             ) : null}
                             {f.cdRestricted ? (
                               <p className="cdRestricted">
                                 <Warning />
-                                <i><FormattedMessage id="guide.cd-restricted" /></i>
+                                <i>
+                                  <FormattedMessage id="guide.cd-restricted" />
+                                </i>
                               </p>
                             ) : null}
                             <span

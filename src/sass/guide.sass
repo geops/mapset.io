@@ -17,7 +17,19 @@ body
   z-index: 100
   position: fixed
   left: 80px
-  padding-top: 20px
+
+  .guide-scroller-scrollable
+    overflow-y: auto
+    max-height: calc(100vh - 150px)
+    scrollbar-width: thin
+    padding: 10px
+
+    &::-webkit-scrollbar
+      width: 4px
+
+    &::-webkit-scrollbar-thumb
+      background-color: rgba(155, 155, 155, 0.5)
+      border: transparent
 
   a
     display: flex
@@ -30,7 +42,7 @@ body
       opacity: 1
 
     svg
-      margin-right: 5px
+      margin-right: 5px    
 
   .active
     opacity: 1
