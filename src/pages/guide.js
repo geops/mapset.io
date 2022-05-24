@@ -173,7 +173,7 @@ export const GuidePage = ({ locale }) => {
                     <path fill="none" d="M24 24H0V0h24v24z" />
                     <circle fill="currentColor" cx="12" cy="12" r="8" />
                   </svg>
-                  {feature.label}
+                  <span>{feature.label}</span>
                 </a>
                 {feature.subFeatures ? (
                   <div className="guide-scroller-sub">
@@ -181,6 +181,7 @@ export const GuidePage = ({ locale }) => {
                       <a
                         href={`#${renderId(feat)}`}
                         id={renderScrollerId(feat)}
+                        title={feat}
                       >
                         <svg
                           className="listNavImage"
@@ -191,7 +192,7 @@ export const GuidePage = ({ locale }) => {
                           <path fill="none" d="M24 24H0V0h24v24z" />
                           <circle fill="currentColor" cx="12" cy="12" r="8" />
                         </svg>
-                        {feat}
+                        <span>{feat}</span>
                       </a>
                     ))}
                   </div>
