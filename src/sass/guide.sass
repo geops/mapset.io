@@ -11,6 +11,7 @@ body
   padding-top: 1rem
 
 .guide-scroller
+  max-width: 220px
   display: flex
   flex-direction: column
   position: absolute
@@ -20,7 +21,7 @@ body
 
   .guide-scroller-scrollable
     overflow-y: auto
-    max-height: calc(100vh - 150px)
+    max-height: calc(100vh - 145px)
     scrollbar-width: thin
     padding: 10px
 
@@ -34,7 +35,7 @@ body
   a
     display: flex
     align-items: center
-    padding: 8px 0
+    padding: 0.8vh 0
     opacity: 0.5
 
     &:hover
@@ -43,6 +44,11 @@ body
 
     svg
       margin-right: 5px
+
+    span
+      max-width: 160px
+      overflow: hidden
+      text-overflow: ellipsis
 
   .active
     opacity: 1
