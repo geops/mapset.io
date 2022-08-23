@@ -2,8 +2,5 @@
     "functions": {
       "api/auth.js": { "maxDuration": 10 },
       "api/callback.js": { "maxDuration": 10 },
-      "pages/**": {
-        "excludeFiles": "public/img/**"
-      }
     }
   }
