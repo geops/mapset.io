@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+#  name: git-gateway
   repo: geops/mapset.io
   base_url: https://mapset.io/
   auth_endpoint: api/auth
