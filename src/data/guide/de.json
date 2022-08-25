@@ -167,6 +167,10 @@
         {
           "heading": "Tipps beim Start anzeigen",
           "text": "Legt fest, ob beim Start kurze Hinweise für eine optimale Nutzung von mapset angezeigt werden.\n\nIm Dialogfeld für jeden Hinweis können Sie die Option zum Anzeigen weiterer Hinweise deaktivieren. Im Einstellungsdialog können Sie die Anzeige wieder aktivieren."
+        },
+        {
+          "heading": "Ausrichtungshilfen",
+          "text": "In diesem Menu kann zwischen verschiedenen Ausrichtungshilfen gewechselt oder die Ausrichtungshilfe ganz ausgeschaltet werden. Mehr Informationen zu den Ausrichtungshilfen  gibts unter den [Bearbeitungswerkzeugen](https://mapset.io/de/guide/#ausrichtungshilfen)"
         }
       ]
     }
