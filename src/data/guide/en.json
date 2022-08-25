@@ -168,6 +168,10 @@
         {
           "heading": "Show tips at startup",
           "text": "Defines if short hints for an optimal usage of mapset are displayed at startup.\n\nFrom the dialog for each hint you may deactivate the option to display further hints. In the settings dialog you may re-activate the display again."
+        },
+        {
+          "heading": "Alignment aid",
+          "text": "In this menu you can switch between different alignment aids or switch off the alignment aid completely. More information on the alignment aids can be found under [Drawing tools](https://mapset.io/guide/#alignmentaid)."
         }
       ]
     }
