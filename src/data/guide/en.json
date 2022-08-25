@@ -94,6 +94,10 @@
           "heading": "Map Rotation",
           "text": "In mapset the map can be rotated by dragging it while pressing *Alt + Shift*. The current rotation is displayed in a button at the bottom right:\n\n![](/img/rotate_map.png)\n\n Clicking this button will reset the map rotation.",
           "mapsetIcon": "rotate_map"
+        },
+        {
+          "heading": "Alignment aid",
+          "text": "mapset provides tools for positioning when drawing and editing map elements. There are two possible types of alignment:\n\n* **Auxiliary lines**: When drawing and editing feature nodes, auxiliary lines to neighbouring nodes are displayed, on which the new or repositioned node aligns itself. Thus, for example, pictograms can be lined up on a line or right angles can be drawn for lines and polygons.\n\n  ![snaplines](/img/snaplines.png)\n* **Icon anchor points**: Icons can be precisely aligned with a snap function to ensure even spacing between them. When drawing and editing icons, four anchor points are displayed around neighbouring icons on which the drawn pictogram aligns when in proximity. The spacing of the anchor points adjusts according to the size of the pictogram.\n\n  ![snappoints](/img/snappoints.png)"
         }
       ],
       "mapsetIcon": ""
