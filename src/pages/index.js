@@ -94,7 +94,7 @@ export const IndexPageTemplate = ({ locale, region }) => {
   });
 
   const guideLink = useMemo(() => {
-    return `${window.location.origin}${window.location.pathname}guide`
+    return typeof window !== "undefined" && `${window.location.origin}${window.location.pathname}guide`
   });
 
   return (
