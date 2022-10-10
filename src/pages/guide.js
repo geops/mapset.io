@@ -213,14 +213,14 @@ export const GuidePage = ({ locale }) => {
               <p>
                 <FormattedMessage id="guide.Links-ch" />
                 <br />
-                <a href="https://editor.mapset.ch/" target="_blank">
+                <a href="https://editor.mapset.ch/" target="_blank" rel="noopener noreferrer">
                   https://editor.mapset.ch/
                 </a>
               </p>
               <p>
                 <FormattedMessage id="guide.Links-io" />
                 <br />
-                <a href="https://editor.mapset.io/" target="_blank">
+                <a href="https://editor.mapset.io/" target="_blank" rel="noopener noreferrer">
                   https://editor.mapset.io/
                 </a>
               </p>

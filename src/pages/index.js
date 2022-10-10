@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 import Layout from '../components/Layout';
 import { Remarkable } from 'remarkable';
@@ -91,6 +91,10 @@ export const IndexPageTemplate = ({ locale, region }) => {
   md.set({
     html: true,
     breaks: true,
+  });
+
+  const guideLink = useMemo(() => {
+    return `${window.location.origin}${window.location.pathname}guide`
   });
 
   return (
@@ -266,6 +270,22 @@ export const IndexPageTemplate = ({ locale, region }) => {
                   </div>
                 ))}
             </div>
+            <p>
+              <FormattedMessage
+                id="content.specification user-manual"
+                values={{
+                  a: (
+                    <a
+                      href={guideLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FormattedMessage id="guide.link-user-manual" />
+                    </a>
+                  ),
+                }}
+              />
+            </p>
           </div>
         </div>
       </section>{' '}
