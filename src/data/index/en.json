@@ -5,6 +5,7 @@
     "page header": "Location plans for public transport",
     "page header description": "You would like to provide your customers with up-to-date and attractive information about public transport? mapset is the online editor for fast and easy creation of clear and visually appealing station maps and plans for customer orientation.",
     "specification description": "mapset offers many advantages for the easy creation of plans and maps.",
+    "specification user-manual": "A detailed description of how all mapset tools work can be found in the {a}",
     "price description": "Here you can find an overview of the annual costs and the one-time setup fee.",
     "conditions text eu": "* The prices refer to the total number of stops of a company, independent of the number of stops actually processed with mapset. <br/><br/>\n\nIn addition to the ongoing subscription fees, a setup fee of € 490.00 is charged at the start of the subscription. After a subscription interruption, the setup fee is due again when the subscription is renewed. For transport companies with up to 10 stops only the set-up fee is charged. <br/><br/>\n\nWithin the scope of the subscriptions and the setup fee the configuration of users of mapset is included, provided the users can be identified via a uniform mail domain (e.g. james.meyer@ktuxy.com and :james.meyer@ktuxy.com). For the configuration of individual users, who are not identifiable via a domain, € 90.00 per user will be charged.<br/><br/>",
     "conditions text ch": "* The prices refer to the total number of stops of a company, independent of the number of stops actually processed with mapset. <br/><br/>\n\nIn addition to the ongoing subscription fees, a setup fee of CFH 490.00 is charged at the start of the subscription. After a subscription interruption, the setup fee is due again when the subscription is renewed. For transport companies with up to 10 stops only the set-up fee is charged. <br/><br/>\n\nWithin the scope of the subscriptions and the setup fee the configuration of users of mapset is included, provided the users can be identified via a uniform mail domain (e.g. james.meyer@ktuxy.com and :james.meyer@ktuxy.com). For the configuration of individual users, who are not identifiable via a domain, CFH 90.00 per user will be charged.<br/><br/>",
@@ -60,6 +61,7 @@
   },
   "guide": {
     "Guide": "User guide",
+    "link-user-manual": "mapset user manual",
     "Links-io": "For other countries please use the international domain:",
     "Links-ch": "For Switzerland please access mapset using the address:",
     "login-restricted": "This feature requires the user to be logged in.",
