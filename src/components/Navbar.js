@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 import layout_bg_2 from '../img/layoutBG_2.png';
 import mapset_banner from '../img/Mapset_Logo.svg';
 import userManager from '../utils/userManager';
-import getUrl from '../utils/getUrl';
+import {getPath} from '../utils/routeUtils';
 
 function LoginIcon({ color = '#fff' }) {
   return (
@@ -102,7 +102,8 @@ class Navbar extends React.Component {
   };
 
   render() {
-    const { user, navBarClassName, locale, region } = this.props;
+    const { user, navBarClassName, locale, region, path } = this.props;
+    console.log(getPath(path, region, 'en'));
     return (
       <IntlProvider locale={this.state.locale} messages={this.state.messages}>
         <nav
@@ -243,15 +244,15 @@ class Navbar extends React.Component {
                 {locale === 'en' ? (
                   'EN'
                 ) : (
-                  <a href={getUrl(null, region, 'en', false, true)}>EN</a>
+                  <a href={getPath(path, region, 'en')}>EN</a>
                 )}
                 <div className="mobile-menu-site-switcher-divider" />
-                {locale === 'fr' ? 'FR' : <a href={getUrl(null, region, 'fr', false, true)}>FR</a>}
+                {locale === 'fr' ? 'FR' : <a href={getPath(path, region, 'fr')}>FR</a>}
                 <div className="mobile-menu-site-switcher-divider" />
                 {locale === 'de' ? (
                   'DE'
                 ) : (
-                  <a href={getUrl(null, region, 'de', false, true)}>DE</a>
+                  <a href={getPath(path, region, 'de')}>DE</a>
                 )}
               </div>
             </div>
@@ -295,15 +296,15 @@ class Navbar extends React.Component {
                     {locale === 'en' ? (
                       'EN'
                     ) : (
-                      <a href={getUrl(null, region, 'en', false, true)}>EN</a>
+                      <a href={getPath(path, region, 'en')}>EN</a>
                     )}
                   </div>
-                  <div>{locale === 'fr' ? 'FR' : <a href={getUrl(null, region, 'fr', false, true)}>FR</a>}</div>
+                  <div>{locale === 'fr' ? 'FR' : <a href={getPath(path, region, 'fr')}>FR</a>}</div>
                   <div>
                     {locale === 'de' ? (
                       'DE'
                     ) : (
-                      <a href={getUrl(null, region, 'de', false, true)}>DE</a>
+                      <a href={getPath(path, region, 'de')}>DE</a>
                     )}
                   </div>
                 </div>

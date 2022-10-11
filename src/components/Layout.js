@@ -57,7 +57,7 @@ JSON.flatten = function (data) {
   return result;
 };
 
-const Layout = ({ locale, children, region, user, navBarClassName = '' }) => {
+const Layout = ({ locale, children, region, user, navBarClassName = '', path = '/' }) => {
   const { title, description } = useSiteMetadata();
   const localeMessages = JSON.flatten(languages[locale]);
   return (
@@ -79,6 +79,7 @@ const Layout = ({ locale, children, region, user, navBarClassName = '' }) => {
         messages={localeMessages}
         user={user}
         navBarClassName={navBarClassName}
+        path={path}
       />
       <IntlProvider locale={locale} messages={localeMessages}>
         {children}
