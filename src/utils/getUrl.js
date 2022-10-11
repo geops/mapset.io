@@ -7,7 +7,7 @@ export const getLocalizedUrl = (region, locale, url, reset) => {
   const { pathname } = urlObject;
   if (region && locale) {
     if (region === 'ch') {
-      urlObject.pathname = `/${locale !== 'de' ? `${locale}/` : ''}${!reset ? '' : pathname.split('/').slice(-1).pop()}`;
+      urlObject.pathname = `/${locale !== 'de' ? `${locale}/` : ''}${reset ? '' : pathname.split('/').slice(-1).pop()}`;
     } else {
       urlObject.pathname = `/${locale !== 'en' ? `${locale}/` : ''}${reset ? '' : pathname.split('/').slice(-1).pop()}`;
     }
