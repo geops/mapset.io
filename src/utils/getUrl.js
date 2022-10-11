@@ -1,5 +1,5 @@
 export const getLocalizedUrl = (region, locale, url, reset) => {
-  if (!url && typeof window === `undefined`) {
+  if (typeof window === `undefined`) {
     return;
   }
   const validatedUrl = url || window.location.href;
