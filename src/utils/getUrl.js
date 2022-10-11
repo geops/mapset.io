@@ -1,32 +1,36 @@
-export const getLocalizedUrl = (region, locale, url, reset) => {
-  if (typeof window === `undefined`) {
-    return;
-  }
-  const validatedUrl = url || window.location.href;
-  const urlObject = new URL(validatedUrl);
-  const { pathname } = urlObject;
-  if (region && locale) {
-    if (region === 'ch') {
-      urlObject.pathname = `/${locale !== 'de' ? `${locale}/` : ''}${reset ? '' : pathname.split('/').slice(-1).pop()}`;
-    } else {
-      urlObject.pathname = `/${locale !== 'en' ? `${locale}/` : ''}${reset ? '' : pathname.split('/').slice(-1).pop()}`;
-    }
-  }
-  return urlObject.toString();
-}
-
-const getUrl = (path, region, locale) => {
-  if (typeof window === `undefined`) {
+const getUrl = (path, region, locale, isRoot, noHash) => {
+  if (typeof window === 'undefined') {
     return path;
   }
-  const newUrl = `${window.location.protocol}//${window.location.hostname}${
-    window.location.port ? `:${window.location.port}` : ''
-    }${path}`;
+  const url = new URL(window.location.href);
 
-  if (region && locale) {
-    return getLocalizedUrl(region, locale, newUrl);
+  if (noHash) {
+    url.hash = '';
   }
-  return newUrl
+
+  if (path && (!region || !locale)) {
+    url.pathname = path;
+    return url.toString();
+  }
+
+  if (path && region && locale) {
+    if (region === 'ch') {
+      url.pathname = `${locale !== 'de' ? `${locale}` : ''}${path}`;
+    } else {
+      url.pathname = `${locale !== 'en' ? `${locale}` : ''}${path}`;
+    }
+    return url.toString();
+  }
+
+  if (!path && region && locale) {
+    if (region === 'ch') {
+      url.pathname = `${locale !== 'de' ? `${locale}/` : ''}${isRoot ? '' : url.pathname.split('/').slice(-1).pop()}`;
+    } else {
+      url.pathname = `${locale !== 'en' ? `${locale}/` : ''}${isRoot ? '' : url.pathname.split('/').slice(-1).pop()}`;
+    }
+    return url.toString();
+  }
+  return url.toString()
 };
 
 export default getUrl;

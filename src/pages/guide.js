@@ -11,7 +11,7 @@ import Warning from '../assets/warning.svg';
 
 import de_guide from '../data/guide/de.json';
 import en_guide from '../data/guide/en.json';
-import { getLocalizedUrl } from '../utils/getUrl';
+import getUrl from '../utils/getUrl';
 
 if (
   typeof window !== `undefined` &&
@@ -153,10 +153,10 @@ export const GuidePage = ({ locale, region }) => {
     html: true,
     breaks: true,
   });
-  console.log(region);
+
   return (
     <>
-      <a href={getLocalizedUrl(region, locale, null, true)}><img className="mapset-brand-img" src={mapset_banner} alt="" /></a>
+      <a href={getUrl(null, region, locale, true, true)}><img className="mapset-brand-img" src={mapset_banner} alt="" /></a>
       <div className="guide-scroller">
         <div className="guide-scroller-scrollable">
           {titles.map((feature) => {
