@@ -14,5 +14,5 @@ const getUrl = (path, region, locale) => {
     window.location.port ? `:${window.location.port}` : ''
   }${localizedPath}`;
 };
-  
+
 export default getUrl;
