@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState } from 'react';
 import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 import Layout from '../components/Layout';
 import { Remarkable } from 'remarkable';
@@ -8,6 +8,7 @@ import ContactForm from '../components/ContactForm';
 import Imprint from '../components/Imprint';
 import SiteSwitcher from '../components/SiteSwitcher';
 import userManager from '../utils/userManager';
+import getUrl from '../utils/getUrl';
 
 import layout_bg_1 from '../img/layoutBG_1.png';
 import layout_bg_2 from '../img/layoutBG_2.png';
@@ -91,10 +92,6 @@ export const IndexPageTemplate = ({ locale, region }) => {
   md.set({
     html: true,
     breaks: true,
-  });
-
-  const guideLink = useMemo(() => {
-    return typeof window !== "undefined" && `${window.location.origin}${window.location.pathname}guide`
   });
 
   return (
@@ -276,7 +273,7 @@ export const IndexPageTemplate = ({ locale, region }) => {
                 values={{
                   a: (
                     <a
-                      href={guideLink}
+                      href={getUrl('/guide')}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
