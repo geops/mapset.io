@@ -5,6 +5,7 @@ import { Link } from 'gatsby';
 import layout_bg_2 from '../img/layoutBG_2.png';
 import mapset_banner from '../img/Mapset_Logo.svg';
 import userManager from '../utils/userManager';
+import { getLocalizedUrl } from '../utils/getUrl';
 
 function LoginIcon({ color = '#fff' }) {
   return (
@@ -242,15 +243,15 @@ class Navbar extends React.Component {
                 {locale === 'en' ? (
                   'EN'
                 ) : (
-                  <a href={region === 'ch' ? '/en/' : '/'}>EN</a>
+                  <a href={getLocalizedUrl(region, 'en')}>EN</a>
                 )}
                 <div className="mobile-menu-site-switcher-divider" />
-                {locale === 'fr' ? 'FR' : <a href="/fr/">FR</a>}
+                {locale === 'fr' ? 'FR' : <a href={getLocalizedUrl(region, 'fr')}>FR</a>}
                 <div className="mobile-menu-site-switcher-divider" />
                 {locale === 'de' ? (
                   'DE'
                 ) : (
-                  <a href={region === 'ch' ? '/' : '/de/'}>DE</a>
+                  <a href={getLocalizedUrl(region, 'de')}>DE</a>
                 )}
               </div>
             </div>
@@ -294,15 +295,15 @@ class Navbar extends React.Component {
                     {locale === 'en' ? (
                       'EN'
                     ) : (
-                      <a href={region === 'ch' ? '/en/' : '/'}>EN</a>
+                      <a href={getLocalizedUrl(region, 'en')}>EN</a>
                     )}
                   </div>
-                  <div>{locale === 'fr' ? 'FR' : <a href="/fr/">FR</a>}</div>
+                  <div>{locale === 'fr' ? 'FR' : <a href={getLocalizedUrl(region, 'fr')}>FR</a>}</div>
                   <div>
                     {locale === 'de' ? (
                       'DE'
                     ) : (
-                      <a href={region === 'ch' ? '/' : '/de/'}>DE</a>
+                      <a href={getLocalizedUrl(region, 'de')}>DE</a>
                     )}
                   </div>
                 </div>
