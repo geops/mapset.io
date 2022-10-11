@@ -273,7 +273,7 @@ export const IndexPageTemplate = ({ locale, region }) => {
                 values={{
                   a: (
                     <a
-                      href={getUrl('/guide')}
+                      href={getUrl('/guide', region, locale)}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
