@@ -11,6 +11,7 @@ import Warning from '../assets/warning.svg';
 
 import de_guide from '../data/guide/de.json';
 import en_guide from '../data/guide/en.json';
+import { getPath } from '../utils/routeUtils';
 
 if (
   typeof window !== `undefined` &&
@@ -40,7 +41,7 @@ const renderScrollerId = (label) => {
   return null;
 };
 
-export const GuidePage = ({ locale }) => {
+export const GuidePage = ({ locale, region }) => {
   const [icons, setIcons] = useState([]);
   let guideContent;
   switch (locale) {
@@ -152,9 +153,10 @@ export const GuidePage = ({ locale }) => {
     html: true,
     breaks: true,
   });
+
   return (
     <>
-      <img className="mapset-brand-img" src={mapset_banner} alt="" />
+      <a href={getPath('/', region, locale)}><img className="mapset-brand-img" src={mapset_banner} alt="" /></a>
       <div className="guide-scroller">
         <div className="guide-scroller-scrollable">
           {titles.map((feature) => {
@@ -326,8 +328,9 @@ const Index = ({ pageContext: { locale, region } }) => {
       region={region}
       user={user}
       navBarClassName="guide-nav-bar"
+      path="/guide"
     >
-      <GuidePage locale={locale} />
+      <GuidePage locale={locale} region={region} />
     </Layout>
   );
 };

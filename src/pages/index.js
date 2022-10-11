@@ -8,7 +8,7 @@ import ContactForm from '../components/ContactForm';
 import Imprint from '../components/Imprint';
 import SiteSwitcher from '../components/SiteSwitcher';
 import userManager from '../utils/userManager';
-import getUrl from '../utils/getUrl';
+import getUrl from '../utils/routeUtils';
 
 import layout_bg_1 from '../img/layoutBG_1.png';
 import layout_bg_2 from '../img/layoutBG_2.png';
@@ -273,7 +273,7 @@ export const IndexPageTemplate = ({ locale, region }) => {
                 values={{
                   a: (
                     <a
-                      href={getUrl('/guide')}
+                      href={getUrl('/guide', region, locale, true)}
                       target="_blank"
                       rel="noopener noreferrer"
                     >

@@ -1,4 +1,4 @@
-import getUrl from './getUrl';
+import getUrl from './routeUtils';
 
 const Oidcsettings = {
   authority: 'https://sso.geops.io/openid',
