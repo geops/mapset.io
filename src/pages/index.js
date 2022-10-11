@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState } from 'react';
 import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 import Layout from '../components/Layout';
 import { Remarkable } from 'remarkable';
@@ -93,9 +93,8 @@ export const IndexPageTemplate = ({ locale, region }) => {
     breaks: true,
   });
 
-  const guideLink = useMemo(() => {
-    return typeof window !== "undefined" && `${window.location.origin}${window.location.pathname}guide`
-  });
+  const guideLink =
+    typeof window !== "undefined" && `${window.location.origin}${window.location.pathname}guide`;
 
   return (
     <div style={{ position: 'relative' }}>
