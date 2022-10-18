@@ -57,8 +57,15 @@ JSON.flatten = function (data) {
   return result;
 };
 
-const Layout = ({ locale, children, region, user, navBarClassName = '', path = '/' }) => {
-  const { title, description } = useSiteMetadata();
+const Layout = ({
+  locale,
+  children,
+  region,
+  user,
+  navBarClassName = '',
+  path = '/',
+}) => {
+  const { title, description, siteUrl } = useSiteMetadata();
   const localeMessages = JSON.flatten(languages[locale]);
   return (
     <div>
@@ -72,6 +79,7 @@ const Layout = ({ locale, children, region, user, navBarClassName = '', path = '
         />
 
         <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
+        <link rel="canonical" href={siteUrl} />
       </Helmet>
       <Navbar
         locale={locale}

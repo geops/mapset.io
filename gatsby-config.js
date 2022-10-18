@@ -1,12 +1,43 @@
 var proxy = require('http-proxy-middleware');
 
+const siteUrl = process.env.GATSBY_REGION
+  ? 'https://mapset.' + process.env.GATSBY_REGION
+  : 'https://mapset.ch';
+
 module.exports = {
   siteMetadata: {
     title: 'mapset - location plans for public transport',
     description:
       'Fast and easy creation of visually appealing station maps for customer information.',
+    // If you didn't use the resolveSiteUrl option this needs to be set
+    siteUrl: siteUrl,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: [
+          '/signin',
+          '/*/signin',
+          '/signout',
+          '/*/signout',
+          '/silent',
+          '/*/silent',
+          '/404',
+          '/*/404',
+          '/404.html',
+          '/*/404.html',
+        ],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: siteUrl,
+        sitemap: siteUrl + '/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
