@@ -67,7 +67,7 @@ const Layout = ({
 }) => {
   const { title, description, siteUrl, alternateUrls } = useSiteMetadata();
   const localeMessages = JSON.flatten(languages[locale]);
-  console.log(localeMessages);
+
   return (
     <div>
       <Helmet>
