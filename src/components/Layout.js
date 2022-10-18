@@ -62,13 +62,16 @@ const Layout = ({
   children,
   region,
   user,
-  localizedPath = '',
   navBarClassName = '',
   path = '/',
+  localizedPath = '',
 }) => {
   const { title, description, siteUrl, alternateUrls } = useSiteMetadata();
   const localeMessages = JSON.flatten(languages[locale]);
-
+  let localizedPathSlashed = localizedPath;
+  if (localizedPath.length && localizedPath[0] !== '/') {
+    localizedPathSlashed = '/' + localizedPath;
+  }
   return (
     <div>
       <Helmet>
@@ -86,9 +89,9 @@ const Layout = ({
         />
 
         <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
-        <link rel="canonical" href={siteUrl + localizedPath} />
+        <link rel="canonical" href={siteUrl + localizedPathSlashed} />
         {alternateUrls.map((url) => {
-          return <link rel="alternate" href={url + localizedPath} />;
+          return <link rel="alternate" href={url + localizedPathSlashed} />;
         })}
       </Helmet>
       <Navbar

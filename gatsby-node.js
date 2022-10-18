@@ -29,6 +29,10 @@ if (region == 'ch') {
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage, deletePage } = actions;
 
+  const defaultLocale = Object.keys(locales).find(
+    (key) => locales[key].default,
+  );
+
   return new Promise((resolve) => {
     deletePage(page);
 
@@ -37,14 +41,11 @@ exports.onCreatePage = ({ page, actions }) => {
       const localizedPath = locales[key].default
         ? page.path
         : locales[key].path + page.path;
-      const defaultLocale = Object.keys(locales).find(
-        (key) => locales[key].default,
-      );
 
       return createPage({
         ...page,
-        localizedPath: localizedPath,
-        context: { locale, region, defaultLocale },
+        path: localizedPath,
+        context: { locale, region, defaultLocale, localizedPath },
       });
     });
 
