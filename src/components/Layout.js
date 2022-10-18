@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import '../sass/all.sass';
 import useSiteMetadata from './SiteMetadata';
+import card_view_triple from '../../static/img/screens_perspective.png';
 
 import favicon from '../img/favicon.png';
 
@@ -72,17 +73,15 @@ const Layout = ({
   if (localizedPath.length && localizedPath[0] !== '/') {
     localizedPathSlashed = '/' + localizedPath;
   }
+  const realTitle = localeMessages['content.page header'] || title;
+  const realDescription =
+    localeMessages['content.page header description'] || description;
   return (
     <div>
       <Helmet>
         <html lang={locale} />
-        <title>{localeMessages['content.page header'] || title}</title>
-        <meta
-          name="description"
-          content={
-            localeMessages['content.page header description'] || description
-          }
-        />
+        <title>{realTitle}</title>
+        <meta name="description" content={realDescription} />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, minimum-scale=1"
@@ -93,6 +92,23 @@ const Layout = ({
         {alternateUrls.map((url) => {
           return <link rel="alternate" href={url + localizedPathSlashed} />;
         })}
+
+        {/* <!-- OpenGraph tags, used by facebook --> */}
+        <meta property="og:title" content={realTitle} />
+        <meta property="og:description" content={realDescription} />
+        <meta
+          property="og:image"
+          // content="https://mobility.portal.geops.io/logo-800-418.png"
+          content={card_view_triple}
+        />
+
+        {/* <!-- Twitter tags --> */}
+        {/* Twitter card tester: https://cards-dev.twitter.com/validator */}
+        <meta name="twitter:dnt" content="on" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@geOps" />
+        <meta name="twitter:creator" content="@geOps" />
+        <meta name="twitter:image" content={card_view_triple} />
       </Helmet>
       <Navbar
         locale={locale}
