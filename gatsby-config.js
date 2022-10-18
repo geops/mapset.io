@@ -1,8 +1,15 @@
 var proxy = require('http-proxy-middleware');
 
-const siteUrl = process.env.GATSBY_REGION
-  ? 'https://mapset.' + process.env.GATSBY_REGION
-  : 'https://mapset.ch';
+let siteUrl = '';
+let alternateUrls = [];
+
+if (!process.env.GATSBY_REGION || process.env.GATSBY_REGION === 'ch') {
+  siteUrl = 'https://www.mapset.ch';
+  alternateUrls = ['https://mapset.ch', 'https://trafimage.mapset.ch'];
+} else if (process.env.GATSBY_REGION === 'eu') {
+  siteUrl = 'https://www.mapset.io';
+  alternateUrls = ['https://mapset.io'];
+}
 
 module.exports = {
   siteMetadata: {
@@ -11,6 +18,7 @@ module.exports = {
       'Fast and easy creation of visually appealing station maps for customer information.',
     // If you didn't use the resolveSiteUrl option this needs to be set
     siteUrl: siteUrl,
+    alternateUrls: alternateUrls,
   },
   plugins: [
     {

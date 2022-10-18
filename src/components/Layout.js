@@ -63,10 +63,11 @@ const Layout = ({
   region,
   user,
   navBarClassName = '',
-  path = '/',
+  path,
 }) => {
-  const { title, description, siteUrl } = useSiteMetadata();
+  const { title, description, siteUrl, alternateUrls } = useSiteMetadata();
   const localeMessages = JSON.flatten(languages[locale]);
+
   return (
     <div>
       <Helmet>
@@ -79,7 +80,10 @@ const Layout = ({
         />
 
         <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
-        <link rel="canonical" href={siteUrl} />
+        <link rel="canonical" href={siteUrl + path} />
+        {alternateUrls.map((url) => {
+          return <link rel="alternate" href={url + path} />;
+        })}
       </Helmet>
       <Navbar
         locale={locale}

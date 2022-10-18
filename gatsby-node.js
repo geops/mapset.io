@@ -37,11 +37,14 @@ exports.onCreatePage = ({ page, actions }) => {
       const localizedPath = locales[key].default
         ? page.path
         : locales[key].path + page.path;
+      const defaultLocale = Object.keys(locales).find(
+        (key) => locales[key].default,
+      );
 
       return createPage({
         ...page,
         path: localizedPath,
-        context: { locale, region },
+        context: { locale, region, defaultLocale },
       });
     });
 
