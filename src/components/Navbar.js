@@ -103,8 +103,6 @@ class Navbar extends React.Component {
 
   render() {
     const { user, navBarClassName, locale, region, path } = this.props;
-    console.log(path);
-    console.log(getPath(path, region, 'fr'));
     return (
       <IntlProvider locale={this.state.locale} messages={this.state.messages}>
         <nav
