@@ -62,8 +62,9 @@ const Layout = ({
   children,
   region,
   user,
+  localizedPath = '',
   navBarClassName = '',
-  path,
+  path = '/',
 }) => {
   const { title, description, siteUrl, alternateUrls } = useSiteMetadata();
   const localeMessages = JSON.flatten(languages[locale]);
@@ -85,9 +86,9 @@ const Layout = ({
         />
 
         <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
-        <link rel="canonical" href={siteUrl + path} />
+        <link rel="canonical" href={siteUrl + localizedPath} />
         {alternateUrls.map((url) => {
-          return <link rel="alternate" href={url + path} />;
+          return <link rel="alternate" href={url + localizedPath} />;
         })}
       </Helmet>
       <Navbar

@@ -156,7 +156,13 @@ export const GuidePage = ({ locale, region }) => {
 
   return (
     <>
-      <a href={getPath('/', region, locale)}><img className="mapset-brand-img" src={mapset_banner} alt="" /></a>
+      <a href={getPath('/', region, locale)}>
+        <img
+          className="mapset-brand-img"
+          src={mapset_banner}
+          alt="Mapset website"
+        />
+      </a>
       <div className="guide-scroller">
         <div className="guide-scroller-scrollable">
           {titles.map((feature) => {
@@ -215,14 +221,22 @@ export const GuidePage = ({ locale, region }) => {
               <p>
                 <FormattedMessage id="guide.Links-ch" />
                 <br />
-                <a href="https://editor.mapset.ch/" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://editor.mapset.ch/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   https://editor.mapset.ch/
                 </a>
               </p>
               <p>
                 <FormattedMessage id="guide.Links-io" />
                 <br />
-                <a href="https://editor.mapset.io/" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://editor.mapset.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   https://editor.mapset.io/
                 </a>
               </p>

@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 import layout_bg_2 from '../img/layoutBG_2.png';
 import mapset_banner from '../img/Mapset_Logo.svg';
 import userManager from '../utils/userManager';
-import {getPath} from '../utils/routeUtils';
+import { getPath } from '../utils/routeUtils';
 
 function LoginIcon({ color = '#fff' }) {
   return (
@@ -103,7 +103,8 @@ class Navbar extends React.Component {
 
   render() {
     const { user, navBarClassName, locale, region, path } = this.props;
-    console.log(getPath(path, region, 'en'));
+    console.log(path);
+    console.log(getPath(path, region, 'fr'));
     return (
       <IntlProvider locale={this.state.locale} messages={this.state.messages}>
         <nav
@@ -123,6 +124,7 @@ class Navbar extends React.Component {
                 className={`navbar-burger burger ${this.state.navBarActiveClass}`}
                 data-target="navMenu"
                 onClick={() => this.toggleHamburger()}
+                onKeyPress={(evt) => evt.which === 13 && this.toggleHamburger()}
               >
                 <span />
                 <span />
@@ -247,7 +249,11 @@ class Navbar extends React.Component {
                   <a href={getPath(path, region, 'en')}>EN</a>
                 )}
                 <div className="mobile-menu-site-switcher-divider" />
-                {locale === 'fr' ? 'FR' : <a href={getPath(path, region, 'fr')}>FR</a>}
+                {locale === 'fr' ? (
+                  'FR'
+                ) : (
+                  <a href={getPath(path, region, 'fr')}>FR</a>
+                )}
                 <div className="mobile-menu-site-switcher-divider" />
                 {locale === 'de' ? (
                   'DE'
@@ -299,7 +305,13 @@ class Navbar extends React.Component {
                       <a href={getPath(path, region, 'en')}>EN</a>
                     )}
                   </div>
-                  <div>{locale === 'fr' ? 'FR' : <a href={getPath(path, region, 'fr')}>FR</a>}</div>
+                  <div>
+                    {locale === 'fr' ? (
+                      'FR'
+                    ) : (
+                      <a href={getPath(path, region, 'fr')}>FR</a>
+                    )}
+                  </div>
                   <div>
                     {locale === 'de' ? (
                       'DE'

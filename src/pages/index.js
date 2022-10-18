@@ -467,7 +467,11 @@ export const IndexPageTemplate = ({ locale, region }) => {
   );
 };
 
-const Index = ({ path, pageContext: { locale, region, defaultLocale } }) => {
+const Index = ({
+  path,
+  localizedPath,
+  pageContext: { locale, region, defaultLocale },
+}) => {
   const [user, setUser] = useState(null);
 
   if (typeof window !== 'undefined' && userManager) {
@@ -483,6 +487,7 @@ const Index = ({ path, pageContext: { locale, region, defaultLocale } }) => {
       user={user}
       defaultLocale={defaultLocale}
       path={path}
+      localizedPath={localizedPath}
     >
       <IndexPageTemplate locale={locale} region={region} />
     </Layout>

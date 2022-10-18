@@ -43,7 +43,7 @@ exports.onCreatePage = ({ page, actions }) => {
 
       return createPage({
         ...page,
-        path: localizedPath,
+        localizedPath: localizedPath,
         context: { locale, region, defaultLocale },
       });
     });
