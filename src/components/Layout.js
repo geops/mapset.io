@@ -67,13 +67,18 @@ const Layout = ({
 }) => {
   const { title, description, siteUrl, alternateUrls } = useSiteMetadata();
   const localeMessages = JSON.flatten(languages[locale]);
-
+  console.log(localeMessages);
   return (
     <div>
       <Helmet>
         <html lang={locale} />
-        <title>{title}</title>
-        <meta name="description" content={description} />
+        <title>{localeMessages['content.page header'] || title}</title>
+        <meta
+          name="description"
+          content={
+            localeMessages['content.page header description'] || description
+          }
+        />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, minimum-scale=1"
