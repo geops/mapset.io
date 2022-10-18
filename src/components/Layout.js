@@ -99,7 +99,7 @@ const Layout = ({
         <meta
           property="og:image"
           // content="https://mobility.portal.geops.io/logo-800-418.png"
-          content={card_view_triple}
+          content={siteUrl + card_view_triple}
         />
 
         {/* <!-- Twitter tags --> */}
@@ -108,7 +108,7 @@ const Layout = ({
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@geOps" />
         <meta name="twitter:creator" content="@geOps" />
-        <meta name="twitter:image" content={card_view_triple} />
+        <meta name="twitter:image" content={siteUrl + card_view_triple} />
       </Helmet>
       <Navbar
         locale={locale}
