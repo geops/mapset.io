@@ -11,19 +11,22 @@ body
   padding-top: 1rem
 
 .guide-scroller
+  background-color: #f7f7f7
   max-width: 220px
   display: flex
   flex-direction: column
   position: absolute
-  z-index: 100
+  z-index: 10
   position: fixed
-  left: 80px
+  top: 0
+  height: 100%
 
   .guide-scroller-scrollable
     overflow-y: auto
     max-height: calc(100vh - 145px)
     scrollbar-width: thin
-    padding: 10px
+    padding: 10px 20px
+    margin: 56px 0 91px
 
     &::-webkit-scrollbar
       width: 4px
