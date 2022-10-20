@@ -81,6 +81,8 @@ const Layout = ({
   const realTitle = localeMessages['content.page header'] || title;
   const realDescription =
     localeMessages['content.page header description'] || description;
+
+  const twitterAccount = region === 'ch' ? 'mapsetch' : 'mapsetio';
   return (
     <div>
       <Helmet>
@@ -125,19 +127,21 @@ const Layout = ({
 
         {/* <!-- OpenGraph tags, used by facebook --> */}
         <meta property="og:title" content={realTitle} />
+        <meta property="og:url" content={siteUrl + localizedPathSlashed} />
         <meta property="og:description" content={realDescription} />
         <meta
           property="og:image"
           // content="https://mobility.portal.geops.io/logo-800-418.png"
           content={siteUrl + card_view_triple}
         />
+        <meta property="og:site_name" content="geOps" />
 
         {/* <!-- Twitter tags --> */}
         {/* Twitter card tester: https://cards-dev.twitter.com/validator */}
         <meta name="twitter:dnt" content="on" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@geOps" />
-        <meta name="twitter:creator" content="@geOps" />
+        <meta name="twitter:site" content={'@' + twitterAccount} />
+        <meta name="twitter:creator" content={'@' + twitterAccount} />
         <meta name="twitter:image:src" content={siteUrl + card_view_triple} />
       </Helmet>
       <Navbar
