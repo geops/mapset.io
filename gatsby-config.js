@@ -4,11 +4,11 @@ let siteUrl = '';
 let alternateUrls = [];
 
 if (!process.env.GATSBY_REGION || process.env.GATSBY_REGION === 'ch') {
-  siteUrl = 'https://www.mapset.ch';
-  alternateUrls = ['https://mapset.ch', 'https://trafimage.mapset.ch'];
+  siteUrl = 'https://mapset.ch';
+  alternateUrls = ['https://www.mapset.ch', 'https://trafimage.mapset.ch'];
 } else if (process.env.GATSBY_REGION === 'eu') {
-  siteUrl = 'https://www.mapset.io';
-  alternateUrls = ['https://mapset.io'];
+  siteUrl = 'https://mapset.io';
+  alternateUrls = ['https://www.mapset.io'];
 }
 
 module.exports = {

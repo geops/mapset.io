@@ -63,15 +63,20 @@ const Layout = ({
   children,
   region,
   user,
+  defaultLocale,
   navBarClassName = '',
   path = '/',
   localizedPath = '',
+  nonLocalizedPath = '',
 }) => {
   const { title, description, siteUrl, alternateUrls } = useSiteMetadata();
   const localeMessages = JSON.flatten(languages[locale]);
   let localizedPathSlashed = localizedPath;
   if (localizedPath.length && localizedPath[0] !== '/') {
     localizedPathSlashed = '/' + localizedPath;
+  }
+  if (localizedPath.length && localizedPath[localizedPath.length - 1] !== '/') {
+    localizedPathSlashed = localizedPath + '/';
   }
   const realTitle = localeMessages['content.page header'] || title;
   const realDescription =
@@ -91,6 +96,31 @@ const Layout = ({
         <link rel="canonical" href={siteUrl + localizedPathSlashed} />
         {alternateUrls.map((url) => {
           return <link rel="alternate" href={url + localizedPathSlashed} />;
+        })}
+        {Object.keys(languages).map((locale) => {
+          let localeSlashed = locale;
+          let nonLocalizedPathSlashed = nonLocalizedPath;
+          if (nonLocalizedPath.length && nonLocalizedPath[0] !== '/') {
+            nonLocalizedPathSlashed = '/' + nonLocalizedPath;
+          }
+          if (
+            nonLocalizedPath.length &&
+            nonLocalizedPath[nonLocalizedPath.length - 1] !== '/'
+          ) {
+            nonLocalizedPathSlashed = nonLocalizedPath + '/';
+          }
+          if (locale === defaultLocale) {
+            localeSlashed = '';
+          } else {
+            localeSlashed = '/' + locale;
+          }
+          return (
+            <link
+              rel="alternate"
+              hreflang={locale}
+              href={siteUrl + localeSlashed + nonLocalizedPathSlashed}
+            />
+          );
         })}
 
         {/* <!-- OpenGraph tags, used by facebook --> */}
