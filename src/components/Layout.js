@@ -135,10 +135,10 @@ const Layout = ({
         {/* <!-- Twitter tags --> */}
         {/* Twitter card tester: https://cards-dev.twitter.com/validator */}
         <meta name="twitter:dnt" content="on" />
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@geOps" />
         <meta name="twitter:creator" content="@geOps" />
-        <meta name="twitter:image" content={siteUrl + card_view_triple} />
+        <meta name="twitter:image:src" content={siteUrl + card_view_triple} />
       </Helmet>
       <Navbar
         locale={locale}
