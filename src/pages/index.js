@@ -208,11 +208,6 @@ export const IndexPageTemplate = ({ locale, region }) => {
       {/* benefits section */}
       <img className="backgroundImage greyBack" src={layout_bg_2} alt="" />
       {/* specification section */}
-      {/* <img
-        className="backgroundImage abovePriceSection"
-        src={layout_bg_3}
-        alt=""
-      /> */}
       <section className="priceSection" id="price">
         <div className="container">
           <div className="rightColumn">
