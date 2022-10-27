@@ -105,9 +105,6 @@ export const IndexPageTemplate = ({ locale, region }) => {
                 <a className="navbar-item" href="#benefits">
                   <FormattedMessage id="generic.Benefits" />
                 </a>
-                <a className="navbar-item" href="#features">
-                  <FormattedMessage id="generic.So funktioniert's" />
-                </a>
                 <a className="navbar-item" href="#price">
                   <FormattedMessage id="generic.Preise" />
                 </a>
@@ -210,88 +207,7 @@ export const IndexPageTemplate = ({ locale, region }) => {
       </section>{' '}
       {/* benefits section */}
       <img className="backgroundImage greyBack" src={layout_bg_2} alt="" />
-      <section className="featureSection" id="features">
-        <div className="container">
-          <div className="rightColumn">
-            <h1 className="is-bolder featuresHeader">
-              <FormattedMessage id="generic.So funktioniert's" />
-            </h1>
-            <p>
-              <FormattedMessage id="content.specification description" />
-            </p>
-            <div className="accordion">
-              {features &&
-                features.map((feature, id) => (
-                  <div
-                    className="accordion-item"
-                    key={'feature_' + id}
-                    name={'feature_' + id}
-                  >
-                    <button onClick={() => accordionHandler('feature_' + id)}>
-                      <h5 className="item-head">
-                        <span
-                          dangerouslySetInnerHTML={{
-                            __html: md.render(feature.heading),
-                          }}
-                        />
-                        <svg
-                          className="accordionStateImage plus"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
-                            fill="currentColor"
-                          />
-                          <path d="M0 0h24v24H0z" fill="none" />
-                        </svg>
-                        <svg
-                          className="accordionStateImage minus"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M19 13H5v-2h14v2z" fill="currentColor" />
-                          <path d="M0 0h24v24H0z" fill="none" />
-                        </svg>
-                      </h5>
-                    </button>
-                    <div className="content">
-                      <span
-                        dangerouslySetInnerHTML={{
-                          __html: md.render(feature.text),
-                        }}
-                      />
-                    </div>
-                  </div>
-                ))}
-            </div>
-            <p>
-              <FormattedMessage
-                id="content.specification user-manual"
-                values={{
-                  a: (
-                    <a
-                      href={getUrl(getPath('/guide', region, locale))}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FormattedMessage id="guide.link-user-manual" />
-                    </a>
-                  ),
-                }}
-              />
-            </p>
-          </div>
-        </div>
-      </section>{' '}
       {/* specification section */}
-      <img
-        className="backgroundImage abovePriceSection"
-        src={layout_bg_3}
-        alt=""
-      />
       <section className="priceSection" id="price">
         <div className="container">
           <div className="rightColumn">
