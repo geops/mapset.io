@@ -5,7 +5,7 @@ import { Link } from 'gatsby';
 import layout_bg_2 from '../img/layoutBG_2.png';
 import mapset_banner from '../img/Mapset_Logo.svg';
 import userManager from '../utils/userManager';
-import { getPath } from '../utils/routeUtils';
+import getUrl, { getPath } from '../utils/routeUtils';
 
 function LoginIcon({ color = '#fff' }) {
   return (
@@ -146,13 +146,6 @@ class Navbar extends React.Component {
                   onClick={() => this.mobileMenuLinkClick('benefits')}
                 >
                   <FormattedMessage id="generic.Benefits" />
-                </a>
-                <a
-                  className="navbar-item is-bolder"
-                  href="#features"
-                  onClick={() => this.mobileMenuLinkClick('features')}
-                >
-                  <FormattedMessage id="generic.So funktioniert's" />
                 </a>
                 <a
                   className="navbar-item is-bolder"
@@ -392,6 +385,43 @@ class Navbar extends React.Component {
                       </a>
                     )}
                   </div>
+                </div>
+                <div className='navbar-item'>
+                  <a
+                    href={getUrl(getPath('/guide', region, locale))}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width={18} height={18}>
+                    <path
+                      style={{
+                        fill: "none",
+                        strokeWidth: 2,
+                        strokeLinecap: "round",
+                        strokeLinejoin: "round",
+                        stroke: "#fff",
+                        strokeOpacity: 1,
+                        strokeMiterlimit: 4,
+                      }}
+                      d="M12 13.998c0-1.998 1.576-2.332 2.121-2.877A2.968 2.968 0 0 0 15 9c0-1.658-1.342-3-3-3-.896 0-1.7.393-2.25 1.014a3.148 3.148 0 0 0-.586.996M12 16.998h0"
+                      transform="scale(.75)"
+                    />
+                    <path
+                      style={{
+                        fill: "none",
+                        strokeWidth: 2,
+                        strokeLinecap: "round",
+                        strokeLinejoin: "round",
+                        stroke: "#fff",
+                        strokeOpacity: 1,
+                        strokeMiterlimit: 4,
+                      }}
+                      d="M22.002 12A10 10 0 0 1 12 22.002 10 10 0 0 1 1.998 12 10 10 0 0 1 12 1.998 10 10 0 0 1 22.002 12Zm0 0"
+                      transform="scale(.75)"
+                    />
+                  </svg>
+                  <FormattedMessage id="guide.link-user-manual" />
+                  </a>
                 </div>
                 {user ? (
                   <Link

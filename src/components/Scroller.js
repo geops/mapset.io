@@ -12,17 +12,6 @@ const Scroller = class extends React.Component {
       0
     ) {
       this.benefitsScroller.classList.remove('active');
-      this.featureScroller.classList.remove('active');
-      this.priceScroller.classList.remove('active');
-      this.contactScroller.classList.remove('active');
-      this.licenseScroller.classList.remove('active');
-    } else if (
-      document.getElementById('features').getBoundingClientRect().top -
-        this.TOP_MARGIN >
-      0
-    ) {
-      this.benefitsScroller.classList.add('active');
-      this.featureScroller.classList.remove('active');
       this.priceScroller.classList.remove('active');
       this.contactScroller.classList.remove('active');
       this.licenseScroller.classList.remove('active');
@@ -31,8 +20,7 @@ const Scroller = class extends React.Component {
         this.TOP_MARGIN >
       0
     ) {
-      this.featureScroller.classList.add('active');
-      this.benefitsScroller.classList.remove('active');
+      this.benefitsScroller.classList.add('active');
       this.priceScroller.classList.remove('active');
       this.contactScroller.classList.remove('active');
       this.licenseScroller.classList.remove('active');
@@ -43,7 +31,6 @@ const Scroller = class extends React.Component {
     ) {
       this.priceScroller.classList.add('active');
       this.benefitsScroller.classList.remove('active');
-      this.featureScroller.classList.remove('active');
       this.contactScroller.classList.remove('active');
       this.licenseScroller.classList.remove('active');
     } else if (
@@ -53,7 +40,6 @@ const Scroller = class extends React.Component {
     ) {
       this.contactScroller.classList.add('active');
       this.benefitsScroller.classList.remove('active');
-      this.featureScroller.classList.remove('active');
       this.priceScroller.classList.remove('active');
       this.licenseScroller.classList.remove('active');
     } else if (
@@ -63,13 +49,11 @@ const Scroller = class extends React.Component {
     ) {
       this.contactScroller.classList.remove('active');
       this.benefitsScroller.classList.remove('active');
-      this.featureScroller.classList.remove('active');
       this.priceScroller.classList.remove('active');
       this.licenseScroller.classList.add('active');
     } else {
       this.licenseScroller.classList.add('active');
       this.benefitsScroller.classList.remove('active');
-      this.featureScroller.classList.remove('active');
       this.priceScroller.classList.remove('active');
       this.contactScroller.classList.remove('active');
     }
@@ -96,7 +80,6 @@ const Scroller = class extends React.Component {
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
     this.benefitsScroller = document.getElementById('benefitsScroller');
-    this.featureScroller = document.getElementById('featureScroller');
     this.priceScroller = document.getElementById('priceScroller');
     this.contactScroller = document.getElementById('contactScroller');
     this.licenseScroller = document.getElementById('licenseScroller');
@@ -124,20 +107,6 @@ const Scroller = class extends React.Component {
             </svg>
             <span>
               <FormattedMessage id="generic.Benefits" />
-            </span>
-          </a>
-          <a className="navbar-item" href="#features" id="featureScroller">
-            <svg
-              className="listNavImage"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <path fill="none" d="M24 24H0V0h24v24z" />
-              <circle fill="currentColor" cx="12" cy="12" r="8" />
-            </svg>
-            <span>
-              <FormattedMessage id="generic.So funktioniert's" />
             </span>
           </a>
           <a className="navbar-item" href="#price" id="priceScroller">
