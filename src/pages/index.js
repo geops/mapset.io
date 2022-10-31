@@ -8,11 +8,9 @@ import ContactForm from '../components/ContactForm';
 import Imprint from '../components/Imprint';
 import SiteSwitcher from '../components/SiteSwitcher';
 import userManager from '../utils/userManager';
-import getUrl, { getPath } from '../utils/routeUtils';
 
 import layout_bg_1 from '../img/layoutBG_1.png';
 import layout_bg_2 from '../img/layoutBG_2.png';
-import layout_bg_3 from '../img/layoutBG_3.png';
 
 import mapset_banner from '../img/Mapset_Logo.svg';
 
@@ -24,10 +22,6 @@ import card_view_single from '../../static/img/showcase.png';
 import fr_benefits from '../data/benefits/fr.json';
 import de_benefits from '../data/benefits/de.json';
 import en_benefits from '../data/benefits/en.json';
-
-import fr_features from '../data/features/fr.json';
-import de_features from '../data/features/de.json';
-import en_features from '../data/features/en.json';
 
 import fr_prices from '../data/prices/fr.json';
 import de_prices from '../data/prices/de.json';
@@ -62,27 +56,23 @@ if (
 }
 export const IndexPageTemplate = ({ locale, region }) => {
   let benefits;
-  let features;
   let prices;
   let licenseInformation;
   switch (locale) {
     case 'fr': {
       benefits = fr_benefits.benefits;
-      features = fr_features.features;
       prices = fr_prices.prices;
       licenseInformation = fr_license.license;
       break;
     }
     case 'de': {
       benefits = de_benefits.benefits;
-      features = de_features.features;
       prices = de_prices.prices;
       licenseInformation = de_license.license;
       break;
     }
     default: {
       benefits = en_benefits.benefits;
-      features = en_features.features;
       prices = en_prices.prices;
       licenseInformation = en_license.license;
       break;

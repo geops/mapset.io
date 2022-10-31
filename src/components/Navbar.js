@@ -386,7 +386,7 @@ class Navbar extends React.Component {
                     )}
                   </div>
                 </div>
-                <div className='navbar-item'>
+                <div className='navbar-item link-user-manual'>
                   <a
                     href={getUrl(getPath('/guide', region, locale))}
                     target="_blank"
