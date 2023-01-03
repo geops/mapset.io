@@ -148,7 +148,6 @@
     @include benefitLicenseSharingStyle(benefitsSectionContent,benefitsHeader,15rem)
 
   .priceSection
-    padding-top: 5vw
     margin-bottom: 3rem
     & .priceCard .priceCardHeader
       padding-bottom: 7vw
@@ -186,6 +185,7 @@
 
       img
         max-width: 100%
+
   .guide-scroller
     display: none
 
@@ -206,7 +206,22 @@
     padding-top: 4rem
   .button
     margin-left: 0px !important
+  .clientsSection
+    .clientLogos
+      .logoContainer
+        width: 100%
+        
 
 @media screen and (max-width: 1024px)
   .is-white
     padding-top: 60px
+
+@media screen and (max-width: 480px)
+  .clientsSection
+    .clientLogos
+      .logoContainer
+        img
+          width: 80vw
+  
+
+    

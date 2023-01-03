@@ -8,9 +8,11 @@ import ContactForm from '../components/ContactForm';
 import Imprint from '../components/Imprint';
 import SiteSwitcher from '../components/SiteSwitcher';
 import userManager from '../utils/userManager';
+import clientLogos from '../utils/clientLogos';
 
 import layout_bg_1 from '../img/layoutBG_1.png';
 import layout_bg_2 from '../img/layoutBG_2.png';
+import layout_bg_3 from '../img/layoutBG_3.png';
 
 import mapset_banner from '../img/Mapset_Logo.svg';
 
@@ -194,10 +196,30 @@ export const IndexPageTemplate = ({ locale, region }) => {
             </div>
           </div>
         </div>
-      </section>{' '}
-      {/* benefits section */}
+      </section>
       <img className="backgroundImage greyBack" src={layout_bg_2} alt="" />
-      {/* specification section */}
+      {/* benefits section */}
+      <section className="clientsSection" id="clients">
+        <div className="container">
+          <div className="rightColumn">
+            <h1 className="is-bolder"><FormattedMessage id="generic.Customers" /></h1>
+            <div className="clientLogos">
+              {clientLogos.map((logo) => {
+                return (
+                  <div className="logoContainer" key={logo.id}>
+                    <img
+                      src={logo.src}
+                      alt={`${logo.id} logo`}
+                      style={{ transform: `scale(${logo.scale})` || 1 }} />
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        </div>               
+      </section>
+      <img className="backgroundImage abovePriceSection" src={layout_bg_3} alt="" />
+      {/* customers */}
       <section className="priceSection" id="price">
         <div className="container">
           <div className="rightColumn">
@@ -274,7 +296,7 @@ export const IndexPageTemplate = ({ locale, region }) => {
             </div>
           </div>
         </div>
-      </section>{' '}
+      </section>
       {/* price section */}
       <img
         className="backgroundImage belowPriceSection"
@@ -355,7 +377,7 @@ export const IndexPageTemplate = ({ locale, region }) => {
             </div>
           </div>
         </div>
-      </section>{' '}
+      </section>
       {/* license section */}
       <section className="impressumSection" id="impressum">
         <div className="container">
@@ -366,7 +388,7 @@ export const IndexPageTemplate = ({ locale, region }) => {
             <Imprint />
           </div>
         </div>
-      </section>{' '}
+      </section>
       {/* impressum section */}
       <div className="aboveFooter"></div>
     </div>
