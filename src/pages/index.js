@@ -202,7 +202,7 @@ export const IndexPageTemplate = ({ locale, region }) => {
       <section className="clientsSection" id="clients">
         <div className="container">
           <div className="rightColumn">
-            <h1 className="is-bolder"><FormattedMessage id="generic.Customers" /></h1>
+            <h1 className="is-bolder clientsHeader"><FormattedMessage id="generic.Customers" /></h1>
             <div className="clientLogos">
               {clientLogos.map((logo) => {
                 return (
