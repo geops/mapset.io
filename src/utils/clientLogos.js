@@ -52,7 +52,6 @@ const clientLogos = [
     {
         id: 'sti',
         src: sti_logo,
-        scale: 0.8,
     },
     {
         id: 'tmr',
