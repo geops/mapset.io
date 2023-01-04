@@ -94,10 +94,11 @@
 @media screen and (max-width: 767px)
   p
     font-size: 1.2rem
-  h1
-    font-size: 3rem
   h2
     font-size: 2.5rem
+  section
+    .section-title
+      font-size: 2.5rem
   .backgroundImage
     width: 100vw
   .contactButtons
@@ -159,6 +160,8 @@
     margin-top: calc(-8rem - 10vw)
   .contactSection
     padding-bottom: 0
+  .contactSection:not(#contact)
+    margin-top: 50px
 
   .licenseSection
     @include benefitLicenseSharingStyle(licenseSectionContent,licenseHeader,null)
@@ -220,8 +223,9 @@
   .clientsSection
     .clientLogos
       .logoContainer
+        justify-content: center
         img
-          width: 80vw
+          width: 50vw
   
 
     

@@ -169,7 +169,7 @@ export const IndexPageTemplate = ({ locale, region }) => {
             </div>
           </div>
           <div className="container">
-            <h1 className="is-bolder benefitsHeader rightColumn">
+            <h1 className="is-bolder benefitsHeader rightColumn section-title">
               <FormattedMessage id="generic.Benefits" />
             </h1>
             <div className="cardViewSpacer" />
@@ -202,7 +202,7 @@ export const IndexPageTemplate = ({ locale, region }) => {
       <section className="clientsSection" id="clients">
         <div className="container">
           <div className="rightColumn">
-            <h1 className="is-bolder clientsHeader"><FormattedMessage id="generic.Customers" /></h1>
+            <h1 className="is-bolder clientsHeader section-title"><FormattedMessage id="generic.Customers" /></h1>
             <div className="clientLogos">
               {clientLogos.map((logo) => {
                 return (
@@ -223,7 +223,7 @@ export const IndexPageTemplate = ({ locale, region }) => {
       <section className="priceSection" id="price">
         <div className="container">
           <div className="rightColumn">
-            <h1 className="is-bolder priceHeader">
+            <h1 className="is-bolder priceHeader section-title">
               <FormattedMessage id="generic.Preise" />
             </h1>
             <p>
@@ -306,7 +306,7 @@ export const IndexPageTemplate = ({ locale, region }) => {
       <section className="contactSection" id="contact">
         <div className="container">
           <div className="rightColumn">
-            <h1 className="is-bolder contactHeader">
+            <h1 className="is-bolder contactHeader section-title">
               <FormattedMessage id="generic.Kontakt" />
             </h1>
             <ContactForm />
@@ -324,7 +324,7 @@ export const IndexPageTemplate = ({ locale, region }) => {
       <section className="licenseSection" id="license">
         <div className="licenseSectionContent">
           <div className="container">
-            <h1 className="is-bolder licenseHeader rightColumn">
+            <h1 className="is-bolder licenseHeader rightColumn section-title">
               <FormattedMessage id="generic.Lizenz" />
             </h1>
             <div className="cardViewSpacer" />
@@ -382,7 +382,7 @@ export const IndexPageTemplate = ({ locale, region }) => {
       <section className="impressumSection" id="impressum">
         <div className="container">
           <div className="rightColumn">
-            <h1 className="is-bolder impressumHeader">
+            <h1 className="is-bolder impressumHeader section-title">
               <FormattedMessage id="generic.Imprint" />
             </h1>
             <Imprint />

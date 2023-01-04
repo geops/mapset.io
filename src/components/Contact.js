@@ -5,7 +5,7 @@ import twitter from '../img/social/Twitter_Logo_Blue.svg';
 function Contact({ region }) {
   return (
     <div className="contactForm">
-      <h1 className="is-bolder contactHeader">
+      <h1 className="is-bolder contactHeader section-title">
         <FormattedMessage id="content.contact header" />
       </h1>
       <p>
