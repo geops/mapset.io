@@ -94,10 +94,11 @@
 @media screen and (max-width: 767px)
   p
     font-size: 1.2rem
-  h1
-    font-size: 3rem
   h2
     font-size: 2.5rem
+  section
+    .section-title
+      font-size: 2.5rem
   .backgroundImage
     width: 100vw
   .contactButtons
@@ -148,7 +149,6 @@
     @include benefitLicenseSharingStyle(benefitsSectionContent,benefitsHeader,15rem)
 
   .priceSection
-    padding-top: 5vw
     margin-bottom: 3rem
     & .priceCard .priceCardHeader
       padding-bottom: 7vw
@@ -160,6 +160,8 @@
     margin-top: calc(-8rem - 10vw)
   .contactSection
     padding-bottom: 0
+  .contactSection:not(#contact)
+    margin-top: 50px
 
   .licenseSection
     @include benefitLicenseSharingStyle(licenseSectionContent,licenseHeader,null)
@@ -186,6 +188,7 @@
 
       img
         max-width: 100%
+
   .guide-scroller
     display: none
 
@@ -206,7 +209,23 @@
     padding-top: 4rem
   .button
     margin-left: 0px !important
+  .clientsSection
+    .clientLogos
+      .logoContainer
+        width: 100%
+        
 
 @media screen and (max-width: 1024px)
   .is-white
     padding-top: 60px
+
+@media screen and (max-width: 480px)
+  .clientsSection
+    .clientLogos
+      .logoContainer
+        justify-content: center
+        img
+          width: 50vw
+  
+
+    
