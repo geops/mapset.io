@@ -106,7 +106,7 @@
       "mapsetIcon": "save",
       "content": [
         {
-          "text": "Im mapset wird jede Änderung am aktuellen Plan automatisch gespeichert.\n\nEin *Spinner* gefolgt von einem *Häkchen* in der Seitenleiste zeigt an, dass der aktuelle Plan gespeichert wurde. Der *Spinner* soll nur über den Fortschritt des Speicherns informieren. Es ist nicht notwendig, auf das Ende des *Spinners* zu warten oder aktiv darauf zu klicken. mapset stellt auch so sicher, dass keine Änderungen verloren gehen.\n\n![](/img/savingplan.png)\n\n![](/img/savedplan.png)"
+          "text": "In mapset wird jede Änderung am aktuellen Plan automatisch gespeichert.\n\nEin *Spinner* gefolgt von einem *Häkchen* in der Seitenleiste zeigt an, dass der aktuelle Plan gespeichert wurde. Der *Spinner* soll nur über den Fortschritt des Speicherns informieren. Es ist nicht notwendig, auf das Ende des *Spinners* zu warten oder aktiv darauf zu klicken. mapset stellt auch so sicher, dass keine Änderungen verloren gehen.\n\n![](/img/savingplan.png)\n\n![](/img/savedplan.png)"
         }
       ]
     },
@@ -147,7 +147,7 @@
       "mapsetIcon": "newplan",
       "content": [
         {
-          "text": "Der *Neuer Plan-*Button öffnet einen neuen, leeren Plan. \n\nStellen Sie sicher, dass Sie Ihren aktuellen Plan nach Namen gespeichert haben, oder speichern Sie den Bearbeitungslink, um ihn später laden und weiter bearbeiten zu können.\n\nDer *Plan duplizieren-*Button im Dialog-Fenster erstellt eine Kopie des aktuellen Plans und lädt diese direkt in die Karte."
+          "text": "Der *Neuer Plan-*Button öffnet einen neuen, leeren Plan. \n\nStellen Sie sicher, dass Sie Ihren aktuellen Plan nach Namen gespeichert haben, oder speichern Sie den Bearbeitungslink, um ihn später laden und weiter bearbeiten zu können.\n\nDer *Plan duplizieren*-Button im Dialog-Fenster erstellt eine Kopie des aktuellen Plans und lädt diese direkt in die Karte."
         }
       ]
     },
