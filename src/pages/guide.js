@@ -10,6 +10,7 @@ import mapset_banner from '../img/Mapset_Logo.svg';
 import Warning from '../assets/warning.svg';
 
 import de_guide from '../data/guide/de.json';
+import fr_guide from '../data/guide/fr.json';
 import en_guide from '../data/guide/en.json';
 import { getPath } from '../utils/routeUtils';
 
@@ -47,6 +48,10 @@ export const GuidePage = ({ locale, region }) => {
   switch (locale) {
     case 'de': {
       guideContent = de_guide.features;
+      break;
+    }
+    case 'fr': {
+      guideContent = fr_guide.features;
       break;
     }
     default: {
