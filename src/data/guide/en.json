@@ -171,7 +171,7 @@
         },
         {
           "heading": "Alignment aid",
-          "text": "In this menu you can switch between different alignment aids or switch off the alignment aid completely. More information on the alignment aids can be found under [Drawing tools](https://mapset.io/guide/#alignmentaid)."
+          "text": "In this menu you can switch between different alignment aids or switch off the alignment aid completely. More information on the alignment aids can be found under [Drawing tools](#alignmentaid)."
         }
       ]
     }
