@@ -51,9 +51,9 @@
     "Imprint": "Mentions légales",
     "navbar": {
       "Login": "Login",
-      "Logout": "Logged in as",
+      "Logout": "Connecté en tant que",
       "international": "International",
-      "swiss": "Swiss"
+      "swiss": "Suisse"
     },
     "request": "Demande une offre",
     "privacyPolicy": "Politique de confidentialité"
@@ -67,12 +67,12 @@
     "responsible": "Responsable du contenu : Ulrich Müller-Ertle (adresses comme ci-dessus)"
   },
   "guide": {
-    "Guide": "User guide",
+    "Guide": "Manuel utilisateur",
     "link-user-manual": "Manuel utilisateur",
-    "Links-io": "For other countries please use the international domain:",
-    "Links-ch": "For Switzerland please access mapset using the address:",
-    "login-restricted": "This feature requires the user to be logged in.",
-    "cd-restricted": "Access to this feature depends on user rights and Corporate Design settings."
+    "Links-io": "Pour les autres pays, veuillez utiliser le domaine international :",
+    "Links-ch": "Pour la Suisse, veuillez accéder à mapset en utilisant l'adresse:",
+    "login-restricted": "Cette fonction nécessite que l'utilisateur soit connecté.",
+    "cd-restricted": "L'accès à cette fonction dépend des droits des utilisateurs et des paramètres de l'identité visuelle."
   },
   "siteSwitcher": {
     "title": "Are you sure you are on the right page?",
