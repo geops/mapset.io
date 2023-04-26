@@ -114,6 +114,15 @@
       "mapsetIcon": "save"
     },
     {
+      "label": "Plan names and list",
+      "content": [
+        {
+          "text": "mapset plans can be given a name for an easier reference and a better overview of all created plans.\n\nWhen a plan is not yet named, the text 'Untitled plan' appears in the header.\n\n![](/img/planname.png)\n\nClick on this text to enter a new plan name. A *load spinner* and *confirmation message* next to the text input field indicates the plan name has been saved. Alternatively, the Save tool from the sidebar can be used to open a dialog window where the plan name can also be set or updated in a text input field.\n\n![](/img/save_plan.png)\n\n\n\n![](/img/save_plan_dialog.png)\n\nOnce a plan has a name it will be available in the *plans list*.\n\nNamed plans can be loaded into the map from the plans list by selecting a plan and clicking on the *Open* button.\n\nPlans can be deleted from the list using the corresponding *Delete* button.\n\n![](/img/deleteplan.png)\n\nClicking the *Duplicate* button will make a copy of the corresponding plan from the list.\n\n![](/img/duplicateplan.png)",
+          "loginRestricted": true
+        }
+      ]
+    },
+    {
       "label": "Default plan",
       "content": [
         {
@@ -121,15 +130,6 @@
           "loginRestricted": true,
           "cdRestricted": true,
           "text": "mapset Plans can be saved as default plans. A default plan can be accessed and modified any user with the same access rights (e.g. colleagues from your company). It can be assigned a station and start and end dates.\n\n![](/img/standard_plan.png)\n\n\n\nThis feature is useful for displaying plans for a specific station in a specified time span (e.g. a rail replacement service for station *XYZ* for march 2023).\n\nDefault plans can then be viewed at the *defaults* endpoint with the following optional query parameters:\n\n* **id**: Station-ID (e.g. 8507000 for Bern)\n* **validity**: a single date in [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601) format on which the standard plan should be valid (e.g. 2023-04-26T16:05:16Z)\n* **tu**: transport provider (e.g. ch.sbb)\n\nCombined the URL might look like the following:\n\nhttps://editor.mapset.ch/defaults?tu=ch.sbb&id=8506302&validity=2023-04-26T16:05:16Z"
-        }
-      ]
-    },
-    {
-      "label": "Plan names and list",
-      "content": [
-        {
-          "text": "mapset plans can be given a name for an easier reference and a better overview of all created plans.\n\nWhen a plan is not yet named, the text 'Untitled plan' appears in the header.\n\n![](/img/planname.png)\n\nClick on this text to enter a new plan name. A *load spinner* and *confirmation message* next to the text input field indicates the plan name has been saved. Alternatively, the Save tool from the sidebar can be used to open a dialog window where the plan name can also be set or updated in a text input field.\n\n![](/img/save_plan.png)\n\n\n\n![](/img/save_plan_dialog.png)\n\nOnce a plan has a name it will be available in the *plans list*.\n\nNamed plans can be loaded into the map from the plans list by selecting a plan and clicking on the *Open* button.\n\nPlans can be deleted from the list using the corresponding *Delete* button.\n\n![](/img/deleteplan.png)\n\nClicking the *Duplicate* button will make a copy of the corresponding plan from the list.\n\n![](/img/duplicateplan.png)",
-          "loginRestricted": true
         }
       ]
     },
