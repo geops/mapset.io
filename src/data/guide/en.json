@@ -107,7 +107,7 @@
       "content": [
         {
           "heading": "",
-          "text": "In mapset, any change to the current plan is automatically saved. A notification in the header indicates that the current plan has been saved.\n\nThere are two ways to save and further edit plans in mapset: \n\n* By means of a link to edit (see [Plan sharing](https://www.mapset.ch/en/guide/#plansharing)).\n* By means of plan naming and plan list (see [Plan names and plan list](https://www.mapset.ch/en/guide/#plannamesandlist))\n\n![](/img/savingplan.png)\n\n![](/img/savedplan.png)",
+          "text": "In mapset, any change to the current plan is automatically saved. A notification in the header indicates that the current plan has been saved.\n\nThere are two ways to save and further edit plans in mapset: \n\n* By means of a link to edit (see [Plan sharing](#plansharing)).\n* By means of plan naming and plan list (see [Plan names and plan list](#plannamesandlist))\n\n![](/img/savingplan.png)\n\n![](/img/savedplan.png)",
           "loginRestricted": true
         }
       ],
