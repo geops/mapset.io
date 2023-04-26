@@ -123,6 +123,14 @@
       ]
     },
     {
+      "label": "Standard-Pläne",
+      "content": [
+        {
+          "text": "mapset-Pläne können als Standard-Pläne gespeichert werden. Auf einen Standard-Plan kann jeder Benutzer mit den gleichen Zugriffsrechten (z. B. Kollegen aus Ihrem Unternehmen) zugreifen und Änderungen durchführen. Standard-Plänen kann eine Station sowie ein Start- und Enddatum zugewiesen werden.\n\n![](/img/standard_plan.png)\n\nDiese Funktion ist nützlich für die Anzeige von Plänen für einen bestimmten Bahnhof in einer bestimmten Zeitspanne (z. B. Schienenersatzverkehr für den Bahnhof *XYZ* für März 2023).\n\nDie Standardpläne können dann über den Endpunkt */defaults* mit den folgenden optionalen Abfrageparametern angezeigt werden:\n\n* **id**: Stations-ID (z.B. 8507000 für Bern)\n* **validity**: ein einzelnes Datum im Format [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601), an dem der Standardplan gültig sein soll (z.B. 2023-04-26T16:05:16Z)\n* **tu**: Transportunternehmen (z. B. ch.sbb)\n\nKombiniert könnte die URL wie folgt aussehen:\n\nhttps://editor.mapset.ch/defaults?tu=ch.sbb&id=8506302&validity=2023-04-26T16:05:16Z"
+        }
+      ]
+    },
+    {
       "label": "Zeichnung teilen",
       "mapsetIcon": "share",
       "content": [
