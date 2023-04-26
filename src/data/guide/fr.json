@@ -106,7 +106,8 @@
       "mapsetIcon": "save",
       "content": [
         {
-          "text": "Dans mapset, chaque modification apportée au plan actuel est automatiquement enregistrée.\n\nUn *Spinner* suivi d'une *coche* dans la barre latérale indique que le plan actuel a été enregistré. Le *Spinner* est uniquement destiné à informer de la progression de la sauvegarde. Il n'est pas nécessaire d'attendre la fin du *Spinner* ou de cliquer activement dessus. mapset s'assure également de cette manière qu'aucune modification ne soit perdue.\n\n ![](/img/savingplan.png)\n\n ![](/img/savedplan.png)"
+          "text": "Dans mapset, chaque modification apportée au plan actuel est automatiquement enregistrée. Un message dans l'en-tête indique que le plan actuel a été enregistré.\n\nmapset offre deux possibilités pour conserver et modifier des plans : \n\n* Au moyen d'un lien vers l'édition (voir [Partager le plan](https://www.mapset.ch/fr/guide/#partagerleplan)).\n* Au moyen d'un nom de plan et d'une liste de plans (voir [Nom du plan et liste de plans](https://www.mapset.ch/fr/guide/#nomduplanetlistedesplans))",
+          "loginRestricted": true
         }
       ]
     },
@@ -114,7 +115,7 @@
       "label": "Nom du plan et liste des plans",
       "content": [
         {
-          "text": "Il est possible de donner un nom aux plans dans mapset pour les retrouver facilement et pour avoir une vue d'ensemble de tous les plans créés.\n\nSi un plan n'a pas encore de nom, le texte 'Plan non nommé' est affiché dans l'en-tête.\n\n ![](/img/planname.png)\n\nCliquez sur ce texte pour entrer un nouveau nom de plan. Un *spinner* et un *message de confirmation* à côté du champ de saisie de texte indiquent que le nom a été sauvegardé.\n\nDès qu'un plan a un nom, il est disponible dans la *Liste des plans*.\n\nLes plans peuvent être chargés dans la carte à partir de la liste de plans en sélectionnant un plan et en cliquant sur le bouton *Ouvrir*. \n\nLe bouton *Supprimer* permet de supprimer des plans de la liste.\n\n ![](/img/deleteplan.png)\n\nLe bouton *Dupliquer* permet de créer des copies de plans déjà existants. Les copies peuvent ensuite être modifiées.\n\n ![](/img/duplicateplan.png)",
+          "text": "Il est possible de donner un nom aux plans dans mapset pour les retrouver facilement et pour avoir une vue d'ensemble de tous les plans créés.\n\nSi un plan n'a pas encore de nom, le texte 'Plan non nommé' est affiché dans l'en-tête.\n\n ![](/img/planname.png)\n\nCliquez sur ce texte pour entrer un nouveau nom de plan. Un *spinner* et un *message de confirmation* à côté du champ de saisie de texte indiquent que le nom a été sauvegardé. Il est également possible d'ouvrir une fenêtre de dialogue via l'outil d'enregistrement de l'encadré, où le nom du plan peut également être défini ou actualisé dans un champ de saisie de texte.\n\n![](/img/save_plan.png)\n\n![](/img/save_plan_dialog.png)\n\nDès qu'un plan a un nom, il est disponible dans la *Liste des plans*.\n\nLes plans peuvent être chargés dans la carte à partir de la liste de plans en sélectionnant un plan et en cliquant sur le bouton *Ouvrir*. \n\nLe bouton *Supprimer* permet de supprimer des plans de la liste.\n\n ![](/img/deleteplan.png)\n\nLe bouton *Dupliquer* permet de créer des copies de plans déjà existants. Les copies peuvent ensuite être modifiées.\n\n ![](/img/duplicateplan.png)",
           "heading": "",
           "loginRestricted": true
         }
