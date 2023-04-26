@@ -107,7 +107,8 @@
       "content": [
         {
           "heading": "",
-          "text": "In mapset every change to the current plan is automatically saved.\n\nA *spinner* followed by a *check mark* in the sidebar indicates that the current plan has been saved. The *spinner* is just to inform about the progress of saving. It is not necessary to wait for the *spinner* to end or to click it actively. mapset will always make sure that no changes are lost.\n\n![](/img/savingplan.png)\n\n![](/img/savedplan.png)"
+          "text": "In mapset, any change to the current plan is automatically saved. A notification in the header indicates that the current plan has been saved.\n\nThere are two ways to save and further edit plans in mapset: \n\n* By means of a link to edit (see [Plan sharing](https://www.mapset.ch/en/guide/#plansharing)).\n* By means of plan naming and plan list (see [Plan names and plan list](https://www.mapset.ch/en/guide/#plannamesandlist))\n\n![](/img/savingplan.png)\n\n![](/img/savedplan.png)",
+          "loginRestricted": true
         }
       ],
       "mapsetIcon": "save"
@@ -116,7 +117,7 @@
       "label": "Plan names and list",
       "content": [
         {
-          "text": "mapset plans can be given a name for an easier reference and a better overview of all created plans.\n\nWhen a plan is not yet named, the text 'Untitled plan' appears in the header.\n\n![](/img/planname.png)\n\nClick on this text to enter a new plan name. A *load spinner* and *confirmation message* next to the text input field indicates the plan name has been saved.\n\nOnce a plan has a name it will be available in the *plans list*.\n\nNamed plans can be loaded into the map from the plans list by selecting a plan and clicking on the *Open* button.\n\nPlans can be deleted from the list using the corresponding *Delete* button.\n\n![](/img/deleteplan.png)\n\nClicking the *Duplicate* button will make a copy of the corresponding plan from the list.\n\n![](/img/duplicateplan.png)",
+          "text": "mapset plans can be given a name for an easier reference and a better overview of all created plans.\n\nWhen a plan is not yet named, the text 'Untitled plan' appears in the header.\n\n![](/img/planname.png)\n\nClick on this text to enter a new plan name. A *load spinner* and *confirmation message* next to the text input field indicates the plan name has been saved. Alternatively, the Save tool from the sidebar can be used to open a dialog window where the plan name can also be set or updated in a text input field.\n\n![](/img/save_plan.png)\n\n\n\n![](/img/save_plan_dialog.png)\n\nOnce a plan has a name it will be available in the *plans list*.\n\nNamed plans can be loaded into the map from the plans list by selecting a plan and clicking on the *Open* button.\n\nPlans can be deleted from the list using the corresponding *Delete* button.\n\n![](/img/deleteplan.png)\n\nClicking the *Duplicate* button will make a copy of the corresponding plan from the list.\n\n![](/img/duplicateplan.png)",
           "loginRestricted": true
         }
       ]
