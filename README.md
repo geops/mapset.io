@@ -1,5 +1,5 @@
 # Mapset.io Website
-Promo website for [mapset|https://editor.mapset.io/] plan editor.
+Promo website for [mapset](https://editor.mapset.io/) plan editor.
 
 ### Pages
 
