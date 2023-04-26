@@ -114,6 +114,17 @@
       "mapsetIcon": "save"
     },
     {
+      "label": "Default plan",
+      "content": [
+        {
+          "heading": "",
+          "loginRestricted": true,
+          "cdRestricted": true,
+          "text": "mapset Plans can be saved as default plans. A default plan can be accessed and modified any user with the same access rights (e.g. colleagues from your company). It can be assigned a station and start and end dates.\n\n![](/img/standard_plan.png)\n\n\n\nThis feature is useful for displaying plans for a specific station in a specified time span (e.g. a rail replacement service for station *XYZ* for march 2023).\n\nDefault plans can then be viewed at the *defaults* endpoint with the following optional query parameters:\n\n* **id**: Station-ID (e.g. 8507000 for Bern)\n* **validity**: a single date in [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601) format on which the standard plan should be valid (e.g. 2023-04-26T16:05:16Z)\n* **tu**: transport provider (e.g. ch.sbb)\n\nCombined the URL might look like the following:\n\nhttps://editor.mapset.ch/defaults?tu=ch.sbb&id=8506302&validity=2023-04-26T16:05:16Z"
+        }
+      ]
+    },
+    {
       "label": "Plan names and list",
       "content": [
         {
@@ -159,7 +170,8 @@
       "content": [
         {
           "heading": "Language",
-          "text": "There are four available languages:\n\n* German\n* English\n* French\n* Italian"
+          "text": "There are four available languages:\n\n* German\n* English\n* French\n* Italian",
+          "cdRestricted": false
         },
         {
           "heading": "Corporate Design",
