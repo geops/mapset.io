@@ -106,7 +106,7 @@
       "mapsetIcon": "save",
       "content": [
         {
-          "text": "In mapset wird jede Änderung am aktuellen Plan automatisch gespeichert. Eine Benachrichtigung in der Kopfzeile zeigt an, dass der aktuelle Plan gespeichert wurde.\n\nZur Aufbewarung und zur weiteren Bearbeitung von Plänen gibt es in mapset zwei Möglichkeiten: \n\n* Mittels einem Link zum Bearbeiten (siehe [Zeichnung Teilen](#zeichnungteilen))\n* Mittels Planbenennung und Planliste (siehe [Planbenennung und Planliste](#planbenennungundplanliste))\n\n![](/img/savingplan.png)\n\n![](/img/savedplan.png)",
+          "text": "In mapset wird jede Änderung am aktuellen Plan automatisch gespeichert. Eine Benachrichtigung in der Kopfzeile zeigt an, dass der aktuelle Plan gespeichert wurde.\n\nZur Aufbewarung und zur weiteren Bearbeitung von Plänen gibt es in mapset zwei Möglichkeiten: \n\n* Mittels einem Link zum Bearbeiten (siehe [Zeichnung Teilen](#zeichnungteilen))\n* Mittels Planbenennung und Planliste (siehe [Planbenennung und Planliste](#planbenennungundplanliste))",
           "loginRestricted": true,
           "cdRestricted": false
         }
