@@ -106,7 +106,7 @@
       "mapsetIcon": "save",
       "content": [
         {
-          "text": "Dans mapset, chaque modification apportée au plan actuel est automatiquement enregistrée. Un message dans l'en-tête indique que le plan actuel a été enregistré.\n\nmapset offre deux possibilités pour conserver et modifier des plans : \n\n* Au moyen d'un lien vers l'édition (voir [Partager le plan](#partagerleplan)).\n* Au moyen d'un nom de plan et d'une liste de plans (voir [Nom du plan et liste de plans](#nomduplanetlistedesplans))",
+          "text": "Dans mapset, chaque modification apportée au plan actuel est automatiquement enregistrée. Un message dans l'en-tête indique que le plan actuel a été enregistré.\n\nmapset offre deux possibilités pour conserver et modifier des plans : \n\n* Au moyen d'un lien vers l'édition (voir [Partager le plan](https://www.mapset.ch/fr/guide/#partagerleplan)).\n* Au moyen d'un nom de plan et d'une liste de plans (voir [Nom du plan et liste de plans](https://www.mapset.ch/fr/guide/#nomduplanetlistedesplans))",
           "loginRestricted": true
         }
       ]
@@ -118,17 +118,6 @@
           "text": "Il est possible de donner un nom aux plans dans mapset pour les retrouver facilement et pour avoir une vue d'ensemble de tous les plans créés.\n\nSi un plan n'a pas encore de nom, le texte 'Plan non nommé' est affiché dans l'en-tête.\n\n ![](/img/planname.png)\n\nCliquez sur ce texte pour entrer un nouveau nom de plan. Un *spinner* et un *message de confirmation* à côté du champ de saisie de texte indiquent que le nom a été sauvegardé. Il est également possible d'ouvrir une fenêtre de dialogue via l'outil d'enregistrement de l'encadré, où le nom du plan peut également être défini ou actualisé dans un champ de saisie de texte.\n\n![](/img/save_plan.png)\n\n![](/img/save_plan_dialog.png)\n\nDès qu'un plan a un nom, il est disponible dans la *Liste des plans*.\n\nLes plans peuvent être chargés dans la carte à partir de la liste de plans en sélectionnant un plan et en cliquant sur le bouton *Ouvrir*. \n\nLe bouton *Supprimer* permet de supprimer des plans de la liste.\n\n ![](/img/deleteplan.png)\n\nLe bouton *Dupliquer* permet de créer des copies de plans déjà existants. Les copies peuvent ensuite être modifiées.\n\n ![](/img/duplicateplan.png)",
           "heading": "",
           "loginRestricted": true
-        }
-      ]
-    },
-    {
-      "label": "Plans standard",
-      "content": [
-        {
-          "text": "Pour utiliser les plans standard, vous avez besoin d'un module supplémentaire à votre abonnement mapset.\n\nLes plans mapset peuvent être définis comme standard pour un arrêt. Les plans standard peuvent être consultés de manière dynamique via un lien qui ne contient au minimum que le numéro DIDOK et l'abréviation de votre entreprise de transport. En option, il est également possible d'indiquer des périodes de validité pour un plan standard.\n\n![](/img/standard_plan.png)\n\nPour l'édition de plans standard, nous créons pour vous des groupes d'utilisateurs spéciaux dans le backend de mapset. Vous obtenez ainsi automatiquement la possibilité pour plusieurs personnes disposant des droits correspondants de travailler ensemble sur les plans.\n\nLorsque vous appelez un plan standard via le numéro DIDOK, mapset vérifie s'il existe déjà un modèle créé manuellement pour la gare. Si aucun modèle n'est trouvé, mapset affiche alors automatiquement la gare sur la carte de base. Vous pouvez ainsi consulter un plan pour toutes les gares et ne devez dessiner manuellement des compléments sur la carte que pour les gares qui le nécessitent.\n\nVous trouverez ici un exemple de la manière dont vous pouvez récupérer un plan standard.\n\n* **id** : numéro DIDOK de la station (par exemple 8507000 pour Berne) \n* **validity** : une date unique au format [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601) à laquelle le plan standard doit être valide (par exemple 2023-04-26T16:05:16Z)\n* **tu** : fournisseur de transport (par exemple ch.sbb)\n\nL'URL du plan par défaut se présente alors comme suit :\n\nhttps://editor.mapset.ch/defaults?tu=ch.sbb&id=8507000&validity=2023-04-26T16:05:16Z",
-          "loginRestricted": true,
-          "cdRestricted": true,
-          "mapsetIcon": "save"
         }
       ]
     },
