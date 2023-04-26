@@ -106,7 +106,7 @@
       "mapsetIcon": "save",
       "content": [
         {
-          "text": "Dans mapset, chaque modification apportée au plan actuel est automatiquement enregistrée. Un message dans l'en-tête indique que le plan actuel a été enregistré.\n\nmapset offre deux possibilités pour conserver et modifier des plans : \n\n* Au moyen d'un lien vers l'édition (voir [Partager le plan](#partagerleplan)).\n* Au moyen d'un nom de plan et d'une liste de plans (voir [Nom du plan et liste de plans](#nomduplanetlistedesplans))\n\n![](/img/savingplan.png)\n\n![](/img/savedplan.png)",
+          "text": "Dans mapset, chaque modification apportée au plan actuel est automatiquement enregistrée. Un message dans l'en-tête indique que le plan actuel a été enregistré.\n\nmapset offre deux possibilités pour conserver et modifier des plans : \n\n* Au moyen d'un lien vers l'édition (voir [Partager le plan](#partagerleplan)).\n* Au moyen d'un nom de plan et d'une liste de plans (voir [Nom du plan et liste de plans](#nomduplanetlistedesplans))",
           "loginRestricted": true
         }
       ]
