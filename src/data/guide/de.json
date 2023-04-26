@@ -106,7 +106,7 @@
       "mapsetIcon": "save",
       "content": [
         {
-          "text": "In mapset wird jede Änderung am aktuellen Plan automatisch gespeichert. Eine Benachrichtigung in der Kopfzeile zeigt an, dass der aktuelle Plan gespeichert wurde.\n\nZur Aufbewarung und zur weiteren Bearbeitung von Plänen gibt es in mapset zwei Möglichkeiten: \n\n* Mittels einem Link zum Bearbeiten (siehe [Zeichnung Teilen](#zeichnungteilen))\n* Mittels Planbenennung und Planliste (siehe [Planbenennung und Planliste](#planbenennungundplanliste))",
+          "text": "In mapset wird jede Änderung am aktuellen Plan automatisch gespeichert. Eine Benachrichtigung in der App-Kopfzeile zeigt an, dass der aktuelle Plan gespeichert wurde.\n\nZur Aufbewarung und zur weiteren Bearbeitung von Plänen gibt es in mapset zwei Möglichkeiten: \n\n* Mittels einem Link zum Bearbeiten (siehe [Zeichnung Teilen](<* https://www.mapset.ch/guide/#zeichnungteilen>))\n* Mittels Planbenennung und Planliste (siehe [Planbenennung und Planliste](https://www.mapset.ch/guide/#planbenennungundplanliste))",
           "loginRestricted": true,
           "cdRestricted": false
         }
@@ -119,17 +119,6 @@
           "text": "Pläne in mapset können zum einfachen Wiederfinden und für die Übersicht über alle erstellten Pläne mit einem Namen versehen werden.\n\nWenn ein Plan noch nicht benannt ist, wird in der Kopfzeile der Text 'Unbenannter Plan' angezeigt.\n\n![](/img/planname.png)\n\nKlicken Sie auf diesen Text, um einen neuen Plannamen einzugeben. Ein *Spinner* und *Bestätigungsmeldung* neben dem Texteingabefeld zeigt an, dass der Name gespeichert wurde. Alternativ kann über das Speichern-Tool aus der Seitenleiste ein Dialog-Fenster geöffnet werden, wo in einem Texteingabefeld ebenfalls der Planname gesetzt bzw. aktualisiert werden kann.\n\n![](/img/save_plan.png)\n\n![](/img/save_plan_dialog.png)\n\nSobald ein Plan einen Namen hat, ist er in der *Planliste* verfügbar.\n\nPläne können aus der Planliste in die Karte geladen werden, indem Sie einen Plan auswählen und auf die Schaltfläche *Öffnen* klicken.\n\nÜber den *Löschen-*Button werden Pläne aus der Liste entfernt.\n\n![](/img/deleteplan.png)\n\nMit dem *Duplizieren*-Button können Kopien von bereits vorhandenen Plänen erstellt werden. Kopien können danach weiter bearbeitet werden.\n\n![](/img/duplicateplan.png)",
           "heading": "",
           "loginRestricted": true
-        }
-      ]
-    },
-    {
-      "label": "Standard-Pläne",
-      "content": [
-        {
-          "text": "Für die Nutzung der Standard-Pläne benötigen Sie ein Zusatzmodul zu Ihrem mapset-Abo.\\\n\\\nmapset-Pläne können als Standard für eine Haltestelle definiert werden. Standard-Pläne können dynamisch über einen Link abgerufen werden, der im Minimum nur die DIDOK-Nummer und das Kürzel Ihres Transportunternehmens enthält. Optional können für einen Standard-Plan auch Gültigkeitszeiträume angegeben werden.\n\n![](/img/standard_plan.png)\n\nFür die Bearbeitung von Standard-Plänen erstellen wir für Sie im Backend von mapset spezielle Benutzergruppen. Sie erhalten damit automatisch auch die Möglichkeit, dass mehrere Personen mit den entsprechenden Rechten gemeinsam an den Plänen arbeiten können.\\\nWenn Sie einen Standard-Plan über die DIDOK-Nummer aufrufen, prüft mapset, ob es bereits eine manuell erstellte Vorlage für den Bahnhof gibt. Wenn keine Vorlage gefunden wird, dann zeigt mapset automatisch den Bahnhof auf der Basiskarte an. Sie können somit für alle Bahnhöfe einen Plan abrufen und müssen nur bei den Bahnhöfen, die es erfordern, noch von Hand Ergänzungen in die Karte einzeichnen.\n\nHier finden Sie ein Beispiel, wie Sie einen Standardplan abrufen können.\n\n* **id**: DIDOK-ID (z.B. 8507000 für Bern)\n* **validity**: ein einzelnes Datum im Format [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601), an dem der Standardplan gültig sein soll (z.B. 2023-04-26T16:05:16Z)\n* **tu**: Transportunternehmen (z. B. ch.sbb)\n\nDie Standard-Plan URL sieht dann wie folgt aus:\n\nhttps://editor.mapset.ch/defaults?tu=ch.sbb&id=8507000&validity=2023-04-26T16:05:16Z",
-          "loginRestricted": true,
-          "cdRestricted": true,
-          "mapsetIcon": "save"
         }
       ]
     },
