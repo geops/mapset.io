@@ -65,7 +65,7 @@
     "link-user-manual": "Benutzerhandbuch",
     "Links-io": "Andere Länder können diesen Link verwenden:",
     "Links-ch": "Für Benutzer aus der Schweiz steht eine eigene Instanz zur Verfügung:",
-    "login-restricted": "Der User muss eingeloggt sein um diese Funktion nutzen zu können",
+    "login-restricted": "Sie müssen angemeldet sein, um diese Funktion zu nutzen.",
     "cd-restricted": "Der Zugang zu dieser Funktion hängt von User-Rechten und Corporate-Design-Einstellungen ab."
   },
   "imprint": {
