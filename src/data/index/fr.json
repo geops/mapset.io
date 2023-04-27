@@ -71,7 +71,7 @@
     "link-user-manual": "Manuel utilisateur",
     "Links-io": "Pour les autres pays, veuillez utiliser le domaine international :",
     "Links-ch": "Pour la Suisse, veuillez accéder à mapset en utilisant l'adresse:",
-    "login-restricted": "Cette fonction nécessite que l'utilisateur soit connecté.",
+    "login-restricted": "Vous devez être connecté pour utiliser cette fonction.",
     "cd-restricted": "L'accès à cette fonction dépend des droits des utilisateurs et des paramètres de l'identité visuelle."
   },
   "siteSwitcher": {
