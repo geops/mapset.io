@@ -65,7 +65,7 @@
     "link-user-manual": "User manual",
     "Links-io": "For other countries please use the international domain:",
     "Links-ch": "For Switzerland please access mapset using the address:",
-    "login-restricted": "This feature requires the user to be logged in.",
+    "login-restricted": "You must be logged in to use this feature.",
     "cd-restricted": "Access to this feature depends on user rights and Corporate Design settings."
   },
   "imprint": {

@@ -107,7 +107,8 @@
       "content": [
         {
           "heading": "",
-          "text": "In mapset every change to the current plan is automatically saved.\n\nA *spinner* followed by a *check mark* in the sidebar indicates that the current plan has been saved. The *spinner* is just to inform about the progress of saving. It is not necessary to wait for the *spinner* to end or to click it actively. mapset will always make sure that no changes are lost.\n\n![](/img/savingplan.png)\n\n![](/img/savedplan.png)"
+          "text": "In mapset, any change to the current plan is automatically saved. A notification in the header indicates that the current plan has been saved.\n\nThere are two ways to save and further edit plans in mapset: \n\n* By means of a link to edit (see [Plan sharing](#plansharing)).\n* By means of plan naming and plan list (see [Plan names and plan list](#plannamesandlist))",
+          "loginRestricted": true
         }
       ],
       "mapsetIcon": "save"
@@ -116,8 +117,20 @@
       "label": "Plan names and list",
       "content": [
         {
-          "text": "mapset plans can be given a name for an easier reference and a better overview of all created plans.\n\nWhen a plan is not yet named, the text 'Untitled plan' appears in the header.\n\n![](/img/planname.png)\n\nClick on this text to enter a new plan name. A *load spinner* and *confirmation message* next to the text input field indicates the plan name has been saved.\n\nOnce a plan has a name it will be available in the *plans list*.\n\nNamed plans can be loaded into the map from the plans list by selecting a plan and clicking on the *Open* button.\n\nPlans can be deleted from the list using the corresponding *Delete* button.\n\n![](/img/deleteplan.png)\n\nClicking the *Duplicate* button will make a copy of the corresponding plan from the list.\n\n![](/img/duplicateplan.png)",
+          "text": "mapset plans can be given a name for an easier reference and a better overview of all created plans.\n\nWhen a plan is not yet named, the text 'Untitled plan' appears in the header.\n\n![](/img/planname.png)\n\nClick on this text to enter a new plan name. A *load spinner* and *confirmation message* next to the text input field indicates the plan name has been saved. Alternatively, the Save tool from the sidebar can be used to open a dialog window where the plan name can also be set or updated in a text input field.\n\n![](/img/save_plan.png)\n\n\n\n![](/img/save_plan_dialog.png)\n\nOnce a plan has a name it will be available in the *plans list*.\n\nNamed plans can be loaded into the map from the plans list by selecting a plan and clicking on the *Open* button.\n\nPlans can be deleted from the list using the corresponding *Delete* button.\n\n![](/img/deleteplan.png)\n\nClicking the *Duplicate* button will make a copy of the corresponding plan from the list.\n\n![](/img/duplicateplan.png)",
           "loginRestricted": true
+        }
+      ]
+    },
+    {
+      "label": "Default plans",
+      "content": [
+        {
+          "heading": "",
+          "loginRestricted": true,
+          "cdRestricted": true,
+          "text": "To use default plans, you need an additional module to your mapset subscription.\n\nmapset plans can be defined as the default for a stop. Default plans can be loaded dynamically via a link, which at a minimum only contains the station ID and the abbreviation of your transport company. Optionally, validity periods can also be specified for a standard plan.\n\n![](/img/standard_plan.png)\n\nFor the editing of default plans, we create special user groups for you in the mapset backend. This automatically enables several people with the appropriate rights to work on plans collaboratively.\n\nWhen you load a default plan via the station ID, mapset checks whether there is already a manually created template for the station. If no template is found, mapset automatically displays the station on the base map. You can thus call up a plan for each station and only have to manually draw additions on the map for those stations that require it.\n\nThe following example illustrates how to retrieve a default plan:\n\n* **id**: Station-ID (e.g. 8507000 for Bern)\n* **validity**: a single date in [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601) format on which the standard plan should be valid (e.g. 2023-04-26T16:05:16Z)\n* **tu**: transport provider (e.g. ch.sbb)\n\nThe default plan URL then looks like this:\n\nhttps://editor.mapset.ch/defaults?tu=ch.sbb&id=8507000&validity=2023-04-26T16:05:16Z",
+          "mapsetIcon": "save"
         }
       ]
     },
@@ -158,7 +171,8 @@
       "content": [
         {
           "heading": "Language",
-          "text": "There are four available languages:\n\n* German\n* English\n* French\n* Italian"
+          "text": "There are four available languages:\n\n* German\n* English\n* French\n* Italian",
+          "cdRestricted": false
         },
         {
           "heading": "Corporate Design",
