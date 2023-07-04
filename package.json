@@ -50,10 +50,10 @@
   "license": "MIT",
   "scripts": {
     "clean": "gatsby clean",
-    "build:ch": "export GATSBY_REGION=ch && yarn run clean && gatsby build",
-    "start:ch": "export GATSBY_REGION=ch && yarn run clean && gatsby develop",
-    "build:eu": "export GATSBY_REGION=eu && yarn run clean && gatsby build",
-    "start:eu": "export GATSBY_REGION=eu && yarn run clean && gatsby develop",
+    "build:ch": "export GATSBY_REGION=ch && export SET NODE_OPTIONS=--openssl-legacy-provider && yarn run clean && gatsby build",
+    "start:ch": "export GATSBY_REGION=ch && export SET NODE_OPTIONS=--openssl-legacy-provider && yarn run clean && gatsby develop",
+    "build:eu": "export GATSBY_REGION=eu && export SET NODE_OPTIONS=--openssl-legacy-provider && yarn run clean && gatsby build",
+    "start:eu": "export GATSBY_REGION=eu && export SET NODE_OPTIONS=--openssl-legacy-provider && yarn run clean && gatsby develop",
     "serve": "gatsby serve",
     "format": "prettier --write \"{gatsby-*.js,src/**/*.js}\""
   },
