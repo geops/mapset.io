@@ -2,6 +2,9 @@
   "name": "mapset-website",
   "description": "mapset website",
   "version": "1.1.3",
+  "engines": {
+    "node": ">= 18"
+  },
   "dependencies": {
     "@babel/core": "^7.5.5",
     "@geops/geops-ui": "^0.1.8",
