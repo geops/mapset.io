@@ -1,28 +1,29 @@
-import React, { useCallback, useEffect, useState } from 'react';
-import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
+import React, { useEffect, useState } from "react";
+import { FormattedMessage, FormattedHTMLMessage } from "react-intl";
 
 function windowSupport(feature) {
-  return typeof window !== 'undefined' && window[feature];
+  return typeof window !== "undefined" && window[feature];
 }
 
 export default function SiteSwitcher({ region }) {
   let [isOpen, setIsOpen] = useState(false);
-  useEffect(() => {
-    const disabled = windowSupport('localStorage')
-      ? window.localStorage.getItem('mapset-site-switcher-disabled')
-      : 'true';
-    const userRegion =
-      windowSupport('navigator') &&
-      window.navigator.languages.some((lng) => lng.includes('CH'))
-        ? 'ch'
-        : 'eu';
-    setIsOpen(disabled !== 'true' && region !== userRegion);
-  }, []);
 
-  const disableSwitcher = useCallback(() => {
-    localStorage.setItem('mapset-site-switcher-disabled', 'true');
+  useEffect(() => {
+    const disabled = windowSupport("localStorage")
+      ? window.localStorage.getItem("mapset-site-switcher-disabled")
+      : "true";
+    const userRegion =
+      windowSupport("navigator") &&
+      window.navigator.languages.some((lng) => lng.includes("CH"))
+        ? "ch"
+        : "eu";
+    setIsOpen(disabled !== "true" && region !== userRegion);
+  }, [region]);
+
+  const disableSwitcher = () => {
+    localStorage.setItem("mapset-site-switcher-disabled", "true");
     setIsOpen(false);
-  });
+  };
 
   return (
     isOpen && (
@@ -132,18 +133,18 @@ export default function SiteSwitcher({ region }) {
           </div>
           <div className="site-switcher-dialog-content">
             <FormattedHTMLMessage
-              id={region === 'ch' ? 'siteSwitcher.goEU' : 'siteSwitcher.goCH'}
+              id={region === "ch" ? "siteSwitcher.goEU" : "siteSwitcher.goCH"}
             />
           </div>
           <a
             className="site-switcher-dialog-button btn blue-btn"
-            href={region === 'ch' ? 'https://mapset.io' : 'https://mapset.ch'}
+            href={region === "ch" ? "https://mapset.io" : "https://mapset.ch"}
           >
             <FormattedMessage
               id={
-                region === 'ch'
-                  ? 'siteSwitcher.buttonEU'
-                  : 'siteSwitcher.buttonCH'
+                region === "ch"
+                  ? "siteSwitcher.buttonEU"
+                  : "siteSwitcher.buttonCH"
               }
             />
           </a>

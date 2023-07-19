@@ -1,23 +1,23 @@
-import React from 'react';
-import { IntlProvider, addLocaleData } from 'react-intl';
-import { Helmet } from 'react-helmet';
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
-import '../sass/all.sass';
-import useSiteMetadata from './SiteMetadata';
-import card_view_triple from '../../static/img/screens_perspective.png';
+import React from "react";
+import { IntlProvider, addLocaleData } from "react-intl";
+import { Helmet } from "react-helmet";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import "../sass/all.sass";
+import useSiteMetadata from "./SiteMetadata";
+import card_view_triple from "../../static/img/screens_perspective.png";
 
-import favicon from '../img/favicon.png';
+import favicon from "../img/favicon.png";
 
 // Locale data
-import deData from 'react-intl/locale-data/de';
-import enData from 'react-intl/locale-data/en';
-import frData from 'react-intl/locale-data/fr';
+import deData from "react-intl/locale-data/de";
+import enData from "react-intl/locale-data/en";
+import frData from "react-intl/locale-data/fr";
 
 // Messages
-import de from '../data/index/de.json';
-import en from '../data/index/en.json';
-import fr from '../data/index/fr.json';
+import de from "../data/index/de.json";
+import en from "../data/index/en.json";
+import fr from "../data/index/fr.json";
 
 const languages = { de, en, fr };
 
@@ -43,18 +43,18 @@ JSON.flatten = function (data) {
       result[prop] = cur;
     } else if (Array.isArray(cur)) {
       for (var i = 0, l = cur.length; i < l; i++)
-        recurse(cur[i], prop + '[' + i + ']');
+        recurse(cur[i], prop + "[" + i + "]");
       if (l === 0) result[prop] = [];
     } else {
       var isEmpty = true;
       for (var p in cur) {
         isEmpty = false;
-        recurse(cur[p], prop ? prop + '.' + p : p);
+        recurse(cur[p], prop ? prop + "." + p : p);
       }
       if (isEmpty && prop) result[prop] = {};
     }
   }
-  recurse(data, '');
+  recurse(data, "");
   return result;
 };
 
@@ -64,25 +64,25 @@ const Layout = ({
   region,
   user,
   defaultLocale,
-  navBarClassName = '',
-  path = '/',
-  localizedPath = '',
-  nonLocalizedPath = '',
+  navBarClassName = "",
+  path = "/",
+  localizedPath = "",
+  nonLocalizedPath = "",
 }) => {
   const { title, description, siteUrl, alternateUrls } = useSiteMetadata();
   const localeMessages = JSON.flatten(languages[locale]);
   let localizedPathSlashed = localizedPath;
-  if (localizedPath.length && localizedPath[0] !== '/') {
-    localizedPathSlashed = '/' + localizedPath;
+  if (localizedPath.length && localizedPath[0] !== "/") {
+    localizedPathSlashed = "/" + localizedPath;
   }
-  if (localizedPath.length && localizedPath[localizedPath.length - 1] !== '/') {
-    localizedPathSlashed = localizedPath + '/';
+  if (localizedPath.length && localizedPath[localizedPath.length - 1] !== "/") {
+    localizedPathSlashed = localizedPath + "/";
   }
-  const realTitle = localeMessages['content.page header'] || title;
+  const realTitle = localeMessages["content.page header"] || title;
   const realDescription =
-    localeMessages['content.page header description'] || description;
+    localeMessages["content.page header description"] || description;
 
-  const twitterAccount = region === 'ch' ? 'mapsetch' : 'mapsetio';
+  const twitterAccount = region === "ch" ? "mapsetch" : "mapsetio";
   return (
     <div>
       <Helmet>
@@ -97,27 +97,30 @@ const Layout = ({
         <link rel="icon" type="image/png" href={favicon} sizes="16x16" />
         <link rel="canonical" href={siteUrl + localizedPathSlashed} />
         {alternateUrls.map((url) => {
-          return <link rel="alternate" href={url + localizedPathSlashed} />;
+          return (
+            <link key={url} rel="alternate" href={url + localizedPathSlashed} />
+          );
         })}
         {Object.keys(languages).map((locale) => {
           let localeSlashed = locale;
           let nonLocalizedPathSlashed = nonLocalizedPath;
-          if (nonLocalizedPath.length && nonLocalizedPath[0] !== '/') {
-            nonLocalizedPathSlashed = '/' + nonLocalizedPath;
+          if (nonLocalizedPath.length && nonLocalizedPath[0] !== "/") {
+            nonLocalizedPathSlashed = "/" + nonLocalizedPath;
           }
           if (
             nonLocalizedPath.length &&
-            nonLocalizedPath[nonLocalizedPath.length - 1] !== '/'
+            nonLocalizedPath[nonLocalizedPath.length - 1] !== "/"
           ) {
-            nonLocalizedPathSlashed = nonLocalizedPath + '/';
+            nonLocalizedPathSlashed = nonLocalizedPath + "/";
           }
           if (locale === defaultLocale) {
-            localeSlashed = '';
+            localeSlashed = "";
           } else {
-            localeSlashed = '/' + locale;
+            localeSlashed = "/" + locale;
           }
           return (
             <link
+              key={locale}
               rel="alternate"
               hreflang={locale}
               href={siteUrl + localeSlashed + nonLocalizedPathSlashed}
@@ -140,8 +143,8 @@ const Layout = ({
         {/* Twitter card tester: https://cards-dev.twitter.com/validator */}
         <meta name="twitter:dnt" content="on" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content={'@' + twitterAccount} />
-        <meta name="twitter:creator" content={'@' + twitterAccount} />
+        <meta name="twitter:site" content={"@" + twitterAccount} />
+        <meta name="twitter:creator" content={"@" + twitterAccount} />
         <meta name="twitter:image:src" content={siteUrl + card_view_triple} />
       </Helmet>
       <Navbar

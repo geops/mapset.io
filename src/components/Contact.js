@@ -1,6 +1,6 @@
-import React from 'react';
-import { FormattedMessage } from 'react-intl';
-import twitter from '../img/social/Twitter_Logo_Blue.svg';
+import React from "react";
+import { FormattedMessage } from "react-intl";
+import twitter from "../img/social/Twitter_Logo_Blue.svg";
 
 function Contact({ region }) {
   return (
@@ -14,9 +14,9 @@ function Contact({ region }) {
       <div className="contactButtons">
         <a
           href={
-            region === 'ch'
-              ? 'https://geops.sh/6E83A54F98A4E7532'
-              : 'https://geops.sh/40003911245CB34786'
+            region === "ch"
+              ? "https://geops.sh/6E83A54F98A4E7532"
+              : "https://geops.sh/40003911245CB34786"
           }
           rel="noopener noreferrer"
           target="_blank"
@@ -27,9 +27,9 @@ function Contact({ region }) {
         </a>
         <a
           href={
-            region === 'ch'
-              ? 'https://twitter.com/mapsetch'
-              : 'https://twitter.com/mapsetio'
+            region === "ch"
+              ? "https://twitter.com/mapsetch"
+              : "https://twitter.com/mapsetio"
           }
           rel="noopener noreferrer"
           target="_blank"
