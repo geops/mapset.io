@@ -1,71 +1,30 @@
 {
   "name": "mapset-website",
-  "description": "mapset website",
-  "version": "1.1.3",
-  "engines": {
-    "node": ">= 18"
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@babel/core": "^7.5.5",
-    "@geops/geops-ui": "^0.1.8",
-    "bootstrap": "^4.3.1",
-    "bulma": "^0.8.0",
-    "gatsby": "^2.32.13",
-    "gatsby-cli": "^2.7.27",
-    "gatsby-image": "^2.2.7",
-    "gatsby-plugin-i18n": "^1.0.1",
-    "gatsby-plugin-matomo": "^0.8.3",
-    "gatsby-plugin-netlify": "^2.1.3",
-    "gatsby-plugin-netlify-cms": "^4.1.6",
-    "gatsby-plugin-purgecss": "^5.0.0",
-    "gatsby-plugin-react-helmet": "^3.1.3",
-    "gatsby-plugin-react-svg": "^3.0.0",
-    "gatsby-plugin-robots-txt": "^1.7.1",
-    "gatsby-plugin-sass": "^2.1.3",
-    "gatsby-plugin-sharp": "^4.25.1",
-    "gatsby-plugin-sitemap": "^2",
-    "gatsby-remark-copy-linked-files": "^2.1.3",
-    "gatsby-remark-images": "^3.1.7",
-    "gatsby-remark-relative-images": "^0.3.0",
-    "gatsby-source-filesystem": "^2.1.6",
-    "gatsby-transformer-remark": "^2.6.10",
-    "gatsby-transformer-sharp": "^2.2.5",
-    "is-svg": "^4.3.1",
-    "js-cookie": "^2.2.1",
-    "lodash": "^4.17.12",
-    "lodash-webpack-plugin": "^0.11.4",
-    "netlify-cms-app": "^2.12.10",
-    "netlify-cms-lib-util": "^2.3.3",
-    "netlify-cms-oauth-provider-node": "^2.0.0",
-    "oidc-client": "^1.9.1",
-    "parcel-bundler": "^1.9.4",
-    "prop-types": "^15.6.0",
-    "react": "^16.8.4",
-    "react-bootstrap": "^1.0.0-beta.10",
-    "react-dom": "^16.8.4",
-    "react-helmet": "^6.0.0",
-    "react-intl": "^2.9.0",
-    "remarkable": "^2.0.0",
-    "sass": "^1.54.5",
-    "use-force-update": "^1.0.7",
-    "uuid": "^7.0.0"
-  },
-  "license": "MIT",
-  "scripts": {
-    "clean": "gatsby clean",
-    "build:ch": "export GATSBY_REGION=ch && export SET NODE_OPTIONS=--openssl-legacy-provider && yarn run clean && gatsby build",
-    "start:ch": "export GATSBY_REGION=ch && export SET NODE_OPTIONS=--openssl-legacy-provider && yarn run clean && gatsby develop",
-    "build:eu": "export GATSBY_REGION=eu && export SET NODE_OPTIONS=--openssl-legacy-provider && yarn run clean && gatsby build",
-    "start:eu": "export GATSBY_REGION=eu && export SET NODE_OPTIONS=--openssl-legacy-provider && yarn run clean && gatsby develop",
-    "serve": "gatsby serve",
-    "format": "prettier --write \"{gatsby-*.js,src/**/*.js}\""
+    "@types/node": "20.4.2",
+    "@types/react": "18.2.15",
+    "@types/react-dom": "18.2.7",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.45.0",
+    "eslint-config-next": "13.4.10",
+    "next": "13.4.10",
+    "postcss": "8.4.26",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.1.6"
   },
   "devDependencies": {
-    "http-proxy-middleware": "^0.21.0",
-    "prettier": "^2.0.0"
-  },
-  "prettier": {
-    "trailingComma": "all",
-    "singleQuote": true
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "prettier": "^3.0.0"
   }
 }
