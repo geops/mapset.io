@@ -1,0 +1,84 @@
+.contactForm
+  .row
+    width: 100%
+    max-width: 630px
+  & .contactHeader
+    padding-top: 0 !important
+  .contact-form-field
+    margin-bottom: 1rem
+    input,
+    textarea
+      width: 100%
+      max-width: 600px
+      border: 2px solid #EDEDED
+      padding: 0.5rem
+    label
+      display: block
+  .contact-form-interest
+    width: 100%
+    max-width: 600px
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+  .invalid
+    outline: 2px solid red
+
+  .contact-form-field-checkbox
+    margin-bottom: 1rem
+    position: relative
+    input
+      position: absolute
+      top: 0.3rem
+    label
+      margin-left: 1.5rem
+      a
+        text-decoration: underline
+  h2
+    margin-top: 4rem
+    margin-bottom: 2rem
+    color: $primary
+  .contactSection
+    width: 100%
+    max-width: 600px
+    text-align: center
+  & .contactButtons
+    display: flex
+    width: 100%
+    button
+      margin-right: 2rem
+      margin-left: 0
+
+.contactSection
+  margin-top: 0
+  position: relative
+  z-index: 0
+  background-color: $white
+  padding-bottom: 12rem
+  color: $greyDarker
+  & .contactHeader
+    padding-top: 5rem
+    font-weight: $bolder
+    color: $primary
+  & h5
+    margin: 2rem 0
+    max-width: 35rem
+  & p
+    margin: 2rem 0
+  & .twitter
+    width: 2rem
+    height: 2rem
+  & .button
+    padding: 10px 15px
+    border: 2px solid $primary
+    font-weight: 600
+    color: $primary
+    transition: 0.3s ease
+    border-radius: 40px
+    margin-left: -15px
+  & .twitter-button
+    padding: 6px 15px
+  & .button:hover
+    font-weight: 600
+    color: $white
+    border-radius: 40px
+    background-color: $primary
+    transition: 0.3s ease

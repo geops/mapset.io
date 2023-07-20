@@ -1,0 +1,25 @@
+{
+  "title": "Français",
+  "benefits": [
+    {
+      "heading": "**Création** de plans de situation",
+      "text": "Créez rapidement et facilement des plans de gare significatifs. Les services de remplacement des transports publics ou les chantiers de construction peuvent être représentés, tout comme la situation lors d'événements majeurs qui nécessitent l'accompagnement des passagers. En quelques minutes seulement, vous pouvez créer un plan qui fournit des informations ciblées et présente une grande qualité graphique."
+    },
+    {
+      "heading": "**Dessin** facile d'informations locales",
+      "text": "Complétez les informations locales sur la base de cartes existantes et détaillées. Vous pouvez afficher des itinéraires, ajouter des arrêts avec leurs quais ou mettre en évidence des points d'intérêt."
+    },
+    {
+      "heading": "**Fonctions d'exportation**",
+      "text": "Téléchargez vos plans personnalisés sous forme de fichiers image et intégrez-les dans votre logiciel de traitement de texte ou de PAO. Pour optimiser l'exportation, vous pouvez spécifier précisément l'étendue et la résolution pour l'impression."
+    },
+    {
+      "heading": "**Intégration dynamique** dans les canaux en ligne",
+      "text": "Vos plans peuvent non seulement être exportés sous forme d'images statiques, mais aussi être intégrés dynamiquement dans des sites Web. Profitez de l'intégration dynamique de plans librement navigables sur lesquels les utilisateurs peuvent sélectionner eux-mêmes l'étendue et l'échelle. Envoyez des liens pour vos plans individuels simplement par e-mail ou partagez-les via les médias sociaux."
+    },
+    {
+      "heading": "Plan de base pour les **transports publics**",
+      "text": "Le plan de base est optimisé pour montrer les détails qui sont pertinents pour les transports publics. La carte garantit non seulement une présentation graphique attrayante, mais elle est également mise à jour chaque semaine sans votre intervention."
+    }
+  ]
+}
