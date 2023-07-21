@@ -16,6 +16,7 @@
     "setup fee ch": "zzgl. CHF 490.– einmalige Ein­richtungs­gebühr"
   },
   "contact": {
+    "section": "Contact",
     "title": "Kontakt",
     "content": "Wir freuen uns über Ihre Kontaktaufnahme. ….",
     "firstName": "Vorname",
@@ -30,48 +31,137 @@
     "submit": "Anfrage senden",
     "submitted": "Vielen Dank für Ihre Anfrage, wir melden uns umgehend zurück."
   },
+  "features": {
+    "section": "features",
+    "title": "Bringing Clarity and Style to Public Transport Plans",
+    "content": "mapset™ is the online editor for fast and easy creation of clear and visually appealing station maps and plans forcustomer orientation.",
+    "list": [
+      {
+        "title": "Create situational plans",
+        "content": "Create meaningful station maps quickly and easily. Public transport replacement services or construction sites can be depicted, as can the situation at major events that require the guidance of passengers. In just a few minutes, you can create a plan that provides targeted information and has a high graphic quality."
+      },
+      {
+        "title": "Draw local information with ease",
+        "content": "Supplement local information on the basis of existing, detailed maps. You can display routes, add stops with their platforms or highlight points of interest."
+      },
+      {
+        "title": "Export functions",
+        "content": "Download your customized plans as image files and integrate them into your word processing or DTP software. To optimize the export, you can precisely specify the extent and resolution for printing."
+      }
+    ],
+    "list2": [
+      {
+        "title": "Dynamic integration in online channels",
+        "content": "Your plans can not only be exported as static images, but can also be dynamically embedded into websites. Benefit from the dynamic integration of freely navigable maps on which users can select extent and scale themselves. Send links for your individual plans simply by e-mail or share them via social media."
+      },
+      {
+        "title": "Basemap for public transport",
+
+        "content": "The basemap is optimized to show those details that are relevant for public transport. The map not only guarantees a graphically attractive presentation but is also updated weekly without your intervention."
+      },
+      {
+        "title": "Export functions",
+        "content": "Download your customized plans as image files and integrate them into your word processing or DTP software. To optimize the export, you can precisely specify the extent and resolution for printing."
+      }
+    ]
+  },
+  "testimonials": {
+    "section": "testimonials"
+  },
+  "pricing": {
+    "section": "pricing",
+    "title": "Plans For Transport Companies Of Any Size",
+    "content": "An overview of annual costs and one-time setup fee",
+    "currency": {
+      "io": "€",
+      "ch": "CHF"
+    },
+    "year": "year",
+    "mapset_features": "All mapset features",
+    "stops": "Stops*",
+    "railway_stations": "Railway Stations*",
+    "addon": "AddOn Share & Print",
+    "onetime": "One-time setup fee",
+    "products": [
+      {
+        "tier": "FREE",
+        "stops": "10",
+        "railway_stations": "-",
+        "price": {
+          "ch": "0",
+          "io": "0"
+        },
+        "price_addon": {
+          "ch": "0",
+          "io": "0"
+        },
+        "price_onetime": {
+          "ch": "490",
+          "io": "490"
+        }
+      },
+      {
+        "tier": "MINI",
+        "stops": "11 - 200",
+        "railway_stations": "1-10",
+        "price": {
+          "ch": "2,700",
+          "io": "2.700"
+        },
+        "price_addon": {
+          "ch": "1,100",
+          "io": "1,100"
+        },
+        "price_onetime": {
+          "ch": "490",
+          "io": "490"
+        }
+      },
+      {
+        "tier": "MIDI",
+        "stops": "201 - 500",
+        "railway_stations": "11-100",
+        "price": {
+          "ch": "5,900",
+          "io": "5.900"
+        },
+        "price_addon": {
+          "ch": "2,200",
+          "io": "2,200"
+        },
+        "price_onetime": {
+          "ch": "490",
+          "io": "490"
+        }
+      },
+      {
+        "tier": "MAXI",
+        "stops": "501+",
+        "railway_stations": "101-200",
+        "price": {
+          "ch": "8,400",
+          "io": "8.400"
+        },
+        "price_addon": {
+          "ch": "2,800",
+          "io": "2,800"
+        },
+        "price_onetime": {
+          "ch": "490",
+          "io": "490"
+        }
+      }
+    ]
+  },
   "home": {
-    "contact": "contact",
-    "tryfree": "Try free",
+    "try_free": "Try free",
+    "get_started": "Get started",
     "main": {
       "title": "Do it yourself plans",
       "content": "Provide your customers with up-to-date and attractive information about public transport."
-    },
-    "features": {
-      "section": "features",
-      "title": "Bringing Clarity and Style to Public Transport Plans",
-      "content": "mapset™ is the online editor for fast and easy creation of clear and visually appealing station maps and plans forcustomer orientation.",
-      "list": [
-        {
-          "title": "Create situational plans",
-          "content": "Create meaningful station maps quickly and easily. Public transport replacement services or construction sites can be depicted, as can the situation at major events that require the guidance of passengers. In just a few minutes, you can create a plan that provides targeted information and has a high graphic quality."
-        },
-        {
-          "title": "Draw local information with ease",
-          "content": "Supplement local information on the basis of existing, detailed maps. You can display routes, add stops with their platforms or highlight points of interest."
-        },
-        {
-          "title": "Export functions",
-          "content": "Download your customized plans as image files and integrate them into your word processing or DTP software. To optimize the export, you can precisely specify the extent and resolution for printing."
-        }
-      ],
-      "list2": [
-        {
-          "title": "Dynamic integration in online channels",
-          "content": "Your plans can not only be exported as static images, but can also be dynamically embedded into websites. Benefit from the dynamic integration of freely navigable maps on which users can select extent and scale themselves. Send links for your individual plans simply by e-mail or share them via social media."
-        },
-        {
-          "title": "Basemap for public transport",
-
-          "content": "The basemap is optimized to show those details that are relevant for public transport. The map not only guarantees a graphically attractive presentation but is also updated weekly without your intervention."
-        },
-        {
-          "title": "Export functions",
-          "content": "Download your customized plans as image files and integrate them into your word processing or DTP software. To optimize the export, you can precisely specify the extent and resolution for printing."
-        }
-      ]
     }
   },
+
   "generic": {
     "gotcurious": "Got curious?",
     "Kontakt": "Kontakt",

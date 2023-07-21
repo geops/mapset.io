@@ -4,7 +4,7 @@ import TwitterIcon from "./TwitterIcon";
 import ExternalLinkIcon from "./ExternalLinkIcon";
 import Link from "next/link";
 
-function Contact({ region }) {
+function Contact() {
   const { t } = useI18n();
   return (
     <div className="contactForm">
@@ -16,7 +16,7 @@ function Contact({ region }) {
         <Link
           className="flex items-center gap-2"
           href={
-            process.env.NEXT_PUBLIC_REGION === "ch"
+            process.env.NEXT_PUBLIC_DOMAIN === "ch"
               ? "https://geops.sh/6E83A54F98A4E7532"
               : "https://geops.sh/40003911245CB34786"
           }
@@ -27,7 +27,7 @@ function Contact({ region }) {
         </Link>
         <Link
           className="flex items-center gap-2"
-          href={`https://twitter.com/mapset${process.env.NEXT_PUBLIC_REGION}`}
+          href={`https://twitter.com/mapset${process.env.NEXT_PUBLIC_DOMAIN}`}
           rel="noopener noreferrer"
           target="_blank"
         >

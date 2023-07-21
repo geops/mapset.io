@@ -13,6 +13,7 @@ module.exports = {
       },
       white: "white",
       blue: {
+        lighter: "#F8FAFC",
         light: "#63B3F4",
         DEFAULT: "#1789C9",
         dark: "#1974BF",
@@ -26,6 +27,7 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontSize: {
+        "3xl": "32px",
         "7xl": "67px",
         "8xl": "86px",
       },

@@ -22,7 +22,7 @@ function DomainLinks() {
       <DomainIcon />
       {["io", "ch"].map((domain: string) => {
         const className =
-          process.env.NEXT_PUBLIC_REGION === domain ? "font-bold" : undefined;
+          process.env.NEXT_PUBLIC_DOMAIN === domain ? "font-bold" : undefined;
         return (
           <Link
             key={domain}

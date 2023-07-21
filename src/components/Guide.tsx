@@ -167,6 +167,7 @@ export const Guide = () => {
                       <Link
                         href={`#${renderId(feat)}`}
                         id={renderScrollerId(feat)}
+                        key={renderScrollerId(feat)}
                         title={feat}
                       >
                         <svg
@@ -217,7 +218,7 @@ export const Guide = () => {
               </p>
               <div>
                 {guideContent &&
-                  guideContent.map((topic, id) => {
+                  guideContent.map((topic) => {
                     return (
                       <div
                         className="guideFeature"
@@ -240,7 +241,7 @@ export const Guide = () => {
                             }}
                           />
                         </h3>
-                        {topic.content.map((f, id) => (
+                        {topic.content.map((f) => (
                           <div
                             key={renderId(f.heading)}
                             className="guideContent"
@@ -293,7 +294,7 @@ export const Guide = () => {
                 {t("generic.Noch Fragen ?")}
               </h1>
               <section className="contactSection" id="contact">
-                <Contact region={process.env.NEXT_PUBLIC_REGION} />
+                <Contact region={process.env.NEXT_PUBLIC_DOMAIN} />
               </section>
             </div>
           </div>
