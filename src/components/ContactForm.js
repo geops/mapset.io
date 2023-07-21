@@ -1,19 +1,11 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { useI18n } from "./I18n";
+import ButtonBlue from "./ui/ButtonBlue";
+import Input from "./ui/Input";
 
 const ContactForm = ({ className = "" }) => {
   const { t } = useI18n();
-  const formRef = useRef(null);
-  const emailRef = useRef(null);
-  const privacyRef = useRef(null);
   const [submitted, setSubmitted] = useState(false);
-  const [emailValid, setEmailValid] = useState(true);
-  const [privacyValid, setPrivacyValid] = useState(true);
-
-  const checkValidFields = () => {
-    setEmailValid(emailRef.current.reportValidity());
-    setPrivacyValid(privacyRef.current.reportValidity());
-  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -28,24 +20,14 @@ const ContactForm = ({ className = "" }) => {
       .catch((error) => console.error(error));
   };
 
-  const inputClassName =
-    "rounded-[8px] border-[1px] border-[#D0D5DD] px-[14px] py-2 shadow text-[#667085] bg-white w-[282px] h-[42px]";
-
-  const textAreaClassName =
-    "rounded-[8px] border-[1px] border-[#D0D5DD] px-[14px] py-2 shadow text-[#667085] bg-white w-[282px]";
-
   const labelClassName = "text-sm";
   const parentCheckboxClassName = "flex items-center gap-2";
-  const checkboxClassName = "";
 
   return (
     <form
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
       method="post"
       name="contact"
       onSubmit={handleSubmit}
-      ref={formRef}
       className={`flex flex-col gap-6 ${className}`}
     >
       {submitted ? (
@@ -59,113 +41,59 @@ const ContactForm = ({ className = "" }) => {
             </label>
           </div>
           <div>
-            <label
-              className={"block " + labelClassName}
-              htmlFor="contact-first-name"
-            >
-              {t("contact.firstName")}
+            <label className={"block " + labelClassName} htmlFor="name">
+              {t("contact.name")}
             </label>
-            <input
-              type="text"
-              id="contact-first-name"
-              name="first-name"
-              className={inputClassName}
-            />
+            <Input name="name" />
           </div>
+
           <div>
-            <label
-              className={"block " + labelClassName}
-              htmlFor="contact-last-name"
-            >
-              {t("contact.lastName")}
-            </label>
-            <input
-              type="text"
-              id="contact-last-name"
-              name="last-name"
-              className={inputClassName}
-            />
-          </div>
-          <div>
-            <label
-              className={"block " + labelClassName}
-              htmlFor="contact-company"
-            >
+            <label className={"block " + labelClassName} htmlFor="company">
               {t("contact.company")}
             </label>
-            <input
-              type="text"
-              id="contact-company"
-              name="company"
-              className={inputClassName}
-            />
+            <Input name="company" />
           </div>
+
           <div>
-            <label
-              className={"block " + labelClassName}
-              htmlFor="contact-email"
-            >
+            <label className={"block " + labelClassName} htmlFor="email">
               {t("contact.email")}
             </label>
-            <input
-              type="email"
-              id="contact-email"
-              name="email"
-              required
-              ref={emailRef}
-              className={inputClassName + "  " + (emailValid ? "" : "invalid")}
-            />
+            <Input name="email" type="email" required />
           </div>
+
           <div>
-            <label
-              className={"block " + labelClassName}
-              htmlFor="contact-interest"
-            >
+            <label className={"block " + labelClassName} htmlFor="interest">
               {t("contact.interest")}
             </label>
-            <select
-              type="checkbox"
-              name="interest"
-              id="contact-interest"
-              className={inputClassName}
-            >
+            <Input type="select" name="interest">
               <option value="mapset free">mapset free</option>
               <option value="mapset mini">mapset mini</option>
               <option value="mapset midi">mapset midi</option>
               <option value="mapset maxi" default>
                 mapset maxi
               </option>
-            </select>
+            </Input>
           </div>
-          <h2>{t("contact.message")}</h2>
+
           <div>
-            <label
-              className={"block " + labelClassName}
-              htmlFor="contact-message"
-            >
+            <label className={"block " + labelClassName} htmlFor="message">
               {t("contact.message")}
             </label>
-            <textarea
-              name="contact-message"
-              rows="5"
-              className={textAreaClassName}
-            />
+
+            <Input name="message" type="textarea" rows={5} />
           </div>
+
           <div className={parentCheckboxClassName}>
-            <input
-              type="checkbox"
-              name="called-back"
-              id="contact-called-back"
-              className={checkboxClassName}
-            />
+            <Input name="called-back" type="checkbox" />
             <label
               className={labelClassName}
-              htmlFor="contact-called-back"
+              htmlFor="called-back"
               dangerouslySetInnerHTML={{
                 __html: t("contact.calledback"),
               }}
             ></label>
           </div>
+
           <div>
             <label
               className={"block " + labelClassName}
@@ -173,42 +101,25 @@ const ContactForm = ({ className = "" }) => {
             >
               {t("contact.telephone")}
             </label>
-            <input
-              type="tel"
-              id="contact-telephone"
-              name="telephone"
-              className={inputClassName}
-            />
+            <Input name="telephone" type="tel" />
           </div>
+
           <div className={parentCheckboxClassName}>
-            <input
-              type="checkbox"
-              name="newsletter"
-              id="contact-newsletter"
-              className={checkboxClassName}
-            />
+            <Input name="newsletter" type="checkbox" />
             <label
               className={labelClassName}
-              htmlFor="contact-newsletter"
+              htmlFor="newsletter"
               dangerouslySetInnerHTML={{
                 __html: t("contact.newsletter"),
               }}
             ></label>
           </div>
+
           <div className={parentCheckboxClassName}>
-            <input
-              type="checkbox"
-              name="privacy-policy"
-              id="contact-privacy-policy"
-              required
-              ref={privacyRef}
-              className={
-                checkboxClassName + "  " + (privacyValid ? "" : "invalid")
-              }
-            />
+            <Input name="privacy" type="checkbox" required />
             <label
               className={labelClassName}
-              htmlFor="contact-privacy-policy"
+              htmlFor="privacy"
               dangerouslySetInnerHTML={{
                 __html: t("contact.privacyPolicy"),
               }}
@@ -216,13 +127,7 @@ const ContactForm = ({ className = "" }) => {
           </div>
           <p>{t("contact.required")}</p>
           <div>
-            <button
-              className="button-blue"
-              type="submit"
-              onClick={checkValidFields}
-            >
-              {t("contact.submit")}
-            </button>
+            <ButtonBlue type="submit">{t("contact.submit")}</ButtonBlue>
           </div>
         </>
       )}

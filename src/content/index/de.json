@@ -1,11 +1,6 @@
 {
   "templateKey": "index-page",
   "title": "Deutsch Indexseite",
-  "home": {
-    "title": "Do it yourself plans",
-    "subtitle": "Provide your customers with up-to-date and attractive information about public transport.",
-    "tryfree": "Try free"
-  },
   "content": {
     "page header": "Situationspläne für den öffentlichen Verkehr",
     "page header description": "Sie möchten Ihren Kunden aktuelle und attraktive Informationen zum öffentlichen Verkehr zugänglich machen? mapset ist der Online-Editor zur einfachen Erstellung von übersichtlichen und optisch ansprechenden Plangrafiken. Mit wenigen Klicks visualisieren Sie Pläne für geänderte Haltestellen, kommunizieren die Situation bei Bauprojekten, gewährleisten die Kundenführung bei Events oder informieren über betriebliche Sonderfälle vor Ort. All dies auf Basis von laufend aktualisiertem Kartenmaterial.",
@@ -34,6 +29,48 @@
     "required": "* Pflichtfeld",
     "submit": "Anfrage senden",
     "submitted": "Vielen Dank für Ihre Anfrage, wir melden uns umgehend zurück."
+  },
+  "home": {
+    "contact": "contact",
+    "tryfree": "Try free",
+    "main": {
+      "title": "Do it yourself plans",
+      "content": "Provide your customers with up-to-date and attractive information about public transport."
+    },
+    "features": {
+      "section": "features",
+      "title": "Bringing Clarity and Style to Public Transport Plans",
+      "content": "mapset™ is the online editor for fast and easy creation of clear and visually appealing station maps and plans forcustomer orientation.",
+      "list": [
+        {
+          "title": "Create situational plans",
+          "content": "Create meaningful station maps quickly and easily. Public transport replacement services or construction sites can be depicted, as can the situation at major events that require the guidance of passengers. In just a few minutes, you can create a plan that provides targeted information and has a high graphic quality."
+        },
+        {
+          "title": "Draw local information with ease",
+          "content": "Supplement local information on the basis of existing, detailed maps. You can display routes, add stops with their platforms or highlight points of interest."
+        },
+        {
+          "title": "Export functions",
+          "content": "Download your customized plans as image files and integrate them into your word processing or DTP software. To optimize the export, you can precisely specify the extent and resolution for printing."
+        }
+      ],
+      "list2": [
+        {
+          "title": "Dynamic integration in online channels",
+          "content": "Your plans can not only be exported as static images, but can also be dynamically embedded into websites. Benefit from the dynamic integration of freely navigable maps on which users can select extent and scale themselves. Send links for your individual plans simply by e-mail or share them via social media."
+        },
+        {
+          "title": "Basemap for public transport",
+
+          "content": "The basemap is optimized to show those details that are relevant for public transport. The map not only guarantees a graphically attractive presentation but is also updated weekly without your intervention."
+        },
+        {
+          "title": "Export functions",
+          "content": "Download your customized plans as image files and integrate them into your word processing or DTP software. To optimize the export, you can precisely specify the extent and resolution for printing."
+        }
+      ]
+    }
   },
   "generic": {
     "gotcurious": "Got curious?",
