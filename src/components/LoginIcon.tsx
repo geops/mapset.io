@@ -1,8 +1,8 @@
-function LoginIcon({ color = "#fff" }) {
+function LoginIcon({ color = "currentColor" }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="17"
+      width="19"
       height="17"
       viewBox="0 0 17 17"
     >

@@ -38,6 +38,7 @@
     "start-server-and-test": "^2.0.0",
     "stylelint": "^15.10.2",
     "stylelint-config-tailwindcss": "^0.0.7",
+    "stylelint-scss": "^5.0.1",
     "typescript": "5.1.6"
   },
   "scripts": {

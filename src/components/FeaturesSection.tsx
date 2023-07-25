@@ -32,7 +32,7 @@ function FeaturesSection({
         reverse ? "flex-row-reverse" : ""
       } ${className}`}
     >
-      <div className="flex flex-col pt-6 max-w-[50%]">
+      <div className="flex flex-col pt-6 md:max-w-[50%]">
         {features.map((feature, idx) => {
           const isUnselected = featureSelected.title !== feature.title;
 
@@ -59,7 +59,7 @@ function FeaturesSection({
           );
         })}
       </div>
-      <div>
+      <div className="hidden md:block">
         <Image
           src={imgSrc}
           width="679"

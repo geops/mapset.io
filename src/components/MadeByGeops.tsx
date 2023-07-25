@@ -1,5 +1,5 @@
 import Link from "next/link";
-import GeopsLogo from "./GeopsLogo";
+import GeopsLogo from "./images/GeopsLogo";
 import { useI18n } from "./I18n";
 
 function MadeByGeops() {

@@ -4,8 +4,9 @@ import userManager from "@/utils/userManager";
 import LogoutIcon from "./LogoutIcon";
 import { User } from "oidc-client";
 import { useEffect, useState } from "react";
+import LoginIcon from "./LoginIcon";
 
-function LoginLink() {
+function LoginLink({ className = "" }) {
   // @ts-ignore
   const { t } = useI18n();
   const [user, setUser] = useState<User>();
@@ -19,7 +20,7 @@ function LoginLink() {
   }, []);
 
   return (
-    <div className="flex items-center">
+    <div className={`flex items-center gap-2 ${className}`}>
       <Link
         className="flex items-center gap-2"
         href={"/"}
@@ -32,8 +33,8 @@ function LoginLink() {
           event.preventDefault();
         }}
       >
+        {!user ? <LoginIcon /> : <LogoutIcon />}
         {user?.profile?.nickname || t("generic.navbar.Login")}
-        {!!user && <LogoutIcon />}
       </Link>
     </div>
   );

@@ -6,12 +6,12 @@ import { usePathname } from "next/navigation";
 import LanguageIcon from "./LanguageIcon";
 import { useI18n } from "./I18n";
 
-function LanguageLinks() {
+function LanguageLinks({ className = "" }) {
   const { language } = useI18n() as { language: Locale };
   const pathname = usePathname();
 
   return (
-    <div className="flex items-center gap-2">
+    <div className={`flex items-center gap-2 ${className}`}>
       <LanguageIcon />
       {i18n.locales.map((locale: Locale) => {
         const className = locale === language ? "font-bold" : undefined;

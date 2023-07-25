@@ -1,6 +1,7 @@
 export type ButtonVariant = "contained" | "outlined";
 
 function ButtonWhite({
+  className = "",
   children,
   variant = "contained",
   ...props
@@ -10,19 +11,20 @@ function ButtonWhite({
 }) {
   const contained = "";
   const outlined = " border-[3px]";
-  const className =
-    "flex items-center uppercase px-8 py-4 bg-white text-blue font-bold rounded-[42px]" +
+  const classNam =
+    "flex items-center uppercase px-8 py-4 bg-white text-blue font-bold rounded-[42px] gap-2 " +
+    className +
     (variant === "contained" ? contained : outlined);
   // @ts-ignore
   if (props.href) {
     return (
-      <a className={className} {...props}>
+      <a className={classNam} {...props}>
         {children}
       </a>
     );
   }
   return (
-    <button className={className} {...props}>
+    <button className={classNam} {...props}>
       {children}
     </button>
   );

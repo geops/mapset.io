@@ -1,6 +1,6 @@
 import React from "react";
 import { useI18n } from "./I18n";
-import TwitterIcon from "./TwitterIcon";
+import TwitterIcon from "./images/TwitterIcon";
 import ExternalLinkIcon from "./ExternalLinkIcon";
 import Link from "next/link";
 

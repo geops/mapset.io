@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Locale } from "../../i18n-config";
 import { usePathname } from "next/navigation";
 import { useI18n } from "./I18n";
-import DomainIcon from "./DomainIcon";
+import DomainIcon from "./images/DomainIcon";
 
 const translationIds: {
   [index: string]: string;
@@ -13,12 +13,12 @@ const translationIds: {
   ch: "generic.navbar.swiss",
 };
 
-function DomainLinks() {
+function DomainLinks({ className = "" }) {
   // @ts-ignore
   const { t } = useI18n() as { language: Locale };
   const pathanme = usePathname();
   return (
-    <div className="flex items-center gap-2 text-normal font-medium">
+    <div className={`flex items-center gap-2 ${className}`}>
       <DomainIcon />
       {["io", "ch"].map((domain: string) => {
         const className =
