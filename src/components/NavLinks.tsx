@@ -11,7 +11,7 @@ function NavLinks({
   ...props
 }: React.AnchorHTMLAttributes<HTMLAnchorElement> & {
   selected?: string;
-  className: string;
+  className?: string;
 }) {
   const { t, language } = useI18n();
 
