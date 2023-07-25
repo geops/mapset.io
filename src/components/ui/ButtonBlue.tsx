@@ -4,10 +4,11 @@ function ButtonBlue({
   children,
   variant = "contained",
   ...props
-}: React.HTMLAttributes<HTMLButtonElement | HTMLAnchorElement> & {
-  children: React.ReactNode;
-  variant?: ButtonVariant;
-}) {
+}: React.ButtonHTMLAttributes<HTMLButtonElement> &
+  React.AnchorHTMLAttributes<HTMLAnchorElement> & {
+    children: React.ReactNode;
+    variant?: ButtonVariant;
+  }) {
   const contained = "";
   const outlined = " border-[3px]";
   const className =

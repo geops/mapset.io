@@ -1,7 +1,7 @@
 import React from "react";
 import { useI18n } from "./I18n";
 import TwitterIcon from "./images/TwitterIcon";
-import ExternalLinkIcon from "./ExternalLinkIcon";
+import ExternalLinkIcon from "./images/ExternalLinkIcon";
 import Link from "next/link";
 
 function Contact() {

@@ -4,7 +4,7 @@ function IconButton({
   className,
   children,
   ...props
-}: React.HtmlHTMLAttributes<HTMLButtonElement> & {
+}: React.ButtonHTMLAttributes<HTMLButtonElement> & {
   children: React.ReactNode;
   className?: string;
 }) {

@@ -4,11 +4,14 @@ function ButtonWhite({
   className = "",
   children,
   variant = "contained",
+  href,
   ...props
-}: React.HTMLAttributes<HTMLButtonElement | HTMLAnchorElement> & {
-  children: React.ReactNode;
-  variant?: ButtonVariant;
-}) {
+}: React.ButtonHTMLAttributes<HTMLButtonElement> &
+  React.AnchorHTMLAttributes<HTMLAnchorElement> & {
+    children: React.ReactNode;
+    variant?: ButtonVariant;
+    href?: string;
+  }) {
   const contained = "";
   const outlined = " border-[3px]";
   const classNam =
@@ -16,7 +19,7 @@ function ButtonWhite({
     className +
     (variant === "contained" ? contained : outlined);
   // @ts-ignore
-  if (props.href) {
+  if (href) {
     return (
       <a className={classNam} {...props}>
         {children}

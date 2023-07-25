@@ -4,9 +4,9 @@ function Input({
   type = "text",
   children,
   ...props
-}: React.HTMLAttributes<
-  HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
->) {
+}: React.InputHTMLAttributes<HTMLInputElement> &
+  React.TextareaHTMLAttributes<HTMLTextAreaElement> &
+  React.SelectHTMLAttributes<HTMLSelectElement>) {
   let className =
     "rounded-[8px] border-[1px] border-[#D0D5DD] px-[14px] py-2 shadow text-[#667085] bg-white w-full";
 

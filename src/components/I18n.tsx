@@ -3,8 +3,14 @@ import i18n from "../lib/i18n";
 import { Locale } from "../../i18n-config";
 const I18nContext = createContext({});
 
-export function useI18n() {
-  return useContext(I18nContext);
+export type I18nHook = {
+  t: (id: string) => string;
+  language: Locale;
+  locale: (locale: Locale) => undefined;
+};
+
+export function useI18n(): I18nHook {
+  return useContext(I18nContext) as I18nHook;
 }
 
 export default function I18n({

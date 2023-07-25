@@ -9,11 +9,11 @@ import LoginIcon from "./images/LoginIcon";
 function LoginLink({ className = "" }) {
   // @ts-ignore
   const { t } = useI18n();
-  const [user, setUser] = useState<User>();
+  const [user, setUser] = useState<User | null>();
 
   useEffect(() => {
     if (typeof window !== "undefined" && userManager) {
-      userManager.getUser().then((userr: User) => {
+      userManager.getUser().then((userr) => {
         setUser(userr);
       });
     }

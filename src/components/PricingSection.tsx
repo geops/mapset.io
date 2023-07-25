@@ -28,7 +28,7 @@ const domain = process.env.NEXT_PUBLIC_DOMAIN;
 
 function PricingSection({ products = [] }: { products: Product[] }) {
   const { t } = useI18n();
-  const [open, setOpen] = useState();
+  const [open, setOpen] = useState<boolean>(false);
   const trClassName = "even:bg-white odd:bg-blue-lighter";
   const firstColumnClassName = "text-left text-blue-darker px-4";
   const tdClassName = "text-center p-6";
