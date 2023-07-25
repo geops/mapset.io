@@ -7,8 +7,8 @@ import MapsetLogo from "./MapsetLogo";
 import Header from "./Header";
 import Footer from "./Footer";
 import H1 from "./ui/H1";
-import H2 from "./H2";
-import H3 from "./H3";
+import H2 from "./ui/H2";
+import H3 from "./ui/H3";
 import License from "./License";
 
 function Imprint() {

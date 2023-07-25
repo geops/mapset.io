@@ -1,5 +1,5 @@
-import H2 from "./H2";
-import H3 from "./H3";
+import H2 from "./ui/H2";
+import H3 from "./ui/H3";
 import { useI18n } from "./I18n";
 import { Remarkable } from "remarkable";
 import translations from "@/content/license/de.json";
