@@ -1,12 +1,8 @@
-import Link from "next/link";
-import { useI18n } from "./I18n";
-import H4 from "./ui/H4";
 import { useEffect, useState } from "react";
+import NavLinks from "./NavLinks";
 
-const selectedClassName = "bg-blue-darke";
 const ids = ["features", "pricing", "testimonials", "contact"];
 function NavSections({ className }: { className?: string }) {
-  const { t } = useI18n();
   const [selected, setSelected] = useState("");
   const [position, setPosition] = useState("");
 
@@ -49,21 +45,7 @@ function NavSections({ className }: { className?: string }) {
   return (
     <div className={`flex ${position} ${className}`}>
       <div className="bg-blue-dark rounded-full flex gap-4 items-center px-6  ">
-        {ids.map((id) => {
-          return (
-            <Link
-              href={`#${id}`}
-              key={id}
-              className={`py-4 px-2 ${
-                selected === id ? selectedClassName : ""
-              }`}
-            >
-              <H4 className={`text-white leading-none `}>
-                {t(`${id}.section`)}
-              </H4>
-            </Link>
-          );
-        })}
+        <NavLinks selected={selected} />
       </div>
     </div>
   );
