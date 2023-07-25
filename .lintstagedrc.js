@@ -1,6 +1,6 @@
 module.exports = {
   "*.md": ["prettier --write"],
-  "src/lang/*.json": ["yarn sort", "git add"],
+  "src/content/index/*.json": ["yarn sort", "git add"],
   "(src|__mocks__)/**/*.js": [
     "eslint --fix",
     "prettier --write",
