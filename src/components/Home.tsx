@@ -58,6 +58,7 @@ function Home() {
                 </div>
                 <div className="flex items-end pb-12 md:pb-0 md:ml-24 mt-12">
                   <video
+                    loop
                     autoPlay
                     className="border-[#126392] border-8 md:border-b-0 md:border-r-0 rounded-xl md:rounded-r-none md:rounded-bl-none"
                   >
