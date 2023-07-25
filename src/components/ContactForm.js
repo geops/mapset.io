@@ -18,7 +18,7 @@ const ContactForm = () => {
     event.preventDefault();
     window.scrollTo(0, document.getElementById('contact').offsetTop);
     const formData = new FormData(formRef.current);
-    fetch('/', {
+    fetch('https://editor.mapset.ch/api/v1/contact-form', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams(formData).toString(),
