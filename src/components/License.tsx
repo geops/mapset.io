@@ -14,7 +14,7 @@ function License() {
   const { t } = useI18n();
 
   return (
-    <div className="flex flex-col gap-6 pt-24">
+    <div className="flex flex-col gap-6">
       <H2 className="text-blue">{t("generic.Lizenz")}</H2>
       {translations.license.map(({ heading, text }, id) => {
         return (

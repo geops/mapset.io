@@ -6,7 +6,7 @@ import { useI18n } from "./I18n";
 import Link from "next/link";
 import { Remarkable } from "remarkable";
 import Contact from "@/components/Contact";
-import WarningIcon from "./WarningIcon";
+import WarningIcon from "./images/WarningIcon";
 import guide from "../content/guide/de.json";
 import isSvg from "is-svg";
 import Footer from "./Footer";

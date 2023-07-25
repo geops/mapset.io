@@ -81,16 +81,16 @@ export default function SiteSwitcher({ region }) {
                 transform="translate(10.442 9.264)"
                 fill="none"
                 stroke="#fff"
-                stroke-miterlimit="10"
-                stroke-width="2"
+                strokeMiterlimit="10"
+                strokeWidth="2"
               />
               <path
                 d="M99.685,247.522c0,6.748-7.116,12.2-8.248,12.2s-8.247-5.479-8.247-12.2a8.248,8.248,0,1,1,16.5,0Z"
                 transform="translate(-77.849 -235.077)"
                 fill="none"
                 stroke="#fff"
-                stroke-miterlimit="10"
-                stroke-width="2"
+                strokeMiterlimit="10"
+                strokeWidth="2"
               />
             </g>
           </svg>
@@ -113,8 +113,8 @@ export default function SiteSwitcher({ region }) {
                 transform="translate(8 8)"
                 fill="none"
                 stroke="#353535"
-                stroke-miterlimit="10"
-                stroke-width="2"
+                strokeMiterlimit="10"
+                strokeWidth="2"
               />
               <line
                 x2="8"
@@ -122,8 +122,8 @@ export default function SiteSwitcher({ region }) {
                 transform="translate(8 8)"
                 fill="none"
                 stroke="#353535"
-                stroke-miterlimit="10"
-                stroke-width="2"
+                strokeMiterlimit="10"
+                strokeWidth="2"
               />
             </svg>
           </button>

@@ -1,8 +1,8 @@
 import LanguageLinks from "./LanguageLinks";
-import VerticalSeparator from "./VerticalSeparator";
+import VerticalSeparator from "./ui/VerticalSeparator";
 import DomainLinks from "./DomainLinks";
 import UserManualLink from "./UserManualLink";
-import EllipseSeparator from "./EllipseSeparator";
+import EllipseSeparator from "./ui/EllipseSeparator";
 import LoginLink from "./LoginLink";
 
 function Header({ className = "" }) {

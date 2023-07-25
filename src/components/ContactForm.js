@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useCallback, useRef, useState } from "react";
 import { useI18n } from "./I18n";
 import ButtonBlue from "./ui/ButtonBlue";
 import Input from "./ui/Input";
@@ -10,7 +10,7 @@ const ContactForm = ({ className = "" }) => {
   const [submitted, setSubmitted] = useState(false);
   const formRef = useRef();
 
-  const handleSubmit = (event) => {
+  const handleSubmit = useCallback((event) => {
     event.preventDefault();
     window.scrollTo(0, document.getElementById("contact").offsetTop);
     const formData = new FormData(formRef.current);
@@ -21,7 +21,7 @@ const ContactForm = ({ className = "" }) => {
     })
       .then(() => setSubmitted(true))
       .catch((error) => console.error(error));
-  };
+  }, []);
 
   const labelClassName = "text-sm";
   const parentCheckboxClassName = "flex items-center gap-2";
@@ -38,7 +38,6 @@ const ContactForm = ({ className = "" }) => {
         <p>{t("contact.submitted")}</p>
       ) : (
         <>
-          <input type="hidden" name="form-name" value="contact" />
           <div>
             <label className={"block " + labelClassName} htmlFor="name">
               {t("contact.name")}

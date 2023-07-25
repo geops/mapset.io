@@ -10,50 +10,64 @@ import H1 from "./ui/H1";
 import H2 from "./ui/H2";
 import H3 from "./ui/H3";
 import License from "./License";
+import Menu from "./Menu";
 
 function Imprint() {
   const { t } = useI18n();
   return (
-    <div>
-      <Header className="container lg text-gray px-12 py-1 justify-end"></Header>
-
-      <div className="relative px-36 py-12 bg-gradient-to-r from-blue to-blue-light text-white">
-        <div className="container lg">
-          <div className="flex justify-end">
-            <MapsetLogo />
-          </div>
-          <div>
-            <H1 className="max-w-[541px]">{t("imprint.title")}</H1>
-            <p className="max-w-[646px] text-2xl">{t("imprint.subtitle")}</p>
-          </div>
+    <>
+      <div className="relative z-0">
+        <div className="justify-center px-4 hidden md:flex">
+          <Header className="container lg  text-gray py-1 justify-end"></Header>
         </div>
-      </div>
-      <div className="container lg flex flex-col py-24 gap-24">
-        <License />
-        <div className="flex flex-col gap-6">
-          <H2 className="text-blue">{t("generic.Imprint")}</H2>
-          <H3 className="text-blue">geOps AG</H3>
-          <p>
-            <div>Solothurnerstrasse 235</div>
-            <div>CH-4600 Olten</div>
-            <div>{t("imprint.phone")} +41 61 588 05 05</div>
-            <div>
-              {t("imprint.mail")}
-              &nbsp;
-              <Link href={"mailto:info@geops.ch"}>info@geops.ch</Link>
+        <main className="flex flex-col">
+          <div className="flex flex-col items-center relative px-4 pt-12 bg-gradient-to-r from-blue to-blue-light text-white z-10">
+            <div className="container lg">
+              <div className="flex justify-between my-4 mb-12">
+                <div></div>
+                <div>
+                  <MapsetLogo />
+                </div>
+              </div>
+              <div className="flex justify-between overflow-hidden flex-wrap md:flex-nowrap">
+                <div className="flex flex-col gap-6 pb-12">
+                  <H1 className="max-w-[541px]">{t("imprint.title")}</H1>
+                  <p className="max-w-[646px] text-2xl">
+                    {t("imprint.subtitle")}
+                  </p>
+                </div>
+              </div>
             </div>
-          </p>
-          <p>
-            <div>{t("imprint.managingDirector")}</div>
-            <div>{t("imprint.commercialNumber")}</div>
-            <div>UID: CHE-455.829.547 VAT</div>
-          </p>
-          <p>{t("imprint.disclaimer")}</p>
-          <p>{t("imprint.responsible")}</p>
-        </div>
+          </div>
+          <div className="container lg flex flex-col py-24 gap-24">
+            <License />
+            <div className="flex flex-col gap-6">
+              <H2 className="text-blue">{t("generic.Imprint")}</H2>
+              <H3 className="text-blue">geOps AG</H3>
+              <p>
+                <div>Solothurnerstrasse 235</div>
+                <div>CH-4600 Olten</div>
+                <div>{t("imprint.phone")} +41 61 588 05 05</div>
+                <div>
+                  {t("imprint.mail")}
+                  &nbsp;
+                  <Link href={"mailto:info@geops.ch"}>info@geops.ch</Link>
+                </div>
+              </p>
+              <p>
+                <div>{t("imprint.managingDirector")}</div>
+                <div>{t("imprint.commercialNumber")}</div>
+                <div>UID: CHE-455.829.547 VAT</div>
+              </p>
+              <p>{t("imprint.disclaimer")}</p>
+              <p>{t("imprint.responsible")}</p>
+            </div>
+          </div>
+        </main>
+        <Footer></Footer>
       </div>
-      <Footer></Footer>
-    </div>
+      <Menu className="md:hidden" />
+    </>
   );
 }
 

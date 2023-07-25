@@ -8,7 +8,7 @@ function ArrowDownIcon({ className = "" }) {
       fill="none"
       className={className}
     >
-      <path d="M9 2L5 6L1 2" stroke="currentColor" stroke-width="2" />
+      <path d="M9 2L5 6L1 2" stroke="currentColor" strokeWidth="2" />
     </svg>
   );
 }
