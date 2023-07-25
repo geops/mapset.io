@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import H5 from "./ui/H5";
 import translations from "@/content/index/de.json";
+import ArrowDownIcon2 from "./images/ArrowDownIcon2";
 
 export type MapsetFeature = {
   title: string;
@@ -12,19 +13,22 @@ export type MapsetFeature = {
 function FeaturesSection({
   className = "",
   reverse = false,
-  prefix = "list",
+  indexStart = 0,
+  indexEnd = translations.features.list.length,
 }: {
-  prefix: string;
+  indexStart?: number;
+  indexEnd?: number;
   className?: string;
   reverse?: boolean;
 }) {
   // @ts-ignore
-  const features: MapsetFeature[] = translations.features[prefix];
+  const features: MapsetFeature[] = translations.features.list;
   const { t } = useI18n();
-  const [featureSelected, setFeatureSelected] = useState(features[0]);
+  const [selected, setSelected] = useState(features[indexStart]);
   const imgSrc = reverse
     ? "/img/mac-book-pro-16-left.png"
-    : "/img/mac-book-pro-16.png";
+    : "/img/mac-book-pro-16-right.png";
+  const macFull = "/img/mac-book-pro-16.png";
 
   return (
     <div
@@ -32,30 +36,62 @@ function FeaturesSection({
         reverse ? "flex-row-reverse" : ""
       } ${className}`}
     >
-      <div className="flex flex-col pt-6 md:max-w-[50%]">
+      <div className="flex flex-col pt-6 md:max-w-[50%] divide-y divide-blue-lighte md:divide-x-4 md:divide-y-0 md:divide-gray-light">
         {features.map((feature, idx) => {
-          const isUnselected = featureSelected.title !== feature.title;
+          if (indexStart > idx || idx >= indexEnd) {
+            return null;
+          }
+
+          const isUnselected = selected.title !== feature.title;
 
           return (
-            <button
-              key={feature.title}
-              className={
-                "px-6 py-4 border-l-4  text-left " +
-                (isUnselected ? "border-gray-light" : "border-blue")
-              }
-              onClick={() => {
-                setFeatureSelected(feature);
-              }}
-            >
-              <H5
-                className={"pb-2 " + (isUnselected ? "text-gray" : "text-blue")}
+            <>
+              <button
+                key={feature.title}
+                className={
+                  "px-6 py-4 md:border-l-4  text-left " +
+                  (isUnselected
+                    ? "md:border-gray-light"
+                    : "bg-blue-lighter md:!border-blue")
+                }
+                onClick={() => {
+                  setSelected(feature);
+                }}
               >
-                {t(`features.${prefix}.${idx}.title`)}
-              </H5>
-              <div className={isUnselected ? "text-gray" : ""}>
-                {t(`features.${prefix}.${idx}.content`)}
-              </div>
-            </button>
+                <H5
+                  className={
+                    "flex justify-between items-center pb-2 " +
+                    (isUnselected ? "text-gray" : "text-blue")
+                  }
+                >
+                  {t(`features.list.${idx}.title`)}
+                  <div
+                    className={`bg-blue flex items-center justify-center rounded-full transition-rotate ${
+                      isUnselected ? "rotate-0" : "rotate-180"
+                    } md:hidden w-8 h-8`}
+                  >
+                    <ArrowDownIcon2 />
+                  </div>
+                </H5>
+
+                <div
+                  className={`py-6 ${
+                    isUnselected ? "hidden" : "flex justify-center md:hidden"
+                  }`}
+                >
+                  <Image
+                    src={macFull}
+                    width="375"
+                    height="239"
+                    alt={"mac"}
+                    className="w-[400px]"
+                  ></Image>
+                </div>
+                <p className={isUnselected ? "hidden md:block text-gray" : ""}>
+                  {t(`features.list.${idx}.content`)}
+                </p>
+              </button>
+            </>
           );
         })}
       </div>

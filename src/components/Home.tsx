@@ -70,27 +70,32 @@ function Home() {
           </div>
           <div
             id="features"
-            className="flex flex-col items-center relative px-4 pt-24 py-12 z-0"
+            className="flex flex-col items-center relative md:px-4 pt-24 py-12 z-0"
           >
-            <div className="container lg">
-              <div className="pb-12">
+            <div className="container lg ">
+              <div className="px-4 md:px-0 pb-12">
                 <H4>{t("features.section")}</H4>
                 <H2 className="text-blue max-w-[900px]">
                   {t("features.title")}
                 </H2>
                 <p className="pt-4 pb-4">{t("features.content")}</p>
               </div>
-              <FeaturesSection prefix="list" />
 
-              <div className="flex justify-center gap-4 my-24">
-                <ButtonBlue href={"https://editor.mapset." + region}>
-                  {t("home.try_free")}
-                </ButtonBlue>
-                <ButtonWhite href={"#contact"} variant="outlined">
-                  {t("contact.section")}
-                </ButtonWhite>
+              <div className="md:hidden">
+                <FeaturesSection />
               </div>
-              <FeaturesSection prefix="list2" reverse />
+              <div className="hidden md:block">
+                <FeaturesSection indexEnd={3} />
+                <div className="flex justify-center gap-4 my-24">
+                  <ButtonBlue href={"https://editor.mapset." + region}>
+                    {t("home.try_free")}
+                  </ButtonBlue>
+                  <ButtonWhite href={"#contact"} variant="outlined">
+                    {t("contact.section")}
+                  </ButtonWhite>
+                </div>
+                <FeaturesSection indexStart={3} reverse />
+              </div>
             </div>
           </div>
           <div
