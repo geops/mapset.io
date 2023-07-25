@@ -202,7 +202,9 @@ export const IndexPageTemplate = ({ locale, region }) => {
       <section className="clientsSection" id="clients">
         <div className="container">
           <div className="rightColumn">
-            <h1 className="is-bolder clientsHeader section-title"><FormattedMessage id="generic.Customers" /></h1>
+            <h1 className="is-bolder clientsHeader section-title">
+              <FormattedMessage id="generic.Customers" />
+            </h1>
             <div className="clientLogos">
               {clientLogos.map((logo) => {
                 return (
@@ -210,15 +212,20 @@ export const IndexPageTemplate = ({ locale, region }) => {
                     <img
                       src={logo.src}
                       alt={`${logo.id} logo`}
-                      style={{ transform: `scale(${logo.scale})` || 1 }} />
+                      style={{ transform: `scale(${logo.scale})` || 1 }}
+                    />
                   </div>
-                )
+                );
               })}
             </div>
           </div>
-        </div>               
+        </div>
       </section>
-      <img className="backgroundImage abovePriceSection" src={layout_bg_3} alt="" />
+      <img
+        className="backgroundImage abovePriceSection"
+        src={layout_bg_3}
+        alt=""
+      />
       {/* customers */}
       <section className="priceSection" id="price">
         <div className="container">
@@ -309,7 +316,7 @@ export const IndexPageTemplate = ({ locale, region }) => {
             <h1 className="is-bolder contactHeader section-title">
               <FormattedMessage id="generic.Kontakt" />
             </h1>
-            <ContactForm />
+            <ContactForm region={region} />
           </div>
         </div>
       </section>
