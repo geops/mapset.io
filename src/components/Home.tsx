@@ -23,7 +23,6 @@ import Contact from "./images/ContactImage";
 const region = process.env.NEXT_PUBLIC_DOMAIN;
 
 function Home() {
-  // @ts-ignore
   const { t } = useI18n();
   return (
     <>

@@ -20,7 +20,6 @@ function FeaturesSection({
 }) {
   // @ts-ignore
   const features: MapsetFeature[] = translations.features[prefix];
-  // @ts-ignore
   const { t } = useI18n();
   const [featureSelected, setFeatureSelected] = useState(features[0]);
   const imgSrc = reverse

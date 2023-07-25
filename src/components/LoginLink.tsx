@@ -7,7 +7,6 @@ import { useEffect, useState } from "react";
 import LoginIcon from "./images/LoginIcon";
 
 function LoginLink({ className = "" }) {
-  // @ts-ignore
   const { t } = useI18n();
   const [user, setUser] = useState<User | null>();
 

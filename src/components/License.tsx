@@ -11,7 +11,6 @@ md.set({
 });
 
 function License() {
-  // @ts-ignore
   const { t } = useI18n();
 
   return (

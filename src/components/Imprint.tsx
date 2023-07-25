@@ -12,7 +12,6 @@ import H3 from "./ui/H3";
 import License from "./License";
 
 function Imprint() {
-  // @ts-ignore
   const { t } = useI18n();
   return (
     <div>

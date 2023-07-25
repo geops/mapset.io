@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { Locale } from "../../i18n-config";
 import { usePathname } from "next/navigation";
 import { useI18n } from "./I18n";
 import DomainIcon from "./images/DomainIcon";
@@ -14,8 +13,7 @@ const translationIds: {
 };
 
 function DomainLinks({ className = "" }) {
-  // @ts-ignore
-  const { t } = useI18n() as { language: Locale };
+  const { t } = useI18n();
   const pathanme = usePathname();
   return (
     <div className={`flex items-center gap-2 ${className}`}>
