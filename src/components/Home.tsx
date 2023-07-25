@@ -33,7 +33,7 @@ function Home() {
         <main className="flex flex-col">
           <div className="flex flex-col items-center relative px-4 pt-12 bg-gradient-to-r from-blue to-blue-light text-white z-10">
             <div className="container lg">
-              <div className="flex justify-between my-4 mb-12">
+              <div className="flex justify-between mb-12">
                 <div>
                   <NavSections className="hidden md:block" />
                 </div>
@@ -41,7 +41,7 @@ function Home() {
                   <MapsetLogo />
                 </div>
               </div>
-              <div className="flex justify-between overflow-hidden flex-wrap md:flex-nowrap">
+              <div className="flex justify-between overflow-hidden flex-wrap lg:flex-nowrap">
                 <div className="flex flex-col gap-6 pb-12">
                   <H1 className="max-w-[541px]">{t("home.main.title")}</H1>
                   <p className="max-w-[646px] text-2xl">
@@ -56,11 +56,11 @@ function Home() {
                     </ButtonBlue>
                   </div>
                 </div>
-                <div className="flex items-end pb-12 md:pb-0 md:ml-24 mt-12">
+                <div className="flex items-end pb-12 lg:pb-0 lg:ml-12 mt-12">
                   <video
                     loop
                     autoPlay
-                    className="border-[#126392] border-8 md:border-b-0 md:border-r-0 rounded-xl md:rounded-r-none md:rounded-bl-none"
+                    className="border-[#126392] border-8 lg:border-b-0 lg:border-r-0 rounded-xl lg:rounded-r-none lg:rounded-bl-none lg:min-w-[700px]"
                   >
                     <source src="/video/mapset-demo.mp4" type="video/mp4" />
                   </video>

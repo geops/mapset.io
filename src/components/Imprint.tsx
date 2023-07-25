@@ -23,7 +23,7 @@ function Imprint() {
         <main className="flex flex-col">
           <div className="flex flex-col items-center relative px-4 pt-12 bg-gradient-to-r from-blue to-blue-light text-white z-10">
             <div className="container lg">
-              <div className="flex justify-between my-4 mb-12">
+              <div className="flex justify-between mb-12">
                 <div></div>
                 <div>
                   <MapsetLogo />
