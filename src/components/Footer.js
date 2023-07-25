@@ -5,7 +5,7 @@ import { useI18n } from "./I18n";
 import Link from "next/link";
 import MadeByGeops from "./MadeByGeops";
 import { usePathname } from "next/navigation";
-import ExternalLinkIcon from "./ExternalLinkIcon";
+import ExternalLinkIcon from "./images/ExternalLinkIcon";
 
 const Arrow = ({ className = "" }) => {
   return (

@@ -1,17 +1,20 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { useI18n } from "./I18n";
 import ButtonBlue from "./ui/ButtonBlue";
 import Input from "./ui/Input";
 
+const domain = process.env.NEXT_PUBLIC_DOMAIN;
+
 const ContactForm = ({ className = "" }) => {
   const { t } = useI18n();
   const [submitted, setSubmitted] = useState(false);
+  const formRef = useRef();
 
   const handleSubmit = (event) => {
     event.preventDefault();
     window.scrollTo(0, document.getElementById("contact").offsetTop);
     const formData = new FormData(formRef.current);
-    fetch("/", {
+    fetch("https://editor.mapset." + domain + "/api/v1/contact-form", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
@@ -25,6 +28,7 @@ const ContactForm = ({ className = "" }) => {
 
   return (
     <form
+      ref={formRef}
       method="post"
       name="contact"
       onSubmit={handleSubmit}
@@ -35,11 +39,6 @@ const ContactForm = ({ className = "" }) => {
       ) : (
         <>
           <input type="hidden" name="form-name" value="contact" />
-          <div hidden>
-            <label className={"block " + labelClassName}>
-              Don’t fill this out: <input name="bot-field" />
-            </label>
-          </div>
           <div>
             <label className={"block " + labelClassName} htmlFor="name">
               {t("contact.name")}

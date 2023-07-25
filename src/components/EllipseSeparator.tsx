@@ -1,5 +1,5 @@
 import React from "react";
-import EllipseIcon from "./EllipseIcon";
+import EllipseIcon from "./images/EllipseIcon";
 
 function EllipseSeparator() {
   return (

@@ -1,6 +1,6 @@
 import { useCallback, useMemo, useState } from "react";
 import translations from "@/content/index/de.json";
-import ArrowLeftIcon from "./ArrowLeftIcon";
+import ArrowLeftIcon from "./images/ArrowLeftIcon";
 import ArrowRightIcon from "./images/ArrowRightIcon";
 import IconButtonWhite from "./ui/IconButtonWhite";
 import H4 from "./ui/H4";

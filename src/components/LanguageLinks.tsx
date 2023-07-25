@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { i18n, Locale } from "../../i18n-config";
 import { usePathname } from "next/navigation";
-import LanguageIcon from "./LanguageIcon";
+import LanguageIcon from "./images/LanguageIcon";
 import { useI18n } from "./I18n";
 
 function LanguageLinks({ className = "" }) {

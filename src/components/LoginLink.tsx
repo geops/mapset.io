@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { useI18n } from "./I18n";
 import userManager from "@/utils/userManager";
-import LogoutIcon from "./LogoutIcon";
+import LogoutIcon from "./images/LogoutIcon";
 import { User } from "oidc-client";
 import { useEffect, useState } from "react";
-import LoginIcon from "./LoginIcon";
+import LoginIcon from "./images/LoginIcon";
 
 function LoginLink({ className = "" }) {
   // @ts-ignore
