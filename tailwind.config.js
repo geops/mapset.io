@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     fontFamily: {
       // ...fonts,
-      hero: "inherit", //Hero New",
+      hero: "new-hero", //Hero New",
     },
     colors: {
       slate: colors.slate,

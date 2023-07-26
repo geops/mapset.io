@@ -32,15 +32,22 @@ function Menu({ className = "" }) {
             <MapsetLogo />
           </div>
           <div className="divide-y divide-white divide-opacity-10 w-full bg-blue-dark">
-            <LanguageLinks className="px-6 py-4 w-full" />
-            <DomainLinks className="px-6 py-4 w-full" />
+            <LanguageLinks
+              className="px-6 py-4 w-full"
+              selectedClassName="text-white font-bold"
+            />
+            <DomainLinks
+              className="px-6 py-4 w-full"
+              selectedClassName="text-white font-bold"
+            />
             <LoginLink className="px-6 py-4 w-full" />
             <UserManualLink className="px-6 py-4 w-full" />
           </div>
           <div className="flex flex-1 flex-col justify-between w-full">
             <div className="py-6 divide-y  divide-white divide-opacity-10  w-full">
               <NavLinks
-                className="block !px-6 w-full text-2.5xl"
+                className="block !px-6 w-full text-2.5xl font-semibold tracking-[.14px] leading-6 uppercase font-hero"
+                selectedClassName="font-extrabold"
                 onClick={close}
               />
             </div>

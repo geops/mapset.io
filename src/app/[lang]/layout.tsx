@@ -22,6 +22,7 @@ export default function Layout({
     <html lang={lang}>
       <body className={inter.className}>
         <Website language={lang}>{children}</Website>
+        <link rel="stylesheet" href="https://use.typekit.net/mqe1sjs.css" />
       </body>
     </html>
   );
