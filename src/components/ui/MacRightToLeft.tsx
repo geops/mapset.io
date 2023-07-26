@@ -16,7 +16,7 @@ function MacRightToLeft({
         ></Image>
       </div>
 
-      <div className="absolute top-[0px] left-[74px] w-[605px] h-[526px] overflow-hidden flex   p-4 pr-0">
+      <div className="absolute top-[0px] left-[74px] w-[605px] h-[530px] overflow-hidden flex   p-4 pr-0">
         {props.src && ( // @ts-ignore
           <Image src={props.src} alt={"mac"} {...props}></Image>
         )}
