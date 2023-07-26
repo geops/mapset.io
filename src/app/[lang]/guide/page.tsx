@@ -1,4 +1,5 @@
-import Home from "@/components/Home";
+import Guide from "@/components/Guide";
+import "@/sass/all.sass";
 import type { Locale } from "@/../i18n-config.js";
 import generateGenericMetadata from "@/lib/generateGenericMetadata.js";
 
@@ -12,13 +13,13 @@ export async function generateMetadata({
   const md = await generateGenericMetadata({
     domain,
     language: lang,
-    path: "/",
-    title: "home.metadata.title",
-    description: "home.metadata.description",
+    path: "/guide",
+    title: "guide.metadata.title",
+    description: "guide.metadata.description",
   });
   return md;
 }
 
 export default function Page() {
-  return <Home></Home>;
+  return <Guide></Guide>;
 }

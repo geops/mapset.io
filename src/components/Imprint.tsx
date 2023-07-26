@@ -13,7 +13,7 @@ import License from "./License";
 import Menu from "./Menu";
 
 function Imprint() {
-  const { t } = useI18n();
+  const { t, language } = useI18n();
   return (
     <>
       <div className="relative z-0">
@@ -25,9 +25,9 @@ function Imprint() {
             <div className="container lg">
               <div className="flex justify-between mb-12">
                 <div></div>
-                <div>
+                <Link href={"/" + language}>
                   <MapsetLogo />
-                </div>
+                </Link>
               </div>
               <div className="flex justify-between overflow-hidden flex-wrap md:flex-nowrap">
                 <div className="flex flex-col gap-6 pb-12">

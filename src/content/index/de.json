@@ -100,7 +100,11 @@
     "Links-io": "Andere Länder können diesen Link verwenden:",
     "cd-restricted": "Der Zugang zu dieser Funktion hängt von User-Rechten und Corporate-Design-Einstellungen ab.",
     "link-user-manual": "Benutzerhandbuch",
-    "login-restricted": "Sie müssen angemeldet sein, um diese Funktion zu nutzen."
+    "login-restricted": "Sie müssen angemeldet sein, um diese Funktion zu nutzen.",
+    "metadata": {
+      "description": "",
+      "title": "Mapset Benutzerhandbuch"
+    }
   },
   "home": {
     "get_started": "Get started",
@@ -108,7 +112,17 @@
       "content": "Provide your customers with up-to-date and attractive information about public transport.",
       "title": "Do it yourself plans"
     },
+    "metadata": {
+      "description": "Sie möchten Ihren Kunden aktuelle und attraktive Informationen zum öffentlichen Verkehr zugänglich machen? mapset ist der Online-Editor zur einfachen Erstellung von übersichtlichen und optisch ansprechenden Plangrafiken. Mit wenigen Klicks visualisieren Sie Pläne für geänderte Haltestellen, kommunizieren die Situation bei Bauprojekten, gewährleisten die Kundenführung bei Events oder informieren über betriebliche Sonderfälle vor Ort. All dies auf Basis von laufend aktualisiertem Kartenmaterial.",
+      "title": "Situationspläne für den öffentlichen Verkehr"
+    },
     "try_free": "Try free"
+  },
+  "imprint": {
+    "metadata": {
+      "description": "",
+      "title": "Mapset Impressum"
+    }
   },
   "pricing": {
     "addon": "AddOn Share & Print",
