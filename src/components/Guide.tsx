@@ -55,7 +55,9 @@ export const Guide = () => {
   }, [guideContent]);
 
   const handleScroll = () => {
+    console.log();
     const ids = titles.map((item) => [item.label, ...item.sub_features]).flat();
+    console.log(ids);
     const distances = ids.map((label) => {
       const distance = document
         .getElementById(renderId(label))
@@ -70,10 +72,10 @@ export const Guide = () => {
     ids.forEach((id) => {
       if (id === ids[activeIdx]) {
         const activated = document.getElementById(renderScrollerId(id));
-        activated.classList.add("active");
+        activated.classList.add("text-blue-600");
       } else {
         const deactivated = document.getElementById(renderScrollerId(id));
-        deactivated.classList.remove("active");
+        deactivated.classList.remove("text-blue-600");
       }
     });
   };
