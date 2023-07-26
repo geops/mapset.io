@@ -1,10 +1,8 @@
 import { useI18n } from "./I18n";
 import { useState } from "react";
-import Image from "next/image";
 import H5 from "./ui/H5";
 import translations from "@/content/home/de.json";
 import ArrowDownIcon2 from "./images/ArrowDownIcon2";
-import MacOnlyLeft from "./ui/MacLeftToRight";
 import MacLeftToRight from "./ui/MacLeftToRight";
 import MacRightToLeft from "./ui/MacRightToLeft";
 import MacFull from "./ui/MacFull";

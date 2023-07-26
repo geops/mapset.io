@@ -5,7 +5,7 @@ import { useI18n } from "./I18n";
 import Link from "next/link";
 import MapsetLogo from "./MapsetLogo";
 import Header from "./Header";
-import Footer from "./Footer.tsx";
+import Footer from "./Footer";
 import H1 from "./ui/H1";
 import H2 from "./ui/H2";
 import H3 from "./ui/H3";
@@ -60,8 +60,8 @@ function Imprint() {
                   </div>
                 </p>
                 <p>
-                  <div>{t("imprint.managingDirector")}</div>
-                  <div>{t("imprint.commercialNumber")}</div>
+                  <div>{t("imprint.managing_director")}</div>
+                  <div>{t("imprint.commercial_number")}</div>
                   <div>UID: CHE-455.829.547 VAT</div>
                 </p>
                 <p>{t("imprint.disclaimer")}</p>
