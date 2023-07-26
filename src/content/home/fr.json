@@ -1,0 +1,182 @@
+{
+  "contact": {
+    "calledback": "I’d like to be called back",
+    "company": "Unternehmen",
+    "content": "Write us or have us callyouback.<br/>We're looking forward hearing you.",
+    "email": "E-Mail",
+    "interest": "Ich interessiere mich für",
+    "message": "Nachricht",
+    "message_placeholder": "Leave us a message ...",
+    "name": "Name",
+    "newsletter": "I’d like to sign up for the <a href='' class='hover:text-blue-600' style='text-decoration: underline;'>mapset Newsletter</a>",
+    "privacy_policy": "I have read and accept the <a href='https://geops.com/datenschutz' class='hover:text-blue-600 ' style='text-decoration: underline;'>privacy policy</a>.",
+    "required": "Pflichtfeld",
+    "section": "Contact",
+    "submit": "Anfrage senden",
+    "submitted": "Vielen Dank für Ihre Anfrage, wir melden uns umgehend zurück.",
+    "telephone": "Telefon",
+    "title": "Got curious?"
+  },
+  "features": {
+    "content": "mapset™ is the online editor for fast and easy creation of clear and visually appealing station maps and plans forcustomer orientation.",
+    "list": [
+      {
+        "content": "Create meaningful station maps quickly and easily. Public transport replacement services or construction sites can be depicted, as can the situation at major events that require the guidance of passengers. In just a few minutes, you can create a plan that provides targeted information and has a high graphic quality.",
+        "image": "/img/feature-1.png",
+        "image_height": 500,
+        "image_width": 593,
+        "title": "Create situational plans"
+      },
+      {
+        "content": "Supplement local information on the basis of existing, detailed maps. You can display routes, add stops with their platforms or highlight points of interest.",
+        "title": "Draw local information with ease"
+      },
+      {
+        "content": "Download your customized plans as image files and integrate them into your word processing or DTP software. To optimize the export, you can precisely specify the extent and resolution for printing.",
+        "title": "Export functions"
+      },
+      {
+        "content": "Your plans can not only be exported as static images, but can also be dynamically embedded into websites. Benefit from the dynamic integration of freely navigable maps on which users can select extent and scale themselves. Send links for your individual plans simply by e-mail or share them via social media.",
+        "image": "/img/feature-4.png",
+        "image_height": 500,
+        "image_width": 648,
+        "title": "Dynamic integration in online channels"
+      },
+      {
+        "content": "The basemap is optimized to show those details that are relevant for public transport. The map not only guarantees a graphically attractive presentation but is also updated weekly without your intervention.",
+        "title": "Basemap for public transport"
+      },
+      {
+        "content": "Download your customized plans as image files and integrate them into your word processing or DTP software. To optimize the export, you can precisely specify the extent and resolution for printing.",
+        "title": "Export functions2"
+      }
+    ],
+    "section": "features",
+    "title": "Bringing Clarity and Style to Public Transport Plans"
+  },
+  "home": {
+    "get_started": "Get started",
+    "main": {
+      "content": "Provide your customers with up-to-date and attractive information about public transport.",
+      "title": "Do it yourself plans"
+    },
+    "metadata": {
+      "description": "Sie möchten Ihren Kunden aktuelle und attraktive Informationen zum öffentlichen Verkehr zugänglich machen? mapset ist der Online-Editor zur einfachen Erstellung von übersichtlichen und optisch ansprechenden Plangrafiken. Mit wenigen Klicks visualisieren Sie Pläne für geänderte Haltestellen, kommunizieren die Situation bei Bauprojekten, gewährleisten die Kundenführung bei Events oder informieren über betriebliche Sonderfälle vor Ort. All dies auf Basis von laufend aktualisiertem Kartenmaterial.",
+      "title": "Situationspläne für den öffentlichen Verkehr"
+    },
+    "try_free": "Try free"
+  },
+  "imprint": {
+    "metadata": {
+      "description": "",
+      "title": "Mapset Impressum"
+    }
+  },
+  "pricing": {
+    "addon": "AddOn Share & Print",
+    "content": "An overview of annual costs and one-time setup fee",
+    "currency": {
+      "ch": "CHF",
+      "io": "€"
+    },
+    "details": "details ",
+    "details_one": "Prices refer to the total number of stops of a company, independent of the number of stops actually processed with mapset.",
+    "details_two": {
+      "ch": "In addition to the ongoing subscription fees, a setup fee of € 490.00 is charged at the start of the subscription. After a subscription interruption, the setup fee is due again when the subscription is renewed. For transport companies with up to 10 stops only the set-up fee is charged.<br/><br/> Within the scope of the subscriptions and the setup fee the configuration of users of mapset is included, provided the users can be identified via a uniform mail domain (e.g. james.meyer@ktuxy.com and :james.meyer@ktuxy.com). For the configuration of individual users, who are not identifiable via a domain, € 90.00 per user will be charged.",
+      "io": "In addition to the ongoing subscription fees, a setup fee of CHF 490.00 is charged at the start of the subscription. After a subscription interruption, the setup fee is due again when the subscription is renewed. For transport companies with up to 10 stops only the set-up fee is charged.<br/><br/> Within the scope of the subscriptions and the setup fee the configuration of users of mapset is included, provided the users can be identified via a uniform mail domain (e.g. james.meyer@ktuxy.com and :james.meyer@ktuxy.com). For the configuration of individual users, who are not identifiable via a domain, CHF 90.00 per user will be charged."
+    },
+    "mapset_features": "All mapset features",
+    "onetime": "One-time setup fee",
+    "products": [
+      {
+        "price": {
+          "ch": "0",
+          "io": "0"
+        },
+        "price_addon": {
+          "ch": "0",
+          "io": "0"
+        },
+        "price_onetime": {
+          "ch": "490",
+          "io": "490"
+        },
+        "railway_stations": "-",
+        "stops": "10",
+        "tier": "FREE"
+      },
+      {
+        "price": {
+          "ch": "2,700",
+          "io": "2.700"
+        },
+        "price_addon": {
+          "ch": "1,100",
+          "io": "1,100"
+        },
+        "price_onetime": {
+          "ch": "490",
+          "io": "490"
+        },
+        "railway_stations": "1-10",
+        "stops": "11 - 200",
+        "tier": "MINI"
+      },
+      {
+        "price": {
+          "ch": "5,900",
+          "io": "5.900"
+        },
+        "price_addon": {
+          "ch": "2,200",
+          "io": "2,200"
+        },
+        "price_onetime": {
+          "ch": "490",
+          "io": "490"
+        },
+        "railway_stations": "11-100",
+        "stops": "201 - 500",
+        "tier": "MIDI"
+      },
+      {
+        "price": {
+          "ch": "8,400",
+          "io": "8.400"
+        },
+        "price_addon": {
+          "ch": "2,800",
+          "io": "2,800"
+        },
+        "price_onetime": {
+          "ch": "490",
+          "io": "490"
+        },
+        "railway_stations": "101-200",
+        "stops": "501+",
+        "tier": "MAXI"
+      }
+    ],
+    "railway_stations": "Railway Stations",
+    "section": "pricing",
+    "stops": "Stops",
+    "title": "Plans For Transport Companies Of Any Size",
+    "year": "year"
+  },
+  "testimonials": {
+    "customers": [
+      {
+        "job": "VBZ",
+        "name": "Miro Bertozzi",
+        "testimonial": "Wir arbeiten gerne mit Mapset, weil das Individualisieren von Plänen ohne zusätzliche Grafik-Programme möglich ist. Das Tool hilft uns, eine einheitliche Kommunikation zu gewährleisten. Wir sind sehr zufrieden."
+      },
+      {
+        "job": "Project manager, Somewhere Bus",
+        "name": "Maurice Schoenberg",
+        "testimonial": "Non duis veniam deserunt tempor quis labore et nostrud laboris deserunt consequat aute adipisicing."
+      }
+    ],
+    "section": "Testimonials",
+    "title": "Who is using Mapset and why?"
+  }
+}

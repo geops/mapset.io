@@ -7,11 +7,14 @@ import Link from "next/link";
 import { Remarkable } from "remarkable";
 import Contact from "@/components/Contact";
 import WarningIcon from "./images/WarningIcon";
-import guide from "../content/guide/de.json";
+import translations from "../content/guide/de.json";
 import isSvg from "is-svg";
-import Footer from "./Footer";
+import Footer from "./Footer.tsx";
 import Header from "./Header";
 import MapsetLogo from "./MapsetLogo";
+import H2 from "./ui/H2";
+import DotIcon from "./images/ArrowDownIcon";
+import GuideH4 from "./GuideH4";
 
 const renderId = (label: string) => {
   if (label) {
@@ -28,9 +31,10 @@ const renderScrollerId = (label: string) => {
 };
 
 export const Guide = () => {
-  const { t, language: locale } = useI18n();
+  const { t, language } = useI18n();
+  const locale = language;
   const [icons, setIcons] = useState([]);
-  const guideContent = guide.features;
+  const guideContent = translations.guide.features;
 
   const titles = useMemo(() => {
     if (!guideContent) {
@@ -45,13 +49,13 @@ export const Guide = () => {
       }
       return {
         label: topic.label,
-        subFeatures: additionalHeadings,
+        sub_features: additionalHeadings,
       };
     });
   }, [guideContent]);
 
   const handleScroll = () => {
-    const ids = titles.map((item) => [item.label, ...item.subFeatures]).flat();
+    const ids = titles.map((item) => [item.label, ...item.sub_features]).flat();
     const distances = ids.map((label) => {
       const distance = document
         .getElementById(renderId(label))
@@ -78,16 +82,16 @@ export const Guide = () => {
     window.addEventListener("scroll", handleScroll);
     handleScroll();
     if (guideContent) {
-      const headingIconFeatures = guideContent.filter((f) => f.mapsetIcon);
+      const headingIconFeatures = guideContent.filter((f) => f.mapset_icon);
       const contentIconFeatures = guideContent
         .filter((f) => f.content)
         .map((f) => f.content)
         .flat()
-        .filter((f) => f.mapsetIcon);
+        .filter((f) => f.mapset_icon);
       const iconFeatures = [...headingIconFeatures, ...contentIconFeatures];
       Promise.all(
         iconFeatures.map((f) =>
-          fetch(`https://editor.mapset.io/static/icons/${f.mapsetIcon}.svg`),
+          fetch(`https://editor.mapset.io/static/icons/${f.mapset_icon}.svg`),
         ),
       )
         .then((responses) => {
@@ -103,7 +107,7 @@ export const Guide = () => {
           iconFeatures.forEach((g, idx) => {
             if (isSvg(dataArray[idx])) {
               icons.push({
-                key: g.mapsetIcon,
+                key: g.mapset_icon,
                 svg: dataArray[idx],
               });
             } else {
@@ -132,177 +136,159 @@ export const Guide = () => {
   });
 
   return (
-    <div>
-      <div className="bg-blue-600 text-white  z-[1000] flex sticky t-0 px-12 py-2">
-        <div className="container lg flex justify-between items-center">
-          <Link href={"/" + locale}>
-            <MapsetLogo />
-          </Link>
-          <Header></Header>
-        </div>
-      </div>
-      <div className="guide-scroller">
-        <div className="guide-scroller-scrollable">
+    <>
+      <div className="relative z-0">
+        {/* <div className="justify-center px-4 hidden md:flex">
+          <Header className="container lg  text-gray py-1 justify-end"></Header>
+        </div> */}
+        <header className="bg-blue-600 text-white  z-[1000] fixed w-full t-0 px-12 py-2 flex items-center">
+          <div className="container lg flex justify-between items-center">
+            <Link href={"/" + locale}>
+              <MapsetLogo />
+            </Link>
+            <Header
+              className="text-white"
+              linkClassName="hover:text-slate-300"
+              selectedClassName="text-slate-300"
+            ></Header>
+          </div>
+        </header>
+        {/* <div className="flex flex-col items-center relative px-4 pt-12 bg-gradient-to-r from-blue to-blue-light text-white z-10">
+          <div className="container lg">
+            <div className="flex justify-between mb-12">
+              <div></div>
+              <Link href={"/" + language}>
+                <MapsetLogo />
+              </Link>
+            </div>
+            <div className="flex justify-between overflow-hidden flex-wrap md:flex-nowrap">
+              <div className="flex flex-col gap-6 pb-12">
+                <H1>{t("guide.title")}</H1>
+                <p className="max-w-[646px] text-2xl">{t("guide.subtitle")}</p>
+              </div>
+            </div>
+          </div>
+        </div> */}
+        <nav className="fixed guide-scroller w-[220px] overflow-y-auto h-full pl-4 mt-[82px] ">
           {titles.map((feature) => {
             return (
               <>
-                <a
+                <Link
                   href={`#${renderId(feature.label)}`}
                   id={renderScrollerId(feature.label)}
                   title={feature.label}
+                  className="flex items-center gap-2 py-2 hover:text-blue-600"
                 >
-                  <svg
-                    className="listNavImage"
-                    width="12"
-                    height="12"
-                    viewBox="0 0 24 24"
-                  >
-                    <path fill="none" d="M24 24H0V0h24v24z" />
-                    <circle fill="currentColor" cx="12" cy="12" r="8" />
-                  </svg>
-                  <span>{feature.label}</span>
-                </a>
-                {feature.subFeatures ? (
-                  <div className="guide-scroller-sub">
-                    {feature.subFeatures.map((feat) => (
-                      <Link
-                        href={`#${renderId(feat)}`}
-                        id={renderScrollerId(feat)}
-                        key={renderScrollerId(feat)}
-                        title={feat}
-                      >
-                        <svg
-                          className="listNavImage"
-                          width="12"
-                          height="12"
-                          viewBox="0 0 24 24"
-                        >
-                          <path fill="none" d="M24 24H0V0h24v24z" />
-                          <circle fill="currentColor" cx="12" cy="12" r="8" />
-                        </svg>
-                        <span>{feat}</span>
-                      </Link>
-                    ))}
-                  </div>
-                ) : null}
+                  <DotIcon />
+                  {feature.label}
+                </Link>
+                <div className="guide-scroller-sub">
+                  {(feature.sub_features || []).map((feat) => (
+                    <Link
+                      href={`#${renderId(feat)}`}
+                      id={renderScrollerId(feat)}
+                      key={renderScrollerId(feat)}
+                      title={feat}
+                      className="flex items-center gap-2 py-2 pl-4 hover:text-blue-600"
+                    >
+                      <DotIcon />
+                      {feat}
+                    </Link>
+                  ))}
+                </div>
               </>
             );
           })}
-        </div>
-      </div>
-      <div style={{ position: "relative" }}>
-        <section className="guideSection" id="guide">
-          <div className="guideContent rightColumn">
-            <div className="container">
-              <h1 className="is-bolder guideHeader">{t("guide.Guide")}</h1>
-              <p>
-                {t("guide.Links-ch")}
-                <br />
-                <Link
-                  href="https://editor.mapset.ch/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  https://editor.mapset.ch/
-                </Link>
-              </p>
-              <p>
-                {t("guide.Links-io")}
-                <br />
-                <Link
-                  href="https://editor.mapset.io/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  https://editor.mapset.io/
-                </Link>
-              </p>
-              <div>
-                {guideContent &&
-                  guideContent.map((topic) => {
+        </nav>
+        <main className="pl-[220px] pt-[82px] container lg">
+          <div className="flex flex-col gap-4 p-24">
+            <H2 className="is-bolder guideHeader">{t("guide.title")}</H2>
+            <p>
+              {t("guide.links_ch")}
+              <br />
+              <Link
+                href="https://editor.mapset.ch/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-blue-600 hover:text-blue-900"
+              >
+                https://editor.mapset.ch/
+              </Link>
+            </p>
+            <p className="mb-12">
+              {t("guide.links_io")}
+              <br />
+              <Link
+                href="https://editor.mapset.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-blue-600 hover:text-blue-900"
+              >
+                https://editor.mapset.io/
+              </Link>
+            </p>
+            {(guideContent || []).map((topic) => {
+              const icon =
+                !!topic.mapset_icon &&
+                !!icons &&
+                icons.find((f) => f.key === topic.mapset_icon)?.svg;
+              const text = md.render(topic.label);
+              return (
+                <div id={renderId(topic.label)} key={renderId(topic.label)}>
+                  <GuideH4 icon={icon} text={text} />
+
+                  {topic.content.map((f) => {
+                    const icon =
+                      !!f.mapset_icon &&
+                      !!icons &&
+                      icons.find(
+                        (subFeature) => subFeature.key === f.mapset_icon,
+                      )?.svg;
+                    const text = md.render(f.heading);
+
                     return (
                       <div
-                        className="guideFeature"
-                        id={renderId(topic.label)}
-                        key={renderId(topic.label)}
+                        key={renderId(f.heading)}
+                        id={renderId(f.heading)}
+                        className="px-12 py-6"
                       >
-                        <h3 className="guideH3">
-                          {topic.mapsetIcon && icons ? (
-                            <div
-                              dangerouslySetInnerHTML={{
-                                __html: icons.find(
-                                  (f) => f.key === topic.mapsetIcon,
-                                )?.svg,
-                              }}
-                            />
-                          ) : null}
-                          <b
-                            dangerouslySetInnerHTML={{
-                              __html: md.render(topic.label),
-                            }}
-                          />
-                        </h3>
-                        {topic.content.map((f) => (
-                          <div
-                            key={renderId(f.heading)}
-                            className="guideContent"
-                            id={renderId(f.heading)}
-                          >
-                            {f.heading ? (
-                              <h4 className="guideH4">
-                                {f.mapsetIcon ? (
-                                  <div
-                                    dangerouslySetInnerHTML={{
-                                      __html: icons.find(
-                                        (subFeature) =>
-                                          subFeature.key === f.mapsetIcon,
-                                      )?.svg,
-                                    }}
-                                  />
-                                ) : null}
-                                <b
-                                  dangerouslySetInnerHTML={{
-                                    __html: md.render(f.heading),
-                                  }}
-                                />
-                              </h4>
-                            ) : null}
-                            {f.loginRestricted ? (
-                              <p className="loginRestricted">
-                                <WarningIcon />
-                                <i>{t("guide.login-restricted")}</i>
-                              </p>
-                            ) : null}
-                            {f.cdRestricted ? (
-                              <p className="cdRestricted">
-                                <WarningIcon />
-                                <i>{t("guide.cd-restricted")}</i>
-                              </p>
-                            ) : null}
-                            <span
-                              className="subContent"
-                              dangerouslySetInnerHTML={{
-                                __html: md.render(f.text),
-                              }}
-                            />
-                          </div>
-                        ))}
+                        <GuideH4 icon={icon} text={text} />
+
+                        {!!f.login_restricted && (
+                          <p className="flex gap-2 text-blue-600">
+                            <WarningIcon />
+                            <i>{t("guide.login_restricted")}</i>
+                          </p>
+                        )}
+
+                        {!!f.cd_restricted && (
+                          <p className="flex gap-2 text-blue-600">
+                            <WarningIcon />
+                            <i>{t("guide.cd_restricted")}</i>
+                          </p>
+                        )}
+                        <div
+                          className="pl-12"
+                          dangerouslySetInnerHTML={{
+                            __html: md.render(f.text),
+                          }}
+                        />
                       </div>
                     );
                   })}
-              </div>
-              <h1 className="is-bolder guideHeader">
-                {t("generic.Noch Fragen ?")}
-              </h1>
-              <section className="contactSection" id="contact">
-                <Contact region={process.env.NEXT_PUBLIC_DOMAIN} />
-              </section>
-            </div>
+                </div>
+              );
+            })}
+
+            <H2 className="is-bolder guideHeader">
+              {t("guide.more_questions")}
+            </H2>
+            <Contact region={process.env.NEXT_PUBLIC_DOMAIN} />
           </div>
-        </section>
+        </main>
+        <Footer className="z-[1000] relative" onlyPrivacyLink />
       </div>
-      <Footer className="z-[1000] relative" onlyPrivacyLink />
-    </div>
+    </>
   );
 };
 

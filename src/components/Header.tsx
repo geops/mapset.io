@@ -5,19 +5,33 @@ import UserManualLink from "./UserManualLink";
 import EllipseSeparator from "./ui/EllipseSeparator";
 import LoginLink from "./LoginLink";
 
-function Header({ className = "" }) {
+function Header({
+  className = "",
+  linkClassName = "hover:text-slate-700",
+  selectedClassName = "",
+}: {
+  className?: string;
+  linkClassName?: string;
+  selectedClassName?: string;
+}) {
   return (
-    <div
+    <nav
       className={`flex items-center text-normal text-slate-500 font-medium  ${className}`}
     >
-      <LanguageLinks linkClassName="hover:text-slate-700" />
+      <LanguageLinks
+        linkClassName={linkClassName}
+        selectedClassName={selectedClassName}
+      />
       <VerticalSeparator />
-      <DomainLinks linkClassName="hover:text-slate-700" />
+      <DomainLinks
+        linkClassName={linkClassName}
+        selectedClassName={selectedClassName}
+      />
       <VerticalSeparator />
-      <UserManualLink className="hover:text-slate-700" />
+      <UserManualLink className={linkClassName} />
       <EllipseSeparator />
-      <LoginLink className="hover:text-slate-700" />
-    </div>
+      <LoginLink className={linkClassName} />
+    </nav>
   );
 }
 

@@ -37,7 +37,7 @@ const Footer = ({ className = "", onlyPrivacyLink = false }) => {
           <PrivacyLink className="hover:font-bold" />
         </div>
         <div>
-          <MadeByGeops className="hover:font-bold" />
+          <MadeByGeops />
         </div>
       </div>
     </footer>

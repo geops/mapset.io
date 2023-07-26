@@ -1,10 +1,35 @@
-import de from "../content/index/de.json";
-import en from "../content/index/en.json";
-import fr from "../content/index/fr.json";
+import guideDe from "../content/guide/de.json";
+import homeDe from "../content/home/de.json";
+import imprintDe from "../content/imprint/de.json";
+
+import guideFr from "../content/guide/fr.json";
+import homeFr from "../content/home/fr.json";
+import imprintFr from "../content/imprint/fr.json";
+
+import guideEn from "../content/guide/en.json";
+import homeEn from "../content/home/en.json";
+import imprintEn from "../content/imprint/en.json";
+
 import rosetta from "rosetta";
 import { i18n as config } from "../../i18n-config";
 
-const translations = { de, en, fr };
+const translations = {
+  de: {
+    ...guideDe,
+    ...homeDe,
+    ...imprintDe,
+  },
+  en: {
+    ...guideEn,
+    ...homeEn,
+    ...imprintEn,
+  },
+  fr: {
+    ...guideFr,
+    ...homeFr,
+    ...imprintFr,
+  },
+};
 const locales = config.locales;
 
 export async function generateGenericMetadata(props) {

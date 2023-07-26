@@ -11,7 +11,7 @@ import ButtonBlue from "./ui/ButtonBlue";
 import ButtonWhite from "./ui/ButtonWhite";
 import ClientsLogos from "./ClientsLogos";
 import FeaturesSection from "./FeaturesSection";
-import translations from "@/content/index/de.json";
+import translations from "@/content/home/de.json";
 import PricingSection from "./PricingSection";
 import TestimonialsSection from "./TestimonialsSection";
 import NavSections from "./NavSections";

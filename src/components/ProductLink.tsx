@@ -16,7 +16,7 @@ function ProductLink({
       className={"relative " + (isProductPage ? "font-bold " : " ") + className}
       {...props}
     >
-      {t("generic.product")}
+      {t("product")}
       {children}
     </Link>
   );

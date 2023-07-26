@@ -8,7 +8,7 @@ function UserManualLink({ className = "" }) {
     <div className={`flex items-center gap-2 ${className}`}>
       <GuideIcon />
       <Link href={"/" + language + "/guide"}>
-        {t("guide.link-user-manual")}
+        {t("guide.link_user_manual")}
       </Link>
     </div>
   );

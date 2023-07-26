@@ -5,7 +5,7 @@ import { useI18n } from "./I18n";
 import Link from "next/link";
 import MapsetLogo from "./MapsetLogo";
 import Header from "./Header";
-import Footer from "./Footer";
+import Footer from "./Footer.tsx";
 import H1 from "./ui/H1";
 import H2 from "./ui/H2";
 import H3 from "./ui/H3";
@@ -47,7 +47,7 @@ function Imprint() {
           <div className="flex flex-col items-center relative px-4 py-12 z-10">
             <div className="container lg">
               <div className="flex flex-col gap-6">
-                <H2>{t("generic.Imprint")}</H2>
+                <H2>{t("imprint")}</H2>
                 <H3>geOps AG</H3>
                 <p>
                   <div>Solothurnerstrasse 235</div>

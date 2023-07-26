@@ -8,8 +8,8 @@ import DomainIcon from "./images/DomainIcon";
 const translationIds: {
   [index: string]: string;
 } = {
-  io: "generic.navbar.international",
-  ch: "generic.navbar.swiss",
+  io: "international",
+  ch: "swiss",
 };
 
 const domain = process.env.NEXT_PUBLIC_DOMAIN;

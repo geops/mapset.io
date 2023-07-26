@@ -1,7 +1,7 @@
 import Guide from "@/components/Guide";
-import "@/sass/all.sass";
 import type { Locale } from "@/../i18n-config.js";
 import generateGenericMetadata from "@/lib/generateGenericMetadata.js";
+import "./page.css";
 
 const domain = process.env.NEXT_PUBLIC_DOMAIN;
 

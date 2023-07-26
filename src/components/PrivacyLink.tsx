@@ -13,7 +13,7 @@ function PrivacyLink({
       className={"flex gap-1 items-center " + className}
       {...props}
     >
-      {t("generic.privacyPolicy")}
+      {t("privacy_policy")}
       <ExternalLinkIcon />
     </Link>
   );

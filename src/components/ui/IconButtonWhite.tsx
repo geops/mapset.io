@@ -12,7 +12,7 @@ function IconButton({
   }) {
   return (
     <Button
-      className={`flex items-center justify-center text-blue disabled:text-blue-light border-2 w-[56px] h-[56px] rounded-full ${className}`}
+      className={`flex items-center justify-center hover:bg-slate-300 text-blue-600 border-blue-600 disabled:text-blue-light disabled:border-blue-light border-2 w-[56px] h-[56px] rounded-full ${className}`}
       {...props}
     >
       {children}

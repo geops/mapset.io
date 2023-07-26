@@ -33,7 +33,7 @@ function LoginLink({ className = "" }) {
         }}
       >
         {!user ? <LoginIcon /> : <LogoutIcon />}
-        {user?.profile?.nickname || t("generic.navbar.Login")}
+        {user?.profile?.nickname || t("login")}
       </Link>
     </div>
   );

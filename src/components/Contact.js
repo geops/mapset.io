@@ -2,19 +2,18 @@ import React from "react";
 import { useI18n } from "./I18n";
 import TwitterIcon from "./images/TwitterIcon";
 import ExternalLinkIcon from "./images/ExternalLinkIcon";
-import Link from "next/link";
+import ButtonWhite from "./ui/ButtonWhite";
+import H2 from "./ui/H2";
 
 function Contact() {
   const { t } = useI18n();
   return (
-    <div className="contactForm">
-      <h1 className="is-bolder contactHeader section-title">
-        {t("content.contact header")}
-      </h1>
-      <p>{t("content.contact description")}</p>
-      <div className="contactButtons">
-        <Link
-          className="flex items-center gap-2"
+    <div>
+      <H2>{t("guide.contact.header")}</H2>
+      <p>{t("guide.contact.description")}</p>
+      <div className="flex gap-4 h-[35px]">
+        <ButtonWhite
+          variant="outlined"
           href={
             process.env.NEXT_PUBLIC_DOMAIN === "ch"
               ? "https://geops.sh/6E83A54F98A4E7532"
@@ -23,18 +22,18 @@ function Contact() {
           rel="noopener noreferrer"
           target="_blank"
         >
-          {t("generic.Newsletter")}
-        </Link>
-        <Link
-          className="flex items-center gap-2"
+          {t("newsletter")}
+        </ButtonWhite>
+        <ButtonWhite
+          variant="outlined"
           href={`https://twitter.com/mapset${process.env.NEXT_PUBLIC_DOMAIN}`}
           rel="noopener noreferrer"
           target="_blank"
         >
           <TwitterIcon />
-          {t("generic.Besuchen Sie uns auf Twitter")}
+          {t("guide.visit_our_twitter")}
           <ExternalLinkIcon />
-        </Link>
+        </ButtonWhite>
       </div>
     </div>
   );
