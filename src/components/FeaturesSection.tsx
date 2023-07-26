@@ -4,6 +4,10 @@ import Image from "next/image";
 import H5 from "./ui/H5";
 import translations from "@/content/index/de.json";
 import ArrowDownIcon2 from "./images/ArrowDownIcon2";
+import MacOnlyLeft from "./ui/MacLeftToRight";
+import MacLeftToRight from "./ui/MacLeftToRight";
+import MacRightToLeft from "./ui/MacRightToLeft";
+import MacFull from "./ui/MacFull";
 
 export type MapsetFeature = {
   title: string;
@@ -24,10 +28,8 @@ function FeaturesSection({
   // @ts-ignore
   const features: MapsetFeature[] = translations.features.list;
   const { t } = useI18n();
+  const [selectedIndex, setSelectedIndex] = useState(indexStart);
   const [selected, setSelected] = useState(features[indexStart]);
-  const imgSrc = reverse
-    ? "/img/mac-book-pro-16-left.png"
-    : "/img/mac-book-pro-16-right.png";
   const macFull = "/img/mac-book-pro-16.png";
 
   return (
@@ -56,6 +58,7 @@ function FeaturesSection({
                 }
                 onClick={() => {
                   setSelected(feature);
+                  setSelectedIndex(idx);
                 }}
               >
                 <H5
@@ -74,19 +77,14 @@ function FeaturesSection({
                   </div>
                 </H5>
 
-                <div
+                <MacFull
                   className={`py-6 ${
                     isUnselected ? "hidden" : "flex justify-center md:hidden"
                   }`}
-                >
-                  <Image
-                    src={macFull}
-                    width="375"
-                    height="239"
-                    alt={"mac"}
-                    className="w-[400px]"
-                  ></Image>
-                </div>
+                  src={t(`features.list.${selectedIndex}.image`)}
+                  width={t(`features.list.${selectedIndex}.image_width`)}
+                  height={t(`features.list.${selectedIndex}.image_height`)}
+                ></MacFull>
                 <p
                   className={
                     isUnselected ? "hidden text-gray" : "text-blue-900"
@@ -99,15 +97,21 @@ function FeaturesSection({
           );
         })}
       </div>
-      <div className="hidden md:block">
-        <Image
-          src={imgSrc}
-          width="679"
-          height="557"
-          alt={"mac"}
-          className="h-[100%] w-[800px]"
-        ></Image>
-      </div>
+      {reverse ? (
+        <MacLeftToRight
+          className="hidden md:block"
+          src={t(`features.list.${selectedIndex}.image`)}
+          width={t(`features.list.${selectedIndex}.image_width`)}
+          height={t(`features.list.${selectedIndex}.image_height`)}
+        ></MacLeftToRight>
+      ) : (
+        <MacRightToLeft
+          className="hidden md:block"
+          src={t(`features.list.${selectedIndex}.image`)}
+          width={t(`features.list.${selectedIndex}.image_width`)}
+          height={t(`features.list.${selectedIndex}.image_height`)}
+        ></MacRightToLeft>
+      )}
     </div>
   );
 }

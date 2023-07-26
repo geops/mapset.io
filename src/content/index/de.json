@@ -36,6 +36,9 @@
     "list": [
       {
         "content": "Create meaningful station maps quickly and easily. Public transport replacement services or construction sites can be depicted, as can the situation at major events that require the guidance of passengers. In just a few minutes, you can create a plan that provides targeted information and has a high graphic quality.",
+        "image": "/img/feature-1.png",
+        "image_height": 500,
+        "image_width": 593,
         "title": "Create situational plans"
       },
       {
@@ -48,6 +51,9 @@
       },
       {
         "content": "Your plans can not only be exported as static images, but can also be dynamically embedded into websites. Benefit from the dynamic integration of freely navigable maps on which users can select extent and scale themselves. Send links for your individual plans simply by e-mail or share them via social media.",
+        "image": "/img/feature-4.png",
+        "image_height": 500,
+        "image_width": 648,
         "title": "Dynamic integration in online channels"
       },
       {
