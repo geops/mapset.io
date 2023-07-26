@@ -39,28 +39,34 @@ function Imprint() {
               </div>
             </div>
           </div>
-          <div className="container lg flex flex-col py-24 gap-24">
-            <License />
-            <div className="flex flex-col gap-6">
-              <H2>{t("generic.Imprint")}</H2>
-              <H3>geOps AG</H3>
-              <p>
-                <div>Solothurnerstrasse 235</div>
-                <div>CH-4600 Olten</div>
-                <div>{t("imprint.phone")} +41 61 588 05 05</div>
-                <div>
-                  {t("imprint.mail")}
-                  &nbsp;
-                  <Link href={"mailto:info@geops.ch"}>info@geops.ch</Link>
-                </div>
-              </p>
-              <p>
-                <div>{t("imprint.managingDirector")}</div>
-                <div>{t("imprint.commercialNumber")}</div>
-                <div>UID: CHE-455.829.547 VAT</div>
-              </p>
-              <p>{t("imprint.disclaimer")}</p>
-              <p>{t("imprint.responsible")}</p>
+          <div className="flex flex-col items-center relative px-4 pt-12 z-10">
+            <div className="container lg">
+              <License />
+            </div>
+          </div>
+          <div className="flex flex-col items-center relative px-4 py-12 z-10">
+            <div className="container lg">
+              <div className="flex flex-col gap-6">
+                <H2>{t("generic.Imprint")}</H2>
+                <H3>geOps AG</H3>
+                <p>
+                  <div>Solothurnerstrasse 235</div>
+                  <div>CH-4600 Olten</div>
+                  <div>{t("imprint.phone")} +41 61 588 05 05</div>
+                  <div>
+                    {t("imprint.mail")}
+                    &nbsp;
+                    <Link href={"mailto:info@geops.ch"}>info@geops.ch</Link>
+                  </div>
+                </p>
+                <p>
+                  <div>{t("imprint.managingDirector")}</div>
+                  <div>{t("imprint.commercialNumber")}</div>
+                  <div>UID: CHE-455.829.547 VAT</div>
+                </p>
+                <p>{t("imprint.disclaimer")}</p>
+                <p>{t("imprint.responsible")}</p>
+              </div>
             </div>
           </div>
         </main>
