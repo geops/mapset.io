@@ -13,7 +13,7 @@ import Footer from "./Footer.tsx";
 import Header from "./Header";
 import MapsetLogo from "./MapsetLogo";
 import H2 from "./ui/H2";
-import DotIcon from "./images/ArrowDownIcon";
+import DotIcon from "./images/DotIcon";
 import GuideH4 from "./GuideH4";
 
 const renderId = (label: string) => {

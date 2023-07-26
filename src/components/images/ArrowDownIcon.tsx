@@ -1,9 +1,15 @@
-function DotIcon() {
+function ArrowDownIcon({ className = "" }) {
   return (
-    <svg width="12" height="12" viewBox="0 0 24 24" className="min-w-[12px]">
-      <path fill="none" d="M24 24H0V0h24v24z" />
-      <circle fill="currentColor" cx="12" cy="12" r="8" />
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="10"
+      height="8"
+      viewBox="0 0 10 8"
+      fill="none"
+      className={className}
+    >
+      <path d="M9 2L5 6L1 2" stroke="currentColor" strokeWidth="2" />
     </svg>
   );
 }
-export default DotIcon;
+export default ArrowDownIcon;

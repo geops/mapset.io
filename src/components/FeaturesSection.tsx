@@ -28,7 +28,6 @@ function FeaturesSection({
   const { t } = useI18n();
   const [selectedIndex, setSelectedIndex] = useState(indexStart);
   const [selected, setSelected] = useState(features[indexStart]);
-  const macFull = "/img/mac-book-pro-16.png";
 
   return (
     <div
