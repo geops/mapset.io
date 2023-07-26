@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: Hero New;
-  src: url(../../fonts/Hero\ New\ Regular.woff);
-}
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
