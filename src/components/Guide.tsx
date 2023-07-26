@@ -133,7 +133,7 @@ export const Guide = () => {
 
   return (
     <div>
-      <div className="bg-blue text-white  z-[1000] flex sticky t-0 px-12 py-2">
+      <div className="bg-blue-600 text-white  z-[1000] flex sticky t-0 px-12 py-2">
         <div className="container lg flex justify-between items-center">
           <Link href={"/" + locale}>
             <MapsetLogo />

@@ -1,3 +1,6 @@
+import colors from "tailwindcss/colors";
+// import fonts from "tailwindcss/fonts";
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -6,13 +9,24 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      // ...fonts,
+      hero: "inherit", //Hero New",
+    },
     colors: {
+      slate: colors.slate,
       gray: {
+        ...colors.gray,
         light: "#E2E8F0",
         DEFAULT: "#64748B",
       },
-      white: "white",
+      white: colors.white,
       blue: {
+        500: "#126392",
+        600: "#1789C9", // default
+        700: "#1974BF", // dark
+        800: "#1668AB", // darke
+        900: "#154665", // darker
         lighter: "#F8FAFC",
         lighte: "#D2E9F9",
         light: "#63B3F4",

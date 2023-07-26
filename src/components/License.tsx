@@ -15,11 +15,11 @@ function License() {
 
   return (
     <div className="flex flex-col gap-6">
-      <H2 className="text-blue">{t("generic.Lizenz")}</H2>
+      <H2>{t("generic.Lizenz")}</H2>
       {translations.license.map(({ heading, text }, id) => {
         return (
           <div key={id}>
-            <H3 className="text-blue">
+            <H3>
               <span
                 dangerouslySetInnerHTML={{
                   __html: md.render(heading),

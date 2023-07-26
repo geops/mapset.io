@@ -7,14 +7,16 @@ import LoginLink from "./LoginLink";
 
 function Header({ className = "" }) {
   return (
-    <div className={`flex items-center text-normal font-medium  ${className}`}>
-      <LanguageLinks />
+    <div
+      className={`flex items-center text-normal text-slate-500 font-medium  ${className}`}
+    >
+      <LanguageLinks linkClassName="hover:text-slate-700" />
       <VerticalSeparator />
-      <DomainLinks />
+      <DomainLinks linkClassName="hover:text-slate-700" />
       <VerticalSeparator />
-      <UserManualLink />
+      <UserManualLink className="hover:text-slate-700" />
       <EllipseSeparator />
-      <LoginLink />
+      <LoginLink className="hover:text-slate-700" />
     </div>
   );
 }

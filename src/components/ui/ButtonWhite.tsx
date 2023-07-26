@@ -15,7 +15,7 @@ function ButtonWhite({
   const contained = "";
   const outlined = " border-[3px]";
   const classNam =
-    "flex items-center uppercase px-8 py-4 bg-white text-blue font-bold rounded-[42px] gap-2 " +
+    "flex items-center uppercase px-8 py-4 font-hero bg-white hover:bg-slate-300 text-blue-600 text-xl font-bold rounded-[42px] gap-2 " +
     className +
     (variant === "contained" ? contained : outlined);
 

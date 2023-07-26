@@ -25,19 +25,19 @@ const Footer = ({ className = "", onlyPrivacyLink = false }) => {
       <div className="container lg flex flex-col-reverse items-end md:flex-row md:items-center justify-between py-8">
         <div className="flex  flex-col items-start w-full md:flex-row md:items-center md:w-auto gap-4 text-s text-normal font-normal ">
           {!onlyPrivacyLink && (
-            <ProductLink>
+            <ProductLink className="hover:font-bold">
               {!isImprintPage && <Arrow className="hidden md:block" />}
             </ProductLink>
           )}
           {!onlyPrivacyLink && (
-            <ImprintLink>
+            <ImprintLink className="hover:font-bold">
               {isImprintPage && <Arrow className="hidden md:block" />}
             </ImprintLink>
           )}
-          <PrivacyLink />
+          <PrivacyLink className="hover:font-bold" />
         </div>
         <div>
-          <MadeByGeops />
+          <MadeByGeops className="hover:font-bold" />
         </div>
       </div>
     </footer>

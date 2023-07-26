@@ -12,7 +12,7 @@ function IconButtonBlue({
   }) {
   return (
     <Button
-      className={`flex items-center justify-center bg-blue text-white disabled:bg-blue-light w-[56px] h-[56px] rounded-full ${className}`}
+      className={`flex items-center justify-center bg-blue-600 text-white disabled:bg-blue-light w-[56px] h-[56px] rounded-full ${className}`}
       {...props}
     >
       {children}

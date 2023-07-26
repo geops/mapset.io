@@ -3,7 +3,6 @@ import translations from "@/content/index/de.json";
 import ArrowLeftIcon from "./images/ArrowLeftIcon";
 import ArrowRightIcon from "./images/ArrowRightIcon";
 import IconButtonWhite from "./ui/IconButtonWhite";
-import H4 from "./ui/H4";
 import OurCustomer from "./images/OurCustomerImage";
 import { useI18n } from "./I18n";
 
@@ -41,19 +40,21 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
         {items.map((item, idx) => {
           const isUnselected = selected !== idx;
           return (
-            <div key={item.name} hidden={isUnselected}>
-              <H4 className="normal-case leading-normal font-medium text-3xl">
-                “{t("testimonials.customers." + idx + ".testimonial")}“
-              </H4>
-            </div>
+            <p
+              key={item.name}
+              hidden={isUnselected}
+              className="font-hero text-3xl text-blue-900 font-medium -tracking-[0.64px] leading-normal"
+            >
+              “{t("testimonials.customers." + idx + ".testimonial")}”
+            </p>
           );
         })}
         <div className="flex gap-2 justify-between">
           <div className="flex flex-col gap-1 ">
-            <p className="text-darker font-semibold text-lg">
+            <p className="text-lg text-blue-900 font-semibold leading-7">
               {t("testimonials.customers." + selected + ".name")}
             </p>
-            <p className="text-gray">
+            <p className="text-slate-500">
               {t("testimonials.customers." + selected + ".job")}
             </p>
           </div>

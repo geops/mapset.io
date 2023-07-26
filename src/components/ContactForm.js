@@ -23,7 +23,9 @@ const ContactForm = ({ className = "" }) => {
       .catch((error) => console.error(error));
   }, []);
 
-  const labelClassName = "text-sm";
+  const labelClassName = "text-blue-900 text-sm font-medium pb-2 leading-5";
+  const checkboxLabelClassName =
+    "text-blue-900 text-normal font-normal leading-6";
   const parentCheckboxClassName = "flex items-center gap-2";
 
   return (
@@ -32,7 +34,7 @@ const ContactForm = ({ className = "" }) => {
       method="post"
       name="contact"
       onSubmit={handleSubmit}
-      className={`flex flex-col gap-6 ${className}`}
+      className={`flex flex-col gap-6 ${className} w-[350px]`}
     >
       {submitted ? (
         <p>{t("contact.submitted")}</p>
@@ -42,35 +44,46 @@ const ContactForm = ({ className = "" }) => {
             <label className={"block " + labelClassName} htmlFor="name">
               {t("contact.name")}
             </label>
-            <Input name="name" />
+            <Input name="name" placeholder="Jane Doe" />
           </div>
 
           <div>
             <label className={"block " + labelClassName} htmlFor="company">
               {t("contact.company")}
             </label>
-            <Input name="company" />
-          </div>
-
-          <div>
-            <label className={"block " + labelClassName} htmlFor="email">
-              {t("contact.email")}
-            </label>
-            <Input name="email" type="email" required />
+            <Input name="company" placeholder="SBB CFF FFS" />
           </div>
 
           <div>
             <label className={"block " + labelClassName} htmlFor="interest">
               {t("contact.interest")}
             </label>
-            <Input type="select" name="interest">
+            <Input
+              type="select"
+              name="interest"
+              className="leading-6 text-blue-900"
+            >
               <option value="mapset free">mapset free</option>
               <option value="mapset mini">mapset mini</option>
               <option value="mapset midi">mapset midi</option>
-              <option value="mapset maxi" default>
+              <option value="mapset maxi" selected>
                 mapset maxi
               </option>
             </Input>
+          </div>
+
+          <div>
+            <label className={"block " + labelClassName} htmlFor="email">
+              {t("contact.email")}
+              {/* The hover is there so we can use it in translations for privacy policy and newsletter link*/}
+              <span className="text-blue-600 hover:text-blue-600"> *</span>
+            </label>
+            <Input
+              name="email"
+              type="email"
+              required
+              placeholder="you@company.com"
+            />
           </div>
 
           <div>
@@ -78,13 +91,18 @@ const ContactForm = ({ className = "" }) => {
               {t("contact.message")}
             </label>
 
-            <Input name="message" type="textarea" rows={5} />
+            <Input
+              name="message"
+              type="textarea"
+              rows={5}
+              placeholder={t("contact.message_placeholder")}
+            />
           </div>
 
           <div className={parentCheckboxClassName}>
             <Input name="called-back" type="checkbox" />
             <label
-              className={labelClassName}
+              className={checkboxLabelClassName}
               htmlFor="called-back"
               dangerouslySetInnerHTML={{
                 __html: t("contact.calledback"),
@@ -99,13 +117,13 @@ const ContactForm = ({ className = "" }) => {
             >
               {t("contact.telephone")}
             </label>
-            <Input name="telephone" type="tel" />
+            <Input name="telephone" type="tel" placeholder="+41 1234 56789" />
           </div>
 
           <div className={parentCheckboxClassName}>
             <Input name="newsletter" type="checkbox" />
             <label
-              className={labelClassName}
+              className={checkboxLabelClassName}
               htmlFor="newsletter"
               dangerouslySetInnerHTML={{
                 __html: t("contact.newsletter"),
@@ -115,18 +133,22 @@ const ContactForm = ({ className = "" }) => {
 
           <div className={parentCheckboxClassName}>
             <Input name="privacy" type="checkbox" required />
-            <label
-              className={labelClassName}
-              htmlFor="privacy"
-              dangerouslySetInnerHTML={{
-                __html: t("contact.privacyPolicy"),
-              }}
-            ></label>
+            <label className={checkboxLabelClassName} htmlFor="privacy">
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: t("contact.privacy_policy"),
+                }}
+              ></span>
+              <span className="text-blue-600"> *</span>
+            </label>
           </div>
-          <p>{t("contact.required")}</p>
-          <div>
-            <ButtonBlue type="submit">{t("contact.submit")}</ButtonBlue>
-          </div>
+          <p className="text-slate-500 leading-6">
+            <span className="text-blue-600">* </span>
+            {t("contact.required")}
+          </p>
+          <ButtonBlue type="submit" className="w-full justify-center">
+            {t("contact.submit")}
+          </ButtonBlue>
         </>
       )}
     </form>

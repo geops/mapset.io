@@ -8,7 +8,7 @@ function Input({
   React.TextareaHTMLAttributes<HTMLTextAreaElement> &
   React.SelectHTMLAttributes<HTMLSelectElement>) {
   let className =
-    "rounded-[8px] border-[1px] border-[#D0D5DD] px-[14px] py-2 shadow text-[#667085] bg-white w-full";
+    "rounded-[8px] border-[1px] border-gray-300 px-[14px] py-2 shadow  bg-white w-full text-blue-900 font-medium leading-6";
 
   if (type === "select") {
     return (

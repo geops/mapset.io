@@ -9,7 +9,7 @@ function H1({
 }) {
   return (
     <h1
-      className={`text-8xl leading-[1.05em] font-black uppercase ${className}`}
+      className={`text-8xl leading-[1.05em] font-hero font-black uppercase max-w-[541px] ${className}`}
     >
       {children}
     </h1>

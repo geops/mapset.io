@@ -4,8 +4,7 @@ import CheckIcon from "./images/CheckIcon";
 import { useI18n } from "./I18n";
 import Price from "./Price";
 import ButtonBlue from "./ui/ButtonBlue";
-import H3 from "./ui/H3";
-import ButtonWhite from "./ui/ButtonWhite";
+import Button from "./ui/Button";
 
 export type Product = {
   tier: string;
@@ -30,21 +29,24 @@ function PricingSection({ products = [] }: { products: Product[] }) {
   const { t } = useI18n();
   const [open, setOpen] = useState<boolean>(false);
   const trClassName = "even:bg-white odd:bg-blue-lighter";
-  const firstColumnClassName = "text-left text-blue-darker px-4";
-  const tdClassName = "text-center p-6";
+  const firstColumnClassName =
+    "text-left text-sm text-blue-900 font-semibold leading-5 p-6";
+  const tdClassName =
+    "text-center text-blue-900 text-sm font-normal leading-5 px-2 py-6";
   return (
     <>
-      <div className="overflow-x-auto">
+      <div className="overflow-x-auto mb-5">
         <table className="w-full min-w[800px]">
           <thead>
             <tr>
               <th></th>
               {products.map((product, idx) => {
                 return (
-                  <th key={product.tier} className="py-6">
-                    <H3 className="text-blue text-3xl">
-                      {t(`pricing.products.${idx}.tier`)}
-                    </H3>
+                  <th
+                    key={product.tier}
+                    className="pb-6 uppercase font-hero text-blue-600 text-3xl font-bold -tracking-[0.64px] leading-[60px]"
+                  >
+                    {t(`pricing.products.${idx}.tier`)}
                   </th>
                 );
               })}
@@ -89,7 +91,10 @@ function PricingSection({ products = [] }: { products: Product[] }) {
                     <Price>
                       {t(`pricing.products.${idx}.price.${domain}`)}
                     </Price>{" "}
-                    <span className="text-gray"> / {t("pricing.year")}</span>
+                    <span className="text-slate-400">
+                      {" "}
+                      / {t("pricing.year")}
+                    </span>
                   </td>
                 );
               })}
@@ -102,7 +107,9 @@ function PricingSection({ products = [] }: { products: Product[] }) {
                     <Price>
                       {t(`pricing.products.${idx}.price_addon.${domain}`)}
                     </Price>{" "}
-                    <span className="text-gray">/ {t("pricing.year")}</span>
+                    <span className="text-slate-400">
+                      / {t("pricing.year")}
+                    </span>
                   </td>
                 );
               })}
@@ -140,26 +147,27 @@ function PricingSection({ products = [] }: { products: Product[] }) {
         </table>
       </div>
       <div>
-        <ButtonWhite
-          className="border-none !px-4 text-blue-darker capitalize"
+        <Button
+          className="flex items-center gap-2 px-4 py-2 pl-0 text-blue-900 text-sm font-bold capitalize leading-[160%]"
           onClick={() => setOpen(!open)}
         >
           <ArrowDownIcon
             className={`transition-rotate ${open ? "rotate-0" : "-rotate-90"}`}
           />
+          {t("pricing.details")}
+          <span className="text-blue-600">*/**</span>
+        </Button>
+        <div
+          hidden={!open}
+          className="text-slate-500 text-sm font-normal leading-[160%]"
+        >
           <p>
-            {t("pricing.details")}
-            <span className="text-blue">*/**</span>
-          </p>
-        </ButtonWhite>
-        <div hidden={!open} className="text-gray px-4">
-          <p>
-            <span className="text-blue">* </span>
+            <span className="text-blue-600">* </span>
             {t("pricing.details_one")}
           </p>
           <br />
           <p>
-            <span className="text-blue">** </span>
+            <span className="text-blue-600">** </span>
             <span
               dangerouslySetInnerHTML={{
                 __html: t("pricing.details_two." + domain),

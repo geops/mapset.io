@@ -52,7 +52,7 @@ function FeaturesSection({
                   "px-6 py-4 md:border-l-4  text-left " +
                   (isUnselected
                     ? "md:border-gray-light"
-                    : "bg-blue-lighter md:!border-blue")
+                    : "bg-blue-lighter md:!border-blue-600")
                 }
                 onClick={() => {
                   setSelected(feature);
@@ -66,9 +66,9 @@ function FeaturesSection({
                 >
                   {t(`features.list.${idx}.title`)}
                   <div
-                    className={`bg-blue flex items-center justify-center rounded-full transition-rotate ${
+                    className={`bg-blue-600 flex items-center justify-center rounded-full transition-rotate ${
                       isUnselected ? "rotate-0" : "rotate-180"
-                    } md:hidden w-8 h-8`}
+                    } min-w-[32px] w-8 min-h-[32px] h-8`}
                   >
                     <ArrowDownIcon2 />
                   </div>
@@ -87,7 +87,11 @@ function FeaturesSection({
                     className="w-[400px]"
                   ></Image>
                 </div>
-                <p className={isUnselected ? "hidden md:block text-gray" : ""}>
+                <p
+                  className={
+                    isUnselected ? "hidden text-gray" : "text-blue-900"
+                  }
+                >
                   {t(`features.list.${idx}.content`)}
                 </p>
               </button>

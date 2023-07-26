@@ -31,7 +31,7 @@ function Imprint() {
               </div>
               <div className="flex justify-between overflow-hidden flex-wrap md:flex-nowrap">
                 <div className="flex flex-col gap-6 pb-12">
-                  <H1 className="max-w-[541px]">{t("imprint.title")}</H1>
+                  <H1>{t("imprint.title")}</H1>
                   <p className="max-w-[646px] text-2xl">
                     {t("imprint.subtitle")}
                   </p>
@@ -42,8 +42,8 @@ function Imprint() {
           <div className="container lg flex flex-col py-24 gap-24">
             <License />
             <div className="flex flex-col gap-6">
-              <H2 className="text-blue">{t("generic.Imprint")}</H2>
-              <H3 className="text-blue">geOps AG</H3>
+              <H2>{t("generic.Imprint")}</H2>
+              <H3>geOps AG</H3>
               <p>
                 <div>Solothurnerstrasse 235</div>
                 <div>CH-4600 Olten</div>

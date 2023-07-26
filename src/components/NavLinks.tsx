@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { useI18n } from "./I18n";
-import H4 from "./ui/H4";
 
 const selectedClassName = "bg-blue-darke";
 const ids = ["features", "pricing", "testimonials", "contact"];
@@ -27,7 +26,7 @@ function NavLinks({
             } ${className}`}
             {...props}
           >
-            <H4 className={`text-white leading-none `}>{t(`${id}.section`)}</H4>
+            {t(`${id}.section`)}
           </Link>
         );
       })}

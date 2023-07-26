@@ -8,9 +8,11 @@ function H3({
   className?: string;
 }) {
   return (
-    <h2 className={`text-2xl leading-[1.25em] font-bold ${className}`}>
+    <h3
+      className={`text-blue-600 text-2xl leading-[1.25em] font-bold ${className}`}
+    >
       {children}
-    </h2>
+    </h3>
   );
 }
 export default H3;

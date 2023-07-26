@@ -8,7 +8,9 @@ function H2({
   className?: string;
 }) {
   return (
-    <h2 className={`text-7xl leading-[1.15em] font-extrabold ${className}`}>
+    <h2
+      className={`font-hero text-7xl leading-[1.15em] font-extrabold text-blue -tracking-[1.34px] pb-5 ${className}`}
+    >
       {children}
     </h2>
   );

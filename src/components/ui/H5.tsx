@@ -9,7 +9,10 @@ function H5({
   className?: string;
 }) {
   return (
-    <h5 className={`text-2xl leading-tight font-bold ${className}`} {...props}>
+    <h5
+      className={`font-hero text-2xl leading-tight font-bold pb-2 ${className}`}
+      {...props}
+    >
       {children}
     </h5>
   );

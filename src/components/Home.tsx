@@ -18,9 +18,10 @@ import NavSections from "./NavSections";
 import ContactSection from "./ContactSection";
 import Menu from "./Menu";
 import OurCustomer from "./images/OurCustomerImage";
-import Contact from "./images/ContactImage";
+import ContactImage from "./images/ContactImage";
 
 const region = process.env.NEXT_PUBLIC_DOMAIN;
+const pClassName = "text-xl text-blue-900 leading-[30px] max-w-[768px]";
 
 function Home() {
   const { t } = useI18n();
@@ -28,10 +29,10 @@ function Home() {
     <>
       <div className="relative z-0">
         <div className="justify-center px-4 hidden md:flex">
-          <Header className="container lg  text-gray py-1 justify-end"></Header>
+          <Header className="container lg  py-1 justify-end"></Header>
         </div>
         <main className="flex flex-col">
-          <div className="flex flex-col items-center relative px-4 pt-12 bg-gradient-to-r from-blue to-blue-light text-white z-10">
+          <div className="flex flex-col items-center relative px-4 pt-12 bg-gradient-to-r from-blue-600 to-blue-light text-white z-10">
             <div className="container lg">
               <div className="flex justify-between mb-12">
                 <div>
@@ -43,8 +44,8 @@ function Home() {
               </div>
               <div className="flex justify-between overflow-hidden flex-wrap lg:flex-nowrap">
                 <div className="flex flex-col gap-6 pb-12">
-                  <H1 className="max-w-[541px]">{t("home.main.title")}</H1>
-                  <p className="max-w-[646px] text-2xl">
+                  <H1>{t("home.main.title")}</H1>
+                  <p className="max-w-[646px] text-2xl font-medium leading-[160%]">
                     {t("home.main.content")}
                   </p>
                   <div className="flex gap-4 mt-6">
@@ -75,12 +76,9 @@ function Home() {
             <div className="container lg ">
               <div className="px-4 md:px-0 pb-12">
                 <H4>{t("features.section")}</H4>
-                <H2 className="text-blue max-w-[900px]">
-                  {t("features.title")}
-                </H2>
-                <p className="pt-4 pb-4">{t("features.content")}</p>
+                <H2 className={`max-w-[900px]`}>{t("features.title")}</H2>
+                <p className={pClassName}>{t("features.content")}</p>
               </div>
-
               <div className="md:hidden">
                 <FeaturesSection />
               </div>
@@ -105,17 +103,10 @@ function Home() {
             <div className="container lg">
               <div className="pb-12">
                 <H4>{t("pricing.section")}</H4>
-                <H2 className="text-blue max-w-[800px]">
-                  {t("pricing.title")}
-                </H2>
-                <p className="pt-4 pb-4">{t("pricing.content")}</p>
+                <H2 className={`max-w-[800px]`}>{t("pricing.title")}</H2>
+                <p className={pClassName}>{t("pricing.content")}</p>
               </div>
               <PricingSection products={translations.pricing.products} />
-            </div>
-          </div>
-          <div className="flex flex-col items-center relative px-4 py-12 z-0">
-            <div className="container lg">
-              <ClientsLogos />
             </div>
           </div>
           <div
@@ -128,11 +119,14 @@ function Home() {
               </div>
               <div className="pb-12">
                 <H4>{t("testimonials.section")}</H4>
-                <H2 className="text-blue max-w-[800px]">
-                  {t("testimonials.title")}
-                </H2>
+                <H2 className={`max-w-[800px]`}>{t("testimonials.title")}</H2>
               </div>
               <TestimonialsSection />
+            </div>
+          </div>
+          <div className="flex flex-col items-center relative px-4 py-12 z-0">
+            <div className="container lg">
+              <ClientsLogos />
             </div>
           </div>
           <div
@@ -141,12 +135,17 @@ function Home() {
           >
             <div className="container lg">
               <div className="flex lg:hidden flex-1 items-center justify-center pb-12">
-                <Contact />
+                <ContactImage />
               </div>
               <div className="pb-12">
                 <H4>{t("contact.section")}</H4>
-                <H2 className="text-blue">{t("generic.gotcurious")}</H2>
-                <p className="pt-4 pb-4">{t("contact.content")}</p>
+                <H2>{t("contact.title")}</H2>
+                <p
+                  className={pClassName}
+                  dangerouslySetInnerHTML={{
+                    __html: t("contact.content"),
+                  }}
+                ></p>
               </div>
               <ContactSection />
             </div>

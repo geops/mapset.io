@@ -6,7 +6,11 @@ import { usePathname } from "next/navigation";
 import LanguageIcon from "./images/LanguageIcon";
 import { useI18n } from "./I18n";
 
-function LanguageLinks({ className = "" }) {
+function LanguageLinks({
+  className = "",
+  linkClassName = "hover:text-slate-700",
+  selectedClassName = "text-slate-700 font-bold",
+}) {
   const { language } = useI18n() as { language: Locale };
   const pathname = usePathname();
 
@@ -14,12 +18,13 @@ function LanguageLinks({ className = "" }) {
     <div className={`flex items-center gap-2 ${className}`}>
       <LanguageIcon />
       {i18n.locales.map((locale: Locale) => {
-        const className = locale === language ? "font-bold" : undefined;
+        const classNam =
+          linkClassName + " " + (locale === language ? selectedClassName : "");
         return (
           <Link
             key={locale}
             href={`${pathname.replace(language, locale)}`}
-            className={className}
+            className={classNam}
           >
             {locale.toUpperCase()}
           </Link>

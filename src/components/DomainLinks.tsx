@@ -12,22 +12,28 @@ const translationIds: {
   ch: "generic.navbar.swiss",
 };
 
-function DomainLinks({ className = "" }) {
+const domain = process.env.NEXT_PUBLIC_DOMAIN;
+
+function DomainLinks({
+  className = "",
+  linkClassName = "hover:text-slate-700",
+  selectedClassName = "text-slate-700 font-bold",
+}) {
   const { t } = useI18n();
   const pathanme = usePathname();
   return (
     <div className={`flex items-center gap-2 ${className}`}>
       <DomainIcon />
-      {["io", "ch"].map((domain: string) => {
-        const className =
-          process.env.NEXT_PUBLIC_DOMAIN === domain ? "font-bold" : undefined;
+      {["io", "ch"].map((domainn: string) => {
         return (
           <Link
-            key={domain}
-            href={`https://mapset.${domain}/${pathanme}`}
-            className={className}
+            key={domainn}
+            href={`https://mapset.${domainn}${pathanme}`}
+            className={`${linkClassName} ${
+              domain === domainn ? selectedClassName : ""
+            }`}
           >
-            {t(translationIds[domain])}
+            {t(translationIds[domainn])}
           </Link>
         );
       })}

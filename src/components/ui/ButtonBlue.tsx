@@ -15,7 +15,7 @@ function ButtonBlue({
   const contained = "";
   const outlined = " border-[3px]";
   const classNam =
-    "flex items-center uppercase px-8 py-4 bg-blue text-white font-bold rounded-[42px] " +
+    "flex items-center uppercase px-8 py-4 font-hero bg-blue-600 hover:bg-blue-900 text-white text-xl font-bold rounded-[42px] " +
     className +
     (variant === "contained" ? contained : outlined);
 
