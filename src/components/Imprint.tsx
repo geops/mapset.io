@@ -47,7 +47,7 @@ function Imprint() {
           <div className="flex flex-col items-center relative px-4 py-12 z-10">
             <div className="container lg">
               <div className="flex flex-col gap-6">
-                <H2>{t("imprint")}</H2>
+                <H2>{t("imprint.title")}</H2>
                 <H3>geOps AG</H3>
                 <p>
                   <div>Solothurnerstrasse 235</div>
