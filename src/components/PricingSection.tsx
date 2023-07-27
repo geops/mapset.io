@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ArrowDownIcon from "./images/ArrowDownIcon";
 import CheckIcon from "./images/CheckIcon";
 import { useI18n } from "./I18n";
@@ -25,18 +25,47 @@ export type Product = {
 };
 const domain = process.env.NEXT_PUBLIC_DOMAIN;
 
+const trClassName = "even:bg-white odd:bg-blue-lighter";
+const firstColumnClassName =
+  "text-left text-sm text-blue-900 font-semibold leading-5 p-6";
+const tdClassName =
+  "text-center text-blue-900 text-sm font-normal leading-5 px-2 py-6";
+
 function PricingSection({ products = [] }: { products: Product[] }) {
   const { t } = useI18n();
   const [open, setOpen] = useState<boolean>(false);
-  const trClassName = "even:bg-white odd:bg-blue-lighter";
-  const firstColumnClassName =
-    "text-left text-sm text-blue-900 font-semibold leading-5 p-6";
-  const tdClassName =
-    "text-center text-blue-900 text-sm font-normal leading-5 px-2 py-6";
+  const [canScrollLeft, setCanScrollLeft] = useState<boolean>(false);
+  const [canScrollRight, setCanScrollRight] = useState<boolean>(true);
+  const scrollElt = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const node: HTMLDivElement | null = scrollElt.current;
+
+    if (!node) {
+      return;
+    }
+
+    function onScroll(evt: Event) {
+      const target = evt.target as HTMLDivElement;
+      const targetRect = target.getBoundingClientRect();
+      const firstChildRect = (
+        target.firstChild as HTMLDivElement
+      ).getBoundingClientRect();
+      setCanScrollLeft(targetRect.left > firstChildRect.left);
+      setCanScrollRight(targetRect.right < firstChildRect.right);
+    }
+
+    node.addEventListener("scroll", onScroll);
+
+    return () => {
+      node.removeEventListener("scroll", onScroll);
+    };
+  }, [scrollElt]);
+
   return (
     <>
       <div className="relative w-full">
-        <div className="w-full overflow-x-auto mb-5">
+        <div ref={scrollElt} className="w-full overflow-x-auto mb-5">
           <table className="w-full min-w[800px]">
             <thead>
               <tr>
@@ -150,11 +179,12 @@ function PricingSection({ products = [] }: { products: Product[] }) {
           </table>
         </div>
         <div
-          className="absolute right-0 top-0 bottom-0 w-[75px] h-full"
-          style={{
-            background:
-              "linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.90) 100%)",
-          }}
+          hidden={!canScrollLeft}
+          className="absolute left-0 top-0 bottom-0 w-[75px] h-full bg-gradient-to-l from-transparent to-white"
+        ></div>
+        <div
+          hidden={!canScrollRight}
+          className="absolute right-0 top-0 bottom-0 w-[75px] h-full bg-gradient-to-r from-transparent to-white"
         ></div>
       </div>
       <div>
