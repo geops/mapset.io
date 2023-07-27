@@ -35,118 +35,127 @@ function PricingSection({ products = [] }: { products: Product[] }) {
     "text-center text-blue-900 text-sm font-normal leading-5 px-2 py-6";
   return (
     <>
-      <div className="overflow-x-auto mb-5">
-        <table className="w-full min-w[800px]">
-          <thead>
-            <tr>
-              <th></th>
-              {products.map((product, idx) => {
-                return (
-                  <th
-                    key={product.tier}
-                    className="pb-6 uppercase font-hero text-blue-600 text-3xl font-bold -tracking-[0.64px] leading-[60px]"
-                  >
-                    {t(`pricing.products.${idx}.tier`)}
-                  </th>
-                );
-              })}
-            </tr>
-          </thead>
-          <tbody>
-            <tr className={trClassName}>
-              <th className={firstColumnClassName}>
-                {t("pricing.mapset_features")}
-              </th>
-              {products.map((product) => {
-                return (
-                  <td key={product.tier} className={tdClassName}>
-                    <div className="flex items-center justify-center w-full">
-                      <CheckIcon />
-                    </div>
-                  </td>
-                );
-              })}
-            </tr>
-            <tr className={trClassName}>
-              <th className={firstColumnClassName}>
-                {t("pricing.stops")}
-                <span className="text-blue">*</span>
-              </th>
-              {products.map((product, idx) => {
-                return (
-                  <td key={product.tier} className={tdClassName}>
-                    {t(`pricing.products.${idx}.stops`)}
-                  </td>
-                );
-              })}
-            </tr>
-            <tr className={trClassName}>
-              <th className={firstColumnClassName}>
-                {t("pricing.railway_stations")}
-                <span className="text-blue">**</span>
-              </th>
-              {products.map((product, idx) => {
-                return (
-                  <td key={product.tier} className={tdClassName}>
-                    <Price>
-                      {t(`pricing.products.${idx}.price.${domain}`)}
-                    </Price>{" "}
-                    <span className="text-slate-400">
-                      {" "}
-                      / {t("pricing.year")}
-                    </span>
-                  </td>
-                );
-              })}
-            </tr>
-            <tr className={trClassName}>
-              <th className={firstColumnClassName}>{t("pricing.addon")}</th>
-              {products.map((product, idx) => {
-                return (
-                  <td key={product.tier} className={tdClassName}>
-                    <Price>
-                      {t(`pricing.products.${idx}.price_addon.${domain}`)}
-                    </Price>{" "}
-                    <span className="text-slate-400">
-                      / {t("pricing.year")}
-                    </span>
-                  </td>
-                );
-              })}
-            </tr>
-            <tr className={trClassName}>
-              <th className={firstColumnClassName}>
-                {t("pricing.onetime")}
-                <span className="text-blue">**</span>
-              </th>
-              {products.map((product, idx) => {
-                return (
-                  <td key={product.tier} className={tdClassName}>
-                    <Price>
-                      {t(`pricing.products.${idx}.price_onetime.${domain}`)}
-                    </Price>
-                  </td>
-                );
-              })}
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <th></th>
-              {products.map((product) => {
-                return (
-                  <td key={product.tier} className={tdClassName}>
-                    <div className="flex items-center justify-center w-full">
-                      <ButtonBlue href={`https://editor.mapset.${domain}`}>
-                        {t("home.get_started")}
-                      </ButtonBlue>
-                    </div>
-                  </td>
-                );
-              })}
-            </tr>
-          </tfoot>
-        </table>
+      <div className="relative w-full">
+        <div className="w-full overflow-x-auto mb-5">
+          <table className="w-full min-w[800px]">
+            <thead>
+              <tr>
+                <th></th>
+                {products.map((product, idx) => {
+                  return (
+                    <th
+                      key={product.tier}
+                      className="pb-6 uppercase font-hero text-blue-600 text-3xl font-bold -tracking-[0.64px] leading-[60px]"
+                    >
+                      {t(`pricing.products.${idx}.tier`)}
+                    </th>
+                  );
+                })}
+              </tr>
+            </thead>
+            <tbody>
+              <tr className={trClassName}>
+                <th className={firstColumnClassName}>
+                  {t("pricing.mapset_features")}
+                </th>
+                {products.map((product) => {
+                  return (
+                    <td key={product.tier} className={tdClassName}>
+                      <div className="flex items-center justify-center w-full">
+                        <CheckIcon />
+                      </div>
+                    </td>
+                  );
+                })}
+              </tr>
+              <tr className={trClassName}>
+                <th className={firstColumnClassName}>
+                  {t("pricing.stops")}
+                  <span className="text-blue">*</span>
+                </th>
+                {products.map((product, idx) => {
+                  return (
+                    <td key={product.tier} className={tdClassName}>
+                      {t(`pricing.products.${idx}.stops`)}
+                    </td>
+                  );
+                })}
+              </tr>
+              <tr className={trClassName}>
+                <th className={firstColumnClassName}>
+                  {t("pricing.railway_stations")}
+                  <span className="text-blue">**</span>
+                </th>
+                {products.map((product, idx) => {
+                  return (
+                    <td key={product.tier} className={tdClassName}>
+                      <Price>
+                        {t(`pricing.products.${idx}.price.${domain}`)}
+                      </Price>{" "}
+                      <span className="text-slate-400">
+                        {" "}
+                        / {t("pricing.year")}
+                      </span>
+                    </td>
+                  );
+                })}
+              </tr>
+              <tr className={trClassName}>
+                <th className={firstColumnClassName}>{t("pricing.addon")}</th>
+                {products.map((product, idx) => {
+                  return (
+                    <td key={product.tier} className={tdClassName}>
+                      <Price>
+                        {t(`pricing.products.${idx}.price_addon.${domain}`)}
+                      </Price>{" "}
+                      <span className="text-slate-400">
+                        / {t("pricing.year")}
+                      </span>
+                    </td>
+                  );
+                })}
+              </tr>
+              <tr className={trClassName}>
+                <th className={firstColumnClassName}>
+                  {t("pricing.onetime")}
+                  <span className="text-blue">**</span>
+                </th>
+                {products.map((product, idx) => {
+                  return (
+                    <td key={product.tier} className={tdClassName}>
+                      <Price>
+                        {t(`pricing.products.${idx}.price_onetime.${domain}`)}
+                      </Price>
+                    </td>
+                  );
+                })}
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th></th>
+                {products.map((product) => {
+                  return (
+                    <td key={product.tier} className={tdClassName}>
+                      <div className="flex items-center justify-center w-full">
+                        <ButtonBlue href={`https://editor.mapset.${domain}`}>
+                          {t("home.get_started")}
+                        </ButtonBlue>
+                      </div>
+                    </td>
+                  );
+                })}
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <div
+          className="absolute right-0 top-0 bottom-0 w-[75px] h-full"
+          style={{
+            background:
+              "linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.90) 100%)",
+          }}
+        ></div>
       </div>
       <div>
         <Button
