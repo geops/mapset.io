@@ -167,7 +167,7 @@ function PricingSection({ products = [] }: { products: Product[] }) {
                   return (
                     <td key={product.tier} className={tdClassName}>
                       <div className="flex items-center justify-center w-full">
-                        <ButtonBlue href={`https://editor.mapset.${domain}`}>
+                        <ButtonBlue href={`#contact`}>
                           {t("home.get_started")}
                         </ButtonBlue>
                       </div>
