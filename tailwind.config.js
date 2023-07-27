@@ -21,6 +21,7 @@ module.exports = {
         DEFAULT: "#64748B",
       },
       white: colors.white,
+      transparent: colors.transparent,
       blue: {
         500: "#126392",
         600: "#1789C9",

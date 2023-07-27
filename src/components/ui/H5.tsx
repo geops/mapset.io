@@ -12,6 +12,7 @@ function H5({
     <h5
       className={`font-hero text-2xl leading-tight font-bold pb-2 ${className}`}
       {...props}
+      style={{ fontSize: "clamp(1.375rem, 2vw + 0.75rem, 1.5rem)" }}
     >
       {children}
     </h5>

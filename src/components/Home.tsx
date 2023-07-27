@@ -22,6 +22,7 @@ import ContactImage from "./images/ContactImage";
 
 const region = process.env.NEXT_PUBLIC_DOMAIN;
 const pClassName = "text-xl text-blue-900 leading-[30px] max-w-[768px]";
+const pClamp = "clamp(1rem, 1vw + 0.75rem, 1.25rem);";
 
 function Home() {
   const { t } = useI18n();
@@ -32,7 +33,7 @@ function Home() {
           <Header className="container lg  py-1 justify-end"></Header>
         </div>
         <main className="flex flex-col">
-          <div className="flex flex-col items-center relative px-4 pt-12 bg-gradient-to-r from-blue-600 to-blue-light text-white z-10">
+          <div className="flex flex-col items-center relative px-4 pt-12 bg-gradient-to-b md:bg-gradient-to-r from-blue-600 to-white md:to-blue-light text-white z-10">
             <div className="container lg">
               <div className="flex justify-between mb-12">
                 <div>
@@ -45,19 +46,49 @@ function Home() {
               <div className="flex justify-between overflow-hidden flex-wrap lg:flex-nowrap">
                 <div className="flex flex-col gap-6 pb-12">
                   <H1>{t("home.main.title")}</H1>
-                  <p className="max-w-[646px] text-2xl font-medium leading-[160%]">
+
+                  <div className="flex min-w-[360px] md:hidden  ">
+                    <video
+                      loop
+                      autoPlay
+                      className="border-white border-opacity-20 border-8 rounded-3xl"
+                    >
+                      <source src="/video/mapset-demo.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+
+                  <p
+                    className="text-blue-900 md:text-white text-normal md:text-2xl max-w-[646px] font-medium leading-[160%]"
+                    style={{
+                      fontSize: "clamp(1rem, 2.5vw + 0.37rem, 1.5rem)",
+                    }}
+                  >
                     {t("home.main.content")}
                   </p>
-                  <div className="flex gap-4 mt-6">
+
+                  <div className="hidden md:flex gap-4 mt-6">
                     <ButtonWhite href={"https://editor.mapset." + region}>
                       {t("home.try_free")}
                     </ButtonWhite>
-                    <ButtonBlue href={"#contact"} variant="outlined">
+                    <ButtonBlue
+                      href={"#contact"}
+                      variant="outlined"
+                      className="!bg-transparent"
+                    >
                       {t("contact.section")}
                     </ButtonBlue>
                   </div>
+
+                  <div className="flex md:hidden gap-4 justify-center">
+                    <ButtonBlue href={"https://editor.mapset." + region}>
+                      {t("home.try_free")}
+                    </ButtonBlue>
+                    <ButtonWhite href={"#contact"} variant="outlined">
+                      {t("contact.section")}
+                    </ButtonWhite>
+                  </div>
                 </div>
-                <div className="flex items-end pb-12 lg:pb-0 lg:ml-12 mt-12">
+                <div className="hidden md:flex items-end pb-12 lg:pb-0 lg:ml-12">
                   <video
                     loop
                     autoPlay
@@ -77,7 +108,9 @@ function Home() {
               <div className="px-4 md:px-0 pb-12">
                 <H4>{t("features.section")}</H4>
                 <H2 className={`max-w-[900px]`}>{t("features.title")}</H2>
-                <p className={pClassName}>{t("features.content")}</p>
+                <p className={pClassName} style={{ fontSize: pClamp }}>
+                  {t("features.content")}
+                </p>
               </div>
               <div className="md:hidden">
                 <FeaturesSection />
@@ -104,7 +137,9 @@ function Home() {
               <div className="pb-12">
                 <H4>{t("pricing.section")}</H4>
                 <H2 className={`max-w-[800px]`}>{t("pricing.title")}</H2>
-                <p className={pClassName}>{t("pricing.content")}</p>
+                <p className={pClassName} style={{ fontSize: pClamp }}>
+                  {t("pricing.content")}
+                </p>
               </div>
               <PricingSection products={translations.pricing.products} />
             </div>
@@ -142,6 +177,7 @@ function Home() {
                 <H2>{t("contact.title")}</H2>
                 <p
                   className={pClassName}
+                  style={{ fontSize: pClamp }}
                   dangerouslySetInnerHTML={{
                     __html: t("contact.content"),
                   }}

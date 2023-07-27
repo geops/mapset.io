@@ -12,6 +12,8 @@ export type CustomerTestimonial = {
   testimonial: string;
 };
 
+const pClamp = "clamp(1.125rem, 3vw + 0.37rem, 2rem)";
+
 function TestimonialsSection({ className = "" }: { className?: string }) {
   const { t } = useI18n();
   // @ts-ignore
@@ -44,6 +46,7 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
               key={item.name}
               hidden={isUnselected}
               className="font-hero text-3xl text-blue-900 font-medium -tracking-[0.64px] leading-normal"
+              style={{ fontSize: pClamp }}
             >
               “{t("testimonials.customers." + idx + ".testimonial")}”
             </p>
