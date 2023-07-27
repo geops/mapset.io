@@ -46,6 +46,20 @@ module.exports = {
         "8xl": "86px",
       },
       boxShadow: { DEFAULT: "0px 1px 2px 0px rgba(16, 24, 40, 0.05)" },
+      animation: {
+        "loop-vertical": "loopv linear infinite",
+        "loop-horizontal": "looph linear infinite",
+      },
+      keyframes: {
+        loopv: {
+          "0%": { transform: "translateY(0%)" },
+          "100%": { transform: "translateY(-100%)" },
+        },
+        looph: {
+          from: { transform: "translateX(0%)" },
+          to: { transform: "translateX(-100%)" },
+        },
+      },
     },
   },
   plugins: [],
