@@ -6,7 +6,7 @@ const ids = ["features", "pricing", "testimonials", "contact"];
 function NavLinks({
   selected,
   className = "",
-  selectedClassName = "bg-blue-darke",
+  selectedClassName = "bg-blue-800",
   ...props
 }: React.AnchorHTMLAttributes<HTMLAnchorElement> & {
   selected?: string;

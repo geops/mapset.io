@@ -10,6 +10,9 @@ function H1({
   return (
     <h1
       className={`text-8xl leading-[1.05em] font-hero font-black uppercase max-w-[541px] ${className}`}
+      style={{
+        fontSize: "clamp(2.75rem, 5vw + 1.5rem, 5.375rem)",
+      }}
     >
       {children}
     </h1>

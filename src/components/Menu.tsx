@@ -25,13 +25,13 @@ function Menu({ className = "" }) {
         hidden={!open}
         className={`${
           open ? "flex justify-between" : ""
-        }  fixed top-0 bottom-0 left-0 right-0 bg-blue-darke w-full h-full overflow-y-auto`}
+        }  fixed top-0 bottom-0 left-0 right-0 bg-blue-800 w-full h-full overflow-y-auto`}
       >
         <div className="flex flex-col text-white items-start text-normal font-medium   w-full">
-          <div className="flex flex-1 px-6 pt-6 items-center justify-end w-full bg-blue-dark">
+          <div className="flex flex-1 px-6 pt-6 items-center justify-end w-full bg-blue-700">
             <MapsetLogo />
           </div>
-          <div className="divide-y divide-white divide-opacity-10 w-full bg-blue-dark">
+          <div className="divide-y divide-white divide-opacity-10 w-full bg-blue-700">
             <LanguageLinks
               className="px-6 py-4 w-full"
               selectedClassName="text-white font-bold"

@@ -155,7 +155,7 @@ export const Guide = () => {
             ></Header>
           </div>
         </header>
-        {/* <div className="flex flex-col items-center relative px-4 pt-12 bg-gradient-to-r from-blue to-blue-light text-white z-10">
+        {/* <div className="flex flex-col items-center relative px-4 pt-12 bg-gradient-to-r from-blue-600 to-blue-light text-white z-10">
           <div className="container lg">
             <div className="flex justify-between mb-12">
               <div></div>

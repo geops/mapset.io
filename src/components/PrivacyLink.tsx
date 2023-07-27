@@ -6,10 +6,10 @@ function PrivacyLink({
   className = "",
   ...props
 }: React.AnchorHTMLAttributes<HTMLAnchorElement>) {
-  const { t, language } = useI18n();
+  const { t } = useI18n();
   return (
     <Link
-      href={`https://geops.com/` + language + `/privacy`}
+      href={t("privacy_link")}
       className={"flex gap-1 items-center " + className}
       {...props}
     >

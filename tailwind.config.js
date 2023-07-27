@@ -23,17 +23,13 @@ module.exports = {
       white: colors.white,
       blue: {
         500: "#126392",
-        600: "#1789C9", // default
-        700: "#1974BF", // dark
-        800: "#1668AB", // darke
-        900: "#154665", // darker
+        600: "#1789C9",
+        700: "#1974BF",
+        800: "#1668AB",
+        900: "#154665",
         lighter: "#F8FAFC",
         lighte: "#D2E9F9",
         light: "#63B3F4",
-        DEFAULT: "#1789C9",
-        dark: "#1974BF",
-        darke: "#1668AB",
-        darker: "#154665",
       },
     },
     extend: {

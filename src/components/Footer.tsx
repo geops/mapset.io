@@ -20,7 +20,7 @@ const Footer = ({ className = "", onlyPrivacyLink = false }) => {
   const isImprintPage = /imprint/.test(pathname);
   return (
     <footer
-      className={`px-4 flex justify-center bg-blue-dark text-white ${className} overflow-hidden `}
+      className={`px-4 flex justify-center bg-blue-700 text-white ${className} overflow-hidden `}
     >
       <div className="container lg flex flex-col-reverse items-end md:flex-row md:items-center justify-between py-8">
         <div className="flex  flex-col items-start w-full md:flex-row md:items-center md:w-auto gap-4 text-s text-normal font-normal ">

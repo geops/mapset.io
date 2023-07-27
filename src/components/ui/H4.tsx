@@ -10,7 +10,7 @@ function H4({
 }) {
   return (
     <h4
-      className={`tracking-[0.8px] leading-[24px] pb-3 uppercase text-blue-darker font-hero font-bold  ${className}`}
+      className={`tracking-[0.8px] leading-[24px] pb-3 uppercase text-blue-800r font-hero font-bold  ${className}`}
       {...props}
     >
       {children}

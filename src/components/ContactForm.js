@@ -126,7 +126,9 @@ const ContactForm = ({ className = "" }) => {
               className={checkboxLabelClassName}
               htmlFor="newsletter"
               dangerouslySetInnerHTML={{
-                __html: t("contact.newsletter"),
+                __html: t("contact.newsletter", {
+                  link: t("newsletter_link." + domain),
+                }),
               }}
             ></label>
           </div>
@@ -136,7 +138,9 @@ const ContactForm = ({ className = "" }) => {
             <label className={checkboxLabelClassName} htmlFor="privacy">
               <span
                 dangerouslySetInnerHTML={{
-                  __html: t("contact.privacy_policy"),
+                  __html: t("contact.privacy_policy", {
+                    link: t("privacy_link"),
+                  }),
                 }}
               ></span>
               <span className="text-blue-600"> *</span>

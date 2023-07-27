@@ -5,6 +5,8 @@ import ExternalLinkIcon from "./images/ExternalLinkIcon";
 import ButtonWhite from "./ui/ButtonWhite";
 import H2 from "./ui/H2";
 
+const domain = process.env.NEXT_PUBLIC_DOMAIN;
+
 function Contact() {
   const { t } = useI18n();
   return (
@@ -14,11 +16,7 @@ function Contact() {
       <div className="flex gap-4 h-[35px]">
         <ButtonWhite
           variant="outlined"
-          href={
-            process.env.NEXT_PUBLIC_DOMAIN === "ch"
-              ? "https://geops.sh/6E83A54F98A4E7532"
-              : "https://geops.sh/40003911245CB34786"
-          }
+          href={t("newsletter_link." + domain)}
           rel="noopener noreferrer"
           target="_blank"
         >

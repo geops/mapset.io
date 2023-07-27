@@ -8,8 +8,8 @@
     "message": "Nachricht",
     "message_placeholder": "Leave us a message ...",
     "name": "Name",
-    "newsletter": "I’d like to sign up for the <a href='' class='hover:text-blue-600' style='text-decoration: underline;'>mapset Newsletter</a>",
-    "privacy_policy": "I have read and accept the <a href='https://geops.com/datenschutz' class='hover:text-blue-600 ' style='text-decoration: underline;'>privacy policy</a>.",
+    "newsletter": "I’d like to sign up for the <a href='{{link}}' class='hover:text-blue-600' style='text-decoration: underline;'>mapset Newsletter</a>",
+    "privacy_policy": "I have read and accept the <a href='{{link}}' class='hover:text-blue-600 ' style='text-decoration: underline;'>privacy policy</a>.",
     "required": "Pflichtfeld",
     "section": "Contact",
     "submit": "Anfrage senden",
@@ -70,6 +70,10 @@
   "login": "Login",
   "logout": "Logout",
   "newsletter": "Newsletter",
+  "newsletter_link": {
+    "ch": "https://geops.sh/6E83A54F98A4E7532",
+    "io": "https://geops.sh/40003911245CB34786"
+  },
   "pricing": {
     "addon": "AddOn Share & Print",
     "content": "An overview of annual costs and one-time setup fee",
@@ -161,6 +165,7 @@
     "title": "Plans For Transport Companies Of Any Size",
     "year": "year"
   },
+  "privacy_link": "https://geops.com/datenschutz",
   "privacy_policy": "Privacy Policy",
   "product": "Product",
   "swiss": "Schweiz",
