@@ -21,7 +21,7 @@ function ClientsLogos() {
         })}
       </InfiniteLooper>
 
-      <InfiniteLooper>
+      <InfiniteLooper speed={25}>
         {line2.map((logo) => {
           return (
             <div key={logo.id} className="px-6">
