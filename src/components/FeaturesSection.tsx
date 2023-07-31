@@ -66,11 +66,11 @@ function FeaturesSection({
                 >
                   {t(`features.list.${idx}.title`)}
                   <div
-                    className={`bg-blue-600 flex items-center justify-center rounded-full transition-rotate ${
-                      isUnselected ? "rotate-0" : "rotate-180"
-                    } min-w-[32px] w-8 min-h-[32px] h-8`}
+                    className={`bg-blue-600 flex items-center justify-center rounded-full transition-rotate min-w-[32px] w-8 min-h-[32px] h-8`}
                   >
-                    <ArrowDownIcon2 />
+                    <ArrowDownIcon2
+                      className={isUnselected ? "rotate-0" : "rotate-180"}
+                    />
                   </div>
                 </H5>
 
