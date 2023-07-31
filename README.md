@@ -1,4 +1,4 @@
-# Mapset.io Website
+# mapset.io and mapset.ch websites
 Promo website for [mapset](https://editor.mapset.io/) plan editor.
 
 ### Pages
