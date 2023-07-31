@@ -11,6 +11,7 @@ import sti_logo from '../img/clients/sti_logo.png';
 import tmr_logo from '../img/clients/tmr_logo.png';
 import vbg_logo from '../img/clients/vbg_logo.png';
 import vbz_logo from '../img/clients/vbz_logo.png';
+import trenord_logo from '../img/clients/trenord_logo.png';
 
 const clientLogos = [
     {
@@ -64,6 +65,10 @@ const clientLogos = [
     {
         id: 'vbz',
         src: vbz_logo,
+    },
+    {
+        id: 'trenord',
+        src: trenord_logo,
     },
 ];
 
