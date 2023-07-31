@@ -2,14 +2,15 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import { Locale } from "../../../i18n-config";
 import Website from "@/components/Website";
+import { i18n } from "../../../i18n-config";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// export async function generateStaticParams() {
-//   return i18n.locales.map((locale) => {
-//     return { lang: locale };
-//   });
-// }
+export async function generateStaticParams() {
+  return i18n.locales.map((locale) => {
+    return { lang: locale };
+  });
+}
 
 export default function Layout({
   children,
