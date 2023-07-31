@@ -59,16 +59,16 @@ const clientLogos = [
     src: tmr_logo,
   },
   {
+    id: "trenord",
+    src: trenord_logo,
+  },
+  {
     id: "vbg",
     src: vbg_logo,
   },
   {
     id: "vbz",
     src: vbz_logo,
-  },
-  {
-    id: "trenord",
-    src: trenord_logo,
   },
 ];
 
