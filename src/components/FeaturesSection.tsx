@@ -7,6 +7,7 @@ import translations from "@/content/home/de.json";
 import ArrowDownIcon2 from "./images/ArrowDownIcon2";
 import MacFull from "./ui/MacFull";
 import Image from "next/image";
+import { onClickSmoothScroll } from "./NavLinks";
 
 export type MapsetFeature = {
   title: string;
@@ -31,15 +32,23 @@ function FeaturesSection({
   const [selected, setSelected] = useState(features[indexStart]);
 
   const featureImg = useMemo(() => {
+    let src = t(`features.list.${selectedIndex}.image`);
+    if (src[0] === `features.list.${selectedIndex}.image`) {
+      src = "";
+    }
     return (
       <MacFull>
-        <Image
-          src={t(`features.list.${selectedIndex}.image`)}
-          alt={t(`features.list.${selectedIndex}.title`)}
-          width={parseFloat(t(`features.list.${selectedIndex}.image_width`))}
-          height={parseFloat(t(`features.list.${selectedIndex}.image_height`))}
-          className="h-full w-full object-cover"
-        ></Image>
+        {src && (
+          <Image
+            src={t(`features.list.${selectedIndex}.image`)}
+            alt={t(`features.list.${selectedIndex}.title`)}
+            width={parseFloat(t(`features.list.${selectedIndex}.image_width`))}
+            height={parseFloat(
+              t(`features.list.${selectedIndex}.image_height`),
+            )}
+            className="h-full w-full object-cover"
+          ></Image>
+        )}
       </MacFull>
     );
   }, [selectedIndex, t]);
@@ -62,15 +71,23 @@ function FeaturesSection({
             <React.Fragment key={feature.title}>
               <button
                 key={feature.title}
+                id={"feature" + idx}
                 className={
                   "px-6 py-4 md:border-l-4  text-left " +
                   (isUnselected
                     ? "md:border-gray-light"
                     : "bg-blue-lighter md:!border-blue-600")
                 }
-                onClick={() => {
+                onClick={(evt) => {
                   setSelected(feature);
                   setSelectedIndex(idx);
+                  window.setTimeout(() => {
+                    onClickSmoothScroll({
+                      // @ts-ignore
+                      target: document.getElementById("feature" + idx),
+                      preventDefault: evt.preventDefault,
+                    });
+                  }, 100);
                 }}
               >
                 <H5
@@ -88,20 +105,29 @@ function FeaturesSection({
                     />
                   </div>
                 </H5>
-                {!isUnselected && (
-                  <div
-                    className={`relative flex md:hidden justify-center py-12`}
-                  >
-                    {featureImg}
-                  </div>
-                )}
-                <p
-                  className={
-                    isUnselected ? "hidden text-gray" : "text-blue-900"
+                <div
+                  className="transition-[max-height] max-h-[1000px] overflow-hidden"
+                  style={
+                    {
+                      // maxHeight: isUnselected ? "0px" : "1000px",
+                    }
                   }
                 >
-                  {t(`features.list.${idx}.content`)}
-                </p>
+                  {!isUnselected && (
+                    <div
+                      className={`relative flex md:hidden justify-center py-12`}
+                    >
+                      {featureImg}
+                    </div>
+                  )}
+                  <p
+                    className={
+                      isUnselected ? "hidden text-gray" : "text-blue-900"
+                    }
+                  >
+                    {t(`features.list.${idx}.content`)}
+                  </p>
+                </div>
               </button>
             </React.Fragment>
           );

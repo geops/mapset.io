@@ -8,10 +8,15 @@ export const onClickSmoothScroll: MouseEventHandler<
   HTMLAnchorElement | HTMLButtonElement
 > = (evt) => {
   evt.preventDefault();
-  const elt = document.getElementById(
-    (evt.target as HTMLAnchorElement).href.split("#")[1],
-  );
-  (elt as HTMLDivElement).scrollIntoView({ behavior: "smooth" });
+  const id = (evt.target as HTMLAnchorElement).href?.split("#")[1];
+  let elt: HTMLElement | null = evt.target as HTMLElement;
+
+  if (id) {
+    elt = document.getElementById(id);
+  }
+  if (elt) {
+    (elt as HTMLDivElement).scrollIntoView({ behavior: "smooth" });
+  }
 };
 
 function NavLinks({

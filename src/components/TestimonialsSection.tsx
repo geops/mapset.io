@@ -39,7 +39,6 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
 
   const image = useMemo(() => {
     const src = t("testimonials.customers." + selected + ".image");
-    console.log(src);
     if (src[0] === "testimonials.customers." + selected + ".image") return null;
     return (
       <Image
