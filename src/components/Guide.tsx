@@ -15,20 +15,29 @@ import MapsetLogo from "./MapsetLogo";
 import H2 from "./ui/H2";
 import DotIcon from "./images/DotIcon";
 import GuideH4 from "./GuideH4";
+import { onClickSmoothScroll } from "./NavLinks";
 
 const renderId = (label: string) => {
   if (label) {
-    return label.toLowerCase().replace(/\s/g, "");
+    return label
+      .toLowerCase()
+      .replace(/\s/g, "")
+      .replace(/(ä|ü|ö)/g, "u"); // umlaut character breaks the scrollIntoView
   }
   return null;
 };
 
 const renderScrollerId = (label: string) => {
   if (label) {
-    return `scroller-${label.toLowerCase().replace(/\s/g, "")}`;
+    return `scroller-${label
+      .toLowerCase()
+      .replace(/\s/g, "")
+      .replace(/(ä|ü|ö)/g, "u")}`; // umlaut character breaks the scrollIntoView
   }
   return null;
 };
+
+const domain = process.env.NEXT_PUBLIC_DOMAIN;
 
 export const Guide = () => {
   const { t, language } = useI18n();
@@ -55,9 +64,7 @@ export const Guide = () => {
   }, [guideContent]);
 
   const handleScroll = () => {
-    console.log();
     const ids = titles.map((item) => [item.label, ...item.sub_features]).flat();
-    console.log(ids);
     const distances = ids.map((label) => {
       const distance = document
         .getElementById(renderId(label))
@@ -93,7 +100,9 @@ export const Guide = () => {
       const iconFeatures = [...headingIconFeatures, ...contentIconFeatures];
       Promise.all(
         iconFeatures.map((f) =>
-          fetch(`https://editor.mapset.io/static/icons/${f.mapset_icon}.svg`),
+          fetch(
+            `https://editor.mapset.${domain}/static/icons/${f.mapset_icon}.svg`,
+          ),
         ),
       )
         .then((responses) => {
@@ -139,7 +148,7 @@ export const Guide = () => {
 
   return (
     <>
-      <div className="relative z-0">
+      <div className="relative z-0 ">
         {/* <div className="justify-center px-4 hidden md:flex">
           <Header className="container lg  text-gray py-1 justify-end"></Header>
         </div> */}
@@ -171,7 +180,7 @@ export const Guide = () => {
             </div>
           </div>
         </div> */}
-        <nav className="fixed guide-scroller w-[220px] overflow-y-auto h-full pl-4 mt-[82px] ">
+        <nav className="fixed guide-scroller w-[220px] overflow-y-auto h-full pl-4 mt-[82px] pb-[174px] ">
           {titles.map((feature) => {
             return (
               <>
@@ -179,7 +188,8 @@ export const Guide = () => {
                   href={`#${renderId(feature.label)}`}
                   id={renderScrollerId(feature.label)}
                   title={feature.label}
-                  className="flex items-center gap-2 py-2 hover:text-blue-600"
+                  className="flex items-center gap-2 py-2 hover:text-blue-600 scroll-mt-[90px]"
+                  onClick={onClickSmoothScroll}
                 >
                   <DotIcon />
                   {feature.label}
@@ -191,7 +201,8 @@ export const Guide = () => {
                       id={renderScrollerId(feat)}
                       key={renderScrollerId(feat)}
                       title={feat}
-                      className="flex items-center gap-2 py-2 pl-4 hover:text-blue-600"
+                      className="flex items-center gap-2 py-2 pl-4 hover:text-blue-600 scroll-mt-[90px]"
+                      onClick={onClickSmoothScroll}
                     >
                       <DotIcon />
                       {feat}
@@ -236,7 +247,11 @@ export const Guide = () => {
                 icons.find((f) => f.key === topic.mapset_icon)?.svg;
               const text = md.render(topic.label);
               return (
-                <div id={renderId(topic.label)} key={renderId(topic.label)}>
+                <div
+                  id={renderId(topic.label)}
+                  key={renderId(topic.label)}
+                  className="scroll-mt-[90px]"
+                >
                   <GuideH4 icon={icon} text={text} />
 
                   {topic.content.map((f) => {
@@ -252,7 +267,7 @@ export const Guide = () => {
                       <div
                         key={renderId(f.heading)}
                         id={renderId(f.heading)}
-                        className="px-12 py-6"
+                        className="px-12 py-6 scroll-mt-[90px]"
                       >
                         <GuideH4 icon={icon} text={text} />
 
@@ -285,7 +300,7 @@ export const Guide = () => {
             <H2 className="is-bolder guideHeader">
               {t("guide.more_questions")}
             </H2>
-            <Contact region={process.env.NEXT_PUBLIC_DOMAIN} />
+            <Contact region={domain} />
           </div>
         </main>
         <Footer className="z-[1000] relative" onlyPrivacyLink />

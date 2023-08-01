@@ -7,7 +7,7 @@ const ids = ["features", "pricing", "testimonials", "contact"];
 export const onClickSmoothScroll: MouseEventHandler<
   HTMLAnchorElement | HTMLButtonElement
 > = (evt) => {
-  evt.preventDefault();
+  // evt.preventDefault();
   const id = (evt.target as HTMLAnchorElement).href?.split("#")[1];
   let elt: HTMLElement | null = evt.target as HTMLElement;
 
