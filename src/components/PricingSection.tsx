@@ -35,7 +35,7 @@ function PricingSection({ products = [] }: { products: Product[] }) {
   const { t } = useI18n();
   const [open, setOpen] = useState<boolean>(false);
   const [canScrollLeft, setCanScrollLeft] = useState<boolean>(false);
-  const [canScrollRight, setCanScrollRight] = useState<boolean>(true);
+  const [canScrollRight, setCanScrollRight] = useState<boolean>(false);
   const scrollElt = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -45,21 +45,25 @@ function PricingSection({ products = [] }: { products: Product[] }) {
       return;
     }
 
-    function onScroll(evt: Event) {
-      const target = evt.target as HTMLDivElement;
+    function onScroll() {
+      if (!node) {
+        return;
+      }
+      const target = node;
       const targetRect = target.getBoundingClientRect();
       const firstChildRect = (
         target.firstChild as HTMLDivElement
       ).getBoundingClientRect();
-      setCanScrollLeft(targetRect.left > firstChildRect.left);
-      setCanScrollRight(targetRect.right < firstChildRect.right);
-      console.log(targetRect.right < firstChildRect.right);
+      setCanScrollLeft(targetRect.left > Math.floor(firstChildRect.left));
+      setCanScrollRight(targetRect.right < Math.floor(firstChildRect.right));
     }
 
     node.addEventListener("scroll", onScroll);
+    window.addEventListener("resize", onScroll);
 
     return () => {
       node.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
     };
   }, [scrollElt]);
 
@@ -168,7 +172,10 @@ function PricingSection({ products = [] }: { products: Product[] }) {
                   return (
                     <td key={product.tier} className={tdClassName}>
                       <div className="flex items-center justify-center w-full">
-                        <ButtonBlue href={`#contact`}>
+                        <ButtonBlue
+                          href={`#contact`}
+                          className="!text-[14px] !font-semibold"
+                        >
                           {t("home.get_started")}
                         </ButtonBlue>
                       </div>

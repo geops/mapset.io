@@ -12,7 +12,12 @@ function Input({
 
   if (type === "select") {
     return (
-      <select id={id || name} name={name} {...props} className={className}>
+      <select
+        id={id || name}
+        name={name}
+        {...props}
+        className={className + " " + props.className}
+      >
         {children}
       </select>
     );

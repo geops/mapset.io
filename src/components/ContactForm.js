@@ -2,6 +2,7 @@ import React, { useCallback, useRef, useState } from "react";
 import { useI18n } from "./I18n";
 import ButtonBlue from "./ui/ButtonBlue";
 import Input from "./ui/Input";
+import ChevronDown from "./images/ChevronDown";
 
 const domain = process.env.NEXT_PUBLIC_DOMAIN;
 
@@ -34,7 +35,7 @@ const ContactForm = ({ className = "" }) => {
       method="post"
       name="contact"
       onSubmit={handleSubmit}
-      className={`flex flex-col gap-6 ${className} w-[350px]`}
+      className={`flex flex-col gap-6 ${className} w-[480px]`}
     >
       {submitted ? (
         <p>{t("contact.submitted")}</p>
@@ -58,17 +59,23 @@ const ContactForm = ({ className = "" }) => {
             <label className={"block " + labelClassName} htmlFor="interest">
               {t("contact.interest")}
             </label>
-            <Input
-              type="select"
-              name="interest"
-              className="leading-6 text-blue-900"
-              defaultValue="mapset maxi"
-            >
-              <option value="mapset free">mapset free</option>
-              <option value="mapset mini">mapset mini</option>
-              <option value="mapset midi">mapset midi</option>
-              <option value="mapset maxi">mapset maxi</option>
-            </Input>
+            <div className="relative">
+              <Input
+                type="select"
+                name="interest"
+                className="appearance-none"
+                defaultValue="mapset maxi"
+                placeholder="mapset maxi"
+              >
+                <option value="mapset free">mapset free</option>
+                <option value="mapset mini">mapset mini</option>
+                <option value="mapset midi">mapset midi</option>
+                <option value="mapset maxi">mapset maxi</option>
+              </Input>
+              <div className="absolute my-auto h-[20px] right-[12px] top-0 bottom-0 pointer-events-none">
+                <ChevronDown />
+              </div>
+            </div>
           </div>
 
           <div>
@@ -149,7 +156,10 @@ const ContactForm = ({ className = "" }) => {
             <span className="text-blue-600">* </span>
             {t("contact.required")}
           </p>
-          <ButtonBlue type="submit" className="w-full justify-center">
+          <ButtonBlue
+            type="submit"
+            className="w-full justify-center !text-[16px] !font-semibold"
+          >
             {t("contact.submit")}
           </ButtonBlue>
         </>

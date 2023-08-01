@@ -71,20 +71,28 @@ function Home() {
                   </p>
 
                   <div className="hidden md:flex gap-4 mt-6">
-                    <ButtonWhite href={"https://editor.mapset." + region}>
+                    <ButtonWhite
+                      href={"https://editor.mapset." + region}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       {t("home.try_free")}
                     </ButtonWhite>
                     <ButtonBlue
                       href={"#contact"}
                       variant="outlined"
-                      className="!bg-transparent"
+                      className="!bg-transparent hover:!bg-blue-900"
                     >
                       {t("contact.section")}
                     </ButtonBlue>
                   </div>
 
                   <div className="flex md:hidden gap-4 justify-center">
-                    <ButtonBlue href={"https://editor.mapset." + region}>
+                    <ButtonBlue
+                      href={"https://editor.mapset." + region}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       {t("home.try_free")}
                     </ButtonBlue>
                     <ButtonWhite href={"#contact"} variant="outlined">
@@ -124,7 +132,11 @@ function Home() {
               <div className="hidden md:block">
                 <FeaturesSection indexEnd={3} />
                 <div className="flex justify-center gap-4 my-24">
-                  <ButtonBlue href={"https://editor.mapset." + region}>
+                  <ButtonBlue
+                    href={"https://editor.mapset." + region}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     {t("home.try_free")}
                   </ButtonBlue>
                   <ButtonWhite href={"#contact"} variant="outlined">
