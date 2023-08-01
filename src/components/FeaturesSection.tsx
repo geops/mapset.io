@@ -1,4 +1,5 @@
-import React from "react";
+/* eslint-disable jsx-a11y/alt-text */
+import React, { useMemo } from "react";
 import { useI18n } from "./I18n";
 import { useState } from "react";
 import H5 from "./ui/H5";
@@ -28,6 +29,20 @@ function FeaturesSection({
   const { t } = useI18n();
   const [selectedIndex, setSelectedIndex] = useState(indexStart);
   const [selected, setSelected] = useState(features[indexStart]);
+
+  const featureImg = useMemo(() => {
+    return (
+      <MacFull>
+        <Image
+          src={t(`features.list.${selectedIndex}.image`)}
+          alt={t(`features.list.${selectedIndex}.title`)}
+          width={parseFloat(t(`features.list.${selectedIndex}.image_width`))}
+          height={parseFloat(t(`features.list.${selectedIndex}.image_height`))}
+          className="h-full w-full object-cover"
+        ></Image>
+      </MacFull>
+    );
+  }, [selectedIndex, t]);
 
   return (
     <div
@@ -77,23 +92,7 @@ function FeaturesSection({
                   <div
                     className={`relative flex md:hidden justify-center py-12`}
                   >
-                    <MacFull>
-                      <Image
-                        alt="feature"
-                        src={t(`features.list.${selectedIndex}.image`)}
-                        // width={parseFloat(t(`features.list.${selectedIndex}.image_width`))}
-                        // height={parseFloat(
-                        //   t(`features.list.${selectedIndex}.image_height`),
-                        // )}
-                        width={parseFloat(
-                          t(`features.list.${selectedIndex}.image_width`),
-                        )}
-                        height={parseFloat(
-                          t(`features.list.${selectedIndex}.image_height`),
-                        )}
-                        className="h-full w-full object-cover"
-                      ></Image>
-                    </MacFull>
+                    {featureImg}
                   </div>
                 )}
                 <p
@@ -109,70 +108,18 @@ function FeaturesSection({
         })}
       </div>
       {reverse ? (
-        // <MacLeftToRight
-        //   className="hidden md:block"
-        //   src={t(`features.list.${selectedIndex}.image`)}
-        //   width={t(`features.list.${selectedIndex}.image_width`)}
-        //   height={t(`features.list.${selectedIndex}.image_height`)}
-        // ></MacLeftToRight>
-
         // 4733 * 2741
         <div className={`relative hidden md:flex min-w-[40%] h-[557px]`}>
           <div className={`absolute -right-[10%] w-[941px] h-[557px]`}>
-            <MacFull>
-              <Image
-                alt="feature"
-                src={t(`features.list.${selectedIndex}.image`)}
-                // width={parseFloat(t(`features.list.${selectedIndex}.image_width`))}
-                // height={parseFloat(
-                //   t(`features.list.${selectedIndex}.image_height`),
-                // )}
-                width={parseFloat(
-                  t(`features.list.${selectedIndex}.image_width`),
-                )}
-                height={parseFloat(
-                  t(`features.list.${selectedIndex}.image_height`),
-                )}
-                className="h-full w-full object-cover"
-              ></Image>
-            </MacFull>
+            {featureImg}
           </div>
         </div>
       ) : (
-        // <MacRightToLeft
-        //   className="hidden md:block"
-        //   src={t(`features.list.${selectedIndex}.image`)}
-        //   width={t(`features.list.${selectedIndex}.image_width`)}
-        //   height={t(`features.list.${selectedIndex}.image_height`)}
-        // ></MacRightToLeft>
         <div className={`relative hidden md:flex min-w-[40%] h-[557px]`}>
           <div className={`absolute -left-[10%] w-[941px] h-[557px]`}>
-            <MacFull>
-              <Image
-                alt="feature"
-                src={t(`features.list.${selectedIndex}.image`)}
-                // width={parseFloat(t(`features.list.${selectedIndex}.image_width`))}
-                // height={parseFloat(
-                //   t(`features.list.${selectedIndex}.image_height`),
-                // )}
-                width={parseFloat(
-                  t(`features.list.${selectedIndex}.image_width`),
-                )}
-                height={parseFloat(
-                  t(`features.list.${selectedIndex}.image_height`),
-                )}
-                className="h-full w-full object-cover"
-              ></Image>
-            </MacFull>
+            {featureImg}
           </div>
         </div>
-
-        // <MacFull
-        //   className={`hidden md:block`}
-        //   src={t(`features.list.${selectedIndex}.image`)}
-        //   width={t(`features.list.${selectedIndex}.image_width`)}
-        //   height={t(`features.list.${selectedIndex}.image_height`)}
-        // ></MacFull>
       )}
     </div>
   );

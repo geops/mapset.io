@@ -5,6 +5,7 @@ import ArrowRightIcon from "./images/ArrowRightIcon";
 import IconButtonWhite from "./ui/IconButtonWhite";
 import OurCustomer from "./images/OurCustomerImage";
 import { useI18n } from "./I18n";
+import Image from "next/image";
 
 export type CustomerTestimonial = {
   name: string;
@@ -36,9 +37,33 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
     setSelected(selected + 1);
   }, [selected]);
 
+  const image = useMemo(() => {
+    const src = t("testimonials.customers." + selected + ".image");
+    console.log(src);
+    if (src[0] === "testimonials.customers." + selected + ".image") return null;
+    return (
+      <Image
+        src={`/img/${src}`}
+        alt={
+          (t("testimonials.customers." + selected + ".name"),
+          t("testimonials.customers." + selected + ".job"))
+        }
+        // width={parseFloat(
+        //   t("testimonials.customers." + selected + ".image_width"),
+        // )}
+        // height={parseFloat(
+        //   t("testimonials.customers." + selected + ".image_height"),
+        // )}
+        width={400}
+        height={400}
+        className="h-full object-cover rounded-full"
+      />
+    );
+  }, [selected, t]);
+
   return (
     <div className={`flex justify-between overflow-hidden gap-12 ${className}`}>
-      <div className="flex flex-col gap-6 lg:max-w-[50%] text-darker">
+      <div className="flex flex-col gap-6 lg:max-w-[50%] text-darker justify-center">
         {items.map((item, idx) => {
           const isUnselected = selected !== idx;
           return (
@@ -72,7 +97,7 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
         </div>
       </div>
       <div className="hidden lg:flex flex-1 items-center justify-center">
-        <OurCustomer />
+        {image || <OurCustomer />}
       </div>
     </div>
   );
