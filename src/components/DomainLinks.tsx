@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useI18n } from "./I18n";
@@ -27,7 +28,7 @@ function DomainLinks({
       <DomainIcon />
       {["io", "ch"].map((domainn: string, index: number) => {
         return (
-          <>
+          <React.Fragment key={domainn}>
             <Link
               key={domainn}
               href={`https://mapset.${domainn}${pathanme}`}
@@ -38,7 +39,7 @@ function DomainLinks({
               {t(translationIds[domainn])}
             </Link>
             {index === 0 && <EllipseSeparator className="mx-[0px]" />}
-          </>
+          </React.Fragment>
         );
       })}
     </div>

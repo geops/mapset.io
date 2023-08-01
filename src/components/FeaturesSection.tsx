@@ -1,3 +1,4 @@
+import React from "react";
 import { useI18n } from "./I18n";
 import { useState } from "react";
 import H5 from "./ui/H5";
@@ -43,7 +44,7 @@ function FeaturesSection({
           const isUnselected = selected.title !== feature.title;
 
           return (
-            <>
+            <React.Fragment key={feature.title}>
               <button
                 key={feature.title}
                 className={
@@ -74,7 +75,7 @@ function FeaturesSection({
                 </H5>
                 {!isUnselected && (
                   <div
-                    className={`relative flex md:hidden justify-center py-12 h-[300px]`}
+                    className={`relative flex md:hidden justify-center py-12`}
                   >
                     <MacFull>
                       <Image
@@ -103,7 +104,7 @@ function FeaturesSection({
                   {t(`features.list.${idx}.content`)}
                 </p>
               </button>
-            </>
+            </React.Fragment>
           );
         })}
       </div>
@@ -145,7 +146,7 @@ function FeaturesSection({
         //   height={t(`features.list.${selectedIndex}.image_height`)}
         // ></MacRightToLeft>
         <div className={`relative hidden md:flex min-w-[40%] h-[557px]`}>
-          <div className={`absolute left-0 w-[941px] h-[557px]`}>
+          <div className={`absolute -left-[10%] w-[941px] h-[557px]`}>
             <MacFull>
               <Image
                 alt="feature"

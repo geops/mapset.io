@@ -62,13 +62,12 @@ const ContactForm = ({ className = "" }) => {
               type="select"
               name="interest"
               className="leading-6 text-blue-900"
+              defaultValue="mapset maxi"
             >
               <option value="mapset free">mapset free</option>
               <option value="mapset mini">mapset mini</option>
               <option value="mapset midi">mapset midi</option>
-              <option value="mapset maxi" selected>
-                mapset maxi
-              </option>
+              <option value="mapset maxi">mapset maxi</option>
             </Input>
           </div>
 

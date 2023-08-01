@@ -22,7 +22,7 @@ import ContactImage from "./images/ContactImage";
 
 const region = process.env.NEXT_PUBLIC_DOMAIN;
 const pClassName = "text-xl text-blue-900 leading-[30px] max-w-[768px]";
-const pClamp = "clamp(1rem, 1vw + 0.75rem, 1.25rem);";
+const pClamp = "clamp(1rem, 1vw + 0.75rem, 1.25rem)";
 const containerClassName =
   "container mx-auto px-4 md:px-8 lg:px-16 max-w-[1536px]";
 
