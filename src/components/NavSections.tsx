@@ -45,7 +45,10 @@ function NavSections({ className }: { className?: string }) {
   return (
     <div className={`flex ${position} ${className}`}>
       <nav className="bg-blue-700 rounded-full flex gap-0 items-center px-6  text-sm font-semibold tracking-[.14px] leading-6 uppercase font-hero">
-        <NavLinks selected={selected} className="px-4 py-4 hover:bg-blue-800" />
+        <NavLinks
+          selected={selected}
+          className="px-4 pt-[17px] pb-[13px] hover:bg-blue-800"
+        />
       </nav>
     </div>
   );
