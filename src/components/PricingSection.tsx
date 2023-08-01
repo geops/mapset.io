@@ -5,6 +5,7 @@ import { useI18n } from "./I18n";
 import Price from "./Price";
 import ButtonBlue from "./ui/ButtonBlue";
 import Button from "./ui/Button";
+import { onClickSmoothScroll } from "./NavLinks";
 
 export type Product = {
   tier: string;
@@ -175,6 +176,7 @@ function PricingSection({ products = [] }: { products: Product[] }) {
                         <ButtonBlue
                           href={`#contact`}
                           className="!text-[14px] !font-semibold"
+                          onClick={onClickSmoothScroll}
                         >
                           {t("home.get_started")}
                         </ButtonBlue>
