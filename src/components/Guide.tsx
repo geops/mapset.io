@@ -270,7 +270,7 @@ export const Guide = () => {
                           </p>
                         )}
                         <div
-                          className="pl-12"
+                          // className="pl-12"
                           dangerouslySetInnerHTML={{
                             __html: md.render(f.text),
                           }}
