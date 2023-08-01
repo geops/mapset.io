@@ -19,6 +19,7 @@ import ContactSection from "./ContactSection";
 import Menu from "./Menu";
 import OurCustomer from "./images/OurCustomerImage";
 import ContactImage from "./images/ContactImage";
+import { onClickSmoothScroll } from "./NavLinks";
 
 const region = process.env.NEXT_PUBLIC_DOMAIN;
 const pClassName = "text-xl text-blue-900 leading-[30px] max-w-[768px]";
@@ -82,6 +83,7 @@ function Home() {
                       href={"#contact"}
                       variant="outlined"
                       className="!bg-transparent hover:!bg-blue-900"
+                      onClick={onClickSmoothScroll}
                     >
                       {t("contact.section")}
                     </ButtonBlue>
@@ -95,7 +97,11 @@ function Home() {
                     >
                       {t("home.try_free")}
                     </ButtonBlue>
-                    <ButtonWhite href={"#contact"} variant="outlined">
+                    <ButtonWhite
+                      href={"#contact"}
+                      variant="outlined"
+                      onClick={onClickSmoothScroll}
+                    >
                       {t("contact.section")}
                     </ButtonWhite>
                   </div>
@@ -139,7 +145,11 @@ function Home() {
                   >
                     {t("home.try_free")}
                   </ButtonBlue>
-                  <ButtonWhite href={"#contact"} variant="outlined">
+                  <ButtonWhite
+                    href={"#contact"}
+                    variant="outlined"
+                    onClick={onClickSmoothScroll}
+                  >
                     {t("contact.section")}
                   </ButtonWhite>
                 </div>

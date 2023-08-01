@@ -4,7 +4,9 @@ import { MouseEventHandler } from "react";
 
 const ids = ["features", "pricing", "testimonials", "contact"];
 
-const onClick: MouseEventHandler<HTMLAnchorElement> = (evt) => {
+export const onClickSmoothScroll: MouseEventHandler<
+  HTMLAnchorElement | HTMLButtonElement
+> = (evt) => {
   evt.preventDefault();
   const elt = document.getElementById(
     (evt.target as HTMLAnchorElement).href.split("#")[1],
@@ -34,7 +36,7 @@ function NavLinks({
             className={`py-4 px-2 ${
               selected === id ? selectedClassName : ""
             } ${className}`}
-            onClick={onClick}
+            onClick={onClickSmoothScroll}
             {...props}
           >
             {t(`${id}.section`)}
