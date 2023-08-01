@@ -23,18 +23,22 @@ import ContactImage from "./images/ContactImage";
 const region = process.env.NEXT_PUBLIC_DOMAIN;
 const pClassName = "text-xl text-blue-900 leading-[30px] max-w-[768px]";
 const pClamp = "clamp(1rem, 1vw + 0.75rem, 1.25rem);";
+const containerClassName =
+  "container mx-auto px-4 md:px-8 lg:px-16 max-w-[1536px]";
 
 function Home() {
   const { t } = useI18n();
   return (
     <>
       <div className="relative z-0">
-        <div className="justify-center px-4 hidden md:flex">
-          <Header className="container lg  py-1 justify-end"></Header>
+        <div className={`hidden md:block ${containerClassName}`}>
+          <div className="flex justify-end">
+            <Header></Header>
+          </div>
         </div>
         <main className="flex flex-col">
-          <div className="flex flex-col items-center relative px-4 pt-12 bg-gradient-to-b md:bg-gradient-to-r from-blue-600 to-white md:to-blue-light text-white z-10">
-            <div className="container lg">
+          <section className="flex flex-col items-center relative overflow-hidden py-12 bg-gradient-to-b md:bg-gradient-to-r from-blue-600 to-white md:to-blue-light text-white z-10">
+            <div className={`relative ${containerClassName}`}>
               <div className="flex justify-between mb-12">
                 <div>
                   <NavSections className="hidden md:block" />
@@ -43,8 +47,8 @@ function Home() {
                   <MapsetLogo />
                 </div>
               </div>
-              <div className="flex justify-between overflow-hidden flex-wrap lg:flex-nowrap">
-                <div className="flex flex-col gap-6 pb-12">
+              <div className="flex justify-between overflow-hidden md:flex-nowrap">
+                <div className="flex flex-col gap-6 py-12">
                   <H1>{t("home.main.title")}</H1>
 
                   <div className="flex min-w-[360px] md:hidden  ">
@@ -58,7 +62,7 @@ function Home() {
                   </div>
 
                   <p
-                    className="text-blue-900 md:text-white text-normal md:text-2xl max-w-[646px] font-medium leading-[160%]"
+                    className="text-blue-900 md:text-white text-normal md:text-[24px] max-w-[646px] font-medium leading-[160%]"
                     style={{
                       fontSize: "clamp(1rem, 2.5vw + 0.37rem, 1.5rem)",
                     }}
@@ -88,23 +92,25 @@ function Home() {
                     </ButtonWhite>
                   </div>
                 </div>
-                <div className="hidden md:flex items-end pb-12 lg:pb-0 lg:ml-12">
-                  <video
-                    loop
-                    autoPlay
-                    className="border-[#126392] border-8 lg:border-b-0 lg:border-r-0 rounded-xl lg:rounded-r-none lg:rounded-bl-none lg:min-w-[700px]"
-                  >
-                    <source src="/video/mapset-demo.mp4" type="video/mp4" />
-                  </video>
-                </div>
+                <div className="hidden md:flex items-end min-w-[65%]"></div>
+              </div>
+
+              <div className="hidden md:block absolute top-[210px]  left-[510px] lg:left-[700px] w-[860px] h-[600px] ">
+                <video
+                  loop
+                  autoPlay
+                  className="border-[#126392] border-8 rounded-xl lg:rounded-b-none w-[100%]"
+                >
+                  <source src="/video/mapset-demo.mp4" type="video/mp4" />
+                </video>
               </div>
             </div>
-          </div>
-          <div
+          </section>
+          <section
             id="features"
             className="flex flex-col items-center relative md:px-4 pt-24 py-12 z-0"
           >
-            <div className="container lg ">
+            <div className={`${containerClassName}`}>
               <div className="px-4 md:px-0 pb-12">
                 <H4>{t("features.section")}</H4>
                 <H2 className={`max-w-[900px]`}>{t("features.title")}</H2>
@@ -128,12 +134,12 @@ function Home() {
                 <FeaturesSection indexStart={3} reverse />
               </div>
             </div>
-          </div>
-          <div
+          </section>
+          <section
             id="pricing"
             className="flex flex-col items-center relative px-4 pt-24 py-12 z-0"
           >
-            <div className="container lg">
+            <div className={`${containerClassName}`}>
               <div className="pb-12">
                 <H4>{t("pricing.section")}</H4>
                 <H2 className={`max-w-[800px]`}>{t("pricing.title")}</H2>
@@ -143,12 +149,12 @@ function Home() {
               </div>
               <PricingSection products={translations.pricing.products} />
             </div>
-          </div>
-          <div
+          </section>
+          <section
             id="testimonials"
             className="flex flex-col items-center relative px-4 pt-24 py-12 bg-blue-lighter z-0"
           >
-            <div className="container lg">
+            <div className={`${containerClassName}`}>
               <div className="flex lg:hidden flex-1 items-center justify-center pb-4">
                 <OurCustomer />
               </div>
@@ -158,17 +164,17 @@ function Home() {
               </div>
               <TestimonialsSection />
             </div>
-          </div>
-          <div className="flex flex-col items-center relative px-4 py-12 z-0">
-            <div className="container lg">
+          </section>
+          <section className="flex flex-col items-center relative px-0 pb-0 pt-24 z-0">
+            <div className={`${containerClassName} !px-0`}>
               <ClientsLogos />
             </div>
-          </div>
-          <div
+          </section>
+          <section
             id="contact"
             className="flex flex-col items-center relative px-4 pt-24 py-12 z-0"
           >
-            <div className="container lg">
+            <div className={`${containerClassName}`}>
               <div className="flex lg:hidden flex-1 items-center justify-center pb-12">
                 <ContactImage />
               </div>
@@ -185,7 +191,7 @@ function Home() {
               </div>
               <ContactSection />
             </div>
-          </div>
+          </section>
         </main>
         <Footer></Footer>
       </div>

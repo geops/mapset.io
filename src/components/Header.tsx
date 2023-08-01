@@ -8,7 +8,7 @@ import LoginLink from "./LoginLink";
 function Header({
   className = "",
   linkClassName = "hover:text-slate-700",
-  selectedClassName = "",
+  selectedClassName = "text-slate-700 font-semibold",
 }: {
   className?: string;
   linkClassName?: string;
@@ -16,21 +16,29 @@ function Header({
 }) {
   return (
     <nav
-      className={`flex items-center text-normal text-slate-500 font-medium  ${className}`}
+      className={`flex items-center text-normal text-slate-500 h-[52px] font-medium  ${className}`}
     >
       <LanguageLinks
+        className={`w-[125px]`}
         linkClassName={linkClassName}
         selectedClassName={selectedClassName}
       />
       <VerticalSeparator />
       <DomainLinks
+        className={`w-[227px] px-2`}
         linkClassName={linkClassName}
         selectedClassName={selectedClassName}
       />
       <VerticalSeparator />
-      <UserManualLink className={linkClassName} />
+      <UserManualLink
+        className="w-[175px]"
+        linkClassName={`overflow-hidden text-ellipsis ${linkClassName}`}
+      />
       <EllipseSeparator />
-      <LoginLink className={linkClassName} />
+      <LoginLink
+        className="w-[72px]"
+        linkClassName={`overflow-hidden text-ellipsis ` + linkClassName}
+      />
     </nav>
   );
 }

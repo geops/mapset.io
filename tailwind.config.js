@@ -32,6 +32,9 @@ module.exports = {
         lighte: "#D2E9F9",
         light: "#63B3F4",
       },
+      container: {
+        center: true,
+      },
     },
     extend: {
       backgroundImage: {

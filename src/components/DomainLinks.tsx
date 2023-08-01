@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useI18n } from "./I18n";
 import DomainIcon from "./images/DomainIcon";
+import EllipseSeparator from "./ui/EllipseSeparator";
 
 const translationIds: {
   [index: string]: string;
@@ -24,17 +25,20 @@ function DomainLinks({
   return (
     <div className={`flex items-center gap-2 ${className}`}>
       <DomainIcon />
-      {["io", "ch"].map((domainn: string) => {
+      {["io", "ch"].map((domainn: string, index: number) => {
         return (
-          <Link
-            key={domainn}
-            href={`https://mapset.${domainn}${pathanme}`}
-            className={`${linkClassName} ${
-              domain === domainn ? selectedClassName : ""
-            }`}
-          >
-            {t(translationIds[domainn])}
-          </Link>
+          <>
+            <Link
+              key={domainn}
+              href={`https://mapset.${domainn}${pathanme}`}
+              className={`${linkClassName} ${
+                domain === domainn ? selectedClassName : ""
+              }`}
+            >
+              {t(translationIds[domainn])}
+            </Link>
+            {index === 0 && <EllipseSeparator className="mx-[0px]" />}
+          </>
         );
       })}
     </div>

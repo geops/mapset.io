@@ -6,6 +6,7 @@ function GuideIcon() {
       height="16"
       viewBox="0 0 16 16"
       fill="none"
+      className="min-w-[19px] mt-[1px]"
     >
       <g>
         <path

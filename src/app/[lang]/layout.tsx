@@ -6,6 +6,7 @@ import { i18n } from "../../../i18n-config";
 
 const inter = Inter({ subsets: ["latin"] });
 
+// important for next-sitemap
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => {
     return { lang: locale };

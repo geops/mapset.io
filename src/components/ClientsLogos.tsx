@@ -20,8 +20,8 @@ function ClientsLogos() {
           );
         })}
       </InfiniteLooper>
-
-      <InfiniteLooper speed={25}>
+      <br />
+      <InfiniteLooper speed={25} direction={"left"}>
         {line2.map((logo) => {
           return (
             <div key={logo.id} className="px-6">

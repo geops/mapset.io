@@ -6,7 +6,7 @@ import { User } from "oidc-client";
 import { useEffect, useState } from "react";
 import LoginIcon from "./images/LoginIcon";
 
-function LoginLink({ className = "" }) {
+function LoginLink({ className = "", linkClassName = "" }) {
   const { t } = useI18n();
   const [user, setUser] = useState<User | null>();
 
@@ -20,8 +20,9 @@ function LoginLink({ className = "" }) {
 
   return (
     <div className={`flex items-center gap-2 ${className}`}>
+      {!user ? <LoginIcon /> : <LogoutIcon />}
       <Link
-        className="flex items-center gap-2"
+        className={`${linkClassName}`}
         href={"/"}
         onClick={(event) => {
           if (user) {
@@ -32,7 +33,6 @@ function LoginLink({ className = "" }) {
           event.preventDefault();
         }}
       >
-        {!user ? <LoginIcon /> : <LogoutIcon />}
         {user?.profile?.nickname || t("login")}
       </Link>
     </div>
