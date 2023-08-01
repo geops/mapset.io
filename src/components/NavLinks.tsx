@@ -7,15 +7,27 @@ const ids = ["features", "pricing", "testimonials", "contact"];
 export const onClickSmoothScroll: MouseEventHandler<
   HTMLAnchorElement | HTMLButtonElement
 > = (evt) => {
-  // evt.preventDefault();
-  const id = (evt.target as HTMLAnchorElement).href?.split("#")[1];
+  evt.preventDefault();
+  const href = (evt.target as HTMLAnchorElement).href;
   let elt: HTMLElement | null = evt.target as HTMLElement;
 
-  if (id) {
-    elt = document.getElementById(id);
+  if (href) {
+    try {
+      elt = document.getElementById(decodeURIComponent(href).split("#")[1]);
+    } catch (err) {
+      console.error(err);
+    }
   }
   if (elt) {
     (elt as HTMLDivElement).scrollIntoView({ behavior: "smooth" });
+
+    if (elt.id) {
+      window.setTimeout(() => {
+        if (elt?.id) {
+          window.location.hash = elt.id;
+        }
+      }, 500);
+    }
   }
 };
 

@@ -19,20 +19,14 @@ import { onClickSmoothScroll } from "./NavLinks";
 
 const renderId = (label: string) => {
   if (label) {
-    return label
-      .toLowerCase()
-      .replace(/\s/g, "")
-      .replace(/(ä|ü|ö)/g, "u"); // umlaut character breaks the scrollIntoView
+    return label.toLowerCase().replace(/\s/g, "");
   }
   return null;
 };
 
 const renderScrollerId = (label: string) => {
   if (label) {
-    return `scroller-${label
-      .toLowerCase()
-      .replace(/\s/g, "")
-      .replace(/(ä|ü|ö)/g, "u")}`; // umlaut character breaks the scrollIntoView
+    return `scroller-${label.toLowerCase().replace(/\s/g, "")}`;
   }
   return null;
 };
@@ -65,17 +59,19 @@ export const Guide = () => {
 
   const handleScroll = () => {
     const ids = titles.map((item) => [item.label, ...item.sub_features]).flat();
-    const distances = ids.map((label) => {
+    const distances = ids.map((label, idx) => {
       const distance = document
         .getElementById(renderId(label))
         .getBoundingClientRect().top;
-      return distance > 0 ? Number.POSITIVE_INFINITY : distance;
+      console.log(label, idx, distance);
+      return distance > 150 ? Number.POSITIVE_INFINITY : distance; // 1550 for the header
     });
     const closestToZero = distances.reduce((a, b) => {
-      return Math.abs(b - 0) < Math.abs(a - 0) ? b : a;
+      console.log(a, b);
+      return Math.abs(b + 0) < Math.abs(a + 0) ? b : a;
     });
     const activeIdx = distances.findIndex((dist) => dist === closestToZero);
-
+    console.log(activeIdx, closestToZero);
     ids.forEach((id) => {
       if (id === ids[activeIdx]) {
         const activated = document.getElementById(renderScrollerId(id));
