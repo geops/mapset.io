@@ -18,7 +18,7 @@ const domain = process.env.NEXT_PUBLIC_DOMAIN;
 
 function DomainLinks({
   className = "",
-  linkClassName = "hover:text-slate-700",
+  linkClassName = "hover:text-slate-700 hover:font-bold",
   selectedClassName = "text-slate-700 font-bold",
 }) {
   const { t } = useI18n();
@@ -38,7 +38,7 @@ function DomainLinks({
             >
               {t(translationIds[domainn])}
             </Link>
-            {index === 0 && <EllipseSeparator className="mx-[0px]" />}
+            {index === 0 && <EllipseSeparator className="!mx-0" />}
           </React.Fragment>
         );
       })}

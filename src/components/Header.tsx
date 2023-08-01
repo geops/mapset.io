@@ -7,8 +7,8 @@ import LoginLink from "./LoginLink";
 
 function Header({
   className = "",
-  linkClassName = "hover:text-slate-700",
-  selectedClassName = "text-slate-700 font-semibold",
+  linkClassName = "hover:text-slate-700  hover:font-bold",
+  selectedClassName = "text-slate-700 font-bold",
 }: {
   className?: string;
   linkClassName?: string;

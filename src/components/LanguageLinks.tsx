@@ -8,7 +8,7 @@ import { useI18n } from "./I18n";
 
 function LanguageLinks({
   className = "",
-  linkClassName = "hover:text-slate-700",
+  linkClassName = "hover:text-slate-700  hover:font-bold",
   selectedClassName = "text-slate-700 font-bold",
 }) {
   const { language } = useI18n() as { language: Locale };
