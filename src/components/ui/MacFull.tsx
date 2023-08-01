@@ -1,22 +1,27 @@
 import Image from "next/image";
 
 function MacFull({
-  className,
+  containerClassName = "",
+  children,
   ...props
-}: React.ImgHTMLAttributes<HTMLImageElement> & { className: string }) {
+}: React.ImgHTMLAttributes<HTMLImageElement> & {
+  children: React.ReactNode;
+  containerClassName?: string;
+}) {
   return (
-    <div className={`relative ${className} flex items-center justify-center `}>
+    <div className={`relative flex justify-center ${containerClassName}`}>
       <Image
         src={"/img/mac-book-pro-16.png"}
-        width="375"
-        height="239"
+        // @ts-ignore
+        width={4733}
+        // @ts-ignore
+        height={2741}
         alt={"mac"}
-        className="min-w-[375px]"
+        className={`w-full h-full`}
+        {...props}
       ></Image>
-      <div className="absolute top-[31px] w-[328px] h-[214px] overflow-hidden flex items-center justify-center">
-        {props.src && ( // @ts-ignore
-          <Image src={props.src} alt={"mac"} {...props}></Image>
-        )}
+      <div className="absolute top-[2%] left-[9%] right-[8.2%] bottom-[7%] overflow-hidden flex items-center justify-center">
+        {children}
       </div>
     </div>
   );

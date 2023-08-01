@@ -6,6 +6,7 @@ import ArrowDownIcon2 from "./images/ArrowDownIcon2";
 import MacLeftToRight from "./ui/MacLeftToRight";
 import MacRightToLeft from "./ui/MacRightToLeft";
 import MacFull from "./ui/MacFull";
+import Image from "next/image";
 
 export type MapsetFeature = {
   title: string;
@@ -31,7 +32,7 @@ function FeaturesSection({
 
   return (
     <div
-      className={`flex justify-between overflow-hidden items-center gap-12 ${
+      className={`flex justify-between items-center gap-12 ${
         reverse ? "flex-row-reverse" : ""
       } ${className}`}
     >
@@ -73,15 +74,29 @@ function FeaturesSection({
                     />
                   </div>
                 </H5>
-
-                <MacFull
-                  className={`py-6 ${
-                    isUnselected ? "hidden" : "flex justify-center md:hidden"
-                  }`}
-                  src={t(`features.list.${selectedIndex}.image`)}
-                  width={t(`features.list.${selectedIndex}.image_width`)}
-                  height={t(`features.list.${selectedIndex}.image_height`)}
-                ></MacFull>
+                {!isUnselected && (
+                  <div
+                    className={`relative flex md:hidden justify-center py-12 h-[300px]`}
+                  >
+                    <MacFull>
+                      <Image
+                        alt="feature"
+                        src={t(`features.list.${selectedIndex}.image`)}
+                        // width={parseFloat(t(`features.list.${selectedIndex}.image_width`))}
+                        // height={parseFloat(
+                        //   t(`features.list.${selectedIndex}.image_height`),
+                        // )}
+                        width={parseFloat(
+                          t(`features.list.${selectedIndex}.image_width`),
+                        )}
+                        height={parseFloat(
+                          t(`features.list.${selectedIndex}.image_height`),
+                        )}
+                        className="h-full w-full object-cover"
+                      ></Image>
+                    </MacFull>
+                  </div>
+                )}
                 <p
                   className={
                     isUnselected ? "hidden text-gray" : "text-blue-900"
@@ -95,19 +110,70 @@ function FeaturesSection({
         })}
       </div>
       {reverse ? (
-        <MacLeftToRight
-          className="hidden md:block"
-          src={t(`features.list.${selectedIndex}.image`)}
-          width={t(`features.list.${selectedIndex}.image_width`)}
-          height={t(`features.list.${selectedIndex}.image_height`)}
-        ></MacLeftToRight>
+        // <MacLeftToRight
+        //   className="hidden md:block"
+        //   src={t(`features.list.${selectedIndex}.image`)}
+        //   width={t(`features.list.${selectedIndex}.image_width`)}
+        //   height={t(`features.list.${selectedIndex}.image_height`)}
+        // ></MacLeftToRight>
+
+        // 4733 * 2741
+        <div className={`relative hidden md:flex min-w-[40%] h-[557px]`}>
+          <div className={`absolute -right-[10%] w-[941px] h-[557px]`}>
+            <MacFull>
+              <Image
+                alt="feature"
+                src={t(`features.list.${selectedIndex}.image`)}
+                // width={parseFloat(t(`features.list.${selectedIndex}.image_width`))}
+                // height={parseFloat(
+                //   t(`features.list.${selectedIndex}.image_height`),
+                // )}
+                width={parseFloat(
+                  t(`features.list.${selectedIndex}.image_width`),
+                )}
+                height={parseFloat(
+                  t(`features.list.${selectedIndex}.image_height`),
+                )}
+                className="h-full w-full object-cover"
+              ></Image>
+            </MacFull>
+          </div>
+        </div>
       ) : (
-        <MacRightToLeft
-          className="hidden md:block"
-          src={t(`features.list.${selectedIndex}.image`)}
-          width={t(`features.list.${selectedIndex}.image_width`)}
-          height={t(`features.list.${selectedIndex}.image_height`)}
-        ></MacRightToLeft>
+        // <MacRightToLeft
+        //   className="hidden md:block"
+        //   src={t(`features.list.${selectedIndex}.image`)}
+        //   width={t(`features.list.${selectedIndex}.image_width`)}
+        //   height={t(`features.list.${selectedIndex}.image_height`)}
+        // ></MacRightToLeft>
+        <div className={`relative hidden md:flex min-w-[40%] h-[557px]`}>
+          <div className={`absolute left-0 w-[941px] h-[557px]`}>
+            <MacFull>
+              <Image
+                alt="feature"
+                src={t(`features.list.${selectedIndex}.image`)}
+                // width={parseFloat(t(`features.list.${selectedIndex}.image_width`))}
+                // height={parseFloat(
+                //   t(`features.list.${selectedIndex}.image_height`),
+                // )}
+                width={parseFloat(
+                  t(`features.list.${selectedIndex}.image_width`),
+                )}
+                height={parseFloat(
+                  t(`features.list.${selectedIndex}.image_height`),
+                )}
+                className="h-full w-full object-cover"
+              ></Image>
+            </MacFull>
+          </div>
+        </div>
+
+        // <MacFull
+        //   className={`hidden md:block`}
+        //   src={t(`features.list.${selectedIndex}.image`)}
+        //   width={t(`features.list.${selectedIndex}.image_width`)}
+        //   height={t(`features.list.${selectedIndex}.image_height`)}
+        // ></MacFull>
       )}
     </div>
   );

@@ -30,7 +30,7 @@ function Home() {
   const { t } = useI18n();
   return (
     <>
-      <div className="relative z-0">
+      <div className="relative z-0 overflow-x-hidden">
         <div className={`hidden md:block ${containerClassName}`}>
           <div className="flex justify-end">
             <Header></Header>
@@ -95,7 +95,7 @@ function Home() {
                 <div className="hidden md:flex items-end min-w-[65%]"></div>
               </div>
 
-              <div className="hidden md:block absolute top-[210px]  left-[510px] lg:left-[700px] w-[860px] h-[600px] ">
+              <div className="hidden md:block absolute top-[210px]  left-[510px] lg:left-[628px] w-[860px] h-[600px] ">
                 <video
                   loop
                   autoPlay
