@@ -1,7 +1,16 @@
 import Link from "next/link";
 import { useI18n } from "./I18n";
+import { MouseEventHandler } from "react";
 
 const ids = ["features", "pricing", "testimonials", "contact"];
+
+const onClick: MouseEventHandler<HTMLAnchorElement> = (evt) => {
+  evt.preventDefault();
+  const elt = document.getElementById(
+    (evt.target as HTMLAnchorElement).href.split("#")[1],
+  );
+  (elt as HTMLDivElement).scrollIntoView({ behavior: "smooth" });
+};
 
 function NavLinks({
   selected,
@@ -25,6 +34,7 @@ function NavLinks({
             className={`py-4 px-2 ${
               selected === id ? selectedClassName : ""
             } ${className}`}
+            onClick={onClick}
             {...props}
           >
             {t(`${id}.section`)}
