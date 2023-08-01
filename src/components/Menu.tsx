@@ -20,12 +20,14 @@ function Menu({ className = "" }) {
   }, []);
 
   return (
-    <div className={className}>
+    <div className={`${className}`}>
       <div
-        hidden={!open}
-        className={`${
+        className={`transition-transform  ${
           open ? "flex justify-between" : ""
         }  fixed top-0 bottom-0 left-0 right-0 bg-blue-800 w-full h-full overflow-y-auto`}
+        style={{
+          transform: open ? "translateY(0px)" : "translateY(-1000px)",
+        }}
       >
         <div className="flex flex-col text-white items-start text-normal font-medium   w-full">
           <div className="flex flex-1 px-6 pt-6 items-center justify-end w-full bg-blue-700">

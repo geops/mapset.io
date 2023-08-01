@@ -54,8 +54,8 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
         // height={parseFloat(
         //   t("testimonials.customers." + selected + ".image_height"),
         // )}
-        width={400}
-        height={400}
+        width={"400"}
+        height={"400"}
         className="h-full object-cover rounded-full"
       />
     );
