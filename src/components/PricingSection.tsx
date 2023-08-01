@@ -53,6 +53,7 @@ function PricingSection({ products = [] }: { products: Product[] }) {
       ).getBoundingClientRect();
       setCanScrollLeft(targetRect.left > firstChildRect.left);
       setCanScrollRight(targetRect.right < firstChildRect.right);
+      console.log(targetRect.right < firstChildRect.right);
     }
 
     node.addEventListener("scroll", onScroll);

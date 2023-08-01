@@ -3,8 +3,6 @@ import { useState } from "react";
 import H5 from "./ui/H5";
 import translations from "@/content/home/de.json";
 import ArrowDownIcon2 from "./images/ArrowDownIcon2";
-import MacLeftToRight from "./ui/MacLeftToRight";
-import MacRightToLeft from "./ui/MacRightToLeft";
 import MacFull from "./ui/MacFull";
 import Image from "next/image";
 
