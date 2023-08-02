@@ -109,14 +109,11 @@ function Home() {
                 </div>
                 <div className="hidden md:flex items-end min-w-[65%]"></div>
               </div>
-              <div className="hidden md:block absolute top-[210px]  left-[510px] lg:left-[628px] w-[860px] h-[615px] ">
+              <div className="hidden md:block absolute top-[210px]  left-[510px] lg:left-[628px] w-[860px] h-[615px] animate-fade-in">
                 <video
                   loop
                   autoPlay
-                  className="border-[#126392] border-8 rounded-xl lg:rounded-b-none w-full h-full opacity-0 transition-opacity duration-1000"
-                  onLoadedData={(evt) => {
-                    (evt.target as HTMLVideoElement).style.opacity = "1";
-                  }}
+                  className="border-[#126392] border-8 rounded-xl lg:rounded-b-none w-full h-full animate-fade-in"
                 >
                   <source src="/video/mapset-demo.mp4" type="video/mp4" />
                 </video>

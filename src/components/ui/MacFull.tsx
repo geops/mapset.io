@@ -17,7 +17,7 @@ function MacFull({
         // @ts-ignore
         height={2741}
         alt={"mac"}
-        className={`w-full h-full`}
+        className={`w-full h-full animate-fade-in`}
         {...props}
       ></Image>
       <div className="absolute top-[2%] left-[9%] right-[8.2%] bottom-[7%] overflow-hidden flex items-center justify-center">

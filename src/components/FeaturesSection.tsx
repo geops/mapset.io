@@ -46,7 +46,7 @@ function FeaturesSection({
             height={parseFloat(
               t(`features.list.${selectedIndex}.image_height`),
             )}
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover rounded-xl animate-fade-in"
           ></Image>
         )}
       </MacFull>
