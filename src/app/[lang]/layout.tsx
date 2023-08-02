@@ -23,6 +23,7 @@ export default function Layout({
   return (
     <html lang={lang}>
       <body className={"scroll-mt-[81px] " + inter.className}>
+        <link rel="stylesheet" href="https://use.typekit.net/mqe1sjs.css" />
         <Website language={lang}>{children}</Website>
       </body>
     </html>
