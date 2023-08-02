@@ -69,7 +69,7 @@
   "imprint": {
     "metadata": {
       "description": "",
-      "title": "Mapset Impressum"
+      "title": "mapset Impressum"
     }
   },
   "international": "International",
@@ -182,7 +182,7 @@
         "image_width": 1080,
         "job": "Verkehrsbetriebe Stadt Zürich",
         "name": "Miro Bertozzi",
-        "testimonial": "We like working with Mapset because individualizing plans is possible without additional graphics programs. The tool helps us to ensure consistent communication. We are very satisfied."
+        "testimonial": "We like working with mapset because individualizing plans is possible without additional graphics programs. The tool helps us to ensure consistent communication. We are very satisfied."
       },
       {
         "job": "Project manager, Somewhere Bus",
@@ -191,6 +191,6 @@
       }
     ],
     "section": "Testimonials",
-    "title": "Who is using Mapset and why?"
+    "title": "Who is using mapset and why?"
   }
 }
