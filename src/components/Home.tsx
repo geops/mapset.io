@@ -20,6 +20,7 @@ import Menu from "./Menu";
 import OurCustomer from "./images/OurCustomerImage";
 import ContactImage from "./images/ContactImage";
 import { onClickSmoothScroll } from "./NavLinks";
+import { Suspense } from "react";
 
 const region = process.env.NEXT_PUBLIC_DOMAIN;
 const pClassName = "text-xl text-blue-900 leading-[30px] max-w-[768px]";
@@ -108,12 +109,14 @@ function Home() {
                 </div>
                 <div className="hidden md:flex items-end min-w-[65%]"></div>
               </div>
-
               <div className="hidden md:block absolute top-[210px]  left-[510px] lg:left-[628px] w-[860px] h-[615px] ">
                 <video
                   loop
                   autoPlay
-                  className="border-[#126392] border-8 rounded-xl lg:rounded-b-none w-full h-full "
+                  className="border-[#126392] border-8 rounded-xl lg:rounded-b-none w-full h-full opacity-0 transition-opacity duration-1000"
+                  onLoadedData={(evt) => {
+                    (evt.target as HTMLVideoElement).style.opacity = "1";
+                  }}
                 >
                   <source src="/video/mapset-demo.mp4" type="video/mp4" />
                 </video>

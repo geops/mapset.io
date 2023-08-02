@@ -52,6 +52,8 @@ module.exports = {
       animation: {
         "loop-vertical": "loopv linear infinite",
         "loop-horizontal": "looph linear infinite",
+        "bounce-once": "bounce 1s",
+        "fade-in": "fade-in 1s",
       },
       keyframes: {
         loopv: {
@@ -61,6 +63,10 @@ module.exports = {
         looph: {
           from: { transform: "translateX(0%)" },
           to: { transform: "translateX(-100%)" },
+        },
+        "fade-in": {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
         },
       },
     },
