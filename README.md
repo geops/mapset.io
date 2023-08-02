@@ -1,34 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mapset website
 
-## Getting Started
+This is project is the mapset website. It uses nextJS 13.
 
-First, run the development server:
+The website contains 3 pages:
+
+- `/` which is the home page
+- `/imprint` which the imprint page for ingo about license and stuff
+- `/guide` which is the mapset user guide
+
+The webiste is translated in 3 languages DE, EN, FR. Each page loads its own translations.
+
+Translations are available on folder `src/content/[guide|home|imprint]>`.
+
+## Environment
+
+- <https://mapset.ch>
+- <https://mapset.io>
+- <https://dev.mapset.io> use vercel project [website-mapset-io](https://vercel.com/geops/website-mapset-io)
+- <https://dev.mapset.ch>
+
+## Development
+
+There is only one environment variable to set, NEXT_PUBLIC_DOMAIN=io or NEXT_PUBLIC_DOMAIN=ch . It defines the domain where the app is deployed.
 
 ```bash
-npm run dev
-# or
+// Launch the web server on http://localhost:3000
+cp .env.dist .env
+yarn install
 yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deploy
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Project is deployed automatically on vercel project [mapset-ch](https://vercel.com/geops/mapset-ch) and [mapset-io](https://vercel.com/geops/mapset-io) .
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The project [website-mapset-io](https://vercel.com/geops/website-mapset-io) was there for the update of nextJS13 will be removed when olivier/nextjs branch is merged.
