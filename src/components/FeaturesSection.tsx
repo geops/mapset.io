@@ -59,7 +59,7 @@ function FeaturesSection({
         reverse ? "flex-row-reverse" : ""
       } ${className}`}
     >
-      <div className="flex flex-col pt-6 md:max-w-[50%] divide-y divide-blue-lighte md:divide-x-4 md:divide-y-0 md:divide-gray-light">
+      <div className="flex flex-col pt-6 lg:max-w-[50%] divide-y divide-blue-lighte md:divide-x-4 md:divide-y-0 md:divide-gray-light">
         {features.map((feature, idx) => {
           if (indexStart > idx || idx >= indexEnd) {
             return null;
@@ -73,7 +73,7 @@ function FeaturesSection({
                 key={feature.title}
                 id={"feature" + idx}
                 className={
-                  "px-6 py-4 md:border-l-4  text-left " +
+                  "flex flex-col gap-6 px-6 py-6 md:border-l-4  text-left " +
                   (isUnselected
                     ? "md:border-gray-light"
                     : "bg-blue-lighter md:!border-blue-600")
@@ -92,7 +92,7 @@ function FeaturesSection({
               >
                 <H5
                   className={
-                    "flex justify-between items-center pb-2 " +
+                    "flex justify-between items-center w-full !pb-0 " +
                     (isUnselected ? "text-gray" : "text-blue")
                   }
                 >
@@ -106,7 +106,9 @@ function FeaturesSection({
                   </div>
                 </H5>
                 <div
-                  className="transition-[max-height] max-h-[1000px] overflow-hidden"
+                  className={`${
+                    isUnselected ? "hidden" : "flex"
+                  } flex-col gap-6 transition-[max-height] max-h-[1000px] overflow-hidden `}
                   style={
                     {
                       // maxHeight: isUnselected ? "0px" : "1000px",
@@ -114,9 +116,7 @@ function FeaturesSection({
                   }
                 >
                   {!isUnselected && (
-                    <div
-                      className={`relative flex md:hidden justify-center py-12`}
-                    >
+                    <div className={`relative flex lg:hidden justify-center `}>
                       {featureImg}
                     </div>
                   )}
@@ -135,13 +135,13 @@ function FeaturesSection({
       </div>
       {reverse ? (
         // 4733 * 2741
-        <div className={`relative hidden md:flex min-w-[40%] h-[557px]`}>
+        <div className={`relative hidden lg:flex min-w-[40%] h-[557px]`}>
           <div className={`absolute -right-[10%] w-[941px] h-[557px]`}>
             {featureImg}
           </div>
         </div>
       ) : (
-        <div className={`relative hidden md:flex min-w-[40%] h-[557px]`}>
+        <div className={`relative hidden lg:flex min-w-[40%] h-[557px]`}>
           <div className={`absolute -left-[10%] w-[941px] h-[557px]`}>
             {featureImg}
           </div>

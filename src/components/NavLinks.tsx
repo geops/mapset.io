@@ -19,7 +19,9 @@ export const onClickSmoothScroll: MouseEventHandler<
     }
   }
   if (elt) {
-    (elt as HTMLDivElement).scrollIntoView({ behavior: "smooth" });
+    (elt as HTMLDivElement).scrollIntoView({
+      behavior: "smooth",
+    });
 
     if (elt.id) {
       window.setTimeout(() => {
