@@ -64,7 +64,6 @@ const ContactForm = ({ className = "" }) => {
                 type="select"
                 name="interest"
                 className="appearance-none"
-                defaultValue="mapset maxi"
                 placeholder="mapset maxi"
               >
                 <option value="mapset free">mapset free</option>
