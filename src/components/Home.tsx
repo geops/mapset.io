@@ -113,7 +113,7 @@ function Home() {
                 <video
                   loop
                   autoPlay
-                  className="border-[#126392] border-8 rounded-xl lg:rounded-b-none w-full h-full animate-fade-in"
+                  className="border-[#126392] border-8 rounded-xl lg:rounded-b-none w-full h-full animate-fade-in delay-1500"
                 >
                   <source src="/video/mapset-demo.mp4" type="video/mp4" />
                 </video>
