@@ -174,12 +174,9 @@ function Home() {
           </section>
           <section
             id="testimonials"
-            className="flex flex-col items-center relative px-4 pt-24 py-12 bg-blue-lighter z-0"
+            className="flex flex-col items-center relative px-4 py-12 bg-blue-lighter z-0"
           >
             <div className={`${containerClassName}`}>
-              <div className="flex lg:hidden flex-1 items-center justify-center pb-4">
-                <OurCustomer />
-              </div>
               <div className="pb-12">
                 <H4>{t("testimonials.section")}</H4>
                 <H2 className={`max-w-[800px]`}>{t("testimonials.title")}</H2>
@@ -187,19 +184,16 @@ function Home() {
               <TestimonialsSection />
             </div>
           </section>
-          <section className="flex flex-col items-center relative px-0 pb-0 pt-24 z-0">
+          <section className="flex flex-col items-center relative px-0 py-12 pt-24 z-0">
             <div className={`${containerClassName} !px-0`}>
               <ClientsLogos />
             </div>
           </section>
           <section
             id="contact"
-            className="flex flex-col items-center relative px-4 pt-24 py-12 z-0"
+            className="flex flex-col items-center relative px-4 py-12 z-0"
           >
             <div className={`${containerClassName}`}>
-              <div className="flex lg:hidden flex-1 items-center justify-center pb-12">
-                <ContactImage />
-              </div>
               <div className="pb-12">
                 <H4>{t("contact.section")}</H4>
                 <H2>{t("contact.title")}</H2>

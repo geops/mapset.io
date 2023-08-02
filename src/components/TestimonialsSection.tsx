@@ -39,30 +39,40 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
 
   const image = useMemo(() => {
     const src = t("testimonials.customers." + selected + ".image");
-    if (src[0] === "testimonials.customers." + selected + ".image") return null;
+    const hasUserImage =
+      src[0] !== "testimonials.customers." + selected + ".image";
     return (
-      <Image
-        src={`/img/${src}`}
-        alt={
-          (t("testimonials.customers." + selected + ".name"),
-          t("testimonials.customers." + selected + ".job"))
-        }
-        // width={parseFloat(
-        //   t("testimonials.customers." + selected + ".image_width"),
-        // )}
-        // height={parseFloat(
-        //   t("testimonials.customers." + selected + ".image_height"),
-        // )}
-        width={"400"}
-        height={"400"}
-        className="h-full object-cover rounded-full"
-      />
+      <div className="w-[200px] h-[200px] md:w-[300px] md:h-[300px]">
+        {hasUserImage ? (
+          <Image
+            src={`/img/${src}`}
+            alt={
+              (t("testimonials.customers." + selected + ".name"),
+              t("testimonials.customers." + selected + ".job"))
+            }
+            // width={parseFloat(
+            //   t("testimonials.customers." + selected + ".image_width"),
+            // )}
+            // height={parseFloat(
+            //   t("testimonials.customers." + selected + ".image_height"),
+            // )}
+            width={"400"}
+            height={"400"}
+            className="h-full object-cover rounded-full animate-fade-in"
+          />
+        ) : (
+          <OurCustomer className="w-full h-full animate-fade-in" />
+        )}
+      </div>
     );
   }, [selected, t]);
 
   return (
     <div className={`flex justify-between overflow-hidden gap-12 ${className}`}>
       <div className="flex flex-col gap-6 lg:max-w-[50%] text-darker justify-center">
+        <div className="flex lg:hidden items-center justify-center">
+          {image}
+        </div>
         {items.map((item, idx) => {
           const isUnselected = selected !== idx;
           return (
@@ -96,7 +106,7 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
         </div>
       </div>
       <div className="hidden lg:flex flex-1 items-center justify-center">
-        {image || <OurCustomer />}
+        {image}
       </div>
     </div>
   );
