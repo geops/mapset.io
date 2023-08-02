@@ -17,10 +17,7 @@ import TestimonialsSection from "./TestimonialsSection";
 import NavSections from "./NavSections";
 import ContactSection from "./ContactSection";
 import Menu from "./Menu";
-import OurCustomer from "./images/OurCustomerImage";
-import ContactImage from "./images/ContactImage";
 import { onClickSmoothScroll } from "./NavLinks";
-import { Suspense } from "react";
 
 const region = process.env.NEXT_PUBLIC_DOMAIN;
 const pClassName = "text-xl text-blue-900 leading-[30px] max-w-[768px]";
@@ -159,7 +156,7 @@ function Home() {
           </section>
           <section
             id="pricing"
-            className="flex flex-col items-center relative px-4 pt-24 py-12 z-0"
+            className="flex flex-col items-center relative px-4 pt-12 pb-24 z-0"
           >
             <div className={`${containerClassName}`}>
               <div className="pb-12">
@@ -174,10 +171,10 @@ function Home() {
           </section>
           <section
             id="testimonials"
-            className="flex flex-col items-center relative px-4 py-12 bg-blue-lighter z-0"
+            className="flex flex-col items-center relative px-4 py-24 bg-blue-lighter z-0"
           >
             <div className={`${containerClassName}`}>
-              <div className="pb-12">
+              <div className="pb-6 ">
                 <H4>{t("testimonials.section")}</H4>
                 <H2 className={`max-w-[800px]`}>{t("testimonials.title")}</H2>
               </div>
@@ -191,7 +188,7 @@ function Home() {
           </section>
           <section
             id="contact"
-            className="flex flex-col items-center relative px-4 py-12 z-0"
+            className="flex flex-col items-center relative px-4 py-12 pb-24 z-0"
           >
             <div className={`${containerClassName}`}>
               <div className="pb-12">
