@@ -27,6 +27,7 @@ function DomainLinks({
     <div className={`flex items-center gap-2 ${className}`}>
       <DomainIcon />
       {["io", "ch"].map((domainn: string, index: number) => {
+        console.log("lala");
         return (
           <React.Fragment key={domainn}>
             <Link

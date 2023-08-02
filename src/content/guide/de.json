@@ -2,7 +2,9 @@
   "guide": {
     "contact": {
       "header": "Bleiben Sie auf dem Laufenden!",
-      "description": "Wir informieren Sie regelmäßig in unserem Newsletter und auf Twitter über die neusten Updates von mapset."
+      "description": "Wir informieren Sie regelmäßig in unserem Newsletter und auf Twitter über die neusten Updates von mapset.",
+      "subscribe_newsletter": "Newsletter abonnieren",
+      "visit_our_twitter": "Besuchen Sie uns auf Twitter"
     },
     "more_questions": "Noch Fragen ?",
     "links_ch": "Für Benutzer aus der Schweiz steht eine eigene Instanz zur Verfügung:",

@@ -13,24 +13,32 @@ function Contact() {
     <div>
       <H2>{t("guide.contact.header")}</H2>
       <p>{t("guide.contact.description")}</p>
-      <div className="flex gap-4 h-[35px]">
+      <div className="flex gap-4  py-12">
         <ButtonWhite
           variant="outlined"
           href={t("newsletter_link." + domain)}
           rel="noopener noreferrer"
           target="_blank"
+          className="normal-case"
         >
-          {t("newsletter")}
+          {t("guide.contact.subscribe_newsletter")}
         </ButtonWhite>
         <ButtonWhite
           variant="outlined"
           href={`https://twitter.com/mapset${process.env.NEXT_PUBLIC_DOMAIN}`}
           rel="noopener noreferrer"
           target="_blank"
+          className="normal-case"
         >
-          <TwitterIcon />
-          {t("guide.visit_our_twitter")}
-          <ExternalLinkIcon />
+          <span className="-mt-[3px]">
+            <TwitterIcon className="pb-2" />
+          </span>
+          <span className="pt-[2px]">
+            {t("guide.contact.visit_our_twitter")}
+          </span>
+          <span>
+            <ExternalLinkIcon />
+          </span>
         </ButtonWhite>
       </div>
     </div>
