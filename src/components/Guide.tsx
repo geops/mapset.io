@@ -149,7 +149,7 @@ export const Guide = () => {
           <Header className="container lg  text-gray py-1 justify-end"></Header>
         </div> */}
         <header className="bg-blue-600 text-white  z-[1000] fixed w-full t-0 px-12 py-2 flex items-center">
-          <div className="container lg flex justify-between items-center">
+          <div className="container  flex justify-between items-center">
             <Link href={"/" + locale}>
               <MapsetLogo />
             </Link>
@@ -209,8 +209,8 @@ export const Guide = () => {
             );
           })}
         </nav>
-        <main className="pl-[220px] pt-[82px] container lg">
-          <div className="flex flex-col gap-4 p-24">
+        <main className="pl-[220px] pt-[82px] container mx-auto max-w-[1440px]">
+          <div className="flex flex-col gap-4 pl-6 py-24 md:pl-12 lg:pl-24">
             <H2 className="is-bolder guideHeader">{t("guide.title")}</H2>
             <p>
               {t("guide.links_ch")}
@@ -299,7 +299,7 @@ export const Guide = () => {
             <Contact region={domain} />
           </div>
         </main>
-        <Footer className="z-[1000] relative" onlyPrivacyLink />
+        <Footer className="z-[1000] relative" />
       </div>
     </>
   );

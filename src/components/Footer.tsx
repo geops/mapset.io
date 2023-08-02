@@ -17,7 +17,9 @@ const Arrow = ({ className = "" }) => {
 
 const Footer = ({ className = "", onlyPrivacyLink = false }) => {
   const pathname = usePathname();
+  const isGuidePage = /guide/.test(pathname);
   const isImprintPage = /imprint/.test(pathname);
+  const isProductPage = !isGuidePage && !isImprintPage;
   return (
     <footer
       className={`px-4 flex justify-center bg-blue-700 text-white ${className} overflow-hidden `}
@@ -26,7 +28,7 @@ const Footer = ({ className = "", onlyPrivacyLink = false }) => {
         <div className="flex  flex-col items-start w-full md:flex-row md:items-center md:w-auto gap-4 text-s text-normal font-normal ">
           {!onlyPrivacyLink && (
             <ProductLink className="hover:font-bold">
-              {!isImprintPage && <Arrow className="hidden md:block" />}
+              {isProductPage && <Arrow className="hidden md:block" />}
             </ProductLink>
           )}
           {!onlyPrivacyLink && (
