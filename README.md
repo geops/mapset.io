@@ -1,4 +1,6 @@
-# Mapset website
+# mapset.io and mapset.ch websites
+
+Promo website for [mapset](https://editor.mapset.io/) plan editor.
 
 This is project is the mapset website. It uses nextJS 13.
 
