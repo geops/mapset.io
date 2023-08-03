@@ -38,7 +38,7 @@ const ContactForm = ({ className = "" }) => {
       className={`flex flex-col gap-6 ${className} w-[480px]`}
     >
       {submitted ? (
-        <p>{t("contact.submitted")}</p>
+        <p data-testid="success">{t("contact.submitted")}</p>
       ) : (
         <>
           <div>
