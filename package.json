@@ -45,6 +45,7 @@
     "build": "next build",
     "cy:open": "cypress open",
     "cy:test": "start-server-and-test start:http http://localhost:3000 'cypress run --browser chrome'",
+    "cy:test:mail": "yarn build && start-server-and-test start http://localhost:3000 'cypress run --spec ./cypress/e2e/ContactForm.cy.ts --browser chrome'",
     "dev": "next dev",
     "format": "prettier --write 'src/**/*.js' && eslint 'src/**/*.js' --fix && stylelint 'src/**/*.css' 'src/**/*.scss' --fix --allow-empty-input",
     "lint": "next lint",
