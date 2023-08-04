@@ -184,11 +184,13 @@ export const Guide = () => {
                   href={`#${renderId(feature.label)}`}
                   id={renderScrollerId(feature.label)}
                   title={feature.label}
-                  className="flex items-center gap-2 py-2 hover:text-blue-600 scroll-mt-[90px]"
+                  className="flex items-center gap-2 py-2 hover:text-blue-600 scroll-mt-[90px] overflow-hidden"
                   onClick={onClickSmoothScroll}
                 >
                   <DotIcon />
-                  {feature.label}
+                  <span className="overflow-hidden text-ellipsis">
+                    {feature.label}
+                  </span>
                 </Link>
                 <div className="guide-scroller-sub">
                   {(feature.sub_features || []).map((feat) => (
@@ -201,7 +203,9 @@ export const Guide = () => {
                       onClick={onClickSmoothScroll}
                     >
                       <DotIcon />
-                      {feat}
+                      <span className="overflow-hidden text-ellipsis">
+                        {feat}
+                      </span>
                     </Link>
                   ))}
                 </div>
