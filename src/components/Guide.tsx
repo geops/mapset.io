@@ -1,7 +1,7 @@
 // @ts-nocheck
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo } from "react";
 import { useI18n } from "./I18n";
 import Link from "next/link";
 import { Remarkable } from "remarkable";
@@ -36,8 +36,6 @@ const domain = process.env.NEXT_PUBLIC_DOMAIN;
 
 export const Guide = () => {
   const { t, language } = useI18n();
-  const locale = language;
-  const [icons, setIcons] = useState([]);
   const guideContent = translations.guide.features;
 
   const titles = useMemo(() => {

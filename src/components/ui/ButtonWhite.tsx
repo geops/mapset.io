@@ -15,7 +15,7 @@ function ButtonWhite({
   const contained = "";
   const outlined = " border-[2px] md:border-[3px]";
   const classNam =
-    "flex items-center uppercase px-6 pt-[14px] pb-[10px] md:px-8 md:pt-[18px] md:pb-[14px] font-hero bg-white border-blue-600 hover:bg-slate-300 text-blue-600 text-xl font-bold rounded-[42px] gap-2 " +
+    "flex items-center text-center uppercase px-6 pt-[14px] pb-[10px] md:px-8 md:pt-[18px] md:pb-[14px] font-hero bg-white border-blue-600 hover:bg-slate-300 text-blue-600 text-xl font-bold rounded-[42px] gap-2 " +
     className +
     (variant === "contained" ? contained : outlined);
 

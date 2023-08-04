@@ -55,7 +55,7 @@ function PricingSection({ products = [] }: { products: Product[] }) {
       const firstChildRect = (
         target.firstChild as HTMLDivElement
       ).getBoundingClientRect();
-      setCanScrollLeft(targetRect.left > Math.floor(firstChildRect.left));
+      setCanScrollLeft(targetRect.left > Math.ceil(firstChildRect.left));
       setCanScrollRight(targetRect.right < Math.floor(firstChildRect.right));
     }
 
