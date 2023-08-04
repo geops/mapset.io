@@ -10,7 +10,7 @@ export default function useAnalytics() {
     }
 
     const plausibleSrc = 'https://plausible.geops.io/js/script.js';
-    if (!document.querySelector(`script[src="${plusibleSrc}"]`)) {
+    if (!document.querySelector(`script[src="${plausibleSrc}"]`)) {
       // <script defer data-domain="dev.mapset.io" src="https://plausible.geops.io/js/script.js"></script>
       const firstScript = document.getElementsByTagName('script')[0];
       const plausibleScript = document.createElement('script');
