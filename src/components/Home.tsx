@@ -156,7 +156,7 @@ function Home() {
           </section>
           <section
             id="pricing"
-            className="flex flex-col items-center relative px-4 pt-12 pb-24 z-0"
+            className="flex flex-col items-center relative px-4 pt-12 scroll-mt-12 pb-24 z-0"
           >
             <div className={`${containerClassName}`}>
               <div className="pb-12">
@@ -188,7 +188,7 @@ function Home() {
           </section>
           <section
             id="contact"
-            className="flex flex-col items-center relative px-4 py-12 pb-24 z-0"
+            className="flex flex-col items-center relative px-4 py-12 scroll-mt-12 pb-24 z-0"
           >
             <div className={`${containerClassName}`}>
               <div className="pb-12">
