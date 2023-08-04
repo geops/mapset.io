@@ -25,6 +25,7 @@ export default function useAnalytics() {
     const trackPageView = () => window._paq.push(["trackPageView"]);
 
     if (!document.querySelector(`script[src="${url}piwik.js"]`)) {
+      const firstScript = document.getElementsByTagName("script")[0];
       const piwikScript = document.createElement("script");
       piwikScript.type = "text/javascript";
       piwikScript.async = true;
