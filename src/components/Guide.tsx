@@ -8,7 +8,6 @@ import { Remarkable } from "remarkable";
 import Contact from "@/components/Contact";
 import WarningIcon from "./images/WarningIcon";
 import translations from "../content/guide/de.json";
-import isSvg from "is-svg";
 import Footer from "./Footer.tsx";
 import Header from "./Header";
 import MapsetLogo from "./MapsetLogo";
