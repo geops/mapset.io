@@ -3,6 +3,8 @@
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 
+const domain = process.env.NEXT_PUBLIC_DOMAIN;
+
 export default function useAnalytics() {
   // see doc https://nextjs.org/docs/app/api-reference/functions/use-router#router-events
   const pathname = usePathname();
@@ -24,11 +26,21 @@ export default function useAnalytics() {
 
     if (!document.querySelector(`script[src="${url}piwik.js"]`)) {
       const piwikScript = document.createElement("script");
-      const firstScript = document.getElementsByTagName("script")[0];
       piwikScript.type = "text/javascript";
       piwikScript.async = true;
       piwikScript.src = url + "piwik.js";
       firstScript.parentNode.insertBefore(piwikScript, firstScript);
+    }
+    const plusibleSrc = "https://plausible.geops.io/js/script.js";
+    if (!document.querySelector(`script[src="${plusibleSrc}"]`)) {
+      // <script defer data-domain="dev.mapset.io" src="https://plausible.geops.io/js/script.js"></script>
+      const firstScript = document.getElementsByTagName("script")[0];
+      const plausibleScript = document.createElement("script");
+      plausibleScript.type = "text/javascript";
+      plausibleScript.defer = true;
+      plausibleScript.dataset.domain = "dev.mapset." + domain;
+      plausibleScript.src = plusibleSrc;
+      firstScript.parentNode.insertBefore(plausibleScript, firstScript);
     }
 
     trackPageView();
