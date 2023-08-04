@@ -19,7 +19,8 @@ export default function useAnalytics() {
     window._paq = window._paq || [];
 
     window._paq.push(["setTrackerUrl", url + "piwik.php"]);
-    window._paq.push(["setSiteId", "1"]);
+    window._paq.push(["setSiteId", "11"]);
+    window._paq.push(["setSiteUrl", "https://mapset." + domain]);
     window._paq.push(["disableCookies"]);
 
     const trackPageView = () => window._paq.push(["trackPageView"]);
@@ -33,7 +34,7 @@ export default function useAnalytics() {
       firstScript.parentNode.insertBefore(piwikScript, firstScript);
     }
     const plausibleSrc = "https://plausible.geops.io/js/script.js";
-    if (!document.querySelector(`script[src="${plusibleSrc}"]`)) {
+    if (!document.querySelector(`script[src="${plausibleSrc}"]`)) {
       // <script defer data-domain="dev.mapset.io" src="https://plausible.geops.io/js/script.js"></script>
       const firstScript = document.getElementsByTagName("script")[0];
       const plausibleScript = document.createElement("script");
