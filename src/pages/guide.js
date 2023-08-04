@@ -43,6 +43,7 @@ const renderScrollerId = (label) => {
 };
 
 export const GuidePage = ({ locale, region }) => {
+  useAnalytics();
   const [icons, setIcons] = useState([]);
   let guideContent;
   switch (locale) {

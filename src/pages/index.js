@@ -33,6 +33,7 @@ import en_prices from '../data/prices/en.json';
 import fr_license from '../data/license/fr.json';
 import de_license from '../data/license/de.json';
 import en_license from '../data/license/en.json';
+import useAnalytics from '../lib/useAnalytics';
 
 const accordionHandler = function (id) {
   let item = document.getElementsByName(id)[0];
@@ -57,6 +58,8 @@ if (
     });
 }
 export const IndexPageTemplate = ({ locale, region }) => {
+  useAnalytics();
+
   let benefits;
   let prices;
   let licenseInformation;
