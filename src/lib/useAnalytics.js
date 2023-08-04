@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-const domain = process.env.GATSBY_REGION;
+const region = process.env.GATSBY_REGION;
 
 export default function useAnalytics() {
   return useEffect(() => {
@@ -15,7 +15,8 @@ export default function useAnalytics() {
       const plausibleScript = document.createElement('script');
       plausibleScript.type = 'text/javascript';
       plausibleScript.defer = true;
-      plausibleScript.dataset.domain = 'mapset.' + domain;
+      plausibleScript.dataset.domain =
+        'mapset.' + (region === 'eu' ? 'io' : 'ch');
       plausibleScript.src = plausibleSrc;
       document.head.appendChild(plausibleScript);
     }
