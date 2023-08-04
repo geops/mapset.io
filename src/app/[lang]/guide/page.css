@@ -1,20 +1,20 @@
 p {
   padding-bottom: 20px;
 }
-ul {
+main ul {
   margin-left: 32px;
   padding-bottom: 20px;
 }
 
-li {
+main li {
   list-style-type: disc;
 
 }
 
-h4 p {
+main h4 p {
   padding-bottom: 0;
 }
 
-h4 svg {
+main h4 svg {
   margin-top: -2px;
 }

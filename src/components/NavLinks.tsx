@@ -8,6 +8,7 @@ export const onClickSmoothScroll: MouseEventHandler<
   HTMLAnchorElement | HTMLButtonElement
 > = (evt) => {
   evt.preventDefault();
+  // evt.stopPropagation();
   const href = (evt.target as HTMLAnchorElement).href;
   let elt: HTMLElement | null = evt.target as HTMLElement;
 
@@ -26,9 +27,9 @@ export const onClickSmoothScroll: MouseEventHandler<
     if (elt.id) {
       window.setTimeout(() => {
         if (elt?.id) {
-          window.location.hash = elt.id;
+          // window.location.hash = elt.id;
         }
-      }, 500);
+      }, 1000);
     }
   }
 };

@@ -86,6 +86,7 @@ function FeaturesSection({
                       // @ts-ignore
                       target: document.getElementById("feature" + idx),
                       preventDefault: evt.preventDefault,
+                      stopPropagation: evt.stopPropagation,
                     });
                   }, 100);
                 }}

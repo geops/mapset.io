@@ -16,6 +16,7 @@ import H2 from "./ui/H2";
 import DotIcon from "./images/DotIcon";
 import GuideH4 from "./GuideH4";
 import { onClickSmoothScroll } from "./NavLinks";
+import SquareIcon from "./images/SquareIcon";
 
 const renderId = (label: string) => {
   if (label) {
@@ -184,11 +185,11 @@ export const Guide = () => {
                   href={`#${renderId(feature.label)}`}
                   id={renderScrollerId(feature.label)}
                   title={feature.label}
-                  className="flex items-center gap-2 py-2 hover:text-blue-600 scroll-mt-[90px] overflow-hidden"
+                  className="flex items-center gap-2 py-2 hover:text-blue-600 scroll-mt-[90px]"
                   onClick={onClickSmoothScroll}
                 >
                   <DotIcon />
-                  <span className="overflow-hidden text-ellipsis">
+                  <span className="text-ellipsis overflow-hidden pointer-events-none">
                     {feature.label}
                   </span>
                 </Link>
@@ -202,8 +203,8 @@ export const Guide = () => {
                       className="flex items-center gap-2 py-2 pl-4 hover:text-blue-600 scroll-mt-[90px]"
                       onClick={onClickSmoothScroll}
                     >
-                      <DotIcon />
-                      <span className="overflow-hidden text-ellipsis">
+                      <SquareIcon />
+                      <span className="text-ellipsis overflow-hidden pointer-events-none">
                         {feat}
                       </span>
                     </Link>
