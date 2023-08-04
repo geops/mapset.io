@@ -13,6 +13,7 @@ import de_guide from '../data/guide/de.json';
 import fr_guide from '../data/guide/fr.json';
 import en_guide from '../data/guide/en.json';
 import { getPath } from '../utils/routeUtils';
+import useAnalytics from '../lib/useAnalytics';
 
 if (
   typeof window !== `undefined` &&

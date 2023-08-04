@@ -143,6 +143,11 @@ const Layout = ({
         <meta name="twitter:site" content={'@' + twitterAccount} />
         <meta name="twitter:creator" content={'@' + twitterAccount} />
         <meta name="twitter:image:src" content={siteUrl + card_view_triple} />
+        {/* <script
+          defer
+          data-domain={'mapset.' + region}
+          src="https://plausible.geops.io/js/script.js"
+        ></script> */}
       </Helmet>
       <Navbar
         locale={locale}
