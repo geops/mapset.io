@@ -36,13 +36,12 @@ export default function useAnalytics() {
     const plausibleSrc = "https://plausible.geops.io/js/script.js";
     if (!document.querySelector(`script[src="${plausibleSrc}"]`)) {
       // <script defer data-domain="dev.mapset.io" src="https://plausible.geops.io/js/script.js"></script>
-      const firstScript = document.getElementsByTagName("script")[0];
       const plausibleScript = document.createElement("script");
       plausibleScript.type = "text/javascript";
       plausibleScript.defer = true;
       plausibleScript.dataset.domain = "dev.mapset." + domain;
       plausibleScript.src = plausibleSrc;
-      firstScript.parentNode.insertBefore(plausibleScript, firstScript);
+      document.head.appendChild(plausibleScript);
     }
 
     trackPageView();
