@@ -87,50 +87,6 @@ export const Guide = () => {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     handleScroll();
-    if (guideContent) {
-      const headingIconFeatures = guideContent.filter((f) => f.mapset_icon);
-      const contentIconFeatures = guideContent
-        .filter((f) => f.content)
-        .map((f) => f.content)
-        .flat()
-        .filter((f) => f.mapset_icon);
-      const iconFeatures = [...headingIconFeatures, ...contentIconFeatures];
-      Promise.all(
-        iconFeatures.map((f) =>
-          fetch(
-            `https://editor.mapset.${domain}/static/icons/${f.mapset_icon}.svg`,
-          ),
-        ),
-      )
-        .then((responses) => {
-          // Get a JSON object from each of the responses
-          return Promise.all(
-            responses.map((response) => {
-              return response.text();
-            }),
-          );
-        })
-        .then((dataArray) => {
-          const icons = [];
-          iconFeatures.forEach((g, idx) => {
-            if (isSvg(dataArray[idx])) {
-              icons.push({
-                key: g.mapset_icon,
-                svg: dataArray[idx],
-              });
-            } else {
-              icons.push({
-                key: null,
-                svg: null,
-              });
-            }
-          });
-          setIcons(icons);
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    }
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -242,10 +198,6 @@ export const Guide = () => {
               </Link>
             </p>
             {(guideContent || []).map((topic) => {
-              const icon =
-                !!topic.mapset_icon &&
-                !!icons &&
-                icons.find((f) => f.key === topic.mapset_icon)?.svg;
               const text = md.render(topic.label);
               return (
                 <div
@@ -253,15 +205,9 @@ export const Guide = () => {
                   key={renderId(topic.label)}
                   className="scroll-mt-[90px]"
                 >
-                  <GuideH4 icon={icon} text={text} />
+                  <GuideH4 icon={topic.mapset_icon} text={text} />
 
                   {topic.content.map((f) => {
-                    const icon =
-                      !!f.mapset_icon &&
-                      !!icons &&
-                      icons.find(
-                        (subFeature) => subFeature.key === f.mapset_icon,
-                      )?.svg;
                     const text = md.render(f.heading);
 
                     return (
@@ -270,7 +216,7 @@ export const Guide = () => {
                         id={renderId(f.heading)}
                         className="px-12 py-6 scroll-mt-[90px]"
                       >
-                        <GuideH4 icon={icon} text={text} />
+                        <GuideH4 icon={f.mapset_icon} text={text} />
 
                         {!!f.login_restricted && (
                           <p className="flex gap-2 text-blue-600">

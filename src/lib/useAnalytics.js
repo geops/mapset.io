@@ -32,7 +32,7 @@ export default function useAnalytics() {
       piwikScript.src = url + "piwik.js";
       firstScript.parentNode.insertBefore(piwikScript, firstScript);
     }
-    const plusibleSrc = "https://plausible.geops.io/js/script.js";
+    const plausibleSrc = "https://plausible.geops.io/js/script.js";
     if (!document.querySelector(`script[src="${plusibleSrc}"]`)) {
       // <script defer data-domain="dev.mapset.io" src="https://plausible.geops.io/js/script.js"></script>
       const firstScript = document.getElementsByTagName("script")[0];
@@ -40,7 +40,7 @@ export default function useAnalytics() {
       plausibleScript.type = "text/javascript";
       plausibleScript.defer = true;
       plausibleScript.dataset.domain = "dev.mapset." + domain;
-      plausibleScript.src = plusibleSrc;
+      plausibleScript.src = plausibleSrc;
       firstScript.parentNode.insertBefore(plausibleScript, firstScript);
     }
 
