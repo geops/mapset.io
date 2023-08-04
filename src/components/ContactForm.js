@@ -64,8 +64,13 @@ const ContactForm = ({ className = "" }) => {
                 type="select"
                 name="interest"
                 className="appearance-none"
-                placeholder="mapset maxi"
+                defaultValue=""
+                data-placeholder="all"
+                onChange={(evt) => {
+                  evt.target.dataset.placeholder = evt.target.value;
+                }}
               >
+                <option value="all">{t("contact.choose_product")}</option>
                 <option value="mapset free">mapset free</option>
                 <option value="mapset mini">mapset mini</option>
                 <option value="mapset midi">mapset midi</option>

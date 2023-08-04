@@ -1,6 +1,7 @@
 {
   "contact": {
     "calledback": "J'aimerais être rappelé",
+    "choose_product": "Choisissez un produit, svp ...",
     "company": "Entreprise",
     "content": "Écrivez-nous ou demandez-nous de vous rappeler.<br/>Nous sommes impatients de vous entendre.",
     "email": "E-mail",

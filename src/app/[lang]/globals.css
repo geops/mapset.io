@@ -18,7 +18,7 @@
 } */
 
 body {
-  color: #0E2D43; /* very dark blue */
+  color: theme(colors.blue.950); /* very dark blue */
   font-size: 16px;
   font-weight: 400;
   line-height: 24px; 
@@ -28,4 +28,15 @@ body {
     rgb(var(--background-end-rgb))
   )
     rgb(var(--background-start-rgb)); */
+}
+
+input::placeholder, 
+textarea::placeholder ,
+select[data-placeholder="all"] ,
+select option[value="all"]{ 
+  color:theme(colors.gray.400);
+}
+
+select option {
+  color:theme(colors.blue.950);
 }
