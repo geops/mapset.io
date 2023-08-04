@@ -9,9 +9,10 @@ import sob_logo from "../img/clients/sob_logo.png";
 import rbs_logo from "../img/clients/rbs_logo.png";
 import sti_logo from "../img/clients/sti_logo.png";
 import tmr_logo from "../img/clients/tmr_logo.png";
+import trenord_logo from "../img/clients/trenord_logo.png";
 import vbg_logo from "../img/clients/vbg_logo.png";
 import vbz_logo from "../img/clients/vbz_logo.png";
-import trenord_logo from "../img/clients/trenord_logo.png";
+import vzo_logo from "../img/clients/vzo_logo.png";
 
 const clientLogos = [
   {
@@ -69,6 +70,10 @@ const clientLogos = [
   {
     id: "vbz",
     src: vbz_logo,
+  },
+  {
+    id: "vzo",
+    src: vzo_logo,
   },
 ];
 
