@@ -9,6 +9,7 @@ import sob_logo from "../img/clients/sob_logo.png";
 import rbs_logo from "../img/clients/rbs_logo.png";
 import sti_logo from "../img/clients/sti_logo.png";
 import tmr_logo from "../img/clients/tmr_logo.png";
+import win_logo from "../img/clients/stadtbus_winterthur_logo.png";
 import trenord_logo from "../img/clients/trenord_logo.png";
 import vbg_logo from "../img/clients/vbg_logo.png";
 import vbz_logo from "../img/clients/vbz_logo.png";
@@ -58,6 +59,10 @@ const clientLogos = [
   {
     id: "tmr",
     src: tmr_logo,
+  },
+  {
+    id: "win",
+    src: win_logo,
   },
   {
     id: "trenord",
