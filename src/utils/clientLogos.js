@@ -53,12 +53,12 @@ const clientLogos = [
     src: sob_logo,
   },
   {
-    id: "sti",
-    src: sti_logo,
-  },
-  {
     id: "win",
     src: win_logo,
+  },
+  {
+    id: "sti",
+    src: sti_logo,
   },
   {
     id: "tmr",
