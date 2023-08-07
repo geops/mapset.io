@@ -25,7 +25,7 @@ function Contact() {
         </ButtonWhite>
         <ButtonWhite
           variant="outlined"
-          href={`https://twitter.com/mapset${process.env.NEXT_PUBLIC_DOMAIN}`}
+          href={`https://twitter.com/mapset${domain}`}
           rel="noopener noreferrer"
           target="_blank"
           className="normal-case"
