@@ -57,12 +57,12 @@ const clientLogos = [
     src: sti_logo,
   },
   {
-    id: "tmr",
-    src: tmr_logo,
-  },
-  {
     id: "win",
     src: win_logo,
+  },
+  {
+    id: "tmr",
+    src: tmr_logo,
   },
   {
     id: "trenord",
