@@ -54,6 +54,7 @@ function Home() {
                     <video
                       loop
                       autoPlay
+                      muted
                       className="border-white border-opacity-20 border-8 rounded-3xl"
                     >
                       <source src="/video/mapset-demo.mp4" type="video/mp4" />
@@ -110,6 +111,7 @@ function Home() {
                 <video
                   loop
                   autoPlay
+                  muted
                   className="border-[#126392] border-8 rounded-xl lg:rounded-b-none w-full h-full animate-fade-in delay-1500"
                 >
                   <source src="/video/mapset-demo.mp4" type="video/mp4" />
@@ -174,7 +176,7 @@ function Home() {
             className="flex flex-col items-center relative px-4 py-24 bg-blue-lighter z-0"
           >
             <div className={`${containerClassName}`}>
-              <div className="pb-6 ">
+              <div className="pb-6">
                 <H4>{t("testimonials.section")}</H4>
                 <H2 className={`max-w-[800px]`}>{t("testimonials.title")}</H2>
               </div>

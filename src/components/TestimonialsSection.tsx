@@ -36,7 +36,7 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
   const next = useCallback(() => {
     setSelected(selected + 1);
   }, [selected]);
-
+  
   const image = useMemo(() => {
     const src = t("testimonials.customers." + selected + ".image");
     const hasUserImage =
@@ -79,7 +79,7 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
             <p
               key={item.name}
               hidden={isUnselected}
-              className="font-hero text-3xl text-blue-900 font-medium -tracking-[0.64px] leading-normal"
+              className="font-hero text-3xl text-blue-900 font-medium -tracking-[0.64px] leading-normal md:h-[400px] h-[250px]"
               style={{ fontSize: pClamp }}
             >
               “{t("testimonials.customers." + idx + ".testimonial")}”

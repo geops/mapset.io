@@ -27,7 +27,7 @@ const ContactForm = ({ className = "" }) => {
   const labelClassName = "text-blue-900 text-sm font-medium pb-2 leading-5";
   const checkboxLabelClassName =
     "text-blue-900 text-normal font-normal leading-6";
-  const parentCheckboxClassName = "flex items-center gap-2";
+  const parentCheckboxClassName = "grid items-center grid-cols-[30px_auto]";
 
   return (
     <form
@@ -110,7 +110,11 @@ const ContactForm = ({ className = "" }) => {
           </div>
 
           <div className={parentCheckboxClassName}>
-            <Input name="called-back" type="checkbox" />
+            <Input
+              name="called-back"
+              type="checkbox"
+              style={{ width: 20, height: 20 }}
+            />
             <label
               className={checkboxLabelClassName}
               htmlFor="called-back"
@@ -131,7 +135,11 @@ const ContactForm = ({ className = "" }) => {
           </div>
 
           <div className={parentCheckboxClassName}>
-            <Input name="newsletter" type="checkbox" />
+            <Input
+              name="newsletter"
+              type="checkbox"
+              style={{ width: 20, height: 20 }}
+            />
             <label
               className={checkboxLabelClassName}
               htmlFor="newsletter"
@@ -144,7 +152,12 @@ const ContactForm = ({ className = "" }) => {
           </div>
 
           <div className={parentCheckboxClassName}>
-            <Input name="privacy" type="checkbox" required />
+            <Input
+              name="privacy"
+              type="checkbox"
+              style={{ width: 20, height: 20 }}
+              required
+            />
             <label className={checkboxLabelClassName} htmlFor="privacy">
               <span
                 dangerouslySetInnerHTML={{
