@@ -78,8 +78,8 @@
   },
   "siteSwitcher": {
     "title": "Sind Sie auf der richtigen Webseite?",
-    "goCH": "Aktuell sind Sie auf der internationalen Webseite.<br /> Wollen Sie auf die schweizer Webseite wechseln?",
-    "goEU": "Aktuell sind Sie auf der schweizer Webseite.<br /> Wollen Sie auf die internationale Webseite wechseln?",
+    "goCH": "Aktuell sind Sie auf der internationalen Webseite.<br /> Wollen Sie auf die Schweizer Webseite wechseln?",
+    "goEU": "Aktuell sind Sie auf der Schweizer Webseite.<br /> Wollen Sie auf die internationale Webseite wechseln?",
     "buttonEU": "Internationale Webseite",
     "buttonCH": "Schweizer Webseite"
   }
