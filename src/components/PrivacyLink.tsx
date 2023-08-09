@@ -11,6 +11,8 @@ function PrivacyLink({
     <Link
       href={t("privacy_link")}
       className={"flex gap-1 items-center " + className}
+      target="_blank"
+      rel="noopener noreferrer"
       {...props}
     >
       {t("privacy_policy")}

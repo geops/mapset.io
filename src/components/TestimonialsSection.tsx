@@ -66,6 +66,7 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
   }, [selected, t]);
 
   return (
+    <>
     <div className={`flex justify-between overflow-hidden gap-12 ${className}`}>
       <div className="flex flex-col gap-6 lg:max-w-[45%] text-darker justify-center">
         <div className="flex lg:hidden items-center justify-center">
@@ -74,41 +75,42 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
         {items.map((item, idx) => {
           const isUnselected = selected !== idx;
           return (
-            <p
-              key={item.name}
-              hidden={isUnselected}
-              className="font-hero text-xs text-blue-900 font-medium -tracking-[0.64px] leading-normal h-[200px]"
-              style={{ fontSize: "clamp(1rem, 1vw + 0.75rem, 1.25rem)" }}
-            >
-              “{t("testimonials.customers." + idx + ".testimonial")}”
-            </p>
+            <div key={item.name} className={`flex flex-col gap-5 md:h-[300px] h-[250px]${isUnselected ? " hidden" : ""}`}>
+              <p
+                className="font-hero text-xs text-blue-900 font-medium -tracking-[0.64px] leading-normal"
+                style={{ fontSize: "clamp(1rem, 1vw + 0.75rem, 1.25rem)" }}
+              >
+                “{t("testimonials.customers." + idx + ".testimonial")}”
+              </p>
+              <div className="flex flex-col">
+                <p className="text-blue-900 font-semibold">
+                  {t("testimonials.customers." + selected + ".name")}
+                </p>
+                <p className="text-slate-500">
+                  {t("testimonials.customers." + selected + ".job")}
+                </p>
+              </div>
+            </div>
           );
         })}
-        <div className="flex gap-2 justify-between">
-          <div className="flex flex-col gap-1 ">
-            <p className="text-blue-900 font-semibold leading-7">
-              {t("testimonials.customers." + selected + ".name")}
-            </p>
-            <p className="text-slate-500">
-              {t("testimonials.customers." + selected + ".job")}
-            </p>
-          </div>
-          {items.length > 1 ? (
-            <div className="flex gap-6">
-              <IconButtonWhite disabled={isFirst} onClick={previous}>
-                <ArrowLeftIcon></ArrowLeftIcon>
-              </IconButtonWhite>{" "}
-              <IconButtonWhite disabled={isLast} onClick={next}>
-                <ArrowRightIcon></ArrowRightIcon>
-              </IconButtonWhite>
-            </div>
-          ) : null}
-        </div>
       </div>
       <div className="hidden lg:flex flex-1 px-10">
         {image}
       </div>
     </div>
+    <div className="flex gap-2 sm:justify-start justify-center">
+    {items.length > 1 ? (
+      <div className="flex gap-6">
+        <IconButtonWhite disabled={isFirst} onClick={previous}>
+          <ArrowLeftIcon></ArrowLeftIcon>
+        </IconButtonWhite>{" "}
+        <IconButtonWhite disabled={isLast} onClick={next}>
+          <ArrowRightIcon></ArrowRightIcon>
+        </IconButtonWhite>
+      </div>
+    ) : null}
+  </div>
+    </>
   );
 }
 
