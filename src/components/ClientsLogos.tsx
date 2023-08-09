@@ -7,7 +7,7 @@ const line2 = clientLogos.slice(clientLogos.length / 2, clientLogos.length);
 function ClientsLogos() {
   return (
     <>
-      <InfiniteLooper speed={50}>
+      <InfiniteLooper speed={40}>
         {line1.map((logo) => {
           return (
             <div key={logo.id} className="px-6">
@@ -21,7 +21,7 @@ function ClientsLogos() {
         })}
       </InfiniteLooper>
       <br />
-      <InfiniteLooper speed={50} direction={"left"}>
+      <InfiniteLooper speed={40} direction={"left"}>
         {line2.map((logo) => {
           return (
             <div key={logo.id} className="px-6">

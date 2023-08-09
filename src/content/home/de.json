@@ -30,10 +30,16 @@
       },
       {
         "content": "Ergänzen Sie lokale Informationen auf der Basis bestehender detaillierter Karten. Sie können Wegrouten darstellen, Haltestellen und Haltekanten mit Piktogrammen versehen oder Points of Interests hervorheben. Dabei können Sie auf bewährte Grafik-Elemente der SBB zurückgreifen (Piktogramme, Linienstile, Farben etc.).",
+        "image": "/img/feature-1.png",
+        "image_height": 500,
+        "image_width": 593,
         "title": "Einfaches Einzeichnen von lokalen Informationen"
       },
       {
         "content": "Laden Sie ihre selbst erstellten Pläne als Bilddatei herunter, und binden Sie diese in Ihre individuellen Vorlagen ein. Für die Optimierung des Exports können Sie den Ausschnitt und die Auflösung für den Druck festlegen.",
+        "image": "/img/feature-1.png",
+        "image_height": 500,
+        "image_width": 593,
         "title": "Exportfunktionen"
       },
       {
@@ -45,10 +51,16 @@
       },
       {
         "content": "Alle Plänen basieren auf den offiziellen Karten der SBB. Die Karten stellen einen Standard im Schweizerischen öffentlichen Verkehr dar und haben einen entsprechend hohen Wiedererkennungswert. Die Kartenbasis gewährleistet nicht nur eine grafisch attraktive Darstellung sondern wird auch ohne Ihr Zutun wöchentlich aktualisiert.",
+        "image": "/img/feature-4.png",
+        "image_height": 500,
+        "image_width": 648,
         "title": "Kartenbild des Schweizer öV"
       },
       {
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "image": "/img/feature-4.png",
+        "image_height": 500,
+        "image_width": 648,
         "title": "Lorem ipsum"
       }
     ],
@@ -179,11 +191,6 @@
         "job": "Verkehrsbetriebe Stadt Zürich, VBZ",
         "name": "Miro Bertozzi",
         "testimonial": "Wir arbeiten gerne mit mapset, weil das Individualisieren von Plänen ohne zusätzliche Grafik-Programme möglich ist. Das Tool hilft uns, eine einheitliche Kommunikation zu gewährleisten. Wir sind sehr zufrieden."
-      },
-      {
-        "job": "Projektleiter, Somewhere Bus",
-        "name": "Maurice Schoenberg",
-        "testimonial": "Non duis veniam deserunt tempor quis labore et nostrud laboris deserunt consequat aute adipisicing."
       }
     ],
     "section": "Testimonials",

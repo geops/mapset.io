@@ -95,14 +95,16 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
               {t("testimonials.customers." + selected + ".job")}
             </p>
           </div>
-          <div className="flex gap-6">
-            <IconButtonWhite disabled={isFirst} onClick={previous}>
-              <ArrowLeftIcon></ArrowLeftIcon>
-            </IconButtonWhite>{" "}
-            <IconButtonWhite disabled={isLast} onClick={next}>
-              <ArrowRightIcon></ArrowRightIcon>
-            </IconButtonWhite>
-          </div>
+          {items.length > 1 ? (
+            <div className="flex gap-6">
+              <IconButtonWhite disabled={isFirst} onClick={previous}>
+                <ArrowLeftIcon></ArrowLeftIcon>
+              </IconButtonWhite>{" "}
+              <IconButtonWhite disabled={isLast} onClick={next}>
+                <ArrowRightIcon></ArrowRightIcon>
+              </IconButtonWhite>
+            </div>
+          ) : null}
         </div>
       </div>
       <div className="hidden lg:flex flex-1 items-center justify-center">
