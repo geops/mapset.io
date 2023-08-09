@@ -95,6 +95,7 @@
     },
     "mapset_features": "All mapset features",
     "onetime": "One-time setup fee",
+    "price": "Price",
     "products": [
       {
         "price": {
