@@ -13,8 +13,6 @@ export type CustomerTestimonial = {
   testimonial: string;
 };
 
-const pClamp = "clamp(1.125rem, 3vw + 0.37rem, 2rem)";
-
 function TestimonialsSection({ className = "" }: { className?: string }) {
   const { t } = useI18n();
   // @ts-ignore
@@ -42,7 +40,7 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
     const hasUserImage =
       src[0] !== "testimonials.customers." + selected + ".image";
     return (
-      <div className="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[300px] md:h-[300px]">
+      <div className="w-[150px] h-[150px] md:w-[200px] md:h-[200px]">
         {hasUserImage ? (
           <Image
             src={`/img/${src}`}
@@ -69,7 +67,7 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
 
   return (
     <div className={`flex justify-between overflow-hidden gap-12 ${className}`}>
-      <div className="flex flex-col gap-6 lg:max-w-[50%] text-darker justify-center">
+      <div className="flex flex-col gap-6 lg:max-w-[45%] text-darker justify-center">
         <div className="flex lg:hidden items-center justify-center">
           {image}
         </div>
@@ -79,8 +77,8 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
             <p
               key={item.name}
               hidden={isUnselected}
-              className="font-hero text-3xl text-blue-900 font-medium -tracking-[0.64px] leading-normal md:h-[320px] lg:h-[420px] h-[260px]"
-              style={{ fontSize: pClamp }}
+              className="font-hero text-xs text-blue-900 font-medium -tracking-[0.64px] leading-normal h-[200px]"
+              style={{ fontSize: "clamp(1rem, 1vw + 0.75rem, 1.25rem)" }}
             >
               “{t("testimonials.customers." + idx + ".testimonial")}”
             </p>
@@ -88,7 +86,7 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
         })}
         <div className="flex gap-2 justify-between">
           <div className="flex flex-col gap-1 ">
-            <p className="text-lg text-blue-900 font-semibold leading-7">
+            <p className="text-blue-900 font-semibold leading-7">
               {t("testimonials.customers." + selected + ".name")}
             </p>
             <p className="text-slate-500">
@@ -107,7 +105,7 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
           ) : null}
         </div>
       </div>
-      <div className="hidden lg:flex flex-1 items-center justify-center">
+      <div className="hidden lg:flex flex-1 px-10">
         {image}
       </div>
     </div>

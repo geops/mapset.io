@@ -175,7 +175,7 @@ const ContactForm = ({ className = "" }) => {
           </p>
           <ButtonBlue
             type="submit"
-            className="w-full justify-center !text-[16px] !font-semibold"
+            className="w-full justify-center !text-sm !font-semibold"
           >
             {t("contact.submit")}
           </ButtonBlue>

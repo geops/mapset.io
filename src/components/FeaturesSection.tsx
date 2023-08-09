@@ -73,7 +73,7 @@ function FeaturesSection({
                 key={feature.title}
                 id={"feature" + idx}
                 className={
-                  "flex flex-col gap-6 px-6 py-6 md:border-l-4  text-left " +
+                  "flex flex-col gap-6 px-6 py-6 md:border-l-4 text-left text-base " +
                   (isUnselected
                     ? "md:border-gray-light"
                     : "bg-blue-lighter md:!border-blue-600")

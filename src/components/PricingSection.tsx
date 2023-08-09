@@ -28,9 +28,9 @@ const domain = process.env.NEXT_PUBLIC_DOMAIN;
 
 const trClassName = "even:bg-white odd:bg-blue-lighter";
 const firstColumnClassName =
-  "text-left text-sm text-blue-900 font-semibold leading-5 p-6";
+  "text-left text-base text-blue-900 font-semibold leading-5 p-6";
 const tdClassName =
-  "text-center text-blue-900 text-sm font-normal leading-5 px-2 py-6";
+  "text-center text-blue-900 text-base font-normal leading-5 px-2 py-6";
 
 function PricingSection({ products = [] }: { products: Product[] }) {
   const { t } = useI18n();
@@ -187,7 +187,7 @@ function PricingSection({ products = [] }: { products: Product[] }) {
                       <div className="flex items-center justify-center w-full">
                         <ButtonBlue
                           href={`#contact`}
-                          className="!text-[14px] !font-semibold leading-4"
+                          className="!text-sm !font-semibold leading-4"
                           onClick={onClickSmoothScroll}
                         >
                           {t("home.get_started")}

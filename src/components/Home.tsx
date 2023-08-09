@@ -62,9 +62,9 @@ function Home() {
                   </div>
 
                   <p
-                    className="text-blue-900 md:text-white text-normal md:text-[24px] max-w-[646px] font-medium leading-[160%]"
+                    className="text-blue-900 md:text-white max-w-[646px] font-medium leading-[160%]"
                     style={{
-                      fontSize: "clamp(1rem, 2.5vw + 0.37rem, 1.5rem)",
+                      fontSize: "clamp(1rem, 1vw + 0.75rem, 1.25rem)",
                     }}
                   >
                     {t("home.main.content")}

@@ -2,7 +2,6 @@ import LanguageLinks from "./LanguageLinks";
 import VerticalSeparator from "./ui/VerticalSeparator";
 import DomainLinks from "./DomainLinks";
 import UserManualLink from "./UserManualLink";
-import EllipseSeparator from "./ui/EllipseSeparator";
 import LoginLink from "./LoginLink";
 
 function Header({
@@ -16,25 +15,25 @@ function Header({
 }) {
   return (
     <nav
-      className={`flex items-center text-normal text-slate-500 h-[52px] font-medium  ${className}`}
+      className={`flex items-center text-sm text-slate-500 h-[52px] font-medium  ${className}`}
     >
       <LanguageLinks
-        className={`w-[125px]`}
+        className={`w-[110px]`}
         linkClassName={linkClassName}
         selectedClassName={selectedClassName}
       />
       <VerticalSeparator />
       <DomainLinks
-        className={`w-[227px] px-2`}
+        className={`w-[200px]`}
         linkClassName={linkClassName}
         selectedClassName={selectedClassName}
       />
       <VerticalSeparator />
       <UserManualLink
-        className="w-[175px]"
+        className="w-[110px]"
         linkClassName={`overflow-hidden text-ellipsis ${linkClassName}`}
       />
-      <EllipseSeparator />
+      <VerticalSeparator />
       <LoginLink
         className="w-[72px]"
         linkClassName={`overflow-hidden text-ellipsis ` + linkClassName}
