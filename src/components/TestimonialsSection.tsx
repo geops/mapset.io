@@ -42,7 +42,7 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
     const hasUserImage =
       src[0] !== "testimonials.customers." + selected + ".image";
     return (
-      <div className="w-[200px] h-[200px] md:w-[300px] md:h-[300px]">
+      <div className="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[300px] md:h-[300px]">
         {hasUserImage ? (
           <Image
             src={`/img/${src}`}
@@ -79,7 +79,7 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
             <p
               key={item.name}
               hidden={isUnselected}
-              className="font-hero text-3xl text-blue-900 font-medium -tracking-[0.64px] leading-normal md:h-[400px] h-[250px]"
+              className="font-hero text-3xl text-blue-900 font-medium -tracking-[0.64px] leading-normal md:h-[320px] lg:h-[420px] h-[260px]"
               style={{ fontSize: pClamp }}
             >
               “{t("testimonials.customers." + idx + ".testimonial")}”

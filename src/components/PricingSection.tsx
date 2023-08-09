@@ -124,6 +124,18 @@ function PricingSection({ products = [] }: { products: Product[] }) {
                 {products.map((product, idx) => {
                   return (
                     <td key={product.tier} className={tdClassName}>
+                      {t(`pricing.products.${idx}.railway_stations`)}
+                    </td>
+                  );
+                })}
+              </tr>
+              <tr className={trClassName}>
+                <th className={firstColumnClassName}>
+                  {t("pricing.price")}
+                </th>
+                {products.map((product, idx) => {
+                  return (
+                    <td key={product.tier} className={tdClassName}>
                       <Price>
                         {t(`pricing.products.${idx}.price.${domain}`)}
                       </Price>{" "}
@@ -175,7 +187,7 @@ function PricingSection({ products = [] }: { products: Product[] }) {
                       <div className="flex items-center justify-center w-full">
                         <ButtonBlue
                           href={`#contact`}
-                          className="!text-[14px] !font-semibold"
+                          className="!text-[14px] !font-semibold leading-4"
                           onClick={onClickSmoothScroll}
                         >
                           {t("home.get_started")}

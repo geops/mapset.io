@@ -75,6 +75,7 @@ function Home() {
                       href={"https://editor.mapset." + region}
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="leading-6"
                     >
                       {t("home.try_free")}
                     </ButtonWhite>
