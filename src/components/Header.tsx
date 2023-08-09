@@ -24,13 +24,13 @@ function Header({
       />
       <VerticalSeparator />
       <DomainLinks
-        className={`w-[200px]`}
+        className={`w-[195px]`}
         linkClassName={linkClassName}
         selectedClassName={selectedClassName}
       />
       <VerticalSeparator />
       <UserManualLink
-        className="w-[110px]"
+        className="w-[115px]"
         linkClassName={`overflow-hidden text-ellipsis ${linkClassName}`}
       />
       <VerticalSeparator />
