@@ -18,13 +18,13 @@ function Header({
       className={`flex items-center text-sm text-slate-500 h-[52px] font-medium  ${className}`}
     >
       <LanguageLinks
-        className={`w-[110px]`}
+        className={`w-[15px]`}
         linkClassName={linkClassName}
         selectedClassName={selectedClassName}
       />
       <VerticalSeparator />
       <DomainLinks
-        className={`w-[195px]`}
+        className={`w-[180px]`}
         linkClassName={linkClassName}
         selectedClassName={selectedClassName}
       />
