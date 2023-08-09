@@ -18,7 +18,7 @@ function Header({
       className={`flex items-center text-sm text-slate-500 h-[52px] font-medium  ${className}`}
     >
       <LanguageLinks
-        className={`w-[15px]`}
+        className={`w-[105px]`}
         linkClassName={linkClassName}
         selectedClassName={selectedClassName}
       />
