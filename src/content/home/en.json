@@ -30,10 +30,16 @@
       },
       {
         "content": "Supplement local information on the basis of existing, detailed maps. You can display routes, add stops with their platforms or highlight points of interest.",
+        "image": "/img/feature-1.png",
+        "image_height": 500,
+        "image_width": 593,
         "title": "Draw local information with ease"
       },
       {
         "content": "Download your customized plans as image files and integrate them into your word processing or DTP software. To optimize the export, you can precisely specify the extent and resolution for printing.",
+        "image": "/img/feature-1.png",
+        "image_height": 500,
+        "image_width": 593,
         "title": "Export functions"
       },
       {
@@ -45,10 +51,16 @@
       },
       {
         "content": "The basemap is optimized to show those details that are relevant for public transport. The map not only guarantees a graphically attractive presentation but is also updated weekly without your intervention.",
+        "image": "/img/feature-4.png",
+        "image_height": 500,
+        "image_width": 648,
         "title": "Basemap for public transport"
       },
       {
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "image": "/img/feature-4.png",
+        "image_height": 500,
+        "image_width": 648,
         "title": "Lorem ipsum"
       }
     ],

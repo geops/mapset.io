@@ -30,10 +30,16 @@
       },
       {
         "content": "Complétez les informations locales sur la base de cartes existantes et détaillées. Vous pouvez afficher des itinéraires, ajouter des arrêts avec leurs quais ou mettre en évidence des points d'intérêt.",
+        "image": "/img/feature-1.png",
+        "image_height": 500,
+        "image_width": 593,
         "title": "Dessin facile d'informations locales"
       },
       {
         "content": "Téléchargez vos plans personnalisés sous forme de fichiers image et intégrez-les dans votre logiciel de traitement de texte ou de PAO. Pour optimiser l'exportation, vous pouvez spécifier précisément l'étendue et la résolution pour l'impression.",
+        "image": "/img/feature-1.png",
+        "image_height": 500,
+        "image_width": 593,
         "title": "Fonctions d'exportation"
       },
       {
@@ -45,10 +51,16 @@
       },
       {
         "content": "Le plan de base est optimisé pour montrer les détails qui sont pertinents pour les transports publics. La carte garantit non seulement une présentation graphique attrayante, mais elle est également mise à jour chaque semaine sans votre intervention.",
+        "image": "/img/feature-4.png",
+        "image_height": 500,
+        "image_width": 648,
         "title": "Plan de base pour les transports publics"
       },
       {
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "image": "/img/feature-4.png",
+        "image_height": 500,
+        "image_width": 648,
         "title": "Lorem ipsum"
       }
     ],
