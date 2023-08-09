@@ -10,14 +10,14 @@
     "links_ch": "Für Benutzer aus der Schweiz steht eine eigene Instanz zur Verfügung:",
     "links_io": "Andere Länder können diesen Link verwenden:",
     "cd_restricted": "Der Zugang zu dieser Funktion hängt von User-Rechten und Corporate-Design-Einstellungen ab.",
-    "link_user_manual": "Benutzerhandbuch",
+    "link_user_manual": "User Guide",
     "login_restricted": "Sie müssen angemeldet sein, um diese Funktion zu nutzen.",
     "visit_our_twitter": "Besuchen Sie uns auf Twitter",
     "metadata": {
       "description": "",
-      "title": "Benutzerhandbuch | mapset"
+      "title": "User Guide | mapset"
     },
-    "title": "Benutzerhandbuch",
+    "title": "User Guide",
     "features": [
       {
         "label": "Nutzung und Copyright",
