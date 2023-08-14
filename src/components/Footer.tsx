@@ -10,7 +10,7 @@ import PrivacyLink from "./PrivacyLink";
 const Arrow = ({ className = "" }) => {
   return (
     <div
-      className={`absolute bg-white w-[39px] h-[39px] top-[-60px] left-0 right-0 m-auto rotate-45 ${className}`}
+      className={`absolute bg-white w-[39px] h-[39px] top-[-65px] left-0 right-0 m-auto rotate-45 ${className}`}
     ></div>
   );
 };

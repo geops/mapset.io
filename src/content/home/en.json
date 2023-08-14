@@ -94,7 +94,7 @@
   },
   "pricing": {
     "addon": "AddOn Share & Print",
-    "content": "An overview of annual costs and one-time setup fee",
+    "content": "Here you can find the overview of mapset's annual costs and one-time setup fee for transportation companies. If you represent a different type of company, please contact us for an individual offer. If you are interested in additional services, we will also be happy to provide you with an individual package offer.",
     "currency": {
       "ch": "CHF",
       "io": "€"
@@ -178,9 +178,9 @@
         "tier": "MAXI"
       }
     ],
-    "railway_stations": "Railway Stations",
+    "railway_stations": "Railway Stops",
     "section": "pricing",
-    "stops": "Stops",
+    "stops": "Other Stops",
     "title": "Plans For Transport Companies Of Any Size",
     "year": "year"
   },

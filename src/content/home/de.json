@@ -89,7 +89,7 @@
   },
   "pricing": {
     "addon": "AddOn Share & Print",
-    "content": "Hier finden Sie die Übersicht für die jährlichen Kosten und die einmalige Einrichtungsgebühr.",
+    "content": "Hier finden Sie die Übersicht der jährlichen Kosten und die einmalige Einrichtungsgebühr von mapset für Transportunternehmen. Wenn Sie eine andere Art von Unternehmen repräsentieren, kontaktieren Sie uns bitte für ein individuelles Angebot. Wenn Sie an weiteren Leistungen interessiert sind, erstellen wir Ihnen ebenfalls gerne ein individuelles Paketangebot.",
     "currency": {
       "ch": "CHF",
       "io": "€"
@@ -173,9 +173,9 @@
         "tier": "MAXI"
       }
     ],
-    "railway_stations": "Zug Bahnhöfe",
+    "railway_stations": "Haltestellen Zug",
     "section": "Preise",
-    "stops": "Haltestelle",
+    "stops": "Sonstige Haltestellen",
     "title": "Pläne für Transportunternehmen jeder Größe",
     "year": "Jahr"
   },

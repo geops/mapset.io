@@ -94,7 +94,7 @@
   },
   "pricing": {
     "addon": "AddOn Share & Print",
-    "content": "Vous trouverez ici un aperçu des coûts annuels et des frais d'installation uniques.",
+    "content": "Vous trouverez ici un aperçu des coûts annuels et des frais d'installation uniques de mapset pour les entreprises de transport. Si vous représentez un autre type d'entreprise, veuillez nous contacter pour obtenir une offre individuelle. Si vous êtes intéressé par des services supplémentaires, nous nous ferons un plaisir de vous proposer une offre forfaitaire individuelle.",
     "currency": {
       "ch": "CHF",
       "io": "€"
@@ -178,9 +178,9 @@
         "tier": "MAXI"
       }
     ],
-    "railway_stations": "Gares de trains",
+    "railway_stations": "Arrêts de trains",
     "section": "Tarifs",
-    "stops": "Arrêts",
+    "stops": "Autres arrêts",
     "title": "Plans pour les entreprises de transport de toute taille",
     "year": "an"
   },

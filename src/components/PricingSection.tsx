@@ -105,6 +105,19 @@ function PricingSection({ products = [] }: { products: Product[] }) {
               </tr>
               <tr className={trClassName}>
                 <th className={firstColumnClassName}>
+                  {t("pricing.railway_stations")}
+                  <span className="text-blue">*</span>
+                </th>
+                {products.map((product, idx) => {
+                  return (
+                    <td key={product.tier} className={tdClassName}>
+                      {t(`pricing.products.${idx}.railway_stations`)}
+                    </td>
+                  );
+                })}
+              </tr>
+              <tr className={trClassName}>
+                <th className={firstColumnClassName}>
                   {t("pricing.stops")}
                   <span className="text-blue">*</span>
                 </th>
@@ -112,19 +125,6 @@ function PricingSection({ products = [] }: { products: Product[] }) {
                   return (
                     <td key={product.tier} className={tdClassName}>
                       {t(`pricing.products.${idx}.stops`)}
-                    </td>
-                  );
-                })}
-              </tr>
-              <tr className={trClassName}>
-                <th className={firstColumnClassName}>
-                  {t("pricing.railway_stations")}
-                  <span className="text-blue">**</span>
-                </th>
-                {products.map((product, idx) => {
-                  return (
-                    <td key={product.tier} className={tdClassName}>
-                      {t(`pricing.products.${idx}.railway_stations`)}
                     </td>
                   );
                 })}
