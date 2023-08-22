@@ -123,7 +123,7 @@
           "io": "490"
         },
         "railway_stations": "-",
-        "stops": "10",
+        "stops": "1 - 10",
         "tier": "FREE"
       },
       {
@@ -139,7 +139,7 @@
           "ch": "490",
           "io": "490"
         },
-        "railway_stations": "1-10",
+        "railway_stations": "1 - 10",
         "stops": "11 - 200",
         "tier": "MINI"
       },
@@ -156,7 +156,7 @@
           "ch": "490",
           "io": "490"
         },
-        "railway_stations": "11-100",
+        "railway_stations": "11 - 100",
         "stops": "201 - 500",
         "tier": "MIDI"
       },
@@ -173,7 +173,7 @@
           "ch": "490",
           "io": "490"
         },
-        "railway_stations": "101-200",
+        "railway_stations": "101 - 200",
         "stops": "501+",
         "tier": "MAXI"
       }
