@@ -50,14 +50,14 @@ function Home() {
                 <div className="flex flex-col gap-6 py-12">
                   <H1>{t("home.main.title")}</H1>
 
-                  <div className="flex min-w-[360px] md:hidden  ">
+                  <div className="flex min-w-[343px] md:hidden  ">
                     <video
                       loop
                       autoPlay
                       muted
                       className="border-white border-opacity-20 border-8 rounded-3xl"
                     >
-                      <source src="/video/mapset-demo.mp4" type="video/mp4" />
+                      <source src="/video/mapset-demo_v2.mp4" type="video/mp4" />
                     </video>
                   </div>
 
@@ -108,14 +108,14 @@ function Home() {
                 </div>
                 <div className="hidden md:flex items-end min-w-[65%]"></div>
               </div>
-              <div className="hidden md:block absolute top-[210px]  left-[510px] lg:left-[628px] w-[860px] h-[615px] animate-fade-in">
+              <div className="hidden md:block absolute top-[210px]  left-[510px] lg:left-[628px] w-[855px] h-[575px] animate-fade-in">
                 <video
                   loop
                   autoPlay
                   muted
                   className="border-[#126392] border-8 rounded-xl lg:rounded-b-none w-full h-full animate-fade-in delay-1500"
                 >
-                  <source src="/video/mapset-demo.mp4" type="video/mp4" />
+                  <source src="/video/mapset-demo_v2.mp4" type="video/mp4" />
                 </video>
               </div>
             </div>
