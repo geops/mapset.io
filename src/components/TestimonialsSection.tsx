@@ -43,7 +43,7 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
       <div className="w-[150px] h-[150px] md:w-[200px] md:h-[200px]">
         {hasUserImage ? (
           <Image
-            src={`/img/${src}`}
+            src={`/img/testimonials/${src}`}
             alt={
               (t("testimonials.customers." + selected + ".name"),
               t("testimonials.customers." + selected + ".job"))
@@ -75,7 +75,7 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
           {items.map((item, idx) => {
             const isUnselected = selected !== idx;
             return (
-              <div key={item.name} className={`flex flex-col gap-5 md:h-[300px] xs:h-[250px]${isUnselected ? " hidden" : ""}`}>
+              <div key={item.name} className={`flex flex-col gap-5 ${isUnselected ? " hidden" : ""}`}>
                 <p
                   className="font-hero text-xs text-blue-900 font-medium -tracking-[0.64px] leading-normal"
                   style={{ fontSize: "clamp(1rem, 1vw + 0.75rem, 1.25rem)" }}
@@ -83,7 +83,7 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
                   “{t("testimonials.customers." + idx + ".testimonial")}”
                 </p>
                 <div className="flex flex-col">
-                  <p className="text-blue-900 font-semibold">
+                  <p className="text-blue-900 font-bold">
                     {t("testimonials.customers." + selected + ".name")}
                   </p>
                   <p className="text-slate-500">
@@ -100,7 +100,7 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
       </div>
       <div className="flex gap-2 sm:justify-start justify-center">
         {items.length > 1 ? (
-          <div className="flex gap-6">
+          <div className="flex gap-6 p-5">
             <IconButtonWhite disabled={isFirst} onClick={previous}>
               <ArrowLeftIcon></ArrowLeftIcon>
             </IconButtonWhite>{" "}

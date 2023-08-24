@@ -25,8 +25,11 @@ const pClamp = "clamp(1rem, 1vw + 0.75rem, 1.25rem)";
 const containerClassName =
   "container mx-auto px-4 md:px-8 lg:px-16 max-w-[1536px]";
 
+export type BenefitsTranslations = string[];
+
 function Home() {
   const { t } = useI18n();
+  const benefitsTranslations: BenefitsTranslations = translations.features.content;
   return (
     <>
       <div className="relative z-0 overflow-x-hidden">
@@ -128,9 +131,11 @@ function Home() {
               <div className="px-4 md:px-0 pb-12">
                 <H4>{t("features.section")}</H4>
                 <H2 className={`max-w-[900px]`}>{t("features.title")}</H2>
-                <p className={pClassName} style={{ fontSize: pClamp }}>
-                  {t("features.content")}
-                </p>
+                {benefitsTranslations.map((paragraph) => (
+                  <p key={crypto.randomUUID()} className={`${pClassName} mb-2`} style={{ fontSize: pClamp }}>
+                    {paragraph}
+                  </p>
+                ))}
               </div>
               <div className="md:hidden">
                 <FeaturesSection />

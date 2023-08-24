@@ -19,49 +19,61 @@
     "title": "Neugierig geworden?"
   },
   "features": {
-    "content": "mapset ist der Online-Editor zur einfachen Erstellung von übersichtlichen und optisch ansprechenden Plangrafiken. ",
+    "content": [
+      "mapset ist der Online-Editor zur einfachen Erstellung von übersichtlichen und optisch ansprechenden Plangrafiken.",
+      "Die Basiskarte ist für den öffentlichen Verkehr optimiert und enthält alle relevanten Informationen.",
+      "Entwerfen Sie einfach und schnell aussagekräftige Pläne von Haltestellen. Ersatzverkehr oder Baustellen lassen sich ebenso abbilden wie die Situation bei Grossanlässen, für die die Lenkung der Reisenden erforderlich ist. In wenigen Minuten lässt sich ein Plan erstellen, der zielgerichtet informiert und eine hohe grafische Qualität aufweist.",
+      "Auf Wunsch können die Elemente des unternehmenseigenen Corporate Designs übernommen werden. "
+    ],
     "list": [
       {
-        "content": "Entwerfen Sie einfach und schnell aussagekräftige Pläne von Haltestellen. Bahnersatzverkehr oder Baustellen lassen sich ebenso abbilden wie die Situation bei Grossanlässen, die die Lenkung der Reisenden erforderlich machen. In wenigen Minuten lässt sich ein Plan erstellen, der zielgerichtet informiert und eine hohe grafische Qualität aufweist.",
-        "image": "/img/feature-1.png",
-        "image_height": 500,
-        "image_width": 593,
-        "title": "Erstellen von Situationsplänen"
-      },
-      {
-        "content": "Ergänzen Sie lokale Informationen auf der Basis bestehender detaillierter Karten. Sie können Wegrouten darstellen, Haltestellen und Haltekanten mit Piktogrammen versehen oder Points of Interests hervorheben. Dabei können Sie auf bewährte Grafik-Elemente der SBB zurückgreifen (Piktogramme, Linienstile, Farben etc.).",
+        "content": "Ergänzen Sie lokale Informationen auf der Basis bestehender detaillierter Karten. Sie können Wegrouten darstellen, Haltestellen und Haltekanten mit Piktogrammen versehen oder Points of Interests hervorheben.",
         "image": "/img/feature-1.png",
         "image_height": 500,
         "image_width": 593,
         "title": "Einfaches Einzeichnen von lokalen Informationen"
       },
       {
-        "content": "Laden Sie ihre selbst erstellten Pläne als Bilddatei herunter, und binden Sie diese in Ihre individuellen Vorlagen ein. Für die Optimierung des Exports können Sie den Ausschnitt und die Auflösung für den Druck festlegen.",
+        "content": "Die Karten stellen einen Standard im öffentlichen Verkehr dar und haben einen entsprechend hohen Wiedererkennungswert. Die Kartenbasis gewährleistet nicht nur eine grafisch attraktive Darstellung sondern wird automatisch wöchentlich aktualisiert. Alternativ können auch Luftbilder als Hintergrund gewählt werden. Die Kartengrundlage lässt sich durch das An- und Ausschalten verschiedener Layer ganz Ihren Bedürfnissen anpassen.",
         "image": "/img/feature-1.png",
         "image_height": 500,
         "image_width": 593,
-        "title": "Exportfunktionen"
+        "title": "Attraktive Kartengrundlagen"
       },
       {
-        "content": "Ihre Pläne lassen sich nicht nur als statische Bilder exportieren, sondern können auch dynamisch in Webseiten eingebunden oder verlinkt werden. Profitieren Sie mit der dynamischen Einbindung von frei navigierbaren Karten, auf denen die Nutzer selbst Ausschnitt und Massstab bestimmen können. Versenden Sie Links zu ihren individuellen Plänen einfach per Mail oder teilen Sie diese über Ihre Social Media-Kanäle.",
+        "content": "Die Kartengrundlage, die in mapset eingebunden ist, ist für den öffentlichen Verkehr optimiert und enthält Informationen zum Schienen- wie auch zum Strassenverkehr. Dazu zählen nebst Haltestellen, Haltekanten und Stationslabels auch Gleise, Buslinien, und speziell gekennzeichnete Gebäude an Stationen. Zusätzlich können Points of Interest wie Angebote der kombinierten Mobilität oder weitere Services angezeigt werden.",
+        "image": "/img/feature-1.png",
+        "image_height": 500,
+        "image_width": 593,
+        "title": "Relevante Kartendaten"
+      },
+      {
+        "content": "Eine geniale Unterstützung beim Zeichnen von Linien bietet das integrierte Geo-Routing für Fussgänger, Busse und andere Verkehrsmittel. Mit Angabe von Start- und Endpunkt werden die Verbindungslinien automatisch eingezeichnet.",
         "image": "/img/feature-4.png",
         "image_height": 500,
         "image_width": 648,
-        "title": "Dynamische Einbindung in Online-Medien"
+        "title": "Routing"
       },
       {
-        "content": "Alle Plänen basieren auf den offiziellen Karten der SBB. Die Karten stellen einen Standard im Schweizerischen öffentlichen Verkehr dar und haben einen entsprechend hohen Wiedererkennungswert. Die Kartenbasis gewährleistet nicht nur eine grafisch attraktive Darstellung sondern wird auch ohne Ihr Zutun wöchentlich aktualisiert.",
+        "content": "Laden Sie Ihre selbst erstellten Pläne als Bilddatei herunter und binden Sie diese in Ihre individuellen Vorlagen ein. Die Bilder lassen sich auch optimal für die Einbindung in Fahrzeugmonitoren verwenden. Für die Optimierung des Exports können Sie den Ausschnitt und die Auflösung für den Druck festlegen. Ebenso können Sie Ihre eigenen Druckvorlagen hinterlegen.",
         "image": "/img/feature-4.png",
         "image_height": 500,
         "image_width": 648,
-        "title": "Kartenbild des Schweizer öV"
+        "title": "Druck- und Exportfunktionen"
       },
       {
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "content": "Ihre Pläne lassen sich nicht nur als statische Bilder exportieren, sondern können auch dynamisch in Webseiten oder auf interaktiven Stelen eingebunden oder verlinkt werden. Profitieren Sie mit der dynamischen Einbindung von frei navigierbaren Karten, auf denen die Nutzerinnen und Nutzer selbst Ausschnitt und Massstab bestimmen können. Versenden Sie ausserdem Links zu ihren individuellen Plänen einfach per Mail oder teilen Sie diese über Ihre Social Media-Kanäle.",
         "image": "/img/feature-4.png",
         "image_height": 500,
         "image_width": 648,
-        "title": "Lorem ipsum"
+        "title": "Dynamische Einbindung in digitale Kanäle"
+      },
+      {
+        "content": "Für viele Haltestellen einfache Pläne erstellen geht mit mapset ganz schnell: Einfach die Haltestellennummer eingeben und schon wird ein Standardplan angelegt. Optional können für Haltestellen Vorlagen definiert werden, die beim automatischen Aufruf des Plans genutzt werden. Die Standardpläne können von allen mapset-Userinnen und -Usern in Ihrem Unternehmen bearbeitet werden. ",
+        "image": "/img/feature-4.png",
+        "image_height": 500,
+        "image_width": 648,
+        "title": "Standardpläne"
       }
     ],
     "section": "benefits",
@@ -70,8 +82,8 @@
   "home": {
     "get_started": "Los geht's",
     "main": {
-      "content": "Bieten Sie Ihren Kunden aktuelle und attraktive Informationen über öffentliche Verkehrsmittel.",
-      "title": "Do it yourself plans"
+      "content": "Mit mapset erstellen Sie schnell und einfach Situationspläne für den öffentlichen Verkehr. ",
+      "title": "Pläne zum selber machen"
     },
     "metadata": {
       "description": "Sie möchten Ihren Kunden aktuelle und attraktive Informationen zum öffentlichen Verkehr zugänglich machen? mapset ist der Online-Editor zur einfachen Erstellung von übersichtlichen und optisch ansprechenden Plangrafiken. Mit wenigen Klicks visualisieren Sie Pläne für geänderte Haltestellen, kommunizieren die Situation bei Bauprojekten, gewährleisten die Kundenführung bei Events oder informieren über betriebliche Sonderfälle vor Ort. All dies auf Basis von laufend aktualisiertem Kartenmaterial.",
@@ -192,6 +204,14 @@
         "job": "Verkehrsbetriebe Stadt Zürich, VBZ",
         "name": "Miro Bertozzi",
         "testimonial": "Wir arbeiten gerne mit mapset, weil das Individualisieren von Plänen ohne zusätzliche Grafik-Programme möglich ist. Das Tool hilft uns, eine einheitliche Kommunikation zu gewährleisten. Wir sind sehr zufrieden."
+      },
+      {
+        "image": "Maissen_Patric.jpg",
+        "image_height": 1080,
+        "image_width": 1080,
+        "job": "Stv. Leiter Betrieb / Disposition, Engadin Bus",
+        "name": "Patric Maissen",
+        "testimonial": "Bei Engadin Bus haben wir vier Fahrplanwechsel pro Jahr. In den Zwischensaisons haben die Baustellen Hochsaison und wir haben viele Umleitungen und nicht bediente oder provisorische Haltestellen. Während den Sommer- und Wintermonaten finden viele Sportanlässe wie der Damen Ski World Cup oder der Engadin Skimarathon statt. Mit Mapset haben wir ein tolles Tool gefunden, die Kunden- sowie Busfahrer:innen-Informationen einfach und bildlich zu gestalten. Dies mit einer unglaublichen Einfachheit und einem geringen Zeitaufwand."
       }
     ],
     "section": "Testimonials",

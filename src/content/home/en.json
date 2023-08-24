@@ -19,49 +19,61 @@
     "title": "Got curious?"
   },
   "features": {
-    "content": "mapset is the online editor for fast and easy creation of clear and visually appealing station maps and plans forcustomer orientation.",
+    "content": [
+      "mapset is the online editor for the simple creation of clear and visually appealing plan graphics.",
+      "The base map is optimised for public transport and contains all relevant information.",
+      "Design informative plans of stops quickly and easily. Substitute traffic or road works can be mapped as well as the situation during major events for which the guidance of passengers is required. In just a few minutes, a plan can be created that provides targeted information and has a high graphic quality.",
+      "If desired, the elements of the company's own corporate design can be adopted."
+    ],
     "list": [
       {
-        "content": "Create meaningful station maps quickly and easily. Public transport replacement services or construction sites can be depicted, as can the situation at major events that require the guidance of passengers. In just a few minutes, you can create a plan that provides targeted information and has a high graphic quality.",
+        "content": "Add local information based on existing detailed maps. You can display routes, add pictograms to stops and stops edges or highlight points of interest.",
         "image": "/img/feature-1.png",
         "image_height": 500,
         "image_width": 593,
-        "title": "Create situational plans"
+        "title": "Simple drawing of local information"
       },
       {
-        "content": "Supplement local information on the basis of existing, detailed maps. You can display routes, add stops with their platforms or highlight points of interest.",
+        "content": "The maps represent a standard in public transport and have a correspondingly high recognition value. The basemap not only ensures a graphically attractive presentation but is also automatically updated on a weekly basis. Alternatively, aerial photos can be selected as background. The basemap can be adapted to your needs by switching different layers on and off.",
         "image": "/img/feature-1.png",
         "image_height": 500,
         "image_width": 593,
-        "title": "Draw local information with ease"
+        "title": "Attractive basemaps"
       },
       {
-        "content": "Download your customized plans as image files and integrate them into your word processing or DTP software. To optimize the export, you can precisely specify the extent and resolution for printing.",
+        "content": "The map base integrated into mapset is optimised for public transport and contains information on both rail and road traffic. In addition to stops, stop edges and station labels, this also includes tracks, bus routes and specially marked buildings at stations. In addition, points of interest such as combined mobility offers or other services can be displayed.",
         "image": "/img/feature-1.png",
         "image_height": 500,
         "image_width": 593,
-        "title": "Export functions"
+        "title": "Relevant map data"
       },
       {
-        "content": "Your plans can not only be exported as static images, but can also be dynamically embedded into websites. Benefit from the dynamic integration of freely navigable maps on which users can select extent and scale themselves. Send links for your individual plans simply by e-mail or share them via social media.",
+        "content": "The integrated geo-routing for pedestrians, buses and other means of transport offers ingenious support when drawing lines. By specifying the start and end points, the connecting lines are drawn automatically.",
         "image": "/img/feature-4.png",
         "image_height": 500,
         "image_width": 648,
-        "title": "Dynamic integration in online channels"
+        "title": "Routing"
       },
       {
-        "content": "The basemap is optimized to show those details that are relevant for public transport. The map not only guarantees a graphically attractive presentation but is also updated weekly without your intervention.",
+        "content": "Download your own plans as image files and integrate them into your individual templates. The images can also be optimally used for integration in vehicle monitors. To optimise the export, you can specify the section and resolution for printing. You can also store your own print templates.",
         "image": "/img/feature-4.png",
         "image_height": 500,
         "image_width": 648,
-        "title": "Basemap for public transport"
+        "title": "Print and export functions"
       },
       {
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "content": "Your plans can not only be exported as static images, but can also be dynamically integrated or linked in web pages or on interactive stelae. With dynamic integration, you can benefit from freely navigable maps on which users can determine the section and scale themselves. You can also send links to your individual plans by e-mail or share them via your social media channels.",
         "image": "/img/feature-4.png",
         "image_height": 500,
         "image_width": 648,
-        "title": "Lorem ipsum"
+        "title": "Dynamic integration into digital channels"
+      },
+      {
+        "content": "Creating simple plans for many stops is very quick with mapset: Simply enter the stop number and a standard plan is created. Optionally, templates can be defined for stops which are used when the plan is called up automatically. The default plans can be edited by all mapset users in your company.",
+        "image": "/img/feature-4.png",
+        "image_height": 500,
+        "image_width": 648,
+        "title": "Default plans"
       }
     ],
     "section": "benefits",
@@ -70,7 +82,7 @@
   "home": {
     "get_started": "Get started",
     "main": {
-      "content": "Provide your customers with up-to-date and attractive information about public transport.",
+      "content": "With mapset you can create situation plans for public transport quickly and easily.",
       "title": "Do it yourself plans"
     },
     "metadata": {
