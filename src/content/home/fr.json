@@ -19,49 +19,61 @@
     "title": "Vous êtes curieux?"
   },
   "features": {
-    "content": "mapset permet de créer rapidement et facilement des plans de stations et des plans d'orientation des clients clairs et visuellement attrayants.",
+    "content": [
+      "mapset est l'éditeur en ligne permettant de créer facilement des graphiques plans clairs et visuellement attrayants.",
+      "La carte de base est optimisée pour les transports publics et contient toutes les informations pertinentes.",
+      "Concevez facilement et rapidement des plans pertinents des arrêts. Le trafic de remplacement ou les chantiers peuvent être représentés, tout comme la situation lors de grands événements pour lesquels il est nécessaire de guider les voyageurs. En quelques minutes, il est possible de créer un plan qui fournit des informations ciblées et qui présente une qualité graphique élevée.",
+      "Sur demande, il est possible de reprendre les éléments de l'identité visuelle de l'entreprise."
+    ],
     "list": [
       {
-        "content": "Créez rapidement et facilement des plans de gare significatifs. Les services de remplacement des transports publics ou les chantiers de construction peuvent être représentés, tout comme la situation lors d'événements majeurs qui nécessitent l'accompagnement des passagers. En quelques minutes seulement, vous pouvez créer un plan qui fournit des informations ciblées et présente une grande qualité graphique.",
+        "content": "Complétez les informations locales sur la base de cartes détaillées existantes. Vous pouvez représenter des itinéraires, ajouter des pictogrammes aux arrêts et aux bords d'arrêt ou mettre en évidence des points d'intérêt.",
         "image": "/img/feature-1.png",
         "image_height": 500,
         "image_width": 593,
-        "title": "Création de plans de situation"
+        "title": "Dessiner facilement des informations locales"
       },
       {
-        "content": "Complétez les informations locales sur la base de cartes existantes et détaillées. Vous pouvez afficher des itinéraires, ajouter des arrêts avec leurs quais ou mettre en évidence des points d'intérêt.",
+        "content": "Les cartes représentent un standard dans les transports publics et ont donc une valeur de reconnaissance élevée. La base cartographique garantit non seulement une représentation graphique attrayante, mais est également actualisée automatiquement chaque semaine. Il est également possible de choisir des photos aériennes comme arrière-plan. La base cartographique peut être adaptée à vos besoins en activant ou désactivant différentes couches.",
         "image": "/img/feature-1.png",
         "image_height": 500,
         "image_width": 593,
-        "title": "Dessin facile d'informations locales"
+        "title": "Des fonds de carte attrayants"
       },
       {
-        "content": "Téléchargez vos plans personnalisés sous forme de fichiers image et intégrez-les dans votre logiciel de traitement de texte ou de PAO. Pour optimiser l'exportation, vous pouvez spécifier précisément l'étendue et la résolution pour l'impression.",
+        "content": "Le fond de carte intégré dans mapset est optimisé pour les transports publics et contient des informations sur le trafic ferroviaire et routier. Outre les arrêts, les bords d'arrêt et les étiquettes de station, elle comprend également les voies, les lignes de bus et les bâtiments spécialement identifiés dans les stations. De plus, des points d'intérêt tels que les offres de mobilité combinée ou d'autres services peuvent être affichés.",
         "image": "/img/feature-1.png",
         "image_height": 500,
         "image_width": 593,
-        "title": "Fonctions d'exportation"
+        "title": "Données cartographiques pertinentes"
       },
       {
-        "content": "Vos plans peuvent non seulement être exportés sous forme d'images statiques, mais aussi être intégrés dynamiquement dans des sites Web. Profitez de l'intégration dynamique de plans librement navigables sur lesquels les utilisateurs peuvent sélectionner eux-mêmes l'étendue et l'échelle. Envoyez des liens pour vos plans individuels simplement par e-mail ou partagez-les via les médias sociaux.",
+        "content": "Le géo-routage intégré pour les piétons, les bus et autres moyens de transport offre une aide géniale pour le traçage de lignes. En indiquant le point de départ et le point d'arrivée, les lignes de liaison sont automatiquement dessinées.",
         "image": "/img/feature-4.png",
         "image_height": 500,
         "image_width": 648,
-        "title": "Intégration dynamique dans les canaux en ligne"
+        "title": "Routage"
       },
       {
-        "content": "Le plan de base est optimisé pour montrer les détails qui sont pertinents pour les transports publics. La carte garantit non seulement une présentation graphique attrayante, mais elle est également mise à jour chaque semaine sans votre intervention.",
+        "content": "Téléchargez les plans que vous avez créés vous-même sous forme de fichier image et intégrez-les dans vos modèles individuels. Les images peuvent également être utilisées de manière optimale pour l'intégration dans les moniteurs de véhicules. Pour optimiser l'exportation, vous pouvez définir le cadrage et la résolution pour l'impression. De même, vous pouvez enregistrer vos propres modèles d'impression.",
         "image": "/img/feature-4.png",
         "image_height": 500,
         "image_width": 648,
-        "title": "Plan de base pour les transports publics"
+        "title": "Fonctions d'impression et d'exportation"
       },
       {
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "content": "Vos plans ne peuvent pas seulement être exportés sous forme d'images statiques, mais peuvent également être intégrés ou reliés de manière dynamique dans des pages web ou sur des totems interactifs. Profitez de l'intégration dynamique de cartes librement navigables, sur lesquelles les utilisateurs peuvent déterminer eux-mêmes la section et l'échelle. Envoyez en outre des liens vers vos plans individuels par e-mail ou partagez-les sur vos canaux de médias sociaux.",
         "image": "/img/feature-4.png",
         "image_height": 500,
         "image_width": 648,
-        "title": "Lorem ipsum"
+        "title": "Intégration dynamique dans les canaux numériques"
+      },
+      {
+        "content": "Créer des plans simples pour de nombreux arrêts est très rapide avec mapset : il suffit de saisir le numéro de l'arrêt et un plan standard est créé. En option, il est possible de définir des modèles pour les arrêts, qui seront utilisés lors de l'appel automatique du plan. Les plans standard peuvent être modifiés par tous les utilisateurs de mapset dans votre entreprise.",
+        "image": "/img/feature-4.png",
+        "image_height": 500,
+        "image_width": 648,
+        "title": "Plans standard"
       }
     ],
     "section": "avantages",
