@@ -66,7 +66,7 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
         )}
       </div>
     );
-  }, [selected, t]);
+  }, [selected, t]);  
 
   useEffect(() => {
     const paragraphNode = document.querySelectorAll('[data-testimonials-selected="true"]')[0]
