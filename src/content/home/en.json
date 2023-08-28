@@ -19,12 +19,7 @@
     "title": "Got curious?"
   },
   "features": {
-    "content": [
-      "mapset is the online editor for the simple creation of clear and visually appealing plan graphics.",
-      "The base map is optimised for public transport and contains all relevant information.",
-      "Design informative plans of stops quickly and easily. Substitute traffic or road works can be mapped as well as the situation during major events for which the guidance of passengers is required. In just a few minutes, a plan can be created that provides targeted information and has a high graphic quality.",
-      "If desired, the elements of the company's own corporate design can be adopted."
-    ],
+    "content": "mapset is the online editor for the simple creation of clear and visually appealing plan graphics.<br/><br/>The base map is optimised for public transport and contains all relevant information.<br/><br/>Design informative plans of stops quickly and easily. Substitute traffic or road works can be mapped as well as the situation during major events for which the guidance of passengers is required. In just a few minutes, a plan can be created that provides targeted information and has a high graphic quality.<br/><br/>If desired, the elements of the company's own corporate design can be adopted.",
     "list": [
       {
         "content": "Add local information based on existing detailed maps. You can display routes, add pictograms to stops and stops edges or highlight points of interest.",
@@ -106,16 +101,16 @@
   },
   "pricing": {
     "addon": "AddOn Share & Print",
-    "content": "Here you can find the overview of mapset's annual costs and one-time setup fee for transportation companies. If you represent a different type of company, please contact us for an individual offer. If you are interested in additional services, we will also be happy to provide you with an individual package offer.",
+    "content": "Here you will find the overview of the annual costs and the one-off set-up fee of mapset for transport companies.<br/><br/>The graduation by stops is not applicable for your company? Contact us for an individual offer. Even if you are interested in further services, we will be happy to create an individual package offer for you.",
     "currency": {
       "ch": "CHF",
       "io": "€"
     },
     "details": "Details ",
-    "details_one": "Prices refer to the total number of stops of a company, independent of the number of stops actually processed with mapset.",
+    "details_one": "Prices refer to the total number of stops or stations of a company, regardless of the number of stations actually served by mapset.",
     "details_two": {
-      "ch": "In addition to the ongoing subscription fees, a setup fee of CHF 490.- is charged at the start of the subscription. After a subscription interruption, the setup fee is due again when the subscription is renewed. For transport companies with up to 10 stops only the set-up fee is charged.<br/><br/> Within the scope of the subscriptions and the setup fee the configuration of users of mapset is included, provided the users can be identified via a uniform mail domain (e.g. james.meyer@ktuxy.com and :james.meyer@ktuxy.com). For the configuration of individual users, who are not identifiable via a domain, CHF 90.- per user will be charged.",
-      "io": "In addition to the ongoing subscription fees, a setup fee of € 490.- is charged at the start of the subscription. After a subscription interruption, the setup fee is due again when the subscription is renewed. For transport companies with up to 10 stops only the set-up fee is charged.<br/><br/> Within the scope of the subscriptions and the setup fee the configuration of users of mapset is included, provided the users can be identified via a uniform mail domain (e.g. james.meyer@ktuxy.com and :james.meyer@ktuxy.com). For the configuration of individual users, who are not identifiable via a domain, € 90.- per user will be charged."
+      "ch": "In addition to the current subscription fees, set-up fees of CHF 490.- are charged at the start of the subscription. After a subscription interruption, the set-up fee is again due when the subscription is renewed. For carriers with up to 10 stops, only the set-up fee is charged.<br/><br/>Within the scope of the subscriptions and the set-up fees, the configuration of mapset users is included, insofar as the users can be identified via a uniform mail domain (e.g. maria.bernasconi@ktuxy.ch and max.muster@ktuxy.ch). For the configuration of individual users who are not identifiable via a domain, CHF 90 will be charged per user.<br/><br/>For Swiss companies, the prices are exclusive of VAT of 7.7 %.",
+      "io": "In addition to the current subscription fees, set-up fees of € 490.- are charged at the start of the subscription. After a subscription interruption, the set-up fee is again due when the subscription is renewed. For carriers with up to 10 stops, only the set-up fee is charged.<br/><br/>Within the scope of the subscriptions and the set-up fees, the configuration of mapset users is included, insofar as the users can be identified via a uniform mail domain (e.g. maria.bernasconi@ktuxy.ch and max.muster@ktuxy.ch). For the configuration of individual users who are not identifiable via a domain, € 90 will be charged per user.<br/><br/>For Swiss companies, the prices are exclusive of VAT of 7.7 %."
     },
     "mapset_features": "All mapset features",
     "onetime": "One-time setup fee",
@@ -193,7 +188,7 @@
     "railway_stations": "Railway Stops",
     "section": "pricing",
     "stops": "Other Stops",
-    "title": "Plans For Transport Companies Of Any Size",
+    "title": "The right subscription for every company",
     "year": "year"
   },
   "privacy_link": "https://geops.com/en/privacy",
@@ -206,12 +201,22 @@
         "image": "Miro_Bertozzi.jpg",
         "image_height": 1080,
         "image_width": 1080,
-        "job": "Verkehrsbetriebe Stadt Zürich, VBZ",
+        "job": "Passenger Information Officer",
         "name": "Miro Bertozzi",
-        "testimonial": "We like working with mapset because individualizing plans is possible without additional graphics programs. The tool helps us to ensure consistent communication. We are very satisfied."
+        "testimonial": "We like working with mapset because individualizing plans is possible without additional graphics programs. The tool helps us to ensure consistent communication. We are very satisfied.",
+        "transport_provider": "Verkehrsbetriebe Stadt Zürich, VBZ"
+      },
+      {
+        "image": "Maissen_Patric.jpg",
+        "image_height": 1080,
+        "image_width": 1080,
+        "job": "Deputy Head of Operations / Scheduling",
+        "name": "Patric Maissen",
+        "testimonial": "At Engadin Bus we have four timetable changes per year. In the off-seasons, the construction sites are in high season and we have many detours and unmanned or temporary stops. During the summer and winter months there are many sporting events such as the Women's Ski World Cup or the Engadin Skimarathon. With mapset, we have found a great tool to design the customer and bus driver information in a simple and visual way. This with an incredible simplicity and a low expenditure of time.",
+        "transport_provider": "Engadin Bus"
       }
     ],
-    "section": "Testimonials",
-    "title": "Who is using mapset and why?"
+    "section": "Our customers",
+    "title": "Who are our subscribers?"
   }
 }

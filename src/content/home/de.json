@@ -19,12 +19,7 @@
     "title": "Neugierig geworden?"
   },
   "features": {
-    "content": [
-      "mapset ist der Online-Editor zur einfachen Erstellung von übersichtlichen und optisch ansprechenden Plangrafiken.",
-      "Die Basiskarte ist für den öffentlichen Verkehr optimiert und enthält alle relevanten Informationen.",
-      "Entwerfen Sie einfach und schnell aussagekräftige Pläne von Haltestellen. Ersatzverkehr oder Baustellen lassen sich ebenso abbilden wie die Situation bei Grossanlässen, für die die Lenkung der Reisenden erforderlich ist. In wenigen Minuten lässt sich ein Plan erstellen, der zielgerichtet informiert und eine hohe grafische Qualität aufweist.",
-      "Auf Wunsch können die Elemente des unternehmenseigenen Corporate Designs übernommen werden. "
-    ],
+    "content": "mapset ist der Online-Editor zur einfachen Erstellung von übersichtlichen und optisch ansprechenden Plangrafiken.<br/><br/>Die Basiskarte ist für den öffentlichen Verkehr optimiert und enthält alle relevanten Informationen.<br/><br/>Entwerfen Sie einfach und schnell aussagekräftige Pläne von Haltestellen. Ersatzverkehr oder Baustellen lassen sich ebenso abbilden wie die Situation bei Grossanlässen, für die die Lenkung der Reisenden erforderlich ist. In wenigen Minuten lässt sich ein Plan erstellen, der zielgerichtet informiert und eine hohe grafische Qualität aufweist.<br/><br/>Auf Wunsch können die Elemente des unternehmenseigenen Corporate Designs übernommen werden.",
     "list": [
       {
         "content": "Ergänzen Sie lokale Informationen auf der Basis bestehender detaillierter Karten. Sie können Wegrouten darstellen, Haltestellen und Haltekanten mit Piktogrammen versehen oder Points of Interests hervorheben.",
@@ -80,7 +75,7 @@
     "title": "Klarheit und Stil in die Pläne für den öffentlichen Verkehr bringen"
   },
   "home": {
-    "get_started": "Los geht's",
+    "get_started": "Starten",
     "main": {
       "content": "Mit mapset erstellen Sie schnell und einfach Situationspläne für den öffentlichen Verkehr. ",
       "title": "Pläne zum selber machen"
@@ -101,16 +96,16 @@
   },
   "pricing": {
     "addon": "AddOn Share & Print",
-    "content": "Hier finden Sie die Übersicht der jährlichen Kosten und die einmalige Einrichtungsgebühr von mapset für Transportunternehmen. Wenn Sie eine andere Art von Unternehmen repräsentieren, kontaktieren Sie uns bitte für ein individuelles Angebot. Wenn Sie an weiteren Leistungen interessiert sind, erstellen wir Ihnen ebenfalls gerne ein individuelles Paketangebot.",
+    "content": "Hier finden Sie die Übersicht der jährlichen Kosten und die einmalige Einrichtungsgebühr von mapset für Transportunternehmen.<br/><br/>Die Abstufung nach Haltestellen ist für Ihr Unternehmen nicht anwendbar? Kontaktieren Sie uns für ein individuelles Angebot. Auch wenn Sie an weiteren Leistungen interessiert sind, erstellen wir Ihnen gerne ein individuelles Paketangebot.",
     "currency": {
       "ch": "CHF",
       "io": "€"
     },
     "details": "Details",
-    "details_one": "Die Preise beziehen sich auf die Gesamtzahl an Haltestellen eines Unternehmens, unabhängig von der Anzahl der tatsächlich mit mapset bearbeiteten Haltestellen.",
+    "details_one": "Die Preise beziehen sich auf die Gesamtzahl an Haltestellen oder Bahnhöfen eines Unternehmens, unabhängig von der Anzahl der tatsächlich mit mapset bearbeiteten Stationen.",
     "details_two": {
-      "ch": "Zu den laufenden Abo-Gebühren fallen beim Start des Abonnements Einrichtungsgebühren von CHF 490.- an. Nach einem Abonnements-Unterbruch wird bei Erneuerung des Abonnements wiederum die Einrichtungsgebühr fällig. Für Transportunternehmen mit bis zu 10 Haltestellen wird nur die Einrichtungsgebühr verrechnet.<br/><br/>Im Rahmen der Abonnements und der Einrichtungsgebühren ist die Konfiguration von Nutzern von mapset eingeschlossen, insofern die Nutzer über eine einheitliche Mail-Domain identifiziert werden können (z.B. maria.bernasconi@ktuxy.ch und max.muster@ktuxy.ch). Für die Einrichtung von individuellen Nutzern, die nicht über eine Domain identifizierbar sind, werden pro Nutzer CHF 90.– verrechnet.<br/><br/>Sämtliche Preise gelten für Schweizer Unternehmen zuzüglich Mehrwertsteuer von 7,7 %.",
-      "io": "Zu den laufenden Abo-Gebühren fallen beim Start des Abonnements Einrichtungsgebühren von € 490.- an. Nach einem Abonnements-Unterbruch wird bei Erneuerung des Abonnements wiederum die Einrichtungsgebühr fällig. Für Transportunternehmen mit bis zu 10 Haltestellen wird nur die Einrichtungsgebühr verrechnet.<br/><br/>Im Rahmen der Abonnements und der Einrichtungsgebühren ist die Konfiguration von Nutzern von mapset eingeschlossen, insofern die Nutzer über eine einheitliche Mail-Domain identifiziert werden können (z.B. maria.bernasconi@ktuxy.ch und max.muster@ktuxy.ch). Für die Einrichtung von individuellen Nutzern, die nicht über eine Domain identifizierbar sind, werden pro Nutzer € 90.– verrechnet.<br/><br/>Sämtliche Preise gelten für Schweizer Unternehmen zuzüglich Mehrwertsteuer von 7,7 %."
+      "ch": "Zu den laufenden Abo-Gebühren fallen beim Start des Abonnements Einrichtungsgebühren von CHF 490.- an. Nach einem Abonnements-Unterbruch wird bei Erneuerung des Abonnements wiederum die Einrichtungsgebühr fällig. Für Transportunternehmen mit bis zu 10 Haltestellen wird nur die Einrichtungsgebühr verrechnet.<br/><br/>Im Rahmen der Abonnements und der Einrichtungsgebühren ist die Konfiguration von Nutzern von mapset eingeschlossen, insofern die Nutzer über eine einheitliche Mail-Domain identifiziert werden können (z.B. maria.bernasconi@ktuxy.ch und max.muster@ktuxy.ch). Für die Einrichtung von individuellen Nutzern, die nicht über eine Domain identifizierbar sind, werden pro Nutzer CHF 90.– verrechnet.<br/><br/>Für Schweizer Unternehmen verstehen sich die Preise zuzüglich Mehrwertsteuer von 7,7 %.",
+      "io": "Zu den laufenden Abo-Gebühren fallen beim Start des Abonnements Einrichtungsgebühren von € 490.- an. Nach einem Abonnements-Unterbruch wird bei Erneuerung des Abonnements wiederum die Einrichtungsgebühr fällig. Für Transportunternehmen mit bis zu 10 Haltestellen wird nur die Einrichtungsgebühr verrechnet.<br/><br/>Im Rahmen der Abonnements und der Einrichtungsgebühren ist die Konfiguration von Nutzern von mapset eingeschlossen, insofern die Nutzer über eine einheitliche Mail-Domain identifiziert werden können (z.B. maria.bernasconi@ktuxy.ch und max.muster@ktuxy.ch). Für die Einrichtung von individuellen Nutzern, die nicht über eine Domain identifizierbar sind, werden pro Nutzer € 90.– verrechnet.<br/><br/>Für Schweizer Unternehmen verstehen sich die Preise zuzüglich Mehrwertsteuer von 7,7 %."
     },
     "mapset_features": "Alle mapset Funktionen",
     "onetime": "Einmalige Einrichtungsgebühr",
@@ -188,7 +183,7 @@
     "railway_stations": "Haltestellen Zug",
     "section": "Preise",
     "stops": "Sonstige Haltestellen",
-    "title": "Pläne für Transportunternehmen jeder Größe",
+    "title": "Das passende Abo für jedes Unternehmen",
     "year": "Jahr"
   },
   "privacy_link": "https://geops.com/datenschutz",
@@ -201,20 +196,22 @@
         "image": "Miro_Bertozzi.jpg",
         "image_height": 1080,
         "image_width": 1080,
-        "job": "Verkehrsbetriebe Stadt Zürich, VBZ",
+        "job": "Sachbearbeiter Fahrgastinformation",
         "name": "Miro Bertozzi",
-        "testimonial": "Wir arbeiten gerne mit mapset, weil das Individualisieren von Plänen ohne zusätzliche Grafik-Programme möglich ist. Das Tool hilft uns, eine einheitliche Kommunikation zu gewährleisten. Wir sind sehr zufrieden."
+        "testimonial": "Wir arbeiten gerne mit mapset, weil das Individualisieren von Plänen ohne zusätzliche Grafik-Programme möglich ist. Das Tool hilft uns, eine einheitliche Kommunikation zu gewährleisten. Wir sind sehr zufrieden.",
+        "transport_provider": "Verkehrsbetriebe Stadt Zürich, VBZ"
       },
       {
         "image": "Maissen_Patric.jpg",
         "image_height": 1080,
         "image_width": 1080,
-        "job": "Stv. Leiter Betrieb / Disposition, Engadin Bus",
+        "job": "Stv. Leiter Betrieb / Disposition",
         "name": "Patric Maissen",
-        "testimonial": "Bei Engadin Bus haben wir vier Fahrplanwechsel pro Jahr. In den Zwischensaisons haben die Baustellen Hochsaison und wir haben viele Umleitungen und nicht bediente oder provisorische Haltestellen. Während den Sommer- und Wintermonaten finden viele Sportanlässe wie der Damen Ski World Cup oder der Engadin Skimarathon statt. Mit Mapset haben wir ein tolles Tool gefunden, die Kunden- sowie Busfahrer:innen-Informationen einfach und bildlich zu gestalten. Dies mit einer unglaublichen Einfachheit und einem geringen Zeitaufwand."
+        "testimonial": "Bei Engadin Bus haben wir vier Fahrplanwechsel pro Jahr. In den Zwischensaisons haben die Baustellen Hochsaison und wir haben viele Umleitungen und nicht bediente oder provisorische Haltestellen. Während den Sommer- und Wintermonaten finden viele Sportanlässe wie der Damen Ski World Cup oder der Engadin Skimarathon statt. Mit Mapset haben wir ein tolles Tool gefunden, die Kunden- sowie Busfahrer:innen-Informationen einfach und bildlich zu gestalten. Dies mit einer unglaublichen Einfachheit und einem geringen Zeitaufwand.",
+        "transport_provider": "Engadin Bus"
       }
     ],
-    "section": "Testimonials",
-    "title": "Wer nutzt mapset und warum?"
+    "section": "Unsere Kunden",
+    "title": "Wer sind unsere Abonnenten?"
   }
 }

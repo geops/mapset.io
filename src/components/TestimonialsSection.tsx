@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import translations from "@/content/home/de.json";
 import ArrowLeftIcon from "./images/ArrowLeftIcon";
 import ArrowRightIcon from "./images/ArrowRightIcon";
@@ -18,6 +18,7 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
   // @ts-ignore
   const items: CustomerTestimonial[] = translations.testimonials.customers;
   const [selected, setSelected] = useState(0);
+  const [testimonialHeight, setTestimonialHeight] = useState<number>(0);
 
   const isFirst = useMemo(() => {
     return selected === 0;
@@ -65,18 +66,30 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
     );
   }, [selected, t]);
 
+  useEffect(() => {
+    const paragraphNode = document.querySelectorAll('[data-testimonials-selected="true"]')[0]
+    if (paragraphNode) {
+      console.log(paragraphNode);
+      setTestimonialHeight(paragraphNode.clientHeight)
+    }
+  }, [selected]);  
+
   return (
     <>
-      <div className={`flex flex-row sm:flex-row overflow-hidden gap-12 ${className}`}>
-        <div className="flex flex-col gap-6 lg:max-w-[45%] text-darker justify-center">
+      <div 
+        className={`flex flex-row sm:flex-row overflow-hidden gap-12 ${className}`} 
+        style={{ height: testimonialHeight + 120, transition: 'height 300ms ease' }}
+      >
+        <div className="flex flex-col gap-6 lg:max-w-[45%] text-darker">
           <div className="flex md:hidden items-center justify-center">
             {image}
           </div>
           {items.map((item, idx) => {
             const isUnselected = selected !== idx;
             return (
-              <div key={item.name} className={`flex flex-col gap-5 ${isUnselected ? " hidden" : ""}`}>
+              <div key={item.name} className={`flex flex-col gap-5 md:h-[340px] xs:h-[250px]${isUnselected ? " hidden" : ""}`}>
                 <p
+                  data-testimonials-selected={!isUnselected}
                   className="font-hero text-xs text-blue-900 font-medium -tracking-[0.64px] leading-normal"
                   style={{ fontSize: "clamp(1rem, 1vw + 0.75rem, 1.25rem)" }}
                 >
@@ -88,6 +101,9 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
                   </p>
                   <p className="text-slate-500">
                     {t("testimonials.customers." + selected + ".job")}
+                  </p>
+                  <p className="text-slate-500">
+                    {t("testimonials.customers." + selected + ".transport_provider")}
                   </p>
                 </div>
               </div>

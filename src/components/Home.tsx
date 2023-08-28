@@ -25,11 +25,8 @@ const pClamp = "clamp(1rem, 1vw + 0.75rem, 1.25rem)";
 const containerClassName =
   "container mx-auto px-4 md:px-8 lg:px-16 max-w-[1536px]";
 
-export type BenefitsTranslations = string[];
-
 function Home() {
   const { t } = useI18n();
-  const benefitsTranslations: BenefitsTranslations = translations.features.content;
   return (
     <>
       <div className="relative z-0 overflow-x-hidden">
@@ -116,7 +113,7 @@ function Home() {
                   loop
                   autoPlay
                   muted
-                  className="border-[#126392] border-8 rounded-xl lg:rounded-b-none w-full h-full animate-fade-in delay-1500"
+                  className="border-[#126392] border-8 rounded-xl w-full h-full animate-fade-in delay-1500"
                 >
                   <source src="/video/mapset-demo_v2.mp4" type="video/mp4" />
                 </video>
@@ -131,11 +128,13 @@ function Home() {
               <div className="px-4 md:px-0 pb-12">
                 <H4>{t("features.section")}</H4>
                 <H2 className={`max-w-[900px]`}>{t("features.title")}</H2>
-                {benefitsTranslations.map((paragraph) => (
-                  <p key={crypto.randomUUID()} className={`${pClassName} mb-2`} style={{ fontSize: pClamp }}>
-                    {paragraph}
-                  </p>
-                ))}
+                <p 
+                  className={pClassName}
+                  style={{ fontSize: pClamp }}
+                  dangerouslySetInnerHTML={{
+                    __html: t("features.content"),
+                  }}>
+                </p>
               </div>
               <div className="md:hidden">
                 <FeaturesSection />
@@ -170,8 +169,12 @@ function Home() {
               <div className="pb-12">
                 <H4>{t("pricing.section")}</H4>
                 <H2 className={`max-w-[800px]`}>{t("pricing.title")}</H2>
-                <p className={pClassName} style={{ fontSize: pClamp }}>
-                  {t("pricing.content")}
+                <p 
+                  className={pClassName}
+                  style={{ fontSize: pClamp }}
+                  dangerouslySetInnerHTML={{
+                    __html: t("pricing.content"),
+                  }}>
                 </p>
               </div>
               <PricingSection products={translations.pricing.products} />
