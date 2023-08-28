@@ -8,7 +8,6 @@ export const onClickSmoothScroll: MouseEventHandler<
   HTMLAnchorElement | HTMLButtonElement
 > = (evt) => {
   evt.preventDefault();
-  // evt.stopPropagation();
   const href = (evt.target as HTMLAnchorElement).href;
   let elt: HTMLElement | null = evt.target as HTMLElement;
 
