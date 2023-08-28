@@ -13,7 +13,7 @@
     "privacy_policy": "J'ai lu et j'accepte les <a href='{{link}}' class='hover:text-blue-600 ' style='text-decoration: underline;' rel='noopener noreferrer' target='_blank'>politique de confidentialité</a>.",
     "required": "Champ obligatoire",
     "section": "Contact",
-    "submit": "Envoyer la demande",
+    "submit": "Envoyer une demande",
     "submitted": "Nous vous remercions de votre demande, nous vous répondrons dans les plus brefs délais.",
     "telephone": "Telephone",
     "title": "Vous êtes curieux ?"
