@@ -1,7 +1,7 @@
 {
   "contact": {
     "calledback": "I’d like to be called back",
-    "choose_product": "Please, choose ...",
+    "choose_product": "Please choose...",
     "company": "Company",
     "content": "Write us or have us call you back.<br/>We're looking forward to hearing from you.",
     "email": "E-mail",
@@ -16,7 +16,7 @@
     "submit": "Send request",
     "submitted": "Thank you for your inquiry, we will get back to you as soon as possible.",
     "telephone": "Phone",
-    "title": "Got curious?"
+    "title": "Caught your interest?"
   },
   "features": {
     "content": "mapset is the online editor for the simple creation of clear and visually appealing plan graphics.<br/><br/>The base map is optimised for public transport and contains all relevant information.<br/><br/>Design informative plans of stops quickly and easily. Substitute traffic or road works can be mapped as well as the situation during major events for which the guidance of passengers is required. In just a few minutes, a plan can be created that provides targeted information and has a high graphic quality.<br/><br/>If desired, the elements of the company's own corporate design can be adopted.",

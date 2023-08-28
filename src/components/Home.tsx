@@ -108,7 +108,7 @@ function Home() {
                 </div>
                 <div className="hidden md:flex items-end min-w-[65%]"></div>
               </div>
-              <div className="hidden md:block absolute top-[210px]  left-[510px] lg:left-[628px] w-[855px] h-[575px] animate-fade-in">
+              <div className="hidden md:block absolute bottom-[-60px] left-[510px] lg:left-[628px] w-[855px] h-[575px] animate-fade-in">
                 <video
                   loop
                   autoPlay

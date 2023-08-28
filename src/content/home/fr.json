@@ -3,7 +3,7 @@
     "calledback": "J'aimerais être rappelé",
     "choose_product": "Svp, choisissez ...",
     "company": "Entreprise",
-    "content": "Écrivez-nous ou demandez-nous de vous rappeler.<br/>Nous sommes impatients de vous entendre.",
+    "content": "N'hésitez pas à nous écrire ou à nous demander de vous rappeler.<br/>Nous nous réjouissons d'avoir de vos nouvelles.",
     "email": "E-mail",
     "interest": "Je suis intéressé(e) par",
     "message": "Message",
@@ -78,7 +78,7 @@
     "get_started": "Démarrer",
     "main": {
       "content": "Fournissez à vos clients des informations actualisées et attrayantes sur les transports publics.",
-      "title": "Do it yourself plans"
+      "title": "DES PLANS À FAIRE SOI-MÊME"
     },
     "metadata": {
       "description": "Vous souhaitez fournir à vos clients des informations actualisées et attrayantes sur les transports publics ? mapset permet de créer rapidement et facilement des plans de stations et des plans d'orientation des clients clairs et visuellement attrayants.",

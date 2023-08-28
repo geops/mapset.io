@@ -6,6 +6,7 @@ import IconButtonWhite from "./ui/IconButtonWhite";
 import OurCustomer from "./images/OurCustomerImage";
 import { useI18n } from "./I18n";
 import Image from "next/image";
+import useIsMobile from "@/utils/hooks/useIsMobile";
 
 export type CustomerTestimonial = {
   name: string;
@@ -15,6 +16,7 @@ export type CustomerTestimonial = {
 
 function TestimonialsSection({ className = "" }: { className?: string }) {
   const { t } = useI18n();
+  const isMobile = useIsMobile();
   // @ts-ignore
   const items: CustomerTestimonial[] = translations.testimonials.customers;
   const [selected, setSelected] = useState(0);
@@ -69,18 +71,19 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
   useEffect(() => {
     const paragraphNode = document.querySelectorAll('[data-testimonials-selected="true"]')[0]
     if (paragraphNode) {
-      console.log(paragraphNode);
       setTestimonialHeight(paragraphNode.clientHeight)
     }
-  }, [selected]);  
+  }, [selected]);
 
   return (
     <>
       <div 
         className={`flex flex-row sm:flex-row overflow-hidden gap-12 ${className}`} 
-        style={{ height: testimonialHeight + 120, transition: 'height 300ms ease' }}
       >
-        <div className="flex flex-col gap-6 lg:max-w-[45%] text-darker">
+        <div 
+          className={`flex flex-col gap-6 lg:max-w-[45%] text-darker h-[${testimonialHeight + 120}px]`} 
+          style={{ height: testimonialHeight + (isMobile ? 300 : 120), transition: 'height 300ms ease' }}
+        >
           <div className="flex md:hidden items-center justify-center">
             {image}
           </div>

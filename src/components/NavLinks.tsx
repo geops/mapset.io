@@ -27,7 +27,7 @@ export const onClickSmoothScroll: MouseEventHandler<
     if (elt.id) {
       window.setTimeout(() => {
         if (elt?.id) {
-          // window.location.hash = elt.id;
+          window.location.hash = elt.id;
         }
       }, 1000);
     }
