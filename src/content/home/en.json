@@ -36,7 +36,7 @@
         "title": "Attractive basemaps"
       },
       {
-        "content": "The map base integrated into mapset is optimised for public transport and contains information on both rail and road traffic. In addition to stops, stop edges and station labels, this also includes tracks, bus routes and specially marked buildings at stations. In addition, points of interest such as combined mobility offers or other services can be displayed.",
+        "content": "The basemap integrated into mapset is optimised for public transport and contains information on both rail and road traffic. In addition to stops, stop edges and station labels, this also includes tracks, bus routes and specially marked buildings at stations. In addition, points of interest such as combined mobility offers or other services can be displayed.",
         "image": "/img/feature-1.png",
         "image_height": 500,
         "image_width": 593,
@@ -72,7 +72,7 @@
       }
     ],
     "section": "benefits",
-    "title": "Bringing Clarity and Style to Public Transport Plans"
+    "title": "Bringing clarity and style to public transport plans"
   },
   "home": {
     "get_started": "Get started",
