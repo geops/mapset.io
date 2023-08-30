@@ -1,25 +1,25 @@
 {
   "contact": {
-    "calledback": "Ich würde gerne zurückgerufen werden",
-    "choose_product": "Bitte, wählen ...",
-    "company": "Unternehmen",
+    "calledback": "Ich möchte gerne zurückgerufen werden",
+    "choose_product": "Bitte wählen",
+    "company": "Unternehmen:",
     "content": "Schreiben Sie uns oder lassen Sie sich von uns zurückrufen.<br/>Wir freuen uns, von Ihnen zu hören.",
-    "email": "E-mail",
-    "interest": "Ich interessiere mich für",
-    "message": "Nachricht",
-    "message_placeholder": "Hinterlassen Sie uns eine Nachricht ...",
-    "name": "Name",
+    "email": "E-Mail:",
+    "interest": "Ich interessiere mich für:",
+    "message": "Nachricht:",
+    "message_placeholder": "Hinterlassen Sie uns eine Nachricht...",
+    "name": "Name:",
     "newsletter": "Ich möchte mich für den <a href='{{link}}' class='hover:text-blue-600' style='text-decoration: underline;' rel='noopener noreferrer' target='_blank'>mapset Newsletter</a> anmelden.",
     "privacy_policy": "Ich habe die <a href='{{link}}' class='hover:text-blue-600 ' style='text-decoration: underline;' rel='noopener noreferrer' target='_blank'>Datenschutzbestimmungen</a> gelesen und akzeptiere sie.",
     "required": "Pflichtfeld",
     "section": "Kontakt",
     "submit": "Anfrage senden",
     "submitted": "Vielen Dank für Ihre Anfrage, wir melden uns umgehend zurück.",
-    "telephone": "Telefon",
+    "telephone": "Telefon:",
     "title": "Neugierig geworden?"
   },
   "features": {
-    "content": "mapset ist der Online-Editor zur einfachen Erstellung von übersichtlichen und optisch ansprechenden Plangrafiken.<br/><br/>Die Basiskarte ist für den öffentlichen Verkehr optimiert und enthält alle relevanten Informationen.<br/><br/>Entwerfen Sie einfach und schnell aussagekräftige Pläne von Haltestellen. Ersatzverkehr oder Baustellen lassen sich ebenso abbilden wie die Situation bei Grossanlässen, für die die Lenkung der Reisenden erforderlich ist. In wenigen Minuten lässt sich ein Plan erstellen, der zielgerichtet informiert und eine hohe grafische Qualität aufweist.<br/><br/>Auf Wunsch können die Elemente des unternehmenseigenen Corporate Designs übernommen werden.",
+    "content": "mapset ist der Online-Editor zur einfachen Erstellung von übersichtlichen und optisch ansprechenden Plangrafiken. Die Basiskarte ist für den öffentlichen Verkehr optimiert und enthält alle relevanten Informationen.</br></br>Entwerfen Sie einfach und schnell aussagekräftige Pläne von Haltestellen. Ersatzverkehr oder Baustellen lassen sich ebenso abbilden wie die Situation bei Grossanlässen, für die die Lenkung der Reisenden erforderlich ist. In wenigen Minuten lässt sich ein Plan erstellen, der zielgerichtet informiert und eine hohe grafische Qualität aufweist. Auf Wunsch können die Elemente des unternehmenseigenen Corporate Designs übernommen werden.",
     "list": [
       {
         "content": "Ergänzen Sie lokale Informationen auf der Basis bestehender detaillierter Karten. Sie können Wegrouten darstellen, Haltestellen und Haltekanten mit Piktogrammen versehen oder Points of Interests hervorheben.",
@@ -95,7 +95,7 @@
     "io": "https://geops.sh/40003911245CB34786"
   },
   "pricing": {
-    "addon": "AddOn Share & Print",
+    "addon": "AddOn Share&Print",
     "content": "Hier finden Sie die Übersicht der jährlichen Kosten und die einmalige Einrichtungsgebühr von mapset für Transportunternehmen.<br/><br/>Die Abstufung nach Haltestellen ist für Ihr Unternehmen nicht anwendbar? Kontaktieren Sie uns für ein individuelles Angebot. Auch wenn Sie an weiteren Leistungen interessiert sind, erstellen wir Ihnen gerne ein individuelles Paketangebot.",
     "currency": {
       "ch": "CHF",
@@ -130,11 +130,11 @@
       },
       {
         "price": {
-          "ch": "2,700",
+          "ch": "2700",
           "io": "2.700"
         },
         "price_addon": {
-          "ch": "1,100",
+          "ch": "1100",
           "io": "1.100"
         },
         "price_onetime": {
@@ -147,11 +147,11 @@
       },
       {
         "price": {
-          "ch": "5,900",
+          "ch": "5900",
           "io": "5.900"
         },
         "price_addon": {
-          "ch": "2,200",
+          "ch": "2200",
           "io": "2.200"
         },
         "price_onetime": {
@@ -164,11 +164,11 @@
       },
       {
         "price": {
-          "ch": "8,400",
+          "ch": "8400",
           "io": "8.400"
         },
         "price_addon": {
-          "ch": "2,800",
+          "ch": "2800",
           "io": "2.800"
         },
         "price_onetime": {
@@ -207,7 +207,7 @@
         "image_width": 1080,
         "job": "Stv. Leiter Betrieb / Disposition",
         "name": "Patric Maissen",
-        "testimonial": "Bei Engadin Bus haben wir vier Fahrplanwechsel pro Jahr. In den Zwischensaisons haben die Baustellen Hochsaison und wir haben viele Umleitungen und nicht bediente oder provisorische Haltestellen. Während den Sommer- und Wintermonaten finden viele Sportanlässe wie der Damen Ski World Cup oder der Engadin Skimarathon statt. Mit mapset haben wir ein tolles Tool gefunden, die Kunden- sowie Busfahrer:innen-Informationen einfach und bildlich zu gestalten. Dies mit einer unglaublichen Einfachheit und einem geringen Zeitaufwand.",
+        "testimonial": "Bei Engadin Bus haben wir vier Fahrplanwechsel pro Jahr. In den Zwischensaisons haben die Baustellen Hochsaison und wir haben viele Umleitungen und nicht bediente oder provisorische Haltestellen. Während den Sommer- und Wintermonaten finden viele Sportanlässe wie der Damen Ski World Cup oder der Engadin Skimarathon statt.<br/><br/>Mit mapset haben wir ein tolles Tool gefunden, die Kunden- sowie Busfahrer:innen-Informationen einfach und bildlich zu gestalten. Dies mit einer unglaublichen Einfachheit und einem geringen Zeitaufwand.",
         "transport_provider": "Engadin Bus"
       }
     ],

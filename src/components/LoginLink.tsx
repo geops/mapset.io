@@ -18,11 +18,13 @@ function LoginLink({ className = "", linkClassName = "" }) {
     }
   }, []);
 
+  console.log(user?.profile?.nickname);
+  
+
   return (
-    <div className={`flex items-center gap-2 ${className}`}>
-      {!user ? <LoginIcon /> : <LogoutIcon />}
+    <div className={`${className}${user?.profile?.nickname ? ' w-[120px]' : ' w-[72px]'}`}>
       <Link
-        className={`${linkClassName}`}
+        className={`${linkClassName} grid grid-cols-[1fr_1fr] items-center gap-2`}
         href={"/"}
         onClick={(event) => {
           if (user) {
@@ -33,6 +35,7 @@ function LoginLink({ className = "", linkClassName = "" }) {
           event.preventDefault();
         }}
       >
+        {!user ? <LoginIcon /> : <LogoutIcon />}
         {user?.profile?.nickname || t("login")}
       </Link>
     </div>

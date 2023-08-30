@@ -6,7 +6,7 @@ import LoginLink from "./LoginLink";
 
 function Header({
   className = "",
-  linkClassName = "hover:text-slate-700  hover:font-bold",
+  linkClassName = "hover:text-slate-700 hover:font-bold",
   selectedClassName = "text-slate-700 font-bold",
 }: {
   className?: string;
@@ -35,7 +35,7 @@ function Header({
       />
       <VerticalSeparator />
       <LoginLink
-        className="w-[72px]"
+        // className="w-[72px]"
         linkClassName={`overflow-hidden text-ellipsis ` + linkClassName}
       />
     </nav>

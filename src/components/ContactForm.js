@@ -45,14 +45,14 @@ const ContactForm = ({ className = "" }) => {
             <label className={"block " + labelClassName} htmlFor="name">
               {t("contact.name")}
             </label>
-            <Input name="name" placeholder="Jane Doe" />
+            <Input name="name" />
           </div>
 
           <div>
             <label className={"block " + labelClassName} htmlFor="company">
               {t("contact.company")}
             </label>
-            <Input name="company" placeholder="SBB CFF FFS" />
+            <Input name="company" />
           </div>
 
           <div>
@@ -88,12 +88,7 @@ const ContactForm = ({ className = "" }) => {
               {/* The hover is there so we can use it in translations for privacy policy and newsletter link*/}
               <span className="text-blue-600 hover:text-blue-600"> *</span>
             </label>
-            <Input
-              name="email"
-              type="email"
-              required
-              placeholder="you@company.com"
-            />
+            <Input name="email" type="email" required />
           </div>
 
           <div>
@@ -131,7 +126,7 @@ const ContactForm = ({ className = "" }) => {
             >
               {t("contact.telephone")}
             </label>
-            <Input name="telephone" type="tel" placeholder="+41 1234 56789" />
+            <Input name="telephone" type="tel" placeholder="+41 xx xxx xx xx" />
           </div>
 
           <div className={parentCheckboxClassName}>
@@ -166,7 +161,7 @@ const ContactForm = ({ className = "" }) => {
                   }),
                 }}
               ></span>
-              <span className="text-blue-600"> *</span>
+              <span className="text-blue-600">*</span>
             </label>
           </div>
           <p className="text-slate-500 leading-6">

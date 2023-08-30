@@ -66,14 +66,14 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
         )}
       </div>
     );
-  }, [selected, t]);  
+  }, [selected, t]);
 
   useEffect(() => {
-    const paragraphNode = document.querySelectorAll('[data-testimonials-selected="true"]')[0]
+    const paragraphNode = document.querySelectorAll('[data-testimonials-selected="true"]')[0];
     if (paragraphNode) {
-      setTestimonialHeight(paragraphNode.clientHeight)
+      setTestimonialHeight(paragraphNode.clientHeight + (isMobile ? 300 : 120))
     }
-  }, [selected]);
+  }, [selected, isMobile]);  
 
   return (
     <>
@@ -81,8 +81,8 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
         className={`flex flex-row sm:flex-row overflow-hidden gap-12 ${className}`} 
       >
         <div 
-          className={`flex flex-col gap-6 lg:max-w-[45%] text-darker h-[${testimonialHeight + 120}px]`} 
-          style={{ height: testimonialHeight + (isMobile ? 300 : 120), transition: 'height 300ms ease' }}
+          className={`flex flex-col gap-6 lg:max-w-[45%] text-darker`} 
+          style={{ height: testimonialHeight, transition: 'height 300ms ease' }}
         >
           <div className="flex md:hidden items-center justify-center">
             {image}
@@ -95,9 +95,9 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
                   data-testimonials-selected={!isUnselected}
                   className="font-hero text-xs text-blue-900 font-medium -tracking-[0.64px] leading-normal"
                   style={{ fontSize: "clamp(1rem, 1vw + 0.75rem, 1.25rem)" }}
-                >
-                  “{t("testimonials.customers." + idx + ".testimonial")}”
-                </p>
+                  dangerouslySetInnerHTML={{
+                    __html: t("testimonials.customers." + idx + ".testimonial"),
+                  }} />
                 <div className="flex flex-col">
                   <p className="text-blue-900 font-bold">
                     {t("testimonials.customers." + selected + ".name")}
