@@ -1,7 +1,7 @@
 {
   "contact": {
     "calledback": "Je souhaite être rappelé(e)",
-    "choose_product": "Svp, choisissez",
+    "choose_product": "Veuillez choisir",
     "company": "Entreprise :",
     "content": "N'hésitez pas à nous écrire ou à nous demander de vous rappeler.<br/>Nous nous réjouissons d'avoir de vos nouvelles.",
     "email": "E-mail :",
@@ -15,7 +15,7 @@
     "section": "Contact",
     "submit": "Envoyer une demande",
     "submitted": "Nous vous remercions de votre demande, nous vous répondrons dans les plus brefs délais.",
-    "telephone": "Telephone :",
+    "telephone": "Téléphone :",
     "title": "Vous êtes curieux ?"
   },
   "features": {
@@ -114,7 +114,7 @@
     },
     "mapset_features": "Toutes les fonctions mapset",
     "onetime": "Frais d'installation uniques",
-    "price": "Price",
+    "price": "Tarif",
     "products": [
       {
         "price": {
