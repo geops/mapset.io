@@ -126,7 +126,7 @@ const ContactForm = ({ className = "" }) => {
             >
               {t("contact.telephone")}
             </label>
-            <Input name="telephone" type="tel" placeholder="+41 xx xxx xx xx" />
+            <Input name="telephone" type="tel" />
           </div>
 
           <div className={parentCheckboxClassName}>
