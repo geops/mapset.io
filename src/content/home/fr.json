@@ -30,42 +30,42 @@
       },
       {
         "content": "Les cartes représentent un standard dans les transports publics et ont donc une valeur de reconnaissance élevée. La base cartographique garantit non seulement une représentation graphique attrayante, mais est également actualisée automatiquement chaque semaine. Il est également possible de choisir des photos aériennes comme arrière-plan. La base cartographique peut être adaptée à vos besoins en activant ou désactivant différentes couches.",
-        "image": "/img/feature-1.png",
+        "image": "/img/feature-2a.png",
         "image_height": 500,
         "image_width": 593,
         "title": "Des fonds de carte attrayants"
       },
       {
         "content": "Le fond de carte intégré dans mapset est optimisé pour les transports publics et contient des informations sur le trafic ferroviaire et routier. Outre les arrêts, les bords d'arrêt et les étiquettes de station, elle comprend également les voies, les lignes de bus et les bâtiments spécialement identifiés dans les stations. De plus, des points d'intérêt tels que les offres de mobilité combinée ou d'autres services peuvent être affichés.",
-        "image": "/img/feature-1.png",
+        "image": "/img/feature-3.png",
         "image_height": 500,
         "image_width": 593,
         "title": "Données cartographiques pertinentes"
       },
       {
         "content": "Le géo-routage intégré pour les piétons, les bus et autres moyens de transport offre une aide géniale pour le traçage de lignes. En indiquant le point de départ et le point d'arrivée, les lignes de liaison sont automatiquement dessinées.",
-        "image": "/img/feature-4.png",
+        "image": "/img/feature-4a.png",
         "image_height": 500,
         "image_width": 648,
         "title": "Routage"
       },
       {
         "content": "Téléchargez les plans que vous avez créés vous-même sous forme de fichier image et intégrez-les dans vos modèles individuels. Les images peuvent également être utilisées de manière optimale pour l'intégration dans les moniteurs de véhicules. Pour optimiser l'exportation, vous pouvez définir le cadrage et la résolution pour l'impression. De même, vous pouvez enregistrer vos propres modèles d'impression.",
-        "image": "/img/feature-4.png",
+        "image": "/img/feature-5.png",
         "image_height": 500,
         "image_width": 648,
         "title": "Fonctions d'impression et d'exportation"
       },
       {
         "content": "Vos plans ne peuvent pas seulement être exportés sous forme d'images statiques, mais peuvent également être intégrés ou reliés de manière dynamique dans des pages web ou sur des totems interactifs. Profitez de l'intégration dynamique de cartes librement navigables, sur lesquelles les utilisateurs peuvent déterminer eux-mêmes la section et l'échelle. Envoyez en outre des liens vers vos plans individuels par e-mail ou partagez-les sur vos canaux de médias sociaux.",
-        "image": "/img/feature-4.png",
+        "image": "/img/feature-6.png",
         "image_height": 500,
         "image_width": 648,
         "title": "Intégration dynamique dans les canaux numériques"
       },
       {
         "content": "Créer des plans simples pour de nombreux arrêts est très rapide avec mapset : il suffit de saisir le numéro de l'arrêt et un plan standard est créé. En option, il est possible de définir des modèles pour les arrêts, qui seront utilisés lors de l'appel automatique du plan. Les plans standard peuvent être modifiés par tous les utilisateurs de mapset dans votre entreprise.",
-        "image": "/img/feature-4.png",
+        "image": "/img/feature-7.png",
         "image_height": 500,
         "image_width": 648,
         "title": "Plans standard"
