@@ -42,4 +42,4 @@ yarn dev
 
 Project is deployed automatically on vercel project [mapset-ch](https://vercel.com/geops/mapset-ch) and [mapset-io](https://vercel.com/geops/mapset-io) .
 
-The project [website-mapset-io](https://vercel.com/geops/website-mapset-io) was there for the update of nextJS13 will be removed when olivier/nextjs branch is merged
+The project [website-mapset-io](https://vercel.com/geops/website-mapset-io) was there for the update of nextJS13 will be removed when olivier/nextjs branch is merged.
