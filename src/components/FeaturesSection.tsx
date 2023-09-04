@@ -8,6 +8,7 @@ import ArrowDownIcon2 from "./images/ArrowDownIcon2";
 import MacFull from "./ui/MacFull";
 import Image from "next/image";
 import { onClickSmoothScroll } from "./NavLinks";
+import useIsMobile from "@/utils/hooks/useIsMobile";
 
 export type MapsetFeature = {
   title: string;
@@ -30,6 +31,7 @@ function FeaturesSection({
   const { t } = useI18n();
   const [selectedIndex, setSelectedIndex] = useState(indexStart);
   const [selected, setSelected] = useState(features[indexStart]);
+  const isMobile = useIsMobile();
 
   const featureImg = useMemo(() => {
     let src = t(`features.list.${selectedIndex}.image`);
@@ -47,12 +49,12 @@ function FeaturesSection({
               t(`features.list.${selectedIndex}.image_height`),
             )}
             className="h-full w-full object-cover rounded-xl animate-fade-in"
-            unoptimized
+            unoptimized={!isMobile}
           ></Image>
         )}
       </MacFull>
     );
-  }, [selectedIndex, t]);
+  }, [selectedIndex, isMobile, t]);
 
   return (
     <div
