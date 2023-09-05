@@ -168,7 +168,7 @@
         "content": [
           {
             "text": "Pläne können als Bilder im PNG-Rasterformat exportiert werden. Die Download-Einstellungen können im speziellen Popup-Dialogfeld angepasst werden. \n\nDer Export kann vorab in den Exporteinstellungen angepasst werden: \n\n* Ein *Nordpfeil* kann in der unteren rechten Ecke des exportierten Bildes hinzugefügt werden.\n* Standardmäßig wird die komplette Kartenansicht exportiert. Alternativ kann ein Ausschnitt der Karte für den Export definiert werden. Um den Ausschnitt zu definieren, wird ein roter Rahmen angezeigt, der verschoben und in der Größe geändert werden kann. Unten rechts im Rahmen wird die Größe des exportierten Bildes immer in Pixel angezeigt. Der zuletzt definierte Abschnitt bleibt im Browser gespeichert und wird beim nächsten Start von mapset wiederhergestellt. Mit dieser Funktion können Sie eine Reihe von Karten mit denselben Abmessungen erstellen, ohne den Rahmen jedes Mal anpassen zu müssen.\n* Standardmäßig erfolgt der Export des Bildes mit der Auflösung Ihres Monitors. Diese Auflösung eignet sich, um das Bild statisch in Webseiten einzubetten oder beispielsweise in einer Präsentation zu verwenden. Wenn Sie das Bild drucken möchten, sollte der Plan mit hoher oder sehr hoher Auflösung exportiert werden. Dadurch können Pläne auch in Größen bis B1 in hoher Qualität gedruckt werden.",
-            "heading": "",
+            "heading": "PNG & JPG",
             "login_restricted": true
           },
           {
