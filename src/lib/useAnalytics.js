@@ -15,22 +15,6 @@ export default function useAnalytics() {
       return () => {};
     }
 
-    const url = "https://analytics.geops.de/";
-    const _paq = (window._paq = window._paq || []);
-    _paq.push(["trackPageView"]);
-
-    if (!document.querySelector(`script[src="${url}piwik.js"]`)) {
-      _paq.push(["setTrackerUrl", url + "piwik.php"]);
-      _paq.push(["setSiteId", "11"]);
-      _paq.push(["setSiteUrl", "https://mapset." + domain]);
-      _paq.push(["disableCookies"]);
-      const firstScript = document.getElementsByTagName("script")[0];
-      const piwikScript = document.createElement("script");
-      piwikScript.type = "text/javascript";
-      piwikScript.async = true;
-      piwikScript.src = url + "piwik.js";
-      firstScript.parentNode.insertBefore(piwikScript, firstScript);
-    }
     const plausibleSrc = "https://plausible.geops.io/js/script.js";
     if (!document.querySelector(`script[src="${plausibleSrc}"]`)) {
       // <script defer data-domain="dev.mapset.io" src="https://plausible.geops.io/js/script.js"></script>
