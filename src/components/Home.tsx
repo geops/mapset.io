@@ -52,6 +52,7 @@ function Home() {
 
                   <div className="flex min-w-[343px] md:hidden  ">
                     <video
+                      playsInline
                       loop
                       autoPlay
                       muted
