@@ -1,0 +1,42 @@
+@import "https://use.typekit.net/mqe1sjs.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+body {
+  color: theme(colors.blue.950); /* very dark blue */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; 
+  /* background: linear-gradient(
+    to bottom,
+    transparent,
+    rgb(var(--background-end-rgb))
+  )
+    rgb(var(--background-start-rgb)); */
+}
+
+input::placeholder, 
+textarea::placeholder ,
+select[data-placeholder="all"] ,
+select option[value="all"]{ 
+  color:theme(colors.gray.400);
+}
+
+select option {
+  color:theme(colors.blue.950);
+}
