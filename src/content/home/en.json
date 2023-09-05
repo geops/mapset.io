@@ -1,0 +1,222 @@
+{
+  "contact": {
+    "calledback": "I’d like to be called back",
+    "choose_product": "Please choose",
+    "company": "Company:",
+    "content": "Write us or have us call you back.<br/>We're looking forward to hearing from you.",
+    "email": "E-mail:",
+    "interest": "I'm interested in:",
+    "message": "Message:",
+    "message_placeholder": "Leave us a message...",
+    "name": "Name:",
+    "newsletter": "I’d like to sign up for the <a href='{{link}}' class='hover:text-blue-600' style='text-decoration: underline;' rel='noopener noreferrer' target='_blank'>mapset Newsletter</a>",
+    "privacy_policy": "I have read and accept the <a href='{{link}}' class='hover:text-blue-600 ' style='text-decoration: underline;' rel='noopener noreferrer' target='_blank'>privacy policy</a>.",
+    "required": "Mandatory field",
+    "section": "Contact",
+    "submit": "Send request",
+    "submitted": "Thank you for your inquiry, we will get back to you as soon as possible.",
+    "telephone": "Phone:",
+    "title": "Caught your interest?"
+  },
+  "features": {
+    "content": "mapset is the online editor for the simple creation of clear and visually appealing plan graphics. The base map is optimised for public transport and contains all relevant information.<br/><br/>Design informative plans of stops quickly and easily. Substitute traffic or road works can be mapped as well as the situation during major events for which the guidance of passengers is required. In just a few minutes, a plan can be created that provides targeted information and has a high graphic quality. If desired, the elements of the company's own corporate design can be adopted.",
+    "list": [
+      {
+        "content": "Add local information based on existing detailed maps. You can display routes, add pictograms to stops and stops edges or highlight points of interest.",
+        "image": "/img/feature-1.png",
+        "image_height": 500,
+        "image_width": 593,
+        "title": "Simple drawing of local information"
+      },
+      {
+        "content": "The maps represent a standard in public transport and have a correspondingly high recognition value. The basemap not only ensures a graphically attractive presentation but is also automatically updated on a weekly basis. Alternatively, aerial photos can be selected as background. The basemap can be adapted to your needs by switching different layers on and off.",
+        "image": "/img/feature-2a.png",
+        "image_height": 500,
+        "image_width": 593,
+        "title": "Attractive basemaps"
+      },
+      {
+        "content": "The basemap integrated into mapset is optimised for public transport and contains information on both rail and road traffic. In addition to stops, stop edges and station labels, this also includes tracks, bus routes and specially marked buildings at stations. In addition, points of interest such as combined mobility offers or other services can be displayed.",
+        "image": "/img/feature-3.png",
+        "image_height": 500,
+        "image_width": 593,
+        "title": "Relevant map data"
+      },
+      {
+        "content": "The integrated geo-routing for pedestrians, buses and other means of transport offers ingenious support when drawing lines. By specifying the start and end points, the connecting lines are drawn automatically.",
+        "image": "/img/feature-4a.png",
+        "image_height": 500,
+        "image_width": 648,
+        "title": "Routing"
+      },
+      {
+        "content": "Download your own plans as image files and integrate them into your individual templates. The images can also be optimally used for integration in vehicle monitors. To optimise the export, you can specify the section and resolution for printing. You can also store your own print templates.",
+        "image": "/img/feature-5.png",
+        "image_height": 500,
+        "image_width": 648,
+        "title": "Print and export functions"
+      },
+      {
+        "content": "Your plans can not only be exported as static images, but can also be dynamically integrated or linked in web pages or on interactive stelae. With dynamic integration, you can benefit from freely navigable maps on which users can determine the section and scale themselves. You can also send links to your individual plans by e-mail or share them via your social media channels.",
+        "image": "/img/feature-6.png",
+        "image_height": 500,
+        "image_width": 648,
+        "title": "Dynamic integration into digital channels"
+      },
+      {
+        "content": "Creating simple plans for many stops is very quick with mapset: Simply enter the stop number and a standard plan is created. Optionally, templates can be defined for stops which are used when the plan is called up automatically. The default plans can be edited by all mapset users in your company.",
+        "image": "/img/feature-7.png",
+        "image_height": 500,
+        "image_width": 648,
+        "title": "Default plans"
+      }
+    ],
+    "section": "benefits",
+    "title": "Bringing clarity and style to public transport plans"
+  },
+  "home": {
+    "get_started": "Get started",
+    "main": {
+      "content": "With mapset you can create situation plans for public transport quickly and easily.",
+      "title": "Do it yourself plans"
+    },
+    "metadata": {
+      "description": "You would like to provide your customers with up-to-date and attractive information about public transport? mapset is the online editor for fast and easy creation of clear and visually appealing station maps and plans for customer orientation.",
+      "title": "mapset - Location plans for public transport"
+    },
+    "try_free": "Try free"
+  },
+  "imprint": {
+    "metadata": {
+      "description": "",
+      "title": "mapset Impressum"
+    }
+  },
+  "international": "International",
+  "login": "Login",
+  "logout": "Logout",
+  "newsletter_link": {
+    "ch": "https://geops.sh/6E83A54F98A4E7532",
+    "io": "https://geops.sh/40003911245CB34786"
+  },
+  "pricing": {
+    "addon": "AddOn Share&Print",
+    "content": "Here you will find the overview of the annual costs and the one-off set-up fee of mapset for transport companies.<br/><br/>The graduation by stops is not applicable for your company? Contact us for an individual offer. Even if you are interested in further services, we will be happy to create an individual package offer for you.",
+    "currency": {
+      "ch": "CHF",
+      "io": "€"
+    },
+    "details": "Details ",
+    "details_one": "Prices refer to the total number of stops or stations of a company, regardless of the number of stations actually served by mapset.",
+    "details_two": {
+      "ch": "In addition to the current subscription fees, set-up fees of CHF 490.- are charged at the start of the subscription. After a subscription interruption, the set-up fee is again due when the subscription is renewed. For carriers with up to 10 stops, only the set-up fee is charged.<br/><br/>Within the scope of the subscriptions and the set-up fees, the configuration of mapset users is included, insofar as the users can be identified via a uniform mail domain (e.g. maria.bernasconi@ktuxy.ch and max.muster@ktuxy.ch). For the configuration of individual users who are not identifiable via a domain, CHF 90 will be charged per user.<br/><br/>For Swiss companies, the prices are exclusive of VAT of 7.7 %.",
+      "io": "In addition to the current subscription fees, set-up fees of € 490.- are charged at the start of the subscription. After a subscription interruption, the set-up fee is again due when the subscription is renewed. For carriers with up to 10 stops, only the set-up fee is charged.<br/><br/>Within the scope of the subscriptions and the set-up fees, the configuration of mapset users is included, insofar as the users can be identified via a uniform mail domain (e.g. maria.bernasconi@ktuxy.ch and max.muster@ktuxy.ch). For the configuration of individual users who are not identifiable via a domain, € 90 will be charged per user.<br/><br/>For Swiss companies, the prices are exclusive of VAT of 7.7 %."
+    },
+    "mapset_features": "All mapset features",
+    "onetime": "One-time setup fee",
+    "price": "Price",
+    "products": [
+      {
+        "price": {
+          "ch": "0",
+          "io": "0"
+        },
+        "price_addon": {
+          "ch": "0",
+          "io": "0"
+        },
+        "price_onetime": {
+          "ch": "490",
+          "io": "490"
+        },
+        "railway_stations": "-",
+        "stops": "1 - 10",
+        "tier": "FREE"
+      },
+      {
+        "price": {
+          "ch": "2700",
+          "io": "2.700"
+        },
+        "price_addon": {
+          "ch": "1100",
+          "io": "1.100"
+        },
+        "price_onetime": {
+          "ch": "490",
+          "io": "490"
+        },
+        "railway_stations": "1 - 10",
+        "stops": "11 - 200",
+        "tier": "MINI"
+      },
+      {
+        "price": {
+          "ch": "5900",
+          "io": "5.900"
+        },
+        "price_addon": {
+          "ch": "2200",
+          "io": "2.200"
+        },
+        "price_onetime": {
+          "ch": "490",
+          "io": "490"
+        },
+        "railway_stations": "11 - 100",
+        "stops": "201 - 500",
+        "tier": "MIDI"
+      },
+      {
+        "price": {
+          "ch": "8400",
+          "io": "8.400"
+        },
+        "price_addon": {
+          "ch": "2800",
+          "io": "2.800"
+        },
+        "price_onetime": {
+          "ch": "490",
+          "io": "490"
+        },
+        "railway_stations": "101 - 200",
+        "stops": "501+",
+        "tier": "MAXI"
+      }
+    ],
+    "railway_stations": "Railway Stops",
+    "section": "pricing",
+    "stops": "Other Stops",
+    "title": "The right subscription for every company",
+    "year": "year"
+  },
+  "privacy_link": "https://geops.com/en/privacy",
+  "privacy_policy": "Privacy Policy",
+  "product": "Product",
+  "swiss": "Swiss",
+  "testimonials": {
+    "customers": [
+      {
+        "image": "Miro_Bertozzi.jpg",
+        "image_height": 1080,
+        "image_width": 1080,
+        "job": "Passenger Information Officer",
+        "name": "Miro Bertozzi",
+        "testimonial": "We like working with mapset because individualizing plans is possible without additional graphics programs. The tool helps us to ensure consistent communication. We are very satisfied.",
+        "transport_provider": "Verkehrsbetriebe Stadt Zürich, VBZ"
+      },
+      {
+        "image": "Maissen_Patric.jpg",
+        "image_height": 1080,
+        "image_width": 1080,
+        "job": "Deputy Head of Operations / Scheduling",
+        "name": "Patric Maissen",
+        "testimonial": "At Engadin Bus we have four timetable changes per year. In the off-seasons, the construction sites are in high season and we have many detours and unmanned or temporary stops. During the summer and winter months there are many sporting events such as the Women's Ski World Cup or the Engadin Skimarathon.<br/><br/>With mapset, we have found a great tool to design the customer and bus driver information in a simple and visual way. This with an incredible simplicity and a low expenditure of time.",
+        "transport_provider": "Engadin Bus"
+      }
+    ],
+    "section": "Our customers",
+    "title": "Who are our subscribers?"
+  }
+}

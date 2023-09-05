@@ -1,44 +1,45 @@
-import React from 'react';
-import { FormattedMessage } from 'react-intl';
-import twitter from '../img/social/Twitter_Logo_Blue.svg';
+import React from "react";
+import { useI18n } from "./I18n";
+import TwitterIcon from "./images/TwitterIcon";
+import ExternalLinkIcon from "./images/ExternalLinkIcon";
+import ButtonWhite from "./ui/ButtonWhite";
+import H2 from "./ui/H2";
 
-function Contact({ region }) {
+const domain = process.env.NEXT_PUBLIC_DOMAIN;
+
+function Contact() {
+  const { t } = useI18n();
   return (
-    <div className="contactForm">
-      <h1 className="is-bolder contactHeader section-title">
-        <FormattedMessage id="content.contact header" />
-      </h1>
-      <p>
-        <FormattedMessage id="content.contact description" />
-      </p>
-      <div className="contactButtons">
-        <a
-          href={
-            region === 'ch'
-              ? 'https://geops.sh/6E83A54F98A4E7532'
-              : 'https://geops.sh/40003911245CB34786'
-          }
+    <div>
+      <H2>{t("guide.contact.header")}</H2>
+      <p>{t("guide.contact.description")}</p>
+      <div className="flex gap-4  py-12">
+        <ButtonWhite
+          variant="outlined"
+          href={t("newsletter_link." + domain)}
           rel="noopener noreferrer"
           target="_blank"
+          className="normal-case"
         >
-          <button className="button">
-            <FormattedMessage id="generic.Newsletter" />
-          </button>
-        </a>
-        <a
-          href={
-            region === 'ch'
-              ? 'https://twitter.com/mapsetch'
-              : 'https://twitter.com/mapsetio'
-          }
+          {t("guide.contact.subscribe_newsletter")}
+        </ButtonWhite>
+        <ButtonWhite
+          variant="outlined"
+          href={`https://twitter.com/mapset${domain}`}
           rel="noopener noreferrer"
           target="_blank"
+          className="normal-case"
         >
-          <button className="button twitter-button">
-            <img className="twitter" src={twitter} alt="twitter" />
-            <FormattedMessage id="generic.Besuchen Sie uns auf Twitter" />
-          </button>
-        </a>
+          <span className="-mt-[3px]">
+            <TwitterIcon className="pb-2" />
+          </span>
+          <span className="pt-[2px]">
+            {t("guide.contact.visit_our_twitter")}
+          </span>
+          <span>
+            <ExternalLinkIcon />
+          </span>
+        </ButtonWhite>
       </div>
     </div>
   );

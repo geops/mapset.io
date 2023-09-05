@@ -1,0 +1,217 @@
+{
+  "contact": {
+    "calledback": "Ich möchte gerne zurückgerufen werden",
+    "choose_product": "Bitte wählen",
+    "company": "Unternehmen:",
+    "content": "Schreiben Sie uns oder lassen Sie sich von uns zurückrufen.<br/>Wir freuen uns, von Ihnen zu hören.",
+    "email": "E-Mail:",
+    "interest": "Ich interessiere mich für:",
+    "message": "Nachricht:",
+    "message_placeholder": "Hinterlassen Sie uns eine Nachricht...",
+    "name": "Name:",
+    "newsletter": "Ich möchte mich für den <a href='{{link}}' class='hover:text-blue-600' style='text-decoration: underline;' rel='noopener noreferrer' target='_blank'>mapset Newsletter</a> anmelden.",
+    "privacy_policy": "Ich habe die <a href='{{link}}' class='hover:text-blue-600 ' style='text-decoration: underline;' rel='noopener noreferrer' target='_blank'>Datenschutzbestimmungen</a> gelesen und akzeptiere sie.",
+    "required": "Pflichtfeld",
+    "section": "Kontakt",
+    "submit": "Anfrage senden",
+    "submitted": "Vielen Dank für Ihre Anfrage, wir melden uns umgehend zurück.",
+    "telephone": "Telefon:",
+    "title": "Neugierig geworden?"
+  },
+  "features": {
+    "content": "mapset ist der Online-Editor zur einfachen Erstellung von übersichtlichen und optisch ansprechenden Plangrafiken. Die Basiskarte ist für den öffentlichen Verkehr optimiert und enthält alle relevanten Informationen.</br></br>Entwerfen Sie einfach und schnell aussagekräftige Pläne von Haltestellen. Ersatzverkehr oder Baustellen lassen sich ebenso abbilden wie die Situation bei Grossanlässen, für die die Lenkung der Reisenden erforderlich ist. In wenigen Minuten lässt sich ein Plan erstellen, der zielgerichtet informiert und eine hohe grafische Qualität aufweist. Auf Wunsch können die Elemente des unternehmenseigenen Corporate Designs übernommen werden.",
+    "list": [
+      {
+        "content": "Ergänzen Sie lokale Informationen auf der Basis bestehender detaillierter Karten. Sie können Wegrouten darstellen, Haltestellen und Haltekanten mit Piktogrammen versehen oder Points of Interests hervorheben.",
+        "image": "/img/feature-1.png",
+        "image_height": 500,
+        "image_width": 593,
+        "title": "Einfaches Einzeichnen von lokalen Informationen"
+      },
+      {
+        "content": "Die Karten stellen einen Standard im öffentlichen Verkehr dar und haben einen entsprechend hohen Wiedererkennungswert. Die Kartenbasis gewährleistet nicht nur eine grafisch attraktive Darstellung sondern wird automatisch wöchentlich aktualisiert. Alternativ können auch Luftbilder als Hintergrund gewählt werden. Die Kartengrundlage lässt sich durch das An- und Ausschalten verschiedener Layer ganz Ihren Bedürfnissen anpassen.",
+        "image": "/img/feature-2a.png",
+        "image_height": 500,
+        "image_width": 593,
+        "title": "Attraktive Kartengrundlagen"
+      },
+      {
+        "content": "Die Kartengrundlage, die in mapset eingebunden ist, ist für den öffentlichen Verkehr optimiert und enthält Informationen zum Schienen- wie auch zum Strassenverkehr. Dazu zählen nebst Haltestellen, Haltekanten und Stationslabels auch Gleise, Buslinien, und speziell gekennzeichnete Gebäude an Stationen. Zusätzlich können Points of Interest wie Angebote der kombinierten Mobilität oder weitere Services angezeigt werden.",
+        "image": "/img/feature-3.png",
+        "image_height": 500,
+        "image_width": 593,
+        "title": "Relevante Kartendaten"
+      },
+      {
+        "content": "Eine geniale Unterstützung beim Zeichnen von Linien bietet das integrierte Geo-Routing für Fussgänger, Busse und andere Verkehrsmittel. Mit Angabe von Start- und Endpunkt werden die Verbindungslinien automatisch eingezeichnet.",
+        "image": "/img/feature-4a.png",
+        "image_height": 500,
+        "image_width": 648,
+        "title": "Routing"
+      },
+      {
+        "content": "Laden Sie Ihre selbst erstellten Pläne als Bilddatei herunter und binden Sie diese in Ihre individuellen Vorlagen ein. Die Bilder lassen sich auch optimal für die Einbindung in Fahrzeugmonitoren verwenden. Für die Optimierung des Exports können Sie den Ausschnitt und die Auflösung für den Druck festlegen. Ebenso können Sie Ihre eigenen Druckvorlagen hinterlegen.",
+        "image": "/img/feature-5.png",
+        "image_height": 500,
+        "image_width": 648,
+        "title": "Druck- und Exportfunktionen"
+      },
+      {
+        "content": "Ihre Pläne lassen sich nicht nur als statische Bilder exportieren, sondern können auch dynamisch in Webseiten oder auf interaktiven Stelen eingebunden oder verlinkt werden. Profitieren Sie mit der dynamischen Einbindung von frei navigierbaren Karten, auf denen die Nutzerinnen und Nutzer selbst Ausschnitt und Massstab bestimmen können. Versenden Sie ausserdem Links zu ihren individuellen Plänen einfach per Mail oder teilen Sie diese über Ihre Social Media-Kanäle.",
+        "image": "/img/feature-6.png",
+        "image_height": 500,
+        "image_width": 648,
+        "title": "Dynamische Einbindung in digitale Kanäle"
+      },
+      {
+        "content": "Für viele Haltestellen einfache Pläne erstellen geht mit mapset ganz schnell: Einfach die Haltestellennummer eingeben und schon wird ein Standardplan angelegt. Optional können für Haltestellen Vorlagen definiert werden, die beim automatischen Aufruf des Plans genutzt werden. Die Standardpläne können von allen mapset-Userinnen und -Usern in Ihrem Unternehmen bearbeitet werden. ",
+        "image": "/img/feature-7.png",
+        "image_height": 500,
+        "image_width": 648,
+        "title": "Standardpläne"
+      }
+    ],
+    "section": "benefits",
+    "title": "Klarheit und Stil in die Pläne für den öffentlichen Verkehr bringen"
+  },
+  "home": {
+    "get_started": "Starten",
+    "main": {
+      "content": "Mit mapset erstellen Sie schnell und einfach Situationspläne für den öffentlichen Verkehr. ",
+      "title": "Pläne zum selber machen"
+    },
+    "metadata": {
+      "description": "Sie möchten Ihren Kunden aktuelle und attraktive Informationen zum öffentlichen Verkehr zugänglich machen? mapset ist der Online-Editor zur einfachen Erstellung von übersichtlichen und optisch ansprechenden Plangrafiken. Mit wenigen Klicks visualisieren Sie Pläne für geänderte Haltestellen, kommunizieren die Situation bei Bauprojekten, gewährleisten die Kundenführung bei Events oder informieren über betriebliche Sonderfälle vor Ort. All dies auf Basis von laufend aktualisiertem Kartenmaterial.",
+      "title": "mapset - Situationspläne für den öffentlichen Verkehr"
+    },
+    "try_free": "Gratis testen"
+  },
+  "international": "International",
+  "login": "Login",
+  "logout": "Logout",
+  "newsletter": "Newsletter",
+  "newsletter_link": {
+    "ch": "https://geops.sh/6E83A54F98A4E7532",
+    "io": "https://geops.sh/40003911245CB34786"
+  },
+  "pricing": {
+    "addon": "AddOn Share&Print",
+    "content": "Hier finden Sie die Übersicht der jährlichen Kosten und die einmalige Einrichtungsgebühr von mapset für Transportunternehmen.<br/><br/>Die Abstufung nach Haltestellen ist für Ihr Unternehmen nicht anwendbar? Kontaktieren Sie uns für ein individuelles Angebot. Auch wenn Sie an weiteren Leistungen interessiert sind, erstellen wir Ihnen gerne ein individuelles Paketangebot.",
+    "currency": {
+      "ch": "CHF",
+      "io": "€"
+    },
+    "details": "Details",
+    "details_one": "Die Preise beziehen sich auf die Gesamtzahl an Haltestellen oder Bahnhöfen eines Unternehmens, unabhängig von der Anzahl der tatsächlich mit mapset bearbeiteten Stationen.",
+    "details_two": {
+      "ch": "Zu den laufenden Abo-Gebühren fallen beim Start des Abonnements Einrichtungsgebühren von CHF 490.- an. Nach einem Abonnements-Unterbruch wird bei Erneuerung des Abonnements wiederum die Einrichtungsgebühr fällig. Für Transportunternehmen mit bis zu 10 Haltestellen wird nur die Einrichtungsgebühr verrechnet.<br/><br/>Im Rahmen der Abonnements und der Einrichtungsgebühren ist die Konfiguration von Nutzern von mapset eingeschlossen, insofern die Nutzer über eine einheitliche Mail-Domain identifiziert werden können (z.B. maria.bernasconi@ktuxy.ch und max.muster@ktuxy.ch). Für die Einrichtung von individuellen Nutzern, die nicht über eine Domain identifizierbar sind, werden pro Nutzer CHF 90.– verrechnet.<br/><br/>Für Schweizer Unternehmen verstehen sich die Preise zuzüglich Mehrwertsteuer von 7,7 %.",
+      "io": "Zu den laufenden Abo-Gebühren fallen beim Start des Abonnements Einrichtungsgebühren von € 490.- an. Nach einem Abonnements-Unterbruch wird bei Erneuerung des Abonnements wiederum die Einrichtungsgebühr fällig. Für Transportunternehmen mit bis zu 10 Haltestellen wird nur die Einrichtungsgebühr verrechnet.<br/><br/>Im Rahmen der Abonnements und der Einrichtungsgebühren ist die Konfiguration von Nutzern von mapset eingeschlossen, insofern die Nutzer über eine einheitliche Mail-Domain identifiziert werden können (z.B. maria.bernasconi@ktuxy.ch und max.muster@ktuxy.ch). Für die Einrichtung von individuellen Nutzern, die nicht über eine Domain identifizierbar sind, werden pro Nutzer € 90.– verrechnet.<br/><br/>Für Schweizer Unternehmen verstehen sich die Preise zuzüglich Mehrwertsteuer von 7,7 %."
+    },
+    "mapset_features": "Alle mapset Funktionen",
+    "onetime": "Einmalige Einrichtungsgebühr",
+    "price": "Preis",
+    "products": [
+      {
+        "price": {
+          "ch": "0",
+          "io": "0"
+        },
+        "price_addon": {
+          "ch": "0",
+          "io": "0"
+        },
+        "price_onetime": {
+          "ch": "490",
+          "io": "490"
+        },
+        "railway_stations": "-",
+        "stops": "1 - 10",
+        "tier": "FREE"
+      },
+      {
+        "price": {
+          "ch": "2700",
+          "io": "2.700"
+        },
+        "price_addon": {
+          "ch": "1100",
+          "io": "1.100"
+        },
+        "price_onetime": {
+          "ch": "490",
+          "io": "490"
+        },
+        "railway_stations": "1 - 10",
+        "stops": "11 - 200",
+        "tier": "MINI"
+      },
+      {
+        "price": {
+          "ch": "5900",
+          "io": "5.900"
+        },
+        "price_addon": {
+          "ch": "2200",
+          "io": "2.200"
+        },
+        "price_onetime": {
+          "ch": "490",
+          "io": "490"
+        },
+        "railway_stations": "11 - 100",
+        "stops": "201 - 500",
+        "tier": "MIDI"
+      },
+      {
+        "price": {
+          "ch": "8400",
+          "io": "8.400"
+        },
+        "price_addon": {
+          "ch": "2800",
+          "io": "2.800"
+        },
+        "price_onetime": {
+          "ch": "490",
+          "io": "490"
+        },
+        "railway_stations": "101 - 200",
+        "stops": "501+",
+        "tier": "MAXI"
+      }
+    ],
+    "railway_stations": "Haltestellen Zug",
+    "section": "Preise",
+    "stops": "Sonstige Haltestellen",
+    "title": "Das passende Abo für jedes Unternehmen",
+    "year": "Jahr"
+  },
+  "privacy_link": "https://geops.com/datenschutz",
+  "privacy_policy": "Privacy Policy",
+  "product": "Produkt",
+  "swiss": "Schweiz",
+  "testimonials": {
+    "customers": [
+      {
+        "image": "Miro_Bertozzi.jpg",
+        "image_height": 1080,
+        "image_width": 1080,
+        "job": "Sachbearbeiter Fahrgastinformation",
+        "name": "Miro Bertozzi",
+        "testimonial": "Wir arbeiten gerne mit mapset, weil das Individualisieren von Plänen ohne zusätzliche Grafik-Programme möglich ist. Das Tool hilft uns, eine einheitliche Kommunikation zu gewährleisten. Wir sind sehr zufrieden.",
+        "transport_provider": "Verkehrsbetriebe Stadt Zürich, VBZ"
+      },
+      {
+        "image": "Maissen_Patric.jpg",
+        "image_height": 1080,
+        "image_width": 1080,
+        "job": "Stv. Leiter Betrieb / Disposition",
+        "name": "Patric Maissen",
+        "testimonial": "Bei Engadin Bus haben wir vier Fahrplanwechsel pro Jahr. In den Zwischensaisons haben die Baustellen Hochsaison und wir haben viele Umleitungen und nicht bediente oder provisorische Haltestellen. Während den Sommer- und Wintermonaten finden viele Sportanlässe wie der Damen Ski World Cup oder der Engadin Skimarathon statt.<br/><br/>Mit mapset haben wir ein tolles Tool gefunden, die Kunden- sowie Busfahrer:innen-Informationen einfach und bildlich zu gestalten. Dies mit einer unglaublichen Einfachheit und einem geringen Zeitaufwand.",
+        "transport_provider": "Engadin Bus"
+      }
+    ],
+    "section": "Unsere Kunden",
+    "title": "Wer sind unsere Abonnenten?"
+  }
+}
