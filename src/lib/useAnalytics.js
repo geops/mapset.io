@@ -16,16 +16,14 @@ export default function useAnalytics() {
     }
 
     const url = "https://analytics.geops.de/";
-    window._paq = window._paq || [];
-
-    window._paq.push(["setTrackerUrl", url + "piwik.php"]);
-    window._paq.push(["setSiteId", "11"]);
-    window._paq.push(["setSiteUrl", "https://mapset." + domain]);
-    window._paq.push(["disableCookies"]);
-
-    const trackPageView = () => window._paq.push(["trackPageView"]);
+    const _paq = (window._paq = window._paq || []);
+    _paq.push(["trackPageView"]);
 
     if (!document.querySelector(`script[src="${url}piwik.js"]`)) {
+      _paq.push(["setTrackerUrl", url + "piwik.php"]);
+      _paq.push(["setSiteId", "11"]);
+      _paq.push(["setSiteUrl", "https://mapset." + domain]);
+      _paq.push(["disableCookies"]);
       const firstScript = document.getElementsByTagName("script")[0];
       const piwikScript = document.createElement("script");
       piwikScript.type = "text/javascript";
@@ -44,7 +42,6 @@ export default function useAnalytics() {
       document.head.appendChild(plausibleScript);
     }
 
-    trackPageView();
     return () => {};
   }, [pathname]);
 }
