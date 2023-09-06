@@ -171,7 +171,7 @@ export const Guide = () => {
 
   const handleScroll = () => {
     const ids = titles.map((item) => [item.label, ...item.sub_features]).flat();
-    const distances = ids.map((label, idx) => {
+    const distances = ids.map((label) => {
       const distance = document
         .getElementById(renderId(label))?.getBoundingClientRect().top;
       return distance > 150 ? Number.POSITIVE_INFINITY : distance; // 1550 for the header
