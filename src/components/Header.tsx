@@ -4,6 +4,7 @@ import DomainLinks from "./DomainLinks";
 import UserManualLink from "./UserManualLink";
 import LoginLink from "./LoginLink";
 
+const isBrowser = typeof window !== "undefined";
 function Header({
   className = "",
   linkClassName = "hover:text-slate-700 hover:font-bold",
@@ -13,7 +14,7 @@ function Header({
   linkClassName?: string;
   selectedClassName?: string;
 }) {
-  const isGuidePage = window.location.pathname.endsWith("/guide");
+  const isGuidePage = isBrowser && window.location.pathname.endsWith("/guide");
   return (
     <nav
       className={`flex items-center text-sm text-slate-500 h-[52px] font-medium  ${className}`}
