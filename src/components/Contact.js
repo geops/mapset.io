@@ -4,11 +4,13 @@ import TwitterIcon from "./images/TwitterIcon";
 import ExternalLinkIcon from "./images/ExternalLinkIcon";
 import ButtonWhite from "./ui/ButtonWhite";
 import H2 from "./ui/H2";
+import useIsMobile from "@/utils/hooks/useIsMobile";
 
 const domain = process.env.NEXT_PUBLIC_DOMAIN;
 
 function Contact() {
   const { t } = useI18n();
+  const isMobile = useIsMobile();
   return (
     <div>
       <H2>{t("guide.contact.header")}</H2>
@@ -19,7 +21,7 @@ function Contact() {
           href={t("newsletter_link." + domain)}
           rel="noopener noreferrer"
           target="_blank"
-          className="normal-case"
+          className={`normal-case${isMobile ? " !p-2" : ""}`}
         >
           {t("guide.contact.subscribe_newsletter")}
         </ButtonWhite>
@@ -28,7 +30,7 @@ function Contact() {
           href={`https://twitter.com/mapset${domain}`}
           rel="noopener noreferrer"
           target="_blank"
-          className="normal-case"
+          className="normal-case !p-2"
         >
           <span className="-mt-[3px]">
             <TwitterIcon className="pb-2" />

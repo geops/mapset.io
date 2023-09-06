@@ -50,6 +50,7 @@ function FeaturesSection({
             )}
             className="h-full w-full object-cover rounded-xl animate-fade-in"
             unoptimized={!isMobile}
+            loading="eager"
           ></Image>
         )}
       </MacFull>
