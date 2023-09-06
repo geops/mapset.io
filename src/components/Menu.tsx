@@ -20,7 +20,7 @@ function Menu({ className = "" }) {
   }, []);
 
   return (
-    <div className={`${className}`}>
+    <div className={`${className} z-50`}>
       <div
         className={`transition-transform  ${
           open ? "flex justify-between" : ""

@@ -2,7 +2,9 @@ import H2 from "./ui/H2";
 import H3 from "./ui/H3";
 import { useI18n } from "./I18n";
 import { Remarkable } from "remarkable";
-import translations from "@/content/imprint/de.json";
+import de from "@/content/imprint/de.json";
+import en from "@/content/imprint/en.json";
+import fr from "@/content/imprint/fr.json";;
 
 const md = new Remarkable();
 md.set({
@@ -10,13 +12,15 @@ md.set({
   breaks: true,
 });
 
+const translations = { de, en, fr };
+
 function License() {
-  const { t } = useI18n();
+  const { t, language } = useI18n();  
 
   return (
     <div className="flex flex-col gap-6">
       <H2>{t("license.title")}</H2>
-      {translations.license.sections.map(({ heading, text }, id) => {
+      {translations[language].license.sections.map(({ heading, text }, id) => {
         return (
           <div key={id}>
             <H3>

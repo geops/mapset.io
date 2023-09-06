@@ -36,7 +36,7 @@ function Home() {
           </div>
         </div>
         <main className="flex flex-col">
-          <section className="flex flex-col items-center relative overflow-hidden py-12 bg-gradient-to-b md:bg-gradient-to-r from-blue-600 to-white md:to-blue-light text-white z-10">
+          <section className="flex flex-col items-center relative overflow-hidden pt-12 md:pb-12 bg-gradient-to-b md:bg-gradient-to-r from-blue-600 to-white md:to-blue-light text-white z-10">
             <div className={`relative ${containerClassName}`}>
               <div className="flex justify-between mb-12">
                 <div>
@@ -123,7 +123,7 @@ function Home() {
           </section>
           <section
             id="features"
-            className="flex flex-col items-center relative md:px-4 pt-24 py-12 z-0"
+            className="flex flex-col items-center relative md:px-4 md:pt-24 py-12 z-0"
           >
             <div className={`${containerClassName}`}>
               <div className="px-4 md:px-0 pb-12">
@@ -164,7 +164,7 @@ function Home() {
           </section>
           <section
             id="pricing"
-            className="flex flex-col items-center relative px-4 pt-12 scroll-mt-12 pb-24 z-0"
+            className="flex flex-col items-center relative px-4 pt-12 scroll-mt-12 pb-8 md:pb-24 z-0"
           >
             <div className={`${containerClassName}`}>
               <div className="pb-12">

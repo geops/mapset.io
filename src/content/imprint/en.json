@@ -1,53 +1,61 @@
 {
   "imprint": {
     "title": "License & imprint",
+    "metadata": {
+      "description": "",
+      "title": "mapset Impressum"
+    },
+    "subtitle": "Learn about the terms and conditions of our software license and the imprint associated with mapset.",
     "phone": "phone",
     "mail": "mail",
     "managing_director": "Managing Director, Chairman of the Board: Ulrich Müller-Ertle",
-    "commercialNumber": "Commercial register no. CHE-455.829.547 Solothurn",
+    "commercial_number": "Commercial register no. CHE-455.829.547 Solothurn",
     "disclaimer": "Disclaimer: Despite careful control of the contents, we do not assume any liability for the contents of external links. The operators of the linked pages are solely responsible for the content of their pages.",
     "responsible": "Responsible for content: Ulrich Müller-Ertle (addresses as above)"
   },
-  "license": [
-    {
-      "heading": "§1 Subject of the contract",
-      "text": "The subject of this agreement is the licence for the use of the online editor at editor.mapset.io (mapset). <br>\nIt entitles the licensing company (licensee) to create an unlimited number of plans for all stops of the licensee and to use the plans created with the editor freely, subject to compliance with the copyright provisions mentioned in §5.<br>\nThe licence is limited to the stops of the licensee. The licensee is not entitled to grant sub-licenses, with the exception that a direct reference to the representation of the transfer relationship between a stop of the licensee and the stop of a third party or the stop of the third party is spatially conditioned in the same plan section as the stop of the licensee. The plans generated with the licence may be used in any media, in particular also in digital environments, taking into account the copyright information (§5). The use of the plans is restricted to the licensee. Third parties may use the finished plans as a print product or use them as a static or dynamic plan on their online media, provided that the licensee's stops are depicted on them as described above.\nThe licenser reserves the right to change, supplement or delete the content of mapset and the present terms and conditions at any time at his own discretion, either in whole or in part. This also applies to improvements / changes to the described information or products and services. In case of planned changes to these terms and conditions, the licenser will inform the licensee at least three months before the changes come into effect."
-    },
-    {
-      "heading": "§2 Ownership of rights",
-      "text": "Software including source code belongs to geOps AG. \nAlso the map style and data preparation of the map are the property of geOps AG."
-    },
-    {
-      "heading": "§3 Licence term",
-      "text": "The contract begins with the activation of the accesses following the signing of the contract and runs for 12 months from this date.<br>\nWithout registration maps from mapset are meant for internal and personal use only. The use of maps from mapset in a public context, in particular the use of the maps for traveller information, shall be deemed to constitute consent to a contract and shall lead to the charging of the subscription costs. In this case, the start of the contract shall be deemed to be the verifiable point in time of the use of mapset."
-    },
-    {
-      "heading": "§4 Costs",
-      "text": "The annual costs for the use of the editor are graded according to the number of stops served by the licensee. A current overview of the prices can be found on mapset.io. For associated transport companies, special licence conditions can be arranged on request."
-    },
-    {
-      "heading": "§5 Copyright",
-      "text": "Whenever you use maps from mapset, the copyright information must be retained in the plan. The current copyright information can be read at the bottom of the plans in the editor. As of July 2019 the copyright information is e.g. '© OpenStreetMap, OpenMapTiles, mapset'. If you use maps from mapset without any changes, the current copyright information is automatically displayed in the maps. If the licensee revises the plans, the representation of the copyright must always be guaranteed."
-    },
-    {
-      "heading": "§6 Termination",
-      "text": "The license agreement can be terminated with a period of notice of 3 months to the end of a contract period. Without termination, the contract will be tacitly renewed for another year. <br>\nThe licensor has a unilateral special right of termination without notice if the licensee does not meet his obligations. <br>\nIn case of a significant deterioration of the offer, the licensee has an extraordinary right of termination. The licensee must provide proof of the deterioration. Further claims, especially claims for damages, are excluded. License fees paid in advance will be refunded."
-    },
-    {
-      "heading": "§7 Liability",
-      "text": "The licenser is not liable for losses or damages of any kind, which could arise in connection with the access or use of mapset or parts thereof or from links to third party websites. The licenser is also not liable for lost profits, for Internet failures of any kind (e.g. interruption of operations, malfunctions, viruses, harmful components, terrorist acts...etc), misuse by third parties (viewing data, copies etc.) as well as loss of programs or other data in the information systems of the licensee. <br>\nSome links on mapset lead to third party websites. These are no longer under the influence of the licenser. The licenser also does not take any responsibility for the correctness, completeness and legality of the contents contained there and links to other websites as well as for possible offers, products and (service) performances contained there. The use of linked websites is the sole responsibility of the licensee.<br>\nWithin mapset the licenser will not place any links, especially no advertisements. Placing links in plans made with mapset is solely within the resposibility of the licensee."
-    },
-    {
-      "heading": "§8 Ongoing development of the subject of the contract",
-      "text": "The map basis can be adjusted at any time. Updates of the map, especially the representation of changes in the landscape or infrastructure are usually displayed in the base maps within a short time through an automated update process. If an update is missing in the basic data used (currently OpenStreetMap), there is no obligation for the licenser to enter updates manually. <br>\nThe appearance of dynamically integrated maps ('styling') may change slightly at any time."
-    },
-    {
-      "heading": "§9 Final provisions",
-      "text": "Should one of the provisions of this contract be or become invalid, this shall not affect the validity of the remaining provisions. The contracting parties undertake to bring about a provision which comes closest to the invalid provision in its legal and economic content. <br>\nAll agreements, individual approvals and special regulations must be made in writing. Oral subsidiary agreements do not establish legal validity."
-    },
-    {
-      "heading": "§10 Applicable law and place of jurisdiction",
-      "text": "For all possible disputes between the licenser and the licensee, the courts at the licenser's domicile are responsible. Swiss law is exclusively applicable."
-    }
-  ]
+  "license": {
+    "title": "License",
+    "sections": [
+      {
+        "heading": "§1 Subject of the contract",
+        "text": "The subject of this agreement is the licence for the use of the online editor at editor.mapset.io (mapset). <br>\nIt entitles the licensing company (licensee) to create an unlimited number of plans for all stops of the licensee and to use the plans created with the editor freely, subject to compliance with the copyright provisions mentioned in §5.<br>\nThe licence is limited to the stops of the licensee. The licensee is not entitled to grant sub-licenses, with the exception that a direct reference to the representation of the transfer relationship between a stop of the licensee and the stop of a third party or the stop of the third party is spatially conditioned in the same plan section as the stop of the licensee. The plans generated with the licence may be used in any media, in particular also in digital environments, taking into account the copyright information (§5). The use of the plans is restricted to the licensee. Third parties may use the finished plans as a print product or use them as a static or dynamic plan on their online media, provided that the licensee's stops are depicted on them as described above.\nThe licenser reserves the right to change, supplement or delete the content of mapset and the present terms and conditions at any time at his own discretion, either in whole or in part. This also applies to improvements / changes to the described information or products and services. In case of planned changes to these terms and conditions, the licenser will inform the licensee at least three months before the changes come into effect."
+      },
+      {
+        "heading": "§2 Ownership of rights",
+        "text": "Software including source code belongs to geOps AG. \nAlso the map style and data preparation of the map are the property of geOps AG."
+      },
+      {
+        "heading": "§3 Licence term",
+        "text": "The contract begins with the activation of the accesses following the signing of the contract and runs for 12 months from this date.<br>\nWithout registration maps from mapset are meant for internal and personal use only. The use of maps from mapset in a public context, in particular the use of the maps for traveller information, shall be deemed to constitute consent to a contract and shall lead to the charging of the subscription costs. In this case, the start of the contract shall be deemed to be the verifiable point in time of the use of mapset."
+      },
+      {
+        "heading": "§4 Costs",
+        "text": "The annual costs for the use of the editor are graded according to the number of stops served by the licensee. A current overview of the prices can be found on mapset.io. For associated transport companies, special licence conditions can be arranged on request."
+      },
+      {
+        "heading": "§5 Copyright",
+        "text": "Whenever you use maps from mapset, the copyright information must be retained in the plan. The current copyright information can be read at the bottom of the plans in the editor. As of July 2019 the copyright information is e.g. '© OpenStreetMap, OpenMapTiles, mapset'. If you use maps from mapset without any changes, the current copyright information is automatically displayed in the maps. If the licensee revises the plans, the representation of the copyright must always be guaranteed."
+      },
+      {
+        "heading": "§6 Termination",
+        "text": "The license agreement can be terminated with a period of notice of 3 months to the end of a contract period. Without termination, the contract will be tacitly renewed for another year. <br>\nThe licensor has a unilateral special right of termination without notice if the licensee does not meet his obligations. <br>\nIn case of a significant deterioration of the offer, the licensee has an extraordinary right of termination. The licensee must provide proof of the deterioration. Further claims, especially claims for damages, are excluded. License fees paid in advance will be refunded."
+      },
+      {
+        "heading": "§7 Liability",
+        "text": "The licenser is not liable for losses or damages of any kind, which could arise in connection with the access or use of mapset or parts thereof or from links to third party websites. The licenser is also not liable for lost profits, for Internet failures of any kind (e.g. interruption of operations, malfunctions, viruses, harmful components, terrorist acts...etc), misuse by third parties (viewing data, copies etc.) as well as loss of programs or other data in the information systems of the licensee. <br>\nSome links on mapset lead to third party websites. These are no longer under the influence of the licenser. The licenser also does not take any responsibility for the correctness, completeness and legality of the contents contained there and links to other websites as well as for possible offers, products and (service) performances contained there. The use of linked websites is the sole responsibility of the licensee.<br>\nWithin mapset the licenser will not place any links, especially no advertisements. Placing links in plans made with mapset is solely within the resposibility of the licensee."
+      },
+      {
+        "heading": "§8 Ongoing development of the subject of the contract",
+        "text": "The map basis can be adjusted at any time. Updates of the map, especially the representation of changes in the landscape or infrastructure are usually displayed in the base maps within a short time through an automated update process. If an update is missing in the basic data used (currently OpenStreetMap), there is no obligation for the licenser to enter updates manually. <br>\nThe appearance of dynamically integrated maps ('styling') may change slightly at any time."
+      },
+      {
+        "heading": "§9 Final provisions",
+        "text": "Should one of the provisions of this contract be or become invalid, this shall not affect the validity of the remaining provisions. The contracting parties undertake to bring about a provision which comes closest to the invalid provision in its legal and economic content. <br>\nAll agreements, individual approvals and special regulations must be made in writing. Oral subsidiary agreements do not establish legal validity."
+      },
+      {
+        "heading": "§10 Applicable law and place of jurisdiction",
+        "text": "For all possible disputes between the licenser and the licensee, the courts at the licenser's domicile are responsible. Swiss law is exclusively applicable."
+      }
+    ]
+  }
 }

@@ -3,51 +3,59 @@
     "title": "Licence et mentions légales",
     "phone": "téléphone",
     "mail": "mail",
+    "metadata": {
+      "description": "",
+      "title": "mapset Impressum"
+    },
+    "subtitle": "Découvrez les termes et conditions de notre licence logicielle et les mentions légales associées à mapset.",
     "managing_director": "Directeur général, président du conseil d'administration: Ulrich Müller-Ertle",
     "commercialNumber": "Registre du commerce n°. CHE-455.829.547 Solothurn",
     "disclaimer": "Clause de non-responsabilité : Malgré un contrôle minutieux du contenu, nous n'assumons aucune responsabilité quant au contenu des liens externes. Les exploitants des pages liées sont seuls responsables du contenu de leurs pages.",
     "responsible": "Responsable du contenu : Ulrich Müller-Ertle (adresses comme ci-dessus)"
   },
-  "license": [
-    {
-      "heading": "§1 Objet du contrat",
-      "text": "L'objet du présent contrat est la licence d'utilisation de l'éditeur en ligne à l'adresse editor.mapset.io (mapset).<br>\nElle autorise la société concédante (licencié) à créer un nombre illimité de plans pour tous les arrêts du licencié et à utiliser librement les plans créés avec l'éditeur, sous réserve du respect des dispositions relatives au droit d'auteur mentionnées au §5.<br>\nLa licence est limitée aux arrêts du licencié. Le licencié n'est pas autorisé à concéder des sous-licences, à l'exception d'une référence directe à la représentation de la relation de transfert entre un arrêt du licencié et l'arrêt d'un tiers ou l'arrêt du tiers est conditionné spatialement dans la même section de plan que l'arrêt du licencié. Les plans générés avec la licence peuvent être utilisés sur n'importe quel support, en particulier également dans des environnements numériques, en tenant compte des informations relatives au droit d'auteur (§5). L'utilisation des plans est limitée au titulaire de la licence. Les tiers peuvent utiliser les plans finis comme produit imprimé ou les utiliser comme plan statique ou dynamique sur leurs médias en ligne, à condition que les arrêts du licencié y soient représentés comme décrit ci-dessus. Le concédant se réserve le droit de modifier, de compléter ou de supprimer à tout moment le contenu du jeu de plans et les présentes conditions générales, en tout ou en partie, à sa seule discrétion. Ceci s'applique également aux améliorations / modifications des informations ou produits et services décrits. En cas de modifications prévues des présentes conditions générales, le concédant informera le concessionnaire au moins trois mois avant l'entrée en vigueur des modifications."
-    },
-    {
-      "heading": "§2 Propriété des droits",
-      "text": "Le logiciel, y compris le code source, appartient à geOps AG. Le style de la carte et la préparation des données de la carte sont également la propriété de geOps AG."
-    },
-    {
-      "heading": "§3 Durée de la licence",
-      "text": "Le contrat prend effet à l'activation des accès qui suit la signature du contrat et court à partir de ce moment-là pendant 12 mois. <br>\nSans enregistrement, les cartes de mapset ne sont destinées qu'à un usage interne et personnel. L'utilisation des cartes de mapset dans un contexte public, en particulier l'utilisation des cartes pour l'information des voyageurs, est considérée comme un consentement à un contrat et entraîne la facturation des frais d'abonnement. Dans ce cas, le début du contrat est considéré comme le moment vérifiable de l'utilisation de mapset."
-    },
-    {
-      "heading": "§4 Coûts",
-      "text": "Les coûts annuels pour l'utilisation de l'éditeur sont échelonnés en fonction du nombre d'arrêts desservis par le titulaire de la licence. Un aperçu actuel des prix peut être consulté sur mapset.io. Pour les entreprises de transport associées, des conditions de licence spéciales peuvent être organisées sur demande."
-    },
-    {
-      "heading": "§5 Copyright",
-      "text": "Chaque fois que vous utilisez des cartes de mapset, les informations de copyright doivent être conservées dans le plan. Les informations de copyright actuelles peuvent être lues en bas des plans dans l'éditeur. À partir de juillet 2019, l'information sur le droit d'auteur sera par exemple \"© OpenStreetMap, OpenMapTiles, mapset\". Si vous utilisez des plans issus de mapset sans aucune modification, les informations de copyright actuelles sont automatiquement affichées dans les plans. Si le titulaire de la licence révise les plans, la représentation du droit d'auteur doit toujours être garantie."
-    },
-    {
-      "heading": "§6 Résiliation",
-      "text": "Le contrat de licence peut être résilié avec un préavis de 3 mois à la fin d'une période contractuelle. Sans résiliation, le contrat sera reconduit tacitement pour une année supplémentaire.<br>\nLe concédant dispose d'un droit spécial unilatéral de résiliation sans préavis si le licencié ne respecte pas ses obligations.<br>\nEn cas de détérioration significative de l'offre, le preneur de licence dispose d'un droit de résiliation extraordinaire. Le preneur doit apporter la preuve de la détérioration. Toute autre revendication, notamment les demandes de dommages et intérêts, est exclue. Les droits de licence payés d'avance seront remboursés."
-    },
-    {
-      "heading": "§7 Responsabilité",
-      "text": "Le concédant n'est pas responsable des pertes ou des dommages de quelque nature que ce soit, qui pourraient survenir en relation avec l'accès ou l'utilisation de mapset ou de parties de celui-ci ou de liens vers des sites Web de tiers. Le concédant n'est pas non plus responsable du manque à gagner, des défaillances d'Internet de quelque nature que ce soit (p. ex. interruption des opérations, dysfonctionnements, virus, éléments nuisibles, actes terroristes, etc.), de l'utilisation abusive par des tiers (consultation de données, copies, etc.) ainsi que de la perte de programmes ou d'autres données dans les systèmes d'information du concessionnaire.<br>\nCertains liens sur mapset mènent à des sites web de tiers. Ceux-ci ne sont plus sous l'influence du concédant de licence. Le concédant n'est pas non plus responsable de l'exactitude, de l'exhaustivité et de la légalité des contenus qui y figurent et des liens vers d'autres sites web, ainsi que des offres, produits et prestations (de services) qui y sont éventuellement proposés. L'utilisation des sites web liés relève de la seule responsabilité du preneur de licence.<br>\nLe concédant ne placera aucun lien dans mapset, et en particulier aucune publicité. Le placement de liens dans les plans réalisés avec mapset relève de la seule responsabilité du licencié."
-    },
-    {
-      "heading": "§8 Développement continu de l'objet du contrat",
-      "text": "Le fond de carte peut être ajusté à tout moment. Les mises à jour de la carte, notamment la représentation des modifications du paysage ou de l'infrastructure, sont généralement affichées dans les cartes de base en peu de temps grâce à un processus de mise à jour automatisé. Si une mise à jour manque dans les données de base utilisées (actuellement OpenStreetMap), il n'y a aucune obligation pour le concédant de saisir les mises à jour manuellement.<br>\nL'apparence des cartes intégrées dynamiquement (\"styling\") peut changer légèrement à tout moment."
-    },
-    {
-      "heading": "§9 Dispositions finales",
-      "text": "Si l'une des dispositions du présent contrat est ou devient invalide, la validité des autres dispositions n'en est pas affectée. Les parties contractantes s'engagent à réaliser une disposition qui se rapproche le plus de la disposition invalide dans son contenu juridique et économique.<br>\nTous les accords, autorisations individuelles et règlements spéciaux doivent être faits par écrit. Les accords subsidiaires oraux n'ont pas de valeur juridique."
-    },
-    {
-      "heading": "§10 Droit applicable et lieu de juridiction",
-      "text": "Pour tous les litiges éventuels entre le concédant et le licencié, les tribunaux du domicile du concédant sont compétents. Le droit suisse est exclusivement applicable."
-    }
-  ]
+  "license": {
+    "title": "Licence",
+    "sections": [
+      {
+        "heading": "§1 Objet du contrat",
+        "text": "L'objet du présent contrat est la licence d'utilisation de l'éditeur en ligne à l'adresse editor.mapset.io (mapset).<br>\nElle autorise la société concédante (licencié) à créer un nombre illimité de plans pour tous les arrêts du licencié et à utiliser librement les plans créés avec l'éditeur, sous réserve du respect des dispositions relatives au droit d'auteur mentionnées au §5.<br>\nLa licence est limitée aux arrêts du licencié. Le licencié n'est pas autorisé à concéder des sous-licences, à l'exception d'une référence directe à la représentation de la relation de transfert entre un arrêt du licencié et l'arrêt d'un tiers ou l'arrêt du tiers est conditionné spatialement dans la même section de plan que l'arrêt du licencié. Les plans générés avec la licence peuvent être utilisés sur n'importe quel support, en particulier également dans des environnements numériques, en tenant compte des informations relatives au droit d'auteur (§5). L'utilisation des plans est limitée au titulaire de la licence. Les tiers peuvent utiliser les plans finis comme produit imprimé ou les utiliser comme plan statique ou dynamique sur leurs médias en ligne, à condition que les arrêts du licencié y soient représentés comme décrit ci-dessus. Le concédant se réserve le droit de modifier, de compléter ou de supprimer à tout moment le contenu du jeu de plans et les présentes conditions générales, en tout ou en partie, à sa seule discrétion. Ceci s'applique également aux améliorations / modifications des informations ou produits et services décrits. En cas de modifications prévues des présentes conditions générales, le concédant informera le concessionnaire au moins trois mois avant l'entrée en vigueur des modifications."
+      },
+      {
+        "heading": "§2 Propriété des droits",
+        "text": "Le logiciel, y compris le code source, appartient à geOps AG. Le style de la carte et la préparation des données de la carte sont également la propriété de geOps AG."
+      },
+      {
+        "heading": "§3 Durée de la licence",
+        "text": "Le contrat prend effet à l'activation des accès qui suit la signature du contrat et court à partir de ce moment-là pendant 12 mois. <br>\nSans enregistrement, les cartes de mapset ne sont destinées qu'à un usage interne et personnel. L'utilisation des cartes de mapset dans un contexte public, en particulier l'utilisation des cartes pour l'information des voyageurs, est considérée comme un consentement à un contrat et entraîne la facturation des frais d'abonnement. Dans ce cas, le début du contrat est considéré comme le moment vérifiable de l'utilisation de mapset."
+      },
+      {
+        "heading": "§4 Coûts",
+        "text": "Les coûts annuels pour l'utilisation de l'éditeur sont échelonnés en fonction du nombre d'arrêts desservis par le titulaire de la licence. Un aperçu actuel des prix peut être consulté sur mapset.io. Pour les entreprises de transport associées, des conditions de licence spéciales peuvent être organisées sur demande."
+      },
+      {
+        "heading": "§5 Copyright",
+        "text": "Chaque fois que vous utilisez des cartes de mapset, les informations de copyright doivent être conservées dans le plan. Les informations de copyright actuelles peuvent être lues en bas des plans dans l'éditeur. À partir de juillet 2019, l'information sur le droit d'auteur sera par exemple \"© OpenStreetMap, OpenMapTiles, mapset\". Si vous utilisez des plans issus de mapset sans aucune modification, les informations de copyright actuelles sont automatiquement affichées dans les plans. Si le titulaire de la licence révise les plans, la représentation du droit d'auteur doit toujours être garantie."
+      },
+      {
+        "heading": "§6 Résiliation",
+        "text": "Le contrat de licence peut être résilié avec un préavis de 3 mois à la fin d'une période contractuelle. Sans résiliation, le contrat sera reconduit tacitement pour une année supplémentaire.<br>\nLe concédant dispose d'un droit spécial unilatéral de résiliation sans préavis si le licencié ne respecte pas ses obligations.<br>\nEn cas de détérioration significative de l'offre, le preneur de licence dispose d'un droit de résiliation extraordinaire. Le preneur doit apporter la preuve de la détérioration. Toute autre revendication, notamment les demandes de dommages et intérêts, est exclue. Les droits de licence payés d'avance seront remboursés."
+      },
+      {
+        "heading": "§7 Responsabilité",
+        "text": "Le concédant n'est pas responsable des pertes ou des dommages de quelque nature que ce soit, qui pourraient survenir en relation avec l'accès ou l'utilisation de mapset ou de parties de celui-ci ou de liens vers des sites Web de tiers. Le concédant n'est pas non plus responsable du manque à gagner, des défaillances d'Internet de quelque nature que ce soit (p. ex. interruption des opérations, dysfonctionnements, virus, éléments nuisibles, actes terroristes, etc.), de l'utilisation abusive par des tiers (consultation de données, copies, etc.) ainsi que de la perte de programmes ou d'autres données dans les systèmes d'information du concessionnaire.<br>\nCertains liens sur mapset mènent à des sites web de tiers. Ceux-ci ne sont plus sous l'influence du concédant de licence. Le concédant n'est pas non plus responsable de l'exactitude, de l'exhaustivité et de la légalité des contenus qui y figurent et des liens vers d'autres sites web, ainsi que des offres, produits et prestations (de services) qui y sont éventuellement proposés. L'utilisation des sites web liés relève de la seule responsabilité du preneur de licence.<br>\nLe concédant ne placera aucun lien dans mapset, et en particulier aucune publicité. Le placement de liens dans les plans réalisés avec mapset relève de la seule responsabilité du licencié."
+      },
+      {
+        "heading": "§8 Développement continu de l'objet du contrat",
+        "text": "Le fond de carte peut être ajusté à tout moment. Les mises à jour de la carte, notamment la représentation des modifications du paysage ou de l'infrastructure, sont généralement affichées dans les cartes de base en peu de temps grâce à un processus de mise à jour automatisé. Si une mise à jour manque dans les données de base utilisées (actuellement OpenStreetMap), il n'y a aucune obligation pour le concédant de saisir les mises à jour manuellement.<br>\nL'apparence des cartes intégrées dynamiquement (\"styling\") peut changer légèrement à tout moment."
+      },
+      {
+        "heading": "§9 Dispositions finales",
+        "text": "Si l'une des dispositions du présent contrat est ou devient invalide, la validité des autres dispositions n'en est pas affectée. Les parties contractantes s'engagent à réaliser une disposition qui se rapproche le plus de la disposition invalide dans son contenu juridique et économique.<br>\nTous les accords, autorisations individuelles et règlements spéciaux doivent être faits par écrit. Les accords subsidiaires oraux n'ont pas de valeur juridique."
+      },
+      {
+        "heading": "§10 Droit applicable et lieu de juridiction",
+        "text": "Pour tous les litiges éventuels entre le concédant et le licencié, les tribunaux du domicile du concédant sont compétents. Le droit suisse est exclusivement applicable."
+      }
+    ]
+  }
 }
