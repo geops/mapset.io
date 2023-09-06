@@ -17,7 +17,6 @@ import GuideH4 from "./GuideH4";
 import { onClickSmoothScroll } from "./NavLinks";
 import SquareIcon from "./images/SquareIcon";
 import H1 from "./ui/H1";
-import Menu from "./Menu";
 import useIsMobile from "@/utils/hooks/useIsMobile";
 import { useClickAway } from "@/utils/hooks/useClickAway";
 
@@ -321,7 +320,6 @@ export const Guide = () => {
         </main>
         <Footer className="z-30 relative" />
       </div>
-        <Menu className="md:hidden" />
     </>
   );
 };

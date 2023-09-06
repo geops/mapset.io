@@ -13,6 +13,7 @@ function Header({
   linkClassName?: string;
   selectedClassName?: string;
 }) {
+  const isGuidePage = window.location.pathname.endsWith("/guide");
   return (
     <nav
       className={`flex items-center text-sm text-slate-500 h-[52px] font-medium  ${className}`}
@@ -29,11 +30,15 @@ function Header({
         selectedClassName={selectedClassName}
       />
       <VerticalSeparator />
-      <UserManualLink
-        className="w-[115px]"
-        linkClassName={`overflow-hidden text-ellipsis ${linkClassName}`}
-      />
-      <VerticalSeparator />
+      {!isGuidePage && (
+        <>
+          <UserManualLink
+          className="w-[115px]"
+          linkClassName={`overflow-hidden text-ellipsis ${linkClassName}`}
+          />
+          <VerticalSeparator />
+        </>
+      )}
       <LoginLink
         // className="w-[72px]"
         linkClassName={`overflow-hidden text-ellipsis ` + linkClassName}
