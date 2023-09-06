@@ -5,6 +5,7 @@ import UserManualLink from "./UserManualLink";
 import LoginLink from "./LoginLink";
 
 const isBrowser = typeof window !== "undefined";
+
 function Header({
   className = "",
   linkClassName = "hover:text-slate-700 hover:font-bold",
