@@ -58,7 +58,10 @@ function Home() {
                       muted
                       className="border-white border-opacity-20 border-8 rounded-3xl"
                     >
-                      <source src="/video/mapset-demo_v2.mp4" type="video/mp4" />
+                      <source
+                        src="/video/mapset-demo_v2.mp4"
+                        type="video/mp4"
+                      />
                     </video>
                   </div>
 
@@ -129,13 +132,13 @@ function Home() {
               <div className="px-4 md:px-0 pb-12">
                 <H4>{t("features.section")}</H4>
                 <H2 className={`max-w-[900px]`}>{t("features.title")}</H2>
-                <p 
+                <p
                   className={pClassName}
                   style={{ fontSize: pClamp }}
                   dangerouslySetInnerHTML={{
                     __html: t("features.content"),
-                  }}>
-                </p>
+                  }}
+                ></p>
               </div>
               <div className="md:hidden">
                 <FeaturesSection />
@@ -170,13 +173,13 @@ function Home() {
               <div className="pb-12">
                 <H4>{t("pricing.section")}</H4>
                 <H2 className={`max-w-[800px]`}>{t("pricing.title")}</H2>
-                <p 
+                <p
                   className={pClassName}
                   style={{ fontSize: pClamp }}
                   dangerouslySetInnerHTML={{
                     __html: t("pricing.content"),
-                  }}>
-                </p>
+                  }}
+                ></p>
               </div>
               <PricingSection products={translations.pricing.products} />
             </div>

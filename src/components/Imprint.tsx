@@ -50,14 +50,25 @@ function Imprint() {
                 <H2>{t("imprint.title")}</H2>
                 <H3>geOps AG</H3>
                 <p>
-                  Solothurnerstrasse 235<br />
-                  CH-4600 Olten<br />
-                  {t("imprint.phone")}: +41 61 588 05 05<br />
-                  {t("imprint.mail")}: <Link className="hover:text-blue-600" href={"mailto:info@geops.ch"}>info@geops.ch</Link>
+                  Solothurnerstrasse 235
+                  <br />
+                  CH-4600 Olten
+                  <br />
+                  {t("imprint.phone")}: +41 61 588 05 05
+                  <br />
+                  {t("imprint.mail")}:{" "}
+                  <Link
+                    className="hover:text-blue-600"
+                    href={"mailto:info@geops.ch"}
+                  >
+                    info@geops.ch
+                  </Link>
                 </p>
                 <p>
-                  {t("imprint.managing_director")}<br />
-                  {t("imprint.commercial_number")}<br />
+                  {t("imprint.managing_director")}
+                  <br />
+                  {t("imprint.commercial_number")}
+                  <br />
                   UID: CHE-455.829.547 VAT
                 </p>
                 <p>{t("imprint.disclaimer")}</p>

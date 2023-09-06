@@ -36,17 +36,23 @@ const renderScrollerId = (label: string) => {
 
 const domain = process.env.NEXT_PUBLIC_DOMAIN;
 
-type NavFeature = { label: string }
+type NavFeature = { label: string };
 type NavTitlesProps = {
   titles: NavFeature[];
-  hasBullets: boolean; hasDividers: boolean;
+  hasBullets: boolean;
+  hasDividers: boolean;
   onItemClick: () => void;
-}
-const NavTitles = ({titles=[], hasBullets=true, hasDividers=false, onItemClick=() => {}}: NavTitlesProps) => {
+};
+const NavTitles = ({
+  titles = [],
+  hasBullets = true,
+  hasDividers = false,
+  onItemClick = () => {},
+}: NavTitlesProps) => {
   const onClick = (evt) => {
-    onClickSmoothScroll(evt)
-    onItemClick(evt)
-  }
+    onClickSmoothScroll(evt);
+    onItemClick(evt);
+  };
   return titles.map((feature) => {
     return (
       <div key={renderScrollerId(feature.label)}>
@@ -79,23 +85,27 @@ const NavTitles = ({titles=[], hasBullets=true, hasDividers=false, onItemClick=(
             </Link>
           ))}
         </div>
-        {hasDividers ? <hr/> : null}
+        {hasDividers ? <hr /> : null}
       </div>
     );
-  })
-}
+  });
+};
 
 type NavDropDownBtnProps = {
   onClick: () => void;
   className: string;
   open: boolean;
-}
+};
 
-const NavDropDownBtn = ({ onClick=() => {}, className="", open=false }: NavDropDownBtnProps) => {
+const NavDropDownBtn = ({
+  onClick = () => {},
+  className = "",
+  open = false,
+}: NavDropDownBtnProps) => {
   const { t } = useI18n();
-  const classes = `inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 font-semibold text-gray-900 ${className}`
+  const classes = `inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 font-semibold text-gray-900 ${className}`;
   return (
-    <button 
+    <button
       onClick={onClick}
       type="button"
       className={classes}
@@ -103,25 +113,37 @@ const NavDropDownBtn = ({ onClick=() => {}, className="", open=false }: NavDropD
       aria-expanded="true"
       aria-haspopup="true"
     >
-      {t('guide.features_title')}
-      <svg className={`${open ? ' rotate-180' : ''} -mr-1 h-5 w-5 text-gray-400`} viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-        <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clipRule="evenodd" />
+      {t("guide.features_title")}
+      <svg
+        className={`${open ? " rotate-180" : ""} -mr-1 h-5 w-5 text-gray-400`}
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        aria-hidden="true"
+      >
+        <path
+          fillRule="evenodd"
+          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+          clipRule="evenodd"
+        />
       </svg>
     </button>
-  )
-}
+  );
+};
 
 type NavDropDownProps = {
   titles: NavFeature[];
-}
+};
 
-const NavDropDown = ({ titles=[] }: NavDropDownProps) => {
+const NavDropDown = ({ titles = [] }: NavDropDownProps) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [dropdownRef, setDropdownRef] = useState(null);
   useClickAway(dropdownRef, () => setDropdownOpen(false));
   return (
     <div className="sticky top-2 iw-full text-left mb-10 z-40">
-      <NavDropDownBtn onClick={() => setDropdownOpen(true)} className="shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50" />
+      <NavDropDownBtn
+        onClick={() => setDropdownOpen(true)}
+        className="shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+      />
       {dropdownOpen ? (
         <div
           className="absolute right-0 top-[-8px] z-10 mt-2 w-full h-screen max-h-[calc(100vh-50px)] overflow-scroll origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
@@ -132,18 +154,23 @@ const NavDropDown = ({ titles=[] }: NavDropDownProps) => {
           ref={(el) => setDropdownRef(el)}
         >
           <div className="relative" role="none">
-            <NavDropDownBtn 
+            <NavDropDownBtn
               onClick={() => setDropdownOpen(false)}
               open
               className="sticky top-0 right-0 border-b-[1px] rounded-b-none"
-              />
-            <NavTitles titles={titles} hasBullets={false} onItemClick={() => setDropdownOpen(false)} hasDividers />
+            />
+            <NavTitles
+              titles={titles}
+              hasBullets={false}
+              onItemClick={() => setDropdownOpen(false)}
+              hasDividers
+            />
           </div>
         </div>
       ) : null}
     </div>
-  )
-}
+  );
+};
 
 export const Guide = () => {
   const { t, language } = useI18n();
@@ -172,7 +199,8 @@ export const Guide = () => {
     const ids = titles.map((item) => [item.label, ...item.sub_features]).flat();
     const distances = ids.map((label) => {
       const distance = document
-        .getElementById(renderId(label))?.getBoundingClientRect().top;
+        .getElementById(renderId(label))
+        ?.getBoundingClientRect().top;
       return distance > 150 ? Number.POSITIVE_INFINITY : distance; // 1550 for the header
     });
     const closestToZero = distances.reduce((a, b) => {

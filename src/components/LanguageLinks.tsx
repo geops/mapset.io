@@ -12,7 +12,7 @@ function LanguageLinks({
   selectedClassName = "text-slate-700 font-bold",
 }) {
   const { language } = useI18n() as { language: Locale };
-  const pathname = usePathname();  
+  const pathname = usePathname();
 
   return (
     <div className={`flex items-center gap-2 ${className}`}>

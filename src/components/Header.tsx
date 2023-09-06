@@ -35,8 +35,8 @@ function Header({
       {!isGuidePage && (
         <>
           <UserManualLink
-          className="w-[115px]"
-          linkClassName={`overflow-hidden text-ellipsis ${linkClassName}`}
+            className="w-[115px]"
+            linkClassName={`overflow-hidden text-ellipsis ${linkClassName}`}
           />
           <VerticalSeparator />
         </>

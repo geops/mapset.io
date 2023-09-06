@@ -130,9 +130,7 @@ function PricingSection({ products = [] }: { products: Product[] }) {
                 })}
               </tr>
               <tr className={trClassName}>
-                <th className={firstColumnClassName}>
-                  {t("pricing.price")}
-                </th>
+                <th className={firstColumnClassName}>{t("pricing.price")}</th>
                 {products.map((product, idx) => {
                   return (
                     <td key={product.tier} className={tdClassName}>

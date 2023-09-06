@@ -16,10 +16,14 @@ function LoginLink({ className = "", linkClassName = "" }) {
         setUser(userr);
       });
     }
-  }, []);  
+  }, []);
 
   return (
-    <div className={`${className}${user?.profile?.nickname ? ' !w-[120px]' : ' !w-[72px]'}`}>
+    <div
+      className={`${className}${
+        user?.profile?.nickname ? " !w-[120px]" : " !w-[72px]"
+      }`}
+    >
       <Link
         className={`${linkClassName} grid grid-cols-[1fr_1fr] items-center gap-2`}
         href={"/"}
