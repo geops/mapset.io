@@ -174,15 +174,12 @@ export const Guide = () => {
     const distances = ids.map((label, idx) => {
       const distance = document
         .getElementById(renderId(label))?.getBoundingClientRect().top;
-      console.log(label, idx, distance);
       return distance > 150 ? Number.POSITIVE_INFINITY : distance; // 1550 for the header
     });
     const closestToZero = distances.reduce((a, b) => {
-      console.log(a, b);
       return Math.abs(b + 0) < Math.abs(a + 0) ? b : a;
     });
     const activeIdx = distances.findIndex((dist) => dist === closestToZero);
-    console.log(activeIdx, closestToZero);
     ids.forEach((id) => {
       if (id === ids[activeIdx]) {
         const activated = document.getElementById(renderScrollerId(id));
