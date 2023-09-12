@@ -64,11 +64,11 @@
         "title": "Dynamische Einbindung in digitale Kanäle"
       },
       {
-        "content": "Für viele Haltestellen einfache Pläne erstellen geht mit mapset ganz schnell: Einfach die Haltestellennummer eingeben und schon wird ein Standardplan angelegt. Optional können für Haltestellen Vorlagen definiert werden, die beim automatischen Aufruf des Plans genutzt werden. Die Standardpläne können von allen mapset-Userinnen und -Usern in Ihrem Unternehmen bearbeitet werden. ",
+        "content": "Für viele Haltestellen einfache Pläne erstellen geht mit mapset ganz schnell: Einfach eine URL (Link) mit der Haltestellennummer aufrufen und schon wird ein Plan für diese Haltestelle ausgegeben – als interaktiver Plan oder als PDF in Ihrem Layout. Optional können für einzelne Haltestellen Vorlagen definiert werden, die beim automatischen Aufruf des Plans genutzt werden. Diese Vorlagen können auch zeitlich befristet werden, um beispielsweise nur während einer Baustellensituation den angepassten Plan zu verwenden.",
         "image": "/img/feature-7.webp",
         "image_height": 500,
         "image_width": 648,
-        "title": "Standardpläne"
+        "title": "Automatisierung"
       }
     ],
     "section": "benefits",
