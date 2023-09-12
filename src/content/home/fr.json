@@ -64,11 +64,18 @@
         "title": "Intégration dynamique dans les canaux numériques"
       },
       {
-        "content": "Créer des plans simples pour de nombreux arrêts est très rapide avec mapset : il suffit de saisir le numéro de l'arrêt et un plan standard est créé. En option, il est possible de définir des modèles pour les arrêts, qui seront utilisés lors de l'appel automatique du plan. Les plans standard peuvent être modifiés par tous les utilisateurs de mapset dans votre entreprise.",
+        "content": "Créer des plans simples pour de nombreux arrêts est très rapide avec mapset : il suffit d'appeler une URL (lien) avec le numéro de l'arrêt pour qu'un plan soit édité pour cet arrêt - sous forme de plan interactif ou de PDF dans votre mise en page. En option, il est possible de définir des modèles pour certains arrêts, qui seront utilisés lors de l'appel automatique du plan. Ces modèles peuvent également être limités dans le temps, par exemple pour n'utiliser le plan adapté que pendant une situation de chantier.",
         "image": "/img/feature-7.webp",
         "image_height": 500,
         "image_width": 648,
-        "title": "Plans standard"
+        "title": "Automatisation"
+      },
+      {
+        "content": "Avec le module optionnel Share&Print, vous n'avez pas seulement la possibilité de créer des plans au format PDF d'après vos modèles d'impression. Il vous permet également de travailler ensemble sur des plans au sein de votre entreprise. Lorsque vous enregistrez un plan et que vous le partagez dans votre groupe, vos collègues peuvent y accéder et le modifier sous le même nom.",
+        "image": "/img/feature-8.webp",
+        "image_height": 500,
+        "image_width": 648,
+        "title": "Travail en commun"
       }
     ],
     "section": "avantages",
