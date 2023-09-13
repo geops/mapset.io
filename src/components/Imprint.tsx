@@ -31,7 +31,7 @@ function Imprint() {
               </div>
               <div className="flex justify-between overflow-hidden flex-wrap md:flex-nowrap">
                 <div className="flex flex-col gap-6 pb-12">
-                  <H1>{t("imprint.title")}</H1>
+                  <H1>{t("licenseImprint")}</H1>
                   <p className="max-w-[646px] text-2xl">
                     {t("imprint.subtitle")}
                   </p>
