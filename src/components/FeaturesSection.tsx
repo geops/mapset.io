@@ -49,8 +49,6 @@ function FeaturesSection({
               t(`features.list.${selectedIndex}.image_height`),
             )}
             className="h-full w-full object-cover rounded-xl animate-fade-in"
-            unoptimized={!isMobile}
-            loading="eager"
           ></Image>
         )}
       </MacFull>
