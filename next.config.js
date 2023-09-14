@@ -6,6 +6,9 @@ const nextConfig = {
   experimental: {
     outputFileTracingIgnores: ["./content/**", "./public/images/**"],
   },
+  images: {
+    minimumCacheTTL: 31536000,
+}
 };
 
 module.exports = process.env.SENTRY_PROJECT
