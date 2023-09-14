@@ -60,13 +60,14 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
             width={"400"}
             height={"400"}
             className="h-full object-cover rounded-full animate-fade-in grayscale"
+            unoptimized={!isMobile}
           />
         ) : (
           <OurCustomer className="w-full h-full animate-fade-in" />
         )}
       </div>
     );
-  }, [selected, t]);
+  }, [selected, isMobile, t]);
 
   useEffect(() => {
     const paragraphNode = document.querySelectorAll(
