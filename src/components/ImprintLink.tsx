@@ -16,7 +16,7 @@ function ImprintLink({
       className={"relative " + (isImprintPage ? "font-bold " : " ") + className}
       {...props}
     >
-      {t("imprint.title")}
+      {t("licenseImprint")}
       {children}
     </Link>
   );

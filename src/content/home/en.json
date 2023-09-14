@@ -64,11 +64,18 @@
         "title": "Dynamic integration into digital channels"
       },
       {
-        "content": "Creating simple plans for many stops is very quick with mapset: Simply enter the stop number and a standard plan is created. Optionally, templates can be defined for stops which are used when the plan is called up automatically. The default plans can be edited by all mapset users in your company.",
+        "content": "Creating simple plans for many stops is very quick with mapset: Simply call up a URL (link) with the stop number and a plan for this stop is output - as an interactive plan or as a PDF in your layout. Optionally, templates can be defined for individual stops, which are used when the plan is called up automatically. These templates can also be time-limited, for example to use the customized plan only during a construction site situation.",
         "image": "/img/feature-7.webp",
         "image_height": 500,
         "image_width": 648,
-        "title": "Default plans"
+        "title": "Automation"
+      },
+      {
+        "content": "With the optional Share&Print module, you not only get the option of creating plans as PDFs according to your print templates. You can also use it to collaborate on plans within your company. When you save a plan and share it in your group, your colleagues can call up and edit the plan under the same name.",
+        "image": "/img/feature-8.webp",
+        "image_height": 500,
+        "image_width": 648,
+        "title": "Working together"
       }
     ],
     "section": "benefits",
