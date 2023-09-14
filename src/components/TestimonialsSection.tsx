@@ -59,7 +59,7 @@ function TestimonialsSection({ className = "" }: { className?: string }) {
             // )}
             width={"400"}
             height={"400"}
-            className="h-full object-cover rounded-full animate-fade-in"
+            className="h-full object-cover rounded-full animate-fade-in grayscale"
           />
         ) : (
           <OurCustomer className="w-full h-full animate-fade-in" />
