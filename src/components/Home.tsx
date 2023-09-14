@@ -144,7 +144,7 @@ function Home() {
                 <FeaturesSection />
               </div>
               <div className="hidden md:block">
-                <FeaturesSection indexEnd={3} />
+                <FeaturesSection indexEnd={4} />
                 <div className="flex justify-center gap-4 my-24">
                   <ButtonBlue
                     href={"https://editor.mapset." + region}
@@ -161,7 +161,7 @@ function Home() {
                     {t("contact.section")}
                   </ButtonWhite>
                 </div>
-                <FeaturesSection indexStart={3} reverse />
+                <FeaturesSection indexStart={4} reverse />
               </div>
             </div>
           </section>
