@@ -56,6 +56,7 @@ function Home() {
                       loop
                       autoPlay
                       muted
+                      poster="/img/mapset_video_portrait.webp"
                       className="border-white border-opacity-20 border-8 rounded-3xl"
                     >
                       <source
@@ -114,9 +115,11 @@ function Home() {
               </div>
               <div className="hidden md:block absolute bottom-[-60px] left-[510px] lg:left-[628px] w-[855px] h-[575px] animate-fade-in">
                 <video
+                  playsInline
                   loop
                   autoPlay
                   muted
+                  poster="/img/mapset_video_portrait.webp"
                   className="border-[#126392] border-8 rounded-xl w-full h-full animate-fade-in delay-1500"
                 >
                   <source src="/video/mapset-demo_v2.mp4" type="video/mp4" />
