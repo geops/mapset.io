@@ -56,7 +56,7 @@ function Home() {
                       loop
                       autoPlay
                       muted
-                      poster="/img/mapset_video_portrait.webp"
+                      poster="/img/mapset_video_poster.webp"
                       className="border-white border-opacity-20 border-8 rounded-3xl"
                     >
                       <source
@@ -119,7 +119,7 @@ function Home() {
                   loop
                   autoPlay
                   muted
-                  poster="/img/mapset_video_portrait.webp"
+                  poster="/img/mapset_video_poster.webp"
                   className="border-[#126392] border-8 rounded-xl w-full h-full animate-fade-in delay-1500"
                 >
                   <source src="/video/mapset-demo_v2.mp4" type="video/mp4" />
