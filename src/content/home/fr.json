@@ -43,11 +43,11 @@
         "title": "Données cartographiques pertinentes"
       },
       {
-        "content": "Le géo-routage intégré pour les piétons, les bus et autres moyens de transport offre une aide géniale pour le traçage de lignes. En indiquant le point de départ et le point d'arrivée, les lignes de liaison sont automatiquement dessinées.",
+        "content": "Le calcul d'itinéraire intégré pour les piétons, les bus et autres moyens de transport offre une aide géniale pour le traçage de lignes. En indiquant le point de départ et le point d'arrivée, les lignes de liaison sont automatiquement dessinées.",
         "image": "/img/feature-4a.webp",
         "image_height": 500,
         "image_width": 648,
-        "title": "Routage"
+        "title": "Calcul d'itinéraire"
       },
       {
         "content": "Téléchargez les plans que vous avez créés vous-même sous forme de fichier image et intégrez-les dans vos modèles individuels. Les images peuvent également être utilisées de manière optimale pour l'intégration dans les moniteurs de véhicules. Pour optimiser l'exportation, vous pouvez définir le cadrage et la résolution pour l'impression. De même, vous pouvez enregistrer vos propres modèles d'impression.",
