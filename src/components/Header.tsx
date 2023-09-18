@@ -1,10 +1,9 @@
+import { usePathname } from "next/navigation";
 import LanguageLinks from "./LanguageLinks";
 import VerticalSeparator from "./ui/VerticalSeparator";
 import DomainLinks from "./DomainLinks";
 import UserManualLink from "./UserManualLink";
 import LoginLink from "./LoginLink";
-
-const isBrowser = typeof window !== "undefined";
 
 function Header({
   className = "",
@@ -15,7 +14,7 @@ function Header({
   linkClassName?: string;
   selectedClassName?: string;
 }) {
-  const isGuidePage = isBrowser && window.location.pathname.endsWith("/guide");
+  const pathname = usePathname();
   return (
     <nav
       className={`flex items-center text-sm text-slate-500 h-[52px] font-medium  ${className}`}
@@ -32,7 +31,7 @@ function Header({
         selectedClassName={selectedClassName}
       />
       <VerticalSeparator />
-      {!isGuidePage && (
+      {!pathname.endsWith("/guide") && (
         <>
           <UserManualLink
             className="w-[115px]"

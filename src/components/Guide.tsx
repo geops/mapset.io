@@ -7,7 +7,9 @@ import Link from "next/link";
 import { Remarkable } from "remarkable";
 import Contact from "@/components/Contact";
 import WarningIcon from "./images/WarningIcon";
-import translations from "../content/guide/de.json";
+import transDE from "../content/guide/de.json";
+import transFR from "../content/guide/fr.json";
+import transEN from "../content/guide/en.json";
 import Footer from "./Footer.tsx";
 import Header from "./Header";
 import MapsetLogo from "./MapsetLogo";
@@ -19,6 +21,12 @@ import SquareIcon from "./images/SquareIcon";
 import H1 from "./ui/H1";
 import useIsMobile from "@/utils/hooks/useIsMobile";
 import { useClickAway } from "@/utils/hooks/useClickAway";
+
+const translations = {
+  de: transDE,
+  en: transEN,
+  fr: transFR,
+}
 
 const renderId = (label: string) => {
   if (label) {
@@ -174,8 +182,8 @@ const NavDropDown = ({ titles = [] }: NavDropDownProps) => {
 
 export const Guide = () => {
   const { t, language } = useI18n();
-  const isMobile = useIsMobile();
-  const guideContent = translations.guide.features;
+  const isMobile = useIsMobile();  
+  const guideContent = useMemo(() => translations[language]?.guide.features, [language]);
 
   const titles = useMemo(() => {
     if (!guideContent) {
@@ -242,8 +250,7 @@ export const Guide = () => {
         <main>
           <div className="flex flex-col items-center relative px-4 pt-12 bg-gradient-to-r from-blue-600 to-blue-light text-white z-10">
             <div className="container lg">
-              <div className="flex justify-between mb-12">
-                <div></div>
+              <div className="flex justify-end mb-12">
                 <Link href={"/" + language}>
                   <MapsetLogo />
                 </Link>
@@ -302,7 +309,6 @@ export const Guide = () => {
                       className="scroll-mt-[90px]"
                     >
                       <GuideH4 icon={topic.mapset_icon} text={text} />
-
                       {topic.content.map((f) => {
                         const text = md.render(f.heading);
                         return (
