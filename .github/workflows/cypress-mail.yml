@@ -1,11 +1,11 @@
 name: End-to-end tests for contact form (runs every monday)
 
 on:
-  push:
-    branches:
-      - master
   schedule:
     - cron: "0 0 * * 1" #runs every monday
+  # push:
+  #   branches:
+  #     - master
 
 jobs:
   cypress-run-chrome-io:
