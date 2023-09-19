@@ -1,5 +1,7 @@
 # mapset.io and mapset.ch websites
 
+[![End-to-end tests for contact form (runs every monday)](https://github.com/geops/mapset.io/actions/workflows/cypress-mail.yml/badge.svg)](https://github.com/geops/mapset.io/actions/workflows/cypress-mail.yml)
+
 Promo website for [mapset](https://editor.mapset.io/) plan editor.
 
 This is project is the mapset website. It uses nextJS 13.
