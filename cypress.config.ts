@@ -2,6 +2,7 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  projectId: "kg3x21", // cypress.io id
   requestTimeout: 20000,
   defaultCommandTimeout: 20000,
   retries: {
