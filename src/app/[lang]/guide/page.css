@@ -18,3 +18,12 @@ main h4 p {
 main h4 svg {
   margin-top: -2px;
 }
+
+.guide-content a {
+  color: theme(colors.blue.600);
+  text-decoration-line: underline;
+}
+
+.guide-content a:hover {
+  color: theme(colors.blue.900);
+}

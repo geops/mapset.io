@@ -210,6 +210,15 @@
             "text": "In diesem Menu kann zwischen verschiedenen Ausrichtungshilfen gewechselt oder die Ausrichtungshilfe ganz ausgeschaltet werden. Mehr Informationen zu den Ausrichtungshilfen  gibts unter den [Bearbeitungswerkzeugen](#ausrichtungshilfen)"
           }
         ]
+      },
+      {
+        "label": "Design-Guidelines",
+        "mapset_icon": "download",
+        "content": [
+          {
+            "text": "Für eine konsistente und übersichtliche Gestaltung von Plänen haben unsere User von SBB und VBZ die hier verlinkten <a href=\"/pdf/Guidelines_mapset.pdf\" target=\"_blank\">Guidelines</a> zusammengestellt. Die Guidelines sind nicht verbindlich und können auf freiwilliger Basis zur Unterstützung bei der Planerstellung konsultiert werden."
+          }
+        ]
       }
     ]
   }
