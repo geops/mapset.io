@@ -203,6 +203,16 @@
             "text": "Dans ce menu, il est possible de passer d'une aide à l'autre ou de désactiver complètement l'aide à l'alignement. Vous trouverez plus d'informations sur les aides à l'alignement sous [Outils d'édition](#aidesàl'alignement)."
           }
         ]
+      },
+
+      {
+        "label": "Feedback",
+        "mapset_icon": "feedback",
+        "content": [
+          {
+            "text": "Si vous trouvez des erreurs dans mapset ou si vous avez des propositions d'amélioration, nous les recevrons avec plaisir. Vous pouvez rédiger une brève description dans le champ de message.\n\nNous vous remercions d'accompagner votre message d'une image montrant clairement comment la situation serait correcte. (par ex. <a target='_blank' href='https://geops.sh/19CE943C3DECA395F000'>https://geops.sh/19CE943C3DECA395F000</a>).\n\nNous vérifions tous les messages reçus et vous donnons un feedback."
+          }
+        ]
       }
     ]
   }
