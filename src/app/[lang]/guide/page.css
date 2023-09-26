@@ -18,3 +18,8 @@ main h4 p {
 main h4 svg {
   margin-top: -2px;
 }
+
+a {
+  color: rgb(23 137 201);
+  text-decoration-line: underline;
+}
