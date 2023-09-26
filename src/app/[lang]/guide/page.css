@@ -19,7 +19,11 @@ main h4 svg {
   margin-top: -2px;
 }
 
-a {
+.guide-content a {
   color: rgb(23 137 201);
   text-decoration-line: underline;
+}
+
+.guide-content a:hover {
+  color: rgb(21 70 101);
 }
