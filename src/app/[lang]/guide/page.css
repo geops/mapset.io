@@ -20,10 +20,10 @@ main h4 svg {
 }
 
 .guide-content a {
-  color: rgb(23 137 201);
+  color: theme(colors.blue.600);
   text-decoration-line: underline;
 }
 
 .guide-content a:hover {
-  color: rgb(21 70 101);
+  color: theme(colors.blue.900);
 }
