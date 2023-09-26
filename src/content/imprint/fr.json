@@ -8,7 +8,6 @@
       "description": "",
       "title": "mapset Impressum"
     },
-    "subtitle": "Découvrez les termes et conditions de notre licence logicielle et les mentions légales associées à mapset.",
     "managing_director": "Directeur général, président du conseil d'administration: Ulrich Müller-Ertle",
     "commercialNumber": "Registre du commerce n°. CHE-455.829.547 Solothurn",
     "disclaimer": "Clause de non-responsabilité : Malgré un contrôle minutieux du contenu, nous n'assumons aucune responsabilité quant au contenu des liens externes. Les exploitants des pages liées sont seuls responsables du contenu de leurs pages.",
@@ -19,7 +18,7 @@
     "sections": [
       {
         "heading": "§1 Objet du contrat",
-        "text": "L'objet du présent contrat est la licence d'utilisation de l'éditeur en ligne à l'adresse editor.mapset.io (mapset).<br>\nElle autorise la société concédante (licencié) à créer un nombre illimité de plans pour tous les arrêts du licencié et à utiliser librement les plans créés avec l'éditeur, sous réserve du respect des dispositions relatives au droit d'auteur mentionnées au §4.<br>\nLa licence est limitée aux arrêts du licencié. Le licencié n'est pas autorisé à concéder des sous-licences, à l'exception d'une référence directe à la représentation de la relation de transfert entre un arrêt du licencié et l'arrêt d'un tiers ou l'arrêt du tiers est conditionné spatialement dans la même section de plan que l'arrêt du licencié. Les plans générés avec la licence peuvent être utilisés sur n'importe quel support, en particulier également dans des environnements numériques, en tenant compte des informations relatives au droit d'auteur (§4). L'utilisation des plans est limitée au titulaire de la licence. Les tiers peuvent utiliser les plans finis comme produit imprimé ou les utiliser comme plan statique ou dynamique sur leurs médias en ligne, à condition que les arrêts du licencié y soient représentés comme décrit ci-dessus. Le concédant se réserve le droit de modifier, de compléter ou de supprimer à tout moment le contenu du jeu de plans et les présentes conditions générales, en tout ou en partie, à sa seule discrétion. Ceci s'applique également aux améliorations / modifications des informations ou produits et services décrits. En cas de modifications prévues des présentes conditions générales, le concédant informera le concessionnaire au moins trois mois avant l'entrée en vigueur des modifications."
+        "text": "L'objet du présent contrat est la licence d'utilisation de l'éditeur en ligne aux adresses editor.mapset.ch et editor.mapset.io (mapset). Ce contrat est conclu entre vous (preneur de licence) et geOps AG, Solothurnerstrasse 235, 4600 Olten, Suisse (donneur de licence).<br>\nElle autorise la société concédante (licencié) à créer un nombre illimité de plans pour tous les arrêts du licencié et à utiliser librement les plans créés avec l'éditeur, sous réserve du respect des dispositions relatives au droit d'auteur mentionnées au §4.<br>\nLa licence est limitée aux arrêts du licencié. Le licencié n'est pas autorisé à concéder des sous-licences, à l'exception d'une référence directe à la représentation de la relation de transfert entre un arrêt du licencié et l'arrêt d'un tiers ou l'arrêt du tiers est conditionné spatialement dans la même section de plan que l'arrêt du licencié. Les plans générés avec la licence peuvent être utilisés sur n'importe quel support, en particulier également dans des environnements numériques, en tenant compte des informations relatives au droit d'auteur (§4). L'utilisation des plans est limitée au titulaire de la licence. Les tiers peuvent utiliser les plans finis comme produit imprimé ou les utiliser comme plan statique ou dynamique sur leurs médias en ligne, à condition que les arrêts du licencié y soient représentés comme décrit ci-dessus. Le concédant se réserve le droit de modifier, de compléter ou de supprimer à tout moment le contenu du jeu de plans et les présentes conditions générales, en tout ou en partie, à sa seule discrétion. Ceci s'applique également aux améliorations / modifications des informations ou produits et services décrits. En cas de modifications prévues des présentes conditions générales, le concédant informera le concessionnaire au moins trois mois avant l'entrée en vigueur des modifications."
       },
       {
         "heading": "§2 Durée de la licence",
@@ -46,11 +45,15 @@
         "text": "Le fond de carte peut être ajusté à tout moment. Les mises à jour de la carte, notamment la représentation des modifications du paysage ou de l'infrastructure, sont généralement affichées dans les cartes de base en peu de temps grâce à un processus de mise à jour automatisé. Si une mise à jour manque dans les données de base utilisées (actuellement OpenStreetMap), il n'y a aucune obligation pour le concédant de saisir les mises à jour manuellement.<br>\nL'apparence des cartes intégrées dynamiquement (\"styling\") peut changer légèrement à tout moment."
       },
       {
-        "heading": "§8 Dispositions finales",
+        "heading": "§8 Autres conditions de licence",
+        "text": "En plus des conditions de licence spécifiques à mapset mentionnées ici, nos conditions générales de contrat pour les services en ligne, publiées à l'URL https://geops.com/en/terms, s'appliquent."
+      },
+      {
+        "heading": "§9 Dispositions finales",
         "text": "Si l'une des dispositions du présent contrat est ou devient invalide, la validité des autres dispositions n'en est pas affectée. Les parties contractantes s'engagent à réaliser une disposition qui se rapproche le plus de la disposition invalide dans son contenu juridique et économique.<br>\nTous les accords, autorisations individuelles et règlements spéciaux doivent être faits par écrit. Les accords subsidiaires oraux n'ont pas de valeur juridique."
       },
       {
-        "heading": "§9 Droit applicable et lieu de juridiction",
+        "heading": "§10 Droit applicable et lieu de juridiction",
         "text": "Pour tous les litiges éventuels entre le concédant et le licencié, les tribunaux du domicile du concédant sont compétents. Le droit suisse est exclusivement applicable."
       }
     ]

@@ -6,7 +6,6 @@
       "description": "",
       "title": "mapset Impressum"
     },
-    "subtitle": "Learn about the terms and conditions of our software license and the imprint associated with mapset.",
     "phone": "phone",
     "mail": "mail",
     "managing_director": "Managing Director, Chairman of the Board: Ulrich Müller-Ertle",
@@ -19,7 +18,7 @@
     "sections": [
       {
         "heading": "§1 Subject of the contract",
-        "text": "The subject of this agreement is the licence for the use of the online editor at editor.mapset.io (mapset). <br>\nIt entitles the licensing company (licensee) to create an unlimited number of plans for all stops of the licensee and to use the plans created with the editor freely, subject to compliance with the copyright provisions mentioned in §4.<br>\nThe licence is limited to the stops of the licensee. The licensee is not entitled to grant sub-licenses, with the exception that a direct reference to the representation of the transfer relationship between a stop of the licensee and the stop of a third party or the stop of the third party is spatially conditioned in the same plan section as the stop of the licensee. The plans generated with the licence may be used in any media, in particular also in digital environments, taking into account the copyright information (§4). The use of the plans is restricted to the licensee. Third parties may use the finished plans as a print product or use them as a static or dynamic plan on their online media, provided that the licensee's stops are depicted on them as described above.\nThe licenser reserves the right to change, supplement or delete the content of mapset and the present terms and conditions at any time at his own discretion, either in whole or in part. This also applies to improvements / changes to the described information or products and services. In case of planned changes to these terms and conditions, the licenser will inform the licensee at least three months before the changes come into effect."
+        "text": "The subject of this agreement is the licence for the use of the online editor at editor.mapset.io and editor.mapset.ch (mapset). This Agreement is made between you (Licensee) and geOps AG, Solothurnerstrasse 235, 4600 Olten, Switzerland (Licensor).<br>\nIt entitles the licensing company (licensee) to create an unlimited number of plans for all stops of the licensee and to use the plans created with the editor freely, subject to compliance with the copyright provisions mentioned in §4.<br>\nThe licence is limited to the stops of the licensee. The licensee is not entitled to grant sub-licenses, with the exception that a direct reference to the representation of the transfer relationship between a stop of the licensee and the stop of a third party or the stop of the third party is spatially conditioned in the same plan section as the stop of the licensee. The plans generated with the licence may be used in any media, in particular also in digital environments, taking into account the copyright information (§4). The use of the plans is restricted to the licensee. Third parties may use the finished plans as a print product or use them as a static or dynamic plan on their online media, provided that the licensee's stops are depicted on them as described above.\nThe licenser reserves the right to change, supplement or delete the content of mapset and the present terms and conditions at any time at his own discretion, either in whole or in part. This also applies to improvements / changes to the described information or products and services. In case of planned changes to these terms and conditions, the licenser will inform the licensee at least three months before the changes come into effect."
       },
       {
         "heading": "§2 Licence term",
@@ -46,11 +45,15 @@
         "text": "The map basis can be adjusted at any time. Updates of the map, especially the representation of changes in the landscape or infrastructure are usually displayed in the base maps within a short time through an automated update process. If an update is missing in the basic data used (currently OpenStreetMap), there is no obligation for the licenser to enter updates manually. <br>\nThe appearance of dynamically integrated maps ('styling') may change slightly at any time."
       },
       {
-        "heading": "§8 Final provisions",
+        "heading": "§8 Other license terms",
+        "text": "In addition to the mapset-specific license terms set forth herein, our General Terms and Conditions for Online Services, which are published at the URL https://geops.com/en/terms, apply."
+      },
+      {
+        "heading": "§9 Final provisions",
         "text": "Should one of the provisions of this contract be or become invalid, this shall not affect the validity of the remaining provisions. The contracting parties undertake to bring about a provision which comes closest to the invalid provision in its legal and economic content. <br>\nAll agreements, individual approvals and special regulations must be made in writing. Oral subsidiary agreements do not establish legal validity."
       },
       {
-        "heading": "§9 Applicable law and place of jurisdiction",
+        "heading": "§10 Applicable law and place of jurisdiction",
         "text": "For all possible disputes between the licenser and the licensee, the courts at the licenser's domicile are responsible. Swiss law is exclusively applicable."
       }
     ]
