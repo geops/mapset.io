@@ -212,6 +212,15 @@
         ]
       },
       {
+        "label": "Feedback",
+        "mapset_icon": "feedback",
+        "content": [
+          {
+            "text": "Wenn Sie Fehler in mapset finden oder Verbesserungsvorschläge haben, nehmen wir diese gern entgegen. Im Nachrichtenfeld können Sie eine kurze Beschreibung verfassen.\n\nEs hilft uns, wenn Sie die Meldung mit einem Bild versehen, in welchem klar erkennbar ist, wie die Situation korrekt wäre. Am besten eignet sich dafür ein mapset Plan (z.B. <a target='_blank' href='https://geops.sh/19CE943C3DECA395F000'>https://geops.sh/19CE943C3DECA395F000</a>).\n\nWir prüfen alle eingehenden Meldungen und geben Ihnen Rückmeldung dazu."
+          }
+        ]
+      },
+      {
         "label": "Design-Guidelines",
         "mapset_icon": "download",
         "content": [

@@ -206,6 +206,15 @@
             "text": "In this menu you can switch between different alignment aids or switch off the alignment aid completely. More information on the alignment aids can be found under [Drawing tools](#alignmentaid)."
           }
         ]
+      },
+      {
+        "label": "Feedback",
+        "mapset_icon": "feedback",
+        "content": [
+          {
+            "text": "If you find errors in mapset or have suggestions for improvement, we will be happy to receive them. You can write a short description in the message field.\n\nIt helps us if you provide the message with a picture in which it is clearly visible how the situation would be correct. The best way to do this is to use a mapset plan (e.g. <a target='_blank' href='https://geops.sh/19CE943C3DECA395F000'>https://geops.sh/19CE943C3DECA395F000</a>).\n\nWe check all incoming messages and give you feedback on them."
+          }
+        ]
       }
     ]
   }
