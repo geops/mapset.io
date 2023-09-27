@@ -46,8 +46,7 @@
       },
       {
         "heading": "§8 Autres conditions de licence",
-        "text": "En plus des conditions de licence spécifiques à mapset mentionnées ici, nos conditions générales de contrat pour les services en ligne, publiées à l'URL https://geops.com/en/terms, s'appliquent."
-      },
+        "text": "En plus des conditions de licence spécifiques à mapset mentionnées ici, nos conditions générales de contrat pour les services en ligne, publiées à l'URL <a href='https://geops.com/en/terms' class='hover:text-blue-600' style='text-decoration: underline;' rel='noopener noreferrer' target='_blank'>https://geops.com/en/terms</a>, s'appliquent."      },
       {
         "heading": "§9 Dispositions finales",
         "text": "Si l'une des dispositions du présent contrat est ou devient invalide, la validité des autres dispositions n'en est pas affectée. Les parties contractantes s'engagent à réaliser une disposition qui se rapproche le plus de la disposition invalide dans son contenu juridique et économique.<br>\nTous les accords, autorisations individuelles et règlements spéciaux doivent être faits par écrit. Les accords subsidiaires oraux n'ont pas de valeur juridique."

@@ -46,7 +46,7 @@
       },
       {
         "heading": "§8 Other license terms",
-        "text": "In addition to the mapset-specific license terms set forth herein, our General Terms and Conditions for Online Services, which are published at the URL https://geops.com/en/terms, apply."
+        "text": "In addition to the mapset-specific license terms set forth herein, our General Terms and Conditions for Online Services, which are published at the URL <a href='https://geops.com/en/terms' class='hover:text-blue-600' style='text-decoration: underline;' rel='noopener noreferrer' target='_blank'>https://geops.com/en/terms</a>, apply."
       },
       {
         "heading": "§9 Final provisions",
