@@ -298,8 +298,8 @@ export const Guide = () => {
                   https://editor.mapset.io/
                 </Link>
               </p>
+              {isMobile ? <NavDropDown titles={titles} /> : null}
               <div className="guide-content relative">
-                {isMobile ? <NavDropDown titles={titles} /> : null}
                 {(guideContent || []).map((topic) => {
                   const text = md.render(topic.label);
                   return (
