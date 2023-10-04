@@ -21,7 +21,7 @@ export default function useAnalytics() {
       const plausibleScript = document.createElement("script");
       plausibleScript.type = "text/javascript";
       plausibleScript.defer = true;
-      plausibleScript.dataset.domain = "dev.mapset." + domain;
+      plausibleScript.dataset.domain = "mapset." + domain;
       plausibleScript.src = plausibleSrc;
       document.head.appendChild(plausibleScript);
     }
