@@ -129,7 +129,7 @@ function Home() {
           </section>
           <section
             id="features"
-            className="flex flex-col items-center relative md:px-4 md:pt-24 py-12 z-0"
+            className="flex flex-col items-center relative lg:py-24 md:px-4 md:pt-24 py-12 z-0"
           >
             <div className={`${containerClassName}`}>
               <div className="px-4 md:px-0 pb-12">
@@ -148,7 +148,7 @@ function Home() {
               </div>
               <div className="hidden md:block">
                 <FeaturesSection indexEnd={4} />
-                <div className="flex justify-center gap-4 my-24">
+                <div className="flex justify-center gap-4 md:my-24 lg:my-36 xl:my-48">
                   <ButtonBlue
                     href={"https://editor.mapset." + region}
                     target="_blank"

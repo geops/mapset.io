@@ -98,7 +98,6 @@ function FeaturesSection({
 
   return (
     <div
-      id="lalao"
       className={`flex justify-between gap-12 ${
         reverse ? "flex-row-reverse" : ""
       } ${className}`}
@@ -145,7 +144,7 @@ function FeaturesSection({
               >
                 <H5
                   className={
-                    "flex justify-between items-center w-full !pb-0 " +
+                    "flex justify-between items-center w-full my-48 !pb-0 " +
                     (isUnselected ? "text-gray" : "text-blue")
                   }
                 >
