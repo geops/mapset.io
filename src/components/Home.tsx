@@ -148,7 +148,7 @@ function Home() {
               </div>
               <div className="hidden md:block">
                 <FeaturesSection indexEnd={4} />
-                <div className="flex justify-center gap-4 my-24">
+                <div className="flex justify-center gap-4 mt-12 mb-24">
                   <ButtonBlue
                     href={"https://editor.mapset." + region}
                     target="_blank"
