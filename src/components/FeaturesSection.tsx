@@ -58,11 +58,11 @@ function FeaturesSection({
 
   return (
     <div
-      className={`flex justify-between items-center gap-12 ${
+      className={`flex justify-between gap-12 ${
         reverse ? "flex-row-reverse" : ""
       } ${className}`}
     >
-      <div className="flex flex-col pt-6 lg:max-w-[50%] divide-y divide-blue-lighte md:divide-x-4 md:divide-y-0 md:divide-gray-light">
+      <div className="flex flex-col lg:max-w-[50%] divide-y divide-blue-lighte md:divide-x-4 md:divide-y-0 md:divide-gray-light">
         {features.map((feature, idx) => {
           if (indexStart > idx || idx >= indexEnd) {
             return null;
@@ -139,14 +139,14 @@ function FeaturesSection({
       </div>
       {reverse ? (
         // 4733 * 2741
-        <div className={`relative hidden lg:flex min-w-[40%] h-[557px]`}>
-          <div className={`absolute -right-[10%] w-[941px] h-[557px]`}>
+        <div className={`relative hidden lg:flex min-w-[40%] h-[700px] xl:h-[650px]`}>
+          <div className={`absolute -right-[10%] w-[941px] h-[700px] xl:h-[650px]`}>
             {featureImg}
           </div>
         </div>
       ) : (
-        <div className={`relative hidden lg:flex min-w-[40%] h-[557px]`}>
-          <div className={`absolute -left-[10%] w-[941px] h-[557px]`}>
+        <div className={`relative hidden lg:flex min-w-[40%] h-[700px] xl:h-[650px]`}>
+          <div className={`absolute -left-[10%] w-[941px] h-[700px] xl:h-[650px]`}>
             {featureImg}
           </div>
         </div>

@@ -129,10 +129,10 @@ function Home() {
           </section>
           <section
             id="features"
-            className="flex flex-col items-center relative md:px-4 md:pt-24 py-12 z-0"
+            className="flex flex-col items-center relative md:px-4 md:pt-24 py-12 lg:pb-0 z-0"
           >
             <div className={`${containerClassName}`}>
-              <div className="px-4 md:px-0 pb-12">
+              <div className="px-4 md:px-0 pb-20">
                 <H4>{t("features.section")}</H4>
                 <H2 className={`max-w-[900px]`}>{t("features.title")}</H2>
                 <p
@@ -148,7 +148,7 @@ function Home() {
               </div>
               <div className="hidden md:block">
                 <FeaturesSection indexEnd={4} />
-                <div className="flex justify-center gap-4 my-24">
+                <div className="flex justify-center gap-4 my-24 lg:mt-0">
                   <ButtonBlue
                     href={"https://editor.mapset." + region}
                     target="_blank"
