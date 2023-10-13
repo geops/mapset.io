@@ -6,12 +6,11 @@
       "description": "",
       "title": "mapset Impressum"
     },
-    "subtitle": "Informieren Sie sich über die Bedingungen unserer Softwarelizenz und das mit mapset verbundene Impressum.",
     "phone": "fon",
     "mail": "mail",
     "managing_director": "Geschäftsführender Direktor, Vorsitzender des Verwaltungsrats: Ulrich Müller-Ertle",
     "commercial_number": "Handelsregisternummer CHE-455.829.547 Solothurn",
-    "disclaimer": "Haftungshinweis: Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.",
+    "disclaimer": "Haftungshinweis: Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschliesslich deren Betreiber verantwortlich.",
     "responsible": "Verantwortlich für den Inhalt: Ulrich Müller-Ertle (Adressen wie oben)"
   },
   "license": {
@@ -19,7 +18,7 @@
     "sections": [
       {
         "heading": "§1 Vertragsgegenstand",
-        "text": "Gegenstand dieses Vertrages ist die Lizenzierung für die Nutzung des Online-Editors «mapset» unter editor.mapset.ch. <br>\nSie berechtigt zur Erstellung einer unbegrenzten Anzahl von Plänen für die Haltestellen des Lizenznehmers und zur freien Verwendung der mit dem Editor erstellten Pläne, vorbehaltlich der Einhaltung der in §4 genannten Copyright-Bestimmungen.  <br>\nDie Lizenz ist auf die Haltestellen des Lizenznehmers beschränkt. Der Lizenznehmer ist nicht berechtigt, Unterlizenzen zu gewähren, mit der Ausnahme, dass ein direkter Bezug zur Darstellung der Umsteigebeziehung zwischen einer Haltestelle des Lizenznehmers und der Haltestelle eines Dritten oder die Haltestelle des Dritten räumlich bedingt im gleichen Planausschnitt wie die Haltestelle des Lizenznehmers liegt.\nDie mit der Lizenz erzeugten Pläne dürfen unter Berücksichtigung der Copyright-Angaben (§4) in jedwelchen Medien, insbesondere auch im digitalen Umfeld genutzt werden. Die Nutzung der Pläne ist auf den Lizenznehmer beschränkt. Dritte dürfen die fertigen Pläne als Print-Produkt nutzen oder als statischen oder dynamischen Plan auf ihren Online-Medien verwenden, insofern darauf -wie oben beschrieben - Haltestellen des Lizenznehmers abgebildet sind.<br>\nDer Lizenzgeber behält sich das Recht vor, jederzeit nach eigenem Ermessen den Inhalt von mapset und die vorliegenden Bestimmungen jederzeit ganz oder teilweise zu ändern, zu ergänzen oder zu löschen. Das gilt auch für Verbesserungen / Änderungen an den beschriebenen Informationen bzw. Produkten und Dienstleistungen. Bei geplanten Änderungen der vorliegenden Bestimmungen informiert der Lizenzgeber den Lizenznehmer mindestens drei Monate vor Inkrafttreten der Änderungen."
+        "text": "Gegenstand dieses Vertrages ist die Lizenzierung für die Nutzung des Online-Editors «mapset» unter <a href='https://editor.mapset.ch/' class='hover:text-blue-600' rel='noopener noreferrer' target='_blank'>editor.mapset.ch</a> und <a href='https://editor.mapset.io/' class='hover:text-blue-600' rel='noopener noreferrer' target='_blank'>editor.mapset.io</a>. Dieser Vertrag wird zwischen Ihnen (Lizenznehmer) und der geOps AG, Solothurnerstrasse 235, 4600 Olten, Schweiz (Lizenzgeber) abgeschlossen.<br>\nSie berechtigt zur Erstellung einer unbegrenzten Anzahl von Plänen für die Haltestellen des Lizenznehmers und zur freien Verwendung der mit dem Editor erstellten Pläne, vorbehaltlich der Einhaltung der in §4 genannten Copyright-Bestimmungen.  <br>\nDie Lizenz ist auf die Haltestellen des Lizenznehmers beschränkt. Der Lizenznehmer ist nicht berechtigt, Unterlizenzen zu gewähren, mit der Ausnahme, dass ein direkter Bezug zur Darstellung der Umsteigebeziehung zwischen einer Haltestelle des Lizenznehmers und der Haltestelle eines Dritten oder die Haltestelle des Dritten räumlich bedingt im gleichen Planausschnitt wie die Haltestelle des Lizenznehmers liegt.\nDie mit der Lizenz erzeugten Pläne dürfen unter Berücksichtigung der Copyright-Angaben (§4) in jedwelchen Medien, insbesondere auch im digitalen Umfeld genutzt werden. Die Nutzung der Pläne ist auf den Lizenznehmer beschränkt. Dritte dürfen die fertigen Pläne als Print-Produkt nutzen oder als statischen oder dynamischen Plan auf ihren Online-Medien verwenden, insofern darauf -wie oben beschrieben - Haltestellen des Lizenznehmers abgebildet sind.<br>\nDer Lizenzgeber behält sich das Recht vor, jederzeit nach eigenem Ermessen den Inhalt von mapset und die vorliegenden Bestimmungen jederzeit ganz oder teilweise zu ändern, zu ergänzen oder zu löschen. Das gilt auch für Verbesserungen / Änderungen an den beschriebenen Informationen bzw. Produkten und Dienstleistungen. Bei geplanten Änderungen der vorliegenden Bestimmungen informiert der Lizenzgeber den Lizenznehmer mindestens drei Monate vor Inkrafttreten der Änderungen."
       },
       {
         "heading": "§2 Lizenzdauer",
@@ -27,7 +26,7 @@
       },
       {
         "heading": "§3 Kosten",
-        "text": "Die jährlichen Kosten für die Nutzung des Editors sind nach der Anzahl der Haltestellen gestaffelt, die der Lizenznehmer bedient. Eine aktuelle Übersicht der Preise findet sich auf trafimage.mapset.ch. Für Verkehrsverbunde und Vertriebsgesellschaften (z.B.  Moonliner), die mehrere Transportunternehmen umfassen, können auf Anfrage spezielle Lizenzbestimmungen vereinbart werden."
+        "text": "Die jährlichen Kosten für die Nutzung des Editors sind nach der Anzahl der Haltestellen gestaffelt, die der Lizenznehmer bedient. Eine aktuelle Übersicht der Preise findet sich auf <a href='https://www.mapset.ch/de#pricing' class='hover:text-blue-600' rel='noopener noreferrer' target='_blank'>mapset.ch/de#pricing</a> und <a href='https://mapset.io/de#pricing' class='hover:text-blue-600' rel='noopener noreferrer' target='_blank'>mapset.io/de#pricing</a>. Für Verkehrsverbunde und Vertriebsgesellschaften (z.B.  Moonliner), die mehrere Transportunternehmen umfassen, können auf Anfrage spezielle Lizenzbestimmungen vereinbart werden."
       },
       {
         "heading": "§4 Copyright",
@@ -46,11 +45,15 @@
         "text": "Die Kartengrundlage kann jederzeit angepasst werden. Aktualisierungen der Karte, insbesondere die Darstellung von Veränderungen in der Landschaft oder der Infrastruktur werden in der Regel innerhalb kurzer Zeit in den Grundlagenkarten angezeigt. Falls eine Aktualisierung in den verwendeten Grundlagendaten (derzeit OpenStreetMap und SBB) fehlt, besteht keine Verpflichtung für den Lizenzgeber, Aktualisierungen manuell einzupflegen. <br>\nDas Aussehen dynamisch eingebundener Karten ('Styling') kann sich jederzeit in geringem Umfang ändern."
       },
       {
-        "heading": "§8 Schlussbestimmungen",
+        "heading": "§8 Sonstige Lizenzbedingungen",
+        "text": "Zusätzlich zu den hier aufgeführten, für mapet spezifischen Lizenbedingungen finden unsere allgemeinen Vertragsbedingungen für Online-Services Anwendung, die unter der URL <a href='https://geops.com/de/bedingungen' class='hover:text-blue-600' rel='noopener noreferrer' target='_blank'>https://geops.com/de/bedingungen</a> publiziert sind."
+      },
+      {
+        "heading": "§9 Schlussbestimmungen",
         "text": "Sollte eine der Bestimmungen dieses Vertrages unwirksam sein oder werden, so hat das auf die Wirksamkeit der übrigen Bestimmungen keinen Einfluss. Die Vertragspartner verpflichten sich, eine Regelung herbeizuführen, die der unwirksamen Bestimmungen in ihrem rechtlichen und wirtschaftlichen Inhalt am nächsten kommt. <br>\nAlle Vereinbarungen, Einzelgenehmigungen und Sonderregelungen bedürfen der Schriftform. Mündliche Nebenabsprachen begründen keine Rechtswirksamkeit."
       },
       {
-        "heading": "§9 Anwendbares Recht und Gerichtsstand",
+        "heading": "§10 Anwendbares Recht und Gerichtsstand",
         "text": "Für sämtliche allfällige Streitigkeiten zwischen dem Lizenzgeber und dem Lizenznehmer sind die Gerichte am Sitz des Lizenzgebers zuständig. Anwendbar ist ausschliesslich Schweizer Recht."
       }
     ]
