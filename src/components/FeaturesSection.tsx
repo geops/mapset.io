@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React, { useMemo } from "react";
+import React, { useMemo, useEffect,useLayoutEffect } from "react";
 import { useI18n } from "./I18n";
 import { useState } from "react";
 import H5 from "./ui/H5";
@@ -29,8 +29,10 @@ function FeaturesSection({
   // @ts-ignore
   const features: MapsetFeature[] = translations.features.list;
   const { t } = useI18n();
+  const [node, setNode] = useState();
   const [selectedIndex, setSelectedIndex] = useState(indexStart);
   const [selected, setSelected] = useState(features[indexStart]);
+  const [featureHeight, setFeatureHeight] = useState<number>(550);
   const isMobile = useIsMobile();
 
   const featureImg = useMemo(() => {
@@ -56,13 +58,58 @@ function FeaturesSection({
     );
   }, [selectedIndex, isMobile, t]);
 
+  const adjustHeight = (node) => {
+    const paragraphNode = document.querySelectorAll(
+      '[data-features-selected="true"]',
+    )[0];
+    // console.log(paragraphNode.clientHeight)
+    // console.log(paragraphNode)
+    if (paragraphNode && node && node.scrollHeight) {
+      setFeatureHeight(node.scrollHeight + 50);
+      // setFeatureHeight(paragraphNode.clientHeight + (isMobile ? 100 : 50));
+    }
+  };
+
+  // useEffect(() => setupInstances(), [setupInstances]);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      adjustHeight(node);
+    });
+
+    // return () => {
+    //   window.removeEventListener("resize", setupInstances);
+    // };
+  }, [node, adjustHeight]);
+
+  useEffect(() => {
+    // const paragraphNode = document.querySelectorAll(
+    //   '[data-features-selected="true"]',
+    // )[0];
+    // // console.log(paragraphNode.clientHeight)
+    // // console.log(paragraphNode)
+    // if (paragraphNode && node && node.scrollHeight) {
+    //   setFeatureHeight(node.scrollHeight + 50);
+    //   // setFeatureHeight(paragraphNode.clientHeight + (isMobile ? 100 : 50));
+    // }
+
+    adjustHeight(node);
+  }, [node, selected]);
+
   return (
     <div
-      className={`flex justify-between items-center gap-12 ${
+      id="lalao"
+      className={`flex justify-between gap-12 ${
         reverse ? "flex-row-reverse" : ""
       } ${className}`}
+
+      style={{ height: featureHeight, transition: "height 300ms ease" }}
     >
-      <div className="flex flex-col pt-6 lg:max-w-[50%] divide-y divide-blue-lighte md:divide-x-4 md:divide-y-0 md:divide-gray-light">
+      <div
+      className="flex flex-col pt-6 lg:max-w-[50%] divide-y divide-blue-lighte md:divide-x-4 md:divide-y-0 md:divide-gray-light">
+        <div ref={(elt)=>{
+        setNode(elt);
+      }} className="flex flex-col">
         {features.map((feature, idx) => {
           if (indexStart > idx || idx >= indexEnd) {
             return null;
@@ -75,6 +122,8 @@ function FeaturesSection({
               <button
                 key={feature.title}
                 id={"feature" + idx}
+
+
                 className={
                   "flex flex-col gap-6 px-6 py-6 md:border-l-4 text-left text-base " +
                   (isUnselected
@@ -110,14 +159,10 @@ function FeaturesSection({
                   </div>
                 </H5>
                 <div
+                  data-features-selected={!isUnselected}
                   className={`${
                     isUnselected ? "hidden" : "flex"
                   } flex-col gap-6 transition-[max-height] max-h-[1000px] overflow-hidden `}
-                  style={
-                    {
-                      // maxHeight: isUnselected ? "0px" : "1000px",
-                    }
-                  }
                 >
                   {!isUnselected && (
                     <div className={`relative flex lg:hidden justify-center `}>
@@ -135,11 +180,11 @@ function FeaturesSection({
               </button>
             </React.Fragment>
           );
-        })}
+        })}</div>
       </div>
       {reverse ? (
         // 4733 * 2741
-        <div className={`relative hidden lg:flex min-w-[40%] h-[557px]`}>
+        <div className={`relative hidden pt-6 lg:flex min-w-[40%] h-[557px]`}>
           <div className={`absolute -right-[10%] w-[941px] h-[557px]`}>
             {featureImg}
           </div>
