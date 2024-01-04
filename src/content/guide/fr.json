@@ -213,6 +213,15 @@
             "text": "Si vous trouvez des erreurs dans mapset ou si vous avez des propositions d'amélioration, nous les recevrons avec plaisir. Vous pouvez rédiger une brève description dans le champ de message.\n\nNous vous remercions d'accompagner votre message d'une image montrant clairement comment la situation serait correcte (<a target='_blank' href='https://geops.sh/19CE943C3DECA395F000'>exemple</a>).\n\nNous vérifions tous les messages reçus et vous donnons un feedback."
           }
         ]
+      },
+      {
+        "label": "Directives de design",
+        "mapset_icon": "download",
+        "content": [
+          {
+            "text": "Pour une présentation cohérente et claire des plans, nos utilisateurs des CFF et des VBZ ont rédigé les <a href=\"/pdf/Guidelines_mapset_FRA.pdf\" target=\"_blank\">directives</a> dont le lien figure ici. Les guidelines ne sont pas contraignantes et peuvent être consultées sur une base volontaire pour aider à l'élaboration des plans."
+          }
+        ]
       }
     ]
   }

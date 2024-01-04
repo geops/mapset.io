@@ -215,6 +215,15 @@
             "text": "If you find errors in mapset or have suggestions for improvement, we will be happy to receive them. You can write a short description in the message field.\n\nIt helps us if you provide the message with a picture in which it is clearly visible how the situation would be correct. The best way to do this is to use a mapset plan (<a target='_blank' href='https://geops.sh/19CE943C3DECA395F000'>example</a>).\n\nWe check all incoming messages and give you feedback on them."
           }
         ]
+      },
+      {
+        "label": "Design guidelines",
+        "mapset_icon": "download",
+        "content": [
+          {
+            "text": "Our users at SBB and VBZ have provided the <a href=\"/pdf/Guidelines_mapset_ITA.pdf\" target=\"_blank\">guidelines (Italian)</a> linked here to ensure that plans are designed consistently and clearly. The guidelines are not binding and can be consulted on a voluntary basis to support the creation of plans."
+          }
+        ]
       }
     ]
   }
