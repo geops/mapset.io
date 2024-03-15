@@ -172,7 +172,7 @@
           },
           {
             "text": "Les plans peuvent être intégrés directement dans un modèle via la boîte de dialogue d'exportation. Ainsi, il n'est pas nécessaire de passer par l'étape consistant à placer ultérieurement des images de plans jpg ou png dans une mise en page à l'aide d'un autre programme.\n\nLes modèles doivent être conçus au préalable et programmés par geOps. La mise en page s'effectue selon les exigences individuelles et conformément au Corporate Design correspondant. Les modèles sont ensuite disponibles dans la boîte de dialogue d'exportation.\n\nPar défaut, la vue complète de la carte est exportée, dans le rapport hauteur/largeur correspondant au modèle. Il est également possible de définir une partie de la carte pour l'exportation, à nouveau automatiquement dans le rapport largeur/hauteur approprié pour le modèle.\n\nPar défaut, le nom du plan est utilisé comme titre. Celui-ci peut être adapté.\n\nIl est possible d'ajouter une description et de la formater si nécessaire. Pour ce faire, on sélectionne le texte et on choisit la fonction de mise en forme affichée. Il est également possible d'utiliser un texte formaté à partir d'un programme de traitement de texte.",
-            "heading": "PDF",
+            "heading": "Modèle PDF",
             "loginRestricted": true
           }
         ]
