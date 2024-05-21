@@ -1,5 +1,8 @@
 import colors from "tailwindcss/colors";
+// import { Inter } from 'next/font/google'
 // import fonts from "tailwindcss/fonts";
+ 
+// const inter = Inter({ subsets: ['latin'] })
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -12,6 +15,7 @@ module.exports = {
     fontFamily: {
       // ...fonts,
       hero: "new-hero", //Hero New",
+      // inter: `${inter.className}`
     },
     colors: {
       slate: colors.slate,

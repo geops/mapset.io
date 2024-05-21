@@ -82,7 +82,7 @@
     "title": "Klarheit und Stil in die Pläne für den öffentlichen Verkehr bringen"
   },
   "home": {
-    "get_started": "Starten",
+    "get_started": "Heute loslegen",
     "main": {
       "content": "Mit mapset erstellen Sie schnell und einfach Situationspläne für den öffentlichen Verkehr. ",
       "title": "Pläne zum selber machen"
@@ -103,7 +103,8 @@
   },
   "pricing": {
     "addon": "AddOn Share&Print",
-    "content": "Hier finden Sie die Übersicht der jährlichen Kosten und die einmalige Einrichtungsgebühr von mapset für Transportunternehmen.<br/><br/>Die Abstufung nach Haltestellen ist für Ihr Unternehmen nicht anwendbar? Kontaktieren Sie uns für ein individuelles Angebot. Auch wenn Sie an weiteren Leistungen interessiert sind, erstellen wir Ihnen gerne ein individuelles Paketangebot.",
+    "basemap": "Basiskarte",
+    "content": "Mapset hat den richtigen Plan für Transportunternehmen jeder Größe.",
     "currency": {
       "ch": "CHF",
       "io": "€"
@@ -114,11 +115,17 @@
       "ch": "Zu den laufenden Abo-Gebühren fallen beim Start des Abonnements Einrichtungsgebühren von CHF 490.- an. Nach einem Abonnements-Unterbruch wird bei Erneuerung des Abonnements wiederum die Einrichtungsgebühr fällig. Für Transportunternehmen mit bis zu 10 Haltestellen wird nur die Einrichtungsgebühr verrechnet.<br/><br/>Im Rahmen der Abonnements und der Einrichtungsgebühren ist die Konfiguration von Nutzern von mapset eingeschlossen, insofern die Nutzer über eine einheitliche Mail-Domain identifiziert werden können (z.B. maria.bernasconi@ktuxy.ch und max.muster@ktuxy.ch). Für die Einrichtung von individuellen Nutzern, die nicht über eine Domain identifizierbar sind, werden pro Nutzer CHF 90.– verrechnet.<br/><br/>Für Schweizer Unternehmen verstehen sich die Preise zuzüglich Mehrwertsteuer von 7,7 %.",
       "io": "Zu den laufenden Abo-Gebühren fallen beim Start des Abonnements Einrichtungsgebühren von € 490.- an. Nach einem Abonnements-Unterbruch wird bei Erneuerung des Abonnements wiederum die Einrichtungsgebühr fällig. Für Transportunternehmen mit bis zu 10 Haltestellen wird nur die Einrichtungsgebühr verrechnet.<br/><br/>Im Rahmen der Abonnements und der Einrichtungsgebühren ist die Konfiguration von Nutzern von mapset eingeschlossen, insofern die Nutzer über eine einheitliche Mail-Domain identifiziert werden können (z.B. maria.bernasconi@ktuxy.ch und max.muster@ktuxy.ch). Für die Einrichtung von individuellen Nutzern, die nicht über eine Domain identifizierbar sind, werden pro Nutzer € 90.– verrechnet.<br/><br/>Für Schweizer Unternehmen verstehen sich die Preise zuzüglich Mehrwertsteuer von 7,7 %."
     },
+    "embed": "Dynamische Einbindung",
     "mapset_features": "Alle mapset Funktionen",
     "onetime": "Einmalige Einrichtungsgebühr",
+    "plan_export": "Planexport",
     "price": "Preis",
     "products": [
       {
+        "basemap": "stets aktuell und mit Fokus auf den öffentlichen Verkehr",
+        "bus_tram_stops": "bis zu 10 Bus- und Tramhaltestellen",
+        "embed": "in eine Vielzahl an digitalen Kanälen",
+        "plan_export": "als Bild, integriert in ein Layout oder als KML",
         "price": {
           "ch": "0",
           "io": "0"
@@ -133,12 +140,17 @@
         },
         "railway_stations": "-",
         "stops": "1 - 10",
-        "tier": "FREE"
+        "tier": "FREE",
+        "tools": "für sämtliche Bearbeitungsschritte"
       },
       {
+        "basemap": "stets aktuell und mit Fokus auf den öffentlichen Verkehr",
+        "bus_tram_stops": "bis zu 100 Bus- und Tramhaltestellen",
+        "embed": "in eine Vielzahl an digitalen Kanälen",
+        "plan_export": "als Bild, integriert in ein Layout oder als KML",
         "price": {
-          "ch": "2700",
-          "io": "2.700"
+          "ch": "200",
+          "io": "200"
         },
         "price_addon": {
           "ch": "1100",
@@ -149,13 +161,19 @@
           "io": "490"
         },
         "railway_stations": "1 - 10",
+        "railway_stops": "bis zu 10 Zughaltestellen",
         "stops": "11 - 200",
-        "tier": "MINI"
+        "tier": "MINI",
+        "tools": "für sämtliche Bearbeitungsschritte"
       },
       {
+        "basemap": "stets aktuell und mit Fokus auf den öffentlichen Verkehr",
+        "bus_tram_stops": "bis zu 100 Bus- und Tramhaltestellen",
+        "embed": "in eine Vielzahl an digitalen Kanälen",
+        "plan_export": "als Bild, integriert in ein Layout oder als KML",
         "price": {
-          "ch": "5900",
-          "io": "5.900"
+          "ch": "500",
+          "io": "500"
         },
         "price_addon": {
           "ch": "2200",
@@ -166,13 +184,19 @@
           "io": "490"
         },
         "railway_stations": "11 - 100",
+        "railway_stops": "bis zu 100 Zughaltestellen",
         "stops": "201 - 500",
-        "tier": "MIDI"
+        "tier": "MIDI",
+        "tools": "für sämtliche Bearbeitungsschritte"
       },
       {
+        "basemap": "stets aktuell und mit Fokus auf den öffentlichen Verkehr",
+        "bus_tram_stops": "bis zu 500 Bus- und Tramhaltestellen",
+        "embed": "in eine Vielzahl an digitalen Kanälen",
+        "plan_export": "als Bild, integriert in ein Layout oder als KML",
         "price": {
-          "ch": "8400",
-          "io": "8.400"
+          "ch": "700",
+          "io": "700"
         },
         "price_addon": {
           "ch": "2800",
@@ -183,14 +207,17 @@
           "io": "490"
         },
         "railway_stations": "101 - 200",
+        "railway_stops": "bis zu 200 Zughaltestellen",
         "stops": "501+",
-        "tier": "MAXI"
+        "tier": "MAXI",
+        "tools": "für sämtliche Bearbeitungsschritte"
       }
     ],
     "railway_stations": "Haltestellen Zug",
     "section": "Preise",
     "stops": "Sonstige Haltestellen",
-    "title": "Das passende Abo für jedes Unternehmen",
+    "title": "Einfache, transparente Preise",
+    "tools": "Zeichenfunktionen",
     "year": "Jahr"
   },
   "privacy_link": "https://geops.com/datenschutz",

@@ -184,7 +184,10 @@ function Home() {
                   }}
                 ></p>
               </div>
-              <PricingSection products={translations.pricing.products} />
+              <PricingSection
+                // @ts-ignore
+                products={translations.pricing.products}
+              />
             </div>
           </section>
           <section

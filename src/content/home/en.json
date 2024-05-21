@@ -108,7 +108,7 @@
   },
   "pricing": {
     "addon": "AddOn Share&Print",
-    "content": "Here you will find the overview of the annual costs and the one-off set-up fee of mapset for transport companies.<br/><br/>The graduation by stops is not applicable for your company? Contact us for an individual offer. Even if you are interested in further services, we will be happy to create an individual package offer for you.",
+    "content": "Mapset has the right plan for transport companies of any size.",
     "currency": {
       "ch": "CHF",
       "io": "€"
@@ -195,7 +195,7 @@
     "railway_stations": "Railway Stops",
     "section": "pricing",
     "stops": "Other Stops",
-    "title": "The right subscription for every company",
+    "title": "Simple, transparent pricing",
     "year": "year"
   },
   "privacy_link": "https://geops.com/en/privacy",

@@ -2,9 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import ArrowDownIcon from "./images/ArrowDownIcon";
 import CheckIcon from "./images/CheckIcon";
 import { useI18n } from "./I18n";
-import Price from "./Price";
+import PriceCard from "./PriceCard";
 import ButtonBlue from "./ui/ButtonBlue";
 import Button from "./ui/Button";
+import H3 from "./ui/H3";
 import { onClickSmoothScroll } from "./NavLinks";
 
 export type Product = {
@@ -23,14 +24,20 @@ export type Product = {
     ch: string;
     io: string;
   };
+  basemap: string;
+  tools: string;
+  plan_export: string;
+  embed: string;
+  bus_tram_stops: string;
+  railway_stops: string;
 };
 const domain = process.env.NEXT_PUBLIC_DOMAIN;
 
-const trClassName = "even:bg-white odd:bg-blue-lighter";
-const firstColumnClassName =
-  "text-left text-base text-blue-900 font-semibold leading-5 p-6";
-const tdClassName =
-  "text-center text-blue-900 text-base font-normal leading-5 px-2 py-6";
+const trClassName = "even:bg-white odd:bg-blue-lighter flex gap-10";
+// const firstColumnClassName =
+//   "text-left text-base text-blue-900 font-semibold leading-5 p-6";
+// const tdClassName =
+//   "text-center text-blue-900 text-base font-normal leading-5 px-2 py-6";
 
 function PricingSection({ products = [] }: { products: Product[] }) {
   const { t } = useI18n();
@@ -72,7 +79,7 @@ function PricingSection({ products = [] }: { products: Product[] }) {
     <>
       <div className="relative w-full">
         <div ref={scrollElt} className="w-full overflow-x-auto mb-5">
-          <table className="w-full min-w[800px]">
+          {/* <table className="w-full min-w[800px]">
             <thead>
               <tr>
                 <th></th>
@@ -196,15 +203,39 @@ function PricingSection({ products = [] }: { products: Product[] }) {
                 })}
               </tr>
             </tfoot>
+          </table> */}
+          <table className="w-full min-w-[800px]">
+            <tbody>
+              <tr className={trClassName}>
+                {products.map((product) => {
+                  console.log(product);
+                  
+                  return (
+                    <PriceCard 
+                      key={product.tier}
+                      product={product.tier}
+                      // @ts-ignore
+                      price={product.price[domain]}
+                      basemap={product.basemap}
+                      tools={product.tools}
+                      planExport={product.plan_export}
+                      embed={product.embed}
+                      busTramStopsCount={product.bus_tram_stops}
+                      railwayStopsCount={product.railway_stops}
+                    />
+                  );
+                })}
+              </tr>
+            </tbody>
           </table>
         </div>
         <div
           hidden={!canScrollLeft}
-          className="absolute left-0 top-0 bottom-0 w-[75px] h-full bg-gradient-to-l from-transparent to-white"
+          className="absolute left-0 top-0 bottom-0 w-[75px] h-full bg-gradient-to-l from-transparent to-white pointer-events-none"
         ></div>
         <div
           hidden={!canScrollRight}
-          className="absolute right-0 top-0 bottom-0 w-[75px] h-full bg-gradient-to-r from-transparent to-white"
+          className="absolute right-0 top-0 bottom-0 w-[75px] h-full bg-gradient-to-r from-transparent to-white pointer-events-none"
         ></div>
       </div>
       <div>
@@ -237,6 +268,25 @@ function PricingSection({ products = [] }: { products: Product[] }) {
           </p>
         </div>
       </div>
+      <div className="w-full border-[3px] rounded-2xl bg-white p-6 font-hero my-6">
+        <H3 className="text-blue-500">{t("Share AddOn")}</H3>
+        <ul>
+          <li className="pt-6 grid grid-cols-[1fr_6fr]">
+              <CheckIcon />
+              <div className="mt-1">
+                  <div className="font-semibold text-blue-500">{t("pricing.add_on_coop")}</div>
+                  {/* {content && <span className={fontInterGray}>{content}</span>} */}
+              </div>
+          </li>
+        </ul>
+      </div>
+      <ButtonBlue
+        href={`#contact`}
+        className="!text-sm !font-semibold leading-4 max-w-[max-content] m-auto"
+        onClick={onClickSmoothScroll}
+      >
+        {t("home.get_started")}
+      </ButtonBlue>
     </>
   );
 }

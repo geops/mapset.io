@@ -108,7 +108,7 @@
   },
   "pricing": {
     "addon": "AddOn Share&Print",
-    "content": "Vous trouverez ici un aperçu des coûts annuels et des frais d'installation uniques de mapset pour les entreprises de transport.<br/><br/>L'échelonnement en fonction des arrêts ne s'applique pas à votre entreprise ? Contactez-nous pour une offre personnalisée. Si vous êtes également intéressé par d'autres prestations, nous vous soumettrons volontiers une offre groupée personnalisée.",
+    "content": "Mapset propose un plan adapté aux entreprises de transport de toute taille.",
     "currency": {
       "ch": "CHF",
       "io": "€"
@@ -195,7 +195,7 @@
     "railway_stations": "Arrêts train",
     "section": "Tarifs",
     "stops": "Autres arrêts",
-    "title": "L'abonnement adapté à chaque entreprise",
+    "title": "Une tarification simple et transparente",
     "year": "an"
   },
   "privacy_link": "https://geops.com/en/privacy",
