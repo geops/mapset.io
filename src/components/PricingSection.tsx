@@ -96,7 +96,7 @@ function PricingSection({ products = [] }: { products: Product[] }) {
         </Button>
         <AnnualPromo /> 
       </div>
-      <div className="relative w-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-lighte to-white to-70%">
+      <div className="relative w-full bg-[radial-gradient(ellipse_at_center_400px,_var(--tw-gradient-stops))] from-blue-lighte to-white to-60%">
         <div ref={scrollElt} className="w-full overflow-x-auto pb-4 mb-5 !bg-transparent">
           <table className="w-full min-w-[800px] !bg-transparent">
             <tbody>
