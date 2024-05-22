@@ -15,7 +15,6 @@ module.exports = {
     fontFamily: {
       // ...fonts,
       hero: "new-hero", //Hero New",
-      // inter: `${inter.className}`
     },
     colors: {
       slate: colors.slate,

@@ -102,7 +102,13 @@
     "io": "https://geops.sh/40003911245CB34786"
   },
   "pricing": {
+    "add_on_coop": "Gemeinsames Bearbeiten von Plänen",
+    "add_on_coop-description": "Wenn Sie Pläne in Ihrer Planliste abspeichern, können Sie diese innerhalb Ihrer Gruppe anderen Personen zur weiteren Bearbeitung freigeben. Alle Mitglieder der Gruppe haben somit immer Zugriff auf die aktuellste Version des Plans.",
+    "add_on_defaultplans": "Erzeugen von Standardplänen",
+    "add_on_defaultplans-description": "Durch Hinzufügen von Parametern wie Betreiber und DiDok zu einer URL lassen sich automatisch Haltestellenpläne aufrufen – interaktiv für die Einbindung in Ihren digitalen Kanälen oder als PDF in Ihrem Layout. Zusätzlich lassen sich Gültigkeiten für einzelne Pläne definieren, z.B. für temporäre Zeichnungen während einer Baumassnahme.",
     "addon": "AddOn Share&Print",
+    "annual_billing": "Jährliche Abrechnung",
+    "annual_promo": "15% sparen",
     "basemap": "Basiskarte",
     "content": "Mapset hat den richtigen Plan für Transportunternehmen jeder Größe.",
     "currency": {
@@ -117,7 +123,10 @@
     },
     "embed": "Dynamische Einbindung",
     "mapset_features": "Alle mapset Funktionen",
+    "monthly_billing": "Monatliche Abrechnung",
     "onetime": "Einmalige Einrichtungsgebühr",
+    "per_month": "pro Monat",
+    "per_year": "pro Jahr",
     "plan_export": "Planexport",
     "price": "Preis",
     "products": [
@@ -127,19 +136,13 @@
         "embed": "in eine Vielzahl an digitalen Kanälen",
         "plan_export": "als Bild, integriert in ein Layout oder als KML",
         "price": {
-          "ch": "0",
-          "io": "0"
+          "month": 0,
+          "year": 0
         },
-        "price_addon": {
-          "ch": "0",
-          "io": "0"
+        "price_add_on": {
+          "month": 0,
+          "year": 0
         },
-        "price_onetime": {
-          "ch": "490",
-          "io": "490"
-        },
-        "railway_stations": "-",
-        "stops": "1 - 10",
         "tier": "FREE",
         "tools": "für sämtliche Bearbeitungsschritte"
       },
@@ -149,20 +152,14 @@
         "embed": "in eine Vielzahl an digitalen Kanälen",
         "plan_export": "als Bild, integriert in ein Layout oder als KML",
         "price": {
-          "ch": "200",
-          "io": "200"
+          "month": 250,
+          "year": 2700
         },
-        "price_addon": {
-          "ch": "1100",
-          "io": "1.100"
+        "price_add_on": {
+          "month": 75,
+          "year": 800
         },
-        "price_onetime": {
-          "ch": "490",
-          "io": "490"
-        },
-        "railway_stations": "1 - 10",
         "railway_stops": "bis zu 10 Zughaltestellen",
-        "stops": "11 - 200",
         "tier": "MINI",
         "tools": "für sämtliche Bearbeitungsschritte"
       },
@@ -172,20 +169,14 @@
         "embed": "in eine Vielzahl an digitalen Kanälen",
         "plan_export": "als Bild, integriert in ein Layout oder als KML",
         "price": {
-          "ch": "500",
-          "io": "500"
+          "month": 550,
+          "year": 5900
         },
-        "price_addon": {
-          "ch": "2200",
-          "io": "2.200"
+        "price_add_on": {
+          "month": 115,
+          "year": 1200
         },
-        "price_onetime": {
-          "ch": "490",
-          "io": "490"
-        },
-        "railway_stations": "11 - 100",
         "railway_stops": "bis zu 100 Zughaltestellen",
-        "stops": "201 - 500",
         "tier": "MIDI",
         "tools": "für sämtliche Bearbeitungsschritte"
       },
@@ -195,20 +186,14 @@
         "embed": "in eine Vielzahl an digitalen Kanälen",
         "plan_export": "als Bild, integriert in ein Layout oder als KML",
         "price": {
-          "ch": "700",
-          "io": "700"
+          "month": 800,
+          "year": 8400
         },
-        "price_addon": {
-          "ch": "2800",
-          "io": "2.800"
+        "price_add_on": {
+          "month": 150,
+          "year": 1600
         },
-        "price_onetime": {
-          "ch": "490",
-          "io": "490"
-        },
-        "railway_stations": "101 - 200",
         "railway_stops": "bis zu 200 Zughaltestellen",
-        "stops": "501+",
         "tier": "MAXI",
         "tools": "für sämtliche Bearbeitungsschritte"
       }

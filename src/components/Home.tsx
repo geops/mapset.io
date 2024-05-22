@@ -20,7 +20,7 @@ import Menu from "./Menu";
 import { onClickSmoothScroll } from "./NavLinks";
 
 const region = process.env.NEXT_PUBLIC_DOMAIN;
-const pClassName = "text-xl text-blue-900 leading-[30px] max-w-[768px]";
+const pClassName = "text-xl text-blue-900 leading-[30px] ";
 const pClamp = "clamp(1rem, 1vw + 0.75rem, 1.25rem)";
 const containerClassName =
   "container mx-auto px-4 md:px-8 lg:px-16 max-w-[1536px]";
@@ -173,9 +173,9 @@ function Home() {
             className="flex flex-col items-center relative px-4 pt-12 scroll-mt-12 pb-8 md:pb-24 z-0"
           >
             <div className={`${containerClassName}`}>
-              <div className="pb-12">
+              <div className="pb-12 text-center flex flex-col justify-center">
                 <H4>{t("pricing.section")}</H4>
-                <H2 className={`max-w-[800px]`}>{t("pricing.title")}</H2>
+                <H2>{t("pricing.title")}</H2>
                 <p
                   className={pClassName}
                   style={{ fontSize: pClamp }}
@@ -184,10 +184,7 @@ function Home() {
                   }}
                 ></p>
               </div>
-              <PricingSection
-                // @ts-ignore
-                products={translations.pricing.products}
-              />
+              <PricingSection products={translations.pricing.products} />
             </div>
           </section>
           <section
