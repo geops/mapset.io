@@ -141,7 +141,7 @@ function PricingSection({ products = [] }: { products: Product[] }) {
           {products.map((product) => {
             return (
               <div key={product.tier} className="sm:basis-1/4 w-full sm:w-auto text-center rounded-2xl p-6 text-blue-700 border border-[#8FCCFE] bg-[#F1F9FE]">
-                <p className="mb-3">{product.tier}</p>
+                <p className={`mb-3 text-sm	${inter.className}`}>{product.tier}</p>
                 <p className="font-extrabold text-[32px]">{product.price_add_on[isAnnualBilling ? 'year' : 'month']}</p>
                 <p className={`text-sm font-semibold text-gray ${inter.className}`}>{t(`pricing.currency.${domain}`)} {t(`pricing.${isAnnualBilling ? 'per_year' : 'per_month'}`)}</p>
               </div>
