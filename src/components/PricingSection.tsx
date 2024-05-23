@@ -43,7 +43,7 @@ function AnnualPromo() {
         <path d="M15.4714 3.20424L15.4763 3.11642L15.4045 3.15404L15.4714 3.20424Z" fill="#84CC16"/>
         <path d="M13.5253 3.10082C13.5198 3.13134 13.504 3.1669 13.5139 3.19245C13.5213 3.20779 13.5734 3.21966 13.5939 3.20964C13.6772 3.16828 13.683 3.11227 13.6097 3.07093C13.5932 3.06188 13.5534 3.09086 13.5253 3.10082Z" fill="#84CC16"/>
       </svg>
-      <span className="absolute rotate-[350deg] right-[-30px] top-[-45px] sm:rotate-[340deg] sm:top-[-18px] sm:right-[-145px] w-[max-content] font-semibold text-blue-900" >{t("pricing.annual_promo")}</span>
+      <span className="absolute rotate-[350deg] right-[-30px] top-[-40px] sm:rotate-[340deg] sm:top-[-18px] sm:right-[-145px] w-[max-content] font-semibold text-blue-900 text-sm sm:text-base" >{t("pricing.annual_promo")}</span>
     </div>
   )
 }
