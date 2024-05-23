@@ -108,7 +108,7 @@
     "add_on_defaultplans-description": "Durch Hinzufügen von Parametern wie Betreiber und DiDok zu einer URL lassen sich automatisch Haltestellenpläne aufrufen – interaktiv für die Einbindung in Ihren digitalen Kanälen oder als PDF in Ihrem Layout. Zusätzlich lassen sich Gültigkeiten für einzelne Pläne definieren, z.B. für temporäre Zeichnungen während einer Baumassnahme.",
     "addon": "AddOn Share&Print",
     "annual_billing": "Jährliche Abrechnung",
-    "annual_promo": "bis zu 15% sparen",
+    "annual_promo": "bis zu 15%<br>sparen",
     "basemap": "Basiskarte",
     "content": "mapset hat den richtigen Plan für Transportunternehmen jeder Grösse.",
     "currency": {
@@ -183,7 +183,7 @@
       },
       {
         "basemap": "stets aktuell und mit Fokus auf den öffentlichen Verkehr",
-        "bus_tram_stops": "bis zu 500 Bus- und Tramhaltestellen",
+        "bus_tram_stops": "ab 500 Bus- und Tramhaltestellen",
         "embed": "in eine Vielzahl an digitalen Kanälen",
         "plan_export": "als Bild, integriert in ein Layout oder als KML",
         "price": {

@@ -26,11 +26,11 @@ const fontInterGray = `text-gray text-sm font-semibold ${inter.className}`
 export const ListItem = (props: ListItemProps) => {
     const { title, content, children, unavailable, hasFootNote, className } = props
     return (
-        <li className={`pt-6 flex gap-3 ${className || ''}`}>
+        <li className={`pt-4 flex gap-2 ${className || ''}`}>
             <div className='basis-1/8'>{unavailable ? <Cross /> : <CheckIcon />}</div>
             <div className="mt-1 basis-7/8">
-                <div className="font-semibold text-blue-500">{title}{hasFootNote ? '*' : ''}</div>
-                {content && <span className={fontInterGray}>{content}</span>}
+                <div className="font-semibold text-blue-500 text-lg">{title}{hasFootNote ? '*' : ''}</div>
+                {content && <p className={fontInterGray}>{content}</p>}
                 {children}
             </div>
         </li>
@@ -55,9 +55,9 @@ function PriceCard(props: Props) {
     const { key, product, price, basemap, tools, planExport, embed, busTramStopsCount, railwayStopsCount, isAnnualBilling } = props;
 
     return (
-        <td className="w-[clamp(260px,100%,280px)] border-[3px] rounded-2xl bg-white p-3 font-hero flex flex-col" key={key}>
+        <td className="w-full min-w-[270px] border-[3px] rounded-2xl bg-white p-3 font-hero flex flex-col" key={key}>
             <div className="flex flex-col items-center align-center justify-center gap-6">
-                <p className={`w-[min-content] text-blue-700 border border-[#8FCCFE] py-0.5 px-3 rounded-full bg-[#F1F9FE] mb-3 text-sm ${inter.className}`}>{product}</p>
+                <p className={`w-[min-content] text-blue-700 border border-[#8FCCFE] py-0.5 px-3 rounded-full bg-[#F1F9FE] mb-3 text-sm font-medium ${inter.className}`}>{product}</p>
                 <p className="font-extrabold text-[56px] text-blue-700">{price}</p>
                 <p className={`text-sm font-semibold text-gray mt-[-14px] ${inter.className}`}><Price>{t(`pricing.${isAnnualBilling ? 'per_year' : 'per_month'}`)}</Price></p>
             </div>
@@ -69,7 +69,7 @@ function PriceCard(props: Props) {
                 <ListItem title={busTramStopsCount} hasFootNote/>
                 <ListItem title={railwayStopsCount || t("keine Zughaltestellen")} unavailable={!railwayStopsCount} hasFootNote/>
             </ul>
-            <p className={`mt-auto p-5 text-center ${fontInterGray}`}>490 <Price>{t("pricing.one_time_payment")}**</Price></p>
+            <p className={`mt-auto pt-5 text-center ${fontInterGray}`}>490 <Price>{t("pricing.one_time_payment")}**</Price></p>
         </td>
     )
 }
