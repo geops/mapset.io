@@ -28,8 +28,8 @@ export const ListItem = (props: ListItemProps) => {
     return (
         <li className={`pt-4 flex gap-2 ${className || ''}`}>
             <div className='basis-1/8'>{unavailable ? <Cross /> : <CheckIcon />}</div>
-            <div className="mt-1 basis-7/8">
-                <div className="font-semibold text-blue-500 text-lg">{title}{hasFootNote ? '*' : ''}</div>
+            <div className="mt-1.5 basis-7/8">
+                <div className="font-semibold text-blue-500 text-lg leading-6">{title}{hasFootNote ? '*' : ''}</div>
                 {content && <p className={fontInterGray}>{content}</p>}
                 {children}
             </div>
