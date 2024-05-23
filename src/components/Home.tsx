@@ -11,13 +11,16 @@ import ButtonBlue from "./ui/ButtonBlue";
 import ButtonWhite from "./ui/ButtonWhite";
 import ClientsLogos from "./ClientsLogos";
 import FeaturesSection from "./FeaturesSection";
-import translations from "@/content/home/de.json";
+import translationsDe from "@/content/home/de.json";
+import translationsEn from "@/content/home/en.json";
+import translationsFr from "@/content/home/fr.json";
 import PricingSection from "./PricingSection";
 import TestimonialsSection from "./TestimonialsSection";
 import NavSections from "./NavSections";
 import ContactSection from "./ContactSection";
 import Menu from "./Menu";
 import { onClickSmoothScroll } from "./NavLinks";
+import { useMemo } from "react";
 
 const region = process.env.NEXT_PUBLIC_DOMAIN;
 const pClassName = "text-xl text-blue-900 leading-[30px] ";
@@ -26,7 +29,19 @@ const containerClassName =
   "container mx-auto px-4 md:px-8 lg:px-16 max-w-[1536px]";
 
 function Home() {
-  const { t } = useI18n();
+  const { t, language } = useI18n();
+  const translations = useMemo(() => {
+    switch (language) {
+      case "de":
+        return translationsDe;
+      case "fr":
+        return translationsFr;
+      case "en":
+      default:
+        return translationsEn;
+    }
+  }, [language]);
+
   return (
     <>
       <div className="relative z-0 overflow-x-hidden">

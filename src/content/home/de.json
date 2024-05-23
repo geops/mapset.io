@@ -106,7 +106,6 @@
     "add_on_coop-description": "Wenn Sie Pläne in Ihrer Planliste abspeichern, können Sie diese innerhalb Ihrer Gruppe anderen Personen zur weiteren Bearbeitung freigeben. Alle Mitglieder der Gruppe haben somit immer Zugriff auf die aktuellste Version des Plans.",
     "add_on_defaultplans": "Erzeugen von Standardplänen",
     "add_on_defaultplans-description": "Durch Hinzufügen von Parametern wie Betreiber und DiDok zu einer URL lassen sich automatisch Haltestellenpläne aufrufen – interaktiv für die Einbindung in Ihren digitalen Kanälen oder als PDF in Ihrem Layout. Zusätzlich lassen sich Gültigkeiten für einzelne Pläne definieren, z.B. für temporäre Zeichnungen während einer Baumassnahme.",
-    "addon": "AddOn Share&Print",
     "annual_billing": "Jährliche Abrechnung",
     "annual_promo": "bis zu 15%<br>sparen",
     "basemap": "Basiskarte",
@@ -122,14 +121,12 @@
       "io": "Zu den laufenden Abo-Gebühren fallen beim Start des Abonnements Einrichtungsgebühren von € 490.- an. Nach einem Abonnements-Unterbruch wird bei Erneuerung des Abonnements wiederum die Einrichtungsgebühr fällig. Für Transportunternehmen mit bis zu 10 Haltestellen wird nur die Einrichtungsgebühr verrechnet.<br/><br/>Im Rahmen der Abonnements und der Einrichtungsgebühren ist die Konfiguration von Nutzern von mapset eingeschlossen, insofern die Nutzer über eine einheitliche Mail-Domain identifiziert werden können (z.B. maria.bernasconi@ktuxy.ch und max.muster@ktuxy.ch). Für die Einrichtung von individuellen Nutzern, die nicht über eine Domain identifizierbar sind, werden pro Nutzer € 90.– verrechnet.<br/><br/>Für Schweizer Unternehmen verstehen sich die Preise zuzüglich Mehrwertsteuer von 7,7 %."
     },
     "embed": "Dynamische Einbindung",
-    "mapset_features": "Alle mapset Funktionen",
     "monthly_billing": "Monatliche Abrechnung",
     "one_time_payment": "einmalige Einrichtungsgebühr",
     "onetime": "Einmalige Einrichtungsgebühr",
     "per_month": "pro Monat",
     "per_year": "pro Jahr",
     "plan_export": "Planexport",
-    "price": "Preis",
     "products": [
       {
         "basemap": "stets aktuell und mit Fokus auf den öffentlichen Verkehr",
@@ -199,9 +196,8 @@
         "tools": "für sämtliche Bearbeitungsschritte"
       }
     ],
-    "railway_stations": "Haltestellen Zug",
+    "railway_stops_unavailable": "keine Zughaltestellen",
     "section": "Preise",
-    "stops": "Sonstige Haltestellen",
     "title": "Einfache, transparente Preise",
     "tools": "Zeichenfunktionen",
     "year": "Jahr"

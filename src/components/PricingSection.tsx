@@ -188,7 +188,7 @@ function PricingSection({ products = [] }: { products: Product[] }) {
                   {product.tier}
                 </p>
                 <p className="font-extrabold text-[32px]">
-                  {product.price_add_on[isAnnualBilling ? "year" : "month"]}
+                  {product.price_add_on?.[isAnnualBilling ? "year" : "month"]}
                 </p>
                 <p
                   className={`text-sm font-semibold text-gray ${inter.className}`}
