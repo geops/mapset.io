@@ -26,7 +26,7 @@ const translations = {
   de: transDE,
   en: transEN,
   fr: transFR,
-}
+};
 
 const renderId = (label: string) => {
   if (label) {
@@ -182,8 +182,11 @@ const NavDropDown = ({ titles = [] }: NavDropDownProps) => {
 
 export const Guide = () => {
   const { t, language } = useI18n();
-  const isMobile = useIsMobile();  
-  const guideContent = useMemo(() => translations[language]?.guide.features, [language]);
+  const isMobile = useIsMobile();
+  const guideContent = useMemo(
+    () => translations[language]?.guide.features,
+    [language],
+  );
 
   const titles = useMemo(() => {
     if (!guideContent) {
