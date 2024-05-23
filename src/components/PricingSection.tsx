@@ -30,9 +30,9 @@ export type Product = {
 
 const domain = process.env.NEXT_PUBLIC_DOMAIN;
 
-const trClassName = "even:bg-white odd:bg-blue-lighter flex gap-10 !bg-transparent";
+const trClassName = "even:bg-white odd:bg-blue-lighter flex gap-10 justify-center !bg-transparent";
 const billingSwitcherBtnClassName = 
-  "basis-1/2 h-16 rounded-none p-2 bg-blue-700 font-semibold hover:!bg-blue-800 text-white uppercase text-sm lg:text-base";
+  "basis-1/2 h-16 rounded-none p-2 pt-3.5 lg:pt-2.5 bg-blue-700 font-semibold hover:!bg-blue-800 text-white uppercase text-sm lg:text-base";
 
 function AnnualPromo() {
   const { t } = useI18n();
@@ -43,7 +43,7 @@ function AnnualPromo() {
         <path d="M15.4714 3.20424L15.4763 3.11642L15.4045 3.15404L15.4714 3.20424Z" fill="#84CC16"/>
         <path d="M13.5253 3.10082C13.5198 3.13134 13.504 3.1669 13.5139 3.19245C13.5213 3.20779 13.5734 3.21966 13.5939 3.20964C13.6772 3.16828 13.683 3.11227 13.6097 3.07093C13.5932 3.06188 13.5534 3.09086 13.5253 3.10082Z" fill="#84CC16"/>
       </svg>
-      <span className="absolute rotate-[350deg] right-[-30px] top-[-45px] sm:rotate-[340deg] sm:top-[-10px] sm:right-[-95px] w-[max-content]" >{t("pricing.annual_promo")}</span>
+      <span className="absolute rotate-[350deg] right-[-30px] top-[-45px] sm:rotate-[340deg] sm:top-[-18px] sm:right-[-145px] w-[max-content] font-semibold text-blue-900" >{t("pricing.annual_promo")}</span>
     </div>
   )
 }
@@ -86,7 +86,7 @@ function PricingSection({ products = [] }: { products: Product[] }) {
   
 
   return (
-    <>
+    <div className="xl:w-3/4 xl:mx-auto">
       <div className="relative w-[clamp(300px,40vw,500px)] mb-8 mx-auto bg-blue-700 rounded-full flex gap-0 items-center px-6 tracking-[.14px] leading-6 font-hero">
         <Button className={`${billingSwitcherBtnClassName} ml-2${!isAnnualBilling ? ' bg-blue-800' : ''}`} onClick={() => setIsAnnualBilling(false)}>
           {t("pricing.monthly_billing")}
@@ -96,7 +96,7 @@ function PricingSection({ products = [] }: { products: Product[] }) {
         </Button>
         <AnnualPromo /> 
       </div>
-      <div className="relative w-full bg-[radial-gradient(ellipse_at_center_400px,_var(--tw-gradient-stops))] from-blue-lighte to-white to-60%">
+      <div className="relative w-full bg-[radial-gradient(ellipse_at_center_400px,_var(--tw-gradient-stops))] from-blue-lighte to-white to-50%">
         <div ref={scrollElt} className="w-full overflow-x-auto pb-4 mb-5 !bg-transparent">
           <table className="w-full min-w-[800px] !bg-transparent">
             <tbody>
@@ -130,6 +130,32 @@ function PricingSection({ products = [] }: { products: Product[] }) {
           className="absolute right-0 top-0 bottom-0 w-[75px] h-full bg-gradient-to-r from-transparent to-white pointer-events-none"
         ></div>
       </div>
+      <div className="w-full border-[3px] rounded-2xl bg-white p-6 font-hero my-6">
+        <H3 className="!text-blue-500 font-semibold">{t("Share AddOn")}</H3>
+        <ul>
+          <ListItem title={t("pricing.add_on_coop")} content={t("pricing.add_on_coop-description")} />
+          <ListItem title={t("pricing.add_on_defaultplans")} content={t("pricing.add_on_defaultplans-description")} />
+        </ul>
+        <br />
+        <div className="w-full flex flex-wrap sm:flex-nowrap gap-6">
+          {products.map((product) => {
+            return (
+              <div key={product.tier} className="sm:basis-1/4 w-full sm:w-auto text-center rounded-2xl p-6 text-blue-700 border border-[#8FCCFE] bg-[#F1F9FE]">
+                <p className="mb-3">{product.tier}</p>
+                <p className="font-extrabold text-[32px]">{product.price_add_on[isAnnualBilling ? 'year' : 'month']}</p>
+                <p className={`text-sm font-semibold text-gray ${inter.className}`}>{t(`pricing.currency.${domain}`)} {t(`pricing.${isAnnualBilling ? 'per_year' : 'per_month'}`)}</p>
+              </div>
+              )
+            })}
+          </div>
+        </div>
+        <ButtonBlue
+          href={`#contact`}
+          className="!text-sm font-bold leading-4 max-w-[max-content] m-auto"
+          onClick={onClickSmoothScroll}
+        >
+          {t("home.get_started")}
+        </ButtonBlue>
       <div>
         <Button
           className="flex items-center gap-2 px-4 py-2 pl-0 text-blue-900 text-sm font-bold capitalize leading-[160%]"
@@ -160,33 +186,7 @@ function PricingSection({ products = [] }: { products: Product[] }) {
           </p>
         </div>
       </div>
-      <div className="w-full border-[3px] rounded-2xl bg-white p-6 font-hero my-6">
-        <H3 className="!text-blue-500 font-semibold">{t("Share AddOn")}</H3>
-        <ul>
-          <ListItem title={t("pricing.add_on_coop")} content={t("pricing.add_on_coop-description")} />
-          <ListItem title={t("pricing.add_on_defaultplans")} content={t("pricing.add_on_defaultplans-description")} />
-        </ul>
-        <br />
-        <div className="w-full flex flex-wrap sm:flex-nowrap gap-6">
-          {products.map((product) => {
-            return (
-              <div key={product.tier} className="sm:basis-1/4 w-full sm:w-auto text-center rounded-2xl p-6 text-blue-700 border border-[#8FCCFE] bg-[#F1F9FE]">
-                <p className="mb-4">{product.tier}</p>
-                <p className="font-extrabold text-[32px]">{product.price_add_on[isAnnualBilling ? 'year' : 'month']}</p>
-                <p className={`text-sm font-semibold text-gray ${inter.className}`}>{t(`pricing.currency.${domain}`)} {t(`pricing.${isAnnualBilling ? 'per_year' : 'per_month'}`)}</p>
-              </div>
-            )
-          })}
-        </div>
-      </div>
-      <ButtonBlue
-        href={`#contact`}
-        className="!text-sm font-bold leading-4 max-w-[max-content] m-auto"
-        onClick={onClickSmoothScroll}
-      >
-        {t("home.get_started")}
-      </ButtonBlue>
-    </>
+    </div>
   );
 }
 

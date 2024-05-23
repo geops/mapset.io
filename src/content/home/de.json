@@ -82,7 +82,7 @@
     "title": "Klarheit und Stil in die Pläne für den öffentlichen Verkehr bringen"
   },
   "home": {
-    "get_started": "Heute loslegen",
+    "get_started": "Jetzt loslegen",
     "main": {
       "content": "Mit mapset erstellen Sie schnell und einfach Situationspläne für den öffentlichen Verkehr. ",
       "title": "Pläne zum selber machen"
@@ -108,9 +108,9 @@
     "add_on_defaultplans-description": "Durch Hinzufügen von Parametern wie Betreiber und DiDok zu einer URL lassen sich automatisch Haltestellenpläne aufrufen – interaktiv für die Einbindung in Ihren digitalen Kanälen oder als PDF in Ihrem Layout. Zusätzlich lassen sich Gültigkeiten für einzelne Pläne definieren, z.B. für temporäre Zeichnungen während einer Baumassnahme.",
     "addon": "AddOn Share&Print",
     "annual_billing": "Jährliche Abrechnung",
-    "annual_promo": "15% sparen",
+    "annual_promo": "bis zu 15% sparen",
     "basemap": "Basiskarte",
-    "content": "Mapset hat den richtigen Plan für Transportunternehmen jeder Größe.",
+    "content": "mapset hat den richtigen Plan für Transportunternehmen jeder Grösse.",
     "currency": {
       "ch": "CHF",
       "io": "€"
@@ -124,6 +124,7 @@
     "embed": "Dynamische Einbindung",
     "mapset_features": "Alle mapset Funktionen",
     "monthly_billing": "Monatliche Abrechnung",
+    "one_time_payment": "einmalige Einrichtungsgebühr",
     "onetime": "Einmalige Einrichtungsgebühr",
     "per_month": "pro Monat",
     "per_year": "pro Jahr",
@@ -148,7 +149,7 @@
       },
       {
         "basemap": "stets aktuell und mit Fokus auf den öffentlichen Verkehr",
-        "bus_tram_stops": "bis zu 100 Bus- und Tramhaltestellen",
+        "bus_tram_stops": "bis zu 200 Bus- und Tramhaltestellen",
         "embed": "in eine Vielzahl an digitalen Kanälen",
         "plan_export": "als Bild, integriert in ein Layout oder als KML",
         "price": {
@@ -165,7 +166,7 @@
       },
       {
         "basemap": "stets aktuell und mit Fokus auf den öffentlichen Verkehr",
-        "bus_tram_stops": "bis zu 100 Bus- und Tramhaltestellen",
+        "bus_tram_stops": "bis zu 500 Bus- und Tramhaltestellen",
         "embed": "in eine Vielzahl an digitalen Kanälen",
         "plan_export": "als Bild, integriert in ein Layout oder als KML",
         "price": {
