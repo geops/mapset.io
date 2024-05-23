@@ -86,7 +86,7 @@ function PricingSection({ products = [] }: { products: Product[] }) {
   
 
   return (
-    <div className="xl:w-3/4 xl:mx-auto">
+    <div className="xl:w-5/6 xl:mx-auto">
       <div className="relative w-[clamp(300px,40vw,500px)] mb-8 mx-auto bg-blue-700 rounded-full flex gap-0 items-center px-6 tracking-[.14px] leading-6 font-hero">
         <Button className={`${billingSwitcherBtnClassName} ml-2${!isAnnualBilling ? ' bg-blue-800' : ''}`} onClick={() => setIsAnnualBilling(false)}>
           {t("pricing.monthly_billing")}
