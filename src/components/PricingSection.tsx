@@ -233,7 +233,7 @@ function PricingSection({ products = [] }: { products: Product[] }) {
       </div>
       <ButtonBlue
         href={`#contact`}
-        className="!text-sm font-bold leading-4 max-w-[max-content] m-auto"
+        className="!text-sm font-bold leading-4 max-w-[max-content] m-auto mt-10"
         onClick={onClickSmoothScroll}
       >
         {t("home.get_started")}
