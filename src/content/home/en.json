@@ -82,7 +82,7 @@
     "title": "Bringing clarity and style to public transport plans"
   },
   "home": {
-    "get_started": "Get started today",
+    "get_started": "Get started now",
     "main": {
       "content": "With mapset you can create situation plans for public transport quickly and easily.",
       "title": "Do it yourself plans"
@@ -110,7 +110,7 @@
     "add_on_coop": "Collaborative editing of plans",
     "add_on_coop-description": "If you save plans in your plan list, you can share them with other people in your group for further editing. This means that all members of the group always have access to the latest version of the plan.",
     "add_on_defaultplans": "Creating default plans",
-    "add_on_defaultplans-description": "By adding parameters such as operator and DiDok to a URL, stop plans can be called up automatically - interactively for integration in your digital channels or as a PDF in your layout. Validity can also be defined for individual plans, e.g. for temporary drawings during a construction project.",
+    "add_on_defaultplans-description": "By adding parameters such as operator and a stop ID to a URL, stop plans can be called up automatically - interactively for integration in your digital channels or as a PDF in your layout. Validity can also be defined for individual plans, e.g. for temporary drawings during a construction project.",
     "annual_billing": "Annual billing",
     "annual_promo": "save up to<br>15%",
     "basemap": "Basemap",
@@ -122,7 +122,7 @@
     "details": "Details ",
     "details_one": "Prices refer to the total number of stops or stations of a company, regardless of the number of stations actually served by mapset.",
     "details_two": {
-      "ch": "In addition to the current subscription fees, set-up fees of CHF 490.- are charged at the start of the subscription. After a subscription interruption, the set-up fee is again due when the subscription is renewed. For carriers with up to 10 stops, only the set-up fee is charged.<br/><br/>Within the scope of the subscriptions and the set-up fees, the configuration of mapset users is included, insofar as the users can be identified via a uniform mail domain (e.g. maria.bernasconi@ktuxy.ch and max.muster@ktuxy.ch). For the configuration of individual users who are not identifiable via a domain, CHF 90 will be charged per user.<br/><br/>For Swiss companies, the prices are exclusive of VAT of 7.7 %.",
+      "ch": "In addition to the current subscription fees, set-up fees of CHF 490.- are charged at the start of the subscription. After a subscription interruption, the set-up fee is again due when the subscription is renewed. For carriers with up to 10 stops, only the set-up fee is charged.<br/><br/>Within the scope of the subscriptions and the set-up fees, the configuration of mapset users is included, insofar as the users can be identified via a uniform mail domain (e.g. maria.bernasconi@ktuxy.ch and max.muster@ktuxy.ch). For the configuration of individual users who are not identifiable via a domain, CHF 90 will be charged per user.<br/><br/>For Swiss companies, the prices are exclusive of VAT of 8.1 %.",
       "io": "In addition to the current subscription fees, set-up fees of € 490.- are charged at the start of the subscription. After a subscription interruption, the set-up fee is again due when the subscription is renewed. For carriers with up to 10 stops, only the set-up fee is charged.<br/><br/>Within the scope of the subscriptions and the set-up fees, the configuration of mapset users is included, insofar as the users can be identified via a uniform mail domain (e.g. maria.bernasconi@ktuxy.ch and max.muster@ktuxy.ch). For the configuration of individual users who are not identifiable via a domain, € 90 will be charged per user.<br/><br/>For Swiss companies, the prices are exclusive of VAT of 7.7 %."
     },
     "embed": "Dynamic embedding",
