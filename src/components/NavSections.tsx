@@ -1,10 +1,14 @@
 import { useEffect, useState } from "react";
 import NavLinks from "./NavLinks";
 
+let hideTimeout: NodeJS.Timeout;
+const hiddenClasses = "opacity-0 pointer-events-none";
+
 const ids = ["features", "pricing", "testimonials", "contact"];
 function NavSections({ className }: { className?: string }) {
   const [selected, setSelected] = useState("");
   const [position, setPosition] = useState("");
+  const [hidden, setHidden] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -21,6 +25,7 @@ function NavSections({ className }: { className?: string }) {
           bottom: rect.bottom + window.scrollY,
         };
       });
+      setHidden(false);
 
       if (window.scrollY > 160) {
         setPosition("fixed top-4");
@@ -35,6 +40,11 @@ function NavSections({ className }: { className?: string }) {
         }
       });
       setSelected(section?.id || "");
+      clearTimeout(hideTimeout);
+      hideTimeout = setTimeout(() => {
+        setHidden(true);
+      }, 2000);
+      
     };
     document.addEventListener("scroll", onScroll);
     return () => {
@@ -43,7 +53,7 @@ function NavSections({ className }: { className?: string }) {
   }, []);
 
   return (
-    <div className={`flex ${position} ${className}`}>
+    <div className={`flex ${position} ${className} transition-opacity ease-in-out duration-300 ${hidden ? hiddenClasses : ''}`}>
       <nav className="bg-blue-700 rounded-full flex gap-0 items-center px-6  text-sm font-semibold tracking-[.14px] leading-6 uppercase font-hero">
         <NavLinks
           selected={selected}

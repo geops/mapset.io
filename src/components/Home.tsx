@@ -144,7 +144,7 @@ function Home() {
           </section>
           <section
             id="features"
-            className="flex flex-col items-center relative md:px-4 md:pt-24 py-12 lg:pb-0 z-0"
+            className="flex flex-col items-center relative md:pt-24 py-12 lg:pb-0 z-0"
           >
             <div className={`${containerClassName}`}>
               <div className="px-4 md:px-0 pb-20">

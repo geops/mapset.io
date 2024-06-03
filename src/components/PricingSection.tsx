@@ -31,7 +31,7 @@ export type Product = {
 const domain = process.env.NEXT_PUBLIC_DOMAIN;
 
 const trClassName =
-  "even:bg-white odd:bg-blue-lighter flex gap-6 justify-center !bg-transparent";
+  "even:bg-white odd:bg-blue-lighter flex gap-3 justify-center !bg-transparent";
 const billingSwitcherBtnClassName =
   "basis-1/2 rounded-none p-2 pt-3.5 bg-blue-700 font-semibold hover:!bg-blue-800 text-white uppercase text-sm";
 
@@ -107,7 +107,7 @@ function PricingSection({ products = [] }: { products: Product[] }) {
   }, [scrollElt]);
 
   return (
-    <div className="xl:w-5/6 xl:mx-auto">
+    <>
       <div className="relative w-[clamp(300px,40vw,500px)] mb-8 mx-auto bg-blue-700 rounded-full flex gap-0 items-center px-6 tracking-[.14px] leading-6 font-hero">
         <Button
           className={`${billingSwitcherBtnClassName} ml-2${
@@ -238,7 +238,7 @@ function PricingSection({ products = [] }: { products: Product[] }) {
       >
         {t("home.get_started")}
       </ButtonBlue>
-    </div>
+    </>
   );
 }
 
