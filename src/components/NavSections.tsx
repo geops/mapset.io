@@ -6,9 +6,9 @@ const hiddenClasses = "opacity-0 pointer-events-none";
 
 const ids = ["features", "pricing", "testimonials", "contact"];
 function NavSections({ className }: { className?: string }) {
-  const [selected, setSelected] = useState("");
-  const [position, setPosition] = useState("");
-  const [hidden, setHidden] = useState(false);
+  const [selected, setSelected] = useState<string>("");
+  const [position, setPosition] = useState<string>("");
+  const [hidden, setHidden] = useState<boolean>(false);
 
   useEffect(() => {
     const onScroll = () => {
