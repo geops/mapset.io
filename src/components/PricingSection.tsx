@@ -31,7 +31,7 @@ export type Product = {
 const domain = process.env.NEXT_PUBLIC_DOMAIN;
 
 const trClassName =
-  "even:bg-white odd:bg-blue-lighter flex gap-3 justify-center !bg-transparent";
+  "even:bg-white odd:bg-blue-lighter flex gap-2 justify-center !bg-transparent";
 const billingSwitcherBtnClassName =
   "basis-1/2 rounded-none p-2 pt-3.5 bg-blue-700 font-semibold hover:!bg-blue-800 text-white uppercase text-sm";
 
