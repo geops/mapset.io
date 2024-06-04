@@ -10,6 +10,17 @@ function NavSections({ className }: { className?: string }) {
   const [position, setPosition] = useState<string>("");
   const [hidden, setHidden] = useState<boolean>(false);
 
+  const handleHideNav = (stateHidden: boolean) => {
+    clearTimeout(hideTimeout);
+    if (stateHidden) {
+      hideTimeout = setTimeout(() => {
+        setHidden(true);
+      }, 2000);
+      return;
+    }
+    setHidden(false);
+  };
+
   useEffect(() => {
     const onScroll = () => {
       const sections: {
@@ -25,7 +36,7 @@ function NavSections({ className }: { className?: string }) {
           bottom: rect.bottom + window.scrollY,
         };
       });
-      setHidden(false);
+      handleHideNav(false);
 
       if (window.scrollY > 160) {
         setPosition("fixed top-4");
@@ -40,11 +51,7 @@ function NavSections({ className }: { className?: string }) {
         }
       });
       setSelected(section?.id || "");
-      clearTimeout(hideTimeout);
-      hideTimeout = setTimeout(() => {
-        setHidden(true);
-      }, 2000);
-      
+      handleHideNav(true);
     };
     document.addEventListener("scroll", onScroll);
     return () => {
@@ -53,7 +60,13 @@ function NavSections({ className }: { className?: string }) {
   }, []);
 
   return (
-    <div className={`flex ${position} ${className} transition-opacity ease-in-out duration-300 ${hidden ? hiddenClasses : ''}`}>
+    <div
+      className={`flex ${position} ${className} transition-opacity ease-in-out duration-300 ${
+        hidden ? hiddenClasses : ""
+      }`}
+      onMouseOver={() => handleHideNav(false)}
+      onMouseOut={() => handleHideNav(true)}
+    >
       <nav className="bg-blue-700 rounded-full flex gap-0 items-center px-6  text-sm font-semibold tracking-[.14px] leading-6 uppercase font-hero">
         <NavLinks
           selected={selected}
