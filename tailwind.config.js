@@ -1,4 +1,5 @@
 import colors from "tailwindcss/colors";
+// import fonts from "tailwindcss/fonts";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
