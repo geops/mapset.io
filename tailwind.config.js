@@ -1,8 +1,4 @@
 import colors from "tailwindcss/colors";
-// import { Inter } from 'next/font/google'
-// import fonts from "tailwindcss/fonts";
- 
-// const inter = Inter({ subsets: ['latin'] })
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
