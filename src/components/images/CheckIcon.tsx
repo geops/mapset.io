@@ -1,19 +1,31 @@
-function CheckIcon() {
+interface Props {
+  color?: string;
+}
+
+function CheckIcon(props: Props) {
+  const { color } = props;
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
+      width="29"
+      height="29"
+      viewBox="0 0 29 29"
       fill="none"
+      xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        d="M7.5 12L10.5 15L16.5 9M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
-        stroke="#079455"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+      <g clipPath="url(#clip0_10719_2106)">
+        <path
+          d="M9.24992 14.3892L12.7499 17.9864L19.7499 10.792M26.1666 14.3892C26.1666 21.0115 20.9432 26.3799 14.4999 26.3799C8.0566 26.3799 2.83325 21.0115 2.83325 14.3892C2.83325 7.76687 8.0566 2.39844 14.4999 2.39844C20.9432 2.39844 26.1666 7.76687 26.1666 14.3892Z"
+          stroke={color || "#84CC16"}
+          strokeWidth="3"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_10719_2106">
+          <rect x="0.5" width="28" height="28.7778" rx="12" fill="white" />
+        </clipPath>
+      </defs>
     </svg>
   );
 }
