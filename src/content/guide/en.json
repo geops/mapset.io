@@ -65,7 +65,7 @@
           {
             "heading": "Draw icon",
             "mapset_icon": "point",
-            "text": "**Individual icons**\n\nThis tool is used to place icons on the map. \n\nIcons can be styled using the popup when an icon is selected. Several icon categories make a wide variety of icons available to be drawn on the map. The rotation and the size of the icon can be set individually.\n\n![](/img/positioning.png)\n\n**Grouping icons**\n\nMultiple icons can be selected by holding the *Ctrl* key while click selecting an icon.\n\nThis feature is especially useful to prevent aligned icons from overlapping on different zoom levels.\n\n![](/img/geoupicons.png)\n\nOnce multiple icons are selected a popup for grouping icons will open, allowing the user to group various icons into a single one. Icon grouping can subsequently be reversed by selecting the grouped icon and clicking on the *Ungroup* button in the popup.\n\n![](/img/ungroup.png)"
+            "text": "**Individual icons**\n\nThis tool is used to place icons on the map. \n\nIcons can be styled using the popup when an icon is selected. Several icon categories make a wide variety of icons available to be drawn on the map. The rotation and the size of the icon can be set individually.\n\n![](/img/positioning.png)\n\n**Grouping icons**\n\nMultiple icons can be selected by holding the *Ctrl* key while click selecting an icon.\n\nThis feature is especially useful to prevent aligned icons from overlapping on different zoom levels.\n\n![](/img/group.png)\n\nOnce multiple icons are selected a popup for grouping icons will open, allowing the user to group various icons into a single one. Icon grouping can subsequently be reversed by selecting the grouped icon and clicking on the *Ungroup* button in the popup.\n\n![](/img/ungroup.png)"
           },
           {
             "heading": "Draw line",
@@ -75,12 +75,12 @@
           {
             "heading": "Draw area",
             "mapset_icon": "polygon",
-            "text": "This tool is used to draw polygons on the map.\n\nWhen the tool is active, there are two ways to draw polygons.\n\nIn standard mode, each click on the map creates another node. Double-clicking on the map closes the polygon and exits the drawing mode.\n\nIn freehand mode, polygons with curved outlines can be created by pressing the *Shift* key and dragging the left mouse button over the map.\n\nWhen editing an existing area, nodes can be added by dragging the polygon outline.\\\nExisting nodes can be modified by dragging them. They can be removed by first selecting and then clicking them again.\n\nThe polygon style can be customized using the popup when a polygon is selected:\n\n* *Color selectors* can be used to style the polygon outline and surface\n* Preset colors are available in the *color selectors*\n* Custom color can be applied using a *color picker* when clicking the *caret button* in the *color selector*.\n\n  The color can be set by standard pointer selection, via [Hex code](https://en.wikipedia.org/wiki/Web_colors#Hex_triplet) or via [RGBA code](https://en.wikipedia.org/wiki/RGBA_color_model). \n\n  The opacity of the line is defined by the 'A' value, between 0 and 100.\n\n  ![](/img/customcolor.png)\n* The outline width and type can be set using predefined options\n\n  ![](/img/outlinepoly.png)\n* A selection of fill patterns can be applied to the polygon surface area\n* The transparency of the polygon surface area can be set using a *slider*\n\n  ![](/img/polytransparency.png)"
+            "text": "Under the Draw areas menu, there are different options: On the one hand, a polygon can be drawn, on the other hand, fixed shapes (circle, square, triangle).\n\n  ![](/img/shapes_menu.png)\n <b>Draw polygons</b> \n In the standard mode, each click on the map creates another corner point. By double-clicking on the map, the polygon is closed and the drawing mode is exited.\n In freehand mode, polygons with curved outlines can be created by pressing the _Shift_ key and dragging with the left mouse button over the map.\n When editing an existing area, corner points can be added by dragging the polygon contour. Existing corner points can be changed by dragging. By clicking on a selected node, the node can be deleted. \n\n <b>Draw shapes</b> \n By clicking on the map and moving the mouse (without clicking), the shape is created. The shape can be stretched and rotated as desired. Another click on the map places the shape at the chosen location. \n\n For all area types: Polygons and shapes can be changed in terms of size, rotation, and placement after creation. See [Feature size, position and rotation](https://mapset.io/en/guide#feature-size-position-rotation). \n\nThe area style can be adjusted using the popup when a polygon is selected:\n\n* The *Color picker* can be used to style the outline and fill of the polygon\n* Predefined colors are available in the *Color picker*. \n* Custom colors can be applied using a *Color picker* when clicking on the *arrow button* in the *Color picker*. \n\n  The color can be defined by default via [Hex code](https://en.wikipedia.org/wiki/Web_colors#Hex_triplet) or via [RGBA code](https://en.wikipedia.org/wiki/RGBA_color_model). \n\n  The opacity of the line is defined by the alpha value (*A*) between 0 and 100.\n\n  ![](/img/customcolor.png)\n* The outline width and outline type can be set with predefined options\n\n  ![](/img/outlinepoly.png)\n* The area can be filled with patterns.\n* The transparency can be set with a *slider*.\n\n  ![](/img/polytransparency.png)"
           },
           {
             "heading": "Draw label",
             "mapset_icon": "text",
-            "text": "This tool is used to place text labels on the map.\n\nThe text label is entered in a text field and can be multi-lined if required.\n\nThe label style can be customized using the popup when a label is selected:\n\n* By pressing on the *B* button the font can be set to bold\n\n  ![](/img/boldbutton.png)\n* The font size can be set to one of the predefined options\n\n  ![](/img/textsize.png)\n* By default the text alignment is centered, but can be set to align left or right\n\n  ![](/img/textalign.png)\n* The text and background color can be set using the predefined colors in the *color selector* or using the *custom color widget*.\n\n  The color can be set by standard pointer selection, or via [Hex code](https://en.wikipedia.org/wiki/Web_colors#Hex_triplet) or [RGBA code](https://en.wikipedia.org/wiki/RGBA_color_model).\n\n  The opacity of the line is defined by the 'A' value, between 0 and 100.\n* The text can be rotated using a degree input, either by moving the *slider* thumb or by entering a rotation value in the number input field (0° - 360°)\n\n  ![](/img/textrotation.png)"
+            "text": "This tool is used to place text labels on the map.\n\nThe text label is entered in a text field and can be multi-lined if required.\n\nThe label style can be customized using the popup when a label is selected:\n\n* By pressing on the *B* button the font can be set to bold\n\n  ![](/img/boldbutton.png)\n* The font size can be set to one of the predefined options\n\n  ![](/img/textsize.png)\n* By default the text alignment is centered, but can be set to align left or right\n\n  ![](/img/textalign.png)\n* The text and background color can be set using the predefined colors in the *color selector* or using the *custom color widget*.\n\n  The color can be set by standard pointer selection, or via [Hex code](https://en.wikipedia.org/wiki/Web_colors#Hex_triplet) or [RGBA code](https://en.wikipedia.org/wiki/RGBA_color_model).\n\n  The opacity of the line is defined by the 'A' value, between 0 and 100."
           },
           {
             "heading": "Insert picture",
@@ -96,6 +96,11 @@
             "mapset_icon": "route"
           },
           {
+            "heading": "Feature size, position and rotation",
+            "id": "feature-size-position-rotation",
+            "text": "The position and rotation of all features are adjusted directly in the map.\n\nWhen selecting features, a round handle appears below it, which can be used to change the rotation by dragging.\n\n  ![](/img/rotate.png)\nIf an exact degree of rotation is needed, this can be entered in the editing window of the respective feature.\n\nFor selected line and area features, a red frame with handles at the corners, edges and in the middle appears. Features can be enlarged and reduced by dragging the handles at the corners and edges of the frame. Features are moved by dragging the middle.\n\n  ![](/img/resize.png)\nThe size of icons, images and texts can be adjusted in the popup."
+          },
+          {
             "text": "The range slider for the Zoom-Limits can be used to limit a feature's visibility to certain zoom levels. This allows the user to adapt plan content according to the current zoom level.\n\n![Zoom limits](/img/zoom_limits.png)\n\nThe white slider thumbs can be used to adjust the zoom range at which the feature is visible. The black dot on the slider shows the current zoom. Clicking the *Reset*-Button will remove all zoom limitations.\n\nA button for activation of the *Inspect Mode* among the map control buttons enables the user to keep track of all the hidden features. *Inspect Mode* reveals all the features regardless of their current visibility.\n\n![](/img/inspect_mode.png)\n\nClicking on a currently hidden feature while *Inspect Mode* is active will zoom to the feature's visible zoom range and select it to be further edited.",
             "heading": "Limit to zoom levels"
           },
@@ -105,8 +110,13 @@
           },
           {
             "heading": "Undo/Redo",
-            "text": "Actions on the map are saved momentarily in the app history. The user can use it to undo/redo actions.\n\nChanges to the plan can be undone by pressing *Ctrl* + *z*.\n\nReversed changes can be reapplied by pressing *Ctrl* + *y* or *Ctrl* + S*hift* + *z.*",
+            "text": "Actions on the map are saved momentarily in the app history. The user can use it to undo/redo actions.\n\nChanges to the plan can be undone by pressing *ctrl + z*.\n\nReversed changes can be reapplied by pressing *ctrl + y* or *ctrl + Shift + z*.",
             "mapset_icon": ""
+          },
+          {
+            "heading": "Copy & Paste",
+            "text": "In mapset, drawn features can be copied and pasted.\n\nWith *ctrl + c* (copy), with *ctrl + x* (copy and cut) and *ctrl + v* (paste) you can copy and paste selected features. Copied and cut features are inserted in the center of the current map extent and can then be further edited.",
+            "login_restricted": false
           },
           {
             "heading": "Map Rotation",
@@ -175,7 +185,12 @@
           {
             "text": "The plans can be integrated directly into a template via the export dialogue. This eliminates the need to subsequently insert jpg or png plan images into a layout in another programme.\n\nThe templates must be designed in advance and programmed by geOps. They are designed according to individual requirements and the respective corporate design. The templates are then available for selection in the export dialogue.\n\nBy default, the complete map view is exported in the corresponding aspect ratio of the template. Alternatively, a section of the map can be defined for export, again automatically in the correct aspect ratio for the template.\n\nBy default, the name of the map is used as the title. This can be customised.\n\nA description can be added and formatted if required. To do this, select the text and choose the formatting function shown. Alternatively, you can also use a formatted text from a word processing programme.",
             "heading": "PDF Template",
-            "loginRestricted": true
+            "login_restricted": true
+          },
+          {
+            "text": "In the *Export* menu, the drawn features from the mapset plan can also be exported as [KML format](https://www.ogc.org/standard/kml/). KML files can be imported and displayed in certain services (e.g. [map.geo.admin.ch](https://map.geo.admin.ch/?lang=en)).",
+            "heading": "KML",
+            "login_restricted": true
           }
         ]
       },
