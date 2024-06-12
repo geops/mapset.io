@@ -44,7 +44,7 @@ const renderScrollerId = (label: string) => {
 
 const domain = process.env.NEXT_PUBLIC_DOMAIN;
 
-type NavFeature = { label: string };
+type NavFeature = { label: string, id?: string, sub_features?: NavFeature[]};
 type NavTitlesProps = {
   titles: NavFeature[];
   hasBullets: boolean;
@@ -207,7 +207,6 @@ export const Guide = () => {
       };
     });
   }, [guideContent]);
-  
 
   const handleScroll = () => {
     const ids = titles.map((item) => [item.label, ...item.sub_features.map((f) => f.id || f.label)]).flat();
