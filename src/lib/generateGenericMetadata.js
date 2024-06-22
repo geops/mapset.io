@@ -89,15 +89,7 @@ export async function generateGenericMetadata(props) {
       images: image,
       locale: language,
       type: "website",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: titl,
-      description: descr,
-      site: "@mapset" + domain,
-      creator: "@mapset" + domain,
-      images: [image],
-    },
+    }
   };
   return md;
 }
