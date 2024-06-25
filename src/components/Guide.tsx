@@ -44,7 +44,7 @@ const renderScrollerId = (label: string) => {
 
 const domain = process.env.NEXT_PUBLIC_DOMAIN;
 
-type NavFeature = { label: string, id?: string, sub_features?: NavFeature[]};
+type NavFeature = { label: string; id?: string; sub_features?: NavFeature[] };
 type NavTitlesProps = {
   titles: NavFeature[];
   hasBullets: boolean;
@@ -80,10 +80,10 @@ const NavTitles = ({
           {(feature.sub_features || []).map((feat) => {
             return (
               <Link
-                href={`#${renderId(feat.id ||feat.label)}`}
-                id={renderScrollerId(feat.id ||feat.label)}
-                key={renderScrollerId(feat.id ||feat.label)}
-                title={feat.id ||feat.label}
+                href={`#${renderId(feat.id || feat.label)}`}
+                id={renderScrollerId(feat.id || feat.label)}
+                key={renderScrollerId(feat.id || feat.label)}
+                title={feat.id || feat.label}
                 className="flex items-center gap-2 py-2 pl-4 hover:text-blue-600 scroll-mt-[90px] mx-8"
                 onClick={onClick}
               >
@@ -92,7 +92,8 @@ const NavTitles = ({
                   {feat.label}
                 </span>
               </Link>
-          )})}
+            );
+          })}
         </div>
         {hasDividers ? <hr /> : null}
       </div>
@@ -197,7 +198,10 @@ export const Guide = () => {
       let additionalHeadings = [];
       if (topic.content) {
         additionalHeadings = topic.content
-          .map((subfeature) => ({ label: subfeature.heading || "", id: subfeature.id}))
+          .map((subfeature) => ({
+            label: subfeature.heading || "",
+            id: subfeature.id,
+          }))
           .filter((f) => f?.label !== "");
       }
       return {
@@ -209,7 +213,12 @@ export const Guide = () => {
   }, [guideContent]);
 
   const handleScroll = () => {
-    const ids = titles.map((item) => [item.label, ...item.sub_features.map((f) => f.id || f.label)]).flat();
+    const ids = titles
+      .map((item) => [
+        item.label,
+        ...item.sub_features.map((f) => f.id || f.label),
+      ])
+      .flat();
     const distances = ids.map((label) => {
       const distance = document
         .getElementById(renderId(label))

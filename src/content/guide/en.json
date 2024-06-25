@@ -2,9 +2,8 @@
   "guide": {
     "contact": {
       "header": "Stay up to date!",
-      "description": "We will inform you regularly about the latest mapset updates in our newsletter and on Twitter.",
-      "subscribe_newsletter": "Subscribe to newsletter",
-      "visit_our_twitter": "Visit us on twitter"
+      "description": "We will inform you regularly about the latest mapset updates in our newsletter.",
+      "subscribe_newsletter": "Subscribe to newsletter"
     },
     "more_questions": "Any questions?",
     "link_user_manual": "User manual",

@@ -2,9 +2,8 @@
   "guide": {
     "contact": {
       "header": "Bleiben Sie auf dem Laufenden!",
-      "description": "Wir informieren Sie regelmässig in unserem Newsletter und auf Twitter über die neusten Updates von mapset.",
-      "subscribe_newsletter": "Newsletter abonnieren",
-      "visit_our_twitter": "Besuchen Sie uns auf Twitter"
+      "description": "Wir informieren Sie regelmässig in unserem Newsletter über die neusten Updates von mapset.",
+      "subscribe_newsletter": "Newsletter abonnieren"
     },
     "more_questions": "Noch Fragen ?",
     "links_ch": "Für Benutzer aus der Schweiz steht eine eigene Instanz zur Verfügung:",
@@ -12,7 +11,6 @@
     "cd_restricted": "Der Zugang zu dieser Funktion hängt von User-Rechten und Corporate-Design-Einstellungen ab.",
     "link_user_manual": "User Guide",
     "login_restricted": "Sie müssen angemeldet sein, um diese Funktion zu nutzen.",
-    "visit_our_twitter": "Besuchen Sie uns auf Twitter",
     "metadata": {
       "description": "",
       "title": "User Guide | mapset"
