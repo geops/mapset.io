@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.4.0",
-    "@sentry/nextjs": "^7.61.1",
+    "@sentry/nextjs": "^7.77.0",
     "autoprefixer": "10.4.14",
     "lodash": "4.17.21",
     "next": "13.4.12",
@@ -34,7 +34,7 @@
     "jest": "^29.6.2",
     "lint-staged": "^13.2.3",
     "next-sitemap": "^4.1.8",
-    "postcss": "8.4.27",
+    "postcss": "8.4.31",
     "prettier": "^3.0.1",
     "sort-json": "^2.0.1",
     "start-server-and-test": "^2.0.0",
