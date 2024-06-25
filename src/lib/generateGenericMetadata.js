@@ -89,7 +89,7 @@ export async function generateGenericMetadata(props) {
       images: image,
       locale: language,
       type: "website",
-    }
+    },
   };
   return md;
 }

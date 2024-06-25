@@ -1,6 +1,5 @@
 import React from "react";
 import { useI18n } from "./I18n";
-import ExternalLinkIcon from "./images/ExternalLinkIcon";
 import ButtonWhite from "./ui/ButtonWhite";
 import H2 from "./ui/H2";
 import useIsMobile from "@/utils/hooks/useIsMobile";
