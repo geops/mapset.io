@@ -71,7 +71,7 @@
         "title": "Automation"
       },
       {
-        "content": "With the optional Share&Print module, you not only get the option of creating plans as PDFs according to your print templates. You can also use it to collaborate on plans within your company. When you save a plan and share it in your group, your colleagues can call up and edit the plan under the same name.",
+        "content": "With the optional Share AddOn, you not only get the option of creating plans as PDFs according to your print templates. You can also use it to collaborate on plans within your company. When you save a plan and share it in your group, your colleagues can call up and edit the plan under the same name.",
         "image": "/img/feature-8.webp",
         "image_height": 500,
         "image_width": 648,
@@ -82,7 +82,7 @@
     "title": "Bringing clarity and style to public transport plans"
   },
   "home": {
-    "get_started": "Get started",
+    "get_started": "Get started now",
     "main": {
       "content": "With mapset you can create situation plans for public transport quickly and easily.",
       "title": "Do it yourself plans"
@@ -107,8 +107,14 @@
     "io": "https://geops.sh/40003911245CB34786"
   },
   "pricing": {
-    "addon": "AddOn Share&Print",
-    "content": "Here you will find the overview of the annual costs and the one-off set-up fee of mapset for transport companies.<br/><br/>The graduation by stops is not applicable for your company? Contact us for an individual offer. Even if you are interested in further services, we will be happy to create an individual package offer for you.",
+    "add_on_coop": "Collaborative editing of plans",
+    "add_on_coop-description": "If you save plans in your plan list, you can share them with other people in your group for further editing. This means that all members of the group always have access to the latest version of the plan.",
+    "add_on_defaultplans": "Creating default plans",
+    "add_on_defaultplans-description": "By adding parameters such as operator and a stop ID to a URL, stop plans can be called up automatically - interactively for integration in your digital channels or as a PDF in your layout. Validity can also be defined for individual plans, e.g. for temporary drawings during a construction project.",
+    "annual_billing": "Annual billing",
+    "annual_promo": "save up to<br>15%",
+    "basemap": "Basemap",
+    "content": "mapset has the right plan for transport companies of any size.",
     "currency": {
       "ch": "CHF",
       "io": "€"
@@ -116,86 +122,89 @@
     "details": "Details ",
     "details_one": "Prices refer to the total number of stops or stations of a company, regardless of the number of stations actually served by mapset.",
     "details_two": {
-      "ch": "In addition to the current subscription fees, set-up fees of CHF 490.- are charged at the start of the subscription. After a subscription interruption, the set-up fee is again due when the subscription is renewed. For carriers with up to 10 stops, only the set-up fee is charged.<br/><br/>Within the scope of the subscriptions and the set-up fees, the configuration of mapset users is included, insofar as the users can be identified via a uniform mail domain (e.g. maria.bernasconi@ktuxy.ch and max.muster@ktuxy.ch). For the configuration of individual users who are not identifiable via a domain, CHF 90 will be charged per user.<br/><br/>For Swiss companies, the prices are exclusive of VAT of 7.7 %.",
-      "io": "In addition to the current subscription fees, set-up fees of € 490.- are charged at the start of the subscription. After a subscription interruption, the set-up fee is again due when the subscription is renewed. For carriers with up to 10 stops, only the set-up fee is charged.<br/><br/>Within the scope of the subscriptions and the set-up fees, the configuration of mapset users is included, insofar as the users can be identified via a uniform mail domain (e.g. maria.bernasconi@ktuxy.ch and max.muster@ktuxy.ch). For the configuration of individual users who are not identifiable via a domain, € 90 will be charged per user.<br/><br/>For Swiss companies, the prices are exclusive of VAT of 7.7 %."
+      "ch": "In addition to the current subscription fees, set-up fees of CHF 490.- are charged at the start of the subscription. After a subscription interruption, the set-up fee is again due when the subscription is renewed. For carriers with up to 10 stops, only the set-up fee is charged.<br/><br/>Within the scope of the subscriptions and the set-up fees, the configuration of mapset users is included, insofar as the users can be identified via a uniform mail domain (e.g. maria.bernasconi@ktuxy.ch and max.muster@ktuxy.ch). For the configuration of individual users who are not identifiable via a domain, CHF 90 will be charged per user.<br/><br/>For Swiss companies, the prices are exclusive of VAT of 8.1 %.",
+      "io": "In addition to the current subscription fees, set-up fees of € 490.- are charged at the start of the subscription. After a subscription interruption, the set-up fee is again due when the subscription is renewed. For carriers with up to 10 stops, only the set-up fee is charged.<br/><br/>Within the scope of the subscriptions and the set-up fees, the configuration of mapset users is included, insofar as the users can be identified via a uniform mail domain (e.g. maria.bernasconi@ktuxy.ch and max.muster@ktuxy.ch). For the configuration of individual users who are not identifiable via a domain, € 90 will be charged per user.<br/><br/>For Swiss companies, the prices are exclusive of VAT of 8.1 %."
     },
-    "mapset_features": "All mapset features",
+    "embed": "Dynamic embedding",
+    "monthly_billing": "Monthly billing",
+    "one_time_payment": "one-time setup fee",
     "onetime": "One-time setup fee",
-    "price": "Price",
+    "per_month": "per month",
+    "per_year": "per year",
+    "plan_export": "Plan export",
     "products": [
       {
+        "basemap": "always up-to-date and focussed on public transport",
+        "bus_tram_stops": "up to 10 bus and tram stops",
+        "embed": "in a variety of digital channels",
+        "plan_export": "as an image, integrated into a layout or as KML",
         "price": {
-          "ch": "0",
-          "io": "0"
+          "month": 0,
+          "year": 0
         },
-        "price_addon": {
-          "ch": "0",
-          "io": "0"
+        "price_add_on": {
+          "month": 0,
+          "year": 0
         },
-        "price_onetime": {
-          "ch": "490",
-          "io": "490"
-        },
-        "railway_stations": "-",
-        "stops": "1 - 10",
-        "tier": "FREE"
+        "tier": "FREE",
+        "tools": "for all processing steps"
       },
       {
+        "basemap": "always up-to-date and focussed on public transport",
+        "bus_tram_stops": "up to 200 bus and tram stops",
+        "embed": "in a variety of digital channels",
+        "plan_export": "as an image, integrated into a layout or as KML",
         "price": {
-          "ch": "2700",
-          "io": "2.700"
+          "month": 250,
+          "year": 2700
         },
-        "price_addon": {
-          "ch": "1100",
-          "io": "1.100"
+        "price_add_on": {
+          "month": 75,
+          "year": 800
         },
-        "price_onetime": {
-          "ch": "490",
-          "io": "490"
-        },
-        "railway_stations": "1 - 10",
-        "stops": "11 - 200",
-        "tier": "MINI"
+        "railway_stops": "up to 10 train stops",
+        "tier": "MINI",
+        "tools": "for all processing steps"
       },
       {
+        "basemap": "always up-to-date and focussed on public transport",
+        "bus_tram_stops": "up to 500 bus and tram stops",
+        "embed": "in a variety of digital channels",
+        "plan_export": "as an image, integrated into a layout or as KML",
         "price": {
-          "ch": "5900",
-          "io": "5.900"
+          "month": 550,
+          "year": 5900
         },
-        "price_addon": {
-          "ch": "2200",
-          "io": "2.200"
+        "price_add_on": {
+          "month": 115,
+          "year": 1200
         },
-        "price_onetime": {
-          "ch": "490",
-          "io": "490"
-        },
-        "railway_stations": "11 - 100",
-        "stops": "201 - 500",
-        "tier": "MIDI"
+        "railway_stops": "up to 100 train stops",
+        "tier": "MIDI",
+        "tools": "for all processing steps"
       },
       {
+        "basemap": "always up-to-date and focussed on public transport",
+        "bus_tram_stops": "500 bus and tram stops or more",
+        "embed": "in a variety of digital channels",
+        "plan_export": "as an image, integrated into a layout or as KML",
         "price": {
-          "ch": "8400",
-          "io": "8.400"
+          "month": 800,
+          "year": 8400
         },
-        "price_addon": {
-          "ch": "2800",
-          "io": "2.800"
+        "price_add_on": {
+          "month": 150,
+          "year": 1600
         },
-        "price_onetime": {
-          "ch": "490",
-          "io": "490"
-        },
-        "railway_stations": "101 - 200",
-        "stops": "501+",
-        "tier": "MAXI"
+        "railway_stops": "up to 200 train stops",
+        "tier": "MAXI",
+        "tools": "for all processing steps"
       }
     ],
-    "railway_stations": "Railway Stops",
+    "railway_stops_unavailable": "no railway stops",
     "section": "pricing",
-    "stops": "Other Stops",
-    "title": "The right subscription for every company",
+    "title": "Simple, transparent pricing",
+    "tools": "Drawing tools",
     "year": "year"
   },
   "privacy_link": "https://geops.com/en/privacy",

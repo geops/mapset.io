@@ -26,7 +26,7 @@ const translations = {
   de: transDE,
   en: transEN,
   fr: transFR,
-}
+};
 
 const renderId = (label: string) => {
   if (label) {
@@ -44,7 +44,7 @@ const renderScrollerId = (label: string) => {
 
 const domain = process.env.NEXT_PUBLIC_DOMAIN;
 
-type NavFeature = { label: string };
+type NavFeature = { label: string; id?: string; sub_features?: NavFeature[] };
 type NavTitlesProps = {
   titles: NavFeature[];
   hasBullets: boolean;
@@ -63,10 +63,10 @@ const NavTitles = ({
   };
   return titles.map((feature) => {
     return (
-      <div key={renderScrollerId(feature.label)}>
+      <div key={renderScrollerId(feature.id || feature.label)}>
         <Link
-          href={`#${renderId(feature.label)}`}
-          id={renderScrollerId(feature.label)}
+          href={`#${renderId(feature.id || feature.label)}`}
+          id={renderScrollerId(feature.id || feature.label)}
           title={feature.label}
           className="flex items-center gap-2 py-2 hover:text-blue-600 scroll-mt-[90px] mx-4 "
           onClick={onClick}
@@ -77,21 +77,23 @@ const NavTitles = ({
           </span>
         </Link>
         <div className="guide-scroller-sub">
-          {(feature.sub_features || []).map((feat) => (
-            <Link
-              href={`#${renderId(feat)}`}
-              id={renderScrollerId(feat)}
-              key={renderScrollerId(feat)}
-              title={feat}
-              className="flex items-center gap-2 py-2 pl-4 hover:text-blue-600 scroll-mt-[90px] mx-8"
-              onClick={onClick}
-            >
-              {hasBullets ? <SquareIcon /> : null}
-              <span className="text-ellipsis overflow-hidden pointer-events-none">
-                {feat}
-              </span>
-            </Link>
-          ))}
+          {(feature.sub_features || []).map((feat) => {
+            return (
+              <Link
+                href={`#${renderId(feat.id || feat.label)}`}
+                id={renderScrollerId(feat.id || feat.label)}
+                key={renderScrollerId(feat.id || feat.label)}
+                title={feat.id || feat.label}
+                className="flex items-center gap-2 py-2 pl-4 hover:text-blue-600 scroll-mt-[90px] mx-8"
+                onClick={onClick}
+              >
+                {hasBullets ? <SquareIcon /> : null}
+                <span className="text-ellipsis overflow-hidden pointer-events-none">
+                  {feat.label}
+                </span>
+              </Link>
+            );
+          })}
         </div>
         {hasDividers ? <hr /> : null}
       </div>
@@ -182,8 +184,11 @@ const NavDropDown = ({ titles = [] }: NavDropDownProps) => {
 
 export const Guide = () => {
   const { t, language } = useI18n();
-  const isMobile = useIsMobile();  
-  const guideContent = useMemo(() => translations[language]?.guide.features, [language]);
+  const isMobile = useIsMobile();
+  const guideContent = useMemo(
+    () => translations[language]?.guide.features,
+    [language],
+  );
 
   const titles = useMemo(() => {
     if (!guideContent) {
@@ -193,10 +198,14 @@ export const Guide = () => {
       let additionalHeadings = [];
       if (topic.content) {
         additionalHeadings = topic.content
-          .map((subfeature) => subfeature.heading)
-          .filter((f) => f && f !== "");
+          .map((subfeature) => ({
+            label: subfeature.heading || "",
+            id: subfeature.id,
+          }))
+          .filter((f) => f?.label !== "");
       }
       return {
+        id: topic.id,
         label: topic.label,
         sub_features: additionalHeadings,
       };
@@ -204,7 +213,12 @@ export const Guide = () => {
   }, [guideContent]);
 
   const handleScroll = () => {
-    const ids = titles.map((item) => [item.label, ...item.sub_features]).flat();
+    const ids = titles
+      .map((item) => [
+        item.label,
+        ...item.sub_features.map((f) => f.id || f.label),
+      ])
+      .flat();
     const distances = ids.map((label) => {
       const distance = document
         .getElementById(renderId(label))
@@ -304,8 +318,8 @@ export const Guide = () => {
                   const text = md.render(topic.label);
                   return (
                     <div
-                      id={renderId(topic.label)}
-                      key={renderId(topic.label)}
+                      id={renderId(topic.id || topic.label)}
+                      key={renderId(topic.id || topic.label)}
                       className="scroll-mt-[90px]"
                     >
                       <GuideH4 icon={topic.mapset_icon} text={text} />
@@ -313,8 +327,8 @@ export const Guide = () => {
                         const text = md.render(f.heading);
                         return (
                           <div
-                            key={renderId(f.heading)}
-                            id={renderId(f.heading)}
+                            key={renderId(f.id || f.heading)}
+                            id={renderId(f.id || f.heading)}
                             className="px-12 py-6 scroll-mt-[90px]"
                           >
                             <GuideH4 icon={f.mapset_icon} text={text} />

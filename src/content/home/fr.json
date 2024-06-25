@@ -71,7 +71,7 @@
         "title": "Automatisation"
       },
       {
-        "content": "Avec le module optionnel Share&Print, vous n'avez pas seulement la possibilité de créer des plans au format PDF d'après vos modèles d'impression. Il vous permet également de travailler ensemble sur des plans au sein de votre entreprise. Lorsque vous enregistrez un plan et que vous le partagez dans votre groupe, vos collègues peuvent y accéder et le modifier sous le même nom.",
+        "content": "Avec le module optionnel Share AddOn, vous n'avez pas seulement la possibilité de créer des plans au format PDF d'après vos modèles d'impression. Il vous permet également de travailler ensemble sur des plans au sein de votre entreprise. Lorsque vous enregistrez un plan et que vous le partagez dans votre groupe, vos collègues peuvent y accéder et le modifier sous le même nom.",
         "image": "/img/feature-8.webp",
         "image_height": 500,
         "image_width": 648,
@@ -82,7 +82,7 @@
     "title": "Apporter de la clarté et du style dans les plans de transport public"
   },
   "home": {
-    "get_started": "Démarrer",
+    "get_started": "Démarrer maintenant",
     "main": {
       "content": "Avec mapset, vous créez rapidement et facilement des plans de situation pour les transports publics.",
       "title": "DES PLANS À FAIRE SOI-MÊME"
@@ -107,8 +107,14 @@
     "io": "https://geops.sh/40003911245CB34786"
   },
   "pricing": {
-    "addon": "AddOn Share&Print",
-    "content": "Vous trouverez ici un aperçu des coûts annuels et des frais d'installation uniques de mapset pour les entreprises de transport.<br/><br/>L'échelonnement en fonction des arrêts ne s'applique pas à votre entreprise ? Contactez-nous pour une offre personnalisée. Si vous êtes également intéressé par d'autres prestations, nous vous soumettrons volontiers une offre groupée personnalisée.",
+    "add_on_coop": "Edition collaborative des plans",
+    "add_on_coop-description": "Si vous enregistrez des plans dans votre liste de plans, vous pouvez les partager avec d'autres membres de votre groupe pour qu'ils les modifient. Ainsi, tous les membres du groupe ont toujours accès à la dernière version du plan.",
+    "add_on_defaultplans": "Création de plans standard",
+    "add_on_defaultplans-description": "En ajoutant des paramètres tels que l'opérateur et un ID d'arrêt à une URL, les plans d'arrêts peuvent être appelés automatiquement - de manière interactive pour l'intégration dans vos canaux numériques ou sous forme de PDF dans votre mise en page. La validité peut également être définie pour des plans individuels, par exemple pour des dessins temporaires pendant un projet de construction.",
+    "annual_billing": "Facturation annuelle",
+    "annual_promo": "économiser<br>jusqu à 15 %",
+    "basemap": "Carte de base",
+    "content": "mapset propose un plan adapté aux entreprises de transport de toute taille.",
     "currency": {
       "ch": "CHF",
       "io": "€"
@@ -116,86 +122,89 @@
     "details": "Details ",
     "details_one": "Les prix se réfèrent au nombre total d'arrêts ou de gares d'une entreprise, indépendamment du nombre de stations effectivement traitées avec mapset.",
     "details_two": {
-      "ch": "Des frais d'installation de 490 CHF s'ajoutent aux frais d'abonnement courants au début de l'abonnement. Après une interruption de l'abonnement, les frais d'installation sont à nouveau dus lors du renouvellement de l'abonnement. Pour les entreprises de transport ayant jusqu'à 10 arrêts, seuls les frais d'installation sont facturés.<br/><br/>Dans le cadre des abonnements et des frais d'installation, la configuration des utilisateurs de mapset est incluse, dans la mesure où les utilisateurs peuvent être identifiés par un domaine de messagerie unique (par ex. maria.bernasconi@ktuxy.ch et max.muster@ktuxy.ch). La configuration d'utilisateurs individuels qui ne sont pas identifiables par un domaine est facturée 90 CHF par utilisateur.<br/><br/>Pour les entreprises suisses, les prix s'entendent hors TVA de 7,7 %.",
-      "io": "Des frais d'installation de 490 € s'ajoutent aux frais d'abonnement courants au début de l'abonnement. Après une interruption de l'abonnement, les frais d'installation sont à nouveau dus lors du renouvellement de l'abonnement. Pour les entreprises de transport ayant jusqu'à 10 arrêts, seuls les frais d'installation sont facturés.<br/><br/>Dans le cadre des abonnements et des frais d'installation, la configuration des utilisateurs de mapset est incluse, dans la mesure où les utilisateurs peuvent être identifiés par un domaine de messagerie unique (par ex. maria.bernasconi@ktuxy.ch et max.muster@ktuxy.ch). La configuration d'utilisateurs individuels qui ne sont pas identifiables par un domaine est facturée 90 € par utilisateur.<br/><br/>Pour les entreprises suisses, les prix s'entendent hors TVA de 7,7 %."
+      "ch": "Des frais d'installation de 490 CHF s'ajoutent aux frais d'abonnement courants au début de l'abonnement. Après une interruption de l'abonnement, les frais d'installation sont à nouveau dus lors du renouvellement de l'abonnement. Pour les entreprises de transport ayant jusqu'à 10 arrêts, seuls les frais d'installation sont facturés.<br/><br/>Dans le cadre des abonnements et des frais d'installation, la configuration des utilisateurs de mapset est incluse, dans la mesure où les utilisateurs peuvent être identifiés par un domaine de messagerie unique (par ex. maria.bernasconi@ktuxy.ch et max.muster@ktuxy.ch). La configuration d'utilisateurs individuels qui ne sont pas identifiables par un domaine est facturée 90 CHF par utilisateur.<br/><br/>Pour les entreprises suisses, les prix s'entendent hors TVA de 8,1 %.",
+      "io": "Des frais d'installation de 490 € s'ajoutent aux frais d'abonnement courants au début de l'abonnement. Après une interruption de l'abonnement, les frais d'installation sont à nouveau dus lors du renouvellement de l'abonnement. Pour les entreprises de transport ayant jusqu'à 10 arrêts, seuls les frais d'installation sont facturés.<br/><br/>Dans le cadre des abonnements et des frais d'installation, la configuration des utilisateurs de mapset est incluse, dans la mesure où les utilisateurs peuvent être identifiés par un domaine de messagerie unique (par ex. maria.bernasconi@ktuxy.ch et max.muster@ktuxy.ch). La configuration d'utilisateurs individuels qui ne sont pas identifiables par un domaine est facturée 90 € par utilisateur.<br/><br/>Pour les entreprises suisses, les prix s'entendent hors TVA de 8,1 %."
     },
-    "mapset_features": "Toutes les fonctions mapset",
+    "embed": "Intégration dynamique",
+    "monthly_billing": "Facturation mensuelle",
+    "one_time_payment": "frais d'installation uniques",
     "onetime": "Frais d'installation uniques",
-    "price": "Tarif",
+    "per_month": "par mois",
+    "per_year": "par an",
+    "plan_export": "Exportation de plans",
     "products": [
       {
+        "basemap": "toujours à jour et axé sur les transports publics",
+        "bus_tram_stops": "jusqu'à 10 arrêts de bus et de tramway",
+        "embed": "dans une variété de canaux numériques",
+        "plan_export": "sous forme d'image, intégrée dans une mise en page ou sous forme de KML",
         "price": {
-          "ch": "0",
-          "io": "0"
+          "month": 0,
+          "year": 0
         },
-        "price_addon": {
-          "ch": "0",
-          "io": "0"
+        "price_add_on": {
+          "month": 0,
+          "year": 0
         },
-        "price_onetime": {
-          "ch": "490",
-          "io": "490"
-        },
-        "railway_stations": "-",
-        "stops": "1 - 10",
-        "tier": "FREE"
+        "tier": "FREE",
+        "tools": "pour toutes les étapes de traitement"
       },
       {
+        "basemap": "toujours à jour et axé sur les transports publics",
+        "bus_tram_stops": "jusqu'à 200 arrêts de bus et de tramway",
+        "embed": "dans une variété de canaux numériques",
+        "plan_export": "sous forme d'image, intégrée dans une mise en page ou sous forme de KML",
         "price": {
-          "ch": "2700",
-          "io": "2.700"
+          "month": 250,
+          "year": 2700
         },
-        "price_addon": {
-          "ch": "1100",
-          "io": "1.100"
+        "price_add_on": {
+          "month": 75,
+          "year": 800
         },
-        "price_onetime": {
-          "ch": "490",
-          "io": "490"
-        },
-        "railway_stations": "1 - 10",
-        "stops": "11 - 200",
-        "tier": "MINI"
+        "railway_stops": "jusqu'à 10 arrêts de train",
+        "tier": "MINI",
+        "tools": "pour toutes les étapes de traitement"
       },
       {
+        "basemap": "toujours à jour et axé sur les transports publics",
+        "bus_tram_stops": "jusqu'à 500 arrêts de bus et de tramway",
+        "embed": "dans une variété de canaux numériques",
+        "plan_export": "sous forme d'image, intégrée dans une mise en page ou sous forme de KML",
         "price": {
-          "ch": "5900",
-          "io": "5.900"
+          "month": 550,
+          "year": 5900
         },
-        "price_addon": {
-          "ch": "2200",
-          "io": "2.200"
+        "price_add_on": {
+          "month": 115,
+          "year": 1200
         },
-        "price_onetime": {
-          "ch": "490",
-          "io": "490"
-        },
-        "railway_stations": "11 - 100",
-        "stops": "201 - 500",
-        "tier": "MIDI"
+        "railway_stops": "jusqu'à 100 arrêts de train",
+        "tier": "MIDI",
+        "tools": "pour toutes les étapes de traitement"
       },
       {
+        "basemap": "toujours à jour et axé sur les transports publics",
+        "bus_tram_stops": "500 arrêts de bus et de tramway ou plus",
+        "embed": "dans une variété de canaux numériques",
+        "plan_export": "sous forme d'image, intégrée dans une mise en page ou sous forme de KML",
         "price": {
-          "ch": "8400",
-          "io": "8.400"
+          "month": 800,
+          "year": 8400
         },
-        "price_addon": {
-          "ch": "2800",
-          "io": "2.800"
+        "price_add_on": {
+          "month": 150,
+          "year": 1600
         },
-        "price_onetime": {
-          "ch": "490",
-          "io": "490"
-        },
-        "railway_stations": "101 - 200",
-        "stops": "501+",
-        "tier": "MAXI"
+        "railway_stops": "jusqu'à 200 arrêts de train",
+        "tier": "MAXI",
+        "tools": "pour toutes les étapes de traitement"
       }
     ],
-    "railway_stations": "Arrêts train",
+    "railway_stops_unavailable": "pas d'arrêts ferroviaires",
     "section": "Tarifs",
-    "stops": "Autres arrêts",
-    "title": "L'abonnement adapté à chaque entreprise",
+    "title": "Une tarification simple et transparente",
+    "tools": "Outils de dessin",
     "year": "an"
   },
   "privacy_link": "https://geops.com/en/privacy",

@@ -23,7 +23,6 @@ if (
   userManager
     .signoutRedirectCallback()
     .then((user: SignoutResponse) => {
-      alert("success");
       onSuccess(user);
     })
     .catch((error) => {
