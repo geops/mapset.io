@@ -121,14 +121,9 @@
     },
     "details": "Details ",
     "details_one": "Prices refer to the total number of stops or stations of a company, regardless of the number of stations actually served by mapset.",
-    "details_two": {
-      "ch": "In addition to the current subscription fees, set-up fees of CHF 490.- are charged at the start of the subscription. After a subscription interruption, the set-up fee is again due when the subscription is renewed. For carriers with up to 10 stops, only the set-up fee is charged.<br/><br/>Within the scope of the subscriptions and the set-up fees, the configuration of mapset users is included, insofar as the users can be identified via a uniform mail domain (e.g. maria.bernasconi@ktuxy.ch and max.muster@ktuxy.ch). For the configuration of individual users who are not identifiable via a domain, CHF 90 will be charged per user.<br/><br/>For Swiss companies, the prices are exclusive of VAT of 8.1 %.",
-      "io": "In addition to the current subscription fees, set-up fees of € 490.- are charged at the start of the subscription. After a subscription interruption, the set-up fee is again due when the subscription is renewed. For carriers with up to 10 stops, only the set-up fee is charged.<br/><br/>Within the scope of the subscriptions and the set-up fees, the configuration of mapset users is included, insofar as the users can be identified via a uniform mail domain (e.g. maria.bernasconi@ktuxy.ch and max.muster@ktuxy.ch). For the configuration of individual users who are not identifiable via a domain, € 90 will be charged per user.<br/><br/>For Swiss companies, the prices are exclusive of VAT of 8.1 %."
-    },
+    "details_two": "For Swiss companies, the prices are exclusive of VAT of 8.1 %.",
     "embed": "Dynamic embedding",
     "monthly_billing": "Monthly billing",
-    "one_time_payment": "one-time setup fee",
-    "onetime": "One-time setup fee",
     "per_month": "per month",
     "per_year": "per year",
     "plan_export": "Plan export",

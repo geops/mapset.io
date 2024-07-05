@@ -210,25 +210,18 @@ function PricingSection({ products = [] }: { products: Product[] }) {
             className={`transition-rotate ${open ? "rotate-0" : "-rotate-90"}`}
           />
           {t("pricing.details")}
-          <span className="text-blue-600">*/**</span>
+          <span className="text-blue-600">*</span>
         </Button>
         <div
           hidden={!open}
           className="text-slate-500 text-sm font-normal leading-[160%]"
         >
-          <p className="grid grid-cols-[10px_auto] gap-5">
+          <p className="grid grid-cols-[10px_auto] gap-2">
             <span className="text-blue-600">* </span>
             {t("pricing.details_one")}
           </p>
           <br />
-          <p className="grid grid-cols-[10px_auto] gap-5">
-            <span className="text-blue-600">** </span>
-            <span
-              dangerouslySetInnerHTML={{
-                __html: t("pricing.details_two." + domain),
-              }}
-            ></span>
-          </p>
+          <p>{t("pricing.details_two")}</p>
         </div>
       </div>
       <ButtonBlue

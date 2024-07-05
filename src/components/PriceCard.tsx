@@ -104,9 +104,6 @@ function PriceCard(props: Props) {
           icon={!railwayStopsCount && <Cross />}
         />
       </ul>
-      <p className={`mt-auto pt-5 text-center ${fontInterGray}`}>
-        490 <Price>{t("pricing.one_time_payment")}**</Price>
-      </p>
     </td>
   );
 }
