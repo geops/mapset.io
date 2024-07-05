@@ -121,14 +121,8 @@
     },
     "details": "Details ",
     "details_one": "Les prix se réfèrent au nombre total d'arrêts ou de gares d'une entreprise, indépendamment du nombre de stations effectivement traitées avec mapset.",
-    "details_two": {
-      "ch": "Des frais d'installation de 490 CHF s'ajoutent aux frais d'abonnement courants au début de l'abonnement. Après une interruption de l'abonnement, les frais d'installation sont à nouveau dus lors du renouvellement de l'abonnement. Pour les entreprises de transport ayant jusqu'à 10 arrêts, seuls les frais d'installation sont facturés.<br/><br/>Dans le cadre des abonnements et des frais d'installation, la configuration des utilisateurs de mapset est incluse, dans la mesure où les utilisateurs peuvent être identifiés par un domaine de messagerie unique (par ex. maria.bernasconi@ktuxy.ch et max.muster@ktuxy.ch). La configuration d'utilisateurs individuels qui ne sont pas identifiables par un domaine est facturée 90 CHF par utilisateur.<br/><br/>Pour les entreprises suisses, les prix s'entendent hors TVA de 8,1 %.",
-      "io": "Des frais d'installation de 490 € s'ajoutent aux frais d'abonnement courants au début de l'abonnement. Après une interruption de l'abonnement, les frais d'installation sont à nouveau dus lors du renouvellement de l'abonnement. Pour les entreprises de transport ayant jusqu'à 10 arrêts, seuls les frais d'installation sont facturés.<br/><br/>Dans le cadre des abonnements et des frais d'installation, la configuration des utilisateurs de mapset est incluse, dans la mesure où les utilisateurs peuvent être identifiés par un domaine de messagerie unique (par ex. maria.bernasconi@ktuxy.ch et max.muster@ktuxy.ch). La configuration d'utilisateurs individuels qui ne sont pas identifiables par un domaine est facturée 90 € par utilisateur.<br/><br/>Pour les entreprises suisses, les prix s'entendent hors TVA de 8,1 %."
-    },
     "embed": "Intégration dynamique",
     "monthly_billing": "Facturation mensuelle",
-    "one_time_payment": "frais d'installation uniques",
-    "onetime": "Frais d'installation uniques",
     "per_month": "par mois",
     "per_year": "par an",
     "plan_export": "Exportation de plans",
