@@ -220,6 +220,8 @@ function PricingSection({ products = [] }: { products: Product[] }) {
             <span className="text-blue-600">* </span>
             {t("pricing.details_one")}
           </p>
+          <br />
+          <p>{t("pricing.details_two")}</p>
         </div>
       </div>
       <ButtonBlue

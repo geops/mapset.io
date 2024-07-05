@@ -116,6 +116,7 @@
     },
     "details": "Details",
     "details_one": "Die Preise beziehen sich auf die Gesamtzahl an Haltestellen oder Bahnhöfen eines Unternehmens, unabhängig von der Anzahl der tatsächlich mit mapset bearbeiteten Stationen.",
+    "details_two": "Für Schweizer Unternehmen verstehen sich die Preise zuzüglich Mehrwertsteuer von 8,1 %.",
     "embed": "Dynamische Einbindung",
     "monthly_billing": "Monatliche Abrechnung",
     "per_month": "pro Monat",

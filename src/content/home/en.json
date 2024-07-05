@@ -121,6 +121,7 @@
     },
     "details": "Details ",
     "details_one": "Prices refer to the total number of stops or stations of a company, regardless of the number of stations actually served by mapset.",
+    "details_two": "For Swiss companies, the prices are exclusive of VAT of 8.1 %.",
     "embed": "Dynamic embedding",
     "monthly_billing": "Monthly billing",
     "per_month": "per month",
