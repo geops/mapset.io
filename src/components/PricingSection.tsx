@@ -216,7 +216,7 @@ function PricingSection({ products = [] }: { products: Product[] }) {
           hidden={!open}
           className="text-slate-500 text-sm font-normal leading-[160%]"
         >
-          <p className="grid grid-cols-[10px_auto] gap-5">
+          <p className="grid grid-cols-[10px_auto] gap-2">
             <span className="text-blue-600">* </span>
             {t("pricing.details_one")}
           </p>
