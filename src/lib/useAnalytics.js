@@ -3,8 +3,6 @@
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 
-const domain = process.env.NEXT_PUBLIC_DOMAIN;
-
 export default function useAnalytics() {
   // see doc https://nextjs.org/docs/app/api-reference/functions/use-router#router-events
   const pathname = usePathname();
@@ -21,7 +19,7 @@ export default function useAnalytics() {
       const plausibleScript = document.createElement("script");
       plausibleScript.type = "text/javascript";
       plausibleScript.defer = true;
-      plausibleScript.dataset.domain = "mapset." + domain;
+      plausibleScript.dataset.domain = "mapset";
       plausibleScript.src = plausibleSrc;
       document.head.appendChild(plausibleScript);
     }
