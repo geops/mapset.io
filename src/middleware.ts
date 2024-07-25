@@ -11,7 +11,6 @@ function getLocale(request: NextRequest) {
   const languages = new Negotiator({
     headers: { "accept-language": request.headers.get("accept-language") },
   }).languages();
-  console.log(languages);
 
   const hostname = request.nextUrl.hostname;
   const isIo = /\.io$/.test(hostname);
@@ -19,7 +18,7 @@ function getLocale(request: NextRequest) {
     languages,
     [...locales],
     isIo ? defaultLocales.io : defaultLocales.ch,
-  ); // -> 'en-US'
+  );
 }
 
 export function middleware(request: NextRequest) {
