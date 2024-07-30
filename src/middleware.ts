@@ -1,18 +1,24 @@
 import { match } from "@formatjs/intl-localematcher";
 import { NextRequest, NextResponse } from "next/server";
+import Negotiator from "negotiator";
 import { i18n } from "../i18n-config";
 const { locales, defaultLocales } = i18n;
 
 // Get the preferred locale, similar to above or using a library
 function getLocale(request: NextRequest) {
-  // These 2 lines are there to select automatically the language from browser lamnguage
+  // These 2 lines are there to select automatically the language from browser language
   // but we don't want that
-  // let languages = new Negotiator({
-  //   headers: { "accept-language": request.headers.get("accept-language") },
-  // }).languages();
+  const languages = new Negotiator({
+    headers: { "accept-language": request.headers.get("accept-language") },
+  }).languages();
+
   const hostname = request.nextUrl.hostname;
   const isIo = /\.io$/.test(hostname);
-  return match([], [...locales], isIo ? defaultLocales.io : defaultLocales.ch); // -> 'en-US'
+  return match(
+    languages,
+    [...locales],
+    isIo ? defaultLocales.io : defaultLocales.ch,
+  );
 }
 
 export function middleware(request: NextRequest) {

@@ -103,8 +103,16 @@
   "login": "Login",
   "logout": "Logout",
   "newsletter_link": {
-    "ch": "https://geops.sh/6E83A54F98A4E7532",
-    "io": "https://geops.sh/40003911245CB34786"
+    "ch": {
+      "de": "https://geops.sh/6E83A54F98A4E7532",
+      "en": "https://geops.sh/ABA203D3080D2AF51A4",
+      "fr": "https://geops.sh/ABA203CC731166C0F78"
+    },
+    "io": {
+      "de": "https://geops.sh/ABA203D3067B1A944F8",
+      "en": "https://geops.sh/40003911245CB34786",
+      "fr": "https://geops.sh/ABA203D3082015B9D70"
+    }
   },
   "pricing": {
     "add_on_coop": "Edition collaborative des plans",

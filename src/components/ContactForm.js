@@ -7,7 +7,7 @@ import ChevronDown from "./images/ChevronDown";
 const domain = process.env.NEXT_PUBLIC_DOMAIN;
 
 const ContactForm = ({ className = "" }) => {
-  const { t } = useI18n();
+  const { t, language } = useI18n();
   const [submitted, setSubmitted] = useState(false);
   const formRef = useRef();
 
@@ -140,7 +140,7 @@ const ContactForm = ({ className = "" }) => {
               htmlFor="newsletter"
               dangerouslySetInnerHTML={{
                 __html: t("contact.newsletter", {
-                  link: t("newsletter_link." + domain),
+                  link: t(`newsletter_link.${domain}.${language}`),
                 }),
               }}
             ></label>
