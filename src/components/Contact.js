@@ -7,7 +7,7 @@ import useIsMobile from "@/utils/hooks/useIsMobile";
 const domain = process.env.NEXT_PUBLIC_DOMAIN;
 
 function Contact() {
-  const { t } = useI18n();
+  const { t, language } = useI18n();
   const isMobile = useIsMobile();
   return (
     <div>
@@ -16,7 +16,7 @@ function Contact() {
       <div className="flex gap-4  py-12">
         <ButtonWhite
           variant="outlined"
-          href={t("newsletter_link." + domain)}
+          href={t(`newsletter_link.${domain}.${language}`)}
           rel="noopener noreferrer"
           target="_blank"
           className={`normal-case${isMobile ? " !p-2" : ""}`}
