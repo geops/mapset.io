@@ -117,14 +117,14 @@
     "annual_billing": "Jährliche Abrechnung",
     "annual_promo": "bis zu 15%<br>sparen",
     "basemap": "Basiskarte",
-    "content": "mapset hat den richtigen Plan für Transportunternehmen jeder Grösse.",
+    "content": "mapset hat den richtigen Plan für Unternehmen jeder Grösse. Für Betriebe des öffentlichen Verkehrs sind die Kosten abhängig von der Anzahl der Haltestellen. Für alle weiteren Unternehmen gibt es individuelle Vereinbarungen.",
     "currency": {
       "ch": "CHF",
       "io": "€"
     },
     "details": "Details",
-    "details_one": "Die Preise beziehen sich auf die Gesamtzahl an Haltestellen oder Bahnhöfen eines Unternehmens, unabhängig von der Anzahl der tatsächlich mit mapset bearbeiteten Stationen.",
-    "details_two": "Für Schweizer Unternehmen verstehen sich die Preise zuzüglich Mehrwertsteuer von 8,1 %.",
+    "details_one": "Für die Einrichtung des Zugangs können Gebühren anfallen. Für Schweizer Unternehmen verstehen sich die Preise zuzüglich Mehrwertsteuer von 8,1 %.",
+    "details_two": "Die Preise beziehen sich auf die Gesamtzahl an Haltestellen oder Bahnhöfen eines Unternehmens, unabhängig von der Anzahl der tatsächlich mit mapset bearbeiteten Stationen.",
     "embed": "Dynamische Einbindung",
     "monthly_billing": "Monatliche Abrechnung",
     "per_month": "pro Monat",

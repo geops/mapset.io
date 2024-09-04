@@ -122,14 +122,14 @@
     "annual_billing": "Annual billing",
     "annual_promo": "save up to<br>15%",
     "basemap": "Basemap",
-    "content": "mapset has the right plan for transport companies of any size.",
+    "content": "mapset has the right plan for companies of all sizes. For public transport companies, the costs depend on the number of stops. There are individual agreements for all other companies.",
     "currency": {
       "ch": "CHF",
       "io": "€"
     },
     "details": "Details ",
-    "details_one": "Prices refer to the total number of stops or stations of a company, regardless of the number of stations actually served by mapset.",
-    "details_two": "For Swiss companies, the prices are exclusive of VAT of 8.1 %.",
+    "details_one": "Fees may be incurred for setting up access. For Swiss companies, the prices are exclusive of VAT of 8.1 %.",
+    "details_two": "Prices refer to the total number of stops or stations of a company, regardless of the number of stations actually served by mapset.",
     "embed": "Dynamic embedding",
     "monthly_billing": "Monthly billing",
     "per_month": "per month",
