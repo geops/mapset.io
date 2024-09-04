@@ -128,7 +128,7 @@
       "io": "€"
     },
     "details": "Details ",
-    "details_one": "Fees may be incurred for setting up access. For Swiss companies, the prices do not include VAT of 8.1%.",
+    "details_one": "Fees may be incurred for setting up access. For Swiss companies, the prices are exclusive of VAT of 8.1 %.",
     "details_two": "Prices refer to the total number of stops or stations of a company, regardless of the number of stations actually served by mapset.",
     "embed": "Dynamic embedding",
     "monthly_billing": "Monthly billing",
