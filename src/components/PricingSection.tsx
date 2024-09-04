@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import ArrowDownIcon from "./images/ArrowDownIcon";
 import { Inter } from "next/font/google";
 import { useI18n } from "./I18n";
 import PriceCard, { ListItem } from "./PriceCard";
@@ -71,7 +70,6 @@ function AnnualPromo() {
 }
 function PricingSection({ products = [] }: { products: Product[] }) {
   const { t } = useI18n();
-  const [open, setOpen] = useState<boolean>(false);
   const [canScrollLeft, setCanScrollLeft] = useState<boolean>(false);
   const [canScrollRight, setCanScrollRight] = useState<boolean>(false);
   const [isAnnualBilling, setIsAnnualBilling] = useState<boolean>(false);
@@ -202,26 +200,12 @@ function PricingSection({ products = [] }: { products: Product[] }) {
         </div>
       </div>
       <div>
-        <Button
-          className="flex items-center gap-2 px-4 py-2 pl-0 text-blue-900 text-sm font-bold capitalize leading-[160%]"
-          onClick={() => setOpen(!open)}
-        >
-          <ArrowDownIcon
-            className={`transition-rotate ${open ? "rotate-0" : "-rotate-90"}`}
-          />
-          {t("pricing.details")}
-          <span className="text-blue-600">*</span>
-        </Button>
-        <div
-          hidden={!open}
-          className="text-slate-500 text-sm font-normal leading-[160%]"
-        >
-          <p className="grid grid-cols-[10px_auto] gap-2">
-            <span className="text-blue-600">* </span>
-            {t("pricing.details_one")}
+        <div className="text-slate-500 text-sm font-normal leading-[160%]">
+          <p>{t("pricing.details_one")}</p>
+          <p className="grid grid-cols-[10px_auto] gap-1">
+            <span className="text-blue-600">*</span>
+            {t("pricing.details_two")}
           </p>
-          <br />
-          <p>{t("pricing.details_two")}</p>
         </div>
       </div>
       <ButtonBlue
