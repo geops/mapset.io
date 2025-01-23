@@ -41,7 +41,7 @@ function Header({
         </>
       )}
       <LoginLink
-        // className="w-[72px]"
+        className="w-[72px]"
         linkClassName={`overflow-hidden text-ellipsis ` + linkClassName}
       />
     </nav>

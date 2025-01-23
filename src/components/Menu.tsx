@@ -42,7 +42,7 @@ function Menu({ className = "" }) {
               className="px-6 py-4 w-full"
               selectedClassName="text-white font-bold"
             />
-            <LoginLink className="px-6 py-4 w-full" />
+            <LoginLink className="px-6 py-4" />
             <UserManualLink className="px-6 py-4 w-full" />
           </div>
           <div className="flex flex-1 flex-col justify-between w-full">
