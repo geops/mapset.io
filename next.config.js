@@ -8,8 +8,8 @@ const nextConfig = {
   },
   images: {
     minimumCacheTTL: 31536000,
+  },
   productionBrowserSourceMaps: process.env.NEXT_PUBLIC_INSTANCE === "dev",
-}
 };
 
 module.exports = process.env.SENTRY_PROJECT
