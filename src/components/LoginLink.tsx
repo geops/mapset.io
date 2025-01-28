@@ -12,7 +12,7 @@ function LoginLink({ className = "", linkClassName = "" }) {
         className={`${linkClassName} flex items-center gap-2`}
         href={"/"}
         onClick={() => {
-          window.location.href = `https://editor.mapset.ch/accounts/geops/login/authenticate/?next=https%3A%2F%2Feditor.mapset.${domain}`;
+          window.location.href = `https://editor.mapset.${domain}/accounts/geops/login/authenticate/?next=https%3A%2F%2Feditor.mapset.${domain}`;
         }}
       >
         <LoginIcon /> {t("login")}
