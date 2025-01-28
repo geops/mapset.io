@@ -1,43 +1,21 @@
 import Link from "next/link";
 import { useI18n } from "./I18n";
-import userManager from "@/utils/userManager";
-import LogoutIcon from "./images/LogoutIcon";
-import { User } from "oidc-client";
-import { useEffect, useState } from "react";
 import LoginIcon from "./images/LoginIcon";
+
+const domain = process.env.NEXT_PUBLIC_DOMAIN;
 
 function LoginLink({ className = "", linkClassName = "" }) {
   const { t } = useI18n();
-  const [user, setUser] = useState<User | null>();
-
-  useEffect(() => {
-    if (typeof window !== "undefined" && userManager) {
-      userManager.getUser().then((userr) => {
-        setUser(userr);
-      });
-    }
-  }, []);
-
   return (
-    <div
-      className={`${className}${
-        user?.profile?.nickname ? " !w-[120px]" : " !w-[72px]"
-      }`}
-    >
+    <div className={className}>
       <Link
-        className={`${linkClassName} grid grid-cols-[1fr_1fr] items-center gap-2`}
+        className={`${linkClassName} flex items-center gap-2`}
         href={"/"}
-        onClick={(event) => {
-          if (user) {
-            userManager?.signoutRedirect();
-          } else {
-            userManager?.signinRedirect();
-          }
-          event.preventDefault();
+        onClick={() => {
+          window.location.href = `https://editor.mapset.ch/accounts/geops/login/authenticate/?next=https%3A%2F%2Feditor.mapset.${domain}`;
         }}
       >
-        {!user ? <LoginIcon /> : <LogoutIcon />}
-        {user?.profile?.nickname || t("login")}
+        <LoginIcon /> {t("login")}
       </Link>
     </div>
   );
