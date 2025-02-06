@@ -1,5 +1,6 @@
 import bogg_logo from "../img/clients/bogg_logo.png";
 import bls_logo from "../img/clients/bls_logo.png";
+import bernmobil_logo from "../img/clients/bernmobil.png";
 import cheminsDeFerJura_logo from "../img/clients/cheminsdefer_jura_logo.png";
 import churbus_logo from "../img/clients/churbus_logo.png";
 import engadin_logo from "../img/clients/engadinbus_logo.png";
@@ -19,6 +20,10 @@ import vzo_logo from "../img/clients/vzo_logo.png";
 import travys_logo from "../img/clients/travys_logo.png";
 
 const clientLogos = [
+  {
+    id: "bernmobil",
+    src: bernmobil_logo,
+  },
   {
     id: "bls",
     src: bls_logo,
