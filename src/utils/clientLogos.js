@@ -58,7 +58,7 @@ const clientLogos = [
     src: rbs_logo,
   },
   {
-    id: "rvs",
+    id: "rvf",
     src: rvf_logo,
   },
   {
