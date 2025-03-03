@@ -18,6 +18,7 @@ import vbg_logo from "../img/clients/vbg_logo.png";
 import vbz_logo from "../img/clients/vbz_logo.png";
 import vzo_logo from "../img/clients/vzo_logo.png";
 import travys_logo from "../img/clients/travys_logo.png";
+import rvf_logo from "../img/clients/rvf_logo.png";
 
 const clientLogos = [
   {
@@ -57,16 +58,16 @@ const clientLogos = [
     src: rbs_logo,
   },
   {
+    id: "rvs",
+    src: rvf_logo,
+  },
+  {
     id: "sbb",
     src: sbb_logo,
   },
   {
     id: "sob",
     src: sob_logo,
-  },
-  {
-    id: "win",
-    src: win_logo,
   },
   {
     id: "sti",
@@ -99,6 +100,10 @@ const clientLogos = [
   {
     id: "vzo",
     src: vzo_logo,
+  },
+  {
+    id: "win",
+    src: win_logo,
   },
 ];
 
