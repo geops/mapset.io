@@ -150,6 +150,7 @@
       },
       {
         "label": "Plans avec tags",
+        "id": "plans-avec-tags",
         "content": [
           {
             "text": "Pour utiliser les plans standard, vous avez besoin d'un module supplémentaire à votre abonnement mapset.\n\n Pour regrouper et trier facilement les plans, il est possible d'attribuer des tags lors de l'enregistrement. Les tags peuvent être sélectionnés ou créés dans la boîte de dialogue d'enregistrement. \n\n![](/img/tags.png) \n\n Pour l'édition de plans avec des tags, nous créons pour vous des groupes d'utilisateurs spéciaux dans le backend de mapset. Vous obtenez ainsi automatiquement la possibilité pour plusieurs personnes disposant des droits correspondants de travailler ensemble sur les plans, c'est-à-dire que les plans disposant de balises sont à la disposition de l'ensemble du groupe d'utilisateurs. \n\n Dans la liste des plans, chaque utilisateur du groupe d'utilisateurs peut filtrer par tags.",

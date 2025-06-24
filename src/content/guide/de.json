@@ -151,6 +151,7 @@
       },
       {
         "label": "Pläne mit Tags",
+        "id": "plaene-mit-tags",
         "content": [
           {
             "text": "Für die Nutzung der Standard-Pläne benötigen Sie ein Zusatzmodul zu Ihrem mapset-Abo.\n\n Um Pläne einfach zu gruppieren und zu sortieren, können beim Speichern Tags vergeben werden. Tags können im Speicherdialog ausgewählt oder neu erstellt werden. \n\n![](/img/tags.png) \n\n Für die Bearbeitung von Plänen mit Tags erstellen wir für Sie im Backend von mapset spezielle Benutzergruppen. Sie erhalten damit automatisch auch die Möglichkeit, dass mehrere Personen mit den entsprechenden Rechten gemeinsam an den Plänen arbeiten können, d.h. Pläne, die über Tags verfügen, stehen der gesamten Nutzergruppe zur Verfügung. \n\n In der Planliste kann jeder User aus der Benutzergruppe nach Tags filtern. ",
