@@ -114,7 +114,7 @@
           },
           {
             "heading": "Copier & Coller",
-            "text": "Dans mapset, les éléments dessinés peuvent être copiés et collés.\n\nAvec *ctrl + c* (copier), avec *ctrl + x* (copier et couper) et *ctrl + v* (coller), vous pouvez copier et coller des éléments sélectionnés. Les éléments copiés et coupés sont insérés au centre de l'étendue actuelle de la carte et peuvent ensuite être modifiés.",
+            "text": "Dans mapset, les éléments dessinés peuvent être copiés et collés.\n\nAvec *ctrl + c* (copier), avec *ctrl + x* (copier et couper) et *ctrl + v* (coller), vous pouvez copier et coller des éléments sélectionnés. Les éléments copiés et coupés sont insérés au centre de l'étendue actuelle de la carte et peuvent ensuite être modifiés. Ils conservent toutes les caractéristiques de l'original, y compris la limitation du zoom, si celle-ci a été définie.",
             "login_restricted": false
           },
           {
@@ -149,6 +149,17 @@
         ]
       },
       {
+        "label": "Plans avec tags",
+        "content": [
+          {
+            "text": "Pour utiliser les plans standard, vous avez besoin d'un module supplémentaire à votre abonnement mapset.\n\n Pour regrouper et trier facilement les plans, il est possible d'attribuer des tags lors de l'enregistrement. Les tags peuvent être sélectionnés ou créés dans la boîte de dialogue d'enregistrement. \n\n![](/img/tags.png) \n\n Pour l'édition de plans avec des tags, nous créons pour vous des groupes d'utilisateurs spéciaux dans le backend de mapset. Vous obtenez ainsi automatiquement la possibilité pour plusieurs personnes disposant des droits correspondants de travailler ensemble sur les plans, c'est-à-dire que les plans disposant de balises sont à la disposition de l'ensemble du groupe d'utilisateurs. \n\n Dans la liste des plans, chaque utilisateur du groupe d'utilisateurs peut filtrer par tags.",
+            "heading": "",
+            "login_restricted": true,
+            "cd_restricted": true
+          }
+        ]
+      },
+      {
         "label": "Plans standard",
         "content": [
           {
@@ -165,7 +176,7 @@
         "content": [
           {
             "heading": "",
-            "text": "Il existe deux types de liens pour partager le plan:\n\n* **Lien à partager**\n\n  Le *Lien à partager* est utilisé pour partager votre plan en lecture seule avec d'autres personnes ou pour intégrer le plan dans d'autres applications. Ce lien affiche la carte avec le plan, mais n'affiche aucun des outils et ne permet donc pas d'éditer le plan. Il est également possible de télécharger ici séparément un code QR qui mène au plan actuel en lecture seule.\n* **Lien pour éditer**\n\n  Le *Lien pour éditer* vous permet de rouvrir un plan précédemment créé et de continuer à l'éditer. Ce lien vous permet de collaborer avec d'autres utilisateurs sur le même plan.",
+            "text": "Il existe deux types de liens pour partager le plan:\n\n* **Lien à partager**\n\n  Le *Lien à partager* est utilisé pour partager votre plan en lecture seule avec d'autres personnes ou pour intégrer le plan dans d'autres applications. Ce lien affiche la carte avec le plan, mais n'affiche aucun des outils et ne permet donc pas d'éditer le plan. Il est également possible de télécharger ici séparément un code QR qui mène au plan actuel en lecture seule.\n\n\t Lors du partage, il est également possible de choisir si l'option permettant à l'utilisateur d'activer la localisation dans le plan mapset doit être disponible dans le plan partagé. Dans le plan partagé, cela est possible individuellement via le bouton en bas à droite.\n\n\t![](/img/geolocate.png) \n\n\tDans les plans partagés, un commutateur de niveau peut être configuré sur demande. Les utilisateurs du lien peuvent ainsi déterminer s'ils souhaitent visualiser le plan mapset sur la carte de base ou sur une carte aérienne.\n\n* **Lien pour éditer**\n\n  Le *Lien pour éditer* vous permet de rouvrir un plan précédemment créé et de continuer à l'éditer. Ce lien vous permet de collaborer avec d'autres utilisateurs sur le même plan.",
             "login_restricted": true
           }
         ]

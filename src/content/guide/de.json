@@ -114,7 +114,7 @@
           },
           {
             "heading": "Kopieren & Einfügen",
-            "text": "In mapset können gezeichnete Elemente kopiert und wieder eingefügt werden.\n\nMit *strg + c* (kopieren), mit *strg + x* (kopieren und ausschneiden) und *strg + v* (einfügen) können Sie selektierte Elemente kopieren und einfügen. Kopierte und ausgeschnittene Elemente werden im Zentrum des aktuellen Kartenausschnitts eingefügt und können dann weiter bearbeitet werden.",
+            "text": "In mapset können gezeichnete Elemente kopiert und wieder eingefügt werden.\n\nMit *strg + c* (kopieren), mit *strg + x* (kopieren und ausschneiden) und *strg + v* (einfügen) können Sie selektierte Elemente kopieren und einfügen. Kopierte und ausgeschnittene Elemente werden im Zentrum des aktuellen Kartenausschnitts eingefügt und können dann weiter bearbeitet werden. Sie behalten alle Eigenschaften des Originals, inkl. der Zoombeschränkung, sofern diese eingestellt wurde. ",
             "login_restricted": false
           },
           {
@@ -150,6 +150,17 @@
         ]
       },
       {
+        "label": "Pläne mit Tags",
+        "content": [
+          {
+            "text": "Für die Nutzung der Standard-Pläne benötigen Sie ein Zusatzmodul zu Ihrem mapset-Abo.\n\n Um Pläne einfach zu gruppieren und zu sortieren, können beim Speichern Tags vergeben werden. Tags können im Speicherdialog ausgewählt oder neu erstellt werden. \n\n![](/img/tags.png) \n\n Für die Bearbeitung von Plänen mit Tags erstellen wir für Sie im Backend von mapset spezielle Benutzergruppen. Sie erhalten damit automatisch auch die Möglichkeit, dass mehrere Personen mit den entsprechenden Rechten gemeinsam an den Plänen arbeiten können, d.h. Pläne, die über Tags verfügen, stehen der gesamten Nutzergruppe zur Verfügung. \n\n In der Planliste kann jeder User aus der Benutzergruppe nach Tags filtern. ",
+            "heading": "",
+            "login_restricted": true,
+            "cd_restricted": true
+          }
+        ]
+      },
+      {
         "label": "Standard-Pläne",
         "content": [
           {
@@ -166,7 +177,7 @@
         "content": [
           {
             "heading": "",
-            "text": "Es gibt zwei Arten von Links, um den Plan zu teilen:\n\n* **Link zum Teilen**\n\n  Der *Link zum Teilen* wird verwendet, um Ihren Plan im schreibgeschützten Modus für andere freizugeben oder um den Plan in andere Anwendungen einzubetten. Dieser Link stellt die Karte mit dem Plan dar, zeigt jedoch keines der Werkzeuge an und erlaubt daher keine Bearbeitung des Plans. Hier kann auch ein QR-Code separat heruntergeladen werden, der zum aktuellen, schreibgeschützten Plan führt.\n* **Link zum Bearbeiten**\n\n  Über *Link zum Bearbeiten* können Sie einen zuvor erstellten Plan erneut öffnen und weiter bearbeiten. Über diesen Link können Sie mit anderen Benutzern an demselben Plan zusammenarbeiten.",
+            "text": "Es gibt zwei Arten von Links, um den Plan zu teilen:\n\n* **Link zum Teilen**\n\n  Der *Link zum Teilen* wird verwendet, um Ihren Plan im schreibgeschützten Modus für andere freizugeben oder um den Plan in andere Anwendungen einzubetten. Dieser Link stellt die Karte mit dem Plan dar, zeigt jedoch keines der Werkzeuge an und erlaubt daher keine Bearbeitung des Plans. Hier kann auch ein QR-Code separat heruntergeladen werden, der zum aktuellen, schreibgeschützten Plan führt.\n\n\t Beim Teilen kann zudem gewählt werden, ob im geteilten Plan die Option zur Verfügung stehen soll, dass der User die Ortung im mapset Plan einschalten kann. Im geteilten Plan ist dies individuell über den Button unten rechts möglich.\n\n\t![](/img/geolocate.png) \n\n\tIn geteilten Plänen kann auf Wunsch ein Ebenenumschalter konfiguriert werden. Damit können User des Links bestimmen, ob die den mapset Plan auf der Basiskarte oder auf einer Luftbild-Karte anschauen wollen. \n* **Link zum Bearbeiten**\n\n  Über *Link zum Bearbeiten* können Sie einen zuvor erstellten Plan erneut öffnen und weiter bearbeiten. Über diesen Link können Sie mit anderen Benutzern an demselben Plan zusammenarbeiten.",
             "login_restricted": true
           }
         ]

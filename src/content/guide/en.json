@@ -114,7 +114,7 @@
           },
           {
             "heading": "Copy & Paste",
-            "text": "In mapset, drawn features can be copied and pasted.\n\nWith *ctrl + c* (copy), with *ctrl + x* (copy and cut) and *ctrl + v* (paste) you can copy and paste selected features. Copied and cut features are inserted in the center of the current map extent and can then be further edited.",
+            "text": "In mapset, drawn features can be copied and pasted.\n\nWith *ctrl + c* (copy), with *ctrl + x* (copy and cut) and *ctrl + v* (paste) you can copy and paste selected features. Copied and cut features are inserted in the center of the current map extent and can then be further edited. They retain all the properties of the original, including the zoom restriction if this has been set.",
             "login_restricted": false
           },
           {
@@ -150,6 +150,17 @@
         ]
       },
       {
+        "label": "Plans with tags",
+        "content": [
+          {
+            "text": "To use the standard plans, you need an add-on module for your mapset subscription.\n\n To group and sort maps easily, tags can be assigned when saving. Tags can be selected or created in the save dialogue. \n\n![](/img/tags.png) \n\n We create special user groups for you in the mapset backend for editing plans with tags. This automatically gives you the option for several people with the appropriate rights to work together on the plans, i.e. plans with tags are available to the entire user group. \n\n In the plan list, each user from the user group can filter by tags.",
+            "heading": "",
+            "login_restricted": true,
+            "cd_restricted": true
+          }
+        ]
+      },
+      {
         "label": "Default plans",
         "content": [
           {
@@ -167,7 +178,7 @@
         "content": [
           {
             "heading": "",
-            "text": "There are two types of links to share the plan:\n\n* **Link to share**\n\n  The Share link is used to share your plan with others in read-only mode or to embed the plan in other applications. This link renders the map with the plan, but doesn't show any of the mapset tools and thus doeesn't allow editing of the plan. A QR code can also be downloaded separately here, which leads to the current, read-only plan. \n* **Link to edit**\n\n  This Edit link is used to reopen and continue editing a previously created plan. You can use this link to collaborate on the same plan with other users.",
+            "text": "There are two types of links to share the plan:\n\n* **Link to share**\n\n  The Share link is used to share your plan with others in read-only mode or to embed the plan in other applications. This link renders the map with the plan, but doesn't show any of the mapset tools and thus doesn't allow editing of the plan. A QR code can also be downloaded separately here, which leads to the current, read-only plan.\n\n\t When sharing, you can also choose whether the option should be available in the shared plan to allow the user to switch on localization in the mapset plan. In the shared plan, this is possible individually via the button at the bottom right.\n\n\t![](/img/geolocate.png) \n\n\tA layer switcher can be configured in split maps if desired. This allows users of the link to determine whether they want to view the mapset plan on the base map or on an aerial map.\n* **Link to edit**\n\n  This Edit link is used to reopen and continue editing a previously created plan. You can use this link to collaborate on the same plan with other users.",
             "login_restricted": true
           }
         ]
