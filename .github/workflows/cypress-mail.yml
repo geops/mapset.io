@@ -1,8 +1,8 @@
 name: End-to-end tests for contact form (runs every monday)
 
-on: workflow_dispatch
-  #schedule:
-  #  - cron: "0 10 * * 2" #runs every tuesday
+on:
+  schedule:
+    - cron: "0 10 * * 2" #runs every tuesday
   # push:
   #   branches:
   #     - master
