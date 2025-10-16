@@ -154,7 +154,7 @@
         "id": "plans-with-tags",
         "content": [
           {
-            "text": "To use the standard plans, you need an add-on module for your mapset subscription.\n\n To group and sort maps easily, tags can be assigned when saving. Tags can be selected or created in the save dialogue. \n\n![](/img/tags.png) \n\n We create special user groups for you in the mapset backend for editing plans with tags. This automatically gives you the option for several people with the appropriate rights to work together on the plans, i.e. plans with tags are available to the entire user group. \n\n In the plan list, each user from the user group can filter by tags.",
+            "text": "To use tags, you need an add-on module for your mapset subscription.\n\n To group and sort maps easily, tags can be assigned when saving. Tags can be selected or created in the save dialogue. \n\n![](/img/tags.png) \n\n We create special user groups for you in the mapset backend for editing plans with tags. This automatically gives you the option for several people with the appropriate rights to work together on the plans, i.e. plans with tags are available to the entire user group. \n\n In the plan list, each user from the user group can filter by tags.",
             "heading": "",
             "login_restricted": true,
             "cd_restricted": true
