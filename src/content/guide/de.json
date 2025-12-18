@@ -24,7 +24,7 @@
         "content": [
           {
             "heading": "",
-            "text": "Sie können viele Funktionen von mapset zu Testzwecken ohne Registrierung nutzen. Ohne Registierung erzeugtes Planmaterial dürfen Sie nur für Ihre persönlichen Zwecke verwenden. Ohne Registrierung ist es nicht zulässig, Planmaterial aus mapset zu veröffentlichen. Insbesondere ist es ohne Registrierung nicht erlaubt, Pläne aus mapset für die Reisendeninformation und allgemein für die Information der Öffentlichkeit einzusetzen.\n\nBei jeder Verwendung von Plänen aus mapset sind ausserdem die Hinweise auf das Copyright der Kartendaten, die in mapset immer am unteren Kartenrand eingeblendet sind, gut lesbar anzuzeigen."
+            "text": "Sie können viele Funktionen von mapset zu Testzwecken ohne Registrierung nutzen. Ohne Registierung erzeugtes Planmaterial dürfen Sie nur für Ihre persönlichen Zwecke verwenden. Ohne Registrierung ist es nicht zulässig, Planmaterial aus mapset zu veröffentlichen. Insbesondere ist es ohne Registrierung nicht erlaubt, Pläne aus mapset für die Reisendeninformation und allgemein für die Information der Öffentlichkeit einzusetzen.\n\nBei jeder Verwendung von Plänen aus mapset sind ausserdem die Hinweise auf mapset und das Copyright der Kartendaten, die in mapset immer am unteren Kartenrand eingeblendet sind, gut lesbar anzuzeigen. Sollte die Positionierung am unteren Kartenrand für Ihre Anwendung nicht geeignet sein, muss mindestens der folgende Text in der Bildunterschrift platziert werden: © mapset, OpenStreetMap."
           }
         ]
       },
