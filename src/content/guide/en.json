@@ -24,7 +24,7 @@
         "content": [
           {
             "heading": "",
-            "text": "You can use many of mapset's functions for test purposes without registering. However you may only use map material generated without registration for your personal purposes. Without registration, it is not permitted to publish mapset plan material. In particular, it is not permitted to use maps from mapset for traveller information and for public information in general without registration.\n\nIn addition, whenever maps from mapset are used, the copyright notices for the map data, which are always displayed at the bottom of the map in mapset, must be displayed in a clearly legible manner."
+            "text": "You can use many of mapset's functions for test purposes without registering. However you may only use map material generated without registration for your personal purposes. Without registration, it is not permitted to publish mapset plan material. In particular, it is not permitted to use maps from mapset for traveller information and for public information in general without registration.\n\nIn addition, whenever maps from mapset are used, the copyright notices for the map data, which are always displayed at the bottom of the map in mapset, must be displayed in a clearly legible manner. If positioning at the bottom of the map is not suitable for your application, at least the following text must be placed in the caption: © mapset, OpenStreetMap.If positioning at the bottom of the map is not suitable for your application, at least the following text must be placed in the caption: © mapset, OpenStreetMap."
           }
         ]
       },
