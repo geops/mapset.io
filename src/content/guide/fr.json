@@ -24,7 +24,7 @@
         "content": [
           {
             "heading": "",
-            "text": "Vous pouvez utiliser de nombreuses fonctions de mapset à des fins de test sans vous sauvegarder. Vous ne pouvez utiliser les plans créés sans enregistrement qu'à des fins personnelles. Sans enregistrement, il est interdit de publier des plans issus de mapset. En particulier, il est interdit d'utiliser des plans issus de mapset pour l'information des voyageurs et, de manière générale, pour l'information du public.\n\nLors de chaque utilisation de plans issus de mapset, les indications relatives au copyright des données cartographiques, qui sont toujours affichées en bas de la carte dans mapset, doivent être affichées de manière bien lisible."
+            "text": "Vous pouvez utiliser de nombreuses fonctions de mapset à des fins de test sans vous sauvegarder. Vous ne pouvez utiliser les plans créés sans enregistrement qu'à des fins personnelles. Sans enregistrement, il est interdit de publier des plans issus de mapset. En particulier, il est interdit d'utiliser des plans issus de mapset pour l'information des voyageurs et, de manière générale, pour l'information du public.\n\nLors de chaque utilisation de plans issus de mapset, les indications relatives au copyright des données cartographiques, qui sont toujours affichées en bas de la carte dans mapset, doivent être affichées de manière bien lisible. Si le positionnement au bas de la carte ne convient pas à votre application, le texte suivant doit au moins être placé dans la légende : © mapset, OpenStreetMap."
           }
         ]
       },
