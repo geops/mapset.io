@@ -217,6 +217,15 @@
   "testimonials": {
     "customers": [
       {
+        "image": "Brigitte_Rotowski.jpg",
+        "image_height": 1080,
+        "image_width": 1080,
+        "job": "Development & Digitalization Specialist",
+        "name": "Brigitte Rotowski",
+        "testimonial": "With mapset, BERNMOBIL has introduced a reliable, easy-to-use tool. We can implement changes in just a few steps and obtain clear, consistent plans. The support team at geOps provides us with straightforward assistance whenever we need it. This enables us to provide our employees with accurate, digital map material.",
+        "transport_provider": "BERNMOBIL"
+      },
+      {
         "image": "Miro_Bertozzi.jpg",
         "image_height": 1080,
         "image_width": 1080,
