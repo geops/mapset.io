@@ -8,7 +8,6 @@ main ul {
 
 main li {
   list-style-type: disc;
-
 }
 
 main h4 p {
@@ -27,4 +26,25 @@ main h4 svg {
 
 .guide-content a:hover {
   color: theme(colors.blue.900);
+}
+
+.guide-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0 24px;
+  display: block;
+  overflow-x: auto;
+}
+
+.guide-content th,
+.guide-content td {
+  border: 1px solid #d1d5db;
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.guide-content th {
+  background: #f8fafc;
+  font-weight: 600;
 }
