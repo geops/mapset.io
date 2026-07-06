@@ -8,6 +8,7 @@ import churbus_logo from "../img/clients/churbus_logo.png";
 import engadin_logo from "../img/clients/engadinbus_logo.png";
 import forchbahn_logo from "../img/clients/forchbahn_logo.png";
 import gwb_logo from "../img/clients/gwb_logo.png";
+import postauto_logo from "../img/clients/postauto_logo.png";
 import rbs_logo from "../img/clients/rbs_logo.png";
 import sbb_logo from "../img/clients/sbb_logo.png";
 import sob_logo from "../img/clients/sob_logo.png";
@@ -62,6 +63,10 @@ const clientLogos = [
   {
     id: "gwb",
     src: gwb_logo,
+  },
+  {
+    id: "postauto",
+    src: postauto_logo,
   },
   {
     id: "rbs",
