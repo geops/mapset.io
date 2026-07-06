@@ -1,3 +1,4 @@
+import aremo_logo from "../img/clients/aremo_logo.png";
 import asm_logo from "../img/clients/asm_logo.png";
 import bogg_logo from "../img/clients/bogg_logo.png";
 import bls_logo from "../img/clients/bls_logo.png";
@@ -22,6 +23,10 @@ import travys_logo from "../img/clients/travys_logo.png";
 import rvf_logo from "../img/clients/rvf_logo.png";
 
 const clientLogos = [
+  {
+    id: "aremo",
+    src: aremo_logo,
+  },
   {
     id: "asm",
     src: asm_logo,
