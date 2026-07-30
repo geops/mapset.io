@@ -95,6 +95,11 @@
             "login_restricted": true
           },
           {
+            "heading": "Reihenfolge der Elemente im Stapel",
+            "id": "elemente-stapel-reihenfolge",
+            "text": "Die Stapelreihenfolge mehrerer Objekte kann festgelegt werden, indem man beim Auswählen der Objekte die *Alt*-Taste gedrückt hält.\n\n![](/img/multiplestackingorder.png)\n\n Mit den Pfeilen lässt sich der Positionsindex im Stapel erhöhen oder verringern. Wenn Objekte denselben Positionsindex haben, werden sie je nach Typ von oben nach unten dargestellt: Beschriftung, Symbol, Linie, Fläche."
+          },
+          {
             "id": "elemente-groesse-position-drehung",
             "heading": "Grösse, Position und Drehen von Elementen",
             "text": "Die Position und Rotation von allen Elementen werden direkt in der Karte angepasst.\n\nUnterhalb von selektierten Elementen erscheint ein runder Griff, an dem durch Ziehen die Rotation verändert werden kann.\n\n  ![](/img/rotate.png)\nWird ein genauer Rotationsgrad gebraucht, kann dieser im Bearbeitungsfenster des jeweiligen Elements eingetragen werden.\n\nAn selektierten Linien- und Flächen-Elementen erscheint ein roter Rahmen mit Griffen an den Ecken, Kanten und in der Mitte. Durch Ziehen an den Griffen der Ecken und Kanten des Rahmens können die Elemente vergrössert und verkleinert werden. Durch Ziehen an der Mitte werden die Elemente verschoben.\n\n  ![](/img/resize.png)\nDie Grösse von Piktogrammen, Bildern und Texten kann im Popup angepasst werden. "
